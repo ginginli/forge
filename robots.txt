@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ginginli.github.io/forge/sitemap.xml
+Sitemap: https://forge-calculator.com/sitemap.xml
