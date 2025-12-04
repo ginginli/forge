@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete guide to The Forge ores - Learn about all ore types, traits, combinations, and how to use them effectively in The Forge Roblox game.">
+    <meta name="keywords" content="the forge ore, forge ore guide, roblox forge ores, the forge ore types, forge ore combinations, the forge ore traits">
+    <link rel="canonical" href="https://forge-calculator.com/ore-guide.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/ore-guide.html">
+    <meta property="og:title" content="The Forge Ore Guide - Complete Ore Types & Combinations">
+    <meta property="og:description" content="Master ore combinations in The Forge. Learn about all ore types, traits, and optimal combinations for crafting legendary weapons and armor.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://forge-calculator.com/ore-guide.html">
+    <meta name="twitter:title" content="The Forge Ore Guide - Complete Ore Types & Combinations">
+    <meta name="twitter:description" content="Master ore combinations in The Forge. Learn about all ore types, traits, and optimal combinations for crafting legendary weapons and armor.">
+    
+    <title>The Forge Ore Guide - Complete Ore Types & Combinations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #1a1a1a 0%, #2d1810 100%);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(255, 87, 34, 0.3);
+            border-bottom: 2px solid #ff5722;
+            margin-bottom: 2rem;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            color: #fff;
+            font-size: 1.8rem;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ff9800;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 40px rgba(255, 87, 34, 0.3);
+            border: 2px solid #ff5722;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            color: #ff9800;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        
+        .content-section {
+            background: #fff;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .content-section h3 {
+            color: #ff5722;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #ff9800;
+            padding-bottom: 0.5rem;
+        }
+        
+        .ore-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .ore-card {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-radius: 10px;
+            padding: 1.5rem;
+            border-left: 4px solid #ff5722;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .ore-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 87, 34, 0.3);
+        }
+        
+        .ore-card h4 {
+            color: #ff5722;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .ore-trait {
+            background: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .ore-trait strong {
+            color: #ff9800;
+        }
+        
+        .tip-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 4px solid #2196f3;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .tip-box h4 {
+            color: #1976d2;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            color: #fff;
+            margin: 2rem 0;
+        }
+        
+        .cta-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            border: none;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: #fff;
+            color: #ff5722;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+            margin: 0.5rem;
+        }
+        
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 2px solid #ff5722;
+            margin-top: 3rem;
+        }
+        
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🪨 The Forge Ore Guide</h1>
+            <nav>
+                <a href="/">Calculator</a>
+                <a href="/codes.html">Codes</a>
+                <a href="/ore-guide.html">Ore Guide</a>
+                <a href="/blog.html">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>🪨 Complete Ore Guide for The Forge</h2>
+            <p>Master ore combinations and traits to craft legendary weapons and armor in The Forge Roblox game.</p>
+        </div>
+
+        <!-- Introduction -->
+        <div class="content-section">
+            <h3>What Are Ores in The Forge?</h3>
+            <p>Ores are the fundamental resources in The Forge used to craft weapons and armor. Each ore type has unique properties and traits that affect your final equipment's stats and abilities. Understanding ore combinations is key to creating powerful gear.</p>
+            
+            <div class="tip-box">
+                <h4>💡 Pro Tip</h4>
+                <p>Use our <a href="/" style="color: #1976d2; font-weight: bold;">Forge Calculator</a> to find the optimal ore combinations for your desired weapon or armor build!</p>
+            </div>
+        </div>
+
+        <!-- Ore Types -->
+        <div class="content-section">
+            <h3>⚒️ Ore Types & Properties</h3>
+            <p>The Forge features various ore types, each with distinct characteristics:</p>
+            
+            <div class="ore-grid">
+                <div class="ore-card">
+                    <h4>🔴 Iron Ore</h4>
+                    <p>The most common ore, perfect for beginners.</p>
+                    <div class="ore-trait">
+                        <strong>Trait:</strong> Durability
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Best For:</strong> Basic weapons and armor
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Modifier:</strong> +5% Defense
+                    </div>
+                </div>
+
+                <div class="ore-card">
+                    <h4>⚫ Coal</h4>
+                    <p>Essential for smelting and enhancing other ores.</p>
+                    <div class="ore-trait">
+                        <strong>Trait:</strong> Heat Resistance
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Best For:</strong> Upgrading equipment
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Modifier:</strong> +3% Fire Resistance
+                    </div>
+                </div>
+
+                <div class="ore-card">
+                    <h4>🟡 Gold Ore</h4>
+                    <p>Rare ore that enhances equipment value and stats.</p>
+                    <div class="ore-trait">
+                        <strong>Trait:</strong> Wealth
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Best For:</strong> High-tier equipment
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Modifier:</strong> +10% Coin Drop
+                    </div>
+                </div>
+
+                <div class="ore-card">
+                    <h4>💎 Gem Ore</h4>
+                    <p>Extremely rare, provides powerful trait bonuses.</p>
+                    <div class="ore-trait">
+                        <strong>Trait:</strong> Magic Power
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Best For:</strong> Legendary equipment
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Modifier:</strong> +15% All Stats
+                    </div>
+                </div>
+
+                <div class="ore-card">
+                    <h4>🔵 Crystal Ore</h4>
+                    <p>Special ore with unique magical properties.</p>
+                    <div class="ore-trait">
+                        <strong>Trait:</strong> Mana Regeneration
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Best For:</strong> Magic weapons
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Modifier:</strong> +8% Mana Regen
+                    </div>
+                </div>
+
+                <div class="ore-card">
+                    <h4>🟣 Shadow Ore</h4>
+                    <p>Dark ore with stealth-enhancing properties.</p>
+                    <div class="ore-trait">
+                        <strong>Trait:</strong> Stealth
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Best For:</strong> Assassin builds
+                    </div>
+                    <div class="ore-trait">
+                        <strong>Modifier:</strong> +12% Critical Hit
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ore Combinations -->
+        <div class="content-section">
+            <h3>🔥 Best Ore Combinations</h3>
+            <p>Combining different ores creates synergies that enhance your equipment:</p>
+            
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">For Warriors:</h4>
+            <ul>
+                <li><strong>Iron + Coal:</strong> High durability with fire resistance</li>
+                <li><strong>Iron + Shadow:</strong> Balanced defense with critical hits</li>
+                <li><strong>Gold + Iron:</strong> Strong defense with bonus coin drops</li>
+            </ul>
+
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">For Mages:</h4>
+            <ul>
+                <li><strong>Crystal + Gem:</strong> Maximum magical power</li>
+                <li><strong>Crystal + Gold:</strong> Mana regen with wealth bonus</li>
+                <li><strong>Gem + Shadow:</strong> High damage magic with critical hits</li>
+            </ul>
+
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">For Balanced Builds:</h4>
+            <ul>
+                <li><strong>Iron + Crystal + Gold:</strong> Well-rounded stats</li>
+                <li><strong>Coal + Gem + Shadow:</strong> Versatile combat abilities</li>
+                <li><strong>All Ore Types (Small Amounts):</strong> Jack-of-all-trades build</li>
+            </ul>
+        </div>
+
+        <!-- How to Get Ores -->
+        <div class="content-section">
+            <h3>⛏️ How to Obtain Ores</h3>
+            
+            <h4 style="color: #ff5722;">Mining:</h4>
+            <p>The primary method to gather ores. Different areas yield different ore types:</p>
+            <ul>
+                <li><strong>Starter Zone:</strong> Iron and Coal</li>
+                <li><strong>Mountain Region:</strong> Gold and Crystal</li>
+                <li><strong>Deep Caves:</strong> Gem and Shadow</li>
+                <li><strong>Special Events:</strong> Rare ore variants</li>
+            </ul>
+
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">Other Methods:</h4>
+            <ul>
+                <li><strong>Redeem Codes:</strong> Check our <a href="/codes.html" style="color: #ff5722; font-weight: bold;">Codes page</a> for free ores</li>
+                <li><strong>Daily Rewards:</strong> Log in daily for ore bonuses</li>
+                <li><strong>Quests:</strong> Complete missions for ore rewards</li>
+                <li><strong>Trading:</strong> Exchange with other players</li>
+                <li><strong>Events:</strong> Participate in special events</li>
+            </ul>
+        </div>
+
+        <!-- Ore Traits Explained -->
+        <div class="content-section">
+            <h3>✨ Understanding Ore Traits</h3>
+            <p>Ore traits are special properties that activate when you use specific ore combinations:</p>
+            
+            <div class="tip-box">
+                <h4>🎯 Trait Activation</h4>
+                <p>To activate a trait, you typically need a minimum percentage of that ore type in your craft. Use our calculator to see which traits will activate with your ore combination!</p>
+            </div>
+
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">Common Traits:</h4>
+            <ul>
+                <li><strong>Durability:</strong> Increases equipment lifespan</li>
+                <li><strong>Sharpness:</strong> Boosts weapon damage</li>
+                <li><strong>Protection:</strong> Enhances armor defense</li>
+                <li><strong>Efficiency:</strong> Reduces resource consumption</li>
+                <li><strong>Fortune:</strong> Increases rare drop chances</li>
+            </ul>
+
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">Rare Traits:</h4>
+            <ul>
+                <li><strong>Legendary:</strong> Massive stat boost (requires Gem ore)</li>
+                <li><strong>Unbreakable:</strong> Equipment never breaks</li>
+                <li><strong>Soul Bound:</strong> Cannot be traded but extremely powerful</li>
+                <li><strong>Elemental:</strong> Adds elemental damage</li>
+            </ul>
+        </div>
+
+        <!-- Tips & Strategies -->
+        <div class="content-section">
+            <h3>💡 Pro Tips & Strategies</h3>
+            
+            <h4 style="color: #ff5722;">Beginner Tips:</h4>
+            <ul>
+                <li>Start with Iron and Coal - they're abundant and useful</li>
+                <li>Don't waste rare ores on low-tier equipment</li>
+                <li>Use the calculator before committing ores to a craft</li>
+                <li>Save Gem ores for legendary equipment</li>
+                <li>Join a guild to trade ores with other players</li>
+            </ul>
+
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">Advanced Strategies:</h4>
+            <ul>
+                <li>Calculate optimal ore ratios for maximum trait activation</li>
+                <li>Experiment with unconventional combinations</li>
+                <li>Farm specific zones for targeted ore types</li>
+                <li>Time your crafting during bonus events</li>
+                <li>Keep a balanced ore inventory for flexibility</li>
+            </ul>
+
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">Common Mistakes to Avoid:</h4>
+            <ul>
+                <li>❌ Using all your rare ores at once</li>
+                <li>❌ Ignoring ore trait percentages</li>
+                <li>❌ Crafting without checking the calculator</li>
+                <li>❌ Selling valuable ores for quick coins</li>
+                <li>❌ Not diversifying your ore collection</li>
+            </ul>
+        </div>
+
+        <!-- CTA Boxes -->
+        <div class="cta-box">
+            <h3>🔥 Ready to Optimize Your Ore Usage?</h3>
+            <p style="margin-bottom: 1.5rem;">Use our tools to maximize your forging potential!</p>
+            <a href="/" class="cta-btn">Try The Calculator</a>
+            <a href="/codes.html" class="cta-btn">Get Free Ores</a>
+        </div>
+
+        <!-- FAQ -->
+        <div class="content-section">
+            <h3>❓ Frequently Asked Questions</h3>
+            
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">What's the rarest ore in The Forge?</h4>
+            <p>Gem ore is typically the rarest, followed by Shadow ore. These ores have the most powerful traits and modifiers.</p>
+            
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">How many ores do I need for a legendary weapon?</h4>
+            <p>It varies by weapon type, but typically 50-100 ores total, with at least 10-20% being rare ores (Gem or Shadow). Use our calculator for exact amounts!</p>
+            
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">Can I get ores from codes?</h4>
+            <p>Yes! Check our <a href="/codes.html" style="color: #ff5722; font-weight: bold;">Codes page</a> regularly for free ore rewards.</p>
+            
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">Do ore combinations affect weapon appearance?</h4>
+            <p>Yes, certain ore combinations can change the visual appearance and effects of your crafted equipment.</p>
+            
+            <h4 style="color: #ff5722; margin-top: 1.5rem;">Can I remove ores from crafted equipment?</h4>
+            <p>No, once equipment is crafted, the ores are permanently used. Always double-check your combinations before crafting!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Forge Calculator. Not affiliated with Roblox or The Forge developers.</p>
+            <p><a href="/">Home</a> | <a href="/codes.html">Codes</a> | <a href="/ore-guide.html">Ore Guide</a> | <a href="/blog.html">Blog</a> | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms-of-service.html">Terms</a></p>
+        </div>
+    </footer>
+</body>
+</html>
