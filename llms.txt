@@ -1,0 +1,23 @@
+# Roblox The Forge Calculator
+
+> Free Roblox Forge Calculator for The Forge game. An all-in-one tool designed to help players optimize ore combinations, trait setups, and weapon/armor crafting with real-time calculations.
+
+The Forge Calculator eliminates manual calculations for ore combinations and modifier multipliers. Whether you're a beginner learning the forging system or an experienced player seeking optimal builds, our tool provides instant results for all your crafting needs in The Forge Roblox game.
+
+## Core Features
+- [Calculator Tool](https://forge-calculator.com/#calculator): Real-time ore combination calculator with instant results
+- [Features](https://forge-calculator.com/#features): Weapon & armor classes, optimal ore amounts, modifier multipliers, and trait activation
+- [How to Use](https://forge-calculator.com/#how-to): Step-by-step guide for using the Roblox Forge calculator
+
+## Resources
+- [What is The Forge Calculator](https://forge-calculator.com/#what-is): Comprehensive overview of the tool and its capabilities
+- [Why Use Our Calculator](https://forge-calculator.com/#why): Benefits of using The Forge Calculator for optimal builds
+- [FAQ](https://forge-calculator.com/#faq): Frequently asked questions about The Forge Calculator
+
+## Key Information
+- **Game**: The Forge on Roblox
+- **Purpose**: Calculate optimal ore combinations for weapon and armor crafting
+- **Features**: Real-time results, modifier multipliers, trait activation status, optimal ore amounts
+- **Target Users**: Both beginners and experienced players of The Forge
+- **Cost**: Completely free to use
+- **Platform**: Web-based, works on all devices (desktop, tablet, mobile)

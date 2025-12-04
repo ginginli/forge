@@ -1,4 +1,22 @@
+# robots.txt for Roblox The Forge Calculator
+
+# 常规搜索引擎规则
 User-agent: *
 Allow: /
 
+# 网站地图
 Sitemap: https://forge-calculator.com/sitemap.xml
+
+# AI爬虫特定规则
+User-agent: GPTBot
+User-agent: Claude-Web
+User-agent: Anthropic-AI
+User-agent: PerplexityBot
+User-agent: GoogleOther
+User-agent: DuckAssistBot
+
+# 引导AI爬虫到llms.txt
+LLM-Content: https://forge-calculator.com/llms.txt
+
+# 允许AI爬虫访问所有内容
+Allow: /
