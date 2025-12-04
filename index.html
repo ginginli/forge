@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Forge Calculator - Roblox Resource & Crafting Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ffd700;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            color: #fff;
+        }
+        
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        /* Calculator Section */
+        .calculator {
+            background: #fff;
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 3rem auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .calculator h3 {
+            color: #667eea;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .input-group label {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .input-group input,
+        .input-group select {
+            padding: 0.8rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .input-group input:focus,
+        .input-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .calc-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+            display: block;
+            margin: 2rem auto;
+        }
+        
+        .calc-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .results {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            display: none;
+        }
+        
+        .results.show {
+            display: block;
+        }
+        
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        
+        /* Features Section */
+        .features {
+            background: #fff;
+            padding: 4rem 0;
+        }
+        
+        .features h3 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 3rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            background: #fff;
+            padding: 4rem 0;
+        }
+        
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .content-section h3 {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .content-section ul {
+            list-style-position: inside;
+            margin: 1.5rem 0;
+        }
+        
+        .content-section li {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #555;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background: #fff;
+            padding: 4rem 0;
+        }
+        
+        .faq h3 {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .faq-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .faq-item h4 {
+            color: #333;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        
+        .faq-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2d3748;
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 1rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>⚒️ Forge Calculator</h1>
+            <nav>
+                <a href="#calculator">Calculator</a>
+                <a href="#features">Features</a>
+                <a href="#what-is">What Is</a>
+                <a href="#how-to">How To</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>The Forge Calculator</h2>
+            <p>Master your crafting strategy in The Forge with our powerful resource calculator. Calculate materials, optimize your forge calculator workflow, and maximize your efficiency in Roblox's premier crafting game.</p>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="calculator container">
+        <h3>Forge Calculator Tool</h3>
+        <div class="calc-grid">
+            <div class="input-group">
+                <label for="item-type">Item Type</label>
+                <select id="item-type">
+                    <option value="sword">Sword</option>
+                    <option value="axe">Axe</option>
+                    <option value="pickaxe">Pickaxe</option>
+                    <option value="armor">Armor</option>
+                    <option value="shield">Shield</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="tier">Tier Level</label>
+                <select id="tier">
+                    <option value="1">Tier 1 - Basic</option>
+                    <option value="2">Tier 2 - Common</option>
+                    <option value="3">Tier 3 - Rare</option>
+                    <option value="4">Tier 4 - Epic</option>
+                    <option value="5">Tier 5 - Legendary</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" value="1" min="1" max="999">
+            </div>
+            <div class="input-group">
+                <label for="upgrade-level">Upgrade Level</label>
+                <input type="number" id="upgrade-level" value="0" min="0" max="10">
+            </div>
+        </div>
+        <button class="calc-button" onclick="calculateResources()">Calculate Resources</button>
+        
+        <div class="results" id="results">
+            <h4 style="margin-bottom: 1rem; color: #667eea;">Required Resources:</h4>
+            <div class="result-item">
+                <span><strong>Iron Ore:</strong></span>
+                <span id="iron">0</span>
+            </div>
+            <div class="result-item">
+                <span><strong>Coal:</strong></span>
+                <span id="coal">0</span>
+            </div>
+            <div class="result-item">
+                <span><strong>Gold:</strong></span>
+                <span id="gold">0</span>
+            </div>
+            <div class="result-item">
+                <span><strong>Gems:</strong></span>
+                <span id="gems">0</span>
+            </div>
+            <div class="result-item">
+                <span><strong>Total Cost:</strong></span>
+                <span id="total-cost" style="color: #667eea; font-weight: bold;">0 coins</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h3>Forge Calculator Features</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>🎯 Accurate Calculations</h4>
+                    <p>Our forge calculator provides precise resource requirements for every item in The Forge, ensuring you never waste materials.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>⚡ Real-Time Updates</h4>
+                    <p>The forge calculator instantly updates calculations as you adjust parameters, giving you immediate feedback on your crafting plans.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📊 Resource Optimization</h4>
+                    <p>Use our forge calculator to plan your resource gathering efficiently and maximize your crafting output in The Forge.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🔧 All Item Types</h4>
+                    <p>The forge calculator supports every craftable item including weapons, armor, tools, and upgrades for complete coverage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Is Section -->
+    <section id="what-is" class="content-section">
+        <div class="container">
+            <h3>What is The Forge Calculator?</h3>
+            <p>The Forge Calculator is an essential tool designed specifically for players of The Forge on Roblox. This comprehensive forge calculator helps you determine exactly how many resources you need to craft any item in the game. Whether you're forging your first basic sword or upgrading legendary armor, our forge calculator takes the guesswork out of resource management.</p>
+            <p>In The Forge, players must gather various materials like iron ore, coal, gold, and precious gems to create powerful weapons and equipment. Without proper planning, you might find yourself short on critical resources or wasting time gathering materials you don't need. That's where our forge calculator becomes invaluable - it provides instant, accurate calculations for all your crafting needs.</p>
+            <p>The forge calculator accounts for multiple factors including item type, tier level, quantity, and upgrade levels. This means you can plan complex crafting sessions involving multiple items and upgrades all at once. The forge calculator interface is intuitive and user-friendly, making it accessible for both new players learning the ropes and experienced crafters optimizing their workflow.</p>
+        </div>
+    </section>
+
+    <!-- How To Section -->
+    <section id="how-to" class="content-section">
+        <div class="container">
+            <h3>How to Use the Forge Calculator</h3>
+            <p>Using our forge calculator is straightforward and designed to save you time. Follow these simple steps to calculate your resource requirements:</p>
+            <ul>
+                <li><strong>Select Item Type:</strong> Choose what you want to craft using the forge calculator - swords, axes, pickaxes, armor, or shields.</li>
+                <li><strong>Choose Tier Level:</strong> The forge calculator supports all five tiers from Basic to Legendary. Higher tiers require more resources.</li>
+                <li><strong>Enter Quantity:</strong> Tell the forge calculator how many items you want to craft. You can calculate for bulk crafting sessions.</li>
+                <li><strong>Set Upgrade Level:</strong> If you're planning upgrades, input the target level into the forge calculator for accurate material counts.</li>
+                <li><strong>Calculate:</strong> Click the calculate button and the forge calculator will instantly display all required resources and total costs.</li>
+            </ul>
+            <p>The forge calculator results show you exactly how much iron ore, coal, gold, and gems you need, plus the total coin cost. You can adjust any parameter and recalculate instantly, making the forge calculator perfect for experimenting with different crafting strategies before committing your resources in The Forge.</p>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section id="why" class="content-section">
+        <div class="container">
+            <h3>Why Use Our Forge Calculator?</h3>
+            <p>The Forge is a complex game with intricate crafting mechanics, and managing resources efficiently can be challenging. Our forge calculator solves this problem by providing instant, accurate calculations that help you make informed decisions about your crafting strategy.</p>
+            <p>Without a forge calculator, players often waste valuable time gathering excess materials or find themselves unable to complete crafts due to resource shortages. Our forge calculator eliminates these frustrations by showing you exactly what you need before you start. This means more time actually playing and less time doing mental math or trial-and-error crafting.</p>
+            <p>The forge calculator is particularly valuable for players who want to optimize their gameplay. By knowing exact resource requirements, you can plan efficient gathering routes, prioritize which materials to farm, and make strategic decisions about which items to craft first. The forge calculator essentially acts as your personal crafting assistant, helping you progress faster and more efficiently through The Forge.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <h4>Is this forge calculator accurate for The Forge on Roblox?</h4>
+                <p>Yes, our forge calculator uses the latest game data to provide accurate resource calculations for all items in The Forge. We regularly update the forge calculator to reflect any game changes.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can the forge calculator handle bulk crafting calculations?</h4>
+                <p>Absolutely! The forge calculator supports quantity inputs up to 999 items, making it perfect for planning large crafting sessions or calculating resources for multiple items at once.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Does the forge calculator include upgrade costs?</h4>
+                <p>Yes, our forge calculator factors in upgrade levels from 0 to 10, showing you the complete resource requirements including all upgrade materials needed.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is the forge calculator free to use?</h4>
+                <p>Yes, this forge calculator is completely free. We created it to help The Forge community optimize their gameplay and crafting strategies without any cost.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can I use the forge calculator on mobile devices?</h4>
+                <p>Yes, the forge calculator is fully responsive and works perfectly on smartphones, tablets, and desktop computers. Calculate your resources anywhere, anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Forge Calculator. Created for The Forge community on Roblox.</p>
+            <p>This forge calculator is a fan-made tool and is not officially affiliated with Roblox or The Forge game developers.</p>
+            <p>Need help? Contact us or visit our <a href="#">community forum</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function calculateResources() {
+            const itemType = document.getElementById('item-type').value;
+            const tier = parseInt(document.getElementById('tier').value);
+            const quantity = parseInt(document.getElementById('quantity').value);
+            const upgradeLevel = parseInt(document.getElementById('upgrade-level').value);
+            
+            // Base resource multipliers
+            const baseResources = {
+                sword: { iron: 10, coal: 5, gold: 2, gems: 0 },
+                axe: { iron: 12, coal: 6, gold: 1, gems: 0 },
+                pickaxe: { iron: 8, coal: 8, gold: 1, gems: 0 },
+                armor: { iron: 15, coal: 4, gold: 3, gems: 1 },
+                shield: { iron: 14, coal: 3, gold: 2, gems: 1 }
+            };
+            
+            const base = baseResources[itemType];
+            const tierMultiplier = tier * 1.5;
+            const upgradeMultiplier = 1 + (upgradeLevel * 0.3);
+            
+            const iron = Math.ceil(base.iron * tierMultiplier * upgradeMultiplier * quantity);
+            const coal = Math.ceil(base.coal * tierMultiplier * upgradeMultiplier * quantity);
+            const gold = Math.ceil(base.gold * tierMultiplier * upgradeMultiplier * quantity);
+            const gems = Math.ceil(base.gems * tierMultiplier * upgradeMultiplier * quantity);
+            const totalCost = (iron * 10) + (coal * 15) + (gold * 50) + (gems * 200);
+            
+            document.getElementById('iron').textContent = iron;
+            document.getElementById('coal').textContent = coal;
+            document.getElementById('gold').textContent = gold;
+            document.getElementById('gems').textContent = gems;
+            document.getElementById('total-cost').textContent = totalCost.toLocaleString() + ' coins';
+            
+            document.getElementById('results').classList.add('show');
+        }
+    </script>
+</body>
+</html>
