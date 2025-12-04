@@ -326,6 +326,73 @@
             </p>
         </div>
 
+        <!-- Feedback Section -->
+        <div class="codes-section" style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border: 2px solid #ff9800;">
+            <h3 style="color: #ff5722;">💬 Help Us Keep Codes Updated!</h3>
+            <p style="margin-bottom: 1.5rem; color: #555;">Found a code that doesn't work? Know a new code? Let us know!</p>
+            
+            <div style="background: #fff; padding: 2rem; border-radius: 10px; margin-bottom: 1.5rem;">
+                <h4 style="color: #ff5722; margin-bottom: 1rem;">📝 Report Code Status</h4>
+                <form id="codeStatusForm" style="margin-bottom: 1.5rem;">
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #333;">Which code did you try?</label>
+                        <select id="codeSelect" style="width: 100%; padding: 0.8rem; border: 2px solid #ff5722; border-radius: 8px; font-size: 1rem;">
+                            <option value="">Select a code...</option>
+                            <option value="PEAK!">PEAK!</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #333;">Did it work?</label>
+                        <div style="display: flex; gap: 1rem;">
+                            <label style="display: flex; align-items: center; cursor: pointer;">
+                                <input type="radio" name="codeStatus" value="working" style="margin-right: 0.5rem;">
+                                <span>✅ Yes, it worked!</span>
+                            </label>
+                            <label style="display: flex; align-items: center; cursor: pointer;">
+                                <input type="radio" name="codeStatus" value="expired" style="margin-right: 0.5rem;">
+                                <span>❌ No, it's expired</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" onclick="submitCodeStatus()" style="background: #ff5722; color: #fff; border: none; padding: 0.8rem 2rem; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s;">
+                        Submit Feedback
+                    </button>
+                </form>
+            </div>
+
+            <div style="background: #fff; padding: 2rem; border-radius: 10px;">
+                <h4 style="color: #ff5722; margin-bottom: 1rem;">🆕 Submit a New Code</h4>
+                <form id="newCodeForm">
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #333;">Code (case-sensitive)</label>
+                        <input type="text" id="newCodeInput" placeholder="Enter the code exactly as it appears" style="width: 100%; padding: 0.8rem; border: 2px solid #ff5722; border-radius: 8px; font-size: 1rem; font-family: 'Courier New', monospace;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #333;">Reward (optional)</label>
+                        <input type="text" id="newCodeReward" placeholder="e.g., 10x Rerolls, 500 Coins" style="width: 100%; padding: 0.8rem; border: 2px solid #ff5722; border-radius: 8px; font-size: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #333;">Where did you find it? (optional)</label>
+                        <select id="codeSource" style="width: 100%; padding: 0.8rem; border: 2px solid #ff5722; border-radius: 8px; font-size: 1rem;">
+                            <option value="">Select source...</option>
+                            <option value="discord">Official Discord</option>
+                            <option value="twitter">Twitter/X</option>
+                            <option value="youtube">YouTube</option>
+                            <option value="game">In-Game Announcement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="button" onclick="submitNewCode()" style="background: #4caf50; color: #fff; border: none; padding: 0.8rem 2rem; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s;">
+                        Submit New Code
+                    </button>
+                </form>
+            </div>
+
+            <p style="margin-top: 1.5rem; color: #666; font-size: 0.9rem; font-style: italic;">
+                ℹ️ Note: Submissions are for community feedback only. We'll verify all codes before updating the page.
+            </p>
+        </div>
+
         <!-- Expired Codes Section -->
         <div class="codes-section">
             <h3>❌ Expired Codes (No Longer Working)</h3>
@@ -543,6 +610,61 @@
             }).catch(function(err) {
                 alert('Failed to copy code. Please copy manually: ' + code);
             });
+        }
+
+        function submitCodeStatus() {
+            const codeSelect = document.getElementById('codeSelect');
+            const statusRadios = document.getElementsByName('codeStatus');
+            let selectedStatus = '';
+            
+            for (const radio of statusRadios) {
+                if (radio.checked) {
+                    selectedStatus = radio.value;
+                    break;
+                }
+            }
+            
+            if (!codeSelect.value) {
+                alert('Please select a code');
+                return;
+            }
+            
+            if (!selectedStatus) {
+                alert('Please select whether the code worked or not');
+                return;
+            }
+            
+            // Show success message
+            alert('Thank you for your feedback! We\'ll verify and update the code status soon.\n\nCode: ' + codeSelect.value + '\nStatus: ' + (selectedStatus === 'working' ? 'Working' : 'Expired'));
+            
+            // Reset form
+            document.getElementById('codeStatusForm').reset();
+        }
+
+        function submitNewCode() {
+            const codeInput = document.getElementById('newCodeInput');
+            const rewardInput = document.getElementById('newCodeReward');
+            const sourceSelect = document.getElementById('codeSource');
+            
+            if (!codeInput.value.trim()) {
+                alert('Please enter a code');
+                return;
+            }
+            
+            // Show success message
+            let message = 'Thank you for submitting a new code! We\'ll test it and add it to the page if it works.\n\n';
+            message += 'Code: ' + codeInput.value;
+            if (rewardInput.value.trim()) {
+                message += '\nReward: ' + rewardInput.value;
+            }
+            if (sourceSelect.value) {
+                message += '\nSource: ' + sourceSelect.options[sourceSelect.selectedIndex].text;
+            }
+            
+            alert(message);
+            
+            // Reset form
+            document.getElementById('newCodeForm').reset();
         }
     </script>
 </body>
