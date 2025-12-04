@@ -7,16 +7,102 @@ Allow: /
 # 网站地图
 Sitemap: https://forge-calculator.com/sitemap.xml
 
-# AI爬虫特定规则
+# OpenAI 爬虫
 User-agent: GPTBot
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic (Claude) 爬虫
 User-agent: Claude-Web
 User-agent: Anthropic-AI
-User-agent: PerplexityBot
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI 爬虫
+User-agent: Google-Extended
 User-agent: GoogleOther
+User-agent: Bard
+User-agent: Gemini
+Allow: /
+
+# Perplexity AI 爬虫
+User-agent: PerplexityBot
+User-agent: Perplexity
+Allow: /
+
+# Meta AI 爬虫
+User-agent: FacebookBot
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# Bing AI 爬虫
+User-agent: Bingbot
+User-agent: BingPreview
+User-agent: msnbot
+Allow: /
+
+# Cohere AI 爬虫
+User-agent: cohere-ai
+Allow: /
+
+# AI2 (Allen Institute) 爬虫
+User-agent: AI2Bot
+Allow: /
+
+# Common Crawl (用于训练 AI)
+User-agent: CCBot
+Allow: /
+
+# Diffbot 爬虫
+User-agent: Diffbot
+Allow: /
+
+# Applebot (Apple AI)
+User-agent: Applebot
+User-agent: Applebot-Extended
+Allow: /
+
+# Yandex AI 爬虫
+User-agent: YandexBot
+User-agent: YaDirectFetcher
+Allow: /
+
+# Baidu AI 爬虫
+User-agent: Baiduspider
+User-agent: Baiduspider-render
+Allow: /
+
+# DuckDuckGo AI 爬虫
+User-agent: DuckDuckBot
 User-agent: DuckAssistBot
+Allow: /
+
+# You.com AI 爬虫
+User-agent: YouBot
+Allow: /
+
+# Anthropic Claude 爬虫
+User-agent: ClaudeBot
+Allow: /
+
+# Amazon AI 爬虫
+User-agent: Amazonbot
+Allow: /
+
+# Bytedance (TikTok) AI 爬虫
+User-agent: Bytespider
+Allow: /
+
+# 其他 AI 研究爬虫
+User-agent: ImagesiftBot
+User-agent: Omgilibot
+User-agent: Omgili
+User-agent: anthropic
+Allow: /
 
 # 引导AI爬虫到llms.txt
 LLM-Content: https://forge-calculator.com/llms.txt
 
-# 允许AI爬虫访问所有内容
+# 允许所有AI爬虫访问所有内容
 Allow: /
