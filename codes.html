@@ -318,7 +318,7 @@
                     <div class="code-reward">🎁 Reward: 10x Rerolls</div>
                     <span class="code-status status-active">✓ ACTIVE</span>
                 </div>
-                <button class="copy-btn" onclick="copyCode('PEAK!')">Copy Code</button>
+                <button class="copy-btn" onclick="copyCode('PEAK!', event)">Copy Code</button>
             </div>
 
             <p style="margin-top: 1.5rem; color: #666; font-style: italic;">
@@ -336,7 +336,7 @@
                 <form id="codeStatusForm" style="margin-bottom: 1.5rem;">
                     <div style="margin-bottom: 1rem;">
                         <label style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #333;">Which code did you try?</label>
-                        <select id="codeSelect" style="width: 100%; padding: 0.8rem; border: 2px solid #ff5722; border-radius: 8px; font-size: 1rem;">
+                        <select id="codeSelect" required style="width: 100%; padding: 0.8rem; border: 2px solid #ff5722; border-radius: 8px; font-size: 1rem;">
                             <option value="">Select a code...</option>
                             <option value="PEAK!">PEAK!</option>
                         </select>
@@ -345,16 +345,16 @@
                         <label style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #333;">Did it work?</label>
                         <div style="display: flex; gap: 1rem;">
                             <label style="display: flex; align-items: center; cursor: pointer;">
-                                <input type="radio" name="codeStatus" value="working" style="margin-right: 0.5rem;">
+                                <input type="radio" name="codeStatus" value="working" required style="margin-right: 0.5rem;">
                                 <span>✅ Yes, it worked!</span>
                             </label>
                             <label style="display: flex; align-items: center; cursor: pointer;">
-                                <input type="radio" name="codeStatus" value="expired" style="margin-right: 0.5rem;">
+                                <input type="radio" name="codeStatus" value="expired" required style="margin-right: 0.5rem;">
                                 <span>❌ No, it's expired</span>
                             </label>
                         </div>
                     </div>
-                    <button type="button" onclick="submitCodeStatus()" style="background: #ff5722; color: #fff; border: none; padding: 0.8rem 2rem; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s;">
+                    <button type="submit" style="background: #ff5722; color: #fff; border: none; padding: 0.8rem 2rem; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s;">
                         Submit Feedback
                     </button>
                 </form>
@@ -365,7 +365,7 @@
                 <form id="newCodeForm">
                     <div style="margin-bottom: 1rem;">
                         <label style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #333;">Code (case-sensitive)</label>
-                        <input type="text" id="newCodeInput" placeholder="Enter the code exactly as it appears" style="width: 100%; padding: 0.8rem; border: 2px solid #ff5722; border-radius: 8px; font-size: 1rem; font-family: 'Courier New', monospace;">
+                        <input type="text" id="newCodeInput" required placeholder="Enter the code exactly as it appears" style="width: 100%; padding: 0.8rem; border: 2px solid #ff5722; border-radius: 8px; font-size: 1rem; font-family: 'Courier New', monospace;">
                     </div>
                     <div style="margin-bottom: 1rem;">
                         <label style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #333;">Reward (optional)</label>
@@ -382,7 +382,7 @@
                             <option value="other">Other</option>
                         </select>
                     </div>
-                    <button type="button" onclick="submitNewCode()" style="background: #4caf50; color: #fff; border: none; padding: 0.8rem 2rem; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s;">
+                    <button type="submit" style="background: #4caf50; color: #fff; border: none; padding: 0.8rem 2rem; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s;">
                         Submit New Code
                     </button>
                 </form>
@@ -595,24 +595,70 @@
     </footer>
 
     <script>
-        function copyCode(code) {
-            navigator.clipboard.writeText(code).then(function() {
-                // Show success message
-                const btn = event.target;
-                const originalText = btn.textContent;
-                btn.textContent = '✓ Copied!';
-                btn.style.background = '#4caf50';
+        function copyCode(code, event) {
+            // Prevent default behavior
+            if (event) {
+                event.preventDefault();
+            }
+            
+            // Get the button element
+            const btn = event ? event.target : null;
+            
+            // Copy to clipboard
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(code).then(function() {
+                    // Show success message
+                    if (btn) {
+                        const originalText = btn.textContent;
+                        btn.textContent = '✓ Copied!';
+                        btn.style.background = '#4caf50';
+                        
+                        setTimeout(function() {
+                            btn.textContent = originalText;
+                            btn.style.background = '#ff5722';
+                        }, 2000);
+                    } else {
+                        alert('Code copied: ' + code);
+                    }
+                }).catch(function(err) {
+                    console.error('Copy failed:', err);
+                    alert('Failed to copy code. Please copy manually: ' + code);
+                });
+            } else {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = code;
+                textArea.style.position = 'fixed';
+                textArea.style.left = '-999999px';
+                document.body.appendChild(textArea);
+                textArea.select();
                 
-                setTimeout(function() {
-                    btn.textContent = originalText;
-                    btn.style.background = '#ff5722';
-                }, 2000);
-            }).catch(function(err) {
-                alert('Failed to copy code. Please copy manually: ' + code);
-            });
+                try {
+                    document.execCommand('copy');
+                    if (btn) {
+                        const originalText = btn.textContent;
+                        btn.textContent = '✓ Copied!';
+                        btn.style.background = '#4caf50';
+                        
+                        setTimeout(function() {
+                            btn.textContent = originalText;
+                            btn.style.background = '#ff5722';
+                        }, 2000);
+                    } else {
+                        alert('Code copied: ' + code);
+                    }
+                } catch (err) {
+                    alert('Failed to copy code. Please copy manually: ' + code);
+                }
+                
+                document.body.removeChild(textArea);
+            }
         }
 
-        function submitCodeStatus() {
+        // Handle Code Status Form
+        document.getElementById('codeStatusForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
             const codeSelect = document.getElementById('codeSelect');
             const statusRadios = document.getElementsByName('codeStatus');
             let selectedStatus = '';
@@ -624,24 +670,46 @@
                 }
             }
             
-            if (!codeSelect.value) {
-                alert('Please select a code');
+            if (!codeSelect.value || !selectedStatus) {
+                alert('Please fill in all required fields');
                 return;
             }
             
-            if (!selectedStatus) {
-                alert('Please select whether the code worked or not');
-                return;
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            try {
+                const response = await fetch('/api/feedback', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        type: 'status',
+                        code: codeSelect.value,
+                        status: selectedStatus
+                    })
+                });
+                
+                if (response.ok) {
+                    alert('Thank you for your feedback! We\'ll verify and update the code status soon.');
+                    this.reset();
+                } else {
+                    throw new Error('Failed to submit feedback');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Sorry, there was an error submitting your feedback. Please try again later.');
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
             }
-            
-            // Show success message
-            alert('Thank you for your feedback! We\'ll verify and update the code status soon.\n\nCode: ' + codeSelect.value + '\nStatus: ' + (selectedStatus === 'working' ? 'Working' : 'Expired'));
-            
-            // Reset form
-            document.getElementById('codeStatusForm').reset();
-        }
+        });
 
-        function submitNewCode() {
+        // Handle New Code Form
+        document.getElementById('newCodeForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
             const codeInput = document.getElementById('newCodeInput');
             const rewardInput = document.getElementById('newCodeReward');
             const sourceSelect = document.getElementById('codeSource');
@@ -651,21 +719,37 @@
                 return;
             }
             
-            // Show success message
-            let message = 'Thank you for submitting a new code! We\'ll test it and add it to the page if it works.\n\n';
-            message += 'Code: ' + codeInput.value;
-            if (rewardInput.value.trim()) {
-                message += '\nReward: ' + rewardInput.value;
-            }
-            if (sourceSelect.value) {
-                message += '\nSource: ' + sourceSelect.options[sourceSelect.selectedIndex].text;
-            }
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
             
-            alert(message);
-            
-            // Reset form
-            document.getElementById('newCodeForm').reset();
-        }
+            try {
+                const response = await fetch('/api/feedback', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        type: 'newCode',
+                        newCode: codeInput.value,
+                        reward: rewardInput.value,
+                        source: sourceSelect.value
+                    })
+                });
+                
+                if (response.ok) {
+                    alert('Thank you for submitting a new code! We\'ll test it and add it to the page if it works.');
+                    this.reset();
+                } else {
+                    throw new Error('Failed to submit code');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Sorry, there was an error submitting your code. Please try again later.');
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
     </script>
 </body>
 </html>
