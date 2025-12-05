@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚒️</text></svg>">
+    <meta name="description" content="The Forge Wiki - Complete knowledge base for The Forge Roblox game. Find guides, recipes, ores, weapons, armor, and more.">
+    <meta name="keywords" content="the forge wiki, forge roblox wiki, the forge guide, forge knowledge base, roblox forge encyclopedia">
+    <link rel="canonical" href="https://forge-calculator.com/wiki.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/wiki.html">
+    <meta property="og:title" content="The Forge Wiki - Complete Knowledge Base">
+    <meta property="og:description" content="Your comprehensive guide to The Forge Roblox game. Explore ores, recipes, crafting guides, and more.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://forge-calculator.com/wiki.html">
+    <meta name="twitter:title" content="The Forge Wiki - Complete Knowledge Base">
+    <meta name="twitter:description" content="Your comprehensive guide to The Forge Roblox game. Explore ores, recipes, crafting guides, and more.">
+    
+    <title>The Forge Wiki - Complete Knowledge Base</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.25rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            border-bottom: 2px solid #ff5722;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        header h1 {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        nav {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        nav a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        
+        nav a:hover {
+            color: #ff9800;
+            background: rgba(255, 152, 0, 0.1);
+        }
+        
+        /* Hero Section */
+        .wiki-hero {
+            background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem 2.5rem;
+            margin: 3rem auto 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 87, 34, 0.3);
+            text-align: center;
+        }
+        
+        .wiki-hero h2 {
+            color: #ff9800;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        
+        .wiki-hero p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.125rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Search Section */
+        .search-section {
+            background: #fff;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .search-box {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 1rem 3rem 1rem 1.5rem;
+            font-size: 1.125rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .search-box input:focus {
+            outline: none;
+            border-color: #ff5722;
+            box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.1);
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+            font-size: 1.25rem;
+        }
+        
+        .search-results {
+            margin-top: 1rem;
+            display: none;
+        }
+        
+        .search-results.active {
+            display: block;
+        }
+        
+        .search-result-item {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .search-result-item:hover {
+            background: #f5f5f5;
+        }
+        
+        .search-result-item a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        
+        .search-result-title {
+            font-weight: 600;
+            color: #ff5722;
+            margin-bottom: 0.25rem;
+        }
+        
+        .search-result-desc {
+            font-size: 0.95rem;
+            color: #666;
+        }
+        
+        /* Categories Grid */
+        .categories-section {
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .category-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(255, 87, 34, 0.1);
+        }
+        
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(255, 87, 34, 0.2);
+            border-color: #ff5722;
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            color: #ff5722;
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+        
+        .category-desc {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .category-links {
+            list-style: none;
+        }
+        
+        .category-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .category-links a {
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+        
+        .category-links a:hover {
+            background: #f5f5f5;
+            color: #ff5722;
+            padding-left: 1rem;
+        }
+        
+        .category-links a::before {
+            content: '→';
+            color: #ff5722;
+        }
+        
+        /* Quick Links */
+        .quick-links {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            border: 2px solid #ff9800;
+        }
+        
+        .quick-links h3 {
+            color: #ff5722;
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .quick-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .quick-link-btn {
+            display: block;
+            background: #fff;
+            color: #ff5722;
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quick-link-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(255, 87, 34, 0.3);
+            background: #ff5722;
+            color: #fff;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.98) 0%, rgba(45, 24, 16, 0.98) 100%);
+            backdrop-filter: blur(10px);
+            color: rgba(255, 255, 255, 0.9);
+            padding: 3rem 0 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 87, 34, 0.3);
+        }
+        
+        footer p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+        
+        footer a:hover {
+            color: #ffb74d;
+            background: rgba(255, 152, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📚 The Forge Wiki</h1>
+            <nav>
+                <a href="/">Calculator</a>
+                <a href="/ore-guide.html">Ores</a>
+                <a href="/codes.html">Codes</a>
+                <a href="/recipes.html">Recipes</a>
+                <a href="/crafting-guide.html">Crafting</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="wiki-hero">
+            <h2>📚 The Forge Knowledge Base</h2>
+            <p>Your complete guide to mastering The Forge. Explore guides, recipes, ores, and everything you need to become a legendary blacksmith.</p>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="wikiSearch" 
+                    placeholder="Search the wiki... (e.g., 'iron ore', 'legendary sword', 'crafting guide')"
+                    autocomplete="off"
+                >
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <h3>🚀 Popular Pages</h3>
+            <div class="quick-links-grid">
+                <a href="/" class="quick-link-btn">⚒️ Calculator</a>
+                <a href="/codes.html" class="quick-link-btn">🎁 Active Codes</a>
+                <a href="/recipes.html" class="quick-link-btn">📖 Recipes</a>
+                <a href="/ore-guide.html" class="quick-link-btn">🪨 Ore Guide</a>
+                <a href="/crafting-guide.html" class="quick-link-btn">🔨 Crafting Guide</a>
+                <a href="/blog-mastering-the-forge.html" class="quick-link-btn">📈 Progression Guide</a>
+            </div>
+        </div>
+
+        <!-- Categories Section -->
+        <div class="categories-section">
+            <h2 class="section-title">📑 Browse by Category</h2>
+            
+            <div class="categories-grid">
+                <!-- Getting Started -->
+                <div class="category-card">
+                    <div class="category-icon">🎮</div>
+                    <h3 class="category-title">Getting Started</h3>
+                    <p class="category-desc">New to The Forge? Start here to learn the basics.</p>
+                    <ul class="category-links">
+                        <li><a href="/blog-mastering-the-forge.html">Complete Progression Guide</a></li>
+                        <li><a href="/crafting-guide.html">How to Craft</a></li>
+                        <li><a href="/codes.html">Redeem Free Codes</a></li>
+                        <li><a href="/blog-introducing-calculator.html">Using the Calculator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Calculators -->
+                <div class="category-card">
+                    <div class="category-icon">⚒️</div>
+                    <h3 class="category-title">Tools & Calculators</h3>
+                    <p class="category-desc">Essential tools to optimize your crafting.</p>
+                    <ul class="category-links">
+                        <li><a href="/">Forge Calculator</a></li>
+                        <li><a href="/recipes.html">Recipe Database</a></li>
+                        <li><a href="/codes.html">Code Tracker</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="category-card">
+                    <div class="category-icon">🪨</div>
+                    <h3 class="category-title">Resources & Ores</h3>
+                    <p class="category-desc">Everything about ores and resource gathering.</p>
+                    <ul class="category-links">
+                        <li><a href="/ore-guide.html">Complete Ore Guide</a></li>
+                        <li><a href="/ore-guide.html#ore-types">Ore Types & Properties</a></li>
+                        <li><a href="/ore-guide.html#ore-combinations">Best Ore Combinations</a></li>
+                        <li><a href="/ore-guide.html#how-to-get">How to Obtain Ores</a></li>
+                    </ul>
+                </div>
+
+                <!-- Crafting -->
+                <div class="category-card">
+                    <div class="category-icon">🔨</div>
+                    <h3 class="category-title">Crafting & Recipes</h3>
+                    <p class="category-desc">Master the art of forging weapons and armor.</p>
+                    <ul class="category-links">
+                        <li><a href="/crafting-guide.html">Crafting Guide</a></li>
+                        <li><a href="/recipes.html">Recipe Database</a></li>
+                        <li><a href="/crafting-guide.html#strategies">Crafting Strategies</a></li>
+                        <li><a href="/crafting-guide.html#mistakes">Common Mistakes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Equipment -->
+                <div class="category-card">
+                    <div class="category-icon">⚔️</div>
+                    <h3 class="category-title">Weapons & Armor</h3>
+                    <p class="category-desc">Detailed information about equipment types.</p>
+                    <ul class="category-links">
+                        <li><a href="/recipes.html?filter=weapon">Weapon Recipes</a></li>
+                        <li><a href="/recipes.html?filter=armor">Armor Recipes</a></li>
+                        <li><a href="/recipes.html?filter=legendary">Legendary Equipment</a></li>
+                        <li><a href="/crafting-guide.html#builds">Build Types</a></li>
+                    </ul>
+                </div>
+
+                <!-- Codes & Rewards -->
+                <div class="category-card">
+                    <div class="category-icon">🎁</div>
+                    <h3 class="category-title">Codes & Rewards</h3>
+                    <p class="category-desc">Get free ores and rewards with active codes.</p>
+                    <ul class="category-links">
+                        <li><a href="/codes.html">Active Codes</a></li>
+                        <li><a href="/codes.html#expired">Expired Codes</a></li>
+                        <li><a href="/codes.html#how-to">How to Redeem</a></li>
+                        <li><a href="/codes.html#tips">Code Tips</a></li>
+                    </ul>
+                </div>
+
+                <!-- Strategies & Guides -->
+                <div class="category-card">
+                    <div class="category-icon">📈</div>
+                    <h3 class="category-title">Strategies & Tips</h3>
+                    <p class="category-desc">Advanced strategies to dominate The Forge.</p>
+                    <ul class="category-links">
+                        <li><a href="/blog-mastering-the-forge.html">Progression Guide</a></li>
+                        <li><a href="/crafting-guide.html#advanced">Advanced Tips</a></li>
+                        <li><a href="/ore-guide.html#pro-tips">Pro Tips</a></li>
+                        <li><a href="/blog.html">Strategy Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Community -->
+                <div class="category-card">
+                    <div class="category-icon">👥</div>
+                    <h3 class="category-title">Community</h3>
+                    <p class="category-desc">Connect with other players and share knowledge.</p>
+                    <ul class="category-links">
+                        <li><a href="/blog.html">Blog & Articles</a></li>
+                        <li><a href="/codes.html#feedback">Submit Codes</a></li>
+                        <li><a href="https://www.roblox.com" target="_blank">Roblox Game Page</a></li>
+                    </ul>
+                </div>
+
+                <!-- Updates -->
+                <div class="category-card">
+                    <div class="category-icon">🔔</div>
+                    <h3 class="category-title">News & Updates</h3>
+                    <p class="category-desc">Stay updated with the latest changes.</p>
+                    <ul class="category-links">
+                        <li><a href="/codes.html">Latest Codes</a></li>
+                        <li><a href="/blog.html">Recent Articles</a></li>
+                        <li><a href="/sitemap.xml">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Forge Calculator Wiki. Not affiliated with Roblox or The Forge developers.</p>
+            <p><a href="/">Home</a> | <a href="/wiki.html">Wiki</a> | <a href="/blog.html">Blog</a> | <a href="/codes.html">Codes</a> | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms-of-service.html">Terms</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Wiki search data
+        const wikiPages = [
+            // Tools
+            { title: 'Forge Calculator', url: '/', desc: 'Calculate ore combinations and preview crafting results', keywords: 'calculator tool craft preview' },
+            { title: 'Recipe Database', url: '/recipes.html', desc: 'Browse all crafting recipes for weapons and armor', keywords: 'recipes database crafting formulas' },
+            
+            // Guides
+            { title: 'Complete Progression Guide', url: '/blog-mastering-the-forge.html', desc: 'From novice to legendary blacksmith - complete progression path', keywords: 'guide progression beginner advanced master' },
+            { title: 'Crafting Guide', url: '/crafting-guide.html', desc: 'Learn how to craft weapons and armor effectively', keywords: 'crafting guide how to forge create' },
+            { title: 'Ore Guide', url: '/ore-guide.html', desc: 'Complete guide to all ore types and properties', keywords: 'ore guide types properties mining' },
+            
+            // Ores
+            { title: 'Iron Ore', url: '/ore-guide.html#iron', desc: 'Common ore perfect for beginners - provides durability', keywords: 'iron ore common basic durability' },
+            { title: 'Coal', url: '/ore-guide.html#coal', desc: 'Essential for smelting and heat resistance', keywords: 'coal ore smelting heat resistance' },
+            { title: 'Gold Ore', url: '/ore-guide.html#gold', desc: 'Rare ore that enhances equipment value', keywords: 'gold ore rare wealth coins' },
+            { title: 'Gem Ore', url: '/ore-guide.html#gem', desc: 'Extremely rare ore for legendary equipment', keywords: 'gem ore legendary rare powerful' },
+            { title: 'Crystal Ore', url: '/ore-guide.html#crystal', desc: 'Special ore with magical properties', keywords: 'crystal ore magic mana regen' },
+            { title: 'Shadow Ore', url: '/ore-guide.html#shadow', desc: 'Dark ore with stealth and critical hit bonuses', keywords: 'shadow ore dark stealth critical crit' },
+            
+            // Recipes
+            { title: 'Basic Iron Sword', url: '/recipes.html#basic-sword', desc: 'Beginner weapon recipe - 60% Iron, 30% Coal, 10% Gold', keywords: 'iron sword basic beginner weapon recipe' },
+            { title: 'Shadow Blade', url: '/recipes.html#shadow-blade', desc: 'Intermediate weapon with critical hit - 40% Iron, 40% Shadow, 20% Gold', keywords: 'shadow blade intermediate critical weapon' },
+            { title: 'Crystal Staff', url: '/recipes.html#crystal-staff', desc: 'Mage weapon with magic power - 50% Crystal, 30% Gold, 20% Iron', keywords: 'crystal staff mage magic weapon' },
+            { title: 'Legendary Sword', url: '/recipes.html#ultimate-sword', desc: 'Ultimate legendary weapon - 40% Gem, 30% Shadow, 20% Crystal, 10% Gold', keywords: 'legendary sword ultimate best weapon' },
+            
+            // Codes
+            { title: 'Active Codes', url: '/codes.html', desc: 'Get free ores and rewards with working codes', keywords: 'codes active working free rewards ores' },
+            { title: 'How to Redeem Codes', url: '/codes.html#how-to', desc: 'Step-by-step guide to redeeming codes', keywords: 'redeem codes how to tutorial' },
+            
+            // Strategies
+            { title: 'Warrior Build', url: '/crafting-guide.html#warrior', desc: 'High damage melee build strategy', keywords: 'warrior build melee damage strategy' },
+            { title: 'Mage Build', url: '/crafting-guide.html#mage', desc: 'Magic power and mana regeneration build', keywords: 'mage build magic mana strategy' },
+            { title: 'Assassin Build', url: '/crafting-guide.html#assassin', desc: 'Critical hit and stealth focused build', keywords: 'assassin build critical stealth strategy' },
+            { title: 'Tank Build', url: '/crafting-guide.html#tank', desc: 'Maximum defense and survivability build', keywords: 'tank build defense armor strategy' },
+            
+            // Blog
+            { title: 'Introducing The Calculator', url: '/blog-introducing-calculator.html', desc: 'Learn about the Forge Calculator features', keywords: 'calculator introduction features blog' },
+            { title: 'Blog Articles', url: '/blog.html', desc: 'Read strategy guides and tips', keywords: 'blog articles guides tips strategies' },
+        ];
+
+        // Search functionality
+        const searchInput = document.getElementById('wikiSearch');
+        const searchResults = document.getElementById('searchResults');
+
+        searchInput.addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase().trim();
+            
+            if (query.length < 2) {
+                searchResults.classList.remove('active');
+                searchResults.innerHTML = '';
+                return;
+            }
+
+            // Filter pages based on query
+            const results = wikiPages.filter(page => {
+                return page.title.toLowerCase().includes(query) ||
+                       page.desc.toLowerCase().includes(query) ||
+                       page.keywords.toLowerCase().includes(query);
+            }).slice(0, 8); // Limit to 8 results
+
+            if (results.length === 0) {
+                searchResults.innerHTML = '<div style="padding: 1rem; text-align: center; color: #999;">No results found. Try different keywords.</div>';
+                searchResults.classList.add('active');
+                return;
+            }
+
+            // Display results
+            searchResults.innerHTML = results.map(page => `
+                <div class="search-result-item">
+                    <a href="${page.url}">
+                        <div class="search-result-title">${highlightText(page.title, query)}</div>
+                        <div class="search-result-desc">${highlightText(page.desc, query)}</div>
+                    </a>
+                </div>
+            `).join('');
+            
+            searchResults.classList.add('active');
+        });
+
+        // Highlight matching text
+        function highlightText(text, query) {
+            const regex = new RegExp(`(${query})`, 'gi');
+            return text.replace(regex, '<strong style="background: #fff3e0; color: #ff5722;">$1</strong>');
+        }
+
+        // Close search results when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.classList.remove('active');
+            }
+        });
+
+        // Handle Enter key to go to first result
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                const firstResult = searchResults.querySelector('.search-result-item a');
+                if (firstResult) {
+                    window.location.href = firstResult.href;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
