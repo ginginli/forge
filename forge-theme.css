@@ -1,0 +1,48 @@
+/* The Forge - Unified Color Theme */
+/* 铁匠铺主题配色系统 */
+
+:root {
+    /* Forge Fire Colors - 锻造火焰 */
+    --forge-fire: #e64a19;
+    --forge-flame: #ff6f00;
+    --forge-ember: #bf360c;
+    --forge-glow: #ff8a50;
+    
+    /* Metal Colors - 金属色调 */
+    --metal-iron: #546e7a;
+    --metal-steel: #37474f;
+    --metal-silver: #90a4ae;
+    --metal-bronze: #a1887f;
+    
+    /* Background Colors - 背景色 */
+    --bg-dark: #212121;
+    --bg-darker: #1a1a1a;
+    --bg-forge: #263238;
+    --bg-surface: #2c2c2c;
+    
+    /* Text Colors */
+    --text-primary: #ffffff;
+    --text-secondary: #b0bec5;
+    --text-muted: #78909c;
+    
+    /* Legacy color mappings for compatibility */
+    --primary-orange: var(--forge-fire);
+    --primary-light: var(--forge-glow);
+    --primary-dark: var(--forge-ember);
+}
+
+/* Common Animations */
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(230, 74, 25, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(230, 74, 25, 0.6); }
+}
