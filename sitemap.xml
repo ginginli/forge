@@ -55,6 +55,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://forge-calculator.com/feedback.html</loc>
+    <lastmod>2024-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://forge-calculator.com/privacy-policy.html</loc>
     <lastmod>2024-12-04</lastmod>
     <changefreq>monthly</changefreq>
