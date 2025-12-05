@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚒️</text></svg>">
+    <meta name="description" content="The Forge Weapons Guide - Learn about all 7 weapon types in The Forge Roblox game. From Daggers to Colossal Swords.">
+    <meta name="keywords" content="the forge weapons, forge weapon types, roblox forge weapons, the forge weapon guide, colossal swords, katana, daggers">
+    <link rel="canonical" href="https://forge-calculator.com/weapons.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/weapons.html">
+    <meta property="og:title" content="The Forge Weapons - Complete Weapon Types Guide">
+    <meta property="og:description" content="Discover all 7 weapon types in The Forge. From starter Daggers to legendary Colossal Swords.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://forge-calculator.com/weapons.html">
+    <meta name="twitter:title" content="The Forge Weapons - Complete Weapon Types Guide">
+    <meta name="twitter:description" content="Discover all 7 weapon types in The Forge. From starter Daggers to legendary Colossal Swords.">
+    
+    <title>The Forge Weapons - Complete Weapon Types Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #1a1a1a 0%, #2d1810 100%);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(255, 87, 34, 0.3);
+            border-bottom: 2px solid #ff5722;
+            margin-bottom: 2rem;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            color: #fff;
+            font-size: 1.8rem;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ff9800;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 40px rgba(255, 87, 34, 0.3);
+            border: 2px solid #ff5722;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            color: #ff9800;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        
+        .content-section {
+            background: #fff;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .weapon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .weapon-card {
+            background: linear-gradient(135deg, #fff 0%, #f5f5f5 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 4px solid #ff5722;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .weapon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 87, 34, 0.3);
+        }
+        
+        .weapon-card.legendary {
+            border-left-color: #9c27b0;
+            background: linear-gradient(135deg, #fff 0%, #f3e5f5 100%);
+        }
+        
+        .weapon-card.advanced {
+            border-left-color: #673ab7;
+            background: linear-gradient(135deg, #fff 0%, #ede7f6 100%);
+        }
+        
+        .weapon-card.intermediate {
+            border-left-color: #2196f3;
+            background: linear-gradient(135deg, #fff 0%, #e3f2fd 100%);
+        }
+        
+        .weapon-card.starter {
+            border-left-color: #4caf50;
+            background: linear-gradient(135deg, #fff 0%, #e8f5e9 100%);
+        }
+        
+        .weapon-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .weapon-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff5722;
+        }
+        
+        .weapon-tier {
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .tier-starter {
+            background: #4caf50;
+            color: #fff;
+        }
+        
+        .tier-intermediate {
+            background: #2196f3;
+            color: #fff;
+        }
+        
+        .tier-advanced {
+            background: #673ab7;
+            color: #fff;
+        }
+        
+        .tier-legendary {
+            background: #9c27b0;
+            color: #fff;
+        }
+        
+        .weapon-quote {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            background: rgba(255, 152, 0, 0.1);
+            border-radius: 8px;
+            border-left: 3px solid #ff9800;
+        }
+        
+        .weapon-description {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            color: #fff;
+            margin: 2rem 0;
+        }
+        
+        .cta-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: #fff;
+            color: #ff5722;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+            margin: 0.5rem;
+        }
+        
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 2px solid #ff5722;
+            margin-top: 3rem;
+        }
+        
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>⚔️ The Forge Weapons</h1>
+            <nav>
+                <a href="/">Calculator</a>
+                <a href="/wiki.html">Wiki</a>
+                <a href="/codes.html">Codes</a>
+                <a href="/ore-guide.html">Ores</a>
+                <a href="/crafting-guide.html">Crafting</a>
+                <a href="/feedback.html">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>⚔️ Weapon Types in The Forge</h2>
+            <p>Discover all 7 weapon types and choose your path to legendary status</p>
+        </div>
+
+        <div class="content-section">
+            <h2 style="color: #ff5722; margin-bottom: 1rem;">🎮 About Weapons in The Forge</h2>
+            <p style="margin-bottom: 1rem;">The Forge features 7 distinct weapon types, each with unique characteristics and playstyles. From the reliable starter Daggers to the legendary Colossal Swords, every weapon type offers a different combat experience.</p>
+            <p>Choose your weapon based on your combat preferences, build strategy, and the ores you have available. Each weapon type has its own progression path and mastery requirements.</p>
+        </div>
+
+        <div class="content-section">
+            <h2 style="color: #ff5722; margin-bottom: 1.5rem;">⚔️ All Weapon Types</h2>
+            
+            <div class="weapon-grid">
+                <!-- Daggers -->
+                <div class="weapon-card starter">
+                    <div class="weapon-header">
+                        <div class="weapon-name">🗡️ Daggers</div>
+                        <span class="weapon-tier tier-starter">STARTER</span>
+                    </div>
+                    <div class="weapon-quote">
+                        "A simple blade yet, incredibly reliable."
+                    </div>
+                    <div class="weapon-description">
+                        Fast, reliable weapons perfect for beginners. Daggers offer quick strikes and easy handling, making them ideal for learning combat mechanics in The Forge.
+                    </div>
+                </div>
+
+                <!-- Great Swords -->
+                <div class="weapon-card intermediate">
+                    <div class="weapon-header">
+                        <div class="weapon-name">⚔️ Great Swords</div>
+                        <span class="weapon-tier tier-intermediate">INTERMEDIATE</span>
+                    </div>
+                    <div class="weapon-quote">
+                        "A Dagger can't satisfy you? This may help."
+                    </div>
+                    <div class="weapon-description">
+                        Larger and more powerful than daggers. Great Swords provide increased damage and reach for players ready to upgrade their arsenal and take on tougher challenges.
+                    </div>
+                </div>
+
+                <!-- Straight Swords -->
+                <div class="weapon-card intermediate">
+                    <div class="weapon-header">
+                        <div class="weapon-name">⚔️ Straight Swords</div>
+                        <span class="weapon-tier tier-intermediate">INTERMEDIATE</span>
+                    </div>
+                    <div class="weapon-quote">
+                        "So you truly want a worthy sword, not a dull blade... try this."
+                    </div>
+                    <div class="weapon-description">
+                        Balanced weapons that assist with more dangerous enemies. Straight Swords offer a perfect mix of speed and power for versatile combat situations.
+                    </div>
+                </div>
+
+                <!-- Katanas -->
+                <div class="weapon-card advanced">
+                    <div class="weapon-header">
+                        <div class="weapon-name">🗡️ Katanas</div>
+                        <span class="weapon-tier tier-advanced">ADVANCED</span>
+                    </div>
+                    <div class="weapon-quote">
+                        "A samurai's most trusty-worthy companion. Now in your hands."
+                    </div>
+                    <div class="weapon-description">
+                        Swift and elegant weapons favored by skilled warriors. Katanas combine speed with precision for devastating combos and require mastery to wield effectively.
+                    </div>
+                </div>
+
+                <!-- Great Hammers -->
+                <div class="weapon-card advanced">
+                    <div class="weapon-header">
+                        <div class="weapon-name">🔨 Great Hammers</div>
+                        <span class="weapon-tier tier-advanced">ADVANCED</span>
+                    </div>
+                    <div class="weapon-quote">
+                        "An incredibly strong-headed weapon, meant for those with the strength to actually swing it."
+                    </div>
+                    <div class="weapon-description">
+                        Massive weapons requiring great strength. Great Hammers deliver crushing blows with unmatched raw power, perfect for players who favor brute force.
+                    </div>
+                </div>
+
+                <!-- Gauntlets -->
+                <div class="weapon-card advanced">
+                    <div class="weapon-header">
+                        <div class="weapon-name">👊 Gauntlets</div>
+                        <span class="weapon-tier tier-advanced">ADVANCED</span>
+                    </div>
+                    <div class="weapon-quote">
+                        "Blades don't always prove your strength. Sometimes a little brute force does the trick."
+                    </div>
+                    <div class="weapon-description">
+                        Close-range combat weapons for brawlers. Gauntlets let you fight with pure brute force and rapid strikes, bringing the fight up close and personal.
+                    </div>
+                </div>
+
+                <!-- Colossal Swords -->
+                <div class="weapon-card legendary">
+                    <div class="weapon-header">
+                        <div class="weapon-name">⚔️ Colossal Swords</div>
+                        <span class="weapon-tier tier-legendary">LEGENDARY</span>
+                    </div>
+                    <div class="weapon-quote">
+                        "A powerful force, disguised as a rather large blade."
+                    </div>
+                    <div class="weapon-description">
+                        The ultimate weapons for those who have beaten luck itself. Only gifted to those who have scouted for the rarest of Ores. Colossal Swords represent the pinnacle of forging mastery and combat prowess.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <h3>🔥 Ready to Craft Your Weapon?</h3>
+            <p style="margin-bottom: 1.5rem;">Use our calculator to plan your ore combinations and create the perfect weapon!</p>
+            <a href="/" class="cta-btn">⚒️ Try Calculator</a>
+            <a href="/ore-guide.html" class="cta-btn">🪨 Ore Guide</a>
+            <a href="/codes.html" class="cta-btn">🎁 Get Free Ores</a>
+        </div>
+
+        <div class="content-section">
+            <h2 style="color: #ff5722; margin-bottom: 1rem;">💡 Weapon Selection Tips</h2>
+            <ul style="margin-left: 2rem; line-height: 2;">
+                <li><strong>Beginners:</strong> Start with Daggers to learn combat mechanics</li>
+                <li><strong>Progression:</strong> Move to Great Swords or Straight Swords as you gather better ores</li>
+                <li><strong>Specialized Builds:</strong> Katanas for speed, Great Hammers for power, Gauntlets for close combat</li>
+                <li><strong>End-Game:</strong> Work towards Colossal Swords for ultimate power</li>
+                <li><strong>Ore Planning:</strong> Use our <a href="/" style="color: #ff5722; font-weight: bold;">calculator</a> to plan your ore combinations</li>
+                <li><strong>Free Resources:</strong> Check our <a href="/codes.html" style="color: #ff5722; font-weight: bold;">codes page</a> for free ores</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Forge Calculator. Not affiliated with Roblox or The Forge developers.</p>
+            <p><a href="/">Home</a> | <a href="/wiki.html">Wiki</a> | <a href="/weapons.html">Weapons</a> | <a href="/codes.html">Codes</a> | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms-of-service.html">Terms</a></p>
+        </div>
+    </footer>
+</body>
+</html>
