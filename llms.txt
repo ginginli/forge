@@ -1,23 +1,141 @@
-# Roblox The Forge Calculator
+# The Forge - Complete Game Guide & Calculator
 
-> Free Roblox Forge Calculator for The Forge game. An all-in-one tool designed to help players optimize ore combinations, trait setups, and weapon/armor crafting with real-time calculations.
+> The most comprehensive resource for The Forge Roblox game. Free calculator, guides, codes, and complete wiki for weapons, armor, ores, races, and more.
 
-The Forge Calculator eliminates manual calculations for ore combinations and modifier multipliers. Whether you're a beginner learning the forging system or an experienced player seeking optimal builds, our tool provides instant results for all your crafting needs in The Forge Roblox game.
+## 🎮 What is The Forge?
 
-## Core Features
-- [Calculator Tool](https://forge-calculator.com/#calculator): Real-time ore combination calculator with instant results
-- [Features](https://forge-calculator.com/#features): Weapon & armor classes, optimal ore amounts, modifier multipliers, and trait activation
-- [How to Use](https://forge-calculator.com/#how-to): Step-by-step guide for using the Roblox Forge calculator
+The Forge is an immersive Roblox adventure game where you become a legendary blacksmith. Mine precious ores in dangerous caverns, craft powerful weapons and armor, battle fearsome enemies, and explore high-risk regions in your quest for glory.
 
-## Resources
-- [What is The Forge Calculator](https://forge-calculator.com/#what-is): Comprehensive overview of the tool and its capabilities
-- [Why Use Our Calculator](https://forge-calculator.com/#why): Benefits of using The Forge Calculator for optimal builds
-- [FAQ](https://forge-calculator.com/#faq): Frequently asked questions about The Forge Calculator
+**Core Gameplay**: Mining → Forging → Combat → Exploration
 
-## Key Information
-- **Game**: The Forge on Roblox
-- **Purpose**: Calculate optimal ore combinations for weapon and armor crafting
-- **Features**: Real-time results, modifier multipliers, trait activation status, optimal ore amounts
-- **Target Users**: Both beginners and experienced players of The Forge
-- **Cost**: Completely free to use
-- **Platform**: Web-based, works on all devices (desktop, tablet, mobile)
+## 🔧 Tools & Calculators
+
+### [Forge Calculator](https://forge-calculator.com/)
+Free real-time calculator for optimizing ore combinations and crafting:
+- Calculate weapon & armor classes from ore combinations
+- View optimal ore amounts for desired traits
+- See final modifier multipliers and trait strength
+- Check trait activation status
+- Preview crafting results before committing resources
+
+### [Active Codes](https://forge-calculator.com/codes.html)
+Get free ores, gold, and rewards with working codes. Updated regularly with new codes and expired code tracking.
+
+## 📚 Complete Game Guides
+
+### Weapons & Armor
+- [All Weapons Guide](https://forge-calculator.com/weapons.html): 8 weapon types - Daggers, Straight Swords, Katanas, Great Swords, Great Hammers, Great Axes, Gauntlets, Colossal Swords
+- [All Armor Guide](https://forge-calculator.com/armor.html): 15 armor pieces - Light, Medium, Heavy armor with stats and prices
+- [Weapon Stats Explained](https://forge-calculator.com/weapons.html): Damage, Attack Speed, Quality, Attack Range, Chance, Price
+- [Armor Stats Explained](https://forge-calculator.com/armor.html): Health bonuses, Chance (rarity), Base Price
+
+### Resources & Crafting
+- [Ore Guide](https://forge-calculator.com/ore-guide.html): Complete guide to all ore types, properties, and locations
+- [Recipes Database](https://forge-calculator.com/recipes.html): All crafting recipes for weapons and armor
+- [Enhancements & Runes](https://forge-calculator.com/weapons.html): Upgrade weapons with Enhancer NPC and socket runes with Runemaker
+
+### Characters & Combat
+- [All Races Guide](https://forge-calculator.com/races.html): 13 playable races with unique abilities
+  - Common: Human
+  - Uncommon: Elf, Zombie
+  - Rare: Goblin, Undead, Orc
+  - Epic: Dwarf, Shadow
+  - Legendary: Minotaur, Dragonborn, Golem
+  - Mythical: Angel, Demon
+- [Enemies Guide](https://forge-calculator.com/enemies.html): Zombies, Skeletons, Hell Skeletons, Slimes
+- [NPCs Guide](https://forge-calculator.com/npcs.html): Sensei Moro, Marbles, Miner Fred, Maria, Runemaker, Greedy Cay, Bard
+
+### Strategy & Tips
+- [Mastering The Forge](https://forge-calculator.com/blog-mastering-the-forge.html): Complete progression guide from novice to legendary blacksmith
+- [Wiki](https://forge-calculator.com/wiki.html): Comprehensive knowledge base with searchable content
+
+## 🎯 Common Player Questions
+
+**Q: How do I get started in The Forge?**
+A: Start by mining basic ores (Iron, Coal), forge your first weapon using the calculator to optimize ore combinations, and complete tutorial quests from Sensei Moro.
+
+**Q: What are the best ore combinations?**
+A: Use our [Forge Calculator](https://forge-calculator.com/) to test different ore combinations and see real-time results for your desired weapon or armor type.
+
+**Q: How do I redeem codes?**
+A: Check our [Active Codes page](https://forge-calculator.com/codes.html) for working codes and step-by-step redemption instructions.
+
+**Q: What's the best race for beginners?**
+A: Human (Common) offers balanced stats with luck and experience bonuses. For mining focus, Dwarf (Epic) is excellent. See [Races Guide](https://forge-calculator.com/races.html) for all options.
+
+**Q: How do weapon stats work?**
+A: Weapons have Damage, Attack Speed, Quality, Attack Range, Chance (rarity), and Price. Quality is determined by forge minigame performance. See [Weapon Stats Guide](https://forge-calculator.com/weapons.html).
+
+**Q: What armor should I craft?**
+A: Start with Light Armor (easy to craft), progress to Medium Armor (Samurai sets), then Heavy Armor (Knight/Dark Knight) for endgame. See [Armor Guide](https://forge-calculator.com/armor.html).
+
+**Q: How do I enhance weapons?**
+A: Talk to NPC Enhancer to spend essences and gold for upgrades. Use Runemaker to socket runes for additional buffs. See [Enhancements Guide](https://forge-calculator.com/weapons.html).
+
+**Q: Where do I find rare ores?**
+A: Rare ores are found in dangerous regions like Forgotten Kingdom and volcanic depths. Check [Ore Guide](https://forge-calculator.com/ore-guide.html) for locations.
+
+**Q: What are the weapon types?**
+A: 8 types - Daggers (starter, fast), Straight Swords (balanced), Katanas (swift), Great Swords (powerful), Great Hammers (crushing), Great Axes (sweeping), Gauntlets (brawler), Colossal Swords (legendary).
+
+**Q: How does armor affect my character?**
+A: Armor provides Health bonuses. Light Armor: +3.75-5%, Medium Armor: +6.25-12.75%, Heavy Armor: +12.5-25%. Mix types to balance survivability and rarity.
+
+## 📊 Game Mechanics
+
+### Forging System
+- Combine ores to create weapons and armor
+- Quality tiers: Broken → Poor → Worn → Average → Good → Excellent → Perfect → Masterwork
+- Quality determined by forge minigame performance
+- Each weapon/armor has unique stats based on ores used
+
+### Combat System
+- Dash and block mechanics
+- Skills and passives planned
+- Parry system available
+- PvP enabled
+- Different weapon types have different playstyles
+
+### Progression
+- Player levels increase stash capacity
+- Equipment capacity upgradeable with money
+- Trading unlocked in late game
+- World events and boss fights
+- Runes obtained from mobs, bosses, quests, achievements
+
+### Locations
+- Stonewake's Cross (starter area)
+- The Cave (early enemies)
+- Forgotten Kingdom (mid-game)
+- Volcanic Depths (endgame)
+
+## 🎁 Free Resources
+
+- **Active Codes**: [Get free ores and rewards](https://forge-calculator.com/codes.html)
+- **Calculator**: [Optimize your crafting](https://forge-calculator.com/)
+- **Wiki**: [Search all game content](https://forge-calculator.com/wiki.html)
+- **Guides**: [Learn strategies and tips](https://forge-calculator.com/blog.html)
+
+## 📱 Platform Information
+
+- **Game Platform**: Roblox (all devices)
+- **Website**: Works on desktop, tablet, mobile
+- **Cost**: Free to use, no registration required
+- **Updates**: Regular updates with new codes and game information
+
+## 🔗 Quick Links
+
+- Homepage: https://forge-calculator.com/
+- Calculator: https://forge-calculator.com/#calculator
+- Codes: https://forge-calculator.com/codes.html
+- Wiki: https://forge-calculator.com/wiki.html
+- Weapons: https://forge-calculator.com/weapons.html
+- Armor: https://forge-calculator.com/armor.html
+- Ores: https://forge-calculator.com/ore-guide.html
+- Races: https://forge-calculator.com/races.html
+- Recipes: https://forge-calculator.com/recipes.html
+- Blog: https://forge-calculator.com/blog.html
+
+---
+
+*This is a fan-made resource and is not officially affiliated with Roblox Corporation or The Forge game developers.*
