@@ -358,22 +358,79 @@
             <p>Discover the best Forge recipes for legendary weapons and armor. Browse our complete collection of The Forge recipes including beginner Forge recipes, intermediate Forge recipes, advanced Forge recipes, and legendary Forge recipes. All The Forge recipes are verified and tested by our community.</p>
         </div>
 
-        <!-- Quick Draft Feature Notice -->
-        <div style="background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%); border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 10px 40px rgba(156, 39, 176, 0.4); border: 2px solid #ce93d8;">
-            <h3 style="color: #fff; margin-bottom: 1.5rem; font-size: 1.75rem; text-align: center; font-weight: 700; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);">
-                ✨ Quick Draft Feature
-            </h3>
-            <p style="color: rgba(255, 255, 255, 0.95); line-height: 1.8; font-size: 1.1rem; text-align: center; margin-bottom: 2rem;">
-                Use the <strong style="color: #ffeb3b;">Quick Draft</strong> ability in our calculator below to automatically generate the perfect ore mix based on your desired weapon or armor type and traits!
-            </p>
-            <div style="background: rgba(255, 255, 255, 0.15); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px);">
-                <h4 style="color: #ffeb3b; font-size: 1.3rem; margin-bottom: 1rem; font-weight: 700;">How It Works:</h4>
-                <ul style="color: rgba(255, 255, 255, 0.9); line-height: 1.9; margin-left: 1.5rem; font-size: 1.05rem;">
-                    <li style="margin-bottom: 0.75rem;"><strong>1. Select Your Goal:</strong> Choose the weapon or armor type you want to craft</li>
-                    <li style="margin-bottom: 0.75rem;"><strong>2. Pick Desired Traits:</strong> Select the traits you want on your equipment</li>
-                    <li style="margin-bottom: 0.75rem;"><strong>3. Get Instant Results:</strong> Quick Draft automatically calculates the optimal ore combination</li>
-                    <li><strong>4. Start Crafting:</strong> Use the suggested ore mix in-game for best results</li>
-                </ul>
+        <!-- Weapon Crafting Guide Table -->
+        <div class="content-section" style="background: #fff; border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem;">
+            <h2>⚔️ Weapon Crafting Guide</h2>
+            <p style="margin-bottom: 2rem;">Optimal ore combinations and success rates for each weapon type.</p>
+            
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);">
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Target Weapon</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Minimum Ores</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Recommended Ores</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Ore Combination</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Success Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">🗡️ Dagger</td>
+                            <td style="padding: 1rem;">3</td>
+                            <td style="padding: 1rem; font-weight: 600;">3</td>
+                            <td style="padding: 1rem;">3x 0.2-0.5x Ores<br><span style="color: #666; font-size: 0.9rem;">(Stone, Sand Stone, Copper)</span></td>
+                            <td style="padding: 1rem; color: #4caf50; font-weight: 600;">100%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">⚔️ Straight Sword</td>
+                            <td style="padding: 1rem;">5</td>
+                            <td style="padding: 1rem; font-weight: 600;">5-6</td>
+                            <td style="padding: 1rem;">3x 0.6-1.0x + 2x 1.1-1.7x Ores</td>
+                            <td style="padding: 1rem; color: #4caf50;">65% (5 Ores)<br><span style="color: #2196f3;">86% (6 Ores)</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">👊 Gauntlet</td>
+                            <td style="padding: 1rem;">7</td>
+                            <td style="padding: 1rem; font-weight: 600;">8-9</td>
+                            <td style="padding: 1rem;">2-3x 1.1-1.7x + 5-7x 1.8-3.3x Ores</td>
+                            <td style="padding: 1rem; color: #ff9800;">54% (8 Ores)<br><span style="color: #4caf50;">65% (9 Ores)</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">🗡️ Katana</td>
+                            <td style="padding: 1rem;">9</td>
+                            <td style="padding: 1rem; font-weight: 600;">11-12</td>
+                            <td style="padding: 1rem;">1-2x 3.4-5.5x + 9-11x 1.8-3.3x Ores</td>
+                            <td style="padding: 1rem; color: #ff9800;">63% (11 Ores)<br><span style="color: #4caf50;">72% (12 Ores)</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">⚔️ Great Sword</td>
+                            <td style="padding: 1rem;">13</td>
+                            <td style="padding: 1rem; font-weight: 600;">14-16</td>
+                            <td style="padding: 1rem;">3-5x 3.4-5.5x + 10-13x 1.8-3.3x Ores</td>
+                            <td style="padding: 1rem; color: #f44336;">45% (14 Ores)<br><span style="color: #ff9800;">70% (16 Ores)</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">🪓 Great Axe</td>
+                            <td style="padding: 1rem;">16</td>
+                            <td style="padding: 1rem; font-weight: 600;">17</td>
+                            <td style="padding: 1rem;">5-7x 6.0x+ + 10-12x 3.4-5.5x Ores</td>
+                            <td style="padding: 1rem; color: #f44336; font-weight: 600;">11% (17 Ores)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; font-weight: 600; color: #9c27b0;">⚔️ Colossal Sword</td>
+                            <td style="padding: 1rem;">18</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #9c27b0;">18+</td>
+                            <td style="padding: 1rem;">8-10x 6.0x+ + 8-12x 3.4-5.5x Ores</td>
+                            <td style="padding: 1rem; color: #f44336; font-weight: 700;">&lt;1%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #ff9800; border-radius: 8px;">
+                <h4 style="color: #e65100; margin-bottom: 0.5rem; font-size: 1.1rem;">💡 Pro Tip</h4>
+                <p style="color: #555; margin: 0; line-height: 1.7;">Use the <strong>Quick Draft</strong> feature in the calculator below to automatically generate these ore combinations. Higher tier weapons require more ores and have lower success rates, but produce significantly more powerful equipment!</p>
             </div>
         </div>
 
@@ -382,12 +439,9 @@
             <h3 style="color: #ff9800; font-size: 2rem; margin-bottom: 1.5rem; text-align: center; font-weight: 700; text-shadow: 0 2px 10px rgba(255, 152, 0, 0.3);">
                 🔥 The Forge Calculator
             </h3>
-            <p style="color: rgba(255, 255, 255, 0.85); text-align: center; margin-bottom: 2rem; font-size: 1.05rem;">
-                Try the Quick Draft feature to automatically generate ore combinations for your desired equipment!
-            </p>
             <div style="width: 100%; margin: 0; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
                 <iframe 
-                    src="https://blox-informer-gachas.github.io/blox-informer-gachas/gachas/the-forge-crafting-calculator.html" 
+                    src="https://blox-informer-gachas.github.io/blox-informer-gachas/gachas/the-forge-crafting-calculator.html?quickcraft=true" 
                     style="width: 100%; height: 1400px; border: none; display: block;"
                     title="The Forge Crafting Calculator"
                     loading="lazy"
@@ -396,123 +450,7 @@
             </div>
         </div>
 
-        <!-- Info Notice -->
-        <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border: 2px solid #2196f3; border-radius: 15px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(33, 150, 243, 0.2);">
-            <h3 style="color: #1565c0; margin-bottom: 1rem; font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
-                ℹ️ Weapon Types Information
-            </h3>
-            <p style="color: #555; margin-bottom: 0.75rem; line-height: 1.6;">
-                This page contains information about the 7 weapon types available in The Forge, based on official game data. The calculator above allows you to experiment with ore combinations for crafting.
-            </p>
-            <p style="color: #555; margin: 0; font-size: 0.95rem;">
-                <strong>Last Updated:</strong> December 2025
-            </p>
-        </div>
 
-        <!-- Weapons Information Section -->
-        <div class="content-section" style="background: #fff; border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem;">
-            <h2>⚔️ Weapon Types in The Forge</h2>
-            <p style="margin-bottom: 2rem;">The Forge features 7 distinct weapon types, each with unique characteristics and playstyles. Choose your weapon based on your combat preferences and build strategy.</p>
-            
-            <div style="background: rgba(255,255,255,0.95); border-radius: 15px; padding: 2.5rem; max-width: 900px; margin: 0 auto;">
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">⚔️</div>
-                    <h3 style="color: #9c27b0; margin-bottom: 1rem; font-size: 1.75rem;">Colossal Swords</h3>
-                    <p style="color: #666; font-style: italic; font-size: 1.125rem; margin-bottom: 1.5rem;">
-                        "A powerful force, disguised as a rather large blade. Only gifted to those who have beaten luck itself and have scouted for the rarest of Ores."
-                    </p>
-                </div>
-                
-                <div style="background: #f3e5f5; border-radius: 12px; padding: 2rem; margin-bottom: 2rem;">
-                    <h4 style="color: #9c27b0; margin-bottom: 1rem; font-size: 1.25rem;">🏆 Why Colossal Swords are The Best</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #e1bee7; display: flex; align-items: start; gap: 0.75rem;">
-                            <span style="color: #9c27b0; font-size: 1.25rem;">1️⃣</span>
-                            <div>
-                                <strong style="color: #9c27b0;">Legendary Rarity</strong>
-                                <p style="margin: 0.25rem 0 0 0; color: #666; font-size: 0.95rem;">The rarest weapon type in The Forge, requiring the most valuable ores to craft</p>
-                            </div>
-                        </li>
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #e1bee7; display: flex; align-items: start; gap: 0.75rem;">
-                            <span style="color: #9c27b0; font-size: 1.25rem;">2️⃣</span>
-                            <div>
-                                <strong style="color: #9c27b0;">Massive Damage</strong>
-                                <p style="margin: 0.25rem 0 0 0; color: #666; font-size: 0.95rem;">Delivers the highest damage output of any weapon class in the game</p>
-                            </div>
-                        </li>
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid #e1bee7; display: flex; align-items: start; gap: 0.75rem;">
-                            <span style="color: #9c27b0; font-size: 1.25rem;">3️⃣</span>
-                            <div>
-                                <strong style="color: #9c27b0;">Prestige Status</strong>
-                                <p style="margin: 0.25rem 0 0 0; color: #666; font-size: 0.95rem;">Only obtainable by those who have "beaten luck itself" - a true achievement</p>
-                            </div>
-                        </li>
-                        <li style="padding: 0.75rem 0; display: flex; align-items: start; gap: 0.75rem;">
-                            <span style="color: #9c27b0; font-size: 1.25rem;">4️⃣</span>
-                            <div>
-                                <strong style="color: #9c27b0;">End-Game Dominance</strong>
-                                <p style="margin: 0.25rem 0 0 0; color: #666; font-size: 0.95rem;">The ultimate weapon for conquering the most challenging content in The Forge</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div style="background: linear-gradient(135deg, #ce93d8 0%, #ba68c8 100%); border-radius: 12px; padding: 1.5rem; text-align: center;">
-                    <p style="color: #fff; font-size: 1rem; margin: 0;">
-                        <strong>Note:</strong> Colossal Swords require the rarest ores in the game. Use our calculator to plan your ore gathering strategy!
-                    </p>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="/" style="display: inline-block; background: #fff; color: #9c27b0; padding: 1rem 2.5rem; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 1.125rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: all 0.3s;">
-                    🔥 Use Calculator to Plan Your Build →
-                </a>
-            </div>
-        </div>
-
-        <!-- Weapons Information Section -->
-        <!-- Money Making with Crafting -->
-        <div class="content-section" style="background: #fff; border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem;">
-            <h2>💰 Profitable Crafting Strategy</h2>
-            <p style="margin-bottom: 2rem;">One of the best ways to earn gold in The Forge is through strategic crafting and selling. Here's the most profitable method:</p>
-            
-            <div style="background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%); border-radius: 16px; padding: 2.5rem; color: #fff; box-shadow: 0 8px 30px rgba(33, 150, 243, 0.3);">
-                <div style="display: flex; align-items: flex-start; gap: 2rem; margin-bottom: 2rem;">
-                    <div style="background: rgba(255, 255, 255, 0.2); width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 800; flex-shrink: 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">2</div>
-                    <div style="flex: 1;">
-                        <h3 style="color: #fff; font-size: 1.75rem; margin-bottom: 1rem; font-weight: 700;">Forge & Sell Heavy Armor or Colossal Swords</h3>
-                        <p style="color: rgba(255, 255, 255, 0.95); line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem;">
-                            Craft <strong>Heavy Armor</strong> or <strong>Colossal Swords</strong> and sell them. These high-tier items fetch the <strong>best prices</strong> and are ideal for converting ores into gold.
-                        </p>
-                    </div>
-                </div>
-
-                <div style="background: rgba(255, 255, 255, 0.15); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px);">
-                    <h4 style="color: #fff; font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
-                        <span>💡</span> Why This Works
-                    </h4>
-                    <ul style="color: rgba(255, 255, 255, 0.95); line-height: 1.9; margin-left: 1.5rem; font-size: 1.05rem;">
-                        <li style="margin-bottom: 1rem;"><strong>High Sell Value:</strong> Heavy Armor and Colossal Swords sell for significantly more gold than other equipment types</li>
-                        <li style="margin-bottom: 1rem;"><strong>Ore Efficiency:</strong> Convert your mined ores into maximum profit by crafting these high-tier items</li>
-                        <li style="margin-bottom: 1rem;"><strong>Consistent Income:</strong> Reliable method for generating gold whenever you have excess ores</li>
-                        <li><strong>Market Demand:</strong> These items are always in demand, making them easy to sell to NPCs</li>
-                    </ul>
-                </div>
-
-                <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255, 235, 59, 0.2); border-radius: 12px; border-left: 4px solid #ffeb3b;">
-                    <p style="color: #fff; font-size: 1rem; margin: 0; line-height: 1.7;">
-                        <strong style="color: #ffeb3b;">Pro Tip:</strong> Use common ores for crafting items to sell - save your rare ores for your own equipment. This maximizes profit while preserving valuable resources for personal upgrades.
-                    </p>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="/" style="display: inline-block; background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); color: white; padding: 1rem 2.5rem; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 1.125rem; box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4); transition: all 0.3s;">
-                    🔥 Use Calculator to Plan Your Crafts →
-                </a>
-            </div>
-        </div>
 
         <!-- Old Recipe Grid (Hidden for now) -->
         <div class="recipe-grid" id="recipeGrid" style="display: none;">
@@ -769,133 +707,6 @@
                     <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Very High | <strong>Best For:</strong> Ultimate defense
                 </div>
                 <button class="use-recipe-btn" onclick="useRecipe('legendary-armor')">Use in Calculator →</button>
-            </div>
-        </div>
-
-        <!-- Multiplier Tiers Table -->
-        <div class="content-section" style="background: #fff; border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem;">
-            <h2>📊 Multiplier Tiers</h2>
-            <p style="margin-bottom: 2rem;">Understanding multiplier ranges helps you plan your ore combinations for desired equipment quality.</p>
-            
-            <div style="overflow-x: auto;">
-                <table style="width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
-                    <thead>
-                        <tr style="background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);">
-                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Tier (档次)</th>
-                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Multiplier Range (倍数范围)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600;">Low (低倍)</td>
-                            <td style="padding: 1rem; color: #757575;">0.2-0.5</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600;">Mid-Low (中低倍)</td>
-                            <td style="padding: 1rem; color: #4caf50;">0.6-1.0</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600;">Mid (中倍)</td>
-                            <td style="padding: 1rem; color: #2196f3;">1.1-1.7</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600;">Mid-High (中高倍)</td>
-                            <td style="padding: 1rem; color: #ff9800;">1.8-3.3</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600;">High (高倍)</td>
-                            <td style="padding: 1rem; color: #f44336;">3.4-5.5</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 1rem; font-weight: 600;">Ultra-High (超高倍)</td>
-                            <td style="padding: 1rem; color: #9c27b0; font-weight: 700;">6.0+</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- Weapon Crafting Guide Table -->
-        <div class="content-section" style="background: #fff; border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem;">
-            <h2>⚔️ Weapon Crafting Guide</h2>
-            <p style="margin-bottom: 2rem;">Optimal ore combinations and success rates for each weapon type.</p>
-            
-            <div style="overflow-x: auto;">
-                <table style="width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
-                    <thead>
-                        <tr style="background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);">
-                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Target Weapon</th>
-                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Minimum Ores</th>
-                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Recommended Ores</th>
-                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Ore Combination</th>
-                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Success Rate</th>
-                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Multiplier Range</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">🗡️ Dagger</td>
-                            <td style="padding: 1rem;">3</td>
-                            <td style="padding: 1rem; font-weight: 600;">3</td>
-                            <td style="padding: 1rem;">3x Low-Multiplier Ores<br><span style="color: #666; font-size: 0.9rem;">(Stone, Sand Stone, Copper)</span></td>
-                            <td style="padding: 1rem; color: #4caf50; font-weight: 600;">100%</td>
-                            <td style="padding: 1rem; color: #757575;">0.2-0.5</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">⚔️ Straight Sword</td>
-                            <td style="padding: 1rem;">5</td>
-                            <td style="padding: 1rem; font-weight: 600;">5-6</td>
-                            <td style="padding: 1rem;">3x Mid-Low Multiplier + 2x Mid Multiplier Ores</td>
-                            <td style="padding: 1rem; color: #4caf50;">65% (5 Ores)<br><span style="color: #2196f3;">86% (6 Ores)</span></td>
-                            <td style="padding: 1rem; color: #4caf50;">0.6-1.0</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">👊 Gauntlet</td>
-                            <td style="padding: 1rem;">7</td>
-                            <td style="padding: 1rem; font-weight: 600;">8-9</td>
-                            <td style="padding: 1rem;">2-3x Mid Multiplier + 5-7x Mid-High Multiplier Ores</td>
-                            <td style="padding: 1rem; color: #ff9800;">54% (8 Ores)<br><span style="color: #4caf50;">65% (9 Ores)</span></td>
-                            <td style="padding: 1rem; color: #2196f3;">1.1-1.7</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">🗡️ Katana</td>
-                            <td style="padding: 1rem;">9</td>
-                            <td style="padding: 1rem; font-weight: 600;">11-12</td>
-                            <td style="padding: 1rem;">1-2x High Multiplier + 9-11x Mid-High Multiplier Ores</td>
-                            <td style="padding: 1rem; color: #ff9800;">63% (11 Ores)<br><span style="color: #4caf50;">72% (12 Ores)</span></td>
-                            <td style="padding: 1rem; color: #ff9800;">1.8-3.3</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">⚔️ Great Sword</td>
-                            <td style="padding: 1rem;">13</td>
-                            <td style="padding: 1rem; font-weight: 600;">14-16</td>
-                            <td style="padding: 1rem;">3-5x High Multiplier + 10-13x Mid-High Multiplier Ores</td>
-                            <td style="padding: 1rem; color: #f44336;">45% (14 Ores)<br><span style="color: #ff9800;">70% (16 Ores)</span></td>
-                            <td style="padding: 1rem; color: #ff9800;">1.8-3.3</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">🪓 Great Axe</td>
-                            <td style="padding: 1rem;">16</td>
-                            <td style="padding: 1rem; font-weight: 600;">17</td>
-                            <td style="padding: 1rem;">5-7x Ultra-High Multiplier + 10-12x High Multiplier Ores</td>
-                            <td style="padding: 1rem; color: #f44336; font-weight: 600;">11% (17 Ores)</td>
-                            <td style="padding: 1rem; color: #f44336;">3.4-5.5</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 1rem; font-weight: 600; color: #9c27b0;">⚔️ Colossal Sword</td>
-                            <td style="padding: 1rem;">18</td>
-                            <td style="padding: 1rem; font-weight: 600; color: #9c27b0;">18+</td>
-                            <td style="padding: 1rem;">8-10x Ultra-High Multiplier + 8-12x High Multiplier Ores</td>
-                            <td style="padding: 1rem; color: #f44336; font-weight: 700;">&lt;1%</td>
-                            <td style="padding: 1rem; color: #9c27b0; font-weight: 700;">6.0+</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <div style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #ff9800; border-radius: 8px;">
-                <h4 style="color: #e65100; margin-bottom: 0.5rem; font-size: 1.1rem;">💡 Pro Tip</h4>
-                <p style="color: #555; margin: 0; line-height: 1.7;">Use the <strong>Quick Draft</strong> feature in the calculator above to automatically generate these ore combinations. Higher tier weapons require more ores and have lower success rates, but produce significantly more powerful equipment!</p>
             </div>
         </div>
 
