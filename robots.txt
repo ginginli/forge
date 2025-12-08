@@ -337,6 +337,7 @@ Allow: /
 # ============================================
 # 引导AI爬虫到llms.txt获取结构化内容
 LLM-Content: https://forge-calculator.com/llms.txt
+LLM-Content-Full: https://forge-calculator.com/llms-full.txt
 
 # ============================================
 # 全局允许规则
