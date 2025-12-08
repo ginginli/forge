@@ -1127,3 +1127,269 @@ When answering questions about The Forge:
 **Example Response Format**:
 "For [topic], here's what you need to know: [specific information]. You can find more details at [relevant link]. Pro tip: [helpful strategy]."
 
+
+
+---
+
+## 💡 QUICK TIPS FOR BEGINNERS
+
+### Tip 1: Luck Stat & Race Rerolls
+The **Luck** stat does **NOT** affect your race reroll chances. It only impacts mining drops and loot.
+
+### Tip 2: Save Your Runes
+Don't apply runes until you get the **Arcane Pickaxe**. Lower-tier pickaxes will be replaced quickly.
+
+
+## ⛏️ PICKAXE PROGRESSION GUIDE
+
+### Recommended Upgrade Path
+
+Follow this pickaxe order for optimal progression:
+
+1. **Iron Pickaxe** - Pickaxe Shop (World 1)
+2. **Stonewake's Pickaxe** - Cave (World 1)
+3. **Cobalt Pickaxe** - Pickaxe Shop (World 2)
+4. **Titanium Pickaxe** - Pickaxe Shop (World 2)
+5. **Mythril Pickaxe** - Pickaxe Shop (World 2)
+6. **Arcane Pickaxe** - Bard Quest (World 1) - **Your Ultimate Goal!**
+
+### Money-Saving Tip
+Before upgrading to your next pickaxe, buy a **Bronze Pickaxe** first. Then sell your current pickaxe to recover gold. This lets you keep mining while freeing up funds to afford the next tier faster.
+
+### Rune Tip
+Only apply runes to the **Arcane Pickaxe** – don't waste them on lower tiers. Equip all **3 Luck Runes** for maximum luck. Each Luck Rune provides up to **16% bonus** at max.
+
+### Earning Money for Arcane Pickaxe
+For a quick gold boost, complete the **Monkey Quest**, **Line's Quest**, and work on **Rowan's** and **Moro's** quests. Once those are done or hard to progress, refer to the Money Making Methods section below.
+
+
+## 💰 MONEY MAKING METHODS
+
+### Best Ways to Earn Gold
+
+#### Method 1: Farm High-Tier Mobs for Essence
+Kill high-tier enemies to collect **Essence**, then sell it for significant profit. This is one of the **most consistent gold sources** in the game.
+
+**Tip**: Focus on high-tier zones for better Essence drops and higher sell prices.
+
+#### Method 2: Forge & Sell Heavy Armor or Colossal Swords
+Craft **Heavy Armor** or **Colossal Swords** and sell them. These high-tier items fetch the **best prices** and are ideal for converting ores into gold.
+
+**Why This Works**:
+- **High Sell Value**: Heavy Armor and Colossal Swords sell for significantly more gold
+- **Ore Efficiency**: Convert your mined ores into maximum profit
+- **Consistent Income**: Reliable method for generating gold
+- **Market Demand**: These items are always in demand
+
+**Pro Tip**: Use common ores for crafting items to sell - save rare ores for your own equipment.
+
+
+## 🎫 BEST GAMEPASSES
+
+### Recommended Purchase Order
+
+#### Priority Purchases (Top 3)
+
+1. **Double Storage**
+   - Doubles your inventory capacity
+   - Lets you mine and store twice as many resources without frequent trips back
+   - **Impact**: Massive time saver
+
+2. **Fast Forge**
+   - Significantly speeds up forging time
+   - Lets you craft items faster and increase your gold-per-hour
+   - **Impact**: Increases efficiency dramatically
+
+3. **Sell Anywhere**
+   - Allows you to sell items from anywhere on the map
+   - Saves time traveling back to shops
+   - **Impact**: Major convenience upgrade
+
+#### Secondary Purchases
+
+4. **Better Forge**
+   - Essential for improving forge quality and getting better items
+   - Your first priority after the top 3
+   - **Impact**: Better equipment quality
+
+5. **Supporter**
+   - Increases your luck and xp gain by 10%
+   - **Impact**: Passive boost to progression
+
+6. **Forge Anywhere**
+   - Lets you access your forge from any location
+   - Eliminates the need to return to your base to craft
+   - **Impact**: Convenience feature
+
+### Purchase Strategy
+- **Top 3 Priority**: Double Storage, Fast Forge, and Sell Anywhere are the most impactful quality-of-life improvements
+- **Better Forge**: Essential for end-game progression and crafting high-quality equipment
+- **Supporter & Forge Anywhere**: Nice-to-have conveniences that enhance gameplay but aren't critical
+- **Budget Tip**: If you can only afford one, start with Double Storage for the biggest immediate impact
+
+
+## 📜 QUEST PRIORITY GUIDE
+
+### World 1 Priorities
+
+1. **Sensei Moro Quest** (Priority 1)
+   - Top priority in World 1
+   - Essential progression quest
+
+2. **Bard Quest** (Priority 2)
+   - Required to unlock the **Arcane Pickaxe**
+   - Critical for progression
+
+3. **Cat Quest** (Low Priority)
+   - Very low priority
+   - Locked behind Goblin King quest
+
+### World 2 Priorities
+
+1. **Sensei Moro Quest** (Priority 1)
+   - Continue as top priority in World 2
+
+2. **Masked Stranger Daily Quests** (Priority 2)
+   - High priority
+   - Complete daily for consistent rewards
+
+3. **Captain Rowan Quest** (Priority 3)
+   - Prioritize once you reach World 2
+
+4. **Line's Quest** (Priority 4)
+   - High priority
+   - Complete for good rewards
+
+5. **Monkey Quest** (Priority 5)
+   - Good for quick money
+
+6. **Goblin King Quest** (Low Priority)
+   - Very low priority
+   - Goblin Cave offers no real benefits
+
+### Quest Strategy
+- **Sensei Moro**: Always your #1 priority in both worlds - essential for main story progression
+- **Bard Quest**: Critical in World 1 - unlocks the Arcane Pickaxe
+- **Daily Quests**: Masked Stranger dailies provide consistent rewards - don't skip them
+- **Avoid Low Priority**: Cat Quest and Goblin King Quest offer minimal benefits - focus on high-priority quests first
+
+
+## 🔮 RUNES GUIDE
+
+### What Are Runes?
+Runes are enhancement items that can be socketed into equipment to provide additional stats and bonuses. They are essential for optimizing your build.
+
+### Farming Miner Runes
+Kill **Bombers** in World 2 to farm Miner Runes. These are essential for your pickaxe optimization.
+
+### Weapon Rune Optimization
+
+#### Fast Attack Speed Weapons
+Use **Lethality** substats on your runes for maximum damage output.
+
+#### Slow Attack Speed Weapons
+Use **Attack Speed** substats on your runes to compensate for slower swings.
+
+#### Universal Weapon Setup
+For all weapons, run **one Drain Rune** and **one Blast Rune** for optimal combat performance.
+
+### Armor Rune Optimization
+
+#### Best Substats
+Choose between **Vitality** (more health) or **Movement Speed** (better mobility) based on your playstyle preference.
+
+#### Recommended Rune
+**Briar Runes** are among the best options for armor slots.
+
+### Rune Recommendations by Gear
+
+| Gear | Main Runes | Sub-Stats |
+|------|-----------|-----------|
+| **Dagger** | Drain Edge + Blast Chip | Attack Speed/Lethality or Both Crit |
+| **Straight Sword** | Blast Chip + Drain Edge / Blast Chip | Attack Speed/Lethality or Both Crit |
+| **Gauntlet** | Drain Edge + Blast Chip | Attack Speed/Lethality or Both Crit |
+| **Katana** | Blast Chip + Drain Edge / Blast Chip | Attack Speed/Lethality or Both Crit |
+| **Colossal Sword** | Blast Chip + Blast Chip | Lethality |
+| **Armor** | Any Depending on Preferences | Mainly Vitality and Surge |
+| **Pickaxe** | Luck > Mine Power/Speed > Yield | N/A |
+
+### Key Rune Tips
+- **Universal Combo**: Drain + Blast is the best setup for most weapons
+- **Armor**: Briar Runes with Vitality or Movement Speed substats
+- **Pickaxe Priority**: Luck is #1, then Mine Power/Speed, then Yield
+- **Farming**: Kill Bombers in World 2 for Miner Runes
+- **Remember**: Only apply runes to Arcane Pickaxe - don't waste on lower tiers!
+
+
+## 🏆 BEST RACES BY PLAYSTYLE
+
+### Mining Focus
+1. **Angel** (1st Choice)
+   - +30% Luck Boost
+   - Best for maximizing rare ore drops
+
+2. **Dwarf** (2nd Choice)
+   - +15% Mining Damage
+   - Faster mining speed
+
+### Combat Focus
+- **Demon**
+   - Best for fighting enemies
+   - Optimal combat stats
+
+### Utility Focus
+1. **Dwarf**
+   - +5% Forge Quality
+   - Better crafting results
+
+2. **Goblin**
+   - -12% Shop Prices
+   - Save money on purchases
+
+### Quick Guide
+- **Mining Focus**: Choose Angel for maximum luck or Dwarf for faster mining
+- **Combat Focus**: Demon is your best choice for fighting enemies
+- **Economy Focus**: Goblin saves money on purchases, Dwarf improves crafting quality
+- **Balanced**: Dwarf is versatile - good for mining, utility, and crafting
+
+
+## 📊 PROFITABLE CRAFTING STRATEGY
+
+### Best Method: Forge & Sell Heavy Armor or Colossal Swords
+
+Craft **Heavy Armor** or **Colossal Swords** and sell them. These high-tier items fetch the best prices and are ideal for converting ores into gold.
+
+### Why This Works
+- **High Sell Value**: Heavy Armor and Colossal Swords sell for significantly more gold than other equipment types
+- **Ore Efficiency**: Convert your mined ores into maximum profit by crafting these high-tier items
+- **Consistent Income**: Reliable method for generating gold whenever you have excess ores
+- **Market Demand**: These items are always in demand, making them easy to sell to NPCs
+
+### Pro Tip
+Use common ores for crafting items to sell - save your rare ores for your own equipment. This maximizes profit while preserving valuable resources for personal upgrades.
+
+
+---
+
+## 📝 DOCUMENT UPDATE LOG
+
+**Version 1.1** - December 2025
+- Added Quick Tips for Beginners
+- Added Pickaxe Progression Guide
+- Added Money Making Methods
+- Added Best Gamepasses Guide
+- Added Quest Priority Guide
+- Added Runes Guide (Complete)
+- Added Best Races by Playstyle
+- Added Profitable Crafting Strategy
+
+**Version 1.0** - December 2024
+- Initial comprehensive game guide
+- Complete weapon, armor, ore, and race information
+- NPC and enemy guides
+- Active codes database
+
+---
+
+**Last Updated**: December 8, 2025
+**Maintained By**: forge-calculator.com team
