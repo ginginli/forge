@@ -31,7 +31,7 @@ Get free ores, gold, and rewards with working codes. Updated regularly with new 
 
 ### Resources & Crafting
 - [Ore Guide](https://forge-calculator.com/ore-guide.html): Complete guide to all ore types, properties, and locations
-- [Recipes Database](https://forge-calculator.com/recipes.html): All crafting recipes for weapons and armor
+- [The Forge Weapon Recipes](https://forge-calculator.com/recipes.html): Optimal ore combinations and success rates for each weapon type
 - [Enhancements & Runes](https://forge-calculator.com/weapons.html): Upgrade weapons with Enhancer NPC and socket runes with Runemaker
 
 ### Characters & Combat

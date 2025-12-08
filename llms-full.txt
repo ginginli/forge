@@ -1084,7 +1084,7 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 - **Races Guide**: https://forge-calculator.com/races.html
 - **Enemies Guide**: https://forge-calculator.com/enemies.html
 - **NPCs Guide**: https://forge-calculator.com/npcs.html
-- **Recipes**: https://forge-calculator.com/recipes.html
+- **The Forge Weapon Recipes**: https://forge-calculator.com/recipes.html
 
 ### Codes & Rewards
 - **Active Codes**: https://forge-calculator.com/codes.html
@@ -1351,24 +1351,6 @@ Choose between **Vitality** (more health) or **Movement Speed** (better mobility
 - **Combat Focus**: Demon is your best choice for fighting enemies
 - **Economy Focus**: Goblin saves money on purchases, Dwarf improves crafting quality
 - **Balanced**: Dwarf is versatile - good for mining, utility, and crafting
-
-
-## 📊 PROFITABLE CRAFTING STRATEGY
-
-### Best Method: Forge & Sell Heavy Armor or Colossal Swords
-
-Craft **Heavy Armor** or **Colossal Swords** and sell them. These high-tier items fetch the best prices and are ideal for converting ores into gold.
-
-### Why This Works
-- **High Sell Value**: Heavy Armor and Colossal Swords sell for significantly more gold than other equipment types
-- **Ore Efficiency**: Convert your mined ores into maximum profit by crafting these high-tier items
-- **Consistent Income**: Reliable method for generating gold whenever you have excess ores
-- **Market Demand**: These items are always in demand, making them easy to sell to NPCs
-
-### Pro Tip
-Use common ores for crafting items to sell - save your rare ores for your own equipment. This maximizes profit while preserving valuable resources for personal upgrades.
-
-
 ---
 
 ## 📝 DOCUMENT UPDATE LOG
@@ -1381,7 +1363,6 @@ Use common ores for crafting items to sell - save your rare ores for your own eq
 - Added Quest Priority Guide
 - Added Runes Guide (Complete)
 - Added Best Races by Playstyle
-- Added Profitable Crafting Strategy
 
 **Version 1.0** - December 2024
 - Initial comprehensive game guide
