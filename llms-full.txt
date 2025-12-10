@@ -1084,7 +1084,7 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 - **Races Guide**: https://forge-calculator.com/races.html
 - **Enemies Guide**: https://forge-calculator.com/enemies.html
 - **NPCs Guide**: https://forge-calculator.com/npcs.html
-- **The Forge Weapon Recipes**: https://forge-calculator.com/recipes.html
+- **The Forge Recipes**: https://forge-calculator.com/recipes.html
 
 ### Codes & Rewards
 - **Active Codes**: https://forge-calculator.com/codes.html
