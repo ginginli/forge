@@ -32,6 +32,9 @@ Get free ores, gold, and rewards with working codes. Updated regularly with new 
 ### Resources & Crafting
 - [Ore Guide](https://forge-calculator.com/ore-guide.html): Complete guide to all ore types, properties, and locations
 - [Stone Ore Guide](https://forge-calculator.com/stone.html): Complete guide to Stone ore - the most basic and essential ore for beginners
+- [Mythril Ore Guide](https://forge-calculator.com/mythril.html): Complete guide to Mythril ore - legendary crafting material with 15% extra defense on armor
+- [Runes & Enhancements Guide](https://forge-calculator.com/runes.html): Complete guide to the rune system - socket magical runes on weapons and armor for powerful buffs
+- [Gamepasses Guide](https://forge-calculator.com/gamepass.html): Complete guide to The Forge gamepasses, cash packs, and developer products with purchase recommendations
 - [The Forge Recipes](https://forge-calculator.com/recipes.html): Optimal ore combinations and success rates for weapons and armor
 - [Enhancements & Runes](https://forge-calculator.com/weapons.html): Upgrade weapons with Enhancer NPC and socket runes with Runemaker
 
@@ -134,6 +137,7 @@ A: Armor provides Health bonuses. Light Armor: +3.75-5%, Medium Armor: +6.25-12.
 - Armor: https://forge-calculator.com/armor.html
 - Ores: https://forge-calculator.com/ore-guide.html
 - Races: https://forge-calculator.com/races.html
+- Gamepasses: https://forge-calculator.com/gamepass.html
 - Recipes: https://forge-calculator.com/recipes.html
 - Blog: https://forge-calculator.com/blog.html
 

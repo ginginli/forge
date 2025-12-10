@@ -899,6 +899,9 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 - **Armor Guide**: https://forge-calculator.com/armor.html
 - **Ore Guide**: https://forge-calculator.com/ore-guide.html
 - **Stone Ore Guide**: https://forge-calculator.com/stone.html
+- **Mythril Ore Guide**: https://forge-calculator.com/mythril.html
+- **Runes & Enhancements Guide**: https://forge-calculator.com/runes.html
+- **Gamepasses Guide**: https://forge-calculator.com/gamepass.html
 - **Races Guide**: https://forge-calculator.com/races.html
 - **Wiki**: https://forge-calculator.com/wiki.html
 
