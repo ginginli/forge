@@ -898,6 +898,7 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 - **Weapons Guide**: https://forge-calculator.com/weapons.html
 - **Armor Guide**: https://forge-calculator.com/armor.html
 - **Ore Guide**: https://forge-calculator.com/ore-guide.html
+- **Stone Ore Guide**: https://forge-calculator.com/stone.html
 - **Races Guide**: https://forge-calculator.com/races.html
 - **Wiki**: https://forge-calculator.com/wiki.html
 

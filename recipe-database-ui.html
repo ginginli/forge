@@ -1,0 +1,784 @@
+<!-- recipe-database-ui.html -->
+<div class="recipe-database-container">
+    <div class="database-header">
+        <h2><i class="fas fa-book"></i> 锻造配方数据库</h2>
+        <div class="search-controls">
+            <input type="text" id="recipe-search" placeholder="搜索武器/护甲..." class="search-input">
+            <select id="recipe-filter" class="filter-select">
+                <option value="all">所有类型</option>
+                <option value="weapon">武器</option>
+                <option value="armor">护甲</option>
+            </select>
+            <select id="difficulty-filter" class="filter-select">
+                <option value="all">所有难度</option>
+                <option value="easy">简单</option>
+                <option value="medium">中等</option>
+                <option value="hard">困难</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="database-stats">
+        <div class="stat-card">
+            <div class="stat-label">武器配方</div>
+            <div class="stat-value" id="weapon-count">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">护甲配方</div>
+            <div class="stat-value" id="armor-count">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">总配方数</div>
+            <div class="stat-value" id="total-recipes">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">平均成功率</div>
+            <div class="stat-value" id="avg-success">0%</div>
+        </div>
+    </div>
+    
+    <div class="recipe-categories">
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="weapon">武器</button>
+            <button class="category-tab" data-category="armor">护甲</button>
+            <button class="category-tab" data-category="popular">热门配方</button>
+            <button class="category-tab" data-category="new">最新添加</button>
+        </div>
+    </div>
+    
+    <div class="recipe-grid" id="recipe-grid">
+        <!-- 配方卡片将在这里动态加载 -->
+    </div>
+    
+    <div class="recipe-detail-modal" id="recipe-detail-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="detail-title">配方详情</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body" id="detail-content">
+                <!-- 详情内容 -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.recipe-database-container {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.database-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.search-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-input, .filter-select {
+    padding: 10px 15px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    min-width: 200px;
+}
+
+.database-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, var(--primary-light), rgba(0,0,0,0.2));
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--primary-light);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.category-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.category-tab {
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-tab.active {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-color: var(--primary);
+}
+
+.category-tab:hover:not(.active) {
+    background: var(--primary-light);
+    border-color: var(--primary);
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    background: linear-gradient(145deg, #1e1e1e 0%, #2a2a2a 100%);
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glow);
+}
+
+.recipe-card.weapon {
+    border-color: var(--primary);
+}
+
+.recipe-card.armor {
+    border-color: var(--stonewake-teal);
+}
+
+.recipe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.recipe-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.recipe-type {
+    padding: 5px 10px;
+    background: var(--primary-light);
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.recipe-stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.recipe-stat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.recipe-stat i {
+    color: var(--primary);
+}
+
+.recipe-ores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.ore-tag {
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid;
+}
+
+.recipe-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.recipe-difficulty {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+.difficulty-easy {
+    background: rgba(76, 175, 80, 0.2);
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+}
+
+.difficulty-medium {
+    background: rgba(255, 152, 0, 0.2);
+    border: 1px solid #ff9800;
+    color: #ff9800;
+}
+
+.difficulty-hard {
+    background: rgba(244, 67, 54, 0.2);
+    border: 1px solid #f44336;
+    color: #f44336;
+}
+
+.recipe-success {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.recipe-detail-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-detail-modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    width: 90%;
+    border: 2px solid var(--primary);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+</style>
+
+<script>
+// 配方数据库UI控制器
+class RecipeDatabaseUI {
+    constructor() {
+        this.recipeData = null;
+        this.currentCategory = 'weapon';
+        this.currentSearch = '';
+        this.currentFilters = {};
+        this.loadDatabase();
+    }
+    
+    async loadDatabase() {
+        try {
+            // 加载recipe database JSON文件
+            const response = await fetch('recipe database');
+            this.recipeData = await response.json();
+            this.init();
+        } catch (error) {
+            console.error('Failed to load recipe database:', error);
+            // 如果加载失败，显示错误信息
+            document.getElementById('recipe-grid').innerHTML = `
+                <div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: #f44336;">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                    <p>无法加载配方数据库</p>
+                    <p style="font-size: 0.9rem; margin-top: 10px;">错误: ${error.message}</p>
+                </div>
+            `;
+        }
+    }
+    
+    init() {
+        this.renderStats();
+        this.renderRecipes();
+        this.setupEventListeners();
+    }
+    
+    renderStats() {
+        if (!this.recipeData) return;
+        
+        const weaponCount = Object.keys(this.recipeData.weapons).length;
+        const armorCount = Object.keys(this.recipeData.armors).length;
+        
+        document.getElementById('weapon-count').textContent = weaponCount;
+        document.getElementById('armor-count').textContent = armorCount;
+        document.getElementById('total-recipes').textContent = this.recipeData.metadata.total_recipes;
+        
+        // 计算平均成功率
+        const allItems = [...Object.values(this.recipeData.weapons), ...Object.values(this.recipeData.armors)];
+        const avgSuccess = allItems.length > 0 
+            ? Math.round(allItems.reduce((sum, item) => sum + item.probability, 0) / allItems.length)
+            : 0;
+        
+        document.getElementById('avg-success').textContent = `${avgSuccess}%`;
+    }
+    
+    renderRecipes() {
+        if (!this.recipeData) return;
+        
+        const grid = document.getElementById('recipe-grid');
+        grid.innerHTML = '';
+        
+        let itemsToDisplay = [];
+        
+        // 根据当前分类筛选
+        if (this.currentCategory === 'weapon') {
+            itemsToDisplay = Object.entries(this.recipeData.weapons).map(([name, data]) => ({
+                type: 'weapon',
+                name,
+                ...data
+            }));
+        } else if (this.currentCategory === 'armor') {
+            itemsToDisplay = Object.entries(this.recipeData.armors).map(([name, data]) => ({
+                type: 'armor',
+                name,
+                ...data
+            }));
+        } else if (this.currentCategory === 'popular') {
+            // 显示成功率最高的配方
+            const allItems = [
+                ...Object.entries(this.recipeData.weapons).map(([name, data]) => ({
+                    type: 'weapon',
+                    name,
+                    ...data
+                })),
+                ...Object.entries(this.recipeData.armors).map(([name, data]) => ({
+                    type: 'armor',
+                    name,
+                    ...data
+                }))
+            ];
+            
+            itemsToDisplay = allItems
+                .sort((a, b) => b.probability - a.probability)
+                .slice(0, 12);
+        }
+        
+        // 应用搜索过滤
+        if (this.currentSearch) {
+            itemsToDisplay = itemsToDisplay.filter(item =>
+                item.name.toLowerCase().includes(this.currentSearch.toLowerCase()) ||
+                item.type.toLowerCase().includes(this.currentSearch.toLowerCase())
+            );
+        }
+        
+        // 应用难度过滤
+        if (this.currentFilters.difficulty && this.currentFilters.difficulty !== 'all') {
+            itemsToDisplay = itemsToDisplay.filter(item => {
+                const recipes = item.recipes;
+                return Object.values(recipes).some(recipe => 
+                    recipe.difficulty === this.currentFilters.difficulty
+                );
+            });
+        }
+        
+        // 渲染卡片
+        itemsToDisplay.forEach(item => {
+            const recipe = item.recipes.balanced || item.recipes.budget; // 显示平衡型或经济型配方
+            
+            const card = document.createElement('div');
+            card.className = `recipe-card ${item.type}`;
+            card.dataset.item = item.name;
+            card.dataset.type = item.type;
+            
+            card.innerHTML = `
+                <div class="recipe-header">
+                    <div class="recipe-title">${item.name}</div>
+                    <div class="recipe-type">${item.type === 'weapon' ? '武器' : '护甲'}</div>
+                </div>
+                
+                <div class="recipe-stats">
+                    <div class="recipe-stat">
+                        <i class="fas fa-hashtag"></i>
+                        <span>${recipe.total_ores} 矿石</span>
+                    </div>
+                    <div class="recipe-stat">
+                        <i class="fas fa-percentage"></i>
+                        <span>${recipe.success_rate.toFixed(1)}% 成功率</span>
+                    </div>
+                    <div class="recipe-stat">
+                        <i class="fas fa-times"></i>
+                        <span>${recipe.avg_multiplier}x 乘数</span>
+                    </div>
+                </div>
+                
+                <div class="recipe-ores">
+                    ${recipe.ores.slice(0, 3).map(ore => `
+                        <div class="ore-tag" style="border-color: #ff9800">
+                            ${ore.name} ×${ore.count}
+                        </div>
+                    `).join('')}
+                    ${recipe.ores.length > 3 ? `<div class="ore-tag">+${recipe.ores.length - 3}种</div>` : ''}
+                </div>
+                
+                <div class="recipe-meta">
+                    <div class="recipe-difficulty difficulty-medium">
+                        ${recipe.name}
+                    </div>
+                    <div class="recipe-success">
+                        成功率: ${item.probability.toFixed(1)}%
+                    </div>
+                </div>
+            `;
+            
+            card.addEventListener('click', () => this.showRecipeDetail(item));
+            grid.appendChild(card);
+        });
+        
+        // 如果没有结果
+        if (itemsToDisplay.length === 0) {
+            grid.innerHTML = `
+                <div style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+                    <i class="fas fa-search" style="font-size: 3rem; color: var(--text-secondary); margin-bottom: 15px;"></i>
+                    <p style="color: var(--text-secondary);">没有找到匹配的配方</p>
+                </div>
+            `;
+        }
+    }
+    
+    showRecipeDetail(item) {
+        const modal = document.getElementById('recipe-detail-modal');
+        const content = document.getElementById('detail-content');
+        const title = document.getElementById('detail-title');
+        
+        title.textContent = `${item.name} - 锻造配方`;
+        
+        const recipes = item.recipes;
+        const variants = item.variants;
+        
+        let html = `
+            <div class="item-overview">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 20px;">
+                    <div>
+                        <h3 style="color: ${item.type === 'weapon' ? 'var(--primary)' : 'var(--stonewake-teal)'}; margin-bottom: 5px;">
+                            ${item.name}
+                        </h3>
+                        <div style="color: var(--text-secondary); margin-bottom: 10px;">
+                            类型: ${item.type === 'weapon' ? '武器' : '护甲'} | 
+                            推荐矿石数: ${item.optimal_ores}
+                        </div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div style="font-size: 1.2rem; color: var(--primary); font-weight: bold;">
+                            成功率: ${item.probability.toFixed(1)}%
+                        </div>
+                        <div style="color: var(--text-secondary); font-size: 0.9rem;">
+                            使用推荐矿石数时
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-tabs" style="margin-bottom: 20px;">
+                <div style="display: flex; gap: 10px; border-bottom: 1px solid var(--border);">
+                    ${item.recipes.budget ? '<button class="recipe-tab active" data-tab="budget">经济型</button>' : ''}
+                    ${item.recipes.balanced ? '<button class="recipe-tab' + (!item.recipes.budget ? ' active' : '') + '" data-tab="balanced">平衡型</button>' : ''}
+                    ${item.recipes.premium ? '<button class="recipe-tab" data-tab="premium">豪华型</button>' : ''}
+                </div>
+            </div>
+            
+            <div class="recipe-tab-content">
+                <!-- 选项卡内容将在JS中动态加载 -->
+            </div>
+        `;
+        
+        content.innerHTML = html;
+        
+        // 设置选项卡点击事件
+        const tabs = content.querySelectorAll('.recipe-tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                tabs.forEach(t => t.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                const tabName = e.target.dataset.tab;
+                this.loadTabContent(tabName, item, content.querySelector('.recipe-tab-content'));
+            });
+        });
+        
+        // 加载初始选项卡内容
+        this.loadTabContent('budget', item, content.querySelector('.recipe-tab-content'));
+        
+        modal.classList.add('active');
+        
+        // 关闭按钮事件
+        modal.querySelector('.close-modal').addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+        
+        // 点击外部关闭
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+    }
+    
+    loadTabContent(tabName, item, container) {
+        const recipes = item.recipes;
+        const variants = item.variants;
+        
+        switch (tabName) {
+            case 'budget':
+            case 'balanced':
+            case 'premium':
+                const recipe = recipes[tabName];
+                container.innerHTML = this.renderRecipeDetail(recipe, tabName);
+                break;
+                
+            case 'variants':
+                container.innerHTML = this.renderVariants(variants, item.type);
+                break;
+        }
+    }
+    
+    renderRecipeDetail(recipe, type) {
+        const typeNames = {
+            budget: '经济型',
+            balanced: '平衡型',
+            premium: '豪华型'
+        };
+        
+        return `
+            <div>
+                <h4 style="color: var(--text-secondary); margin-bottom: 15px;">
+                    ${typeNames[type]}配方
+                </h4>
+                
+                <div style="background: rgba(0,0,0,0.2); border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+                    <p style="color: var(--text); margin-bottom: 15px;">${recipe.description}</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px;">
+                        <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px;">
+                            <div style="color: var(--text-secondary); font-size: 0.9rem;">预估成本</div>
+                            <div style="color: gold; font-size: 1.2rem; font-weight: bold;">$${recipe.estimatedCost}</div>
+                        </div>
+                        <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px;">
+                            <div style="color: var(--text-secondary); font-size: 0.9rem;">平均乘数</div>
+                            <div style="color: var(--primary); font-size: 1.2rem; font-weight: bold;">${recipe.avgMultiplier}x</div>
+                        </div>
+                        <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px;">
+                            <div style="color: var(--text-secondary); font-size: 0.9rem;">成功率</div>
+                            <div style="color: var(--success); font-size: 1.2rem; font-weight: bold;">${recipe.successProbability.toFixed(1)}%</div>
+                        </div>
+                    </div>
+                    
+                    <h5 style="color: var(--text-secondary); margin-bottom: 10px;">矿石组合:</h5>
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;">
+                        ${recipe.oreMix.map(ore => `
+                            <div style="display: flex; justify-content: space-between; align-items: center; 
+                                 background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; 
+                                 border-left: 4px solid ${this.getOreColor(ore.name)};">
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <i class="fas fa-gem" style="color: ${this.getOreColor(ore.name)};"></i>
+                                    <div>
+                                        <div style="font-weight: bold; color: ${this.getOreColor(ore.name)};">${ore.name}</div>
+                                        <div style="color: var(--text-secondary); font-size: 0.8rem;">
+                                            ${ore.multiplier}x • ${ore.rarity}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="text-align: right;">
+                                    <div style="font-size: 1.2rem; font-weight: bold;">${ore.count} 个</div>
+                                    <div style="color: var(--text-secondary); font-size: 0.8rem;">${ore.percentage}%</div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    
+                    ${recipe.traits.length > 0 ? `
+                        <h5 style="color: var(--text-secondary); margin-bottom: 10px;">激活特性:</h5>
+                        <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;">
+                            ${recipe.traits.map(trait => `
+                                <div style="background: var(--primary-light); padding: 12px; border-radius: 8px; border: 1px solid var(--primary);">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                                        <div style="font-weight: bold; color: var(--primary);">${trait.oreName}</div>
+                                        <div style="font-size: 0.8rem; padding: 2px 8px; background: var(--primary-light); border-radius: 10px;">
+                                            ${trait.percentage}% • ${trait.effectiveness}
+                                        </div>
+                                    </div>
+                                    <div style="color: var(--text-secondary); font-size: 0.9rem;">${trait.description}</div>
+                                    <div style="color: var(--text); font-size: 0.8rem; margin-top: 5px;">效果: ${trait.valueRange}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+                    
+                    <h5 style="color: var(--text-secondary); margin-bottom: 10px;">使用建议:</h5>
+                    <div style="background: var(--primary-light); padding: 15px; border-radius: 8px;">
+                        <ul style="margin: 0; padding-left: 20px; color: var(--text);">
+                            ${recipe.tips.map(tip => `<li style="margin-bottom: 5px;">${tip}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <button class="apply-recipe-btn" style="padding: 12px 30px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); 
+                           color: white; border: none; border-radius: 25px; font-weight: bold; cursor: pointer;"
+                           data-recipe='${JSON.stringify(recipe)}'>
+                        <i class="fas fa-hammer"></i> 应用此配方到锻造界面
+                    </button>
+                </div>
+            </div>
+        `;
+    }
+    
+    renderVariants(variants, itemType) {
+        if (!variants || Object.keys(variants).length === 0) {
+            return `
+                <div style="text-align: center; padding: 40px; color: var(--text-secondary);">
+                    <i class="fas fa-info-circle" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                    <p>此物品没有区域特定变体</p>
+                </div>
+            `;
+        }
+        
+        let html = `
+            <h4 style="color: var(--text-secondary); margin-bottom: 20px;">
+                区域特定变体
+            </h4>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        `;
+        
+        Object.entries(variants).forEach(([area, areaVariants]) => {
+            const areaName = area === 'kingdom' ? '遗忘王国' : '石醒十字';
+            const areaColor = area === 'kingdom' ? 'var(--primary)' : 'var(--stonewake-teal)';
+            
+            html += `
+                <div style="background: rgba(0,0,0,0.2); border-radius: 10px; padding: 20px; border: 1px solid ${areaColor};">
+                    <h5 style="color: ${areaColor}; margin-bottom: 15px;">
+                        <i class="fas fa-map-marker-alt"></i> ${areaName}
+                    </h5>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        ${areaVariants.map(variant => `
+                            <div style="display: flex; justify-content: space-between; align-items: center; 
+                                 padding: 10px; background: rgba(0,0,0,0.3); border-radius: 8px;">
+                                <div style="font-weight: bold; color: var(--text);">${variant.name}</div>
+                                <div style="display: flex; gap: 10px; align-items: center;">
+                                    <div style="color: ${areaColor}; font-weight: bold; background: ${areaColor}20; 
+                                         padding: 2px 8px; border-radius: 10px;">
+                                        ${variant.chance}
+                                    </div>
+                                    <div style="color: var(--text-secondary); font-size: 0.8rem;">
+                                        ${(variant.probability * 100).toFixed(1)}%
+                                    </div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    
+                    <div style="margin-top: 15px; color: var(--text-secondary); font-size: 0.9rem;">
+                        提示: 在${areaName}使用推荐配方，将有机会获得以上变体
+                    </div>
+                </div>
+            `;
+        });
+        
+        html += `</div>`;
+        return html;
+    }
+    
+    getOreColor(oreName) {
+        const ore = this.db.oreData.find(o => o.name === oreName);
+        return ore ? ore.color : 'var(--text-secondary)';
+    }
+    
+    getDifficultyText(difficulty) {
+        const texts = {
+            easy: '简单',
+            medium: '中等',
+            hard: '困难'
+        };
+        return texts[difficulty] || difficulty;
+    }
+    
+    setupEventListeners() {
+        // 分类选项卡
+        document.querySelectorAll('.category-tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+                e.target.classList.add('active');
+                this.currentCategory = e.target.dataset.category;
+                this.renderRecipes();
+            });
+        });
+        
+        // 搜索
+        document.getElementById('recipe-search').addEventListener('input', (e) => {
+            this.currentSearch = e.target.value;
+            this.renderRecipes();
+        });
+        
+        // 难度过滤
+        document.getElementById('difficulty-filter').addEventListener('change', (e) => {
+            this.currentFilters.difficulty = e.target.value;
+            this.renderRecipes();
+        });
+        
+        // 类型过滤
+        document.getElementById('recipe-filter').addEventListener('change', (e) => {
+            this.currentCategory = e.target.value === 'all' ? 'weapon' : e.target.value;
+            this.renderRecipes();
+        });
+    }
+}
+
+// 初始化
+const recipeDBUI = new RecipeDatabaseUI();
+</script>

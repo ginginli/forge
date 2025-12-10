@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "name": "The Forge 锻造配方数据库",
+    "version": "1.0",
+    "last_updated": "2024-01-15",
+    "total_recipes": 189,
+    "description": "基于游戏数据和概率系统生成的推荐配方"
+  },
+  "weapons": {
+    "Dagger": {
+      "optimal_ores": 3,
+      "probability": 100.0,
+      "recipes": {
+        "budget": {
+          "name": "新手匕首配方",
+          "ores": [
+            { "name": "Stone", "count": 3, "percentage": 100 }
+          ],
+          "total_ores": 3,
+          "avg_multiplier": 0.20,
+          "success_rate": 100.0,
+          "cost": 30,
+          "traits": [],
+          "description": "最简单的匕首配方，100%成功率"
+        },
+        "balanced": {
+          "name": "平衡匕首配方",
+          "ores": [
+            { "name": "Gold", "count": 2, "percentage": 66.7 },
+            { "name": "Rivalite", "count": 1, "percentage": 33.3 }
+          ],
+          "total_ores": 3,
+          "avg_multiplier": 1.44,
+          "success_rate": 100.0,
+          "cost": 5150,
+          "traits": [
+            {
+              "ore": "Rivalite",
+              "effect": "+20%暴击率",
+              "percentage": 33.3,
+              "activation": "完全激活"
+            }
+          ],
+          "description": "带暴击特性的匕首，适合早期游戏"
+        }
+      }
+    },
+    "Straight Sword": {
+      "optimal_ores": 6,
+      "probability": 65.0,
+      "recipes": {
+        "budget": {
+          "name": "经济直剑配方",
+          "ores": [
+            { "name": "Iron", "count": 3, "percentage": 50 },
+            { "name": "Gold", "count": 3, "percentage": 50 }
+          ],
+          "total_ores": 6,
+          "avg_multiplier": 0.5,
+          "success_rate": 86.0,
+          "cost": 180,
+          "traits": [],
+          "description": "低成本获得直剑，适合过渡期"
+        }
+      }
+    },
+    "Colossal Sword": {
+      "optimal_ores": 36,
+      "probability": 49.0,
+      "recipes": {
+        "premium": {
+          "name": "传说巨剑配方",
+          "ores": [
+            { "name": "Arcane Crystal", "count": 12, "percentage": 33.3 },
+            { "name": "Rivalite", "count": 10, "percentage": 27.8 },
+            { "name": "Magmaite", "count": 9, "percentage": 25.0 },
+            { "name": "Eye Ore", "count": 5, "percentage": 13.9 }
+          ],
+          "total_ores": 36,
+          "avg_multiplier": 5.42,
+          "success_rate": 49.0,
+          "cost": 378000,
+          "traits": [
+            {
+              "ore": "Rivalite",
+              "effect": "+20%暴击率",
+              "percentage": 27.8,
+              "activation": "接近最大"
+            },
+            {
+              "ore": "Magmaite",
+              "effect": "造成50%武器伤害的爆炸",
+              "percentage": 25.0,
+              "activation": "基础激活"
+            },
+            {
+              "ore": "Eye Ore",
+              "effect": "+15%物伤/-10%生命",
+              "percentage": 13.9,
+              "activation": "基础激活"
+            }
+          ],
+          "description": "顶级巨剑配方，最大化伤害和特性"
+        }
+      }
+    }
+  },
+  "armors": {
+    "Light Chestplate": {
+      "optimal_ores": 10,
+      "probability": 53.0,
+      "recipes": {
+        "balanced": {
+          "name": "平衡轻型胸甲",
+          "ores": [
+            { "name": "Obsidian", "count": 4, "percentage": 40 },
+            { "name": "Mythril", "count": 3, "percentage": 30 },
+            { "name": "Lightite", "count": 3, "percentage": 30 }
+          ],
+          "total_ores": 10,
+          "avg_multiplier": 2.84,
+          "success_rate": 53.0,
+          "cost": 12850,
+          "traits": [
+            {
+              "ore": "Obsidian",
+              "effect": "+30%额外生命值",
+              "percentage": 40.0,
+              "activation": "完全激活"
+            },
+            {
+              "ore": "Mythril",
+              "effect": "+15%额外生命值",
+              "percentage": 30.0,
+              "activation": "完全激活"
+            },
+            {
+              "ore": "Lightite",
+              "effect": "+15%移动速度",
+              "percentage": 30.0,
+              "activation": "完全激活"
+            }
+          ],
+          "description": "高生命值+高移速的轻型护甲"
+        }
+      }
+    }
+  }
+}
