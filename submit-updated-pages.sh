@@ -10,12 +10,12 @@ KEY_LOCATION="https://forge-calculator.com/599a0d628c834338ac489c0192d9915e.txt"
 # 刚刚修复的页面列表
 UPDATED_URLS=(
     "https://forge-calculator.com/npcs.html"
-    "https://forge-calculator.com/races.html"
+    "https://forge-calculator.com/wiki/races.html"
     "https://forge-calculator.com/enemies.html"
     "https://forge-calculator.com/recipe-viewer.html"
-    "https://forge-calculator.com/recipe-database-ui.html"
-    "https://forge-calculator.com/blog-introducing-calculator-print.html"
-    "https://forge-calculator.com/generate-recipes.html"
+    "https://forge-calculator.com/recipes/recipe-database-ui.html"
+    "https://forge-calculator.com/blog/introducing-calculator-print.html"
+    "https://forge-calculator.com/generate-recipes/"
     "https://forge-calculator.com/sitemap.xml"
 )
 

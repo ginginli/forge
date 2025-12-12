@@ -19,16 +19,16 @@ Run the provided script:
 
 ## All URLs to Submit:
 - https://forge-calculator.com/
-- https://forge-calculator.com/wiki.html
+- https://forge-calculator.com/wiki/
 - https://forge-calculator.com/codes.html
-- https://forge-calculator.com/recipes.html
-- https://forge-calculator.com/ore-guide.html
+- https://forge-calculator.com/recipes/
+- https://forge-calculator.com/ore/
 - https://forge-calculator.com/weapons.html
 - https://forge-calculator.com/races.html
 - https://forge-calculator.com/enemies.html
 - https://forge-calculator.com/npcs.html
 - https://forge-calculator.com/feedback.html
-- https://forge-calculator.com/blog.html
+- https://forge-calculator.com/blog/
 - https://forge-calculator.com/blog-mastering-the-forge.html
 - https://forge-calculator.com/blog-introducing-calculator.html
 - https://forge-calculator.com/privacy-policy.html

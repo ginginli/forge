@@ -802,7 +802,10 @@ A: Daggers are the starter weapon - fast, reliable, and perfect for learning com
 A: Mine better ores, use the calculator to optimize combinations, practice forge minigames for higher quality, and enhance equipment with Enhancer NPC.
 
 **Q: What are the best ore combinations?**
-A: Use the Forge Calculator at https://forge-calculator.com/ to test combinations and see real-time results for your desired equipment.
+A: Use the Forge Calculator at https://forge-calculator.com/ to test combinations and see real-time results for your desired equipment. For proven recipes, check our Best Recipes guide at https://forge-calculator.com/recipes/best-recipes.html with top-rated weapon and armor recipes organized by game stage (Earlygame, Midgame, Lategame, Endgame).
+
+**Q: What are the best recipes for each game stage?**
+A: **Earlygame**: 9 Lapis Lazuli for Gauntlets (1.3x DPS). **Midgame**: 7 Eye Ore + 3 Rivalite for mixed weapons (4.807x DPS). **Lategame**: 4 Lightite + 3 Eye Ore + 3 Rivalite (5.4591x DPS). **Endgame**: 7 Darkryte + 3 Magmaite (6.94425x DPS). See full details at https://forge-calculator.com/recipes/best-recipes.html
 
 **Q: How do I enhance weapons?**
 A: Talk to Enhancer NPC, spend essences and gold to upgrade. Each upgrade improves stats and may add rune slots.
@@ -897,13 +900,14 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 #### Complete Guides
 - **Weapons Guide**: https://forge-calculator.com/weapons.html
 - **Armor Guide**: https://forge-calculator.com/armor.html
-- **Ore Guide**: https://forge-calculator.com/ore-guide.html
-- **Stone Ore Guide**: https://forge-calculator.com/stone.html
-- **Mythril Ore Guide**: https://forge-calculator.com/mythril.html
-- **Runes & Enhancements Guide**: https://forge-calculator.com/runes.html
-- **Gamepasses Guide**: https://forge-calculator.com/gamepass.html
-- **Races Guide**: https://forge-calculator.com/races.html
-- **Wiki**: https://forge-calculator.com/wiki.html
+- **Ore Guide**: https://forge-calculator.com/ore/
+- **Stone Ore Guide**: https://forge-calculator.com/ore/stone.html
+- **Mythril Ore Guide**: https://forge-calculator.com/ore/mythril.html
+- **Runes & Enhancements Guide**: https://forge-calculator.com/wiki/runes.html
+- **Gamepasses Guide**: https://forge-calculator.com/wiki/gamepass.html
+- **Races Guide**: https://forge-calculator.com/wiki/races.html
+- **Best Recipes Guide**: https://forge-calculator.com/recipes/best-recipes.html
+- **Wiki**: https://forge-calculator.com/wiki/
 
 #### Active Codes
 - **Codes Page**: https://forge-calculator.com/codes.html
@@ -912,7 +916,7 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 
 #### Strategy Guides
 - **Mastering The Forge**: https://forge-calculator.com/blog-mastering-the-forge.html
-- **Blog**: https://forge-calculator.com/blog.html
+- **Blog**: https://forge-calculator.com/blog/
 
 
 ## 💡 TIPS & STRATEGIES
@@ -1081,14 +1085,15 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 - **Calculator Direct**: https://forge-calculator.com/#calculator
 
 ### Complete Guides
-- **Wiki**: https://forge-calculator.com/wiki.html
+- **Wiki**: https://forge-calculator.com/wiki/
 - **Weapons Guide**: https://forge-calculator.com/weapons.html
 - **Armor Guide**: https://forge-calculator.com/armor.html
-- **Ore Guide**: https://forge-calculator.com/ore-guide.html
-- **Races Guide**: https://forge-calculator.com/races.html
-- **Enemies Guide**: https://forge-calculator.com/enemies.html
-- **NPCs Guide**: https://forge-calculator.com/npcs.html
-- **The Forge Recipes**: https://forge-calculator.com/recipes.html
+- **Ore Guide**: https://forge-calculator.com/ore/
+- **Races Guide**: https://forge-calculator.com/wiki/races.html
+- **Enemies Guide**: https://forge-calculator.com/wiki/enemies.html
+- **NPCs Guide**: https://forge-calculator.com/wiki/npcs.html
+- **The Forge Recipes**: https://forge-calculator.com/recipes/
+- **Best Recipes**: https://forge-calculator.com/recipes/best-recipes.html
 
 ### Codes & Rewards
 - **Active Codes**: https://forge-calculator.com/codes.html
@@ -1096,7 +1101,7 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 
 ### Strategy & Tips
 - **Mastering The Forge**: https://forge-calculator.com/blog-mastering-the-forge.html
-- **Blog Articles**: https://forge-calculator.com/blog.html
+- **Blog Articles**: https://forge-calculator.com/blog/
 - **Calculator Introduction**: https://forge-calculator.com/blog-introducing-calculator.html
 
 ### Community
@@ -1376,5 +1381,152 @@ Choose between **Vitality** (more health) or **Movement Speed** (better mobility
 
 ---
 
-**Last Updated**: December 8, 2025
-**Maintained By**: forge-calculator.com team
+## 🇷🇺 РУССКАЯ ВЕРСИЯ / RUSSIAN VERSION
+
+# The Forge - Полное руководство по игре (Roblox)
+
+## 🎮 О игре The Forge
+
+The Forge - это захватывающая приключенческая игра в Roblox, где игроки становятся легендарными кузнецами. Основная цель - добывать руды, создавать мощное оружие и броню, сражаться с врагами и исследовать опасные регионы.
+
+### Основной игровой цикл:
+1. **Добыча руд** - исследуйте пещеры и опасные зоны
+2. **Ковка** - создавайте оружие и броню из добытых материалов  
+3. **Бой** - сражайтесь с врагами и боссами
+4. **Исследование** - открывайте новые локации и секреты
+
+## 🔧 Бесплатные инструменты
+
+### Калькулятор Forge (https://forge-calculator.com/)
+- **Расчет комбинаций руд** - оптимизируйте крафт для получения желаемого результата
+- **Предварительный просмотр** - видите результат до траты ресурсов
+- **База данных** - полная информация о всех предметах игры
+- **Мобильная версия** - работает на всех устройствах
+
+### Активные коды (https://forge-calculator.com/codes.html)
+- Бесплатные руды и золото
+- Регулярные обновления новых кодов
+- Пошаговые инструкции по активации
+
+## ⚔️ Оружие и броня
+
+### Типы оружия (8 видов):
+1. **Кинжалы** - быстрые, для новичков
+2. **Прямые мечи** - сбалансированные
+3. **Катаны** - быстрые и элегантные
+4. **Большие мечи** - мощные двуручные
+5. **Большие молоты** - дробящие атаки
+6. **Большие топоры** - широкие удары
+7. **Перчатки** - рукопашный бой
+8. **Колоссальные мечи** - легендарное оружие
+
+### Типы брони (3 категории):
+- **Легкая броня** - +3.75-5% здоровья, легко создать
+- **Средняя броня** - +6.25-12.75% здоровья, оптимальный баланс
+- **Тяжелая броня** - +12.5-25% здоровья, максимальная защита
+
+## 🏆 Лучшие рецепты по стадиям игры
+
+### Ранняя игра (Earlygame):
+- **9 Лазурита** → Перчатки (65% шанс, 1.3x урон)
+- Идеально для новичков, гарантированный результат
+
+### Средняя игра (Midgame):  
+- **7 Глазных руд + 3 Ривалита** → Смешанное оружие (4.807x средний урон)
+- +15% физический урон, -10% здоровья, +20% шанс крита
+
+### Поздняя игра (Lategame):
+- **4 Лайтита + 3 Глазных руды + 3 Ривалита** → Топовое оружие (5.4591x средний урон)
+- Отличный баланс урона и эффектов
+
+### Эндгейм (Endgame):
+- **7 Даркрайта + 3 Магмаита** → Легендарное оружие (6.94425x средний урон)  
+- 47% Перчатки, 42% Катана, 11% Прямой меч
+- 35% шанс 50% взрыва
+
+## 👥 Расы и их особенности
+
+### Лучшие расы для новичков:
+- **Человек** (Обычная) - сбалансированные бонусы к удаче и опыту
+- **Дварф** (Эпическая) - лучший для добычи и крафта
+- **Эльф** (Необычная) - бонусы к скорости и ловкости
+
+### Легендарные расы:
+- **Минотавр** - максимальное здоровье и урон в ближнем бою
+- **Драконорожденный** - огненный урон и универсальные характеристики  
+- **Голем** - непробиваемая защита
+
+### Мифические расы:
+- **Ангел** - святые способности и лечение
+- **Демон** - темная магия и высокий урон
+
+## 🗺️ Локации и враги
+
+### Основные зоны:
+1. **Перекресток Стоунвейк** - стартовая зона для новичков
+2. **Пещера** - первые враги и базовые руды
+3. **Забытое королевство** - средний уровень сложности
+4. **Вулканические глубины** - эндгейм контент
+
+### Враги:
+- **Зомби** - базовые враги, дают опыт и лут
+- **Скелеты** - более сильные противники
+- **Адские скелеты** - опасные враги из глубин
+- **Слаймы** - быстрые и юркие противники
+
+## 💎 Руды и их свойства
+
+### Базовые руды:
+- **Камень** - самая простая руда, 100% успех крафта
+- **Железо** - стандартная руда для начального оружия
+- **Лазурит** - отличная руда для стабильного крафта
+
+### Редкие руды:
+- **Глазная руда** - дает бонусы к физическому урону и криту
+- **Ривалит** - усиливает характеристики оружия
+- **Лайтит** - мощная руда для продвинутого крафта
+
+### Легендарные руды:
+- **Мифрил** - +15% защиты на броне, легендарный материал
+- **Даркрайт** - темная руда для эндгейм оружия
+- **Магмаит** - огненная руда с эффектом взрыва
+
+## 🎯 Советы для успешной игры
+
+### Для новичков:
+1. Начните с простых рецептов (Лазурит)
+2. Изучите механику мини-игры ковки
+3. Выполняйте квесты от Сенсея Моро
+4. Используйте калькулятор перед крафтом
+
+### Для продвинутых игроков:
+1. Фармите редкие руды в опасных зонах
+2. Улучшайте оружие у NPC Улучшатель
+3. Вставляйте руны для дополнительных бонусов
+4. Участвуйте в PvP для проверки билдов
+
+### Экономические советы:
+1. Продавайте лишнее оружие Марблсу
+2. Торгуйте ресурсами с Жадным Кеем  
+3. Копите золото для улучшений
+4. Инвестируйте в расширение инвентаря
+
+## 🔗 Полезные ссылки
+
+- **Главная страница**: https://forge-calculator.com/
+- **Калькулятор**: https://forge-calculator.com/
+- **Активные коды**: https://forge-calculator.com/codes.html
+- **Вики**: https://forge-calculator.com/wiki/
+- **Лучшие рецепты**: https://forge-calculator.com/recipes/best-recipes.html
+- **Гид по оружию**: https://forge-calculator.com/weapons.html
+- **Гид по броне**: https://forge-calculator.com/armor.html
+- **Гид по рудам**: https://forge-calculator.com/ore/
+- **Гид по расам**: https://forge-calculator.com/wiki/races.html
+
+---
+
+**Последнее обновление**: 13 декабря 2025
+**Поддерживается**: командой forge-calculator.com
+**Язык**: Русский / English
+
+*Это фанатский ресурс, не связанный официально с Roblox Corporation или разработчиками игры The Forge.*

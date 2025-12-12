@@ -1,6 +1,8 @@
 # robots.txt for Roblox The Forge Calculator
-# Updated: December 2025
+# robots.txt для калькулятора The Forge (Roblox)
+# Updated: December 2025 / Обновлено: Декабрь 2025
 # Purpose: Allow all AI crawlers to index our content
+# Цель: Разрешить всем AI-краулерам индексировать наш контент
 
 # ============================================
 # 常规搜索引擎规则
@@ -333,11 +335,16 @@ User-agent: YahooSeeker
 Allow: /
 
 # ============================================
-# LLM 内容指引
+# LLM 内容指引 / LLM Content Guidelines
 # ============================================
 # 引导AI爬虫到llms.txt获取结构化内容
+# Guide AI crawlers to llms.txt for structured content
 LLM-Content: https://forge-calculator.com/llms.txt
 LLM-Content-Full: https://forge-calculator.com/llms-full.txt
+
+# Русский контент / Russian Content
+LLM-Content-RU: https://forge-calculator.com/llms.txt#russian
+LLM-Content-RU-Full: https://forge-calculator.com/llms-full.txt#russian
 
 # ============================================
 # 全局允许规则

@@ -165,7 +165,7 @@ Ready to optimize your forging strategy? Visit **https://forge-calculator.com** 
 
 ### Quick Links
 - 🔗 **Calculator**: https://forge-calculator.com
-- 📝 **Blog**: https://forge-calculator.com/blog.html
+- 📝 **Blog**: https://forge-calculator.com/blog/
 - 📋 **Privacy Policy**: https://forge-calculator.com/privacy-policy.html
 - 📜 **Terms of Service**: https://forge-calculator.com/terms-of-service.html
 
