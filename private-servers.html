@@ -302,6 +302,136 @@
             text-decoration: underline;
         }
 
+        /* Server Links Styles */
+        .server-links-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .server-link-card {
+            background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
+            border: 1px solid rgba(255, 87, 34, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .server-link-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--forge-fire), var(--forge-glow));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .server-link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 87, 34, 0.3);
+            border-color: var(--forge-glow);
+        }
+
+        .server-link-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .server-link-card h4 {
+            color: var(--forge-glow);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .server-link-card .server-description {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .server-link-card .server-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .server-status {
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .server-status.active {
+            background: rgba(76, 175, 80, 0.2);
+            color: #4caf50;
+            border: 1px solid #4caf50;
+        }
+
+        .server-status.full {
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            border: 1px solid #ffc107;
+        }
+
+        .server-status.offline {
+            background: rgba(244, 67, 54, 0.2);
+            color: #f44336;
+            border: 1px solid #f44336;
+        }
+
+        .server-join-btn {
+            background: linear-gradient(135deg, var(--forge-fire) 0%, var(--forge-glow) 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .server-join-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+
+        .server-join-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .submit-server-section {
+            background: rgba(255, 87, 34, 0.1);
+            border: 1px solid rgba(255, 87, 34, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .submit-server-section h4 {
+            color: var(--forge-glow);
+            margin-bottom: 0.5rem;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             header .container {
@@ -321,6 +451,10 @@
             .features-grid {
                 grid-template-columns: 1fr;
             }
+
+            .server-links-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
     
@@ -331,6 +465,80 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-YRP03D44XS');
+    </script>
+    
+    <script>
+        // Private Server Links Management
+        let privateServers = [
+            // Server links will be added here
+            // Example format:
+            // {
+            //     name: "Server Name",
+            //     description: "Server description",
+            //     link: "https://roblox.com/...",
+            //     owner: "Owner Name",
+            //     status: "active", // active, full, offline
+            //     players: "5/10",
+            //     theme: "General"
+            // }
+        ];
+
+        function renderServerLinks() {
+            const container = document.getElementById('serverLinksContainer');
+            
+            if (privateServers.length === 0) {
+                container.innerHTML = `
+                    <div class="server-link-card">
+                        <h4>🔄 No Active Servers Listed</h4>
+                        <p class="server-description">Private server links will be added here soon. Check back later or submit your own server!</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = privateServers.map(server => `
+                <div class="server-link-card">
+                    <h4>🎮 ${server.name}</h4>
+                    <p class="server-description">${server.description}</p>
+                    <div class="server-info">
+                        <span>👤 ${server.owner}</span>
+                        <span class="server-status ${server.status}">${server.status.toUpperCase()}</span>
+                    </div>
+                    <div class="server-info">
+                        <span>👥 ${server.players}</span>
+                        <span>🏷️ ${server.theme}</span>
+                    </div>
+                    <a href="${server.link}" target="_blank" class="server-join-btn" ${server.status === 'offline' ? 'style="opacity: 0.6; pointer-events: none;"' : ''}>
+                        ${server.status === 'active' ? 'Join Server' : server.status === 'full' ? 'Server Full' : 'Offline'}
+                    </a>
+                </div>
+            `).join('');
+        }
+
+        function addPrivateServer(serverData) {
+            privateServers.push(serverData);
+            renderServerLinks();
+        }
+
+        function updateServerStatus(serverName, newStatus, playerCount = null) {
+            const server = privateServers.find(s => s.name === serverName);
+            if (server) {
+                server.status = newStatus;
+                if (playerCount) server.players = playerCount;
+                renderServerLinks();
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            renderServerLinks();
+        });
+
+        // Auto-refresh server status every 5 minutes
+        setInterval(() => {
+            // This would typically fetch fresh data from an API
+            console.log('Checking server status...');
+        }, 300000);
     </script>
 </head>
 <body>
@@ -420,11 +628,11 @@
                 </div>
                 <div class="step">
                     <h4>Create Private Server</h4>
-                    <p>Click on "Create Private Server" or "Configure Private Server". You'll need to have Robux to purchase a private server.</p>
+                    <p>Look for the private server option (button names may vary). You'll need Robux to purchase a private server.</p>
                 </div>
                 <div class="step">
                     <h4>Configure Settings</h4>
-                    <p>Set your server name, description, and access permissions. You can make it friends-only or invite-only.</p>
+                    <p>Follow the setup process to configure your server settings and access permissions as available.</p>
                 </div>
                 <div class="step">
                     <h4>Invite Players</h4>
@@ -438,16 +646,16 @@
     <section class="content-section">
         <div class="container">
             <h3>💰 Private Server Pricing</h3>
-            <p>Private servers in The Forge typically cost Robux to create and maintain. The exact pricing may vary, but here's what you generally get:</p>
+            <p>Private servers in The Forge require Robux to create and maintain. For accurate pricing and features:</p>
             
             <div class="features-grid">
                 <div class="feature-card">
-                    <h4>💎 Monthly Subscription</h4>
-                    <p>Most private servers require a monthly Robux payment to keep them active. Check the current pricing on the game page.</p>
+                    <h4>💎 Check Official Pricing</h4>
+                    <p>Visit The Forge game page on Roblox to see current private server costs and subscription details.</p>
                 </div>
                 <div class="feature-card">
-                    <h4>👑 Premium Features</h4>
-                    <p>Some private servers may include premium features like increased drop rates or exclusive areas.</p>
+                    <h4>👑 Available Features</h4>
+                    <p>Features and benefits vary by game. Check the official game description for what's included with private servers.</p>
                 </div>
             </div>
 
@@ -480,6 +688,41 @@
                 <li>Keep backup plans for server renewals</li>
                 <li>Document any custom rules or events for new players</li>
             </ul>
+        </div>
+    </section>
+
+    <!-- Active Private Server Links -->
+    <section class="content-section">
+        <div class="container">
+            <h3>� All Actihve The Forge Private Server (PS) Links</h3>
+            <p>Find and join active private servers in The Forge community. These servers are maintained by players and offer different experiences.</p>
+            
+            <div class="info-box">
+                <h4>📋 How to Use These Links</h4>
+                <p>Click on any server link below to join. Make sure you meet any requirements listed by the server owner. Some servers may be friends-only or have specific rules.</p>
+            </div>
+
+            <div class="server-links-container" id="serverLinksContainer">
+                <div class="server-link-card">
+                    <h4>🔄 Loading Server Links...</h4>
+                    <p>Private server links will be added here. Check back soon for active server listings!</p>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <h4>⚠️ Important Notes</h4>
+                <ul>
+                    <li>Server links are provided by the community and may change without notice</li>
+                    <li>Always follow server rules and be respectful to other players</li>
+                    <li>Some servers may require permission to join or have specific themes</li>
+                    <li>Report any inappropriate servers to the game moderators</li>
+                </ul>
+            </div>
+
+            <div class="submit-server-section">
+                <h4>📤 Submit Your Server</h4>
+                <p>Have an active private server you'd like to share? <a href="/feedback.html" style="color: var(--forge-glow);">Contact us</a> to get your server added to this list!</p>
+            </div>
         </div>
     </section>
 
