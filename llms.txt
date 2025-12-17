@@ -21,6 +21,15 @@ Free real-time calculator for optimizing ore combinations and crafting:
 ### [Active Codes](https://forge-calculator.com/codes.html)
 Get free ores, gold, and rewards with working codes. Updated regularly with new codes and expired code tracking.
 
+### [Private Server Guide](https://forge-calculator.com/private-server.html)
+Complete guide to The Forge private servers - create, join, and optimize your private server experience:
+- How to set up your own private server (100 Robux/month)
+- How to invite friends to your private server
+- Free private server access through community Discord servers
+- Advanced mining optimization strategies (2-3x efficiency boost)
+- Potion stacking techniques for 65 minutes of enhanced mining
+- Volcanic rock clustering for maximum ore farming
+
 ## 📚 Complete Game Guides
 
 ### Weapons & Armor
@@ -133,6 +142,7 @@ A: Armor provides Health bonuses. Light Armor: +3.75-5%, Medium Armor: +6.25-12.
 - Homepage: https://forge-calculator.com/
 - Calculator: https://forge-calculator.com/#calculator
 - Codes: https://forge-calculator.com/codes.html
+- Private Servers: https://forge-calculator.com/private-server.html
 - Wiki: https://forge-calculator.com/wiki/
 - Weapons: https://forge-calculator.com/weapons.html
 - Armor: https://forge-calculator.com/armor.html
@@ -203,6 +213,7 @@ The Forge - это захватывающая приключенческая и�
 - Главная: https://forge-calculator.com/
 - Калькулятор: https://forge-calculator.com/
 - Коды: https://forge-calculator.com/codes.html
+- Приватные серверы: https://forge-calculator.com/private-server.html
 - Вики: https://forge-calculator.com/wiki/
 - Оружие: https://forge-calculator.com/weapons.html
 - Броня: https://forge-calculator.com/armor.html

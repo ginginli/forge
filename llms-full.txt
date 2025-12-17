@@ -26,6 +26,94 @@ The Forge is an immersive Roblox adventure game where players become legendary b
 - **Enemy Variety**: Zombies, Skeletons, Hell Skeletons, Slimes
 - **NPC Interactions**: Trade, quest, and upgrade with various NPCs
 - **Reward System**: Earn EXP, Gold, Essences, and rare items
+- **Private Servers**: Create exclusive game instances for optimized gameplay
+
+## 🔒 PRIVATE SERVERS - COMPLETE GUIDE
+
+### What are Private Servers?
+
+Private servers in The Forge are exclusive game instances that you can create and control. Unlike public servers, The Forge private servers give you complete control over who can join your private server, allowing you to play with friends, practice without interruption, or host special private server events.
+
+### Private Server Features
+
+- Farm without hackers or disruptive players
+- Access to rare resources like volcanic rocks without competition
+- Take advantage of mining speed boost events
+- Play with like-minded players who share similar goals
+- Clean, moderated environment
+- Set up volcanic rock clusters for 5-6 rocks per 30-second cycle in your private server
+- Stack potions for 65 minutes of enhanced mining (luck + mining potions) in private server
+- Achieve 2-3x mining efficiency through advanced private server optimization strategies
+
+### Why Choose Private Servers in The Forge
+
+Private servers unlock advanced strategies and optimization techniques that are impossible in public servers due to competition and interference. These private server advantages make private server gameplay significantly more efficient.
+
+#### Advanced Mining Optimization
+Set up volcanic rock clusters by clearing normal rocks and positioning multiple volcanic rocks together. Destroy 5-6 volcanic rocks in one 30-second cycle instead of waiting for individual rocks to reset.
+
+#### Potion Stacking Strategy
+Stack luck potions up to 1 hour and mining potions up to 15 minutes. Use both simultaneously for 65 minutes of enhanced mining without returning to spawn for refills.
+
+#### 2-3x Mining Efficiency
+These optimization strategies can increase your ore farming speed by 2-3 times compared to public servers, where competition prevents strategic positioning.
+
+### How to Set Up a Private Server
+
+Instead of using someone else's The Forge private server in The Forge, you can always make your own private server. Be warned, though, because you do need to pay real money to keep your private server running. To get your own The Forge private server, follow these private server setup instructions:
+
+1. **Open up The Forge's game page** on browser or within the game client
+2. **Scroll over to the Server selection**
+3. **Select the Create Private Server option**
+4. **Enter a server name** in the new window
+5. **Select the Subscribe button** to make the server
+
+**Cost**: You will need to pay 100 Robux to get started on a monthly subscription.
+
+### How to Invite Friends to Your Private Server
+
+To manage your private server invitations, follow these private server invitation instructions:
+
+1. **Open up The Forge's game page** on browser or within the game client
+2. **Scroll over to the Server selection**
+3. **Click on the three dots** next to the name of your private server
+4. **Select the Configure option**
+5. **Toggle the Allow Joining option**
+
+Alternatively, you can select who specifically you'd like to join your private server by managing individual player permissions.
+
+### How to Get Free Private Servers
+
+If 100 Robux is too much for you, or if you just don't have the Robux right now, there are ways to get The Forge private server completely for free through community Discord servers. These free private server options provide excellent private server access without cost.
+
+Some content creators buy The Forge private server and share them with their community members. These shared private server arrangements allow multiple players to access private server benefits. Here's how private server sharing typically works:
+
+1. **Join community Discord servers** that offer free The Forge private server access
+2. **Complete verification process** in the Discord server
+3. **Look for "Private Servers" section** or channel
+4. **Access shared server links** (usually multiple options available)
+5. **Try alternative options** if one server is full
+
+These community servers are usually refreshed daily to ensure they stay clean and hacker-free.
+
+### Private Server Troubleshooting
+
+**If you can't join a private server:**
+- Go to Roblox Settings → Privacy
+- Find "Who can invite me to private servers" setting
+- Set it to "Everyone" (not "Friends" or "No one")
+- Save the changes and try joining again
+- Try different server links if one doesn't work
+- Verify you're not banned from the community
+- Check if the server is full and try another one
+- Restart Roblox if the issue persists
+
+**Important considerations:**
+- Community servers may have rules you need to follow
+- Server access depends on community guidelines
+- Links may change frequently for security reasons
+- Report any issues (hackers, stealing) to server moderators
+- Maintain respectful behavior to keep access
 
 
 ## ⚔️ WEAPONS - COMPLETE GUIDE
