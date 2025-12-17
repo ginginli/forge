@@ -629,6 +629,9 @@
       gtag('config', 'G-YRP03D44XS');
     </script>
     
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
     <script>
         // Private Server Links Management
         let privateServers = [
@@ -733,13 +736,18 @@
             console.log('Checking server status...');
         }, 300000);
 
+        // Initialize EmailJS
+        (function() {
+            emailjs.init('GSJ6kyQuoG4hKbLdk');
+        })();
+
         // Submit Server Form Handler
         document.addEventListener('DOMContentLoaded', function() {
             const submitForm = document.getElementById('submitServerForm');
             const submitResult = document.getElementById('submitResult');
 
             if (submitForm) {
-                submitForm.addEventListener('submit', function(e) {
+                submitForm.addEventListener('submit', async function(e) {
                     e.preventDefault();
                     
                     const formData = new FormData(submitForm);
@@ -765,8 +773,7 @@
                     submitBtn.disabled = true;
                     submitBtn.textContent = 'Submitting...';
 
-                    // Simulate submission (in real implementation, this would send to a server)
-                    setTimeout(() => {
+                    try {
                         // Create server data object
                         const serverData = {
                             host: hostName,
@@ -775,24 +782,41 @@
                             timestamp: new Date().toISOString()
                         };
 
+                        // Prepare email template parameters
+                        const templateParams = {
+                            submission_type: 'Private Server Submission',
+                            host_name: hostName,
+                            server_link: serverLink,
+                            server_description: serverDescription || 'No description provided',
+                            timestamp: new Date().toLocaleString(),
+                            user_agent: navigator.userAgent,
+                            page_url: window.location.href
+                        };
+
+                        // Send email using EmailJS
+                        await emailjs.send('service_wpt73fl', 'template_qbcqham', templateParams);
+
                         // Store in localStorage for demo purposes
                         let submittedServers = JSON.parse(localStorage.getItem('submittedServers') || '[]');
                         submittedServers.push(serverData);
                         localStorage.setItem('submittedServers', JSON.stringify(submittedServers));
 
                         // Show success message
-                        showSubmitResult('Server submitted successfully! It will be reviewed and added to the list soon.', 'success');
+                        showSubmitResult('Server submitted successfully! Your submission has been sent for review and will be added to the list soon.', 'success');
                         
                         // Reset form
                         submitForm.reset();
                         
+                        // Log submission for admin review
+                        console.log('Server submitted:', serverData);
+                    } catch (error) {
+                        console.error('Error submitting server:', error);
+                        showSubmitResult('Error submitting server. Please try again later or contact support.', 'error');
+                    } finally {
                         // Re-enable submit button
                         submitBtn.disabled = false;
                         submitBtn.textContent = 'Submit Server';
-
-                        // Log submission for admin review
-                        console.log('Server submitted:', serverData);
-                    }, 2000);
+                    }
                 });
             }
 
