@@ -1,11 +1,17 @@
 # Force HTTPS and redirect www to non-www
 RewriteEngine On
 
-# Redirect www to non-www
-RewriteCond %{HTTP_HOST} ^www\.forge-calculator\.com [NC]
+# Redirect all HTTP traffic to HTTPS (including www)
+RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://forge-calculator.com/$1 [R=301,L]
 
-# Force HTTPS
+# Redirect HTTPS www to HTTPS non-www
+RewriteCond %{HTTP_HOST} ^www\.forge-calculator\.com [NC]
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ https://forge-calculator.com/$1 [R=301,L]
+
+# Handle HTTP www to HTTPS non-www (double redirect prevention)
+RewriteCond %{HTTP_HOST} ^www\.forge-calculator\.com [NC]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://forge-calculator.com/$1 [R=301,L]
 
