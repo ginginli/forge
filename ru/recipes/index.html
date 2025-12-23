@@ -347,6 +347,33 @@
     <!-- Ahrefs Analytics -->
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="EpsJtUp2VOHq8C8Dwkg1zQ" async></script>
     
+    <!-- Yandex.RTB -->
+    <script>window.yaContextCb=window.yaContextCb||[]</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
+    
+    <!-- Language Switch Functions -->
+    <script>
+    function switchToEnglish() {
+        const currentPath = window.location.pathname;
+        
+        // 根据当前俄语页面跳转到对应的英语页面
+        if (currentPath === '/ru/' || currentPath === '/ru/index.html') {
+            window.location.href = '/';
+        } else if (currentPath.startsWith('/ru/recipes/')) {
+            if (currentPath.includes('best-recipes')) {
+                window.location.href = '/recipes/best-recipes.html';
+            } else {
+                window.location.href = '/recipes/';
+            }
+        } else if (currentPath.startsWith('/ru/crafts')) {
+            window.location.href = '/';
+        } else {
+            // 默认跳转到英语首页
+            window.location.href = '/';
+        }
+    }
+    </script>
+    
     <!-- Advertisement code removed for security compliance --></head>
 <body>
     <header>
@@ -372,6 +399,19 @@
         <div class="hero">
             <h2>📖 Рецепты The Forge - Полная База Данных</h2>
             <p>Откройте для себя лучшие рецепты The Forge для легендарного оружия и брони. Просмотрите нашу полную коллекцию рецептов The Forge, включая начальные рецепты The Forge, промежуточные рецепты The Forge, продвинутые рецепты The Forge и легендарные рецепты The Forge. Все рецепты The Forge проверены и протестированы нашим сообществом.</p>
+        </div>
+
+        <!-- Yandex.RTB R-A-18247327-4 -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <div id="yandex_rtb_R-A-18247327-4"></div>
+            <script>
+            window.yaContextCb.push(() => {
+                Ya.Context.AdvManager.render({
+                    "blockId": "R-A-18247327-4",
+                    "renderTo": "yandex_rtb_R-A-18247327-4"
+                })
+            })
+            </script>
         </div>
 
         <!-- Best Recipes Entry Point -->

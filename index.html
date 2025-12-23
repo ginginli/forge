@@ -576,27 +576,6 @@
     <!-- Yandex.RTB -->
     <script>window.yaContextCb=window.yaContextCb||[]</script>
     <script src="https://yandex.ru/ads/system/context.js" async></script>
-    
-    <!-- Language Switch Functions -->
-    <script>
-    function switchToRussian() {
-        const currentPath = window.location.pathname;
-        
-        // 根据当前页面跳转到对应的俄语页面
-        if (currentPath === '/' || currentPath === '/index.html') {
-            window.location.href = '/ru/';
-        } else if (currentPath.startsWith('/recipes/')) {
-            if (currentPath.includes('best-recipes')) {
-                window.location.href = '/ru/recipes/best-recipes.html';
-            } else {
-                window.location.href = '/ru/recipes/';
-            }
-        } else {
-            // 默认跳转到俄语首页
-            window.location.href = '/ru/';
-        }
-    }
-    </script>
 </head>
 <body>
     <!-- Header -->
@@ -614,7 +593,6 @@
                 <a href="/private-server.html">Private Servers</a>
                 <a href="/blog/">Blog</a>
                 <a href="/feedback.html">Feedback</a>
-                <a href="javascript:void(0)" onclick="switchToRussian()" style="background: rgba(255, 152, 0, 0.2); border: 1px solid #ff9800;">🇷🇺 Русский</a>
             </nav>
         </div>
     </header>

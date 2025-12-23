@@ -301,6 +301,33 @@
             text-decoration: underline;
         }
     </style>
+    
+    <!-- Yandex.RTB -->
+    <script>window.yaContextCb=window.yaContextCb||[]</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
+    
+    <!-- Language Switch Functions -->
+    <script>
+    function switchToEnglish() {
+        const currentPath = window.location.pathname;
+        
+        // 根据当前俄语页面跳转到对应的英语页面
+        if (currentPath === '/ru/' || currentPath === '/ru/index.html') {
+            window.location.href = '/';
+        } else if (currentPath.startsWith('/ru/recipes/')) {
+            if (currentPath.includes('best-recipes')) {
+                window.location.href = '/recipes/best-recipes.html';
+            } else {
+                window.location.href = '/recipes/';
+            }
+        } else if (currentPath.startsWith('/ru/crafts')) {
+            window.location.href = '/';
+        } else {
+            // 默认跳转到英语首页
+            window.location.href = '/';
+        }
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -340,6 +367,19 @@
                     <strong>📝 Community Contributed Content</strong> - The following recipe data is contributed and tested by The Forge community players, for reference only. Actual game results may vary due to version updates.
                 </p>
             </div>
+        </div>
+
+        <!-- Yandex.RTB R-A-18247327-4 -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <div id="yandex_rtb_R-A-18247327-4"></div>
+            <script>
+            window.yaContextCb.push(() => {
+                Ya.Context.AdvManager.render({
+                    "blockId": "R-A-18247327-4",
+                    "renderTo": "yandex_rtb_R-A-18247327-4"
+                })
+            })
+            </script>
         </div>
 
         <!-- Best Overall Weapon Recipes -->
