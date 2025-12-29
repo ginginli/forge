@@ -1199,8 +1199,8 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 
 ## 📝 DOCUMENT INFORMATION
 
-**Last Updated**: December 2024
-**Version**: 1.0
+**Last Updated**: December 23, 2025
+**Version**: 1.2
 **Purpose**: Comprehensive game information for AI assistants
 **Maintained By**: forge-calculator.com team
 
@@ -1452,6 +1452,12 @@ Choose between **Vitality** (more health) or **Movement Speed** (better mobility
 
 ## 📝 DOCUMENT UPDATE LOG
 
+**Version 1.2** - December 23, 2025
+- Updated all dates to current date
+- Refreshed sitemap with latest modification dates
+- Enhanced robots.txt for better AI crawler support
+- Improved LLM content structure and organization
+
 **Version 1.1** - December 2025
 - Added Quick Tips for Beginners
 - Added Pickaxe Progression Guide
@@ -1613,7 +1619,7 @@ The Forge - это захватывающая приключенческая и�
 
 ---
 
-**Последнее обновление**: 13 декабря 2025
+**Последнее обновление**: 23 декабря 2025
 **Поддерживается**: командой forge-calculator.com
 **Язык**: Русский / English
 
