@@ -10,6 +10,16 @@
       ],
       "destination": "https://forge-calculator.com/$1",
       "permanent": true
+    },
+    {
+      "source": "/blog-mastering-the-forge.html",
+      "destination": "/blog/mastering-the-forge.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog-introducing-calculator.html", 
+      "destination": "/blog/introducing-calculator.html",
+      "permanent": true
     }
   ],
   "headers": [
@@ -43,5 +53,6 @@
       ]
     }
   ],
-  "trailingSlash": false
+  "trailingSlash": false,
+  "cleanUrls": true
 }
