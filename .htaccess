@@ -1,18 +1,14 @@
-# Force HTTPS and redirect www to non-www
+# Enhanced HTTPS and canonical domain enforcement
 RewriteEngine On
 
-# Redirect all HTTP traffic to HTTPS (including www)
-RewriteCond %{HTTPS} off
+# Force HTTPS and canonical domain in one step
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^(.*)$ https://forge-calculator.com/$1 [R=301,L]
 
-# Redirect HTTPS www to HTTPS non-www
-RewriteCond %{HTTP_HOST} ^www\.forge-calculator\.com [NC]
+# Ensure canonical domain for any other variations
+RewriteCond %{HTTP_HOST} !^forge-calculator\.com$ [NC]
 RewriteCond %{HTTPS} on
-RewriteRule ^(.*)$ https://forge-calculator.com/$1 [R=301,L]
-
-# Handle HTTP www to HTTPS non-www (double redirect prevention)
-RewriteCond %{HTTP_HOST} ^www\.forge-calculator\.com [NC]
-RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://forge-calculator.com/$1 [R=301,L]
 
 # Security headers

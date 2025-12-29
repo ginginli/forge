@@ -1,6 +1,60 @@
-# Vercel Serverless Function 设置指南
+# Vercel 完整配置指南
 
-你的反馈系统已经配置好了！现在需要设置环境变量来接收邮件。
+## 🌐 域名配置和 Google 索引优化
+
+### 当前域名配置
+- **主域名**: `forge-calculator.com` (Production)
+- **WWW 重定向**: `www.forge-calculator.com` → `forge-calculator.com` (301 重定向)
+
+### Google 索引问题解决方案
+
+#### 问题描述
+Google Search Console 显示 `http://forge-calculator.com/` 未被索引，这通常是由于：
+1. HTTP 到 HTTPS 重定向配置
+2. WWW 到非 WWW 重定向
+3. Vercel 域名配置问题
+
+#### 解决方案
+
+**1. Vercel 域名设置**
+- 确保 `forge-calculator.com` 设置为 Production
+- 确保 `www.forge-calculator.com` 正确重定向到主域名
+
+**2. vercel.json 配置**
+```json
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.forge-calculator.com"
+        }
+      ],
+      "destination": "https://forge-calculator.com/$1",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ]
+    }
+  ],
+  "trailingSlash": false
+}
+```
+
+**3. Google Search Console 操作**
+- 提交 `https://forge-calculator.com/` 进行索引
+- 请求移除 `http://forge-calculator.com/` 
+- 更新 sitemap 确保只包含 HTTPS URLs
 
 ---
 
