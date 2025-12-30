@@ -13,11 +13,6 @@ Allow: /
 # 网站地图
 Sitemap: https://forge-calculator.com/sitemap.xml
 
-# 首选域名 (Preferred Domain)
-# 所有www版本都应重定向到非www版本
-# All www versions should redirect to non-www version
-Host: forge-calculator.com
-
 # ============================================
 # OpenAI 爬虫 (ChatGPT, GPT-4, etc.)
 # ============================================
