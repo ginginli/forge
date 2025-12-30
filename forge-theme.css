@@ -117,6 +117,142 @@ a:hover {
     color: var(--text-primary);
 }
 
+/* Official Table Styles - 官方表格样式 */
+.official-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.official-table th {
+    background: #1f1f1f;
+    color: #d4af37;
+    padding: 1rem 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.official-table td {
+    padding: 1rem 0.75rem;
+    border-bottom: 1px solid #3a3a3a;
+    color: #cccccc;
+    font-size: 0.95rem;
+}
+
+.official-table tr:last-child td {
+    border-bottom: none;
+}
+
+.official-table tr:hover {
+    background: #333333;
+}
+
+/* Ore name styling */
+.official-table .ore-name,
+.official-table .weapon-name,
+.official-table .armor-name {
+    color: #d4af37;
+    font-weight: 600;
+}
+
+/* Rarity colors */
+.official-table .rarity-common {
+    color: #cccccc;
+}
+
+.official-table .rarity-uncommon {
+    color: #4caf50;
+}
+
+.official-table .rarity-rare {
+    color: #2196f3;
+}
+
+.official-table .rarity-epic {
+    color: #9c27b0;
+}
+
+.official-table .rarity-legendary {
+    color: #ff9800;
+}
+
+/* Trait/Effect styling */
+.official-table .trait-none {
+    color: #888888;
+    font-style: italic;
+}
+
+/* Price styling */
+.official-table .price {
+    color: #4caf50;
+    font-weight: 500;
+}
+
+/* Multiplier styling */
+.official-table .multiplier {
+    color: #ff6b35;
+    font-weight: 600;
+}
+
+/* Chance styling */
+.official-table .chance {
+    color: #81c784;
+}
+
+/* Legacy table compatibility */
+.armor-table,
+.weapon-table,
+.ore-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.armor-table th,
+.weapon-table th,
+.ore-table th {
+    background: #1f1f1f;
+    color: #d4af37;
+    padding: 1rem 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.armor-table td,
+.weapon-table td,
+.ore-table td {
+    padding: 1rem 0.75rem;
+    border-bottom: 1px solid #3a3a3a;
+    color: #cccccc;
+    font-size: 0.95rem;
+}
+
+.armor-table tr:hover,
+.weapon-table tr:hover,
+.ore-table tr:hover {
+    background: #333333;
+}
+
+.armor-table tr:last-child td,
+.weapon-table tr:last-child td,
+.ore-table tr:last-child td {
+    border-bottom: none;
+}
+
 /* Common Animations */
 @keyframes shimmer {
     0% { left: -100%; }
