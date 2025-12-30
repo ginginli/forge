@@ -1,34 +1,120 @@
-/* The Forge - Unified Color Theme */
-/* 铁匠铺主题配色系统 */
+/* The Forge - Official Color Theme */
+/* 铁匠铺官方主题配色系统 - 完全匹配官方Wiki */
 
 :root {
-    /* Forge Fire Colors - 锻造火焰 */
-    --forge-fire: #e64a19;
-    --forge-flame: #ff6f00;
-    --forge-ember: #bf360c;
-    --forge-glow: #ff8a50;
+    /* Official Background Colors - 官方背景色系 */
+    --bg-primary: #1a1612;      /* 主背景 - 深棕色 */
+    --bg-secondary: #2d1f1a;    /* 次背景 - 中棕色 */
+    --bg-darker: #0f0d0a;       /* 最深背景 - 极深棕色 */
+    --bg-surface: #3d2f2a;      /* 表面色 - 浅棕色 */
     
-    /* Metal Colors - 金属色调 */
-    --metal-iron: #546e7a;
-    --metal-steel: #37474f;
-    --metal-silver: #90a4ae;
-    --metal-bronze: #a1887f;
+    /* Official Gold System - 官方金色系统 */
+    --gold-primary: #d4af37;    /* 主金色 */
+    --gold-light: #f4d03f;      /* 亮金色 */
+    --gold-dark: #b8860b;       /* 深金色 */
+    --gold-accent: #ffd700;     /* 强调金色 */
     
-    /* Background Colors - 背景色 */
-    --bg-dark: #212121;
-    --bg-darker: #1a1a1a;
-    --bg-forge: #263238;
-    --bg-surface: #2c2c2c;
+    /* Official Flame Colors - 官方火焰色 */
+    --flame-primary: #ff6b35;   /* 主火焰色 */
+    --flame-light: #ff8c42;     /* 亮火焰色 */
+    --flame-dark: #e55100;      /* 深火焰色 */
+    --flame-glow: #ff9f66;      /* 火焰光晕 */
     
-    /* Text Colors */
-    --text-primary: #ffffff;
-    --text-secondary: #b0bec5;
-    --text-muted: #78909c;
+    /* Official Text Colors - 官方文本色 */
+    --text-primary: #f5f5dc;    /* 主文本 - 米白色 */
+    --text-secondary: #d3d3d3;  /* 次文本 - 浅灰 */
+    --text-accent: #d4af37;     /* 强调文本 - 金色 */
+    --text-muted: #a0a0a0;      /* 弱化文本 */
     
-    /* Legacy color mappings for compatibility */
-    --primary-orange: var(--forge-fire);
-    --primary-light: var(--forge-glow);
-    --primary-dark: var(--forge-ember);
+    /* Official Purple System - 官方紫色系统 */
+    --purple-primary: #8e44ad;  /* 主紫色 */
+    --purple-light: #a569bd;    /* 亮紫色 */
+    --purple-dark: #6c3483;     /* 深紫色 */
+    
+    /* Official Borders - 官方边框色 */
+    --border-gold: #d4af37;     /* 金色边框 */
+    --border-flame: #ff6b35;    /* 火焰边框 */
+    --border-subtle: #3d2f2a;   /* 细微边框 */
+    
+    /* Legacy Mappings for Compatibility - 兼容性映射 */
+    --forge-fire: var(--flame-primary);
+    --forge-flame: var(--flame-light);
+    --forge-ember: var(--flame-dark);
+    --forge-glow: var(--flame-glow);
+    --metal-steel: var(--bg-surface);
+    --bg-forge: var(--bg-secondary);
+    --primary-orange: var(--flame-primary);
+    --primary-light: var(--flame-light);
+    --primary-dark: var(--flame-dark);
+}
+
+/* Official Base Styles - 官方基础样式 */
+body {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    color: var(--text-primary);
+}
+
+/* Official Typography - 官方字体样式 */
+h1, h2 {
+    color: var(--gold-primary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3, h4 {
+    color: var(--gold-light);
+}
+
+p, li, span {
+    color: var(--text-primary);
+}
+
+strong, .highlight {
+    color: var(--gold-primary);
+}
+
+a {
+    color: var(--flame-primary);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--flame-light);
+}
+
+/* Official Component Styles - 官方组件样式 */
+.content-section {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-subtle);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+    color: var(--bg-primary);
+    border: 2px solid var(--gold-light);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, var(--flame-primary) 0%, var(--flame-dark) 100%);
+    color: var(--text-primary);
+}
+
+.info-box {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-dark) 100%);
+    border-left: 4px solid var(--purple-light);
+    color: var(--text-primary);
+}
+
+.warning-box {
+    background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+    border-left: 4px solid var(--gold-light);
+    color: var(--bg-primary);
+}
+
+.success-box {
+    background: linear-gradient(135deg, var(--flame-primary) 0%, var(--flame-dark) 100%);
+    border-left: 4px solid var(--flame-light);
+    color: var(--text-primary);
 }
 
 /* Common Animations */
@@ -43,6 +129,6 @@
 }
 
 @keyframes glow {
-    0%, 100% { box-shadow: 0 0 20px rgba(230, 74, 25, 0.3); }
-    50% { box-shadow: 0 0 40px rgba(230, 74, 25, 0.6); }
+    0%, 100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(212, 175, 55, 0.6); }
 }

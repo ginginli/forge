@@ -13,36 +13,53 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
     <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
-    <meta name="description" content="Complete guide to Snowite ore in The Forge - Learn how to get Snowite, where to mine it, and how to use it for crafting legendary weapons with attack speed bonuses.">
-    <meta name="keywords" content="the forge snowite, snowite ore, how to get snowite forge, snowite mining guide, forge snowite crafting, roblox forge snowite, legendary ore, attack speed">
+    <meta name="description" content="Complete guide to Snowite ore in The Forge - Learn how to get Snowite, where to mine Snowite, and how to use Snowite for crafting legendary weapons with attack speed bonuses.">
+    <meta name="keywords" content="the forge snowite, snowite ore, how to get snowite forge, snowite mining guide, forge snowite crafting, roblox forge snowite, legendary snowite ore, snowite attack speed">
     <link rel="canonical" href="https://forge-calculator.com/ore/snowite.html">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://forge-calculator.com/ore/snowite.html">
     <meta property="og:title" content="Snowite Ore Guide - How to Get Snowite in The Forge">
-    <meta property="og:description" content="Complete guide to Snowite ore in The Forge. Learn mining locations, crafting uses, and tips for legendary weapon crafting.">
+    <meta property="og:description" content="Complete guide to Snowite ore in The Forge. Learn Snowite mining locations, Snowite crafting uses, and tips for legendary weapon crafting.">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://forge-calculator.com/ore/snowite.html">
     <meta name="twitter:title" content="Snowite Ore Guide - How to Get Snowite in The Forge">
-    <meta name="twitter:description" content="Complete guide to Snowite ore in The Forge. Learn mining locations, crafting uses, and tips for legendary weapon crafting.">
+    <meta name="twitter:description" content="Complete guide to Snowite ore in The Forge. Learn Snowite mining locations, Snowite crafting uses, and tips for legendary weapon crafting.">
     
     <title>Snowite Ore Guide - How to Get Snowite in The Forge</title>
     <style>
         :root {
-            --forge-fire: #e64a19;
-            --forge-flame: #ff6f00;
-            --forge-ember: #bf360c;
-            --forge-glow: #ff8a50;
-            --metal-steel: #37474f;
-            --bg-darker: #1a1a1a;
-            --bg-forge: #263238;
+            /* Official Colors - 官方配色 */
+            --bg-primary: #1a1612;
+            --bg-secondary: #2d1f1a;
+            --bg-darker: #0f0d0a;
+            --bg-surface: #3d2f2a;
+            --gold-primary: #d4af37;
+            --gold-light: #f4d03f;
+            --gold-dark: #b8860b;
+            --flame-primary: #ff6b35;
+            --flame-light: #ff8c42;
+            --flame-dark: #e55100;
+            --text-primary: #f5f5dc;
+            --text-secondary: #d3d3d3;
+            --text-accent: #d4af37;
+            --border-gold: #d4af37;
+            --border-flame: #ff6b35;
             --snowite-blue: #03a9f4;
             --snowite-light: #81d4fa;
             --snowite-dark: #0277bd;
             --snowite-ice: #e1f5fe;
+            
+            /* Legacy mappings */
+            --forge-fire: var(--flame-primary);
+            --forge-flame: var(--flame-light);
+            --forge-ember: var(--flame-dark);
+            --forge-glow: var(--flame-light);
+            --metal-steel: var(--bg-surface);
+            --bg-forge: var(--bg-secondary);
         }
         
         * {
@@ -54,8 +71,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-forge) 100%);
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
         }
         
         .container {
@@ -65,10 +82,10 @@
         }
         
         header {
-            background: linear-gradient(90deg, #1a1a1a 0%, #2d1810 100%);
+            background: linear-gradient(90deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
             padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(255, 87, 34, 0.3);
-            border-bottom: 3px solid var(--forge-fire);
+            box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+            border-bottom: 3px solid var(--gold-primary);
             margin-bottom: 2rem;
         }
         
@@ -79,36 +96,37 @@
         }
         
         header h1 {
-            color: #fff;
+            color: var(--gold-primary);
             font-size: 1.8rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
         
         nav a {
-            color: #fff;
+            color: var(--text-primary);
             text-decoration: none;
             margin-left: 1.5rem;
             transition: color 0.3s;
         }
         
         nav a:hover {
-            color: var(--forge-glow);
+            color: var(--gold-primary);
         }
         
         .breadcrumb {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(212, 175, 55, 0.1);
             padding: 1rem;
             border-radius: 8px;
             margin-bottom: 2rem;
         }
         
         .breadcrumb a {
-            color: #fff;
+            color: var(--gold-primary);
             text-decoration: none;
             margin-right: 0.5rem;
         }
         
         .breadcrumb a:hover {
-            color: var(--forge-glow);
+            color: var(--gold-light);
         }
         
         .breadcrumb span {
@@ -124,7 +142,7 @@
             box-shadow: 0 10px 40px rgba(3, 169, 244, 0.3);
             border: 2px solid var(--snowite-light);
             text-align: center;
-            color: #fff;
+            color: var(--text-primary);
         }
         
         .hero h2 {
@@ -139,18 +157,19 @@
         }
         
         .content-section {
-            background: #fff;
+            background: var(--bg-secondary);
             border-radius: 15px;
             padding: 2rem;
             margin-bottom: 2rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--bg-surface);
         }
         
         .content-section h2 {
-            color: var(--snowite-blue);
+            color: var(--gold-primary);
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--snowite-light);
+            border-bottom: 2px solid var(--gold-light);
             padding-bottom: 0.5rem;
         }
         
@@ -299,16 +318,16 @@
         }
         
         footer {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
-            color: #fff;
+            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
+            color: var(--text-primary);
             padding: 2rem 0;
             text-align: center;
-            border-top: 2px solid #ff5722;
+            border-top: 2px solid var(--gold-primary);
             margin-top: 3rem;
         }
         
         footer a {
-            color: #ff9800;
+            color: var(--gold-primary);
             text-decoration: none;
         }
         
@@ -362,7 +381,7 @@
 
         <div class="hero">
             <h2>❄️ Snowite Ore - Wind-Infused Legendary Material</h2>
-            <p>"Light, sharp, and infused with wind energy. It almost floats when freshly mined."</p>
+            <p>"Light, sharp, and infused with wind energy. Snowite almost floats when freshly mined."</p>
         </div>
 
         <!-- How to Get Snowite -->
@@ -373,7 +392,7 @@
             <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #2196f3;">
                 <h3 style="color: #0d47a1; margin-bottom: 1rem; font-size: 1.3rem;">📍 Primary Location: Frost Spire</h3>
                 <p style="color: #555; line-height: 1.7; margin-bottom: 1.5rem;">
-                    Snowite (also called "Snow White") is a legendary wind-infused ore found exclusively in the <strong>Frost Spire</strong> area - the snowy, icy part of the map. This extremely rare material is prized for its unique slow effect properties and 8x multiplier power.
+                    Snowite (also called "Snow White") is a legendary wind-infused ore found exclusively in the <strong>Frost Spire</strong> area - the snowy, icy part of the map. This extremely rare Snowite material is prized for its unique slow effect properties and 8x multiplier power.
                 </p>
                 <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                     <h3 style="color: #1976d2; margin-bottom: 1rem;">🧊 Rock Types: All Icy Formations</h3>
@@ -388,10 +407,10 @@
                 <ol class="step-list">
                     <li><strong>Head to Frost Spire:</strong> Navigate to the snowy, icy part of the map. This is the only area where Snowite drops.</li>
                     <li><strong>Look for Icy Rocks & Crystal Nodes:</strong> Any icy rock or crystal node in Frost Spire has a chance to drop Snowite - don't be picky about rock types.</li>
-                    <li><strong>Equip Your Strongest Pickaxe:</strong> Use the most powerful pickaxe you have to break nodes faster, giving you more chances per minute.</li>
-                    <li><strong>Farm Near Spider Cave:</strong> Many players recommend the spider cave area because there are lots of breakable rocks close together.</li>
-                    <li><strong>Use Luck Boosts & Mining Speed Perks:</strong> Any luck boosts or mining speed perks make the grind faster and less painful.</li>
-                    <li><strong>Be Patient:</strong> Snowite is super rare with a 1/4325 drop rate. Don't get frustrated if it doesn't drop right away - just keep mining!</li>
+                    <li><strong>Equip Your Strongest Pickaxe:</strong> Use the most powerful pickaxe you have to break nodes faster, giving you more Snowite chances per minute.</li>
+                    <li><strong>Farm Near Spider Cave:</strong> Many players recommend the spider cave area because there are lots of breakable rocks close together for Snowite farming.</li>
+                    <li><strong>Use Luck Boosts & Mining Speed Perks:</strong> Any luck boosts or mining speed perks make the Snowite grind faster and less painful.</li>
+                    <li><strong>Be Patient:</strong> Snowite is super rare with a 1/4325 drop rate. Don't get frustrated if Snowite doesn't drop right away - just keep mining!</li>
                 </ol>
             </div>
 
@@ -400,21 +419,21 @@
                 <div class="tip-box">
                     <h3>💡 Pro Mining Tips</h3>
                     <ul>
-                        <li><strong>Ultra Rare:</strong> 1/4325 spawn rate - extreme patience required</li>
+                        <li><strong>Ultra Rare:</strong> 1/4325 spawn rate - extreme patience required for Snowite</li>
                         <li><strong>Any Icy Rock Works:</strong> Every rock in Frost Spire has a shot at dropping Snowite</li>
-                        <li><strong>Spider Cave Hotspot:</strong> Farm near spider cave for concentrated rock clusters</li>
-                        <li><strong>Speed is Key:</strong> Strong pickaxe = more nodes broken = more chances</li>
-                        <li><strong>Use All Boosts:</strong> Luck boosts and mining speed perks are essential</li>
+                        <li><strong>Spider Cave Hotspot:</strong> Farm near spider cave for concentrated rock clusters and better Snowite chances</li>
+                        <li><strong>Speed is Key:</strong> Strong pickaxe = more nodes broken = more Snowite chances</li>
+                        <li><strong>Use All Boosts:</strong> Luck boosts and mining speed perks are essential for Snowite farming</li>
                     </ul>
                 </div>
                 
                 <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #ff9800; padding: 1.5rem; border-radius: 8px;">
                     <h3 style="color: #e65100; margin-bottom: 0.5rem;">⚡ Why Snowite is Legendary</h3>
                     <ul style="color: #555; margin: 0;">
-                        <li><strong>Legendary Rarity:</strong> One of the rarest ores in the game</li>
-                        <li><strong>Unique Trait:</strong> Attack speed bonus with movement debuff</li>
-                        <li><strong>High Multiplier:</strong> 8x multiplier for powerful weapons</li>
-                        <li><strong>Wind Element:</strong> Infused with wind energy properties</li>
+                        <li><strong>Legendary Rarity:</strong> Snowite is one of the rarest ores in the game</li>
+                        <li><strong>Unique Trait:</strong> Snowite provides slow effect with movement debuff</li>
+                        <li><strong>High Multiplier:</strong> Snowite's 8x multiplier for powerful weapons</li>
+                        <li><strong>Wind Element:</strong> Snowite is infused with wind energy properties</li>
                     </ul>
                 </div>
             </div>
@@ -426,19 +445,19 @@
                     <div>
                         <h3 style="color: #388e3c; margin-bottom: 0.5rem;">For Elite Players</h3>
                         <ul style="color: #555; margin: 0;">
-                            <li>Focus on all 4 ice rock types</li>
-                            <li>Use maximum Luck equipment</li>
-                            <li>Plan for very long mining sessions</li>
-                            <li>Bring plenty of supplies</li>
+                            <li>Focus on all 4 ice rock types for Snowite</li>
+                            <li>Use maximum Luck equipment for Snowite farming</li>
+                            <li>Plan for very long Snowite mining sessions</li>
+                            <li>Bring plenty of supplies for Snowite hunting</li>
                         </ul>
                     </div>
                     <div>
                         <h3 style="color: #388e3c; margin-bottom: 0.5rem;">For Legendary Forgers</h3>
                         <ul style="color: #555; margin: 0;">
-                            <li>Map out all ice formation locations</li>
-                            <li>Coordinate with team for protection</li>
-                            <li>Save for ultimate weapon crafting</li>
-                            <li>Consider market value for trading</li>
+                            <li>Map out all ice formation locations for Snowite</li>
+                            <li>Coordinate with team for protection during Snowite farming</li>
+                            <li>Save Snowite for ultimate weapon crafting</li>
+                            <li>Consider Snowite market value for trading</li>
                         </ul>
                     </div>
                 </div>
@@ -453,12 +472,12 @@
             <div style="background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border: 2px solid var(--snowite-light); color: #fff;">
                 <h3 style="color: #ff9800; margin-bottom: 1rem; font-size: 1.3rem;">📖 Official Game Description</h3>
                 <blockquote style="font-size: 1.1rem; font-style: italic; color: #ffb74d; margin-bottom: 1.5rem; border-left: 4px solid #ff9800; padding-left: 1rem;">
-                    "Light, sharp, and infused with wind energy. It almost floats when freshly mined. ❄️"
+                    "Light, sharp, and infused with wind energy. Snowite almost floats when freshly mined. ❄️"
                 </blockquote>
                 <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
                     <h3 style="color: #fff; margin-bottom: 1rem;">OVERVIEW</h3>
                     <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
-                        Snowite is a legendary wind-infused ore that combines the sharpness of ice with the power of wind energy. Its unique properties make it perfect for crafting weapons that enhance attack speed while providing tactical advantages in combat.
+                        Snowite is a legendary wind-infused ore that combines the sharpness of ice with the power of wind energy. Snowite's unique properties make it perfect for crafting weapons that enhance attack speed while providing tactical advantages in combat.
                     </p>
                 </div>
             </div>
@@ -469,13 +488,13 @@
                 <div style="background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%); border-radius: 12px; padding: 2rem; border-left: 4px solid var(--snowite-blue);">
                     <h3 style="color: var(--snowite-blue); margin-bottom: 1.5rem; font-size: 1.2rem;">ORE PROFILE</h3>
                     <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
-                        <span style="background: #ff9800; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">LEGENDARY ORE</span>
+                        <span style="background: #ff9800; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">LEGENDARY SNOWITE</span>
                         <span style="background: #2196f3; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">WIND ELEMENT</span>
-                        <span style="background: #4caf50; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">ATTACK SPEED</span>
+                        <span style="background: #4caf50; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">SLOW EFFECT</span>
                     </div>
                     <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                         <p style="color: #555; line-height: 1.6; margin: 0; font-style: italic;">
-                            <strong>Snowite is the ultimate speed-focused ore</strong>, perfect for creating weapons that prioritize rapid attacks and tactical mobility. Its wind-infused nature provides unique combat advantages that can turn the tide of battle.
+                            <strong>Snowite is the ultimate slow-focused ore</strong>, perfect for creating weapons that prioritize crowd control and tactical mobility. Snowite's wind-infused nature provides unique combat advantages that can turn the tide of battle.
                         </p>
                     </div>
                 </div>
@@ -488,7 +507,7 @@
                     <div style="margin-bottom: 1.5rem;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
                             <span style="font-weight: bold; color: #333;">DROP CHANCE</span>
-                            <span style="font-weight: bold; color: #f44336;">1/4325 - ULTRA RARE</span>
+                            <span style="font-weight: bold; color: #f44336;">1/4325 - ULTRA RARE SNOWITE</span>
                         </div>
                         <div style="background: #e0e0e0; border-radius: 10px; height: 8px; overflow: hidden;">
                             <div style="background: linear-gradient(90deg, #f44336 0%, #ff5722 100%); height: 100%; width: 2%;"></div>
@@ -499,7 +518,7 @@
                     <div style="margin-bottom: 1.5rem;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
                             <span style="font-weight: bold; color: #333;">MULTIPLIER</span>
-                            <span style="font-weight: bold; color: #4caf50;">8x - VERY HIGH</span>
+                            <span style="font-weight: bold; color: #4caf50;">8x - VERY HIGH SNOWITE</span>
                         </div>
                         <div style="background: #e0e0e0; border-radius: 10px; height: 8px; overflow: hidden;">
                             <div style="background: linear-gradient(90deg, #4caf50 0%, #8bc34a 100%); height: 100%; width: 80%;"></div>
@@ -569,22 +588,22 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
                     <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
                         <h3 style="color: #ffb74d; margin-bottom: 0.5rem;">⚔️ Speed Weapons</h3>
-                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Perfect for crafting high-speed weapons with attack speed bonuses</p>
+                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Perfect for crafting high-speed weapons with Snowite slow bonuses</p>
                     </div>
                     <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
                         <h3 style="color: #ffb74d; margin-bottom: 0.5rem;">🌪️ Wind Element</h3>
-                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Unique wind-infused properties for tactical advantages</p>
+                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Unique Snowite wind-infused properties for tactical advantages</p>
                     </div>
                     <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
                         <h3 style="color: #ffb74d; margin-bottom: 0.5rem;">💎 Premium Material</h3>
-                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Ultra-rare material for the most elite equipment</p>
+                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Ultra-rare Snowite material for the most elite equipment</p>
                     </div>
                 </div>
             </div>
             
             <div class="crafting-section">
-                <h3>⚔️ Primary Use: Legendary Speed Weapons (8x Multiplier Category)</h3>
-                <p style="margin-bottom: 1.5rem;">Snowite belongs to the <strong>8x - VERY HIGH</strong> multiplier category, making it perfect for legendary weapon crafting with exceptional attack speed bonuses.</p>
+                <h3>⚔️ Primary Use: Legendary Slow Weapons (8x Snowite Multiplier Category)</h3>
+                <p style="margin-bottom: 1.5rem;">Snowite belongs to the <strong>8x - VERY HIGH</strong> multiplier category, making Snowite perfect for legendary weapon crafting with exceptional slow effect bonuses.</p>
                 
                 <!-- Community Insights -->
                 <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #ff9800;">
@@ -683,13 +702,13 @@
                         <h3 style="color: #ff5722; margin-bottom: 1rem;">🏆 Snowite Straight Sword (Proven Recipe)</h3>
                         <div style="background: #f9f9f9; padding: 1rem; border-radius: 6px; margin-bottom: 1rem;">
                             <p><strong>Recipe:</strong> 4 × Snowite + 2 × Rivalite + 1 × Eye Ore</p>
-                            <p><strong>Total Cost:</strong> ~950$ (4×150$ + 2×50$ + 1×60$)</p>
-                            <p><strong>Success Rate:</strong> High (player-tested)</p>
-                            <p><strong>Base Damage:</strong> 122 (147 with enhancements)</p>
-                            <p><strong>Special Features:</strong> 23% crit chance, stun effects</p>
+                            <p><strong>Total Cost:</strong> ~950$ (4×150$ Snowite + 2×50$ + 1×60$)</p>
+                            <p><strong>Success Rate:</strong> High (player-tested Snowite recipe)</p>
+                            <p><strong>Base Damage:</strong> 122 (147 with Snowite enhancements)</p>
+                            <p><strong>Special Features:</strong> 23% crit chance, Snowite stun effects</p>
                         </div>
                         <div style="color: #666; font-size: 0.9rem;">
-                            <strong>Best For:</strong> Island exploration and diamond spider farming
+                            <strong>Best For:</strong> Island exploration and diamond spider farming with Snowite
                         </div>
                     </div>
                     
