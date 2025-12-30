@@ -27,9 +27,9 @@
 2. **选择"网址检查"工具**
 3. **逐个提交以下URL:**
    ```
-   https://forge-calculator.com/npcs.html
-   https://forge-calculator.com/races.html
-   https://forge-calculator.com/enemies.html
+   https://forge-calculator.com/wiki/npcs.html
+   https://forge-calculator.com/wiki/races.html
+   https://forge-calculator.com/wiki/enemies.html
    https://forge-calculator.com/recipe-viewer.html
    https://forge-calculator.com/recipe-database-ui.html
    ```
@@ -56,7 +56,7 @@
 
 ### 检查 canonical 标签是否生效:
 ```bash
-curl -s "https://forge-calculator.com/npcs.html" | grep -i canonical
+curl -s "https://forge-calculator.com/wiki/npcs.html" | grep -i canonical
 ```
 
 ### 在 Google Search Console 检查:

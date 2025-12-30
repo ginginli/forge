@@ -1003,7 +1003,7 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 - Step-by-step redemption instructions
 
 #### Strategy Guides
-- **Mastering The Forge**: https://forge-calculator.com/blog-mastering-the-forge.html
+- **Mastering The Forge**: https://forge-calculator.com/blog/mastering-the-forge.html
 - **Blog**: https://forge-calculator.com/blog/
 
 
@@ -1188,9 +1188,9 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 - **How to Redeem**: https://forge-calculator.com/codes.html#how-to
 
 ### Strategy & Tips
-- **Mastering The Forge**: https://forge-calculator.com/blog-mastering-the-forge.html
+- **Mastering The Forge**: https://forge-calculator.com/blog/mastering-the-forge.html
 - **Blog Articles**: https://forge-calculator.com/blog/
-- **Calculator Introduction**: https://forge-calculator.com/blog-introducing-calculator.html
+- **Calculator Introduction**: https://forge-calculator.com/blog/introducing-calculator.html
 
 ### Community
 - **Feedback**: https://forge-calculator.com/feedback.html

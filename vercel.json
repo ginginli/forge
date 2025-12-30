@@ -20,6 +20,56 @@
       "source": "/blog-introducing-calculator.html", 
       "destination": "/blog/introducing-calculator.html",
       "permanent": true
+    },
+    {
+      "source": "/npcs",
+      "destination": "/wiki/npcs.html",
+      "permanent": true
+    },
+    {
+      "source": "/enemies",
+      "destination": "/wiki/enemies.html", 
+      "permanent": true
+    },
+    {
+      "source": "/introducing-calculator",
+      "destination": "/blog/introducing-calculator.html",
+      "permanent": true
+    },
+    {
+      "source": "/mastering-the-forge",
+      "destination": "/blog/mastering-the-forge.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-recipes",
+      "destination": "/recipes/best-recipes.html",
+      "permanent": true
+    },
+    {
+      "source": "/stone",
+      "destination": "/ore/stone.html",
+      "permanent": true
+    },
+    {
+      "source": "/mythril",
+      "destination": "/ore/mythril.html",
+      "permanent": true
+    },
+    {
+      "source": "/runes",
+      "destination": "/wiki/runes.html",
+      "permanent": true
+    },
+    {
+      "source": "/gamepass",
+      "destination": "/wiki/gamepass.html",
+      "permanent": true
+    },
+    {
+      "source": "/races",
+      "destination": "/wiki/races.html",
+      "permanent": true
     }
   ],
   "headers": [

@@ -60,7 +60,7 @@ Complete guide to The Forge private servers - create, join, and optimize your pr
 - [NPCs Guide](https://forge-calculator.com/wiki/npcs.html): Sensei Moro, Marbles, Miner Fred, Maria, Runemaker, Greedy Cay, Bard
 
 ### Strategy & Tips
-- [Mastering The Forge](https://forge-calculator.com/blog-mastering-the-forge.html): Complete progression guide from novice to legendary blacksmith
+- [Mastering The Forge](https://forge-calculator.com/blog/mastering-the-forge.html): Complete progression guide from novice to legendary blacksmith
 - [Wiki](https://forge-calculator.com/wiki/): Comprehensive knowledge base with searchable content
 
 ## 🎯 Common Player Questions
