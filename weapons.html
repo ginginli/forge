@@ -37,28 +37,35 @@
     <title>The Forge Weapons - Complete Weapon Types Guide</title>
     <style>
         :root {
-            /* Forge Fire Colors - 锻造火焰 */
-            --forge-fire: #e64a19;
-            --forge-flame: #ff6f00;
-            --forge-ember: #bf360c;
-            --forge-glow: #ff8a50;
+            /* Official Colors - 官方配色 */
+            --bg-primary: #1a1612;
+            --bg-secondary: #2d1f1a;
+            --bg-darker: #0f0d0a;
+            --bg-surface: #3d2f2a;
+            --gold-primary: #d4af37;
+            --gold-light: #f4d03f;
+            --gold-dark: #b8860b;
+            --flame-primary: #ff6b35;
+            --flame-light: #ff8c42;
+            --flame-dark: #e55100;
+            --text-primary: #f5f5dc;
+            --text-secondary: #d3d3d3;
+            --text-accent: #d4af37;
+            --border-gold: #d4af37;
+            --border-flame: #ff6b35;
             
-            /* Metal Colors - 金属色调 */
+            /* Legacy mappings */
+            --forge-fire: var(--flame-primary);
+            --forge-flame: var(--flame-light);
+            --forge-ember: var(--flame-dark);
+            --forge-glow: var(--flame-light);
+            --metal-steel: var(--bg-surface);
+            --bg-forge: var(--bg-secondary);
             --metal-iron: #546e7a;
-            --metal-steel: #37474f;
             --metal-silver: #90a4ae;
             --metal-bronze: #a1887f;
-            
-            /* Background Colors - 背景色 */
-            --bg-dark: #212121;
-            --bg-darker: #1a1a1a;
-            --bg-forge: #263238;
-            --bg-surface: #2c2c2c;
-            
-            /* Text Colors */
-            --text-primary: #ffffff;
-            --text-secondary: #b0bec5;
-            --text-muted: #78909c;
+            --bg-dark: var(--bg-secondary);
+            --text-muted: #a0a0a0;
         }
         
         * {
@@ -70,8 +77,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-forge) 100%);
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
         }
         
         .container {
@@ -81,10 +88,10 @@
         }
         
         header {
-            background: linear-gradient(90deg, var(--bg-darker) 0%, var(--bg-forge) 100%);
+            background: linear-gradient(90deg, var(--bg-darker) 0%, var(--bg-secondary) 100%);
             padding: 1rem 0;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            border-bottom: 3px solid var(--forge-fire);
+            border-bottom: 3px solid var(--gold-primary);
             margin-bottom: 2rem;
             position: relative;
         }
@@ -96,7 +103,7 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, var(--forge-ember), var(--forge-fire), var(--forge-flame), var(--forge-fire), var(--forge-ember));
+            background: linear-gradient(90deg, var(--flame-dark), var(--flame-primary), var(--flame-light), var(--flame-primary), var(--flame-dark));
             opacity: 0.6;
         }
         

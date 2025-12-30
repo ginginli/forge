@@ -36,13 +36,30 @@
     <title>The Forge Ore Guide - Complete Ore Types & Combinations</title>
     <style>
         :root {
-            --forge-fire: #e64a19;
-            --forge-flame: #ff6f00;
-            --forge-ember: #bf360c;
-            --forge-glow: #ff8a50;
-            --metal-steel: #37474f;
-            --bg-darker: #1a1a1a;
-            --bg-forge: #263238;
+            /* Official Colors - 官方配色 */
+            --bg-primary: #1a1612;
+            --bg-secondary: #2d1f1a;
+            --bg-darker: #0f0d0a;
+            --bg-surface: #3d2f2a;
+            --gold-primary: #d4af37;
+            --gold-light: #f4d03f;
+            --gold-dark: #b8860b;
+            --flame-primary: #ff6b35;
+            --flame-light: #ff8c42;
+            --flame-dark: #e55100;
+            --text-primary: #f5f5dc;
+            --text-secondary: #d3d3d3;
+            --text-accent: #d4af37;
+            --border-gold: #d4af37;
+            --border-flame: #ff6b35;
+            
+            /* Legacy mappings */
+            --forge-fire: var(--flame-primary);
+            --forge-flame: var(--flame-light);
+            --forge-ember: var(--flame-dark);
+            --forge-glow: var(--flame-light);
+            --metal-steel: var(--bg-surface);
+            --bg-forge: var(--bg-secondary);
         }
         
         * {
@@ -54,8 +71,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-forge) 100%);
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
         }
         
         .container {
@@ -65,10 +82,10 @@
         }
         
         header {
-            background: linear-gradient(90deg, #1a1a1a 0%, #2d1810 100%);
+            background: linear-gradient(90deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
             padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(255, 87, 34, 0.3);
-            border-bottom: 3px solid var(--forge-fire);
+            box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+            border-bottom: 3px solid var(--gold-primary);
             margin-bottom: 2rem;
         }
         
@@ -79,19 +96,20 @@
         }
         
         header h1 {
-            color: #fff;
+            color: var(--gold-primary);
             font-size: 1.8rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
         
         nav a {
-            color: #fff;
+            color: var(--text-primary);
             text-decoration: none;
             margin-left: 1.5rem;
             transition: color 0.3s;
         }
         
         nav a:hover {
-            color: var(--forge-glow);
+            color: var(--gold-primary);
         }
         
         .hero {

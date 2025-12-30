@@ -37,19 +37,8 @@
     <meta name="twitter:description" content="Learn everything about The Forge private server - how to create, join, and maximize your private server experience.">
     
     <title>The Forge Private Servers - Complete Guide</title>
+    <link rel="stylesheet" href="forge-theme.css">
     <style>
-        :root {
-            --forge-fire: #e64a19;
-            --forge-flame: #ff6f00;
-            --forge-ember: #bf360c;
-            --forge-glow: #ff8a50;
-            --metal-steel: #37474f;
-            --bg-darker: #1a1a1a;
-            --bg-forge: #263238;
-            --text-primary: #ffffff;
-            --text-secondary: rgba(255, 255, 255, 0.9);
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -59,8 +48,8 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
             color: var(--text-primary);
-            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-forge) 100%);
             min-height: 100vh;
         }
 
@@ -72,14 +61,14 @@
 
         /* Header */
         header {
-            background: rgba(26, 26, 26, 0.95);
+            background: rgba(26, 22, 18, 0.95);
             backdrop-filter: blur(10px);
             padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            border-bottom: 2px solid var(--forge-fire);
+            border-bottom: 2px solid var(--flame-primary);
         }
 
         header .container {

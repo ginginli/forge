@@ -36,36 +36,121 @@
     
     <title>The Forge Armor Guide - All Armor Types & Stats</title>
     <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="forge-theme.css">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #1a1a1a 0%, #263238 100%); min-height: 100vh; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            line-height: 1.6; 
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%); 
+            color: var(--text-primary);
+            min-height: 100vh; 
+            margin: 0; 
+            padding: 0; 
+        }
         .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
-        header { background: rgba(26, 26, 26, 0.95); padding: 1.25rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); border-bottom: 3px solid #e64a19; }
+        header { 
+            background: rgba(26, 22, 18, 0.95); 
+            padding: 1.25rem 0; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+            border-bottom: 3px solid var(--flame-primary); 
+        }
         header .container { display: flex; justify-content: space-between; align-items: center; }
-        header h1 { color: #fff; font-size: 1.5rem; margin: 0; }
+        header h1 { color: var(--text-primary); font-size: 1.5rem; margin: 0; }
         nav { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-        nav a { color: rgba(255, 255, 255, 0.9); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; transition: all 0.2s; }
-        nav a:hover { color: #ff8a50; background: rgba(230, 74, 25, 0.1); }
-        .hero { background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%); border-radius: 20px; padding: 3rem 2.5rem; margin: 2rem 0; text-align: center; border: 1px solid rgba(255, 87, 34, 0.3); }
-        .hero h2 { color: #ff8a50; font-size: 2.5rem; margin-bottom: 1rem; }
-        .hero p { color: rgba(255, 255, 255, 0.8); font-size: 1.125rem; }
-        .content-section { background: #fff; border-radius: 15px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
-        .content-section h3 { color: #ff5722; font-size: 1.8rem; margin-bottom: 1.5rem; border-bottom: 2px solid #ff9800; padding-bottom: 0.5rem; }
+        nav a { 
+            color: var(--text-secondary); 
+            text-decoration: none; 
+            padding: 0.5rem 1rem; 
+            border-radius: 8px; 
+            transition: all 0.2s; 
+        }
+        nav a:hover { 
+            color: var(--flame-light); 
+            background: rgba(255, 107, 53, 0.1); 
+        }
+        .hero { 
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-darker) 100%); 
+            border-radius: 20px; 
+            padding: 3rem 2.5rem; 
+            margin: 2rem 0; 
+            text-align: center; 
+            border: 1px solid var(--border-flame); 
+        }
+        .hero h2 { 
+            color: var(--gold-primary); 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero p { color: var(--text-secondary); font-size: 1.125rem; }
+        .content-section { 
+            background: var(--bg-surface); 
+            border-radius: 15px; 
+            padding: 2rem; 
+            margin-bottom: 2rem; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+            border: 1px solid var(--border-subtle);
+        }
+        .content-section h3 { 
+            color: var(--gold-primary); 
+            font-size: 1.8rem; 
+            margin-bottom: 1.5rem; 
+            border-bottom: 2px solid var(--gold-light); 
+            padding-bottom: 0.5rem; 
+        }
+        .content-section h2 { 
+            color: var(--gold-primary); 
+            font-size: 1.8rem; 
+            margin-bottom: 1.5rem; 
+            border-bottom: 2px solid var(--gold-light); 
+            padding-bottom: 0.5rem; 
+        }
+        .content-section p { color: var(--text-primary); }
         .armor-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-        .armor-table th { background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); color: #fff; padding: 1rem; text-align: left; font-weight: 600; }
-        .armor-table td { padding: 1rem; border-bottom: 1px solid #e0e0e0; }
-        .armor-table tr:hover { background: #f5f5f5; }
-        .armor-name { font-weight: 600; color: #ff5722; }
+        .armor-table th { 
+            background: linear-gradient(135deg, var(--flame-primary) 0%, var(--gold-primary) 100%); 
+            color: var(--text-primary); 
+            padding: 1rem; 
+            text-align: left; 
+            font-weight: 600; 
+        }
+        .armor-table td { 
+            padding: 1rem; 
+            border-bottom: 1px solid var(--border-subtle); 
+            color: var(--text-primary);
+        }
+        .armor-table tr:hover { background: var(--bg-darker); }
+        .armor-name { font-weight: 600; color: var(--gold-primary); }
         .light-armor { border-left: 4px solid #4caf50; }
-        .medium-armor { border-left: 4px solid #ff9800; }
-        .heavy-armor { border-left: 4px solid #f44336; }
+        .medium-armor { border-left: 4px solid var(--gold-primary); }
+        .heavy-armor { border-left: 4px solid var(--flame-primary); }
         .stat-positive { color: #4caf50; font-weight: 600; }
-        .chance-common { color: #757575; }
-        .chance-rare { color: #2196f3; }
-        footer { background: linear-gradient(135deg, rgba(26, 26, 26, 0.98) 0%, rgba(45, 24, 16, 0.98) 100%); color: rgba(255, 255, 255, 0.9); padding: 2rem 0; text-align: center; border-top: 1px solid rgba(255, 87, 34, 0.3); margin-top: 3rem; }
-        footer a { color: #ff8a50; text-decoration: none; }
-        .info-box { background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left: 4px solid #2196f3; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
-        .info-box h4 { color: #1565c0; margin-bottom: 0.5rem; }
-        .info-box ul { margin-left: 1.5rem; color: #555; }
+        .chance-common { color: var(--text-muted); }
+        .chance-rare { color: var(--purple-primary); }
+        footer { 
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%); 
+            color: var(--text-secondary); 
+            padding: 2rem 0; 
+            text-align: center; 
+            border-top: 1px solid var(--border-flame); 
+            margin-top: 3rem; 
+        }
+        footer a { color: var(--flame-primary); text-decoration: none; }
+        footer a:hover { color: var(--flame-light); }
+        .info-box { 
+            background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-dark) 100%); 
+            border-left: 4px solid var(--purple-light); 
+            padding: 1.5rem; 
+            border-radius: 8px; 
+            margin: 1.5rem 0; 
+            color: var(--text-primary);
+        }
+        .info-box h4 { color: var(--text-primary); margin-bottom: 0.5rem; }
+        .info-box h3 { color: var(--text-primary); margin-bottom: 0.5rem; }
+        .info-box ul { margin-left: 1.5rem; color: var(--text-primary); }
     </style>
     
     <!-- Google tag (gtag.js) -->
