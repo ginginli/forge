@@ -268,3 +268,912 @@ a:hover {
     0%, 100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
     50% { box-shadow: 0 0 40px rgba(212, 175, 55, 0.6); }
 }
+/* Snowite Page Specific Styles - 雪花矿石页面专用样式 */
+
+/* Location Information Box */
+.location-info-box {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #2196f3;
+}
+
+.location-info-box h3 {
+    color: #0d47a1;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.location-info-box p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.location-info-box .inner-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.location-info-box .inner-box h3 {
+    color: #1976d2;
+    margin-bottom: 1rem;
+}
+
+.location-info-box .inner-box p {
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Grid Layout */
+.mining-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+/* Warning Box */
+.warning-info-box {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-left: 4px solid #ff9800;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.warning-info-box h3 {
+    color: #e65100;
+    margin-bottom: 0.5rem;
+}
+
+.warning-info-box ul {
+    color: #555;
+    margin: 0;
+}
+
+/* Farming Strategy Box */
+.farming-strategy-box {
+    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    border-left: 4px solid #4caf50;
+}
+
+.farming-strategy-box h3 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.farming-strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.farming-strategy-grid h3 {
+    color: #388e3c;
+    margin-bottom: 0.5rem;
+}
+
+.farming-strategy-grid ul {
+    color: #555;
+    margin: 0;
+}
+
+/* Official Description Box */
+.official-description-box {
+    background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid var(--snowite-light);
+    color: #fff;
+}
+
+.official-description-box h3 {
+    color: #ff9800;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.official-description-box blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #ffb74d;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #ff9800;
+    padding-left: 1rem;
+}
+
+.official-description-box .overview-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.official-description-box .overview-box h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.official-description-box .overview-box p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Stats Grid */
+.stats-two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Ore Profile Box */
+.ore-profile-box {
+    background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    border-left: 4px solid var(--snowite-blue);
+}
+
+.ore-profile-box h3 {
+    color: var(--snowite-blue);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.ore-profile-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ore-profile-tag {
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.ore-profile-tag.legendary {
+    background: #ff9800;
+}
+
+.ore-profile-tag.wind {
+    background: #2196f3;
+}
+
+.ore-profile-tag.slow {
+    background: #4caf50;
+}
+
+.ore-profile-box .inner-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.ore-profile-box .inner-box p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Stat Overview Box */
+.stat-overview-box {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    border-left: 4px solid #ff9800;
+}
+
+.stat-overview-box h3 {
+    color: #e65100;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Stat Item */
+.stat-item {
+    margin-bottom: 1.5rem;
+}
+
+.stat-item:last-child {
+    margin-bottom: 0;
+}
+
+.stat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-value {
+    font-weight: bold;
+}
+
+.stat-value.rare {
+    color: #f44336;
+}
+
+.stat-value.high {
+    color: #4caf50;
+}
+
+.stat-value.very-high {
+    color: #ff9800;
+}
+
+/* Progress Bar */
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+}
+
+.progress-fill.rare {
+    background: linear-gradient(90deg, #f44336 0%, #ff5722 100%);
+    width: 2%;
+}
+
+.progress-fill.high {
+    background: linear-gradient(90deg, #4caf50 0%, #8bc34a 100%);
+    width: 80%;
+}
+
+.progress-fill.very-high {
+    background: linear-gradient(90deg, #ff9800 0%, #ffb74d 100%);
+    width: 85%;
+}
+
+/* Complete Info Table */
+.complete-info-table {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.complete-info-table h3 {
+    color: var(--snowite-blue);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.info-card {
+    text-align: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.info-card-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.info-card-value {
+    font-weight: bold;
+    color: #333;
+}
+
+.info-card-value.legendary {
+    color: #ff9800;
+}
+
+.info-card-value.blue {
+    color: #2196f3;
+}
+
+.info-card-value.rare {
+    color: #f44336;
+}
+
+.info-card-value.high {
+    color: #4caf50;
+}
+
+.info-card-value.snowite {
+    color: var(--snowite-blue);
+}
+
+/* Community Insights Box */
+.community-insights-box {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #ff9800;
+}
+
+.community-insights-box h3 {
+    color: #e65100;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.insight-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.insight-card h4 {
+    color: #ff5722;
+    margin-bottom: 1rem;
+}
+
+.insight-card p {
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.insight-card ul {
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.insight-highlight {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.insight-highlight p {
+    color: #666;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Player Tips Grid */
+.player-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.player-tip-section h5 {
+    color: #4caf50;
+    margin-bottom: 0.5rem;
+}
+
+.player-tip-section ul {
+    color: #555;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Player Experience Box */
+.player-experience-box {
+    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #4caf50;
+}
+
+.player-experience-box h3 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.experience-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.experience-quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #4caf50;
+    padding-left: 1rem;
+}
+
+.recipe-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.recipe-section h4 {
+    color: #388e3c;
+    margin-bottom: 1rem;
+}
+
+.recipe-section ul {
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.performance-highlight {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 6px;
+}
+
+.performance-highlight h4 {
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
+}
+
+.performance-highlight p {
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Trait Details Box */
+.trait-details-box {
+    background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-left: 4px solid var(--snowite-blue);
+}
+
+.trait-details-box h3 {
+    color: var(--snowite-blue);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.trait-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.trait-content h4 {
+    color: #ff5722;
+    margin-bottom: 1rem;
+}
+
+.trait-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.trait-section h5 {
+    margin-bottom: 0.5rem;
+}
+
+.trait-section.benefits h5 {
+    color: #4caf50;
+}
+
+.trait-section.strategy h5 {
+    color: #ff9800;
+}
+
+.trait-section ul {
+    color: #555;
+    margin: 0;
+}
+
+/* Tips Grid */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Yandex Metrika Hidden Image */
+.yandex-hidden {
+    position: absolute;
+    left: -9999px;
+}
+/* Primary Uses Overview Box */
+.primary-uses-box {
+    background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    border: 2px solid #ff9800;
+}
+
+.primary-uses-box h3 {
+    color: #ff9800;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.uses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.use-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.use-card h3 {
+    color: #ffb74d;
+    margin-bottom: 0.5rem;
+}
+
+.use-card p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Crafting Section Paragraph */
+.crafting-section p {
+    margin-bottom: 1.5rem;
+}
+/* Additional styles for remaining inline styles */
+
+/* Insight card lists */
+.insight-card ul {
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Player tips section */
+.player-tips-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.player-tips-section h4 {
+    color: #2196f3;
+    margin-bottom: 1rem;
+}
+
+/* Recipe examples */
+.recipe-examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.recipe-example h3 {
+    color: #ff5722;
+    margin-bottom: 1rem;
+}
+
+.recipe-details {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.recipe-note {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Economic and strategy tip boxes */
+.economic-tip-box {
+    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+    border-left: 4px solid #4caf50;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.economic-tip-box h3 {
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
+}
+
+.economic-tip-box ul {
+    color: #555;
+    margin: 0;
+}
+
+.combat-tip-box {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-left: 4px solid #ff9800;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.combat-tip-box h3 {
+    color: #e65100;
+    margin-bottom: 0.5rem;
+}
+
+.combat-tip-box ul {
+    color: #555;
+    margin: 0;
+}
+
+.snowite-tip-box {
+    background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%);
+    border-left: 4px solid var(--snowite-blue);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.snowite-tip-box h3 {
+    color: var(--snowite-blue);
+    margin-bottom: 0.5rem;
+}
+
+.snowite-tip-box ul {
+    color: #555;
+    margin: 0;
+}
+/* Additional Snowite-specific styles that were in the original internal CSS */
+
+/* Snowite color variables */
+:root {
+    --snowite-blue: #03a9f4;
+    --snowite-light: #81d4fa;
+    --snowite-dark: #0277bd;
+    --snowite-ice: #e1f5fe;
+}
+
+/* Base layout styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(90deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+    border-bottom: 3px solid var(--gold-primary);
+    margin-bottom: 2rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--gold-primary);
+    font-size: 1.8rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--gold-primary);
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+    background: rgba(212, 175, 55, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb a {
+    color: var(--gold-primary);
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.breadcrumb a:hover {
+    color: var(--gold-light);
+}
+
+.breadcrumb span {
+    color: var(--snowite-light);
+    margin: 0 0.5rem;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, var(--snowite-blue) 0%, var(--snowite-dark) 100%);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 40px rgba(3, 169, 244, 0.3);
+    border: 2px solid var(--snowite-light);
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Stats grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    border-left: 4px solid var(--snowite-blue);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    color: var(--snowite-blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Mining guide */
+.mining-guide {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-left: 4px solid #ff9800;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.mining-guide h3 {
+    color: #e65100;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Step list */
+.step-list {
+    list-style: none;
+    counter-reset: step-counter;
+}
+
+.step-list li {
+    counter-increment: step-counter;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+    position: relative;
+}
+
+.step-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ff9800;
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* CTA box */
+.cta-box {
+    background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    margin: 2rem 0;
+}
+
+.cta-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #fff;
+    color: #ff5722;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+    margin: 0.5rem;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
+    color: var(--text-primary);
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 2px solid var(--gold-primary);
+    margin-top: 3rem;
+}
+
+footer a {
+    color: var(--gold-primary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

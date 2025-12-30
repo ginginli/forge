@@ -9,7 +9,7 @@
     
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" class="yandex-hidden" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -34,311 +34,7 @@
     <meta name="twitter:description" content="Complete guide to Snowite ore in The Forge. Learn Snowite mining locations, Snowite crafting uses, and tips for legendary weapon crafting.">
     
     <title>Snowite Ore Guide - How to Get Snowite in The Forge</title>
-    <style>
-        :root {
-            /* Official Colors - 官方配色 */
-            --bg-primary: #1a1612;
-            --bg-secondary: #2d1f1a;
-            --bg-darker: #0f0d0a;
-            --bg-surface: #3d2f2a;
-            --gold-primary: #d4af37;
-            --gold-light: #f4d03f;
-            --gold-dark: #b8860b;
-            --flame-primary: #ff6b35;
-            --flame-light: #ff8c42;
-            --flame-dark: #e55100;
-            --text-primary: #f5f5dc;
-            --text-secondary: #d3d3d3;
-            --text-accent: #d4af37;
-            --border-gold: #d4af37;
-            --border-flame: #ff6b35;
-            --snowite-blue: #03a9f4;
-            --snowite-light: #81d4fa;
-            --snowite-dark: #0277bd;
-            --snowite-ice: #e1f5fe;
-            
-            /* Legacy mappings */
-            --forge-fire: var(--flame-primary);
-            --forge-flame: var(--flame-light);
-            --forge-ember: var(--flame-dark);
-            --forge-glow: var(--flame-light);
-            --metal-steel: var(--bg-surface);
-            --bg-forge: var(--bg-secondary);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        header {
-            background: linear-gradient(90deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
-            border-bottom: 3px solid var(--gold-primary);
-            margin-bottom: 2rem;
-        }
-        
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        header h1 {
-            color: var(--gold-primary);
-            font-size: 1.8rem;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        nav a {
-            color: var(--text-primary);
-            text-decoration: none;
-            margin-left: 1.5rem;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: var(--gold-primary);
-        }
-        
-        .breadcrumb {
-            background: rgba(212, 175, 55, 0.1);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-        }
-        
-        .breadcrumb a {
-            color: var(--gold-primary);
-            text-decoration: none;
-            margin-right: 0.5rem;
-        }
-        
-        .breadcrumb a:hover {
-            color: var(--gold-light);
-        }
-        
-        .breadcrumb span {
-            color: var(--snowite-light);
-            margin: 0 0.5rem;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, var(--snowite-blue) 0%, var(--snowite-dark) 100%);
-            border-radius: 15px;
-            padding: 3rem 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 40px rgba(3, 169, 244, 0.3);
-            border: 2px solid var(--snowite-light);
-            text-align: center;
-            color: var(--text-primary);
-        }
-        
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        .content-section {
-            background: var(--bg-secondary);
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border: 1px solid var(--bg-surface);
-        }
-        
-        .content-section h2 {
-            color: var(--gold-primary);
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--gold-light);
-            padding-bottom: 0.5rem;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .stat-card {
-            background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%);
-            border-radius: 10px;
-            padding: 1.5rem;
-            text-align: center;
-            border-left: 4px solid var(--snowite-blue);
-            transition: transform 0.3s;
-        }
-        
-        .stat-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .stat-card h3 {
-            color: var(--snowite-blue);
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .stat-value {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #333;
-        }
-        
-        .mining-guide {
-            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-            border-left: 4px solid #ff9800;
-            padding: 2rem;
-            border-radius: 10px;
-            margin: 2rem 0;
-        }
-        
-        .mining-guide h3 {
-            color: #e65100;
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-        
-        .step-list {
-            list-style: none;
-            counter-reset: step-counter;
-        }
-        
-        .step-list li {
-            counter-increment: step-counter;
-            margin-bottom: 1rem;
-            padding-left: 3rem;
-            position: relative;
-        }
-        
-        .step-list li::before {
-            content: counter(step-counter);
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: #ff9800;
-            color: #fff;
-            width: 2rem;
-            height: 2rem;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-        
-        .crafting-section {
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-            border-left: 4px solid #2196f3;
-            padding: 2rem;
-            border-radius: 10px;
-            margin: 2rem 0;
-        }
-        
-        .crafting-section h3 {
-            color: #0d47a1;
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-        
-        .recipe-example {
-            background: #fff;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .recipe-example h4 {
-            color: #ff5722;
-            margin-bottom: 0.5rem;
-        }
-        
-        .tip-box {
-            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
-            border-left: 4px solid #4caf50;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-        
-        .tip-box h3 {
-            color: #2e7d32;
-            margin-bottom: 0.5rem;
-        }
-        
-        .cta-box {
-            background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            color: #fff;
-            margin: 2rem 0;
-        }
-        
-        .cta-box h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-        
-        .cta-btn {
-            display: inline-block;
-            background: #fff;
-            color: #ff5722;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.3s;
-            margin: 0.5rem;
-        }
-        
-        .cta-btn:hover {
-            transform: scale(1.05);
-        }
-        
-        footer {
-            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
-            color: var(--text-primary);
-            padding: 2rem 0;
-            text-align: center;
-            border-top: 2px solid var(--gold-primary);
-            margin-top: 3rem;
-        }
-        
-        footer a {
-            color: var(--gold-primary);
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="/forge-theme.css">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
@@ -393,14 +89,14 @@
             <h2>⛏️ How to Get Snowite Ore</h2>
             
             <!-- Location Information -->
-            <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #2196f3;">
-                <h3 style="color: #0d47a1; margin-bottom: 1rem; font-size: 1.3rem;">📍 Primary Location: Frost Spire</h3>
-                <p style="color: #555; line-height: 1.7; margin-bottom: 1.5rem;">
+            <div class="location-info-box">
+                <h3>📍 Primary Location: Frost Spire</h3>
+                <p>
                     Snowite (also called "Snow White") is a legendary wind-infused ore found exclusively in the <strong>Frost Spire</strong> area - the snowy, icy part of the map. This extremely rare Snowite material is prized for its unique slow effect properties and 8x multiplier power.
                 </p>
-                <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                    <h3 style="color: #1976d2; margin-bottom: 1rem;">🧊 Rock Types: All Icy Formations</h3>
-                    <p style="color: #555; margin: 0; line-height: 1.6;">
+                <div class="inner-box">
+                    <h3>🧊 Rock Types: All Icy Formations</h3>
+                    <p>
                         Snowite can be found in <strong>any icy rocks or crystal nodes</strong> in Frost Spire, including Icy Pebbles, Icy Rocks, Icy Boulders, and Small Ice Crystals. Pretty much every rock in Frost Spire has a chance to drop Snowite.
                     </p>
                 </div>
@@ -419,7 +115,7 @@
             </div>
 
             <!-- Advanced Mining Information -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+            <div class="mining-grid">
                 <div class="tip-box">
                     <h3>💡 Pro Mining Tips</h3>
                     <ul>
@@ -431,9 +127,9 @@
                     </ul>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #ff9800; padding: 1.5rem; border-radius: 8px;">
-                    <h3 style="color: #e65100; margin-bottom: 0.5rem;">⚡ Why Snowite is Legendary</h3>
-                    <ul style="color: #555; margin: 0;">
+                <div class="warning-info-box">
+                    <h3>⚡ Why Snowite is Legendary</h3>
+                    <ul>
                         <li><strong>Legendary Rarity:</strong> Snowite is one of the rarest ores in the game</li>
                         <li><strong>Unique Trait:</strong> Snowite provides slow effect with movement debuff</li>
                         <li><strong>High Multiplier:</strong> Snowite's 8x multiplier for powerful weapons</li>
@@ -443,12 +139,12 @@
             </div>
 
             <!-- Farming Strategy -->
-            <div style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); border-radius: 12px; padding: 2rem; border-left: 4px solid #4caf50;">
-                <h3 style="color: #2e7d32; margin-bottom: 1rem; font-size: 1.2rem;">🚀 Snowite Farming Strategy</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+            <div class="farming-strategy-box">
+                <h3>🚀 Snowite Farming Strategy</h3>
+                <div class="farming-strategy-grid">
                     <div>
-                        <h3 style="color: #388e3c; margin-bottom: 0.5rem;">For Elite Players</h3>
-                        <ul style="color: #555; margin: 0;">
+                        <h3>For Elite Players</h3>
+                        <ul>
                             <li>Focus on all 4 ice rock types for Snowite</li>
                             <li>Use maximum Luck equipment for Snowite farming</li>
                             <li>Plan for very long Snowite mining sessions</li>
@@ -456,8 +152,8 @@
                         </ul>
                     </div>
                     <div>
-                        <h3 style="color: #388e3c; margin-bottom: 0.5rem;">For Legendary Forgers</h3>
-                        <ul style="color: #555; margin: 0;">
+                        <h3>For Legendary Forgers</h3>
+                        <ul>
                             <li>Map out all ice formation locations for Snowite</li>
                             <li>Coordinate with team for protection during Snowite farming</li>
                             <li>Save Snowite for ultimate weapon crafting</li>
@@ -473,110 +169,110 @@
             <h2>📊 Snowite Ore Statistics</h2>
             
             <!-- Official Game Description -->
-            <div style="background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border: 2px solid var(--snowite-light); color: #fff;">
-                <h3 style="color: #ff9800; margin-bottom: 1rem; font-size: 1.3rem;">📖 Official Game Description</h3>
-                <blockquote style="font-size: 1.1rem; font-style: italic; color: #ffb74d; margin-bottom: 1.5rem; border-left: 4px solid #ff9800; padding-left: 1rem;">
+            <div class="official-description-box">
+                <h3>📖 Official Game Description</h3>
+                <blockquote>
                     "Light, sharp, and infused with wind energy. Snowite almost floats when freshly mined. ❄️"
                 </blockquote>
-                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
-                    <h3 style="color: #fff; margin-bottom: 1rem;">OVERVIEW</h3>
-                    <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
+                <div class="overview-box">
+                    <h3>OVERVIEW</h3>
+                    <p>
                         Snowite is a legendary wind-infused ore that combines the sharpness of ice with the power of wind energy. Snowite's unique properties make it perfect for crafting weapons that enhance attack speed while providing tactical advantages in combat.
                     </p>
                 </div>
             </div>
 
             <!-- Detailed Stats Grid -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+            <div class="stats-two-column">
                 <!-- Ore Profile -->
-                <div style="background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%); border-radius: 12px; padding: 2rem; border-left: 4px solid var(--snowite-blue);">
-                    <h3 style="color: var(--snowite-blue); margin-bottom: 1.5rem; font-size: 1.2rem;">ORE PROFILE</h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
-                        <span style="background: #ff9800; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">LEGENDARY SNOWITE</span>
-                        <span style="background: #2196f3; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">WIND ELEMENT</span>
-                        <span style="background: #4caf50; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">SLOW EFFECT</span>
+                <div class="ore-profile-box">
+                    <h3>ORE PROFILE</h3>
+                    <div class="ore-profile-tags">
+                        <span class="ore-profile-tag legendary">LEGENDARY SNOWITE</span>
+                        <span class="ore-profile-tag wind">WIND ELEMENT</span>
+                        <span class="ore-profile-tag slow">SLOW EFFECT</span>
                     </div>
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <p style="color: #555; line-height: 1.6; margin: 0; font-style: italic;">
+                    <div class="inner-box">
+                        <p>
                             <strong>Snowite is the ultimate slow-focused ore</strong>, perfect for creating weapons that prioritize crowd control and tactical mobility. Snowite's wind-infused nature provides unique combat advantages that can turn the tide of battle.
                         </p>
                     </div>
                 </div>
 
                 <!-- Stat Overview -->
-                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 12px; padding: 2rem; border-left: 4px solid #ff9800;">
-                    <h3 style="color: #e65100; margin-bottom: 1.5rem; font-size: 1.2rem;">STAT OVERVIEW - SNOWITE</h3>
+                <div class="stat-overview-box">
+                    <h3>STAT OVERVIEW - SNOWITE</h3>
                     
                     <!-- Drop Chance -->
-                    <div style="margin-bottom: 1.5rem;">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <span style="font-weight: bold; color: #333;">DROP CHANCE</span>
-                            <span style="font-weight: bold; color: #f44336;">1/4325 - ULTRA RARE SNOWITE</span>
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-label">DROP CHANCE</span>
+                            <span class="stat-value rare">1/4325 - ULTRA RARE SNOWITE</span>
                         </div>
-                        <div style="background: #e0e0e0; border-radius: 10px; height: 8px; overflow: hidden;">
-                            <div style="background: linear-gradient(90deg, #f44336 0%, #ff5722 100%); height: 100%; width: 2%;"></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill rare"></div>
                         </div>
                     </div>
 
                     <!-- Multiplier -->
-                    <div style="margin-bottom: 1.5rem;">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <span style="font-weight: bold; color: #333;">MULTIPLIER</span>
-                            <span style="font-weight: bold; color: #4caf50;">8x - VERY HIGH SNOWITE</span>
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-label">MULTIPLIER</span>
+                            <span class="stat-value high">8x - VERY HIGH SNOWITE</span>
                         </div>
-                        <div style="background: #e0e0e0; border-radius: 10px; height: 8px; overflow: hidden;">
-                            <div style="background: linear-gradient(90deg, #4caf50 0%, #8bc34a 100%); height: 100%; width: 80%;"></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill high"></div>
                         </div>
                     </div>
 
                     <!-- Sell Value -->
-                    <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <span style="font-weight: bold; color: #333;">SELL VALUE</span>
-                            <span style="font-weight: bold; color: #ff9800;">150$ - VERY HIGH</span>
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-label">SELL VALUE</span>
+                            <span class="stat-value very-high">150$ - VERY HIGH</span>
                         </div>
-                        <div style="background: #e0e0e0; border-radius: 10px; height: 8px; overflow: hidden;">
-                            <div style="background: linear-gradient(90deg, #ff9800 0%, #ffb74d 100%); height: 100%; width: 85%;"></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill very-high"></div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Detailed Info Table -->
-            <div style="background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <h3 style="color: var(--snowite-blue); margin-bottom: 1.5rem; font-size: 1.2rem;">📋 Complete Snowite Information</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Type</div>
-                        <div style="font-weight: bold; color: #333;">Ore</div>
+            <div class="complete-info-table">
+                <h3>📋 Complete Snowite Information</h3>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-card-label">Type</div>
+                        <div class="info-card-value">Ore</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Rarity</div>
-                        <div style="font-weight: bold; color: #ff9800;">Legendary</div>
+                    <div class="info-card">
+                        <div class="info-card-label">Rarity</div>
+                        <div class="info-card-value legendary">Legendary</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Area</div>
-                        <div style="font-weight: bold; color: #2196f3;">Icy Regions</div>
+                    <div class="info-card">
+                        <div class="info-card-label">Area</div>
+                        <div class="info-card-value blue">Icy Regions</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Rock Types</div>
-                        <div style="font-weight: bold; color: #ff9800;">Icy Formations</div>
+                    <div class="info-card">
+                        <div class="info-card-label">Rock Types</div>
+                        <div class="info-card-value legendary">Icy Formations</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Chance</div>
-                        <div style="font-weight: bold; color: #f44336;">1/4325</div>
+                    <div class="info-card">
+                        <div class="info-card-label">Chance</div>
+                        <div class="info-card-value rare">1/4325</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Multiplier</div>
-                        <div style="font-weight: bold; color: #4caf50;">8x</div>
+                    <div class="info-card">
+                        <div class="info-card-label">Multiplier</div>
+                        <div class="info-card-value high">8x</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Sell Value</div>
-                        <div style="font-weight: bold; color: #ff9800;">150$</div>
+                    <div class="info-card">
+                        <div class="info-card-label">Sell Value</div>
+                        <div class="info-card-value legendary">150$</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Trait</div>
-                        <div style="font-weight: bold; color: var(--snowite-blue);">Slow Effect on Enemies</div>
+                    <div class="info-card">
+                        <div class="info-card-label">Trait</div>
+                        <div class="info-card-value snowite">Slow Effect on Enemies</div>
                     </div>
                 </div>
             </div>
@@ -587,47 +283,47 @@
             <h2>⚔️ Snowite Ore Crafting Uses</h2>
             
             <!-- Primary Uses Overview -->
-            <div style="background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; color: #fff; border: 2px solid #ff9800;">
-                <h3 style="color: #ff9800; margin-bottom: 1.5rem; font-size: 1.3rem;">🎯 Snowite's Role in The Forge</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
-                        <h3 style="color: #ffb74d; margin-bottom: 0.5rem;">⚔️ Speed Weapons</h3>
-                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Perfect for crafting high-speed weapons with Snowite slow bonuses</p>
+            <div class="primary-uses-box">
+                <h3>🎯 Snowite's Role in The Forge</h3>
+                <div class="uses-grid">
+                    <div class="use-card">
+                        <h3>⚔️ Speed Weapons</h3>
+                        <p>Perfect for crafting high-speed weapons with Snowite slow bonuses</p>
                     </div>
-                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
-                        <h3 style="color: #ffb74d; margin-bottom: 0.5rem;">🌪️ Wind Element</h3>
-                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Unique Snowite wind-infused properties for tactical advantages</p>
+                    <div class="use-card">
+                        <h3>🌪️ Wind Element</h3>
+                        <p>Unique Snowite wind-infused properties for tactical advantages</p>
                     </div>
-                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
-                        <h3 style="color: #ffb74d; margin-bottom: 0.5rem;">💎 Premium Material</h3>
-                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Ultra-rare Snowite material for the most elite equipment</p>
+                    <div class="use-card">
+                        <h3>💎 Premium Material</h3>
+                        <p>Ultra-rare Snowite material for the most elite equipment</p>
                     </div>
                 </div>
             </div>
             
             <div class="crafting-section">
                 <h3>⚔️ Primary Use: Legendary Slow Weapons (8x Snowite Multiplier Category)</h3>
-                <p style="margin-bottom: 1.5rem;">Snowite belongs to the <strong>8x - VERY HIGH</strong> multiplier category, making Snowite perfect for legendary weapon crafting with exceptional slow effect bonuses.</p>
+                <p>Snowite belongs to the <strong>8x - VERY HIGH</strong> multiplier category, making Snowite perfect for legendary weapon crafting with exceptional slow effect bonuses.</p>
                 
                 <!-- Community Insights -->
-                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #ff9800;">
-                    <h3 style="color: #e65100; margin-bottom: 1rem; font-size: 1.3rem;">🎮 Community Insights & Tips</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                        <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <h4 style="color: #ff5722; margin-bottom: 1rem;">🏆 Savage Claw Gauntlet</h4>
-                            <p style="color: #555; margin-bottom: 1rem; line-height: 1.6;">
+                <div class="community-insights-box">
+                    <h3>🎮 Community Insights & Tips</h3>
+                    <div class="insights-grid">
+                        <div class="insight-card">
+                            <h4>🏆 Savage Claw Gauntlet</h4>
+                            <p>
                                 Players have successfully crafted the new <strong>Savage Claw</strong> gauntlet using Snowite. This legendary weapon achieves <strong>120 damage</strong> thanks to Snowite's 8x multiplier.
                             </p>
-                            <div style="background: #f9f9f9; padding: 1rem; border-radius: 6px;">
-                                <p style="color: #666; margin: 0; font-size: 0.9rem;">
+                            <div class="insight-highlight">
+                                <p>
                                     <strong>Performance:</strong> Better multiplier than both Demonite and Darkite, making it one of the most powerful ores available.
                                 </p>
                             </div>
                         </div>
                         
-                        <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <h4 style="color: #ff5722; margin-bottom: 1rem;">📍 Best Farming Spots</h4>
-                            <ul style="color: #555; margin: 0; line-height: 1.6;">
+                        <div class="insight-card">
+                            <h4>📍 Best Farming Spots</h4>
+                            <ul>
                                 <li><strong>Spider Cave Area:</strong> Concentrated rock clusters for efficient farming</li>
                                 <li><strong>Any Frost Spire Rock:</strong> Every icy rock has drop potential</li>
                                 <li><strong>Crystal Nodes:</strong> Higher visibility, easy to spot and mine</li>
@@ -636,21 +332,21 @@
                         </div>
                     </div>
                     
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; margin-top: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <h4 style="color: #2196f3; margin-bottom: 1rem;">💡 Player Success Tips</h4>
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-                            <div>
-                                <h5 style="color: #4caf50; margin-bottom: 0.5rem;">Mining Strategy</h5>
-                                <ul style="color: #555; margin: 0; font-size: 0.9rem;">
+                    <div class="player-tips-section">
+                        <h4>💡 Player Success Tips</h4>
+                        <div class="player-tips-grid">
+                            <div class="player-tip-section">
+                                <h5>Mining Strategy</h5>
+                                <ul>
                                     <li>Don't get frustrated - it's super rare</li>
                                     <li>Keep mining consistently</li>
                                     <li>Use strongest pickaxe available</li>
                                     <li>Focus on speed over selectivity</li>
                                 </ul>
                             </div>
-                            <div>
-                                <h5 style="color: #4caf50; margin-bottom: 0.5rem;">Combat Applications</h5>
-                                <ul style="color: #555; margin: 0; font-size: 0.9rem;">
+                            <div class="player-tip-section">
+                                <h5>Combat Applications</h5>
+                                <ul>
                                     <li>Slow effect makes fights easier</li>
                                     <li>Perfect for crowd control</li>
                                     <li>Excellent for challenging bosses</li>
@@ -662,17 +358,17 @@
                 </div>
 
                 <!-- Player Experience Section -->
-                <div style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #4caf50;">
-                    <h3 style="color: #2e7d32; margin-bottom: 1rem; font-size: 1.3rem;">🎮 Player Experience: Snowite Straight Sword</h3>
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <blockquote style="font-style: italic; color: #555; margin-bottom: 1.5rem; border-left: 4px solid #4caf50; padding-left: 1rem;">
+                <div class="player-experience-box">
+                    <h3>🎮 Player Experience: Snowite Straight Sword</h3>
+                    <div class="experience-content">
+                        <blockquote class="experience-quote">
                             "Forging a new weapon with Snowite is really easy! The 8x multiplier makes it incredibly powerful, and with enhancements, it becomes a beast that can cut through diamond spiders easily."
                         </blockquote>
                         
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                            <div>
-                                <h4 style="color: #388e3c; margin-bottom: 1rem;">📋 Tested Recipe</h4>
-                                <ul style="color: #555; margin: 0; line-height: 1.6;">
+                        <div class="recipe-stats-grid">
+                            <div class="recipe-section">
+                                <h4>📋 Tested Recipe</h4>
+                                <ul>
                                     <li><strong>4 × Snowite Ore</strong></li>
                                     <li><strong>2 × Rivalite Ore</strong></li>
                                     <li><strong>1 × Eye Ore</strong></li>
@@ -680,9 +376,9 @@
                                 </ul>
                             </div>
                             
-                            <div>
-                                <h4 style="color: #388e3c; margin-bottom: 1rem;">⚔️ Performance Stats</h4>
-                                <ul style="color: #555; margin: 0; line-height: 1.6;">
+                            <div class="recipe-section">
+                                <h4>⚔️ Performance Stats</h4>
+                                <ul>
                                     <li><strong>Base Damage:</strong> 122</li>
                                     <li><strong>Attack Speed:</strong> 0.66</li>
                                     <li><strong>Enhanced Damage:</strong> 147</li>
@@ -691,9 +387,9 @@
                             </div>
                         </div>
                         
-                        <div style="margin-top: 1.5rem; padding: 1rem; background: #f9f9f9; border-radius: 6px;">
-                            <h4 style="color: #2e7d32; margin-bottom: 0.5rem;">🌟 Combat Performance</h4>
-                            <p style="color: #555; margin: 0; line-height: 1.6;">
+                        <div class="performance-highlight">
+                            <h4>🌟 Combat Performance</h4>
+                            <p>
                                 <strong>Excellent for Island exploration:</strong> Cuts through diamond spiders easily, provides loads of stun effects, and serves as a great starting weapon for advanced areas. The combination of high damage and stun capabilities makes it perfect for both PvE and challenging encounters.
                             </p>
                         </div>
@@ -701,54 +397,54 @@
                 </div>
 
                 <!-- Weapon Recipes -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                <div class="recipe-examples-grid">
                     <div class="recipe-example">
-                        <h3 style="color: #ff5722; margin-bottom: 1rem;">🏆 Snowite Straight Sword (Proven Recipe)</h3>
-                        <div style="background: #f9f9f9; padding: 1rem; border-radius: 6px; margin-bottom: 1rem;">
+                        <h3>🏆 Snowite Straight Sword (Proven Recipe)</h3>
+                        <div class="recipe-details">
                             <p><strong>Recipe:</strong> 4 × Snowite + 2 × Rivalite + 1 × Eye Ore</p>
                             <p><strong>Total Cost:</strong> ~950$ (4×150$ Snowite + 2×50$ + 1×60$)</p>
                             <p><strong>Success Rate:</strong> High (player-tested Snowite recipe)</p>
                             <p><strong>Base Damage:</strong> 122 (147 with Snowite enhancements)</p>
                             <p><strong>Special Features:</strong> 23% crit chance, Snowite stun effects</p>
                         </div>
-                        <div style="color: #666; font-size: 0.9rem;">
+                        <div class="recipe-note">
                             <strong>Best For:</strong> Island exploration and diamond spider farming with Snowite
                         </div>
                     </div>
                     
                     <div class="recipe-example">
-                        <h3 style="color: #ff5722; margin-bottom: 1rem;">🌪️ Pure Snowite Weapon (High-End)</h3>
-                        <div style="background: #f9f9f9; padding: 1rem; border-radius: 6px; margin-bottom: 1rem;">
+                        <h3>🌪️ Pure Snowite Weapon (High-End)</h3>
+                        <div class="recipe-details">
                             <p><strong>Recipe:</strong> 3 × Snowite Ore</p>
                             <p><strong>Total Cost:</strong> 450$ (extremely expensive)</p>
                             <p><strong>Success Rate:</strong> High with proper setup</p>
                             <p><strong>Multiplier:</strong> 8x (maximum damage potential)</p>
                             <p><strong>Special Trait:</strong> Full attack speed bonus + movement debuff</p>
                         </div>
-                        <div style="color: #666; font-size: 0.9rem;">
+                        <div class="recipe-note">
                             <strong>Best For:</strong> Speed-focused builds and rapid combat
                         </div>
                     </div>
                 </div>
 
                 <!-- Trait Details -->
-                <div style="background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%); border-radius: 12px; padding: 2rem; margin-top: 2rem; border-left: 4px solid var(--snowite-blue);">
-                    <h3 style="color: var(--snowite-blue); margin-bottom: 1rem; font-size: 1.2rem;">❄️ Snowite's Unique Weapon Trait</h3>
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <h4 style="color: #ff5722; margin-bottom: 1rem;">Slow Effect: Reduces Enemy Movement & Attack Speed</h4>
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                            <div>
-                                <h5 style="color: #4caf50; margin-bottom: 0.5rem;">✅ Benefits</h5>
-                                <ul style="color: #555; margin: 0;">
+                <div class="trait-details-box">
+                    <h3>❄️ Snowite's Unique Weapon Trait</h3>
+                    <div class="trait-content">
+                        <h4>Slow Effect: Reduces Enemy Movement & Attack Speed</h4>
+                        <div class="trait-benefits-grid">
+                            <div class="trait-section benefits">
+                                <h5>✅ Benefits</h5>
+                                <ul>
                                     <li><strong>Movement Slow:</strong> Reduces enemy movement speed</li>
                                     <li><strong>Attack Speed Reduction:</strong> Slows enemy attack rate</li>
                                     <li><strong>Duration:</strong> Effect lasts for several seconds</li>
                                     <li><strong>Combat Control:</strong> Makes fights significantly easier</li>
                                 </ul>
                             </div>
-                            <div>
-                                <h5 style="color: #ff9800; margin-bottom: 0.5rem;">⚠️ Strategy Tips</h5>
-                                <ul style="color: #555; margin: 0;">
+                            <div class="trait-section strategy">
+                                <h5>⚠️ Strategy Tips</h5>
+                                <ul>
                                     <li><strong>Hit-and-Run:</strong> Perfect for kiting enemies</li>
                                     <li><strong>Crowd Control:</strong> Slow multiple enemies at once</li>
                                     <li><strong>PvP Advantage:</strong> Excellent for player combat</li>
@@ -765,7 +461,7 @@
         <div class="content-section">
             <h2>💡 Snowite Tips & Strategies</h2>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="tips-grid">
                 <div class="tip-box">
                     <h3>🎯 Mining Tips</h3>
                     <ul>
@@ -776,9 +472,9 @@
                     </ul>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #ff9800; padding: 1.5rem; border-radius: 8px;">
-                    <h3 style="color: #e65100; margin-bottom: 0.5rem;">⚔️ Combat Applications</h3>
-                    <ul style="color: #555; margin: 0;">
+                <div class="combat-tip-box">
+                    <h3>⚔️ Combat Applications</h3>
+                    <ul>
                         <li><strong>Speed Builds:</strong> Perfect for rapid attack strategies</li>
                         <li><strong>PvP Combat:</strong> Movement debuff gives tactical advantage</li>
                         <li><strong>Boss Fights:</strong> High DPS with crowd control</li>
@@ -786,9 +482,9 @@
                     </ul>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); border-left: 4px solid #4caf50; padding: 1.5rem; border-radius: 8px;">
-                    <h3 style="color: #2e7d32; margin-bottom: 0.5rem;">💰 Economic Value</h3>
-                    <ul style="color: #555; margin: 0;">
+                <div class="economic-tip-box">
+                    <h3>💰 Economic Value</h3>
+                    <ul>
                         <li><strong>High Sell Price:</strong> 150$ per ore is excellent</li>
                         <li><strong>Trading Commodity:</strong> Highly sought after by players</li>
                         <li><strong>Investment Material:</strong> Value likely to increase</li>
@@ -796,9 +492,9 @@
                     </ul>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%); border-left: 4px solid var(--snowite-blue); padding: 1.5rem; border-radius: 8px;">
-                    <h3 style="color: var(--snowite-blue); margin-bottom: 0.5rem;">🌟 Why Choose Snowite</h3>
-                    <ul style="color: #555; margin: 0;">
+                <div class="snowite-tip-box">
+                    <h3>🌟 Why Choose Snowite</h3>
+                    <ul>
                         <li><strong>Unique Trait:</strong> Only ore with attack speed + debuff combo</li>
                         <li><strong>Wind Element:</strong> Distinctive elemental properties</li>
                         <li><strong>Legendary Status:</strong> Ultimate prestige material</li>
