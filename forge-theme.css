@@ -594,7 +594,7 @@ a:hover {
 
 /* Complete Info Table */
 .complete-info-table {
-    background: var(--bg-white);
+    background: var(--bg-table);
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -615,19 +615,20 @@ a:hover {
 .info-card {
     text-align: center;
     padding: 1rem;
-    background: var(--bg-light-gray);
+    background: var(--bg-table-header);
     border-radius: 8px;
+    border: 1px solid var(--border-table);
 }
 
 .info-card-label {
     font-size: 0.9rem;
-    color: var(--text-gray);
+    color: var(--text-secondary);
     margin-bottom: 0.5rem;
 }
 
 .info-card-value {
     font-weight: bold;
-    color: var(--text-dark);
+    color: var(--text-light-gray);
 }
 
 .info-card-value.legendary {
