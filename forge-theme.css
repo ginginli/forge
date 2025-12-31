@@ -3,109 +3,69 @@
 
 :root {
     /* Official Background Colors - 官方背景色系 */
-    --bg-primary: #1a1612;      /* 主背景 - 深棕色 */
-    --bg-secondary: #2d1f1a;    /* 次背景 - 中棕色 */
-    --bg-darker: #0f0d0a;       /* 最深背景 - 极深棕色 */
-    --bg-surface: #3d2f2a;      /* 表面色 - 浅棕色 */
-    --bg-table: #2a2a2a;        /* 表格背景 */
-    --bg-table-header: #1f1f1f; /* 表格头部背景 */
-    --bg-table-hover: #333333;  /* 表格悬停背景 */
-    --bg-white: #ffffff;         /* 纯白背景 */
-    --bg-light-gray: #f9f9f9;    /* 浅灰背景 */
-    
-    /* Official Gold System - 官方金色系统 */
-    --gold-primary: #d4af37;    /* 主金色 */
-    --gold-light: #f4d03f;      /* 亮金色 */
-    --gold-dark: #b8860b;       /* 深金色 */
-    --gold-accent: #ffd700;     /* 强调金色 */
-    
-    /* Official Flame Colors - 官方火焰色 */
-    --flame-primary: #ff6b35;   /* 主火焰色 */
-    --flame-light: #ff8c42;     /* 亮火焰色 */
-    --flame-dark: #e55100;      /* 深火焰色 */
-    --flame-glow: #ff9f66;      /* 火焰光晕 */
+    --bg-primary: #2b2b2b;       /* 主背景 - 深灰色 */
+    --bg-secondary: #3a3a3a;     /* 次背景 - 中灰色 */
+    --bg-darker: #1e1e1e;        /* 最深背景 - 极深灰色 */
+    --bg-surface: #404040;       /* 表面色 - 浅灰色 */
+    --bg-table: #2b2b2b;         /* 表格背景 */
+    --bg-table-header: #404040;  /* 表格头部背景 */
+    --bg-table-hover: #4a4a4a;   /* 表格悬停背景 */
+    --bg-card: #353535;          /* 卡片背景 */
     
     /* Official Text Colors - 官方文本色 */
-    --text-primary: #f5f5dc;    /* 主文本 - 米白色 */
-    --text-secondary: #d3d3d3;  /* 次文本 - 浅灰 */
-    --text-accent: #d4af37;     /* 强调文本 - 金色 */
-    --text-muted: #a0a0a0;      /* 弱化文本 */
-    --text-dark: #333333;       /* 深色文本 */
-    --text-medium: #555555;     /* 中等深度文本 */
-    --text-light-gray: #cccccc; /* 浅灰文本 */
-    --text-gray: #666666;       /* 灰色文本 */
-    --text-disabled: #888888;   /* 禁用文本 */
+    --text-primary: #ffffff;     /* 主文本 - 纯白 */
+    --text-secondary: #cccccc;   /* 次文本 - 浅灰 */
+    --text-muted: #999999;       /* 弱化文本 - 中灰 */
+    --text-disabled: #666666;    /* 禁用文本 - 深灰 */
     
-    /* Official Purple System - 官方紫色系统 */
-    --purple-primary: #8e44ad;  /* 主紫色 */
-    --purple-light: #a569bd;    /* 亮紫色 */
-    --purple-dark: #6c3483;     /* 深紫色 */
+    /* Official Rarity Colors - 官方稀有度配色 */
+    --rarity-common: #cccccc;    /* 普通 - 灰色 */
+    --rarity-uncommon: #4ade80;  /* 不常见 - 绿色 */
+    --rarity-rare: #3b82f6;      /* 稀有 - 蓝色 */
+    --rarity-epic: #a855f7;      /* 史诗 - 紫色 */
+    --rarity-legendary: #f59e0b; /* 传说 - 橙色 */
     
-    /* Official Blue System - 官方蓝色系统 */
-    --blue-primary: #2196f3;    /* 主蓝色 */
-    --blue-light: #81c784;      /* 亮蓝色 */
-    --blue-dark: #0d47a1;       /* 深蓝色 */
-    --blue-ice: #e3f2fd;        /* 冰蓝色 */
-    --blue-ice-light: #bbdefb;  /* 浅冰蓝色 */
+    /* Official UI Colors - 官方UI配色 */
+    --ui-orange: #f59e0b;        /* 主要橙色 - 用于按钮和强调 */
+    --ui-blue: #3b82f6;          /* 主要蓝色 - 用于链接和信息 */
+    --ui-green: #4ade80;         /* 主要绿色 - 用于成功状态 */
+    --ui-red: #ef4444;           /* 主要红色 - 用于错误和警告 */
+    --ui-purple: #a855f7;        /* 主要紫色 - 用于特殊元素 */
     
-    /* Official Green System - 官方绿色系统 */
-    --green-primary: #4caf50;   /* 主绿色 */
-    --green-light: #c8e6c9;     /* 亮绿色 */
-    --green-dark: #2e7d32;      /* 深绿色 */
-    --green-success: #388e3c;   /* 成功绿色 */
-    --green-bg: #e8f5e8;        /* 绿色背景 */
-    
-    /* Official Orange System - 官方橙色系统 */
-    --orange-primary: #ff9800;  /* 主橙色 */
-    --orange-light: #ffb74d;    /* 亮橙色 */
-    --orange-dark: #e65100;     /* 深橙色 */
-    --orange-bg: #fff3e0;       /* 橙色背景 */
-    --orange-bg-light: #ffe0b2; /* 浅橙色背景 */
-    
-    /* Official Red System - 官方红色系统 */
-    --red-primary: #f44336;     /* 主红色 */
-    --red-light: #ff5722;       /* 亮红色 */
-    --red-dark: #d32f2f;        /* 深红色 */
-    
-    /* Official Borders - 官方边框色 */
-    --border-gold: #d4af37;     /* 金色边框 */
-    --border-flame: #ff6b35;    /* 火焰边框 */
-    --border-subtle: #3d2f2a;   /* 细微边框 */
-    --border-table: #3a3a3a;    /* 表格边框 */
-    --border-light: #e0e0e0;    /* 浅色边框 */
+    /* Official Border Colors - 官方边框色 */
+    --border-primary: #555555;   /* 主边框 */
+    --border-secondary: #404040; /* 次边框 */
+    --border-accent: #f59e0b;    /* 强调边框 */
     
     /* Snowite Colors - 雪花矿石色系 */
-    --snowite-blue: #03a9f4;    /* 雪花蓝 */
-    --snowite-light: #81d4fa;   /* 浅雪花蓝 */
-    --snowite-dark: #0277bd;    /* 深雪花蓝 */
-    --snowite-ice: #e1f5fe;     /* 雪花冰色 */
-    
-    /* Legacy Mappings for Compatibility - 兼容性映射 */
-    --forge-fire: var(--flame-primary);
-    --forge-flame: var(--flame-light);
-    --forge-ember: var(--flame-dark);
-    --forge-glow: var(--flame-glow);
-    --metal-steel: var(--bg-surface);
-    --bg-forge: var(--bg-secondary);
-    --primary-orange: var(--flame-primary);
-    --primary-light: var(--flame-light);
-    --primary-dark: var(--flame-dark);
+    --snowite-blue: #3b82f6;     /* 雪花蓝 */
+    --snowite-light: #60a5fa;    /* 浅雪花蓝 */
+    --snowite-dark: #1d4ed8;     /* 深雪花蓝 */
+    --snowite-ice: #dbeafe;      /* 雪花冰色 */
 }
 
 /* Official Base Styles - 官方基础样式 */
 body {
-    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    background: var(--bg-primary);
     color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /* Official Typography - 官方字体样式 */
 h1, h2 {
-    color: var(--gold-primary);
+    color: var(--ui-orange);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h3, h4 {
-    color: var(--gold-light);
+    color: var(--text-primary);
 }
 
 p, li, span {
@@ -113,59 +73,44 @@ p, li, span {
 }
 
 strong, .highlight {
-    color: var(--gold-primary);
+    color: var(--ui-orange);
 }
 
 a {
-    color: var(--flame-primary);
+    color: var(--ui-blue);
     transition: color 0.3s ease;
+    text-decoration: none;
 }
 
 a:hover {
-    color: var(--flame-light);
+    color: var(--snowite-light);
 }
 
 /* Official Component Styles - 官方组件样式 */
 .content-section {
     background: var(--bg-secondary);
     color: var(--text-primary);
-    border: 1px solid var(--border-subtle);
+    border: 1px solid var(--border-secondary);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary {
-    background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
-    color: var(--bg-primary);
-    border: 2px solid var(--gold-light);
-}
-
-.btn-secondary {
-    background: linear-gradient(135deg, var(--flame-primary) 0%, var(--flame-dark) 100%);
-    color: var(--text-primary);
-}
-
-.info-box {
-    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-dark) 100%);
-    border-left: 4px solid var(--purple-light);
-    color: var(--text-primary);
-}
-
-.warning-box {
-    background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
-    border-left: 4px solid var(--gold-light);
-    color: var(--bg-primary);
-}
-
-.success-box {
-    background: linear-gradient(135deg, var(--flame-primary) 0%, var(--flame-dark) 100%);
-    border-left: 4px solid var(--flame-light);
-    color: var(--text-primary);
+.content-section h2 {
+    color: var(--ui-orange);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--ui-orange);
+    padding-bottom: 0.5rem;
 }
 
 /* Official Table Styles - 官方表格样式 */
-.official-table {
+.official-table,
+.complete-info-table {
     width: 100%;
     border-collapse: collapse;
-    background: var(--bg-table);
+    background: var(--bg-table) !important;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -173,20 +118,20 @@ a:hover {
 
 .official-table th {
     background: var(--bg-table-header);
-    color: var(--gold-primary);
+    color: var(--ui-orange);
     padding: 1rem 0.75rem;
     text-align: left;
     font-weight: 600;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    border-bottom: 1px solid var(--border-table);
+    border-bottom: 1px solid var(--border-primary);
 }
 
 .official-table td {
     padding: 1rem 0.75rem;
-    border-bottom: 1px solid var(--border-table);
-    color: var(--text-light-gray);
+    border-bottom: 1px solid var(--border-primary);
+    color: var(--text-secondary);
     font-size: 0.95rem;
 }
 
@@ -202,29 +147,29 @@ a:hover {
 .official-table .ore-name,
 .official-table .weapon-name,
 .official-table .armor-name {
-    color: var(--gold-primary);
+    color: var(--ui-orange);
     font-weight: 600;
 }
 
 /* Rarity colors */
 .official-table .rarity-common {
-    color: var(--text-light-gray);
+    color: var(--rarity-common);
 }
 
 .official-table .rarity-uncommon {
-    color: var(--green-primary);
+    color: var(--rarity-uncommon);
 }
 
 .official-table .rarity-rare {
-    color: var(--blue-primary);
+    color: var(--rarity-rare);
 }
 
 .official-table .rarity-epic {
-    color: var(--purple-primary);
+    color: var(--rarity-epic);
 }
 
 .official-table .rarity-legendary {
-    color: var(--orange-primary);
+    color: var(--rarity-legendary);
 }
 
 /* Trait/Effect styling */
@@ -235,366 +180,24 @@ a:hover {
 
 /* Price styling */
 .official-table .price {
-    color: var(--green-primary);
+    color: var(--ui-green);
     font-weight: 500;
 }
 
 /* Multiplier styling */
 .official-table .multiplier {
-    color: var(--flame-primary);
+    color: var(--ui-orange);
     font-weight: 600;
 }
 
 /* Chance styling */
 .official-table .chance {
-    color: var(--blue-light);
-}
-
-/* Legacy table compatibility */
-.armor-table,
-.weapon-table,
-.ore-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--bg-table);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.armor-table th,
-.weapon-table th,
-.ore-table th {
-    background: var(--bg-table-header);
-    color: var(--gold-primary);
-    padding: 1rem 0.75rem;
-    text-align: left;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border-bottom: 1px solid var(--border-table);
-}
-
-.armor-table td,
-.weapon-table td,
-.ore-table td {
-    padding: 1rem 0.75rem;
-    border-bottom: 1px solid var(--border-table);
-    color: var(--text-light-gray);
-    font-size: 0.95rem;
-}
-
-.armor-table tr:hover,
-.weapon-table tr:hover,
-.ore-table tr:hover {
-    background: var(--bg-table-hover);
-}
-
-.armor-table tr:last-child td,
-.weapon-table tr:last-child td,
-.ore-table tr:last-child td {
-    border-bottom: none;
-}
-
-/* Common Animations */
-@keyframes shimmer {
-    0% { left: -100%; }
-    100% { left: 100%; }
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.1); opacity: 0.8; }
-}
-
-@keyframes glow {
-    0%, 100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
-    50% { box-shadow: 0 0 40px rgba(212, 175, 55, 0.6); }
-}
-/* Snowite Page Specific Styles - 雪花矿石页面专用样式 */
-
-/* Location Information Box */
-.location-info-box {
-    background: linear-gradient(135deg, var(--blue-ice) 0%, var(--blue-ice-light) 100%);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-left: 4px solid var(--blue-primary);
-}
-
-.location-info-box h3 {
-    color: var(--blue-dark);
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.location-info-box p {
-    color: var(--text-medium);
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-}
-
-.location-info-box .inner-box {
-    background: var(--bg-white);
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.location-info-box .inner-box h3 {
-    color: var(--blue-primary);
-    margin-bottom: 1rem;
-}
-
-.location-info-box .inner-box p {
-    color: var(--text-medium);
-    margin: 0;
-    line-height: 1.6;
-}
-
-/* Grid Layout */
-.mining-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-/* Warning Box */
-.warning-info-box {
-    background: linear-gradient(135deg, var(--orange-bg) 0%, var(--orange-bg-light) 100%);
-    border-left: 4px solid var(--orange-primary);
-    padding: 1.5rem;
-    border-radius: 8px;
-}
-
-.warning-info-box h3 {
-    color: var(--orange-dark);
-    margin-bottom: 0.5rem;
-}
-
-.warning-info-box ul {
-    color: var(--text-medium);
-    margin: 0;
-}
-
-/* Farming Strategy Box */
-.farming-strategy-box {
-    background: linear-gradient(135deg, var(--green-bg) 0%, var(--green-light) 100%);
-    border-radius: 12px;
-    padding: 2rem;
-    border-left: 4px solid var(--green-primary);
-}
-
-.farming-strategy-box h3 {
-    color: var(--green-dark);
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-.farming-strategy-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-.farming-strategy-grid h3 {
-    color: var(--green-success);
-    margin-bottom: 0.5rem;
-}
-
-.farming-strategy-grid ul {
-    color: var(--text-medium);
-    margin: 0;
-}
-
-/* Official Description Box */
-.official-description-box {
-    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border: 2px solid var(--snowite-light);
-    color: var(--bg-white);
-}
-
-.official-description-box h3 {
-    color: var(--orange-primary);
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.official-description-box blockquote {
-    font-size: 1.1rem;
-    font-style: italic;
-    color: var(--orange-light);
-    margin-bottom: 1.5rem;
-    border-left: 4px solid var(--orange-primary);
-    padding-left: 1rem;
-}
-
-.official-description-box .overview-box {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 1.5rem;
-}
-
-.official-description-box .overview-box h3 {
-    color: var(--bg-white);
-    margin-bottom: 1rem;
-}
-
-.official-description-box .overview-box p {
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* Stats Grid */
-.stats-two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* Ore Profile Box */
-.ore-profile-box {
-    background: linear-gradient(135deg, var(--snowite-ice) 0%, var(--blue-ice-light) 100%);
-    border-radius: 12px;
-    padding: 2rem;
-    border-left: 4px solid var(--snowite-blue);
-}
-
-.ore-profile-box h3 {
-    color: var(--snowite-blue);
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-}
-
-.ore-profile-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.ore-profile-tag {
-    color: var(--bg-white);
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    font-weight: bold;
-}
-
-.ore-profile-tag.legendary {
-    background: var(--orange-primary);
-}
-
-.ore-profile-tag.wind {
-    background: var(--blue-primary);
-}
-
-.ore-profile-tag.slow {
-    background: var(--green-primary);
-}
-
-.ore-profile-box .inner-box {
-    background: var(--bg-white);
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.ore-profile-box .inner-box p {
-    color: var(--text-medium);
-    line-height: 1.6;
-    margin: 0;
-    font-style: italic;
-}
-
-/* Stat Overview Box */
-.stat-overview-box {
-    background: linear-gradient(135deg, var(--orange-bg) 0%, var(--orange-bg-light) 100%);
-    border-radius: 12px;
-    padding: 2rem;
-    border-left: 4px solid var(--orange-primary);
-}
-
-.stat-overview-box h3 {
-    color: var(--orange-dark);
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-}
-
-/* Stat Item */
-.stat-item {
-    margin-bottom: 1.5rem;
-}
-
-.stat-item:last-child {
-    margin-bottom: 0;
-}
-
-.stat-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-.stat-label {
-    font-weight: bold;
-    color: var(--text-dark);
-}
-
-.stat-value {
-    font-weight: bold;
-}
-
-.stat-value.rare {
-    color: var(--red-primary);
-}
-
-.stat-value.high {
-    color: var(--green-primary);
-}
-
-.stat-value.very-high {
-    color: var(--orange-primary);
-}
-
-/* Progress Bar */
-.progress-bar {
-    background: var(--border-light);
-    border-radius: 10px;
-    height: 8px;
-    overflow: hidden;
-}
-
-.progress-fill {
-    height: 100%;
-}
-
-.progress-fill.rare {
-    background: linear-gradient(90deg, var(--red-primary) 0%, var(--red-light) 100%);
-    width: 2%;
-}
-
-.progress-fill.high {
-    background: linear-gradient(90deg, var(--green-primary) 0%, var(--blue-light) 100%);
-    width: 80%;
-}
-
-.progress-fill.very-high {
-    background: linear-gradient(90deg, var(--orange-primary) 0%, var(--orange-light) 100%);
-    width: 85%;
+    color: var(--ui-green);
 }
 
 /* Complete Info Table */
 .complete-info-table {
-    background: var(--bg-table);
+    background: var(--bg-table) !important;
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -617,396 +220,41 @@ a:hover {
     padding: 1rem;
     background: var(--bg-table-header);
     border-radius: 8px;
-    border: 1px solid var(--border-table);
+    border: 1px solid var(--border-primary);
 }
 
 .info-card-label {
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     margin-bottom: 0.5rem;
 }
 
 .info-card-value {
     font-weight: bold;
-    color: var(--text-light-gray);
+    color: var(--text-secondary);
 }
 
 .info-card-value.legendary {
-    color: var(--orange-primary);
+    color: var(--rarity-legendary);
 }
 
 .info-card-value.blue {
-    color: var(--blue-primary);
+    color: var(--ui-blue);
 }
 
 .info-card-value.rare {
-    color: var(--red-primary);
+    color: var(--ui-red);
 }
 
 .info-card-value.high {
-    color: var(--green-primary);
+    color: var(--ui-green);
 }
 
 .info-card-value.snowite {
     color: var(--snowite-blue);
 }
 
-/* Community Insights Box */
-.community-insights-box {
-    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-left: 4px solid #ff9800;
-}
-
-.community-insights-box h3 {
-    color: var(--orange-dark);
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.insights-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.insight-card {
-    background: var(--bg-white);
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.insight-card h4 {
-    color: var(--red-light);
-    margin-bottom: 1rem;
-}
-
-.insight-card p {
-    color: var(--text-medium);
-    margin-bottom: 1rem;
-    line-height: 1.6;
-}
-
-.insight-card ul {
-    color: var(--text-medium);
-    margin: 0;
-    line-height: 1.6;
-}
-
-.insight-highlight {
-    background: var(--bg-light-gray);
-    padding: 1rem;
-    border-radius: 6px;
-}
-
-.insight-highlight p {
-    color: var(--text-gray);
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-/* Player Tips Grid */
-.player-tips-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-}
-
-.player-tip-section h5 {
-    color: var(--green-primary);
-    margin-bottom: 0.5rem;
-}
-
-.player-tip-section ul {
-    color: var(--text-medium);
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-/* Player Experience Box */
-.player-experience-box {
-    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-left: 4px solid #4caf50;
-}
-
-.player-experience-box h3 {
-    color: var(--green-dark);
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.experience-content {
-    background: var(--bg-white);
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.experience-quote {
-    font-style: italic;
-    color: var(--text-medium);
-    margin-bottom: 1.5rem;
-    border-left: 4px solid var(--green-primary);
-    padding-left: 1rem;
-}
-
-.recipe-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-.recipe-section h4 {
-    color: var(--green-success);
-    margin-bottom: 1rem;
-}
-
-.recipe-section ul {
-    color: var(--text-medium);
-    margin: 0;
-    line-height: 1.6;
-}
-
-.performance-highlight {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    background: var(--bg-light-gray);
-    border-radius: 6px;
-}
-
-.performance-highlight h4 {
-    color: var(--green-dark);
-    margin-bottom: 0.5rem;
-}
-
-.performance-highlight p {
-    color: var(--text-medium);
-    margin: 0;
-    line-height: 1.6;
-}
-
-/* Trait Details Box */
-.trait-details-box {
-    background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-top: 2rem;
-    border-left: 4px solid var(--snowite-blue);
-}
-
-.trait-details-box h3 {
-    color: var(--snowite-blue);
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-.trait-content {
-    background: var(--bg-white);
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.trait-content h4 {
-    color: var(--red-light);
-    margin-bottom: 1rem;
-}
-
-.trait-benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-.trait-section h5 {
-    margin-bottom: 0.5rem;
-}
-
-.trait-section.benefits h5 {
-    color: var(--green-primary);
-}
-
-.trait-section.strategy h5 {
-    color: var(--orange-primary);
-}
-
-.trait-section ul {
-    color: var(--text-medium);
-    margin: 0;
-}
-
-/* Tips Grid */
-.tips-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-/* Yandex Metrika Hidden Image */
-.yandex-hidden {
-    position: absolute;
-    left: -9999px;
-}
-/* Primary Uses Overview Box */
-.primary-uses-box {
-    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    color: var(--bg-white);
-    border: 2px solid var(--orange-primary);
-}
-
-.primary-uses-box h3 {
-    color: var(--orange-primary);
-    margin-bottom: 1.5rem;
-    font-size: 1.3rem;
-}
-
-.uses-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-.use-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 1.5rem;
-}
-
-.use-card h3 {
-    color: var(--orange-light);
-    margin-bottom: 0.5rem;
-}
-
-.use-card p {
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-/* Crafting Section Paragraph */
-.crafting-section p {
-    margin-bottom: 1.5rem;
-}
-/* Additional styles for remaining inline styles */
-
-/* Insight card lists */
-
-/* Player tips section */
-.player-tips-section {
-    background: var(--bg-white);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-top: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.player-tips-section h4 {
-    color: var(--blue-primary);
-    margin-bottom: 1rem;
-}
-
-/* Recipe examples */
-.recipe-examples-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.recipe-example h3 {
-    color: var(--red-light);
-    margin-bottom: 1rem;
-}
-
-.recipe-details {
-    background: var(--bg-light-gray);
-    padding: 1rem;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-}
-
-.recipe-note {
-    color: var(--text-gray);
-    font-size: 0.9rem;
-}
-
-/* Economic and strategy tip boxes */
-.economic-tip-box {
-    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
-    border-left: 4px solid #4caf50;
-    padding: 1.5rem;
-    border-radius: 8px;
-}
-
-.economic-tip-box h3 {
-    color: var(--green-dark);
-    margin-bottom: 0.5rem;
-}
-
-.economic-tip-box ul {
-    color: var(--text-medium);
-    margin: 0;
-}
-
-.combat-tip-box {
-    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-    border-left: 4px solid #ff9800;
-    padding: 1.5rem;
-    border-radius: 8px;
-}
-
-.combat-tip-box h3 {
-    color: var(--orange-dark);
-    margin-bottom: 0.5rem;
-}
-
-.combat-tip-box ul {
-    color: var(--text-medium);
-    margin: 0;
-}
-
-.snowite-tip-box {
-    background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%);
-    border-left: 4px solid var(--snowite-blue);
-    padding: 1.5rem;
-    border-radius: 8px;
-}
-
-.snowite-tip-box h3 {
-    color: var(--snowite-blue);
-    margin-bottom: 0.5rem;
-}
-
-.snowite-tip-box ul {
-    color: var(--text-medium);
-    margin: 0;
-}
-/* Additional Snowite-specific styles that were in the original internal CSS */
-
-/* Snowite color variables */
-:root {
-    --snowite-blue: #03a9f4;
-    --snowite-light: #81d4fa;
-    --snowite-dark: #0277bd;
-    --snowite-ice: #e1f5fe;
-}
-
-/* Base layout styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Layout Styles */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1017,8 +265,8 @@ a:hover {
 header {
     background: linear-gradient(90deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
     padding: 1rem 0;
-    box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
-    border-bottom: 3px solid var(--gold-primary);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid var(--ui-orange);
     margin-bottom: 2rem;
 }
 
@@ -1029,7 +277,7 @@ header .container {
 }
 
 header h1 {
-    color: var(--gold-primary);
+    color: var(--ui-orange);
     font-size: 1.8rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -1042,25 +290,25 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--gold-primary);
+    color: var(--ui-orange);
 }
 
 /* Breadcrumb styles */
 .breadcrumb {
-    background: rgba(212, 175, 55, 0.1);
+    background: rgba(245, 158, 11, 0.1);
     padding: 1rem;
     border-radius: 8px;
     margin-bottom: 2rem;
 }
 
 .breadcrumb a {
-    color: var(--gold-primary);
+    color: var(--ui-orange);
     text-decoration: none;
     margin-right: 0.5rem;
 }
 
 .breadcrumb a:hover {
-    color: var(--gold-light);
+    color: var(--rarity-legendary);
 }
 
 .breadcrumb span {
@@ -1074,7 +322,7 @@ nav a:hover {
     border-radius: 15px;
     padding: 3rem 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 10px 40px rgba(3, 169, 244, 0.3);
+    box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
     border: 2px solid var(--snowite-light);
     text-align: center;
     color: var(--text-primary);
@@ -1091,50 +339,120 @@ nav a:hover {
     opacity: 0.9;
 }
 
-/* Stats grid */
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+/* Tip boxes and content sections */
+.tip-box {
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+    border-left: 4px solid var(--ui-green);
+    padding: 1.5rem;
+    border-radius: 8px;
     margin: 2rem 0;
 }
 
-.stat-card {
-    background: linear-gradient(135deg, var(--snowite-ice) 0%, #b3e5fc 100%);
-    border-radius: 10px;
-    padding: 1.5rem;
-    text-align: center;
-    border-left: 4px solid var(--snowite-blue);
-    transition: transform 0.3s;
-}
-
-.stat-card:hover {
-    transform: translateY(-5px);
-}
-
-.stat-card h3 {
-    color: var(--snowite-blue);
-    font-size: 1.1rem;
+.tip-box h3 {
+    color: var(--ui-green);
     margin-bottom: 0.5rem;
 }
 
-.stat-value {
-    font-size: 1.5rem;
+/* CTA box */
+.cta-box {
+    background: linear-gradient(135deg, var(--ui-red) 0%, var(--ui-orange) 100%);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-primary);
+    margin: 2rem 0;
+}
+
+.cta-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: var(--text-primary);
+    color: var(--ui-red);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
     font-weight: bold;
-    color: var(--text-dark);
+    transition: transform 0.3s;
+    margin: 0.5rem;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
+    color: var(--text-primary);
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 2px solid var(--ui-orange);
+    margin-top: 3rem;
+}
+
+footer a {
+    color: var(--ui-orange);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Snowite Page Specific Styles */
+.location-info-box {
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--ui-blue);
+}
+
+.location-info-box h3 {
+    color: var(--ui-blue);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.location-info-box p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.location-info-box .inner-box {
+    background: var(--bg-table-header);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.location-info-box .inner-box h3 {
+    color: var(--ui-blue);
+    margin-bottom: 1rem;
+}
+
+.location-info-box .inner-box p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* Mining guide */
 .mining-guide {
-    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-    border-left: 4px solid #ff9800;
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+    border-left: 4px solid var(--ui-orange);
     padding: 2rem;
     border-radius: 10px;
     margin: 2rem 0;
 }
 
 .mining-guide h3 {
-    color: var(--orange-dark);
+    color: var(--ui-orange);
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
@@ -1157,8 +475,8 @@ nav a:hover {
     position: absolute;
     left: 0;
     top: 0;
-    background: var(--orange-primary);
-    color: var(--bg-white);
+    background: var(--ui-orange);
+    color: var(--text-primary);
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -1168,52 +486,47 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* CTA box */
-.cta-box {
-    background: linear-gradient(135deg, var(--red-light) 0%, var(--orange-primary) 100%);
-    border-radius: 15px;
+/* Crafting section */
+.crafting-section {
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+    border-left: 4px solid var(--ui-blue);
     padding: 2rem;
-    text-align: center;
-    color: var(--bg-white);
+    border-radius: 10px;
     margin: 2rem 0;
 }
 
-.cta-box h2 {
-    font-size: 1.8rem;
+.crafting-section h3 {
+    color: var(--ui-blue);
+    font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 
-.cta-btn {
-    display: inline-block;
-    background: var(--bg-white);
-    color: var(--red-light);
-    padding: 1rem 2rem;
+/* Recipe examples */
+.recipe-example {
+    background: var(--bg-table-header);
     border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.3s;
-    margin: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.cta-btn:hover {
-    transform: scale(1.05);
+.recipe-example h4 {
+    color: var(--ui-red);
+    margin-bottom: 0.5rem;
 }
 
-/* Footer */
-footer {
-    background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
-    color: var(--text-primary);
-    padding: 2rem 0;
-    text-align: center;
-    border-top: 2px solid var(--gold-primary);
-    margin-top: 3rem;
+/* Common Animations */
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
 }
 
-footer a {
-    color: var(--gold-primary);
-    text-decoration: none;
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.8; }
 }
 
-footer a:hover {
-    text-decoration: underline;
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(245, 158, 11, 0.6); }
 }
