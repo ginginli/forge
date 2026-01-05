@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119" crossorigin="anonymous"></script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    <meta name="description" content="Полная база данных рецептов The Forge - Найдите лучшие рецепты крафта для легендарного оружия и брони в игре The Forge Roblox.">
+    <meta name="keywords" content="рецепты the forge, forge roblox рецепты, рецепты крафта the forge, список рецептов forge, лучшие рецепты forge, легендарные рецепты forge">
+    <link rel="canonical" href="https://forge-calculator.com/ru/recipes/">
+    
+    <!-- Language alternatives for international users -->
+    <link rel="alternate" hreflang="en" href="https://forge-calculator.com/recipes/">
+    <link rel="alternate" hreflang="ru" href="https://forge-calculator.com/ru/recipes/">
+    <link rel="alternate" hreflang="x-default" href="https://forge-calculator.com/recipes/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/ru/recipes/">
+    <meta property="og:title" content="Рецепты The Forge - Полная База Данных Рецептов Крафта">
+    <meta property="og:description" content="Откройте для себя лучшие рецепты крафта для The Forge. Полная база данных рецептов оружия и брони с комбинациями руд.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://forge-calculator.com/ru/recipes/">
+    <meta name="twitter:title" content="Рецепты The Forge - Полная База Данных Рецептов Крафта">
+    <meta name="twitter:description" content="Откройте для себя лучшие рецепты крафта для The Forge. Полная база данных рецептов оружия и брони с комбинациями руд.">
+    
+    <title>Рецепты The Forge - Полная База Данных Рецептов Крафта</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YRP03D44XS');
+    </script>
+    
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="EpsJtUp2VOHq8C8Dwkg1zQ" async></script>
+    
+
+    
+    <!-- Language Switch Functions -->
+    <script>
+    function switchToEnglish() {
+        const currentPath = window.location.pathname;
+        
+        // 根据当前俄语页面跳转到对应的英语页面
+        if (currentPath === '/ru/' || currentPath === '/ru/index.html') {
+            window.location.href = '/';
+        } else if (currentPath.startsWith('/ru/recipes/')) {
+            if (currentPath.includes('best-recipes')) {
+                window.location.href = '/recipes/best-recipes.html';
+            } else {
+                window.location.href = '/recipes/';
+            }
+        } else if (currentPath.startsWith('/ru/crafts')) {
+            window.location.href = '/';
+        } else {
+            // 默认跳转到英语首页
+            window.location.href = '/';
+        }
+    }
+    </script>
+    
+    <!-- Advertisement code removed for security compliance --></head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📖 Рецепты The Forge</h1>
+                        <nav>
+                <a href="/ru/recipes/">Рецепты</a>
+                <a href="/codes.html">Коды</a>
+                <a href="/ru/">Калькулятор</a>
+                <a href="/ore/">Руда</a>
+                <a href="/wiki/">Вики</a>
+                <a href="/weapons.html">Оружие</a>
+                <a href="/armor.html">Броня</a>
+                <a href="/private-server.html">Приватные Серверы</a>
+                <a href="/blog/">Блог</a>
+                <a href="/feedback.html">Обратная Связь</a>
+                <a href="javascript:void(0)" onclick="switchToEnglish()" style="background: rgba(255, 152, 0, 0.2); border: 1px solid #ff9800;">🇺🇸 English</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>📖 Рецепты The Forge - Полная База Данных</h2>
+            <p>Откройте для себя лучшие рецепты The Forge для легендарного оружия и брони. Просмотрите нашу полную коллекцию рецептов The Forge, включая начальные рецепты The Forge, промежуточные рецепты The Forge, продвинутые рецепты The Forge и легендарные рецепты The Forge. Все рецепты The Forge проверены и протестированы нашим сообществом.</p>
+        </div>
+
+
+
+        <!-- Best Recipes Entry Point -->
+        <div style="background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%); border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 10px 40px rgba(76, 175, 80, 0.3); border: 2px solid #4caf50; text-align: center;">
+            <h2 style="color: #fff; font-size: 2.2rem; margin-bottom: 1rem; font-weight: 700; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);">
+                🏆 Best Recipes for The Forge
+            </h2>
+            <p style="color: #e8f5e8; font-size: 1.2rem; margin-bottom: 2rem; line-height: 1.6;">
+                Discover the top-rated weapon and armor recipes with highest success rates and proven results. Get the best DPS combinations and optimal ore usage for every game stage.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                <div style="background: rgba(255, 255, 255, 0.15); border-radius: 12px; padding: 1.5rem; backdrop-filter: blur(10px);">
+                    <h3 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">⚔️ Best Weapon Recipes</h3>
+                    <p style="color: #e8f5e8; font-size: 0.95rem; margin: 0;">Colossal Sword, Katana, Straight Sword with exact DPS values</p>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.15); border-radius: 12px; padding: 1.5rem; backdrop-filter: blur(10px);">
+                    <h3 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">🛡️ Best Armor Recipes</h3>
+                    <p style="color: #e8f5e8; font-size: 0.95rem; margin: 0;">Light, Medium, Heavy armor with optimal protection</p>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.15); border-radius: 12px; padding: 1.5rem; backdrop-filter: blur(10px);">
+                    <h3 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">📊 Game Stage Guide</h3>
+                    <p style="color: #e8f5e8; font-size: 0.95rem; margin: 0;">Endgame, Lategame, Midgame, Earlygame progression</p>
+                </div>
+            </div>
+            
+            <a href="best-recipes.html" style="display: inline-block; background: #fff; color: #2e7d32; padding: 1.2rem 2.5rem; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+                🏆 View Best Recipes →
+            </a>
+        </div>
+
+        <!-- Weapon Crafting Guide Table -->
+        <div class="content-section" style="background: #fff; border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem;">
+            <h2>⚔️ The Forge Weapon Recipes</h2>
+            <p style="margin-bottom: 2rem;">Optimal ore combinations and success rates for each weapon type.</p>
+            
+            <div style="overflow-x: auto;">
+                <table class="official-table" style="width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);">
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Target Weapon</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Minimum Ores</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Recommended Ores</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Ore Combination</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #e64a19;">Success Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">🗡️ Dagger</td>
+                            <td style="padding: 1rem;">3</td>
+                            <td style="padding: 1rem; font-weight: 600;">3</td>
+                            <td style="padding: 1rem;">3 * 0.2-0.5x Ores<br><span style="color: #666; font-size: 0.9rem;">(Stone, Sand Stone, Copper)</span></td>
+                            <td style="padding: 1rem; color: #4caf50; font-weight: 600;">100%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">⚔️ Straight Sword</td>
+                            <td style="padding: 1rem;">5</td>
+                            <td style="padding: 1rem; font-weight: 600;">5-6</td>
+                            <td style="padding: 1rem;">3 * 0.6-1.0x + 2 * 1.1-1.7x Ores</td>
+                            <td style="padding: 1rem; color: #4caf50;">65% (5 Ores)<br><span style="color: #2196f3;">86% (6 Ores)</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">👊 Gauntlet</td>
+                            <td style="padding: 1rem;">7</td>
+                            <td style="padding: 1rem; font-weight: 600;">8-9</td>
+                            <td style="padding: 1rem;">2-3 * 1.1-1.7x + 5-7 * 1.8-3.3x Ores</td>
+                            <td style="padding: 1rem; color: #ff9800;">54% (8 Ores)<br><span style="color: #4caf50;">65% (9 Ores)</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">🗡️ Katana</td>
+                            <td style="padding: 1rem;">9</td>
+                            <td style="padding: 1rem; font-weight: 600;">11-12</td>
+                            <td style="padding: 1rem;">1-2 * 3.4-5.5x + 9-11 * 1.8-3.3x Ores</td>
+                            <td style="padding: 1rem; color: #ff9800;">63% (11 Ores)<br><span style="color: #4caf50;">72% (12 Ores)</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">⚔️ Great Sword</td>
+                            <td style="padding: 1rem;">13</td>
+                            <td style="padding: 1rem; font-weight: 600;">14-16</td>
+                            <td style="padding: 1rem;">3-5 * 3.4-5.5x + 10-13 * 1.8-3.3x Ores</td>
+                            <td style="padding: 1rem; color: #f44336;">45% (14 Ores)<br><span style="color: #ff9800;">70% (16 Ores)</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #ff5722;">🪓 Great Axe</td>
+                            <td style="padding: 1rem;">16</td>
+                            <td style="padding: 1rem; font-weight: 600;">17</td>
+                            <td style="padding: 1rem;">5-7 * 6.0x+ + 10-12 * 3.4-5.5x Ores</td>
+                            <td style="padding: 1rem; color: #f44336; font-weight: 600;">11% (17 Ores)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; font-weight: 600; color: #9c27b0;">⚔️ Colossal Sword</td>
+                            <td style="padding: 1rem;">18</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #9c27b0;">18+</td>
+                            <td style="padding: 1rem;">8-10 * 6.0x+ + 8-12 * 3.4-5.5x Ores</td>
+                            <td style="padding: 1rem; color: #f44336; font-weight: 700;">&lt;1%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <div style="padding: 1.5rem; background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #ff9800; border-radius: 8px;">
+                    <h3 style="color: #e65100; margin-bottom: 0.5rem; font-size: 1.1rem;">💡 Pro Tip</h3>
+                    <p style="color: #555; margin: 0; line-height: 1.7;">Use the calculator below to automatically generate these ore combinations. Higher tier weapons require more ores and have lower success rates, but produce significantly more powerful equipment!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Armor Crafting Guide Table -->
+        <div class="content-section" style="background: #fff; border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem;">
+            <h2>🛡️ The Forge Armor Recipes</h2>
+            <p style="margin-bottom: 2rem;">Optimal ore requirements and success rates for each armor type.</p>
+            
+            <div style="overflow-x: auto;">
+                <table class="official-table" style="width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);">
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #1565c0;">Target Armor</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #1565c0;">Minimum Ores</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #1565c0;">Recommended Ores</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #1565c0;">Ore Combination</th>
+                            <th style="padding: 1rem; text-align: left; color: #fff; font-weight: 700; border-bottom: 2px solid #1565c0;">Success Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196f3;">🛡️ Light Armor</td>
+                            <td style="padding: 1rem;">3</td>
+                            <td style="padding: 1rem; font-weight: 600;">3-4</td>
+                            <td style="padding: 1rem;">3 * 0.2-0.5x Ores</td>
+                            <td style="padding: 1rem; color: #4caf50; font-weight: 600;">100%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e0e0e0;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196f3;">⭐ Medium Armor</td>
+                            <td style="padding: 1rem;">5</td>
+                            <td style="padding: 1rem; font-weight: 600;">5-7</td>
+                            <td style="padding: 1rem;">3 * 0.6-1.0x + 2-4 * 1.1-1.7x Ores</td>
+                            <td style="padding: 1rem; color: #4caf50;">65-80%</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; font-weight: 600; color: #2196f3;">🛡️ Heavy Armor</td>
+                            <td style="padding: 1rem;">10</td>
+                            <td style="padding: 1rem; font-weight: 600;">12-16</td>
+                            <td style="padding: 1rem;">3-5 * 3.4-5.5x + 9-12 * 1.8-3.3x Ores</td>
+                            <td style="padding: 1rem; color: #ff9800;">45-70%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left: 4px solid #2196f3; border-radius: 8px;">
+                <h3 style="color: #0d47a1; margin-bottom: 0.5rem; font-size: 1.1rem;">💡 Armor Crafting Tip</h3>
+                <p style="color: #555; margin: 0; line-height: 1.7;">Armor provides health bonuses: Light Armor (+3.75-5%), Medium Armor (+6.25-12.75%), Heavy Armor (+12.5-25%). Use the calculator to optimize your armor crafting for maximum survivability!</p>
+            </div>
+        </div>
+
+        <!-- Calculator Embed -->
+        <div style="background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%); border-radius: 20px; padding: 3rem 2rem; margin-bottom: 2rem; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); border: 2px solid #ff5722;">
+            <h2 style="color: #ff9800; font-size: 2rem; margin-bottom: 1.5rem; text-align: center; font-weight: 700; text-shadow: 0 2px 10px rgba(255, 152, 0, 0.3);">
+                🔥 The Forge Calculator
+            </h2>
+            <div style="width: 100%; margin: 0; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
+                <iframe 
+                    src="https://blox-informer-gachas.github.io/blox-informer-gachas/gachas/the-forge-crafting-calculator.html?quickcraft=true" 
+                    style="width: 100%; height: 1400px; border: none; display: block;"
+                    title="The Forge Crafting Calculator"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+
+
+        <!-- Old Recipe Grid (Hidden for now) -->
+        <div class="recipe-grid" id="recipeGrid" style="display: none;">
+            <!-- Beginner Recipes -->
+            <div class="recipe-card rare" data-tier="beginner" data-type="weapon">
+                <div class="recipe-header">
+                    <div class="recipe-name">⚔️ Basic Iron Sword</div>
+                    <span class="recipe-tier tier-beginner">BEGINNER</span>
+                </div>
+                <div class="recipe-ores">
+                    <div class="ore-item">
+                        <span class="ore-name">🔴 Iron Ore</span>
+                        <span class="ore-amount">60</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">⚫ Coal</span>
+                        <span class="ore-amount">30</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🟡 Gold Ore</span>
+                        <span class="ore-amount">10</span>
+                    </div>
+                </div>
+                <div class="recipe-traits">
+                    <span class="trait-tag">Durability</span>
+                    <span class="trait-tag">Basic Damage</span>
+                </div>
+                <div class="recipe-stats">
+                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Low | <strong>Best For:</strong> New players
+                </div>
+                <button class="use-recipe-btn" onclick="useRecipe('basic-sword')">Use in Calculator →</button>
+            </div>
+
+            <div class="recipe-card rare" data-tier="beginner" data-type="armor">
+                <div class="recipe-header">
+                    <div class="recipe-name">🛡️ Starter Armor Set</div>
+                    <span class="recipe-tier tier-beginner">BEGINNER</span>
+                </div>
+                <div class="recipe-ores">
+                    <div class="ore-item">
+                        <span class="ore-name">🔴 Iron Ore</span>
+                        <span class="ore-amount">70</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">⚫ Coal</span>
+                        <span class="ore-amount">20</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🟡 Gold Ore</span>
+                        <span class="ore-amount">10</span>
+                    </div>
+                </div>
+                <div class="recipe-traits">
+                    <span class="trait-tag">Protection</span>
+                    <span class="trait-tag">Durability</span>
+                </div>
+                <div class="recipe-stats">
+                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Low | <strong>Best For:</strong> Defense
+                </div>
+                <button class="use-recipe-btn" onclick="useRecipe('starter-armor')">Use in Calculator →</button>
+            </div>
+
+            <!-- Intermediate Recipes -->
+            <div class="recipe-card epic" data-tier="intermediate" data-type="weapon">
+                <div class="recipe-header">
+                    <div class="recipe-name">⚔️ Shadow Blade</div>
+                    <span class="recipe-tier tier-intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="recipe-ores">
+                    <div class="ore-item">
+                        <span class="ore-name">🔴 Iron Ore</span>
+                        <span class="ore-amount">40</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🟣 Shadow Ore</span>
+                        <span class="ore-amount">40</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🟡 Gold Ore</span>
+                        <span class="ore-amount">20</span>
+                    </div>
+                </div>
+                <div class="recipe-traits">
+                    <span class="trait-tag">Critical Hit</span>
+                    <span class="trait-tag">Stealth</span>
+                    <span class="trait-tag">Sharpness</span>
+                </div>
+                <div class="recipe-stats">
+                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Medium | <strong>Best For:</strong> Assassins
+                </div>
+                <button class="use-recipe-btn" onclick="useRecipe('shadow-blade')">Use in Calculator →</button>
+            </div>
+
+            <div class="recipe-card epic" data-tier="intermediate" data-type="weapon">
+                <div class="recipe-header">
+                    <div class="recipe-name">🪄 Crystal Staff</div>
+                    <span class="recipe-tier tier-intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="recipe-ores">
+                    <div class="ore-item">
+                        <span class="ore-name">🔵 Crystal Ore</span>
+                        <span class="ore-amount">50</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🟡 Gold Ore</span>
+                        <span class="ore-amount">30</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🔴 Iron Ore</span>
+                        <span class="ore-amount">20</span>
+                    </div>
+                </div>
+                <div class="recipe-traits">
+                    <span class="trait-tag">Magic Power</span>
+                    <span class="trait-tag">Mana Regen</span>
+                    <span class="trait-tag">Wealth</span>
+                </div>
+                <div class="recipe-stats">
+                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Medium | <strong>Best For:</strong> Mages
+                </div>
+                <button class="use-recipe-btn" onclick="useRecipe('crystal-staff')">Use in Calculator →</button>
+            </div>
+
+            <div class="recipe-card epic" data-tier="intermediate" data-type="armor">
+                <div class="recipe-header">
+                    <div class="recipe-name">🛡️ Heavy Tank Armor</div>
+                    <span class="recipe-tier tier-intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="recipe-ores">
+                    <div class="ore-item">
+                        <span class="ore-name">🔴 Iron Ore</span>
+                        <span class="ore-amount">60</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">⚫ Coal</span>
+                        <span class="ore-amount">30</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🟡 Gold Ore</span>
+                        <span class="ore-amount">10</span>
+                    </div>
+                </div>
+                <div class="recipe-traits">
+                    <span class="trait-tag">Protection</span>
+                    <span class="trait-tag">Durability</span>
+                    <span class="trait-tag">Heat Resistance</span>
+                </div>
+                <div class="recipe-stats">
+                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Medium | <strong>Best For:</strong> Tanks
+                </div>
+                <button class="use-recipe-btn" onclick="useRecipe('tank-armor')">Use in Calculator →</button>
+            </div>
+
+            <!-- Advanced Recipes -->
+            <div class="recipe-card legendary" data-tier="advanced" data-type="weapon">
+                <div class="recipe-header">
+                    <div class="recipe-name">⚔️ Gem-Forged Blade</div>
+                    <span class="recipe-tier tier-advanced">ADVANCED</span>
+                </div>
+                <div class="recipe-ores">
+                    <div class="ore-item">
+                        <span class="ore-name">💎 Gem Ore</span>
+                        <span class="ore-amount">30</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🟣 Shadow Ore</span>
+                        <span class="ore-amount">30</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🔴 Iron Ore</span>
+                        <span class="ore-amount">25</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🟡 Gold Ore</span>
+                        <span class="ore-amount">15</span>
+                    </div>
+                </div>
+                <div class="recipe-traits">
+                    <span class="trait-tag">Legendary</span>
+                    <span class="trait-tag">Critical Hit</span>
+                    <span class="trait-tag">All Stats +15%</span>
+                </div>
+                <div class="recipe-stats">
+                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> High | <strong>Best For:</strong> End-game
+                </div>
+                <button class="use-recipe-btn" onclick="useRecipe('gem-blade')">Use in Calculator →</button>
+            </div>
+
+            <div class="recipe-card legendary" data-tier="legendary" data-type="weapon">
+                <div class="recipe-header">
+                    <div class="recipe-name">⚔️ Ultimate Legendary Sword</div>
+                    <span class="recipe-tier tier-legendary">LEGENDARY</span>
+                </div>
+                <div class="recipe-ores">
+                    <div class="ore-item">
+                        <span class="ore-name">💎 Gem Ore</span>
+                        <span class="ore-amount">40</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🟣 Shadow Ore</span>
+                        <span class="ore-amount">30</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🔵 Crystal Ore</span>
+                        <span class="ore-amount">20</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🟡 Gold Ore</span>
+                        <span class="ore-amount">10</span>
+                    </div>
+                </div>
+                <div class="recipe-traits">
+                    <span class="trait-tag">Legendary</span>
+                    <span class="trait-tag">Unbreakable</span>
+                    <span class="trait-tag">Critical Hit</span>
+                    <span class="trait-tag">Magic Power</span>
+                </div>
+                <div class="recipe-stats">
+                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Very High | <strong>Best For:</strong> Ultimate build
+                </div>
+                <button class="use-recipe-btn" onclick="useRecipe('ultimate-sword')">Use in Calculator →</button>
+            </div>
+
+            <div class="recipe-card legendary" data-tier="legendary" data-type="armor">
+                <div class="recipe-header">
+                    <div class="recipe-name">🛡️ Legendary Armor Set</div>
+                    <span class="recipe-tier tier-legendary">LEGENDARY</span>
+                </div>
+                <div class="recipe-ores">
+                    <div class="ore-item">
+                        <span class="ore-name">💎 Gem Ore</span>
+                        <span class="ore-amount">35</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🔴 Iron Ore</span>
+                        <span class="ore-amount">35</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🔵 Crystal Ore</span>
+                        <span class="ore-amount">20</span>
+                    </div>
+                    <div class="ore-item">
+                        <span class="ore-name">🟡 Gold Ore</span>
+                        <span class="ore-amount">10</span>
+                    </div>
+                </div>
+                <div class="recipe-traits">
+                    <span class="trait-tag">Legendary</span>
+                    <span class="trait-tag">Protection</span>
+                    <span class="trait-tag">Mana Regen</span>
+                    <span class="trait-tag">All Stats +15%</span>
+                </div>
+                <div class="recipe-stats">
+                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Very High | <strong>Best For:</strong> Ultimate defense
+                </div>
+                <button class="use-recipe-btn" onclick="useRecipe('legendary-armor')">Use in Calculator →</button>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-box">
+            <h2>🔥 Want to Create Your Own Recipe?</h2>
+            <p style="margin-bottom: 1.5rem;">Use our calculator to experiment with ore combinations and discover new recipes!</p>
+            <a href="/" class="cta-btn">Try Calculator</a>
+            <a href="/codes.html" class="cta-btn">Get Free Ores</a>
+        </div>
+
+        <!-- What is The Forge Recipes -->
+        <div class="content-section">
+            <h2>🎮 Что такое Рецепты The Forge?</h2>
+            <p>The Forge recipes are carefully crafted ore combinations that produce specific weapons and armor with predictable traits and stats in The Forge Roblox game. Each Forge recipe specifies the exact types and quantities of ores needed to create equipment with desired characteristics. The Forge recipes eliminate guesswork by providing verified combinations that consistently produce the same results.</p>
+            
+            <p>Understanding The Forge recipes is essential for efficient progression. Without proper Forge recipes, players waste valuable ores on random combinations that produce suboptimal results. Our Forge recipes database contains verified combinations for every tier of equipment, from beginner-friendly basic items to ultimate legendary gear.</p>
+            
+            <p>The Forge recipes work by combining different types and quantities of ores to activate specific traits and modifiers. Each Forge recipe has been tested and verified by our community to ensure accuracy. When you use The Forge recipes from our database, you can be confident that you'll get the exact equipment and traits listed.</p>
+            
+            <p>The Forge recipes are organized by difficulty tier - beginner, intermediate, advanced, and legendary. Beginner Forge recipes use common ores like Iron and Coal, making them perfect for new players. Intermediate Forge recipes introduce rare ores like Shadow and Crystal. Advanced Forge recipes require significant amounts of rare ores, while legendary Forge recipes demand the rarest Gem ore for maximum power.</p>
+        </div>
+
+        <!-- How to Use The Forge Recipes -->
+        <div class="content-section">
+            <h2>📖 Как Использовать Рецепты The Forge</h2>
+            <p>Using The Forge recipes is simple and straightforward. Each recipe in our database shows the exact ore combination needed to craft specific equipment. Here's how to use The Forge recipes effectively:</p>
+            
+            <ol style="margin-left: 2rem; margin-bottom: 2rem;">
+                <li style="margin-bottom: 1rem;"><strong>Browse The Forge Recipes:</strong> Use the filter buttons to find recipes by tier (Beginner, Intermediate, Advanced, Legendary) or type (Weapons, Armor).</li>
+                <li style="margin-bottom: 1rem;"><strong>Review Recipe Details:</strong> Each Forge recipe displays the ore combination, active traits, total ore count, and recommended use case.</li>
+                <li style="margin-bottom: 1rem;"><strong>Use in Calculator:</strong> Click the "Use in Calculator" button on any Forge recipe to automatically load it into our calculator for preview.</li>
+                <li style="margin-bottom: 1rem;"><strong>Gather Required Ores:</strong> Collect the exact ores specified in The Forge recipe through mining, codes, or trading.</li>
+                <li style="margin-bottom: 1rem;"><strong>Craft in Game:</strong> Go to the Forge in-game and add the ores according to The Forge recipe percentages.</li>
+                <li style="margin-bottom: 1rem;"><strong>Verify Results:</strong> The Forge recipes guarantee you'll get the equipment and traits shown in the recipe.</li>
+            </ol>
+            
+            <p>The Forge recipes also indicate the cost level, helping you decide which recipes fit your current resource availability. You can filter Forge recipes by type (weapon or armor) and tier to quickly find what you need. The Forge recipes database is updated regularly as new combinations are discovered and verified by the community.</p>
+        </div>
+
+        <!-- FAQ About The Forge Recipes -->
+        <div class="content-section">
+            <h2>❓ Часто Задаваемые Вопросы о Рецептах The Forge</h2>
+            
+            <div class="faq-item">
+                <h2>Какой лучший рецепт оружия в The Forge?</h2>
+                <p>The Forge best weapon recipe is the Ultimate Legendary Sword, which uses 40% Gem Ore, 30% Shadow Ore, 20% Crystal Ore, and 10% Gold Ore. This Forge recipe is considered the best because it activates four powerful traits simultaneously: Legendary, Unbreakable, Critical Hit, and Magic Power. The high percentage of Gem ore (40%) makes it the most powerful weapon recipe in The Forge, providing maximum damage output and the Unbreakable trait means it never needs repair. This Forge recipe combines physical damage from Shadow ore, magical power from Crystal ore, and wealth bonuses from Gold ore, making it the ultimate all-around weapon for end-game content.</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>Какой лучший рецепт брони в The Forge?</h2>
+                <p>The Forge best armor recipe is the Legendary Armor Set, which uses 35% Gem Ore, 35% Iron Ore, 20% Crystal Ore, and 10% Gold Ore. This Forge recipe is the best armor because it provides maximum defense through the combination of Gem and Iron ores while activating the Legendary trait for massive stat bonuses. The Forge recipe also includes Crystal ore for mana regeneration and provides a +15% boost to all stats. The balanced 35/35 split between Gem and Iron makes this Forge recipe perfect for all playstyles - whether you're a warrior, mage, or hybrid build. This armor recipe offers the highest survivability in The Forge game.</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>Точны ли Рецепты The Forge?</h2>
+                <p>Yes, all The Forge recipes in our database have been tested and verified by our community. Each Forge recipe consistently produces the same equipment and traits when the exact ore percentages are followed. We regularly update The Forge recipes to ensure accuracy with game updates.</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>Могу ли я изменять Рецепты The Forge?</h2>
+                <p>While you can modify The Forge recipes, changing the ore percentages will alter the traits and stats of the final equipment. The Forge recipes are optimized for specific outcomes, so modifications may result in different or weaker equipment. We recommend using our calculator to test any modifications to The Forge recipes before crafting.</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>Как часто обновляются Рецепты The Forge?</h2>
+                <p>The Forge recipes database is updated regularly as new combinations are discovered and verified by the community. We also update The Forge recipes whenever the game receives balance changes or new ores are added. Check back frequently for the latest Forge recipes.</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>Работают ли Рецепты The Forge для всех игроков?</h2>
+                <p>Yes, The Forge recipes work the same for all players. As long as you use the exact ore combinations specified in The Forge recipes, you'll get the same results regardless of your level or progress in the game. The Forge recipes are universal and consistent across all accounts.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Advertisement section removed for security compliance -->        <div style="margin-top: 1rem;">
+            <a href="#" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s;">Special Offer - Click Here</a>
+        </div>
+    </div>
+
+            
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+            </p>
+            
+            <!-- 友情链接 -->
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+                <strong style="color: #ff9800; margin-right: 1rem;">友情链接:</strong>
+                <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
+            </p>
+    <footer></footer>
+        <div class="container">
+            <p>&copy; 2025 Калькулятор The Forge. Не связан с Roblox или разработчиками The Forge.</p>
+            <p><a href="/">Home</a> | <a href="/codes.html">Codes</a> | <a href="/recipes/">Recipes</a> | <a href="/ore/">Ores</a></p>
+        </div>
+            
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+            </p>
+            
+            <!-- 友情链接 -->
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+                <strong style="color: #ff9800; margin-right: 1rem;">友情链接:</strong>
+                <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
+            </p>
+    </footer>
+
+    <script>
+        function switchToEnglish() {
+            const currentPath = window.location.pathname;
+            
+            // 根据当前俄语页面跳转到对应的英语页面
+            if (currentPath === '/ru/' || currentPath === '/ru/index.html') {
+                window.location.href = '/';
+            } else if (currentPath.startsWith('/ru/recipes/')) {
+                if (currentPath.includes('best-recipes')) {
+                    window.location.href = '/recipes/best-recipes.html';
+                } else {
+                    window.location.href = '/recipes/';
+                }
+            } else if (currentPath === '/ru/crafts.html') {
+                window.location.href = '/'; // 英语版本没有单独的crafts页面
+            } else {
+                window.location.href = '/';
+            }
+        }
+        
+        function filterRecipes(filter) {
+            const cards = document.querySelectorAll('.recipe-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter cards
+            cards.forEach(card => {
+                if (filter === 'all') {
+                    card.style.display = 'block';
+                } else if (filter === 'weapon' || filter === 'armor') {
+                    card.style.display = card.dataset.type === filter ? 'block' : 'none';
+                } else {
+                    card.style.display = card.dataset.tier === filter ? 'block' : 'none';
+                }
+            });
+        }
+        
+        function useRecipe(recipeId) {
+            // Redirect to calculator with recipe parameter
+            window.location.href = '/?recipe=' + recipeId;
+        }
+    <!-- Advertisement section removed for security compliance -->

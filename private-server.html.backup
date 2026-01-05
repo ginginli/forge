@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119" crossorigin="anonymous"></script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    
+    <!-- Favicon for better search engine compatibility -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    
+    <meta name="description" content="The Forge Private Servers Guide - Learn how to create, join, and manage The Forge private server in The Forge Roblox game. Complete guide with benefits and active server links.">
+    <meta name="keywords" content="The Forge private server, forge private server, roblox forge private server, The Forge vip servers, forge server hosting, The Forge private server benefits">
+    <link rel="canonical" href="https://forge-calculator.com/private-server.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/private-server.html">
+    <meta property="og:title" content="The Forge Private Servers - Complete Guide">
+    <meta property="og:description" content="Learn everything about The Forge private server - how to create, join, and maximize your private server experience.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://forge-calculator.com/private-server.html">
+    <meta name="twitter:title" content="The Forge Private Servers - Complete Guide">
+    <meta name="twitter:description" content="Learn everything about The Forge private server - how to create, join, and maximize your private server experience.">
+    
+    <title>The Forge Private Servers - Complete Guide</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YRP03D44XS');
+    </script>
+    
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script>
+        // Private Server Links Management
+        let privateServers = [
+            {
+                host: "Ranyel",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=74662823944519476924733824877842"
+            },
+            {
+                host: "UnoTwo",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=37986446089079551352578744760781"
+            },
+            {
+                host: "UnoTwo",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=60026668723507449865968380099789"
+            },
+            {
+                host: "UnoTwo",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=68429951384656482319412535571623"
+            },
+            {
+                host: "UnoTwo",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=81753694189988781470752523491431"
+            },
+            {
+                host: "UnoTwo",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=00722181362972268502721330585499"
+            },
+            {
+                host: "UnoTwo",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=83540576759660849662987391040229"
+            },
+            {
+                host: "UnoTwo",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=81545682614527924587816433180222"
+            },
+            {
+                host: "Hasan",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=37948942641770286936877468870061"
+            },
+            {
+                host: "Ash",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=60026668723507449865968380099789"
+            },
+            {
+                host: "Kirin",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=68429951384656482319412535571623"
+            },
+            {
+                host: "Jaee",
+                link: "https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=83540576759660849662987391040229"
+            }
+        ];
+
+        function renderServerLinks() {
+            const container = document.getElementById('serverLinksContainer');
+            
+            if (privateServers.length === 0) {
+                container.innerHTML = `
+                    <div class="server-link-card">
+                        <h4>🔄 No Active Servers Listed</h4>
+                        <p class="server-description">Private server links will be added here soon. Check back later or submit your own server!</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = privateServers.map((server, index) => `
+                <div class="server-link-card">
+                    <h4>🎮 ${server.host} - Server ${privateServers.filter(s => s.host === server.host).indexOf(server) + 1}</h4>
+                    <div class="server-info">
+                        <span>👤 Host: ${server.host}</span>
+                    </div>
+                    <a href="${server.link}" target="_blank" class="server-join-btn">
+                        Join Server
+                    </a>
+                </div>
+            `).join('');
+        }
+
+        function addPrivateServer(serverData) {
+            privateServers.push(serverData);
+            renderServerLinks();
+        }
+
+        function updateServerStatus(serverName, newStatus, playerCount = null) {
+            const server = privateServers.find(s => s.name === serverName);
+            if (server) {
+                server.status = newStatus;
+                if (playerCount) server.players = playerCount;
+                renderServerLinks();
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            renderServerLinks();
+        });
+
+        // Auto-refresh server status every 5 minutes
+        setInterval(() => {
+            // This would typically fetch fresh data from an API
+            console.log('Checking server status...');
+        }, 300000);
+
+        // Initialize EmailJS
+        (function() {
+            emailjs.init('GSJ6kyQuoG4hKbLdk');
+        })();
+
+        // Submit Server Form Handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const submitForm = document.getElementById('submitServerForm');
+            const submitResult = document.getElementById('submitResult');
+
+            if (submitForm) {
+                submitForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(submitForm);
+                    const hostName = formData.get('hostName').trim();
+                    const serverLink = formData.get('serverLink').trim();
+                    const serverDescription = formData.get('serverDescription').trim();
+                    const agreeTerms = formData.get('agreeTerms');
+
+                    // Validate form
+                    if (!hostName || !serverLink || !agreeTerms) {
+                        showSubmitResult('Please fill in all required fields and agree to the terms.', 'error');
+                        return;
+                    }
+
+                    // Validate Roblox link format
+                    if (!serverLink.includes('roblox.com/games/') || !serverLink.includes('privateServerLinkCode=')) {
+                        showSubmitResult('Please enter a valid Roblox The Forge private server link.', 'error');
+                        return;
+                    }
+
+                    // Disable submit button
+                    const submitBtn = submitForm.querySelector('.submit-btn');
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Submitting...';
+
+                    try {
+                        // Create server data object
+                        const serverData = {
+                            host: hostName,
+                            link: serverLink,
+                            description: serverDescription || `Private server hosted by ${hostName}.`,
+                            timestamp: new Date().toISOString()
+                        };
+
+                        // Prepare email template parameters
+                        const templateParams = {
+                            submission_type: 'Private Server Submission',
+                            host_name: hostName,
+                            server_link: serverLink,
+                            server_description: serverDescription || 'No description provided',
+                            timestamp: new Date().toLocaleString(),
+                            user_agent: navigator.userAgent,
+                            page_url: window.location.href
+                        };
+
+                        // Send email using EmailJS
+                        await emailjs.send('service_wpt73fl', 'template_qbcqham', templateParams);
+
+                        // Store in localStorage for demo purposes
+                        let submittedServers = JSON.parse(localStorage.getItem('submittedServers') || '[]');
+                        submittedServers.push(serverData);
+                        localStorage.setItem('submittedServers', JSON.stringify(submittedServers));
+
+                        // Show success message
+                        showSubmitResult('Server submitted successfully! Your submission has been sent for review and will be added to the list soon.', 'success');
+                        
+                        // Reset form
+                        submitForm.reset();
+                        
+                        // Log submission for admin review
+                        console.log('Server submitted:', serverData);
+                    } catch (error) {
+                        console.error('Error submitting server:', error);
+                        showSubmitResult('Error submitting server. Please try again later or contact support.', 'error');
+                    } finally {
+                        // Re-enable submit button
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Submit Server';
+                    }
+                });
+            }
+
+            function showSubmitResult(message, type) {
+                submitResult.textContent = message;
+                submitResult.className = `submit-result ${type}`;
+                submitResult.style.display = 'block';
+                
+                // Hide after 5 seconds
+                setTimeout(() => {
+                    submitResult.style.display = 'none';
+                }, 5000);
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>🔒 Private Servers</h1>
+            <nav>
+                <a href="/">Calculator</a>
+                <a href="/recipes/">Recipes</a>
+                <a href="/codes.html">Codes</a>
+                <a href="/ore/">Ore</a>
+                <a href="/wiki/">Wiki</a>
+                <a href="/weapons.html">Weapons</a>
+                <a href="/armor.html">Armor</a>
+                <a href="/private-server.html">Private Servers</a>
+                <a href="/blog/">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>The Forge Private Servers</h2>
+            <p>Create your own private world in The Forge! Learn everything about The Forge private server setup, private server management, and advanced private server features.</p>
+        </div>
+    </section>
+
+    <!-- Active Private Server Links -->
+    <section class="content-section">
+        <div class="container">
+            <h3>🔗 All Active The Forge Private Server (PS) Links</h3>
+            <p>Join active The Forge private server links hosted by The Forge community members. These private server options are hosted by Ranyel, UnoTwo, Hasan, Ash, Kirin, and Jaee. Each private server offers unique gaming experiences.</p>
+            
+            <div class="info-box">
+                <h4>📋 How to Use These Links</h4>
+                <p>Click on any server link below to join. Make sure you meet any requirements listed by the server owner. Some servers may be friends-only or have specific rules.</p>
+            </div>
+
+            <div class="server-links-container" id="serverLinksContainer">
+                <div class="server-link-card">
+                    <h4>🔄 Loading Server Links...</h4>
+                    <p>Private server links will be added here. Check back soon for active server listings!</p>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <h4>⚠️ Important Notes</h4>
+                <ul>
+                    <li>Server links are provided by the community and may change without notice</li>
+                    <li>Always follow server rules and be respectful to other players</li>
+                    <li>Some servers may require permission to join or have specific themes</li>
+                    <li>Report any inappropriate servers to the game moderators</li>
+                </ul>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Submit Private Server -->
+    <section class="content-section">
+        <div class="container">
+            <h3>📤 Submit Your Private Server</h3>
+            <p>Share your active The Forge private server with the community! Fill out the private server submission form below to add your private server to our comprehensive private server directory.</p>
+            
+            <div class="submit-form-container">
+                <form id="submitServerForm" class="submit-server-form">
+                    <div class="form-group">
+                        <label for="hostName">Host Name *</label>
+                        <input type="text" id="hostName" name="hostName" required placeholder="Enter your username/host name">
+                        <small>Your Roblox username or display name</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="serverLink">Private Server Link *</label>
+                        <input type="url" id="serverLink" name="serverLink" required placeholder="https://www.roblox.com/games/76558904092080/The-Forge?privateServerLinkCode=...">
+                        <small>Full The Forge private server link from Roblox</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="serverDescription">Server Description (Optional)</label>
+                        <textarea id="serverDescription" name="serverDescription" rows="3" placeholder="Brief description of your server (rules, theme, etc.)"></textarea>
+                        <small>Optional: Add any special rules or information about your server</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                            I agree that my server link may be shared publicly and I follow Roblox Terms of Service
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Server</button>
+                </form>
+                
+                <div id="submitResult" class="submit-result" style="display: none;"></div>
+            </div>
+            
+            <div class="info-box">
+                <h4>📋 Submission Guidelines</h4>
+                <ul>
+                    <li>Server must be active and accessible</li>
+                    <li>Follow Roblox Terms of Service and community guidelines</li>
+                    <li>Be respectful to other players</li>
+                    <li>Server links are reviewed before being added to the list</li>
+                    <li>We reserve the right to remove inappropriate servers</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- What are Private Servers -->
+    <section class="content-section">
+        <div class="container">
+            <h3>🏰 What are Private Servers?</h3>
+            <p>Private servers in The Forge are exclusive game instances that you can create and control. Unlike public servers, The Forge private server give you complete control over who can join your private server, allowing you to play with friends, practice without interruption, or host special private server events.</p>
+            
+            <div class="info-box">
+                <h4>🎉 Latest Update</h4>
+                <p>Private servers are now officially available in The Forge! The development team is aware of console The Forge private server issues and is working on private server fixes for all platforms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="content-section">
+        <div class="container">
+            <h3>✨ Private Server Features</h3>
+            <ul>
+                <li>Farm without hackers or disruptive players</li>
+                <li>Access to rare resources like volcanic rocks without competition</li>
+                <li>Take advantage of mining speed boost events</li>
+                <li>Play with like-minded players who share similar goals</li>
+                <li>Clean, moderated environment</li>
+                <li>Set up volcanic rock clusters for 5-6 rocks per 30-second cycle in your private server</li>
+                <li>Stack potions for 65 minutes of enhanced mining (luck + mining potions) in private server</li>
+                <li>Achieve 2-3x mining efficiency through advanced private server optimization strategies</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Why Choose Private Servers -->
+    <section class="content-section">
+        <div class="container">
+            <h3>🎯 Why Choose Private Servers in The Forge</h3>
+            <p>Private servers unlock advanced strategies and optimization techniques that are impossible in public servers due to competition and interference. These private server advantages make private server gameplay significantly more efficient.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>⚡ Advanced Mining Optimization</h4>
+                    <p>Set up volcanic rock clusters by clearing normal rocks and positioning multiple volcanic rocks together. Destroy 5-6 volcanic rocks in one 30-second cycle instead of waiting for individual rocks to reset.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🧪 Potion Stacking Strategy</h4>
+                    <p>Stack luck potions up to 1 hour and mining potions up to 15 minutes. Use both simultaneously for 65 minutes of enhanced mining without returning to spawn for refills.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📈 2-3x Mining Efficiency</h4>
+                    <p>These optimization strategies can increase your ore farming speed by 2-3 times compared to public servers, where competition prevents strategic positioning.</p>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h4>💡 Strategic Advantage</h4>
+                <p>In public servers, these optimization techniques are nearly impossible due to constant player interference. Private servers give you the freedom to implement advanced strategies that can dramatically improve your mining results and rare ore collection. Private server environments enable consistent private server optimization that public servers cannot match.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Create -->
+    <section class="content-section">
+        <div class="container">
+            <h3>🛠️ How to Set Up a Private Server in The Forge?</h3>
+            <p>Instead of using someone else's The Forge private server in The Forge, you can always make your own private server. Be warned, though, because you do need to pay real money to keep your private server running. To get your own The Forge private server, follow these private server setup instructions:</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <h4>Open up The Forge's game page</h4>
+                    <p>Open up The Forge's game page on browser or within the game client.</p>
+                </div>
+                <div class="step">
+                    <h4>Scroll over to the Server selection</h4>
+                    <p>Scroll over to the Server selection.</p>
+                </div>
+                <div class="step">
+                    <h4>Select the Create Private Server option</h4>
+                    <p>Select the Create Private Server option.</p>
+                </div>
+                <div class="step">
+                    <h4>Enter a server name</h4>
+                    <p>Enter a server name in the new window.</p>
+                </div>
+                <div class="step">
+                    <h4>Select the Subscribe button</h4>
+                    <p>Select the Subscribe button to make the server.</p>
+                </div>
+            </div>
+            
+            <div class="info-box warning">
+                <h4>💰 Cost Information</h4>
+                <p>You will need to pay 100 Robux to get started on a monthly subscription.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Invite Friends -->
+    <section class="content-section">
+        <div class="container">
+            <h3>👥 How to Invite Friends to Your Private Server</h3>
+            <p>Lastly, you need to invite your friends over to play in your The Forge private server. To manage your private server invitations, follow these private server invitation instructions:</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <h4>Open up The Forge's game page</h4>
+                    <p>Open up The Forge's game page on browser or within the game client.</p>
+                </div>
+                <div class="step">
+                    <h4>Scroll over to the Server selection</h4>
+                    <p>Scroll over to the Server selection.</p>
+                </div>
+                <div class="step">
+                    <h4>Click on the three dots</h4>
+                    <p>Click on the three dots next to the name of your private server.</p>
+                </div>
+                <div class="step">
+                    <h4>Select the Configure option</h4>
+                    <p>Select the Configure option.</p>
+                </div>
+                <div class="step">
+                    <h4>Toggle the Allow Joining option</h4>
+                    <p>Toggle the Allow Joining option.</p>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h4>🎯 Alternative Method</h4>
+                <p>Alternatively, you can select who specifically you'd like to join your private server by managing individual player permissions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Get Free Private Servers -->
+    <section class="content-section">
+        <div class="container">
+            <h3>🆓 How to Get Free Private Servers in The Forge</h3>
+            <p>If 100 Robux is too much for you, or if you just don't have the Robux right now, there are ways to get The Forge private server completely for free through community Discord servers. These free private server options provide excellent private server access without cost.</p>
+            
+            <p>Some content creators buy The Forge private server and share them with their community members. These shared private server arrangements allow multiple players to access private server benefits. Here's how private server sharing typically works:</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <h4>Join community Discord servers</h4>
+                    <p>Join community Discord servers that offer free The Forge private server access.</p>
+                </div>
+                <div class="step">
+                    <h4>Complete verification process</h4>
+                    <p>Complete verification process in the Discord server.</p>
+                </div>
+                <div class="step">
+                    <h4>Look for "Private Servers" section</h4>
+                    <p>Look for a "Private Servers" section or channel.</p>
+                </div>
+                <div class="step">
+                    <h4>Access shared server links</h4>
+                    <p>Access shared server links (usually multiple options available).</p>
+                </div>
+                <div class="step">
+                    <h4>Try alternative options</h4>
+                    <p>If one server is full, try another available option.</p>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h4>🔄 Server Maintenance</h4>
+                <p>These community servers are usually refreshed daily to ensure they stay clean and hacker-free.</p>
+            </div>
+            
+            <div class="info-box warning">
+                <h4>⚠️ Important Notes</h4>
+                <ul>
+                    <li>Free servers depend on community generosity</li>
+                    <li>Follow Discord server rules and guidelines</li>
+                    <li>Be respectful to maintain access</li>
+                    <li>Server links may change frequently</li>
+                    <li>No guarantee of permanent access</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="content-section">
+        <div class="container">
+            <h3>❓ Frequently Asked Questions</h3>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h4 class="faq-question">Is there any considerations?</h4>
+                    <div class="faq-answer">
+                        <p><strong>Important considerations:</strong></p>
+                        <ul>
+                            <li>Community servers may have rules you need to follow</li>
+                            <li>Server access depends on community guidelines</li>
+                            <li>Links may change frequently for security reasons</li>
+                            <li>Report any issues (hackers, stealing) to server moderators</li>
+                            <li>Maintain respectful behavior to keep access</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">If you can't join a private server</h4>
+                    <div class="faq-answer">
+                        <p><strong>Fix your Roblox privacy settings (most common issue):</strong></p>
+                        <ul>
+                            <li>Go to Roblox Settings → Privacy</li>
+                            <li>Find "Who can invite me to private server" setting</li>
+                            <li>Set it to "Everyone" (not "Friends" or "No one")</li>
+                            <li>Save the changes and try joining again</li>
+                        </ul>
+                        <p><strong>Other troubleshooting steps:</strong></p>
+                        <ul>
+                            <li>Try different server links if one doesn't work</li>
+                            <li>Verify you're not banned from the community</li>
+                            <li>Check if the server is full and try another one</li>
+                            <li>Restart Roblox if the issue persists</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Forge Calculator. Not affiliated with Roblox or The Forge developers.</p>
+            <p><a href="/">Home</a> | <a href="/wiki/">Wiki</a> | <a href="/codes.html">Codes</a> | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms-of-service.html">Terms</a></p>
+            
+            <!-- 友情链接 -->
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+                <strong style="color: #ff9800; margin-right: 1rem;">友情链接:</strong>
+                <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://www.vkmoai.com" target="_blank" rel="noopener noreferrer" title="VKMO AI Tools Directory">VKMO AI</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://fast-wan.com/" target="_blank" rel="noopener noreferrer" title="Fast Wan">Fast Wan</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://aitoolcenter.com/" target="_blank" rel="noopener noreferrer" title="AI Tool Center">AI Tool Center</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://allinai.tools" target="_blank" rel="noopener noreferrer" title="All The Best AI Tools">All in AI Tools</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://whatisaitools.com/" target="_blank" rel="noopener noreferrer" title="What Is Ai Tools">What Is Ai Tools</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://www.seewhatnewai.com" target="_blank" rel="noopener noreferrer" title="See What New AI">See What New AI</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://SeekAIs.com/" target="_blank" rel="noopener noreferrer" title="SeekAIs">SeekAIs</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://www.aigotools.com" target="_blank" rel="noopener noreferrer" title="AigoTools">AigoTools</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://aitoolsss.com" target="_blank" rel="noopener noreferrer" title="AIToolsss Directory">AIToolsss Directory</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

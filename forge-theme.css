@@ -530,3 +530,659 @@ footer a:hover {
     0%, 100% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.3); }
     50% { box-shadow: 0 0 40px rgba(245, 158, 11, 0.6); }
 }
+
+
+/* Badge images */
+.badge-rounded {
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+}
+
+.badge-auto-height {
+    height: 54px;
+    width: auto;
+}
+
+/* Additional CSS classes to replace inline styles */
+
+/* Yandex Metrika hidden image */
+.yandex-hidden {
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+/* Language switcher button */
+.language-switcher {
+    background: rgba(255, 152, 0, 0.2) !important;
+    border: 1px solid #ff9800 !important;
+}
+
+/* Calculator section override */
+.calculator-section {
+    max-width: none !important;
+    padding: 3rem 20px !important;
+}
+
+/* Gacha simulator wrapper */
+.gacha-simulator-wrapper {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.gacha-simulator-wrapper iframe {
+    width: 100%;
+    height: 1400px;
+    border: none;
+    display: block;
+}
+
+/* Quick tips section */
+.quick-tips-section {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    padding: 4rem 0;
+}
+
+.quick-tips-title {
+    color: var(--ui-orange);
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 0 2px 15px rgba(245, 158, 11, 0.4);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tip-card {
+    background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-secondary) 100%);
+    border-radius: 16px;
+    padding: 2.5rem;
+    border: 2px solid var(--ui-blue);
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.tip-card.orange {
+    border-color: var(--ui-orange);
+    box-shadow: 0 8px 30px rgba(245, 158, 11, 0.2);
+}
+
+.tip-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tip-card-icon {
+    background: linear-gradient(135deg, var(--ui-blue) 0%, var(--snowite-dark) 100%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.tip-card-icon.orange {
+    background: linear-gradient(135deg, var(--ui-orange) 0%, #f57c00 100%);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+}
+
+.tip-card-title {
+    color: var(--snowite-light);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.tip-card-title.orange {
+    color: #ffb74d;
+}
+
+.tip-card-text {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.tip-card-text .highlight-yellow {
+    color: #ffeb3b;
+}
+
+.tip-card-text .highlight-red {
+    color: var(--ui-red);
+}
+
+.tip-card-text .highlight-purple {
+    color: var(--ui-purple);
+}
+
+/* Footer sections */
+.footer-section {
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.footer-links-title {
+    color: var(--ui-orange);
+    margin-right: 1rem;
+}
+
+.footer-separator {
+    margin: 0 0.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Additional CSS classes for remaining inline styles */
+
+/* Text highlighting */
+.text-highlight {
+    color: var(--ui-orange);
+    font-weight: 600;
+}
+
+/* Submit result hidden */
+.submit-result-hidden {
+    display: none;
+}
+
+/* Section headers */
+.section-header {
+    color: var(--ui-red);
+    margin-bottom: 1rem;
+}
+
+.section-header-large {
+    color: var(--ui-red);
+    margin-bottom: 1.5rem;
+}
+
+/* Section paragraphs */
+.section-paragraph {
+    margin-bottom: 1rem;
+}
+
+/* Info boxes */
+.info-box {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-left: 4px solid var(--ui-orange);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.info-box-header {
+    color: #e65100;
+    margin-bottom: 0.75rem;
+}
+
+.info-box-text {
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.info-box-list {
+    color: #555;
+    margin-left: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Enhancement grid */
+.enhancement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Enhancement card */
+.enhancement-card {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    border-left: 4px solid var(--ui-purple);
+}
+
+.enhancement-card-header {
+    color: #ce93d8;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.enhancement-card-text {
+    color: #b0bec5;
+    margin-bottom: 1rem;
+}
+
+.enhancement-card-list {
+    color: #b0bec5;
+    margin-left: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Upgrade path box */
+.upgrade-path-box {
+    background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 2px solid var(--ui-purple);
+}
+
+.upgrade-path-text {
+    color: #ce93d8;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Stats grid */
+.stats-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Stat cards */
+.stat-card-damage {
+    background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--ui-red);
+}
+
+.stat-card-speed {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--ui-blue);
+}
+
+.stat-card-quality {
+    background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--ui-purple);
+}
+
+.stat-card-range {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--ui-green);
+}
+
+.stat-card-type {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--ui-orange);
+}
+
+.stat-card-chance {
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid #e91e63;
+}
+
+.stat-card-price {
+    background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid #009688;
+}
+
+/* Stat card headers */
+.stat-card-header-damage {
+    color: #c62828;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.stat-card-header-speed {
+    color: #1565c0;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.stat-card-header-quality {
+    color: #6a1b9a;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.stat-card-header-range {
+    color: #2e7d32;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.stat-card-header-type {
+    color: #e65100;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.stat-card-header-chance {
+    color: #c2185b;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.stat-card-header-price {
+    color: #00695c;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+/* Stat card text */
+.stat-card-text {
+    color: #555;
+    margin-bottom: 0.75rem;
+}
+
+.stat-card-list {
+    color: #555;
+    margin-left: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Additional CSS classes for remaining styles */
+
+/* Table overflow wrapper */
+.table-overflow {
+    overflow-x: auto;
+}
+
+/* Expired code card */
+.code-card-expired {
+    opacity: 0.6;
+}
+
+/* Flex layout for quest items */
+.quest-flex {
+    flex: 1;
+}
+
+/* Prismatic Pickaxe Styles */
+.prismatic-pickaxe-showcase {
+    background: linear-gradient(135deg, #1e1e1e 0%, #2b2b2b 50%, #1e1e1e 100%);
+    border: 2px solid var(--rarity-legendary);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.prismatic-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.prismatic-header h3 {
+    color: var(--rarity-legendary);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+.prismatic-badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cost-badge, .sell-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.cost-badge {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+}
+
+.sell-badge {
+    background: linear-gradient(135deg, #4ade80, #22c55e);
+    color: white;
+}
+
+.prismatic-description {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.prismatic-stats h4 {
+    color: var(--rarity-legendary);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.stats-grid-prismatic {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat-item-prismatic {
+    background: var(--bg-darker);
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.stat-item-prismatic:hover {
+    transform: translateY(-2px);
+    border-color: var(--rarity-legendary);
+}
+
+.stat-item-prismatic .stat-label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item-prismatic .stat-value {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.stat-value.legendary {
+    color: var(--rarity-legendary);
+    text-shadow: 0 0 5px rgba(245, 158, 11, 0.3);
+}
+
+.prismatic-obtain {
+    background: var(--bg-darker);
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--rarity-legendary);
+}
+
+.prismatic-obtain h4 {
+    color: var(--rarity-legendary);
+    margin-bottom: 1rem;
+}
+
+.obtain-note {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: 6px;
+    border-left: 3px solid var(--ui-blue);
+}
+
+/* Progression Guide Styles */
+.progression-guide {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+}
+
+.progression-path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.progression-item {
+    background: var(--bg-darker);
+    border: 2px solid var(--border-primary);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    min-width: 150px;
+    transition: all 0.3s;
+}
+
+.progression-item:hover {
+    border-color: var(--ui-orange);
+    transform: translateY(-2px);
+}
+
+.progression-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.progression-name {
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.progression-location {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.progression-arrow {
+    font-size: 1.5rem;
+    color: var(--ui-orange);
+    font-weight: bold;
+}
+
+.arcane-highlight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, var(--rarity-legendary), var(--rarity-epic));
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+}
+
+.arcane-icon {
+    font-size: 2rem;
+}
+
+.arcane-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.arcane-location {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.progression-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tip-card {
+    background: var(--bg-darker);
+    border: 1px solid var(--border-primary);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s;
+}
+
+.tip-card:hover {
+    border-color: var(--ui-orange);
+    transform: translateY(-2px);
+}
+
+.tip-card h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--ui-orange);
+    margin-bottom: 1rem;
+}
+
+.tip-icon {
+    font-size: 1.2rem;
+}
+
+.tip-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.tip-card strong {
+    color: var(--text-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .progression-path {
+        flex-direction: column;
+    }
+    
+    .progression-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .arcane-highlight {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .stats-grid-prismatic {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .prismatic-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+}

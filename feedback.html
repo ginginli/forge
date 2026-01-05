@@ -9,7 +9,7 @@
     
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" class="yandex-hidden" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -22,315 +22,6 @@
     <link rel="canonical" href="https://forge-calculator.com/feedback.html">
     <title>Feedback - The Forge Calculator</title>
     <link rel="stylesheet" href="forge-theme.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-            color: var(--text-primary);
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        
-        header {
-            background: rgba(26, 22, 18, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 1.25rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            border-bottom: 2px solid var(--flame-primary);
-        }
-        
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-            max-width: 1400px;
-        }
-        
-        header h1 {
-            color: var(--text-primary);
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-        
-        nav {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        
-        nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            transition: all 0.2s ease;
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-        
-        nav a:hover {
-            color: var(--gold-primary);
-            background: rgba(212, 175, 55, 0.1);
-        }
-        
-        .feedback-hero {
-            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 3rem 2.5rem;
-            margin: 3rem auto 2rem;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-            border: 1px solid var(--border-flame);
-            text-align: center;
-        }
-        
-        .feedback-hero h2 {
-            color: var(--gold-primary);
-            font-size: clamp(2rem, 5vw, 2.5rem);
-            margin-bottom: 1rem;
-            font-weight: 800;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        .feedback-hero p {
-            color: var(--text-secondary);
-            font-size: 1.125rem;
-        }
-        
-        .feedback-form {
-            background: var(--bg-surface);
-            border-radius: 20px;
-            padding: 3rem 2.5rem;
-            margin-bottom: 3rem;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-            border: 1px solid var(--border-subtle);
-        }
-        
-        .form-group {
-            margin-bottom: 2rem;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 0.75rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            font-size: 1.0625rem;
-        }
-        
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 1rem;
-            border: 2px solid var(--border-subtle);
-            border-radius: 12px;
-            font-size: 1rem;
-            font-family: inherit;
-            transition: all 0.3s ease;
-            background: var(--bg-darker);
-            color: var(--text-primary);
-        }
-        
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--flame-primary);
-            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
-        }
-        
-        .form-group textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-        
-        .form-hint {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-top: 0.5rem;
-        }
-        
-        .submit-btn {
-            background: linear-gradient(135deg, var(--flame-primary) 0%, var(--gold-primary) 100%);
-            color: var(--text-primary);
-            border: none;
-            padding: 1rem 3rem;
-            border-radius: 12px;
-            font-size: 1.125rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
-            width: 100%;
-        }
-        
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(255, 87, 34, 0.4);
-        }
-        
-        .submit-btn:active {
-            transform: translateY(0);
-        }
-        
-        .submit-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
-        }
-        
-        .success-message {
-            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
-            border: 2px solid #4caf50;
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            text-align: center;
-            display: none;
-            color: var(--text-primary);
-        }
-        
-        .success-message.show {
-            display: block;
-            animation: slideIn 0.3s ease-out;
-        }
-        
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .success-message h3 {
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-        
-        .success-message p {
-            color: var(--text-primary);
-        }
-        
-        .error-message {
-            background: linear-gradient(135deg, var(--flame-dark) 0%, var(--flame-primary) 100%);
-            border: 2px solid var(--flame-primary);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            display: none;
-            color: var(--text-primary);
-        }
-        
-        .error-message.show {
-            display: block;
-        }
-        
-        .error-message p {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-        
-        .feedback-types {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .type-card {
-            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-surface) 100%);
-            border: 2px solid var(--gold-primary);
-            border-radius: 12px;
-            padding: 1.5rem;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            color: var(--text-primary);
-        }
-        
-        .type-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
-        }
-        
-        .type-card.selected {
-            background: linear-gradient(135deg, var(--flame-primary) 0%, var(--gold-primary) 100%);
-            color: var(--text-primary);
-        }
-        
-        .type-card .icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .type-card .title {
-            font-weight: 600;
-        }
-        
-        footer {
-            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-            backdrop-filter: blur(10px);
-            color: var(--text-secondary);
-            padding: 3rem 0 2rem;
-            text-align: center;
-            border-top: 1px solid var(--border-flame);
-        }
-        
-        footer p {
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-            color: var(--text-muted);
-        }
-        
-        footer a {
-            color: var(--gold-primary);
-            text-decoration: none;
-            transition: all 0.2s ease;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-        }
-        
-        footer a:hover {
-            color: var(--gold-light);
-            background: rgba(212, 175, 55, 0.1);
-        }
-        
-        @media (max-width: 768px) {
-            header .container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            nav {
-                justify-content: center;
-            }
-            
-            .feedback-form {
-                padding: 2rem 1.5rem;
-            }
-        }
-    </style>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
@@ -361,6 +52,7 @@
                 <a href="/wiki/">Wiki</a>
                 <a href="/weapons.html">Weapons</a>
                 <a href="/armor.html">Armor</a>
+                <a href="/pickaxe.html">Pickaxe</a>
                 <a href="/private-server.html">Private Servers</a>
                 <a href="/blog/">Blog</a>
                 <a href="/feedback.html">Feedback</a>
@@ -471,12 +163,12 @@
             <p><a href="/">Home</a> | <a href="/wiki/">Wiki</a> | <a href="/blog/">Blog</a> | <a href="/feedback.html">Feedback</a></p>
         </div>
             
-            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+            <p class="footer-section">
             </p>
             
             <!-- 友情链接 -->
-            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
-                <strong style="color: #ff9800; margin-right: 1rem;">友情链接:</strong>
+            <p class="footer-section">
+                <strong class="footer-links-title">友情链接:</strong>
                 <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
             </p>
     </footer>

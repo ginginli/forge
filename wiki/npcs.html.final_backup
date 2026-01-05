@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119" crossorigin="anonymous"></script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" class="yandex-hidden" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    <meta name="description" content="Complete guide to all NPCs in The Forge - Meet Sensei Moro, Marbles, Miner Fred, Maria, and other helpful characters.">
+    <meta name="keywords" content="the forge npcs, forge characters, sensei moro, marbles, miner fred, maria, forge npc guide">
+    <link rel="canonical" href="https://forge-calculator.com/wiki/npcs.html">
+    <title>The Forge NPCs Guide - All Characters & Services</title>
+    
+    <!-- Advertisement code removed for security compliance -->    
+    <link rel="stylesheet" href="forge-theme.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YRP03D44XS');
+    </script>
+    
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="EpsJtUp2VOHq8C8Dwkg1zQ" async></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🧙 The Forge NPCs</h1>
+                                    <nav>
+                <a href="/recipes/">Recipes</a>
+                <a href="/codes.html">Codes</a>
+                <a href="/">Calculator</a>
+                <a href="/ore/">Ore</a>
+                <a href="/wiki/">Wiki</a>
+                <a href="/weapons.html">Weapons</a>
+                <a href="/armor.html">Armor</a>
+                <a href="/private-server.html">Private Servers</a>
+                <a href="/blog/">Blog</a>
+                <a href="/feedback.html">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>🧙 NPCs & Characters Guide</h2>
+            <p>Meet the helpful NPCs scattered across The Forge world. They offer quests, sell items, and provide essential services.</p>
+        </div>
+
+        <!-- Sensei Moro -->
+        <div class="content-section">
+            <h3>Sensei Moro</h3>
+            <div class="npc-card">
+                <div class="npc-icon">🥋</div>
+                <h4>Tutorial Master & Quest Giver</h4>
+                <div class="npc-info">
+                    <p><strong>📍 Locations:</strong> Stonewake's Cross, Forgotten Kingdom</p>
+                    <p><strong>🎯 Role:</strong> Provides tutorials and main story quests</p>
+                    <p><strong>📖 Description:</strong> He is both the Tutorial and Main Quest giver for the player.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Marbles -->
+        <div class="content-section">
+            <h3>Marbles</h3>
+            <div class="npc-card">
+                <div class="npc-icon">🏪</div>
+                <h4>Equipment Merchant</h4>
+                <div class="npc-info">
+                    <p><strong>📍 Locations:</strong> Stonewake's Cross, Forgotten Kingdom</p>
+                    <p><strong>🎯 Role:</strong> Buys your weapons and armor</p>
+                    <p><strong>�� Description:</strong> The local merchant who will buy all of your equipment and weapons. You can only sell unequipped weapons and armours.</p>
+                    <p><strong>⚠️ Note:</strong> Only unequipped items can be sold</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Miner Fred -->
+        <div class="content-section">
+            <h3>Miner Fred</h3>
+            <div class="npc-card">
+                <div class="npc-icon">⛏️</div>
+                <h4>Pickaxe Seller</h4>
+                <div class="npc-info">
+                    <p><strong>📍 Locations:</strong> Stonewake's Cross, Forgotten Kingdom</p>
+                    <p><strong>🎯 Role:</strong> Sells pickaxes for mining</p>
+                    <p><strong>📖 Description:</strong> You can purchase Pickaxes from him. Depending on which area he is in, he will sell you better pickaxes.</p>
+                    <p><strong>💡 Tip:</strong> Better pickaxes available in advanced areas</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Maria -->
+        <div class="content-section">
+            <h3>Maria</h3>
+            <div class="npc-card">
+                <div class="npc-icon">🧪</div>
+                <h4>Potion Seller</h4>
+                <div class="npc-info">
+                    <p><strong>📍 Locations:</strong> Stonewake's Cross, Forgotten Kingdom</p>
+                    <p><strong>🎯 Role:</strong> Sells potions and consumables</p>
+                    <p><strong>📖 Description:</strong> The Potions seller.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Runemaker -->
+        <div class="content-section">
+            <h3>Runemaker</h3>
+            <div class="npc-card">
+                <div class="npc-icon">✨</div>
+                <h4>Rune Crafter</h4>
+                <div class="npc-info">
+                    <p><strong>📍 Locations:</strong> Stonewake's Cross, Forgotten Kingdom</p>
+                    <p><strong>🎯 Role:</strong> Crafts runes for equipment enhancement</p>
+                    <p><strong>📖 Description:</strong> As the name suggests, you go to him in order to craft Runes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Greedy Cay -->
+        <div class="content-section">
+            <h3>Greedy Cay</h3>
+            <div class="npc-card">
+                <div class="npc-icon">💰</div>
+                <h4>Resource Trader</h4>
+                <div class="npc-info">
+                    <p><strong>📍 Locations:</strong> Stonewake's Cross, Forgotten Kingdom</p>
+                    <p><strong>🎯 Role:</strong> Buys runes, essence, and ores</p>
+                    <p><strong>📖 Description:</strong> You can sell your runes, essence, and ores here for a price.</p>
+                    <p><strong>💡 Tip:</strong> Good way to convert excess resources into coins</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bard -->
+        <div class="content-section">
+            <h3>Bard</h3>
+            <div class="npc-card">
+                <div class="npc-icon">🎸</div>
+                <h4>Quest Giver</h4>
+                <div class="npc-info">
+                    <p><strong>📍 Location:</strong> Stonewake's Cross</p>
+                    <p><strong>🎯 Role:</strong> Provides guitar retrieval quest</p>
+                    <p><strong>📖 Description:</strong> Giving a quest to find his lost guitar.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NPC Tips -->
+        <div class="content-section">
+            <h3>💡 NPC Tips</h3>
+            <ul style="line-height: 1.8; color: #555;">
+                <li>Most NPCs can be found in both <strong>Stonewake's Cross</strong> and <strong>Forgotten Kingdom</strong></li>
+                <li>Miner Fred sells better pickaxes in more advanced areas</li>
+                <li>Remember to unequip items before trying to sell them to Marbles</li>
+                <li>Greedy Cay is useful for converting excess resources into coins</li>
+                <li>Complete Sensei Moro's quests to unlock new areas and features</li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <!-- Advertisement section removed for security compliance -->        <div style="margin-top: 1rem;">
+            <a href="#" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s;">Special Offer - Click Here</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Forge Calculator. Not affiliated with Roblox or The Forge developers.</p>
+            <p><a href="/">Home</a> | <a href="./">Wiki</a> | <a href="/codes.html">Codes</a> | <a href="/privacy-policy.html">Privacy</a></p>
+        </div>
+    <!-- Advertisement section removed for security compliance -->

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    <meta name="description" content="Terms of Service for Roblox The Forge Calculator">
+    <link rel="canonical" href="https://forge-calculator.com/terms-of-service.html">
+    <title>Terms of Service - Roblox The Forge Calculator</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="EpsJtUp2VOHq8C8Dwkg1zQ" async></script>
+</head>
+<body>
+    <header>
+        <h1>⚒️ Forge Calculator - Terms of Service</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Terms of Service</h2>
+            <p><strong>Last Updated:</strong> December 4, 2025</p>
+
+            <h3>1. Acceptance of Terms</h3>
+            <p>By accessing and using Roblox The Forge Calculator ("the Service"), you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Service.</p>
+
+            <h3>2. Description of Service</h3>
+            <p>Roblox The Forge Calculator is a free, web-based tool designed to help players of The Forge on Roblox calculate optimal ore combinations, trait setups, and crafting strategies. The Service provides real-time calculations and information to enhance gameplay experience.</p>
+
+            <h3>3. Use of Service</h3>
+            <p>You agree to use the Service only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+            <ul>
+                <li>Use the Service in any way that violates any applicable laws or regulations</li>
+                <li>Attempt to interfere with or disrupt the Service or servers</li>
+                <li>Use automated systems or software to extract data from the Service</li>
+                <li>Misrepresent your affiliation with any person or entity</li>
+                <li>Use the Service for any commercial purposes without our permission</li>
+            </ul>
+
+            <h3>4. Intellectual Property</h3>
+            <p>The Service and its original content, features, and functionality are owned by Roblox The Forge Calculator and are protected by international copyright, trademark, and other intellectual property laws.</p>
+
+            <h3>5. Disclaimer of Warranties</h3>
+            <p>The Service is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, either express or implied, including but not limited to:</p>
+            <ul>
+                <li>Accuracy or reliability of calculations</li>
+                <li>Uninterrupted or error-free operation</li>
+                <li>Fitness for a particular purpose</li>
+            </ul>
+            <p>We do not guarantee that the calculations provided will result in successful crafting outcomes in The Forge game.</p>
+
+            <h3>6. Limitation of Liability</h3>
+            <p>In no event shall Roblox The Forge Calculator, its operators, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages resulting from:</p>
+            <ul>
+                <li>Your use or inability to use the Service</li>
+                <li>Any errors or inaccuracies in the calculations</li>
+                <li>Loss of in-game resources or progress</li>
+                <li>Any other matter relating to the Service</li>
+            </ul>
+
+            <h3>7. Third-Party Content</h3>
+            <p>The Service may contain links to third-party websites or services that are not owned or controlled by us. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services.</p>
+
+            <h3>8. Game Affiliation Disclaimer</h3>
+            <p>This Service is a fan-made tool and is NOT officially affiliated with, endorsed by, or connected to:</p>
+            <ul>
+                <li>Roblox Corporation</li>
+                <li>The Forge game developers</li>
+                <li>Any official Roblox games or services</li>
+            </ul>
+            <p>All game-related trademarks and copyrights belong to their respective owners.</p>
+
+            <h3>9. Changes to Service</h3>
+            <p>We reserve the right to modify, suspend, or discontinue the Service at any time without notice. We will not be liable to you or any third party for any modification, suspension, or discontinuation of the Service.</p>
+
+            <h3>10. Changes to Terms</h3>
+            <p>We reserve the right to update or modify these Terms of Service at any time. Changes will be effective immediately upon posting. Your continued use of the Service after changes constitutes acceptance of the new Terms.</p>
+
+            <h3>11. Governing Law</h3>
+            <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions.</p>
+
+            <h3>12. Contact Information</h3>
+            <p>If you have any questions about these Terms of Service, please contact us through our website.</p>
+
+            <h3>13. Severability</h3>
+            <p>If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that these Terms will otherwise remain in full force and effect.</p>
+
+            <a href="/" class="back-link">← Back to Calculator</a>
+        </div>
+    </div>
+</body>
+</html>

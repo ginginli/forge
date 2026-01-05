@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119" crossorigin="anonymous"></script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Favicon for better search engine compatibility -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    <meta name="description" content="The Forge Weapons Guide - Learn about all 8 weapon types in The Forge Roblox game. From Daggers to Colossal Swords.">
+    <meta name="keywords" content="the forge weapons, forge weapon types, roblox forge weapons, the forge weapon guide, colossal swords, katana, daggers, great axes">
+    <link rel="canonical" href="https://forge-calculator.com/weapons.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/weapons.html">
+    <meta property="og:title" content="The Forge Weapons - Complete Weapon Types Guide">
+    <meta property="og:description" content="Discover all 8 weapon types in The Forge. From starter Daggers to legendary Colossal Swords.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://forge-calculator.com/weapons.html">
+    <meta name="twitter:title" content="The Forge Weapons - Complete Weapon Types Guide">
+    <meta name="twitter:description" content="Discover all 8 weapon types in The Forge. From starter Daggers to legendary Colossal Swords.">
+    
+    <title>The Forge Weapons - Complete Weapon Types Guide</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YRP03D44XS');
+    </script>
+    
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="EpsJtUp2VOHq8C8Dwkg1zQ" async></script>
+    
+    <!-- Advertisement code removed for security compliance -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>⚔️ The Forge Weapons</h1>
+                        <nav>
+                <a href="/recipes/">Recipes</a>
+                <a href="/codes.html">Codes</a>
+                <a href="/">Calculator</a>
+                <a href="/ore/">Ore</a>
+                <a href="/wiki/">Wiki</a>
+                <a href="/weapons.html">Weapons</a>
+                <a href="/armor.html">Armor</a>
+                <a href="/private-server.html">Private Servers</a>
+                <a href="/blog/">Blog</a>
+                <a href="/feedback.html">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>⚔️ Weapon Types in The Forge</h2>
+            <p>Discover all 8 weapon types and choose your path to legendary status</p>
+        </div>
+
+        <div class="content-section">
+            <h2 style="color: #ff5722; margin-bottom: 1rem;">⚔️ About Weapons in The Forge</h2>
+            <p style="margin-bottom: 1rem;"><strong>Weapons are the Forger's most important tools for obtaining essences.</strong> Forgers are required to forge a weapon when they first start in the tutorial, unless they skip it.</p>
+            
+            <p style="margin-bottom: 1rem;">Weapons are created by <strong>feeding ores into the forge</strong>, then shaping the result into a random weapon from the chosen weapon type. Every forge has the potential to produce a common tool or a masterpiece.</p>
+            
+            <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #ff9800; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                <h4 style="color: #e65100; margin-bottom: 0.75rem;">⚡ Weapon Stats</h4>
+                <p style="color: #555; margin-bottom: 0.5rem;">Each weapon has its own mix of:</p>
+                <ul style="color: #555; margin-left: 1.5rem; line-height: 1.8;">
+                    <li><strong>Damage</strong> - How much damage the weapon deals</li>
+                    <li><strong>Attack Speed</strong> - How fast you can attack</li>
+                    <li><strong>Quality</strong> - Overall weapon effectiveness</li>
+                    <li><strong>Attack Range</strong> - How far your attacks reach</li>
+                </ul>
+            </div>
+            
+            <p style="margin-bottom: 1rem;"><strong>Enhancements and runes</strong> can dramatically change how a weapon feels and performs.</p>
+            
+            <p><strong>Different weapon types</strong> (Daggers, Straight Swords, Katanas, Great Swords, Great Axes, Colossal Swords, Gauntlets) define your combat style.</p>
+        </div>
+
+        <!-- Upgrades Section -->
+        <div class="content-section">
+            <h2 style="color: #ff5722; margin-bottom: 1.5rem;">⬆️ Enhancements & Runes</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                <!-- Enhancer -->
+                <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 2rem; border-left: 4px solid #9c27b0;">
+                    <h3 style="color: #ce93d8; margin-bottom: 1rem; font-size: 1.3rem;">🔮 ENHANCER</h3>
+                    <p style="color: #b0bec5; margin-bottom: 1rem;">By talking to <strong style="color: #fff;">NPC Enhancer</strong>, you can spend <strong style="color: #ffd54f;">essences</strong> and <strong style="color: #ffd54f;">gold</strong> to upgrade your weapon.</p>
+                    <ul style="color: #b0bec5; margin-left: 1.5rem; line-height: 1.8;">
+                        <li>Upgrades improve all stats of the weapon.</li>
+                        <li>Certain upgrades can increase the number of rune slots.</li>
+                        <li>Each upgrade has a craft chance as you continue enhancing.</li>
+                    </ul>
+                </div>
+
+                <!-- Runemaker -->
+                <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 2rem; border-left: 4px solid #9c27b0;">
+                    <h3 style="color: #ce93d8; margin-bottom: 1rem; font-size: 1.3rem;">✨ RUNEMAKER</h3>
+                    <p style="color: #b0bec5; margin-bottom: 1rem;"><strong style="color: #fff;">NPC Runemaker</strong> allows you to socket <strong style="color: #ce93d8;">runes</strong> into weapons in exchange for <strong style="color: #ffd54f;">runes</strong> and <strong style="color: #ffd54f;">gold</strong>.</p>
+                    <ul style="color: #b0bec5; margin-left: 1.5rem; line-height: 1.8;">
+                        <li>Runes add buffs to help with farming, defending, and fighting.</li>
+                        <li>You can only apply runes if your weapon has available rune slots.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%); border-radius: 12px; padding: 1.5rem; text-align: center; border: 2px solid #9c27b0;">
+                <p style="color: #ce93d8; font-size: 1.1rem; margin: 0;">
+                    <strong>Upgrade Path:</strong> <span style="color: #fff;">FORGE WEAPON</span> → <span style="color: #fff;">ENHANCE STATS</span> → <span style="color: #fff;">SOCKET RUNES</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Weapon Stats Section -->
+        <div class="content-section">
+            <h2 style="color: #ff5722; margin-bottom: 1.5rem;">📊 Weapon Stats Explained</h2>
+            
+            <div style="display: grid; gap: 1.5rem;">
+                <!-- Damage -->
+                <div style="background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #f44336;">
+                    <h3 style="color: #c62828; margin-bottom: 0.75rem; font-size: 1.2rem;">⚔️ DAMAGE</h3>
+                    <p style="color: #555; margin-bottom: 0.75rem;">Damage is the amount of health a weapon can take from an enemy per hit. The higher the damage, the more health is removed from an enemy.</p>
+                    <ul style="color: #555; margin-left: 1.5rem; line-height: 1.6;">
+                        <li>Damage can be increased by <strong>enhancements</strong> and applying <strong>runes</strong>.</li>
+                        <li>Heavy weapons like <strong>Great Swords</strong> and <strong>Colossal Axes</strong> start with higher base damage.</li>
+                    </ul>
+                </div>
+
+                <!-- Attack Speed -->
+                <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #2196f3;">
+                    <h3 style="color: #1565c0; margin-bottom: 0.75rem; font-size: 1.2rem;">⚡ ATTACK SPEED</h3>
+                    <p style="color: #555; margin-bottom: 0.75rem;">Attack Speed is how quickly a weapon can hit. Higher attack speed means you land more strikes in the same amount of time.</p>
+                    <ul style="color: #555; margin-left: 1.5rem; line-height: 1.6;">
+                        <li><strong>Daggers</strong> and <strong>katanas</strong> have high base attack speed.</li>
+                        <li><strong>Great Swords</strong> and other heavy weapons swing slower but hit harder.</li>
+                    </ul>
+                </div>
+
+                <!-- Quality -->
+                <div style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #9c27b0;">
+                    <h3 style="color: #6a1b9a; margin-bottom: 0.75rem; font-size: 1.2rem;">💎 QUALITY</h3>
+                    <p style="color: #555; margin-bottom: 0.75rem;">Quality is the overall rating of how strong a weapon is. Higher Quality tiers result in stronger weapons across all stats.</p>
+                    <p style="color: #555; margin-bottom: 0.75rem;">Quality is determined by how well the player performs the <strong>forge minigames</strong>. Possible qualities include: <strong>Broken, Poor, Worn, Average, Good, Excellent, Perfect, Masterwork</strong> (lowest → highest).</p>
+                </div>
+
+                <!-- Attack Range -->
+                <div style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32; margin-bottom: 0.75rem; font-size: 1.2rem;">📏 ATTACK RANGE</h3>
+                    <p style="color: #555; margin-bottom: 0.75rem;">Attack Range is the distance from which a weapon can hit an enemy. Higher attack range lets you strike from farther away.</p>
+                    <ul style="color: #555; margin-left: 1.5rem; line-height: 1.6;">
+                        <li><strong>Daggers</strong> and <strong>katanas</strong> have shorter attack range.</li>
+                        <li><strong>Great Swords</strong> and <strong>Colossal Swords</strong> reach farther, hitting enemies at a safer distance.</li>
+                    </ul>
+                </div>
+
+                <!-- Weapon Type -->
+                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #ff9800;">
+                    <h3 style="color: #e65100; margin-bottom: 0.75rem; font-size: 1.2rem;">🗡️ WEAPON TYPE</h3>
+                    <p style="color: #555; margin-bottom: 0.75rem;">Weapon Type is the family a weapon belongs to. Each type has its own base damage, speed, and range profile.</p>
+                    <p style="color: #555;">Types include <strong>Daggers, Straight Swords, Katanas, Great Swords, Great Axes, Colossal Swords</strong>, and <strong>Gauntlets</strong>, each supporting different playstyles.</p>
+                </div>
+
+                <!-- Chance -->
+                <div style="background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #e91e63;">
+                    <h3 style="color: #c2185b; margin-bottom: 0.75rem; font-size: 1.2rem;">🎲 CHANCE</h3>
+                    <p style="color: #555; margin-bottom: 0.75rem;">Chance is the rarity of a specific weapon within its weapon type. It describes how likely you are to forge that exact weapon.</p>
+                    <p style="color: #555;"><strong>Example:</strong> the <strong>Falchion Knife</strong> is a <strong>1/2 chance</strong> in the Dagger weapon type. That means you have a one-in-two chance to forge a Falchion Knife when forging Daggers.</p>
+                </div>
+
+                <!-- Price -->
+                <div style="background: linear-gradient(135deg, #fff9c4 0%, #fff59d 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #fbc02d;">
+                    <h3 style="color: #f57f17; margin-bottom: 0.75rem; font-size: 1.2rem;">💰 PRICE</h3>
+                    <p style="color: #555; margin-bottom: 0.75rem;">Price is the amount of <strong>gold</strong> you receive when selling a weapon. Each weapon type has its own base price.</p>
+                    <p style="color: #555;">High-quality and higher-tier weapons can be worth significantly more gold, especially when enhanced.</p>
+                </div>
+
+                <!-- Durability (Scrapped) -->
+                <div style="background: linear-gradient(135deg, #e0e0e0 0%, #bdbdbd 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #757575; opacity: 0.7;">
+                    <h3 style="color: #424242; margin-bottom: 0.75rem; font-size: 1.2rem;">🔧 DURABILITY (SCRAPPED)</h3>
+                    <p style="color: #555; margin-bottom: 0.75rem;">Weapons used to have a stat called <strong>Durability (DRB)</strong>, which decreased as the weapon was used and eventually broke at 0. This idea has been removed by the developers and is no longer part of the game.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Specific Weapons Database -->
+        <div class="content-section">
+            <h2 style="color: #ff5722; margin-bottom: 1.5rem;">🗡️ Weapon Database</h2>
+            <p style="margin-bottom: 2rem;">Below are specific weapons you can forge in The Forge, with their base stats and characteristics.</p>
+            
+            <!-- Daggers -->
+            <h3 style="color: #ff5722; margin-top: 2rem; margin-bottom: 1rem;">🗡️ Daggers</h3>
+            <div style="overflow-x: auto;">
+                <table class="official-table weapon-table">
+                    <thead>
+                        <tr>
+                            <th>Weapon</th>
+                            <th>Base Damage</th>
+                            <th>Attack Speed</th>
+                            <th>Attack Range</th>
+                            <th>Base Price</th>
+                            <th>Chance</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td >Dagger</td>
+                            <td >4.3 DMG</td>
+                            <td >0.35s</td>
+                            <td >6 Studs</td>
+                            <td >68$</td>
+                            <td >1/1</td>
+                            <td >A lightweight and deadly dagger made for true assassins.</td>
+                        </tr>
+                        <tr >
+                            <td >Falchion Knife</td>
+                            <td >4.3 DMG</td>
+                            <td >0.35s</td>
+                            <td >6 Studs</td>
+                            <td >68$</td>
+                            <td >1/2</td>
+                            <td >A knife that stands out for its characteristic curvature.</td>
+                        </tr>
+                        <tr >
+                            <td >Gladius Daggers</td>
+                            <td >4.3 DMG</td>
+                            <td >0.35s</td>
+                            <td >6 Studs</td>
+                            <td >68$</td>
+                            <td >1/4</td>
+                            <td >A lightweight and deadly dagger with the design of the famous Roman sword.</td>
+                        </tr>
+                        <tr >
+                            <td >Hook</td>
+                            <td >4.73 DMG</td>
+                            <td >0.39s</td>
+                            <td >6 Studs</td>
+                            <td >68$</td>
+                            <td >1/16</td>
+                            <td >No description yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Straight Swords -->
+            <h3 style="color: #ff5722; margin-top: 2rem; margin-bottom: 1rem;">⚔️ Straight Swords</h3>
+            <div style="overflow-x: auto;">
+                <table class="official-table weapon-table">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); color: #fff;">
+                            <th style="padding: 1rem; text-align: left;">Weapon</th>
+                            <th >Base Damage</th>
+                            <th >Attack Speed</th>
+                            <th >Attack Range</th>
+                            <th >Base Price</th>
+                            <th >Chance</th>
+                            <th style="padding: 1rem; text-align: left;">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td >Falchion Sword</td>
+                            <td >7.6 DMG</td>
+                            <td >0.59s</td>
+                            <td >8 Studs</td>
+                            <td >120$</td>
+                            <td >1/1</td>
+                            <td >A curved, slightly heavier sword for stronger attacks.</td>
+                        </tr>
+                        <tr >
+                            <td >Gladius Sword</td>
+                            <td >7.6 DMG</td>
+                            <td >0.5s</td>
+                            <td >8 Studs</td>
+                            <td >84$</td>
+                            <td >1/2</td>
+                            <td >A powerful sword type in The Forge with high damage potential.</td>
+                        </tr>
+                        <tr >
+                            <td >Cutlass</td>
+                            <td >9.375 DMG</td>
+                            <td >0.66s</td>
+                            <td >8 Studs</td>
+                            <td >120$</td>
+                            <td >1/2</td>
+                            <td >No description yet in game.</td>
+                        </tr>
+                        <tr >
+                            <td >Rapier</td>
+                            <td >7.6 DMG</td>
+                            <td >0.49s</td>
+                            <td >8 Studs</td>
+                            <td >120$</td>
+                            <td >1/4</td>
+                            <td >No description yet in game.</td>
+                        </tr>
+                        <tr >
+                            <td >Chaos</td>
+                            <td >9.39875 DMG</td>
+                            <td >0.59s</td>
+                            <td >8 Studs</td>
+                            <td >120$</td>
+                            <td >1/16</td>
+                            <td >No description yet.</td>
+                        </tr>
+                        <tr >
+                            <td >Crusader Sword</td>
+                            <td >12 DMG</td>
+                            <td >1s</td>
+                            <td >9 Studs</td>
+                            <td >486$</td>
+                            <td >1/1</td>
+                            <td >No description yet.</td>
+                        </tr>
+                        <tr >
+                            <td >Long Sword</td>
+                            <td >12 DMG</td>
+                            <td >1.11s</td>
+                            <td >9 Studs</td>
+                            <td >485$</td>
+                            <td >1/2</td>
+                            <td >No description yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Katanas -->
+            <h3 style="color: #ff5722; margin-top: 2rem; margin-bottom: 1rem;">🗡️ Katanas</h3>
+            <div style="overflow-x: auto;">
+                <table class="official-table weapon-table">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); color: #fff;">
+                            <th style="padding: 1rem; text-align: left;">Weapon</th>
+                            <th >Base Damage</th>
+                            <th >Attack Speed</th>
+                            <th >Attack Range</th>
+                            <th >Base Price</th>
+                            <th >Chance</th>
+                            <th style="padding: 1rem; text-align: left;">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td >Uchigatana</td>
+                            <td >8.5 DMG</td>
+                            <td >0.6s</td>
+                            <td >8 Studs</td>
+                            <td >324$</td>
+                            <td >1/1</td>
+                            <td >No description yet.</td>
+                        </tr>
+                        <tr >
+                            <td >Tachi</td>
+                            <td >8.925 DMG</td>
+                            <td >0.63s</td>
+                            <td >9 Studs</td>
+                            <td >324$</td>
+                            <td >1/4</td>
+                            <td >No description yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Great Swords & Hammers -->
+            <h3 style="color: #ff5722; margin-top: 2rem; margin-bottom: 1rem;">⚔️ Great Swords & Hammers</h3>
+            <div style="overflow-x: auto;">
+                <table class="official-table weapon-table">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); color: #fff;">
+                            <th style="padding: 1rem; text-align: left;">Weapon</th>
+                            <th >Base Damage</th>
+                            <th >Attack Speed</th>
+                            <th >Attack Range</th>
+                            <th >Base Price</th>
+                            <th >Chance</th>
+                            <th style="padding: 1rem; text-align: left;">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td >Scythe</td>
+                            <td >14.25 DMG</td>
+                            <td >0.95s</td>
+                            <td >9 Studs</td>
+                            <td >850$</td>
+                            <td >1/4</td>
+                            <td >No description yet.</td>
+                        </tr>
+                        <tr >
+                            <td >Great Sword</td>
+                            <td >20 DMG</td>
+                            <td >1.12s</td>
+                            <td >10 Studs</td>
+                            <td >1355$</td>
+                            <td >1/1</td>
+                            <td >No description yet.</td>
+                        </tr>
+                        <tr >
+                            <td >Hammer</td>
+                            <td >22 DMG</td>
+                            <td >1.24s</td>
+                            <td >10 Studs</td>
+                            <td >1355$</td>
+                            <td >1/4</td>
+                            <td >No description yet.</td>
+                        </tr>
+                        <tr >
+                            <td >Skull Crusher</td>
+                            <td >24 DMG</td>
+                            <td >1.4s</td>
+                            <td >10 Studs</td>
+                            <td >1355$</td>
+                            <td >1/8</td>
+                            <td >No description yet.</td>
+                        </tr>
+                        <tr >
+                            <td >Dragon Slayer</td>
+                            <td >22 DMG</td>
+                            <td >1.12s</td>
+                            <td >10 Studs</td>
+                            <td >1355$</td>
+                            <td >1/16</td>
+                            <td >No description yet.</td>
+                        </tr>
+                        <tr >
+                            <td >Comically Large Spoon</td>
+                            <td >18 DMG</td>
+                            <td >1.12s</td>
+                            <td >10 Studs</td>
+                            <td >1355$</td>
+                            <td >1/16</td>
+                            <td >No description yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Gauntlets & Axes -->
+            <h3 style="color: #ff5722; margin-top: 2rem; margin-bottom: 1rem;">👊 Gauntlets & Great Axes</h3>
+            <div style="overflow-x: auto;">
+                <table class="official-table weapon-table">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); color: #fff;">
+                            <th style="padding: 1rem; text-align: left;">Weapon</th>
+                            <th >Base Damage</th>
+                            <th >Attack Speed</th>
+                            <th >Attack Range</th>
+                            <th >Base Price</th>
+                            <th >Chance</th>
+                            <th style="padding: 1rem; text-align: left;">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td >Ironhand</td>
+                            <td >7.6 DMG</td>
+                            <td >0.51s</td>
+                            <td >6 Studs</td>
+                            <td >205$</td>
+                            <td >1/1</td>
+                            <td >No description yet.</td>
+                        </tr>
+                        <tr >
+                            <td >Boxing Gloves</td>
+                            <td >8 DMG</td>
+                            <td >0.69s</td>
+                            <td >6 Studs</td>
+                            <td >163$</td>
+                            <td >1/4</td>
+                            <td >No description yet.</td>
+                        </tr>
+                        <tr >
+                            <td >Relevator</td>
+                            <td >9.6 DMG</td>
+                            <td >0.69s</td>
+                            <td >6 Studs</td>
+                            <td >205$</td>
+                            <td >1/4</td>
+                            <td >No description yet.</td>
+                        </tr>
+                        <tr >
+                            <td >Double Battle Axe</td>
+                            <td >15.75 DMG</td>
+                            <td >1.05s</td>
+                            <td >9 Studs</td>
+                            <td >850$</td>
+                            <td >1/1</td>
+                            <td >No description yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left: 4px solid #2196f3; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                <h4 style="color: #1976d2; margin-bottom: 0.75rem;">💡 Note About Weapon Stats</h4>
+                <p style="color: #555; margin: 0;">These are <strong>base stats</strong> for each weapon. Actual stats will vary based on the <strong>ores used</strong>, <strong>quality achieved</strong> during forging, and any <strong>enhancements or runes</strong> applied. Use our <a href="/" style="color: #1976d2; font-weight: 600;">calculator</a> to plan your perfect weapon!</p>
+            </div>
+        </div>
+
+
+        <div class="cta-box">
+            <h3>🔥 Ready to Craft Your Weapon?</h3>
+            <p style="margin-bottom: 1.5rem;">Use our calculator to plan your ore combinations and create the perfect weapon!</p>
+            <a href="/" class="cta-btn">⚒️ Try Calculator</a>
+            <a href="/ore/" class="cta-btn">🪨 Ore Guide</a>
+            <a href="/codes.html" class="cta-btn">🎁 Get Free Ores</a>
+        </div>
+
+        <div class="content-section">
+            <h2 style="color: #ff5722; margin-bottom: 1rem;">💡 Weapon Selection Tips</h2>
+            <ul style="margin-left: 2rem; line-height: 2;">
+                <li><strong>Beginners:</strong> Start with Daggers to learn combat mechanics</li>
+                <li><strong>Progression:</strong> Move to Great Swords or Straight Swords as you gather better ores</li>
+                <li><strong>Specialized Builds:</strong> Katanas for speed, Great Hammers for power, Gauntlets for close combat</li>
+                <li><strong>End-Game:</strong> Work towards Colossal Swords for ultimate power</li>
+                <li><strong>Ore Planning:</strong> Use our <a href="/" style="color: #ff5722; font-weight: bold;">calculator</a> to plan your ore combinations</li>
+                <li><strong>Free Resources:</strong> Check our <a href="/codes.html" style="color: #ff5722; font-weight: bold;">codes page</a> for free ores</li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <!-- Advertisement section removed for security compliance -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Forge Calculator. Not affiliated with Roblox or The Forge developers.</p>
+            <p><a href="/">Home</a> | <a href="/wiki/">Wiki</a> | <a href="/weapons.html">Weapons</a> | <a href="/codes.html">Codes</a> | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms-of-service.html">Terms</a></p>
+            
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+            </p>
+        </div>
+            
+            <!-- 友情链接 -->
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+                <strong style="color: #ff9800; margin-right: 1rem;">友情链接:</strong>
+                <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
+            </p>
+    </footer>    <!-- Advertisement scripts removed for security compliance -->
+
+</body>
+</html>

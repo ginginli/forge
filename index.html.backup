@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119" crossorigin="anonymous"></script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Favicon for better search engine compatibility -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    <meta name="description" content="Free Forge Calculator for The Forge Roblox game. Calculate crafting resources, materials, and costs instantly. Optimize your forging strategy with our tool.">
+    <meta name="keywords" content="forge calculator, forge calculator roblox, the forge calculator, roblox forge, forge roblox calculator, roblox crafting calculator, the forge game, роблокс кузница, калькулятор кузницы, roblox forge calculator русский">
+    <link rel="canonical" href="https://forge-calculator.com/">
+    
+    <!-- Yandex Verification -->
+    <meta name="yandex-verification" content="8c7faf20a3b2d8e3" />
+    
+    <!-- Language alternatives for international users -->
+    <link rel="alternate" hreflang="en" href="https://forge-calculator.com/">
+    <link rel="alternate" hreflang="ru" href="https://forge-calculator.com/ru/">
+    <link rel="alternate" hreflang="x-default" href="https://forge-calculator.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/">
+    <meta property="og:title" content="Roblox The Forge Calculator">
+    <meta property="og:description" content="Master your weapon and armor crafting with The Forge Calculator. Optimize ore combinations and trait setups with real-time calculations for The Forge on Roblox. Калькулятор для игры The Forge в Roblox.">
+    <meta property="og:site_name" content="Roblox The Forge Calculator">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://forge-calculator.com/">
+    <meta name="twitter:title" content="Roblox The Forge Calculator">
+    <meta name="twitter:description" content="Master your weapon and armor crafting with The Forge Calculator. Optimize ore combinations and trait setups with real-time calculations for The Forge on Roblox.">
+    
+    <title>Roblox The Forge Calculator</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YRP03D44XS');
+    </script>
+    
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="EpsJtUp2VOHq8C8Dwkg1zQ" async></script>
+    
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>⚒️ Forge Calculator</h1>
+                        <nav>
+                <a href="/recipes/">Recipes</a>
+                <a href="/codes.html">Codes</a>
+                <a href="/">Calculator</a>
+                <a href="/ore/">Ore</a>
+                <a href="/wiki/">Wiki</a>
+                <a href="/weapons.html">Weapons</a>
+                <a href="/armor.html">Armor</a>
+                <a href="/private-server.html">Private Servers</a>
+                <a href="/blog/">Blog</a>
+                <a href="/feedback.html">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>The Forge Calculator</h2>
+            <p>Master your weapon and armor crafting with The Forge Calculator - a comprehensive tool that helps you optimize ore combinations and trait setups in The Forge Roblox game. Whether you're new to the forging system or an expert player perfecting your builds, our forge calculator provides real-time calculations for all your crafting needs.</p>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="calculator" style="max-width: none; padding: 3rem 20px;">
+        <!-- Advertisement -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <script async="async" data-cfasync="false" src="https://pl28199006.effectivegatecpm.com/79ca9dd9143ba2de7e3df6c789a12d4c/invoke.js"></script>
+            <div id="container-79ca9dd9143ba2de7e3df6c789a12d4c"></div>
+        </div>
+
+        
+        <div class="gacha-simulator-wrapper" style="width: 100%; margin: 20px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);">
+            <iframe 
+                src="https://blox-informer-gachas.github.io/blox-informer-gachas/gachas/the-forge-crafting-calculator.html" 
+                style="width: 100%; height: 1400px; border: none; display: block;"
+                title="The Forge Crafting Calculator"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Quick Tips Section -->
+    <section style="background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%); padding: 4rem 0;">
+        <div class="container">
+            <h2 style="color: #ff9800; font-size: 2.5rem; margin-bottom: 2.5rem; text-align: center; font-weight: 800; text-shadow: 0 2px 15px rgba(255, 152, 0, 0.4);">💡 Quick Tips for Beginners</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                <!-- Tip 1: Luck Stat & Race Rerolls -->
+                <div style="background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%); border-radius: 16px; padding: 2.5rem; border: 2px solid #2196f3; box-shadow: 0 8px 30px rgba(33, 150, 243, 0.2); transition: transform 0.3s ease;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; flex-shrink: 0; box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);">❓</div>
+                        <h3 style="color: #64b5f6; font-size: 1.4rem; font-weight: 700; margin: 0; line-height: 1.3;">Luck Stat & Race Rerolls</h3>
+                    </div>
+                    <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.8; font-size: 1.05rem; margin: 0;">
+                        The <strong style="color: #ffeb3b;">Luck</strong> stat does <strong style="color: #f44336;">NOT</strong> affect your race reroll chances. It only impacts mining drops and loot.
+                    </p>
+                </div>
+
+                <!-- Tip 2: Save Your Runes -->
+                <div style="background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%); border-radius: 16px; padding: 2.5rem; border: 2px solid #ff9800; box-shadow: 0 8px 30px rgba(255, 152, 0, 0.2); transition: transform 0.3s ease;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; flex-shrink: 0; box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);">❓</div>
+                        <h3 style="color: #ffb74d; font-size: 1.4rem; font-weight: 700; margin: 0; line-height: 1.3;">Save Your Runes</h3>
+                    </div>
+                    <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.8; font-size: 1.05rem; margin: 0;">
+                        Don't apply runes until you get the <strong style="color: #9c27b0;">Arcane Pickaxe</strong>. Lower-tier pickaxes will be replaced quickly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>The Forge Calculator Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>⚔️ Weapon & Armor Classes</h3>
+                    <p>The Forge Calculator shows which weapon or armor class you'll craft in Roblox Forge based on your ore combinations, helping you plan your builds effectively.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Optimal Ore Amounts</h3>
+                    <p>Our Roblox Forge calculator calculates the optimal number of ores needed to increase chances of crafting specific weapon or armor sets with desired traits.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Real-Time Results</h3>
+                    <p>The Forge Calculator processes your inputs and presents results of potential crafts in real time, eliminating manual calculations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎯 Modifier Multipliers</h3>
+                    <p>See final modifier multipliers and trait strength percentages with our Roblox Forge calculator to optimize your forging strategy.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✨ Trait Activation</h3>
+                    <p>The Roblox Forge Calculator shows whether ore traits will be active and how strong the applied traits will be for your craft.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔧 Complete Coverage</h3>
+                    <p>Our forge calculator supports all ore combinations and trait setups for comprehensive forging assistance in The Forge Roblox game.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Is Section -->
+    <section id="what-is" class="content-section">
+        <div class="container">
+            <h2>What is The Forge Calculator?</h2>
+            <p>The Forge Calculator is an all-in-one tool designed specifically for players forging weapons and armor in The Forge on Roblox. Our comprehensive forge calculator helps you determine optimal ore combinations and trait setups without manual calculations. Whether you're a beginner learning the forging system or an experienced player seeking optimal builds, The Forge Calculator takes the guesswork out of crafting.</p>
+            <p>Skip the tedious math of figuring out which ores give you the strongest modifiers or how many you need for maximum trait percentages. Our Roblox Forge calculator instantly processes your ore selections and displays real-time results. The Roblox Forge Calculator reveals your weapon or armor class, optimal ore quantities, final modifier multipliers, and trait activation status.</p>
+            <p>When adding ores to The Roblox Forge Calculator tool, you'll see how strong the applied traits will be and the optimal number of ores needed to increase chances of crafting a specific weapon or armor set. Our Roblox Forge calculator interface is intuitive and user-friendly, making it accessible for all players looking to optimize their forging strategy.</p>
+        </div>
+    </section>
+
+    <!-- How To Section -->
+    <section id="how-to" class="content-section">
+        <div class="container">
+            <h2>How to Use The Forge Calculator</h2>
+            <p>Using The Forge Calculator is straightforward and designed to save you time when forging weapons and armor in Roblox. Follow these simple steps to optimize your crafting strategy:</p>
+            <ul>
+                <li><strong>Add Your Ores:</strong> Input the ores you plan to use in The Forge Calculator. The tool will process your ore combinations instantly.</li>
+                <li><strong>View Weapon/Armor Class:</strong> The Forge Calculator shows which weapon or armor class you'll craft based on your ore selection.</li>
+                <li><strong>Check Optimal Amounts:</strong> Our forge calculator displays the optimal ore amounts needed for your desired craft and trait percentages.</li>
+                <li><strong>Review Modifiers:</strong> See final modifier multipliers calculated by The Forge Calculator to understand your craft's potential strength.</li>
+                <li><strong>Verify Trait Activation:</strong> The forge calculator indicates whether ore traits will be active and how strong the applied traits will be.</li>
+                <li><strong>Optimize Build:</strong> Use The Forge Calculator to experiment with different ore combinations and find the optimal setup for your weapon or armor.</li>
+            </ul>
+            <p>The Forge Calculator presents results in real time as you adjust your ore inputs. You can experiment with different combinations using our forge calculator before committing resources in The Forge, ensuring you achieve the best possible modifiers and trait setups for your builds.</p>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section id="why" class="content-section">
+        <div class="container">
+            <h2>Why Use The Forge Calculator?</h2>
+            <p>The Forge Roblox game has intricate forging mechanics with complex ore combinations and trait systems. The Forge Calculator solves this complexity by providing instant, accurate calculations that help you make informed decisions about your weapon and armor builds without manual calculations.</p>
+            <p>Without The Roblox Forge Calculator, players waste valuable time manually calculating which ore combinations grant the best modifiers or determining the number of ores needed for optimal trait percentages. Our Roblox Forge calculator eliminates these frustrations by processing your inputs and presenting results in real time, showing you exactly which weapon or armor class you'll craft and how strong your traits will be.</p>
+            <p>The Forge Calculator is particularly valuable for players seeking optimal builds and trait setups. Whether you're a beginner enhancing your knowledge of the forging system or an experienced player optimizing modifier multipliers, our forge calculator acts as your personal forging assistant. By using The Forge Calculator, you can experiment with different ore combinations, verify trait activation, and ensure you achieve the best possible results before committing resources in The Forge.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Is The Forge Calculator accurate for The Forge on Roblox?</h3>
+                <p>Yes, The Forge Calculator uses the latest game data to provide accurate ore combination calculations, modifier multipliers, and trait percentages for all weapons and armor in The Forge. We regularly update our forge calculator to reflect any game changes.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What can I see when using The Forge Calculator?</h3>
+                <p>When adding ores to The Forge Calculator, you'll see which weapon or armor class you'll craft, optimal ore amounts, final modifier multipliers, whether ore traits will be active, how strong the applied traits will be, and the optimal number of ores needed to increase crafting chances.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does The Forge Calculator work in real time?</h3>
+                <p>Yes! The Forge Calculator processes your inputs and presents results of potential crafts in real time. Our forge calculator eliminates the need for manual calculations, giving you instant feedback as you adjust ore combinations.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is The Forge Calculator free to use?</h3>
+                <p>Yes, The Forge Calculator is completely free. We created this forge calculator to help The Forge community optimize their forging strategy, whether you're a beginner or experienced player seeking optimal builds.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I use The Forge Calculator on mobile devices?</h3>
+                <p>Yes, The Forge Calculator is fully responsive and works perfectly on smartphones, tablets, and desktop computers. Use our forge calculator anywhere, anytime to plan your weapon and armor crafts in The Forge.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <!-- Advertisement section completely removed for security compliance -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Forge Calculator. Created for The Forge community on Roblox.</p>
+            <p>This forge calculator is a fan-made tool and is not officially affiliated with Roblox or The Forge game developers.</p>
+            <p><a href="/codes.html">Codes</a> | <a href="/blog/">Blog</a> | <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms of Service</a> | <a href="https://ovk.to/id34926" target="_blank">OVK</a> | <a href="https://cal.com/lainey-tpyuqi" target="_blank" rel="noopener noreferrer">Schedule a Call</a></p>
+            
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+            </p>
+            
+            <p>Powered by <a href="https://aistage.net" title="AIStage">AIStage</a></p>
+            <p>
+                <a target="_blank" href="https://goodaitools.com"><img src="https://goodaitools.com/assets/images/badge.png" alt="Good AI Tools" height="54"></a>
+                <a href="https://www.showmebest.ai" target="_blank"><img src="https://www.showmebest.ai/badge/feature-badge-white.webp" alt="Featured on ShowMeBestAI" width="220" height="60"></a>
+                <a href="https://toolpilot.ai" target="_blank" rel="noopener noreferrer"><img src="https://www.toolpilot.ai/cdn/shop/files/f-w_690x151_crop_center.png" alt="Powered by ToolPilot.ai" height="60"></a>
+                <a href="https://startupfa.me/s/forge-calculator.com-587?utm_source=forge-calculator.com" target="_blank"><img src="https://startupfa.me/badges/featured-badge-small.webp" alt="forge calculator - Featured on Startup Fame" width="224" height="36" /></a>
+                <a href="https://submitaitools.org" target="_blank" ><img src="https://submitaitools.org/static_submitaitools/images/submitaitools.png" alt="Submit AI Tools – The ultimate platform to discover, submit, and explore the best AI tools across various categories." style="border-radius: 10px; width: 200px; height: 60px;" /></a>
+                <a href="https://twelve.tools" target="_blank"><img src="https://twelve.tools/badge0-white.svg" alt="Featured on Twelve Tools" width="200" height="54"></a>
+                <a href="https://turbo0.com/item/forge-calculator" target="_blank" rel="noopener noreferrer"><img src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" style="height: 54px; width: auto;" /></a>
+                <a href="https://starterbest.com" target="_blank" rel="noopener noreferrer"><img src="https://starterbest.com/badages-awards.svg" alt="Featured on Starter Best" style="height: 54px; width: auto;"/></a>
+                <a target="_blank" href="https://saasfield.com"><img src="https://saasfield.com/assets/images/badge.png" alt="SaaS Field" height="54"></a>
+                <a target="_blank" href="https://poweruptools.com"><img src="https://poweruptools.com/assets/images/badge.png" alt="Power Up Tools" height="54"></a>
+                <a target="_blank" href="https://launchclash.com"><img src="https://launchclash.com/static/images/badge.png" alt="LaunchClash" height="54"/></a>
+                <a href="https://deeplaunch.io" target="_blank"><img src="https://deeplaunch.io/badge/badge_dark.svg" alt="Featured on DeepLaunch.io" width="200" height="54" /></a>
+            </p>
+        </div>
+            
+            <!-- 友情链接 -->
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+                <strong style="color: #ff9800; margin-right: 1rem;">友情链接:</strong>
+                <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://www.vkmoai.com" target="_blank" rel="noopener noreferrer" title="VKMO AI Tools Directory">VKMO AI</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://fast-wan.com/" target="_blank" rel="noopener noreferrer" title="Fast Wan">Fast Wan</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://aitoolcenter.com/" target="_blank" rel="noopener noreferrer" title="AI Tool Center">AI Tool Center</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://allinai.tools" target="_blank" rel="noopener noreferrer" title="All The Best AI Tools">All in AI Tools</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://whatisaitools.com/" target="_blank" rel="noopener noreferrer" title="What Is Ai Tools">What Is Ai Tools</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://www.seewhatnewai.com" target="_blank" rel="noopener noreferrer" title="See What New AI">See What New AI</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://SeekAIs.com/" target="_blank" rel="noopener noreferrer" title="SeekAIs">SeekAIs</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://www.aigotools.com" target="_blank" rel="noopener noreferrer" title="AigoTools">AigoTools</a>
+                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://aitoolsss.com" target="_blank" rel="noopener noreferrer" title="AIToolsss Directory">AIToolsss Directory</a>
+            </p>
+    </footer>
+
+    <!-- Advertisement scripts removed for security compliance -->
+
+</body>
+</html>

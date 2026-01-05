@@ -9,7 +9,7 @@
     
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" class="yandex-hidden" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -34,286 +34,7 @@
     <meta name="twitter:description" content="From novice to master crafter - Learn how to progress in The Forge Roblox game with our comprehensive guide.">
     
     <title>Mastering The Forge: Your Complete Progression Guide</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.7;
-            color: #333;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        
-        header {
-            background: rgba(26, 26, 26, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 1.25rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            border-bottom: 2px solid #ff5722;
-        }
-        
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-        }
-        
-        header h1 {
-            color: #fff;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-        
-        nav {
-            display: flex;
-            gap: 0.5rem;
-        }
-        
-        nav a {
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            transition: all 0.2s ease;
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-        
-        nav a:hover {
-            color: #ff9800;
-            background: rgba(255, 152, 0, 0.1);
-        }
-        
-        .article-header {
-            background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 3rem 2.5rem;
-            margin: 3rem auto;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(255, 87, 34, 0.3);
-            text-align: center;
-        }
-        
-        .article-header h2 {
-            color: #ff9800;
-            font-size: clamp(2rem, 5vw, 3rem);
-            margin-bottom: 1rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-            line-height: 1.2;
-        }
-        
-        .article-meta {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.95rem;
-            margin-top: 1rem;
-        }
-        
-        .article-content {
-            background: #fff;
-            border-radius: 20px;
-            padding: 3rem 2.5rem;
-            margin-bottom: 3rem;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-        }
-        
-        .article-content h3 {
-            color: #ff5722;
-            font-size: 2rem;
-            margin: 2.5rem 0 1.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-        
-        .article-content h3:first-child {
-            margin-top: 0;
-        }
-        
-        .article-content h4 {
-            color: #ff5722;
-            font-size: 1.5rem;
-            margin: 2rem 0 1rem;
-            font-weight: 600;
-        }
-        
-        .article-content p {
-            font-size: 1.125rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-            color: #444;
-        }
-        
-        .article-content ul, .article-content ol {
-            margin: 1.5rem 0 1.5rem 2rem;
-        }
-        
-        .article-content li {
-            font-size: 1.125rem;
-            margin-bottom: 1rem;
-            line-height: 1.7;
-            color: #444;
-        }
-        
-        .article-content li::marker {
-            color: #ff5722;
-        }
-        
-        .article-content strong {
-            color: #ff5722;
-            font-weight: 600;
-        }
-        
-        .highlight-box {
-            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-            border-left: 4px solid #ff9800;
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-        }
-        
-        .highlight-box h4 {
-            color: #ff5722;
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-        
-        .tip-box {
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-            border-left: 4px solid #2196f3;
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-        }
-        
-        .tip-box h4 {
-            color: #1976d2;
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-        
-        .warning-box {
-            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
-            border-left: 4px solid #f44336;
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-        }
-        
-        .warning-box h4 {
-            color: #d32f2f;
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-        
-        .progression-stage {
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2rem 0;
-            border: 2px solid #ff5722;
-            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.1);
-        }
-        
-        .progression-stage h4 {
-            color: #ff5722;
-            margin-top: 0;
-            margin-bottom: 1rem;
-            font-size: 1.75rem;
-        }
-        
-        .cta-box {
-            background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
-            border-radius: 20px;
-            padding: 2.5rem;
-            text-align: center;
-            color: #fff;
-            margin: 3rem 0;
-            box-shadow: 0 10px 40px rgba(255, 87, 34, 0.3);
-        }
-        
-        .cta-box h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #fff;
-        }
-        
-        .cta-btn {
-            display: inline-block;
-            background: #fff;
-            color: #ff5722;
-            padding: 1rem 2rem;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            margin: 0.5rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
-        
-        footer {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.98) 0%, rgba(45, 24, 16, 0.98) 100%);
-            backdrop-filter: blur(10px);
-            color: rgba(255, 255, 255, 0.9);
-            padding: 3rem 0 2rem;
-            text-align: center;
-            border-top: 1px solid rgba(255, 87, 34, 0.3);
-        }
-        
-        footer p {
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.7);
-        }
-        
-        footer a {
-            color: #ff9800;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-        }
-        
-        footer a:hover {
-            color: #ffb74d;
-            background: rgba(255, 152, 0, 0.1);
-        }
-        
-        @media (max-width: 768px) {
-            header .container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            nav {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .article-header, .article-content {
-                padding: 2rem 1.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../forge-theme.css">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
@@ -340,6 +61,7 @@
                 <a href="/wiki/">Wiki</a>
                 <a href="/weapons.html">Weapons</a>
                 <a href="/armor.html">Armor</a>
+                <a href="/pickaxe.html">Pickaxe</a>
                 <a href="/private-server.html">Private Servers</a>
                 <a href="/blog/">Blog</a>
                 <a href="/feedback.html">Feedback</a>
@@ -350,7 +72,7 @@
     <div class="container">
         <div class="article-header">
             <h2>🔥 Mastering The Forge: Your Complete Progression Guide</h2>
-            <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.25rem; margin-top: 1rem;">From Novice Crafter to Legendary Blacksmith</p>
+            <p>From Novice Crafter to Legendary Blacksmith</p>
             <div class="article-meta">
                 Published: December 6, 2025 | Reading Time: 8 minutes
             </div>
@@ -358,16 +80,16 @@
 
         <div class="article-content">
             <!-- AI Content Disclaimer -->
-            <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border: 2px solid #ff9800; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem;">
-                <h4 style="color: #e65100; margin-bottom: 0.75rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <div>
+                <h4>
                     ⚠️ Content Notice
                 </h4>
-                <p style="color: #555; margin: 0; line-height: 1.6; font-size: 1rem;">
-                    <strong style="color: #d84315;">⚠️ This article contains <span style="background: #ffeb3b; padding: 0.2rem 0.4rem; border-radius: 4px; color: #000;">AI-generated general game advice, unverified</span></strong>
+                <p>
+                    <strong class="text-highlight">⚠️ This article contains <span>AI-generated general game advice, unverified</span></strong>
                 </p>
             </div>
 
-            <p style="font-size: 1.25rem; color: #666; font-style: italic;">
+            <p>
                 Welcome to The Forge, where every hammer strike shapes your destiny. Whether you're just starting your crafting journey or looking to optimize your path to legendary status, this comprehensive guide will show you exactly how to progress from a novice crafter to a master blacksmith.
             </p>
 
@@ -386,7 +108,7 @@
 
             <div class="tip-box">
                 <h4>💡 Pro Tip: Multiple Ways to Get Ores</h4>
-                <p>Don't just mine! Check our <a href="/codes.html" style="color: #1976d2; font-weight: 600;">Codes page</a> daily for free ore rewards, complete quests, participate in events, and trade with other players to build your ore collection faster.</p>
+                <p>Don't just mine! Check our <a href="/codes.html">Codes page</a> daily for free ore rewards, complete quests, participate in events, and trade with other players to build your ore collection faster.</p>
             </div>
 
             <h4>2. Strategic Crafting</h4>
@@ -400,7 +122,7 @@
 
             <div class="warning-box">
                 <h4>⚠️ Critical: Crafting is Permanent!</h4>
-                <p>Once you confirm a craft, your ores are consumed forever. There's no undo button. This is why using our <a href="/" style="color: #d32f2f; font-weight: 600;">Forge Calculator</a> before crafting is essential - preview your results before committing valuable resources!</p>
+                <p>Once you confirm a craft, your ores are consumed forever. There's no undo button. This is why using our <a href="/">Forge Calculator</a> before crafting is essential - preview your results before committing valuable resources!</p>
             </div>
 
             <h4>3. Build Optimization</h4>
@@ -570,7 +292,7 @@
             <h4>Day 1: Foundation</h4>
             <ol>
                 <li>Complete the tutorial</li>
-                <li>Redeem all codes from our <a href="/codes.html" style="color: #ff5722; font-weight: 600;">Codes page</a></li>
+                <li>Redeem all codes from our <a href="/codes.html">Codes page</a></li>
                 <li>Mine 100 Iron and 50 Coal</li>
                 <li>Use the calculator to plan your first sword</li>
                 <li>Craft Basic Iron Sword</li>
@@ -579,7 +301,7 @@
             <h4>Days 2-3: Learning</h4>
             <ol>
                 <li>Experiment with different ore combinations (using common ores)</li>
-                <li>Read our <a href="/ore/" style="color: #ff5722; font-weight: 600;">Ore Guide</a> to understand traits</li>
+                <li>Read our <a href="/ore/">Ore Guide</a> to understand traits</li>
                 <li>Complete daily quests for ore rewards</li>
                 <li>Join a guild</li>
                 <li>Start saving Gold ores</li>
@@ -587,7 +309,7 @@
 
             <h4>Days 4-7: Specialization</h4>
             <ol>
-                <li>Choose your main build from our <a href="/recipes/" style="color: #ff5722; font-weight: 600;">Recipes page</a></li>
+                <li>Choose your main build from our <a href="/recipes/">Recipes page</a></li>
                 <li>Farm specific zones for your build's ores</li>
                 <li>Craft intermediate equipment</li>
                 <li>Test your build in combat</li>
@@ -638,20 +360,20 @@
                 <h4>💡 Your Next Steps</h4>
                 <p>Don't start crafting blindly. Take 5 minutes to:</p>
                 <ol>
-                    <li>Browse our <a href="/recipes/" style="color: #1976d2; font-weight: 600;">Recipes page</a> for proven builds</li>
-                    <li>Use the <a href="/" style="color: #1976d2; font-weight: 600;">Calculator</a> to preview your craft</li>
-                    <li>Check <a href="/codes.html" style="color: #1976d2; font-weight: 600;">Codes</a> for free ores</li>
+                    <li>Browse our <a href="/recipes/">Recipes page</a> for proven builds</li>
+                    <li>Use the <a href="/">Calculator</a> to preview your craft</li>
+                    <li>Check <a href="/codes.html">Codes</a> for free ores</li>
                 </ol>
             </div>
 
-            <p style="font-size: 1.25rem; margin-top: 3rem; color: #666; font-style: italic;">
+            <p>
                 Your journey to legendary status starts now. Will you be the next master blacksmith? The forge awaits. 🔥
             </p>
         </div>
 
         <div class="cta-box">
             <h3>🔥 Ready to Start Your Journey?</h3>
-            <p style="margin-bottom: 2rem; font-size: 1.125rem;">Use our free tools to optimize your crafting and avoid costly mistakes!</p>
+            <p>Use our free tools to optimize your crafting and avoid costly mistakes!</p>
             <a href="/" class="cta-btn">Try Calculator</a>
             <a href="/recipes/" class="cta-btn">Browse Recipes</a>
             <a href="/codes.html" class="cta-btn">Get Free Ores</a>

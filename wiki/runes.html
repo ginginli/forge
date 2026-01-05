@@ -9,7 +9,7 @@
     
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" class="yandex-hidden" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -34,329 +34,7 @@
     <meta name="twitter:description" content="Master the rune system in The Forge. Learn about all rune types, effects, and how to enhance your weapons and armor.">
     
     <title>The Forge Runes Guide - Complete Rune System & Effects</title>
-    <style>
-        :root {
-            --forge-fire: #e64a19;
-            --forge-flame: #ff6f00;
-            --forge-ember: #bf360c;
-            --forge-glow: #ff8a50;
-            --metal-steel: #37474f;
-            --bg-darker: #1a1a1a;
-            --bg-forge: #263238;
-            --rune-purple: #673ab7;
-            --rune-gold: #ff9800;
-            --rune-silver: #9e9e9e;
-            --rune-bronze: #8d6e63;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-forge) 100%);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        header {
-            background: linear-gradient(90deg, #1a1a1a 0%, #2d1810 100%);
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(255, 87, 34, 0.3);
-            border-bottom: 3px solid var(--forge-fire);
-            margin-bottom: 2rem;
-        }
-        
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        header h1 {
-            color: #fff;
-            font-size: 1.8rem;
-        }
-        
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 1.5rem;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: var(--forge-glow);
-        }
-        
-        .breadcrumb {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-        }
-        
-        .breadcrumb a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 0.5rem;
-        }
-        
-        .breadcrumb a:hover {
-            color: var(--forge-glow);
-        }
-        
-        .breadcrumb span {
-            color: var(--rune-gold);
-            margin: 0 0.5rem;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, var(--rune-purple) 0%, #512da8 100%);
-            border-radius: 15px;
-            padding: 3rem 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 40px rgba(103, 58, 183, 0.3);
-            border: 2px solid var(--rune-gold);
-            text-align: center;
-            color: #fff;
-        }
-        
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        .content-section {
-            background: #fff;
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .content-section h2 {
-            color: var(--rune-purple);
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--rune-gold);
-            padding-bottom: 0.5rem;
-        }
-        
-        .rune-tier {
-            background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-left: 4px solid var(--rune-purple);
-        }
-        
-        .rune-tier h3 {
-            color: var(--rune-purple);
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        
-        .rune-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        
-        .rune-card {
-            background: #fff;
-            border-radius: 10px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-left: 4px solid var(--rune-purple);
-            transition: transform 0.3s;
-        }
-        
-        .rune-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .rune-card h4 {
-            color: var(--rune-purple);
-            font-size: 1.2rem;
-            margin-bottom: 0.8rem;
-        }
-        
-        .rune-effect {
-            background: #f9f9f9;
-            padding: 0.8rem;
-            border-radius: 5px;
-            margin: 0.5rem 0;
-            font-size: 0.9rem;
-        }
-        
-        .rune-rarity {
-            display: inline-block;
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-        
-        .rarity-mythic {
-            background: #ff9800;
-            color: #fff;
-        }
-        
-        .rarity-grand {
-            background: #ff5722;
-            color: #fff;
-        }
-        
-        .rarity-forged {
-            background: #795548;
-            color: #fff;
-        }
-        
-        .rarity-etched {
-            background: #e91e63;
-            color: #fff;
-        }
-        
-        .rarity-common {
-            background: #9e9e9e;
-            color: #fff;
-        }
-        
-        .secondary-traits {
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-left: 4px solid #2196f3;
-        }
-        
-        .secondary-traits h3 {
-            color: #0d47a1;
-            margin-bottom: 1rem;
-        }
-        
-        .trait-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .trait-table th {
-            background: linear-gradient(135deg, var(--rune-purple) 0%, #512da8 100%);
-            color: #fff;
-            padding: 1rem;
-            text-align: left;
-            font-weight: bold;
-        }
-        
-        .trait-table td {
-            padding: 1rem;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        
-        .trait-table tr:hover {
-            background: #f5f5f5;
-        }
-        
-        .weapon-traits {
-            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-        }
-        
-        .armor-traits {
-            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
-        }
-        
-        .tip-box {
-            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
-            border-left: 4px solid #4caf50;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-        
-        .tip-box h3 {
-            color: #2e7d32;
-            margin-bottom: 0.5rem;
-        }
-        
-        .cta-box {
-            background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            color: #fff;
-            margin: 2rem 0;
-        }
-        
-        .cta-box h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-        
-        .cta-btn {
-            display: inline-block;
-            background: #fff;
-            color: #ff5722;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.3s;
-            margin: 0.5rem;
-        }
-        
-        .cta-btn:hover {
-            transform: scale(1.05);
-        }
-        
-        footer {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-            border-top: 2px solid #ff5722;
-            margin-top: 3rem;
-        }
-        
-        .obtainment {
-            font-size: 0.85rem;
-            color: #666;
-            font-style: italic;
-            margin-top: 0.5rem;
-        }
-        
-        footer a {
-            color: #ff9800;
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="../forge-theme.css">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
@@ -383,6 +61,7 @@
                 <a href="/wiki/">Wiki</a>
                 <a href="/weapons.html">Weapons</a>
                 <a href="/armor.html">Armor</a>
+                <a href="/pickaxe.html">Pickaxe</a>
                 <a href="/private-server.html">Private Servers</a>
                 <a href="/blog/">Blog</a>
                 <a href="/feedback.html">Feedback</a>
@@ -409,14 +88,14 @@
         <div class="content-section">
             <h2>📖 Rune System Overview</h2>
             
-            <div style="background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; color: #fff; border: 2px solid var(--rune-gold);">
-                <h3 style="color: var(--rune-gold); margin-bottom: 1rem; font-size: 1.3rem;">🎯 What Are Runes?</h3>
-                <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.7; margin-bottom: 1.5rem;">
+            <div>
+                <h3>🎯 What Are Runes?</h3>
+                <p>
                     Runes are obtainable tokens which let you place special traits on weapons and armor (for example, mining speed buffs). Different runes offer different effects and costs; some are stronger or more expensive to apply than others.
                 </p>
-                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
-                    <h3 style="color: #fff; margin-bottom: 1rem;">⚠️ Important Rules</h3>
-                    <ul style="color: rgba(255, 255, 255, 0.9); margin: 0;">
+                <div>
+                    <h3>⚠️ Important Rules</h3>
+                    <ul>
                         <li><strong>Rune Slots Required:</strong> Runes can only be placed on gear that has available rune slots</li>
                         <li><strong>Permanent Enhancement:</strong> Once socketed, runes permanently enhance your equipment</li>
                         <li><strong>Secondary Traits:</strong> Some runes may have secondary traits that grant extra buffs</li>
@@ -430,33 +109,33 @@
         <div class="content-section">
             <h2>🏆 Rune Tier System</h2>
             
-            <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #ff9800;">
-                <h3 style="color: #e65100; margin-bottom: 1rem;">📊 About This Tier List</h3>
-                <p style="color: #555; margin-bottom: 1rem;">This page ranks runes & engravings by how consistently strong they feel in real gameplay, not just on paper stats. It assumes <strong>solo / small party play</strong> with reasonably forged gear and focuses on overall value, not niche memes.</p>
-                <ul style="color: #555; margin: 0;">
+            <div>
+                <h3>📊 About This Tier List</h3>
+                <p>This page ranks runes & engravings by how consistently strong they feel in real gameplay, not just on paper stats. It assumes <strong>solo / small party play</strong> with reasonably forged gear and focuses on overall value, not niche memes.</p>
+                <ul>
                     <li><strong>Top tiers</strong> feel impactful in almost any build or area</li>
                     <li><strong>Middle tiers</strong> are solid but more situational or build-dependent</li>
                     <li><strong>Lower tiers</strong> still have uses, but are usually outclassed by the options above</li>
                 </ul>
             </div>
 
-            <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #2196f3;">
-                <h3 style="color: #0d47a1; margin-bottom: 1rem;">🎭 Tier Categories</h3>
-                <p style="color: #555; margin-bottom: 1rem;">Each row represents a different rarity band. Higher tiers are rarer and more build-defining, while lower tiers are more supportive or starter-oriented.</p>
-                <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
-                    <div style="background: #ff9800; color: #fff; padding: 0.5rem 1rem; border-radius: 20px; font-weight: bold;">MYTHIC ENGRAVING</div>
-                    <div style="background: #ff5722; color: #fff; padding: 0.5rem 1rem; border-radius: 20px; font-weight: bold;">GRAND SIGIL</div>
-                    <div style="background: #795548; color: #fff; padding: 0.5rem 1rem; border-radius: 20px; font-weight: bold;">FORGED GLYPH</div>
-                    <div style="background: #e91e63; color: #fff; padding: 0.5rem 1rem; border-radius: 20px; font-weight: bold;">ETCHED MARK</div>
-                    <div style="background: #9e9e9e; color: #fff; padding: 0.5rem 1rem; border-radius: 20px; font-weight: bold;">COMMON RUNE</div>
+            <div>
+                <h3>🎭 Tier Categories</h3>
+                <p>Each row represents a different rarity band. Higher tiers are rarer and more build-defining, while lower tiers are more supportive or starter-oriented.</p>
+                <div>
+                    <div>MYTHIC ENGRAVING</div>
+                    <div>GRAND SIGIL</div>
+                    <div>FORGED GLYPH</div>
+                    <div>ETCHED MARK</div>
+                    <div>COMMON RUNE</div>
                 </div>
-                <p style="color: #666; margin-top: 1rem; font-size: 0.9rem;">Higher rows generally indicate rarer, more defining picks, while lower rows tend to be more common support pieces or niche options.</p>
+                <p>Higher rows generally indicate rarer, more defining picks, while lower rows tend to be more common support pieces or niche options.</p>
             </div>
         </div>
 
         <!-- Mythic Engraving -->
         <div class="rune-tier">
-            <h3 style="background: linear-gradient(90deg, #ff9800, #ffb74d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">⭐ MYTHIC ENGRAVING</h3>
+            <h3>⭐ MYTHIC ENGRAVING</h3>
             <div class="rune-grid">
                 <div class="rune-card">
                     <span class="rune-rarity rarity-mythic">MYTHIC ENGRAVING</span>
@@ -480,7 +159,7 @@
 
         <!-- Grand Sigil -->
         <div class="rune-tier">
-            <h3 style="background: linear-gradient(90deg, #ff5722, #ff8a65); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">🔥 GRAND SIGIL</h3>
+            <h3>🔥 GRAND SIGIL</h3>
             <div class="rune-grid">
                 <div class="rune-card">
                     <span class="rune-rarity rarity-grand">GRAND SIGIL</span>
@@ -516,7 +195,7 @@
 
         <!-- Forged Glyph -->
         <div class="rune-tier">
-            <h3 style="background: linear-gradient(90deg, #795548, #a1887f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">⚡ FORGED GLYPH</h3>
+            <h3>⚡ FORGED GLYPH</h3>
             <div class="rune-grid">
                 <div class="rune-card">
                     <span class="rune-rarity rarity-forged">FORGED GLYPH</span>
@@ -549,7 +228,7 @@
 
         <!-- Etched Mark -->
         <div class="rune-tier">
-            <h3 style="background: linear-gradient(90deg, #e91e63, #f06292); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">🛡️ ETCHED MARK</h3>
+            <h3>🛡️ ETCHED MARK</h3>
             <div class="rune-grid">
                 <div class="rune-card">
                     <span class="rune-rarity rarity-etched">ETCHED MARK</span>
@@ -573,7 +252,7 @@
 
         <!-- Common Rune -->
         <div class="rune-tier">
-            <h3 style="background: linear-gradient(90deg, #9e9e9e, #bdbdbd); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">⚒️ COMMON RUNE</h3>
+            <h3>⚒️ COMMON RUNE</h3>
             <div class="rune-grid">
                 <div class="rune-card">
                     <span class="rune-rarity rarity-common">COMMON RUNE</span>
@@ -590,136 +269,136 @@
         <div class="content-section">
             <h2>📊 Rune Stats (by ravu)</h2>
             
-            <div style="background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; color: #fff; border: 2px solid var(--rune-gold);">
-                <h3 style="color: var(--rune-gold); margin-bottom: 1.5rem; text-align: center; font-size: 1.5rem;">📈 Complete Rune Statistics</h3>
+            <div>
+                <h3>📈 Complete Rune Statistics</h3>
                 
                 <!-- Main Traits Table -->
-                <div style="margin-bottom: 2rem;">
-                    <h4 style="color: #fff; margin-bottom: 1rem; text-align: center; background: rgba(255,255,255,0.1); padding: 0.5rem; border-radius: 8px;">Main Traits</h4>
-                    <div style="overflow-x: auto;">
-                        <table class="official-table" style="width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.05); border-radius: 8px; overflow: hidden;">
+                <div>
+                    <h4>Main Traits</h4>
+                    <div class="table-overflow">
+                        <table class="official-table">
                             <thead>
-                                <tr style="background: rgba(220, 53, 69, 0.8);">
-                                    <th style="padding: 0.8rem; text-align: left; color: #fff; font-weight: bold;">Rune Traits</th>
-                                    <th style="padding: 0.8rem; text-align: center; color: #fff; font-weight: bold;">Obtainable</th>
-                                    <th style="padding: 0.8rem; text-align: center; color: #fff; font-weight: bold;">Max %</th>
-                                    <th style="padding: 0.8rem; text-align: center; color: #fff; font-weight: bold;">Min %</th>
-                                    <th style="padding: 0.8rem; text-align: center; color: #fff; font-weight: bold;">Effects Max</th>
-                                    <th style="padding: 0.8rem; text-align: center; color: #fff; font-weight: bold;">Effects Min</th>
+                                <tr>
+                                    <th>Rune Traits</th>
+                                    <th>Obtainable</th>
+                                    <th>Max %</th>
+                                    <th>Min %</th>
+                                    <th>Effects Max</th>
+                                    <th>Effects Min</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Luck (miner)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">16%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">5%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
+                                <tr>
+                                    <td>Luck (miner)</td>
+                                    <td>Yes</td>
+                                    <td>16%</td>
+                                    <td>5%</td>
+                                    <td>-</td>
+                                    <td>-</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Yield (miner)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">10%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">3%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
+                                <tr>
+                                    <td>Yield (miner)</td>
+                                    <td>Yes</td>
+                                    <td>10%</td>
+                                    <td>3%</td>
+                                    <td>-</td>
+                                    <td>-</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Mine Speed (miner)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">12%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">4%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
+                                <tr>
+                                    <td>Mine Speed (miner)</td>
+                                    <td>Yes</td>
+                                    <td>12%</td>
+                                    <td>4%</td>
+                                    <td>-</td>
+                                    <td>-</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Mine Power (miner)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">15%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">8%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
+                                <tr>
+                                    <td>Mine Power (miner)</td>
+                                    <td>Yes</td>
+                                    <td>15%</td>
+                                    <td>8%</td>
+                                    <td>-</td>
+                                    <td>-</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Burn (Flame Spark)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">10%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">5%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff; font-size: 0.8rem;">25% chance on-hit</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff; font-size: 0.8rem;">15% chance on-hit</td>
+                                <tr>
+                                    <td>Burn (Flame Spark)</td>
+                                    <td>Yes</td>
+                                    <td>10%</td>
+                                    <td>5%</td>
+                                    <td>25% chance on-hit</td>
+                                    <td>15% chance on-hit</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Explosion (Blast Chip)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">40%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">20%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff; font-size: 0.8rem;">20% chance on-hit</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff; font-size: 0.8rem;">8% chance on-hit</td>
+                                <tr>
+                                    <td>Explosion (Blast Chip)</td>
+                                    <td>Yes</td>
+                                    <td>40%</td>
+                                    <td>20%</td>
+                                    <td>20% chance on-hit</td>
+                                    <td>8% chance on-hit</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Ice (Frost Speck)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #f44336;">No</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
+                                <tr>
+                                    <td>Ice (Frost Speck)</td>
+                                    <td>No</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Poison (Venom Crumb)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">7%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">4%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff; font-size: 0.8rem;">35% chance on hit</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff; font-size: 0.8rem;">25% chance on hit</td>
+                                <tr>
+                                    <td>Poison (Venom Crumb)</td>
+                                    <td>Yes</td>
+                                    <td>7%</td>
+                                    <td>4%</td>
+                                    <td>35% chance on hit</td>
+                                    <td>25% chance on hit</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Snow (Chill Dust)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #f44336;">No</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
+                                <tr>
+                                    <td>Snow (Chill Dust)</td>
+                                    <td>No</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">LifeSteal (Drain Edge)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">13%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">5%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
+                                <tr>
+                                    <td>LifeSteal (Drain Edge)</td>
+                                    <td>Yes</td>
+                                    <td>13%</td>
+                                    <td>5%</td>
+                                    <td>-</td>
+                                    <td>-</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Thorns (Briar Notch)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">10%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">2%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
+                                <tr>
+                                    <td>Thorns (Briar Notch)</td>
+                                    <td>Yes</td>
+                                    <td>10%</td>
+                                    <td>2%</td>
+                                    <td>-</td>
+                                    <td>-</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Berserk (Rage Mark)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">26%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">12%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
+                                <tr>
+                                    <td>Berserk (Rage Mark)</td>
+                                    <td>Yes</td>
+                                    <td>26%</td>
+                                    <td>12%</td>
+                                    <td>-</td>
+                                    <td>-</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Shield (Ward Patch)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">14%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">6%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff; font-size: 0.8rem;">15% chance on-hit</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff; font-size: 0.8rem;">5% chance on-hit</td>
+                                <tr>
+                                    <td>Shield (Ward Patch)</td>
+                                    <td>Yes</td>
+                                    <td>14%</td>
+                                    <td>6%</td>
+                                    <td>15% chance on-hit</td>
+                                    <td>5% chance on-hit</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Toxic Veins (Rot Stitch)</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #f44336;">No</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">-</td>
+                                <tr>
+                                    <td>Toxic Veins (Rot Stitch)</td>
+                                    <td>No</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -728,91 +407,91 @@
 
                 <!-- Secondary Traits Table -->
                 <div>
-                    <h4 style="color: #fff; margin-bottom: 1rem; text-align: center; background: rgba(255,255,255,0.1); padding: 0.5rem; border-radius: 8px;">Secondary Traits</h4>
-                    <div style="overflow-x: auto;">
-                        <table class="official-table" style="width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.05); border-radius: 8px; overflow: hidden;">
+                    <h4>Secondary Traits</h4>
+                    <div class="table-overflow">
+                        <table class="official-table">
                             <thead>
-                                <tr style="background: rgba(144, 238, 144, 0.6);">
-                                    <th style="padding: 0.8rem; text-align: left; color: #000; font-weight: bold;">Secondary Trait</th>
-                                    <th style="padding: 0.8rem; text-align: center; color: #000; font-weight: bold;">Obtainable</th>
-                                    <th style="padding: 0.8rem; text-align: center; color: #000; font-weight: bold;">Max %</th>
-                                    <th style="padding: 0.8rem; text-align: center; color: #000; font-weight: bold;">Min %</th>
+                                <tr>
+                                    <th>Secondary Trait</th>
+                                    <th>Obtainable</th>
+                                    <th>Max %</th>
+                                    <th>Min %</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Swiftness</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">10%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">4%</td>
+                                <tr>
+                                    <td>Swiftness</td>
+                                    <td>Yes</td>
+                                    <td>10%</td>
+                                    <td>4%</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Vitality</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">10%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">5%</td>
+                                <tr>
+                                    <td>Vitality</td>
+                                    <td>Yes</td>
+                                    <td>10%</td>
+                                    <td>5%</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Endurance</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">10%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">4%</td>
+                                <tr>
+                                    <td>Endurance</td>
+                                    <td>Yes</td>
+                                    <td>10%</td>
+                                    <td>4%</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Stride</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">15%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">4%</td>
+                                <tr>
+                                    <td>Stride</td>
+                                    <td>Yes</td>
+                                    <td>15%</td>
+                                    <td>4%</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Phase</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">11%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">4%</td>
+                                <tr>
+                                    <td>Phase</td>
+                                    <td>Yes</td>
+                                    <td>11%</td>
+                                    <td>4%</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Surge</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">11%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">3%</td>
+                                <tr>
+                                    <td>Surge</td>
+                                    <td>Yes</td>
+                                    <td>11%</td>
+                                    <td>3%</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Lethality</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">15%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">5%</td>
+                                <tr>
+                                    <td>Lethality</td>
+                                    <td>Yes</td>
+                                    <td>15%</td>
+                                    <td>5%</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Attack Speed</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">18%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">5%</td>
+                                <tr>
+                                    <td>Attack Speed</td>
+                                    <td>Yes</td>
+                                    <td>18%</td>
+                                    <td>5%</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Fracture</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">20%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">5%</td>
+                                <tr>
+                                    <td>Fracture</td>
+                                    <td>Yes</td>
+                                    <td>20%</td>
+                                    <td>5%</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Critical Chance</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">15%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">6%</td>
+                                <tr>
+                                    <td>Critical Chance</td>
+                                    <td>Yes</td>
+                                    <td>15%</td>
+                                    <td>6%</td>
                                 </tr>
-                                <tr style="background: rgba(144, 238, 144, 0.2);">
-                                    <td style="padding: 0.8rem; color: #fff; font-weight: 500;">Critical Damage</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #4caf50;">Yes</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">15%</td>
-                                    <td style="padding: 0.8rem; text-align: center; color: #fff;">5%</td>
+                                <tr>
+                                    <td>Critical Damage</td>
+                                    <td>Yes</td>
+                                    <td>15%</td>
+                                    <td>5%</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
 
-                <div style="background: rgba(255, 193, 7, 0.2); border-radius: 8px; padding: 1.5rem; margin-top: 2rem; border: 1px solid #ffc107;">
-                    <p style="color: #fff; text-align: center; margin: 0; font-style: italic;">
+                <div>
+                    <p>
                         📊 <strong>Data compiled by ravu</strong> - Complete statistical breakdown of all rune traits and their ranges
                     </p>
                 </div>
@@ -825,12 +504,12 @@
             
             <div class="secondary-traits">
                 <h3>🎯 About Secondary Traits</h3>
-                <p style="color: #555; margin-bottom: 1.5rem;">Some runes may have secondary traits that grant extra buffs. These traits can appear on weapons or armor and stack with the rune's main effect.</p>
+                <p>Some runes may have secondary traits that grant extra buffs. These traits can appear on weapons or armor and stack with the rune's main effect.</p>
                 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                <div>
                     <!-- Weapon Secondary Traits -->
-                    <div class="weapon-traits" style="padding: 1.5rem; border-radius: 10px;">
-                        <h3 style="color: #e65100; margin-bottom: 1rem; text-align: center;">⚔️ WEAPON SECONDARY TRAITS</h3>
+                    <div class="weapon-traits">
+                        <h3>⚔️ WEAPON SECONDARY TRAITS</h3>
                         <table class="official-table trait-table">
                             <thead>
                                 <tr>
@@ -864,8 +543,8 @@
                     </div>
 
                     <!-- Armor Secondary Traits -->
-                    <div class="armor-traits" style="padding: 1.5rem; border-radius: 10px;">
-                        <h3 style="color: #2e7d32; margin-bottom: 1rem; text-align: center;">🛡️ ARMOR SECONDARY TRAITS</h3>
+                    <div class="armor-traits">
+                        <h3>🛡️ ARMOR SECONDARY TRAITS</h3>
                         <table class="official-table trait-table">
                             <thead>
                                 <tr>
@@ -909,7 +588,7 @@
         <div class="content-section">
             <h2>🔧 How to Socket Runes</h2>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            <div>
                 <div class="tip-box">
                     <h3>🎯 Step 1: Find Equipment with Rune Slots</h3>
                     <p>Not all weapons and armor have rune slots. Look for equipment that specifically mentions available rune slots when you craft or find it.</p>
@@ -926,9 +605,9 @@
                 </div>
             </div>
 
-            <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 12px; padding: 2rem; margin-top: 2rem; border-left: 4px solid #ff9800;">
-                <h3 style="color: #e65100; margin-bottom: 1rem;">💡 Pro Tips for Rune Usage</h3>
-                <ul style="color: #555; margin: 0;">
+            <div>
+                <h3>💡 Pro Tips for Rune Usage</h3>
+                <ul>
                     <li><strong>Plan Your Build:</strong> Consider which runes complement your playstyle before socketing</li>
                     <li><strong>Rarity Matters:</strong> Higher tier runes provide significantly better effects</li>
                     <li><strong>Secondary Traits:</strong> Look for runes with beneficial secondary traits for extra value</li>
@@ -942,11 +621,11 @@
         <div class="content-section">
             <h2>🎯 Rune Farming Guide</h2>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #4caf50;">
-                    <h3 style="color: #2e7d32; margin-bottom: 0.5rem;">🏆 High-Tier Runes</h3>
-                    <p style="color: #555; margin-bottom: 1rem;">Mythic Engravings and Grand Sigils</p>
-                    <ul style="color: #555; margin: 0; font-size: 0.9rem;">
+            <div>
+                <div>
+                    <h3>🏆 High-Tier Runes</h3>
+                    <p>Mythic Engravings and Grand Sigils</p>
+                    <ul>
                         <li>Defeat high-level bosses and elite enemies</li>
                         <li>Complete challenging dungeon content</li>
                         <li>Participate in special events</li>
@@ -954,10 +633,10 @@
                     </ul>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #ff9800;">
-                    <h3 style="color: #e65100; margin-bottom: 0.5rem;">⚡ Mid-Tier Runes</h3>
-                    <p style="color: #555; margin-bottom: 1rem;">Forged Glyphs and Etched Marks</p>
-                    <ul style="color: #555; margin: 0; font-size: 0.9rem;">
+                <div>
+                    <h3>⚡ Mid-Tier Runes</h3>
+                    <p>Forged Glyphs and Etched Marks</p>
+                    <ul>
                         <li>Farm specific enemy types for targeted drops</li>
                         <li>Explore dangerous areas like Forgotten Kingdom</li>
                         <li>Complete medium-difficulty challenges</li>
@@ -965,10 +644,10 @@
                     </ul>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #2196f3;">
-                    <h3 style="color: #0d47a1; margin-bottom: 0.5rem;">⚒️ Common Runes</h3>
-                    <p style="color: #555; margin-bottom: 1rem;">Basic runes for beginners</p>
-                    <ul style="color: #555; margin: 0; font-size: 0.9rem;">
+                <div>
+                    <h3>⚒️ Common Runes</h3>
+                    <p>Basic runes for beginners</p>
+                    <ul>
                         <li>Defeat regular enemies throughout the world</li>
                         <li>Complete basic quests and challenges</li>
                         <li>Find in treasure chests and loot containers</li>
@@ -983,58 +662,58 @@
             <h2>🎯 Advanced Rune Optimization</h2>
             
             <!-- Farming Miner Runes -->
-            <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #2196f3;">
-                <h3 style="color: #0d47a1; margin-bottom: 1rem;">⛏️ Farming Miner Runes</h3>
-                <p style="color: #555; line-height: 1.7;">
+            <div>
+                <h3>⛏️ Farming Miner Runes</h3>
+                <p>
                     Kill <strong>Bombers</strong> in World 2 to farm Miner Runes. These are essential for your pickaxe optimization and mining efficiency.
                 </p>
             </div>
 
             <!-- Weapon Rune Optimization -->
-            <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #ff9800;">
-                <h3 style="color: #e65100; margin-bottom: 1.5rem;">⚔️ Weapon Rune Optimization</h3>
+            <div>
+                <h3>⚔️ Weapon Rune Optimization</h3>
                 
-                <div style="display: grid; gap: 1.5rem; margin-bottom: 2rem;">
+                <div>
                     <!-- Fast Attack Speed Weapons -->
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <h3 style="color: #4caf50; margin-bottom: 1rem;">⚡ Fast Attack Speed Weapons</h3>
-                        <p style="color: #555; line-height: 1.7;">
+                    <div>
+                        <h3>⚡ Fast Attack Speed Weapons</h3>
+                        <p>
                             Use <strong>Lethality</strong> substats on your runes for maximum damage output with fast-hitting weapons.
                         </p>
                     </div>
 
                     <!-- Slow Attack Speed Weapons -->
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <h3 style="color: #ff5722; margin-bottom: 1rem;">🐌 Slow Attack Speed Weapons</h3>
-                        <p style="color: #555; line-height: 1.7;">
+                    <div>
+                        <h3 class="section-header">🐌 Slow Attack Speed Weapons</h3>
+                        <p>
                             Use <strong>Attack Speed</strong> substats on your runes to compensate for slower swings and improve DPS.
                         </p>
                     </div>
                 </div>
 
                 <!-- Universal Weapon Setup -->
-                <div style="background: linear-gradient(135deg, #fff9c4 0%, #fff59d 100%); border-radius: 8px; padding: 1.5rem; border: 2px solid #ffc107;">
-                    <h3 style="color: #f57f17; margin-bottom: 1rem;">✨ Universal Weapon Setup</h3>
-                    <p style="color: #555; line-height: 1.7; margin: 0;">
+                <div>
+                    <h3>✨ Universal Weapon Setup</h3>
+                    <p>
                         For all weapons, run <strong>one Drain Rune</strong> and <strong>one Blast Rune</strong> for optimal combat performance.
                     </p>
                 </div>
             </div>
 
             <!-- Armor Rune Optimization -->
-            <div style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #4caf50;">
-                <h3 style="color: #2e7d32; margin-bottom: 1.5rem;">🛡️ Armor Rune Optimization</h3>
+            <div>
+                <h3>🛡️ Armor Rune Optimization</h3>
                 
-                <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 1.5rem;">
-                    <h3 style="color: #388e3c; margin-bottom: 1rem;">Best Substats</h3>
-                    <p style="color: #555; line-height: 1.7;">
+                <div>
+                    <h3>Best Substats</h3>
+                    <p>
                         Choose between <strong>Vitality</strong> (more health) or <strong>Movement Speed</strong> (better mobility) based on your playstyle preference.
                     </p>
                 </div>
 
-                <div style="background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%); border-radius: 8px; padding: 1.5rem; border: 2px solid #4caf50;">
-                    <h3 style="color: #2e7d32; margin-bottom: 1rem;">⭐ Recommended Rune</h3>
-                    <p style="color: #555; line-height: 1.7; margin: 0;">
+                <div>
+                    <h3>⭐ Recommended Rune</h3>
+                    <p>
                         <strong>Briar Runes</strong> are among the best options for armor slots due to their balanced effects.
                     </p>
                 </div>
@@ -1045,59 +724,59 @@
         <div class="content-section">
             <h2>📊 Rune Recommendations by Gear Type</h2>
             
-            <div style="overflow-x: auto;">
-                <table class="official-table" style="width: 100%; border-collapse: collapse; margin: 1rem 0; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <div class="table-overflow">
+                <table class="official-table">
                     <thead>
-                        <tr style="background: linear-gradient(135deg, var(--rune-purple) 0%, #512da8 100%);">
-                            <th style="padding: 1rem; text-align: left; font-weight: 700; color: #fff;">Gear Type</th>
-                            <th style="padding: 1rem; text-align: left; font-weight: 700; color: #fff;">Main Runes</th>
-                            <th style="padding: 1rem; text-align: left; font-weight: 700; color: #fff;">Sub-Stats</th>
+                        <tr>
+                            <th>Gear Type</th>
+                            <th>Main Runes</th>
+                            <th>Sub-Stats</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600;">🗡️ Dagger</td>
-                            <td style="padding: 1rem;">Drain Edge + Blast Chip</td>
-                            <td style="padding: 1rem;">Attack Speed/Lethality or Both Crit</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600;">⚔️ Straight Sword</td>
-                            <td style="padding: 1rem;">Blast Chip + Drain Edge / Blast Chip</td>
-                            <td style="padding: 1rem;">Attack Speed/Lethality or Both Crit</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600;">👊 Gauntlet</td>
-                            <td style="padding: 1rem;">Drain Edge + Blast Chip</td>
-                            <td style="padding: 1rem;">Attack Speed/Lethality or Both Crit</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600;">🗡️ Katana</td>
-                            <td style="padding: 1rem;">Blast Chip + Drain Edge / Blast Chip</td>
-                            <td style="padding: 1rem;">Attack Speed/Lethality or Both Crit</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600;">⚔️ Colossal Sword</td>
-                            <td style="padding: 1rem;">Blast Chip + Blast Chip</td>
-                            <td style="padding: 1rem;">Lethality</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e0e0e0;">
-                            <td style="padding: 1rem; font-weight: 600;">🛡️ Armor</td>
-                            <td style="padding: 1rem;">Any Depending on Preferences</td>
-                            <td style="padding: 1rem;">Mainly Vitality and Surge</td>
+                        <tr>
+                            <td>🗡️ Dagger</td>
+                            <td>Drain Edge + Blast Chip</td>
+                            <td>Attack Speed/Lethality or Both Crit</td>
                         </tr>
                         <tr>
-                            <td style="padding: 1rem; font-weight: 600;">⛏️ Pickaxe</td>
-                            <td style="padding: 1rem;">Luck > Mine Power/Speed > Yield</td>
-                            <td style="padding: 1rem;">N/A</td>
+                            <td>⚔️ Straight Sword</td>
+                            <td>Blast Chip + Drain Edge / Blast Chip</td>
+                            <td>Attack Speed/Lethality or Both Crit</td>
+                        </tr>
+                        <tr>
+                            <td>👊 Gauntlet</td>
+                            <td>Drain Edge + Blast Chip</td>
+                            <td>Attack Speed/Lethality or Both Crit</td>
+                        </tr>
+                        <tr>
+                            <td>🗡️ Katana</td>
+                            <td>Blast Chip + Drain Edge / Blast Chip</td>
+                            <td>Attack Speed/Lethality or Both Crit</td>
+                        </tr>
+                        <tr>
+                            <td>⚔️ Colossal Sword</td>
+                            <td>Blast Chip + Blast Chip</td>
+                            <td>Lethality</td>
+                        </tr>
+                        <tr>
+                            <td>🛡️ Armor</td>
+                            <td>Any Depending on Preferences</td>
+                            <td>Mainly Vitality and Surge</td>
+                        </tr>
+                        <tr>
+                            <td>⛏️ Pickaxe</td>
+                            <td>Luck > Mine Power/Speed > Yield</td>
+                            <td>N/A</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
             <!-- Key Takeaways -->
-            <div style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); border-radius: 12px; padding: 2rem; margin-top: 2rem; border-left: 4px solid var(--rune-purple);">
-                <h3 style="color: var(--rune-purple); margin-bottom: 1rem;">💡 Key Rune Tips</h3>
-                <ul style="color: #555; line-height: 1.8; margin: 0;">
+            <div>
+                <h3>💡 Key Rune Tips</h3>
+                <ul>
                     <li><strong>Universal Combo:</strong> Drain + Blast is the best setup for most weapons</li>
                     <li><strong>Armor:</strong> Briar Runes with Vitality or Movement Speed substats</li>
                     <li><strong>Pickaxe Priority:</strong> Luck is #1, then Mine Power/Speed, then Yield</li>
@@ -1110,7 +789,7 @@
         <!-- Calculator CTA -->
         <div class="cta-box">
             <h2>🔥 Plan Your Rune Strategy!</h2>
-            <p style="margin-bottom: 1.5rem;">Use our tools to plan your equipment builds and rune combinations</p>
+            <p>Use our tools to plan your equipment builds and rune combinations</p>
             <a href="/" class="cta-btn">Open Calculator</a>
             <a href="/weapons.html" class="cta-btn">Weapon Guide</a>
             <a href="./" class="cta-btn">Back to Wiki</a>
@@ -1123,12 +802,12 @@
             <p><a href="/">Home</a> | <a href="./">Wiki</a> | <a href="/recipes/">Recipes</a> | <a href="/codes.html">Codes</a> | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms-of-service.html">Terms</a></p>
         </div>
             
-            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+            <p class="footer-section">
             </p>
             
             <!-- 友情链接 -->
-            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
-                <strong style="color: #ff9800; margin-right: 1rem;">友情链接:</strong>
+            <p class="footer-section">
+                <strong class="footer-links-title">友情链接:</strong>
                 <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
             </p>
     </footer>

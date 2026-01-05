@@ -9,7 +9,7 @@
     
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" class="yandex-hidden" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     <!-- Favicon for better search engine compatibility -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -44,543 +44,7 @@
     <meta name="twitter:description" content="Master your weapon and armor crafting with The Forge Calculator. Optimize ore combinations and trait setups with real-time calculations for The Forge on Roblox.">
     
     <title>Roblox The Forge Calculator</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root {
-            /* Official Colors - 官方配色 */
-            --bg-primary: #1a1612;
-            --bg-secondary: #2d1f1a;
-            --bg-darker: #0f0d0a;
-            --bg-surface: #3d2f2a;
-            --gold-primary: #d4af37;
-            --gold-light: #f4d03f;
-            --gold-dark: #b8860b;
-            --flame-primary: #ff6b35;
-            --flame-light: #ff8c42;
-            --flame-dark: #e55100;
-            --text-primary: #f5f5dc;
-            --text-secondary: #d3d3d3;
-            --text-accent: #d4af37;
-            --border-gold: #d4af37;
-            --border-flame: #ff6b35;
-            
-            /* Legacy mappings */
-            --forge-fire: var(--flame-primary);
-            --forge-flame: var(--flame-light);
-            --forge-ember: var(--flame-dark);
-            --forge-glow: var(--flame-light);
-            --metal-steel: var(--bg-surface);
-            --bg-forge: var(--bg-secondary);
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        
-        /* Header - Official Style */
-        header {
-            background: linear-gradient(90deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
-            backdrop-filter: blur(10px);
-            padding: 1.25rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            border-bottom: 2px solid var(--gold-primary);
-            transition: all 0.3s ease;
-        }
-        
-        header:hover {
-            box-shadow: 0 4px 24px rgba(212, 175, 55, 0.4);
-        }
-        
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-        }
-        
-        header h1 {
-            color: var(--gold-primary);
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        nav {
-            display: flex;
-            gap: 0.5rem;
-        }
-        
-        nav a {
-            color: var(--text-primary);
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            transition: all 0.2s ease;
-            font-weight: 500;
-            font-size: 0.95rem;
-            position: relative;
-        }
-        
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%) scaleX(0);
-            width: 80%;
-            height: 2px;
-            background: var(--gold-primary);
-            transition: transform 0.2s ease;
-        }
-        
-        nav a:hover {
-            color: var(--gold-primary);
-            background: rgba(212, 175, 55, 0.1);
-        }
-        
-        nav a:hover::after {
-            transform: translateX(-50%) scaleX(1);
-        }
-        
-        /* Hero Section - Official Style */
-        .hero {
-            text-align: center;
-            padding: 5rem 0 4rem;
-            color: var(--text-primary);
-            background: radial-gradient(ellipse at center, rgba(255, 107, 53, 0.15) 0%, transparent 70%);
-            animation: fadeIn 0.6s ease-out;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .hero h2 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            margin-bottom: 1.5rem;
-            text-shadow: 0 2px 30px rgba(212, 175, 55, 0.6);
-            color: var(--gold-primary);
-            font-weight: 800;
-            letter-spacing: -1px;
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: clamp(1rem, 2vw, 1.25rem);
-            margin-bottom: 2rem;
-            opacity: 0.95;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.7;
-            color: rgba(255, 255, 255, 0.9);
-        }
-        
-        /* Calculator Section - Modern card design */
-        .calculator {
-            background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 3rem;
-            margin: 3rem auto;
-            box-shadow: 
-                0 20px 60px rgba(0, 0, 0, 0.4),
-                0 0 0 1px rgba(255, 87, 34, 0.2),
-                inset 0 1px 0 rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 87, 34, 0.3);
-            transition: all 0.3s ease;
-        }
-        
-        .calculator:hover {
-            box-shadow: 
-                0 24px 70px rgba(255, 87, 34, 0.2),
-                0 0 0 1px rgba(255, 87, 34, 0.4),
-                inset 0 1px 0 rgba(255, 255, 255, 0.05);
-            transform: translateY(-2px);
-        }
-        
-        .calculator h3 {
-            color: #ff9800;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            text-align: center;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-        
-        .calc-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-        
-        .input-group {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .input-group label {
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: #ff9800;
-            text-shadow: 0 0 5px rgba(255, 152, 0, 0.3);
-        }
-        
-        .input-group input,
-        .input-group select {
-            padding: 0.8rem;
-            border: 2px solid #ff5722;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: all 0.3s;
-            background: #1a1a1a;
-            color: #fff;
-        }
-        
-        .input-group input:focus,
-        .input-group select:focus {
-            outline: none;
-            border-color: #ff9800;
-            box-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
-        }
-        
-        .calc-button {
-            background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
-            color: #fff;
-            padding: 1rem 3rem;
-            border: 2px solid #ffb74d;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: block;
-            margin: 2rem auto;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
-        }
-        
-        .calc-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(255, 87, 34, 0.6), 0 0 20px rgba(255, 152, 0, 0.4);
-            background: linear-gradient(135deg, #ff6f3c 0%, #ffab40 100%);
-        }
-        
-        .results {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
-            padding: 2rem;
-            border-radius: 10px;
-            margin-top: 2rem;
-            display: none;
-            border: 2px solid #ff5722;
-            box-shadow: inset 0 0 20px rgba(255, 87, 34, 0.1);
-        }
-        
-        .results.show {
-            display: block;
-        }
-        
-        .result-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 1rem;
-            border-bottom: 1px solid rgba(255, 87, 34, 0.3);
-            color: #fff;
-        }
-        
-        .result-item:last-child {
-            border-bottom: none;
-        }
-        
-        .result-item strong {
-            color: #ff9800;
-        }
-        
-        /* Features Section - Improved spacing and hierarchy */
-        .features {
-            background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
-            padding: 5rem 0;
-        }
-        
-        .features h3 {
-            text-align: center;
-            font-size: clamp(2rem, 4vw, 2.5rem);
-            color: #ff5722;
-            margin-bottom: 1rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .feature-card {
-            background: linear-gradient(135deg, rgba(45, 24, 16, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
-            padding: 2.5rem 2rem;
-            border-radius: 16px;
-            color: #fff;
-            text-align: center;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(255, 87, 34, 0.3);
-            box-shadow: 
-                0 4px 20px rgba(0, 0, 0, 0.1),
-                inset 0 1px 0 rgba(255, 255, 255, 0.05);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #ff5722, #ff9800);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 
-                0 12px 40px rgba(255, 87, 34, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
-            border-color: #ff9800;
-        }
-        
-        .feature-card:hover::before {
-            transform: scaleX(1);
-        }
-        
-        .feature-card h4 {
-            color: #ff9800;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-        
-        .feature-card p {
-            line-height: 1.7;
-            color: rgba(255, 255, 255, 0.85);
-        }
-        
-        /* Content Sections - Better readability */
-        .content-section {
-            background: #fff;
-            padding: 5rem 0;
-        }
-        
-        .content-section:nth-child(even) {
-            background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
-        }
-        
-        .content-section h3 {
-            font-size: clamp(2rem, 4vw, 2.5rem);
-            color: #ff5722;
-            margin-bottom: 1rem;
-            text-align: center;
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
-        
-        .content-section h2 {
-            font-size: clamp(1.75rem, 3.5vw, 2.25rem);
-            color: #ff5722;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-        
-        .content-section p {
-            font-size: 1.125rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-            color: #444;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .content-section ul {
-            list-style-position: outside;
-            margin: 1.5rem 0 1.5rem 2rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .content-section li {
-            font-size: 1.125rem;
-            margin-bottom: 1rem;
-            color: #444;
-            line-height: 1.7;
-            padding-left: 0.5rem;
-        }
-        
-        .content-section li::marker {
-            color: #ff5722;
-        }
-        
-        /* FAQ Section - Enhanced interaction */
-        .faq {
-            background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
-            padding: 5rem 0;
-        }
-        
-        .faq h3 {
-            font-size: clamp(2rem, 4vw, 2.5rem);
-            color: #ff5722;
-            margin-bottom: 1rem;
-            text-align: center;
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
-        
-        .faq h2 {
-            font-size: clamp(2rem, 4vw, 2.5rem);
-            color: #ff5722;
-            margin-bottom: 3rem;
-            text-align: center;
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
-        
-        .faq-item {
-            background: #fff;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            border-radius: 12px;
-            border-left: 4px solid #ff5722;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .faq-item:hover {
-            border-left-width: 6px;
-            box-shadow: 0 8px 24px rgba(255, 87, 34, 0.15);
-            transform: translateX(4px);
-        }
-        
-        .faq-item h4 {
-            color: #222;
-            margin-bottom: 1rem;
-            font-size: 1.25rem;
-            font-weight: 700;
-        }
-        
-        .faq-item h3 {
-            color: #222;
-            margin-bottom: 1rem;
-            font-size: 1.25rem;
-            font-weight: 700;
-            text-align: left;
-        }
-        
-        .faq-item p {
-            color: #555;
-            line-height: 1.7;
-            font-size: 1.0625rem;
-        }
-        
-        /* Footer - Modern design */
-        footer {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.98) 0%, rgba(45, 24, 16, 0.98) 100%);
-            backdrop-filter: blur(10px);
-            color: rgba(255, 255, 255, 0.9);
-            padding: 3rem 0 2rem;
-            text-align: center;
-            border-top: 1px solid rgba(255, 87, 34, 0.3);
-            box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
-        }
-        
-        footer p {
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.7);
-        }
-        
-        footer a {
-            color: #ff9800;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-        }
-        
-        footer a:hover {
-            color: #ffb74d;
-            background: rgba(255, 152, 0, 0.1);
-        }
-        
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Responsive improvements */
-        @media (max-width: 768px) {
-            header .container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            nav {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .hero {
-                padding: 3rem 0 2rem;
-            }
-            
-            .calculator {
-                padding: 2rem 1.5rem;
-            }
-            
-            .features-grid {
-                gap: 1.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="forge-theme.css">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
@@ -609,6 +73,7 @@
                 <a href="/wiki/">Wiki</a>
                 <a href="/weapons.html">Weapons</a>
                 <a href="/armor.html">Armor</a>
+                <a href="/pickaxe.html">Pickaxe</a>
                 <a href="/private-server.html">Private Servers</a>
                 <a href="/blog/">Blog</a>
                 <a href="/feedback.html">Feedback</a>
@@ -625,18 +90,18 @@
     </section>
 
     <!-- Calculator Section -->
-    <section id="calculator" class="calculator" style="max-width: none; padding: 3rem 20px;">
+    <section id="calculator" class="calculator" class="calculator-section">
         <!-- Advertisement -->
-        <div style="text-align: center; margin-bottom: 2rem;">
+        <div>
             <script async="async" data-cfasync="false" src="https://pl28199006.effectivegatecpm.com/79ca9dd9143ba2de7e3df6c789a12d4c/invoke.js"></script>
             <div id="container-79ca9dd9143ba2de7e3df6c789a12d4c"></div>
         </div>
 
         
-        <div class="gacha-simulator-wrapper" style="width: 100%; margin: 20px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);">
+        <div class="gacha-simulator-wrapper" class="gacha-simulator-wrapper">
             <iframe 
                 src="https://blox-informer-gachas.github.io/blox-informer-gachas/gachas/the-forge-crafting-calculator.html" 
-                style="width: 100%; height: 1400px; border: none; display: block;"
+                class="gacha-simulator-wrapper iframe"
                 title="The Forge Crafting Calculator"
                 loading="lazy"
                 allowfullscreen>
@@ -645,30 +110,30 @@
     </section>
 
     <!-- Quick Tips Section -->
-    <section style="background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%); padding: 4rem 0;">
+    <section class="quick-tips-section">
         <div class="container">
-            <h2 style="color: #ff9800; font-size: 2.5rem; margin-bottom: 2.5rem; text-align: center; font-weight: 800; text-shadow: 0 2px 15px rgba(255, 152, 0, 0.4);">💡 Quick Tips for Beginners</h2>
+            <h2 class="quick-tips-title">💡 Quick Tips for Beginners</h2>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+            <div class="tips-grid">
                 <!-- Tip 1: Luck Stat & Race Rerolls -->
-                <div style="background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%); border-radius: 16px; padding: 2.5rem; border: 2px solid #2196f3; box-shadow: 0 8px 30px rgba(33, 150, 243, 0.2); transition: transform 0.3s ease;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div style="background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; flex-shrink: 0; box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);">❓</div>
-                        <h3 style="color: #64b5f6; font-size: 1.4rem; font-weight: 700; margin: 0; line-height: 1.3;">Luck Stat & Race Rerolls</h3>
+                <div>
+                    <div>
+                        <div>❓</div>
+                        <h3>Luck Stat & Race Rerolls</h3>
                     </div>
-                    <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.8; font-size: 1.05rem; margin: 0;">
-                        The <strong style="color: #ffeb3b;">Luck</strong> stat does <strong style="color: #f44336;">NOT</strong> affect your race reroll chances. It only impacts mining drops and loot.
+                    <p>
+                        The <strong class="text-highlight">Luck</strong> stat does <strong class="text-highlight">NOT</strong> affect your race reroll chances. It only impacts mining drops and loot.
                     </p>
                 </div>
 
                 <!-- Tip 2: Save Your Runes -->
-                <div style="background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%); border-radius: 16px; padding: 2.5rem; border: 2px solid #ff9800; box-shadow: 0 8px 30px rgba(255, 152, 0, 0.2); transition: transform 0.3s ease;">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div style="background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; flex-shrink: 0; box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);">❓</div>
-                        <h3 style="color: #ffb74d; font-size: 1.4rem; font-weight: 700; margin: 0; line-height: 1.3;">Save Your Runes</h3>
+                <div>
+                    <div>
+                        <div>❓</div>
+                        <h3>Save Your Runes</h3>
                     </div>
-                    <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.8; font-size: 1.05rem; margin: 0;">
-                        Don't apply runes until you get the <strong style="color: #9c27b0;">Arcane Pickaxe</strong>. Lower-tier pickaxes will be replaced quickly.
+                    <p>
+                        Don't apply runes until you get the <strong class="text-highlight">Arcane Pickaxe</strong>. Lower-tier pickaxes will be replaced quickly.
                     </p>
                 </div>
             </div>
@@ -782,7 +247,7 @@
             <p>This forge calculator is a fan-made tool and is not officially affiliated with Roblox or The Forge game developers.</p>
             <p><a href="/codes.html">Codes</a> | <a href="/blog/">Blog</a> | <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms of Service</a> | <a href="https://ovk.to/id34926" target="_blank">OVK</a> | <a href="https://cal.com/lainey-tpyuqi" target="_blank" rel="noopener noreferrer">Schedule a Call</a></p>
             
-            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+            <p class="footer-section">
             </p>
             
             <p>Powered by <a href="https://aistage.net" title="AIStage">AIStage</a></p>
@@ -791,10 +256,10 @@
                 <a href="https://www.showmebest.ai" target="_blank"><img src="https://www.showmebest.ai/badge/feature-badge-white.webp" alt="Featured on ShowMeBestAI" width="220" height="60"></a>
                 <a href="https://toolpilot.ai" target="_blank" rel="noopener noreferrer"><img src="https://www.toolpilot.ai/cdn/shop/files/f-w_690x151_crop_center.png" alt="Powered by ToolPilot.ai" height="60"></a>
                 <a href="https://startupfa.me/s/forge-calculator.com-587?utm_source=forge-calculator.com" target="_blank"><img src="https://startupfa.me/badges/featured-badge-small.webp" alt="forge calculator - Featured on Startup Fame" width="224" height="36" /></a>
-                <a href="https://submitaitools.org" target="_blank" ><img src="https://submitaitools.org/static_submitaitools/images/submitaitools.png" alt="Submit AI Tools – The ultimate platform to discover, submit, and explore the best AI tools across various categories." style="border-radius: 10px; width: 200px; height: 60px;" /></a>
+                <a href="https://submitaitools.org" target="_blank" ><img src="https://submitaitools.org/static_submitaitools/images/submitaitools.png" alt="Submit AI Tools – The ultimate platform to discover, submit, and explore the best AI tools across various categories." class="badge-rounded" /></a>
                 <a href="https://twelve.tools" target="_blank"><img src="https://twelve.tools/badge0-white.svg" alt="Featured on Twelve Tools" width="200" height="54"></a>
-                <a href="https://turbo0.com/item/forge-calculator" target="_blank" rel="noopener noreferrer"><img src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" style="height: 54px; width: auto;" /></a>
-                <a href="https://starterbest.com" target="_blank" rel="noopener noreferrer"><img src="https://starterbest.com/badages-awards.svg" alt="Featured on Starter Best" style="height: 54px; width: auto;"/></a>
+                <a href="https://turbo0.com/item/forge-calculator" target="_blank" rel="noopener noreferrer"><img src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" class="badge-auto-height" /></a>
+                <a href="https://starterbest.com" target="_blank" rel="noopener noreferrer"><img src="https://starterbest.com/badages-awards.svg" alt="Featured on Starter Best" class="badge-auto-height"/></a>
                 <a target="_blank" href="https://saasfield.com"><img src="https://saasfield.com/assets/images/badge.png" alt="SaaS Field" height="54"></a>
                 <a target="_blank" href="https://poweruptools.com"><img src="https://poweruptools.com/assets/images/badge.png" alt="Power Up Tools" height="54"></a>
                 <a target="_blank" href="https://launchclash.com"><img src="https://launchclash.com/static/images/badge.png" alt="LaunchClash" height="54"/></a>
@@ -803,26 +268,26 @@
         </div>
             
             <!-- 友情链接 -->
-            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
-                <strong style="color: #ff9800; margin-right: 1rem;">友情链接:</strong>
+            <p class="footer-section">
+                <strong class="footer-links-title">友情链接:</strong>
                 <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
-                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <span class="footer-separator">|</span>
                 <a href="https://www.vkmoai.com" target="_blank" rel="noopener noreferrer" title="VKMO AI Tools Directory">VKMO AI</a>
-                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <span class="footer-separator">|</span>
                 <a href="https://fast-wan.com/" target="_blank" rel="noopener noreferrer" title="Fast Wan">Fast Wan</a>
-                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <span class="footer-separator">|</span>
                 <a href="https://aitoolcenter.com/" target="_blank" rel="noopener noreferrer" title="AI Tool Center">AI Tool Center</a>
-                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <span class="footer-separator">|</span>
                 <a href="https://allinai.tools" target="_blank" rel="noopener noreferrer" title="All The Best AI Tools">All in AI Tools</a>
-                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <span class="footer-separator">|</span>
                 <a href="https://whatisaitools.com/" target="_blank" rel="noopener noreferrer" title="What Is Ai Tools">What Is Ai Tools</a>
-                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <span class="footer-separator">|</span>
                 <a href="https://www.seewhatnewai.com" target="_blank" rel="noopener noreferrer" title="See What New AI">See What New AI</a>
-                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <span class="footer-separator">|</span>
                 <a href="https://SeekAIs.com/" target="_blank" rel="noopener noreferrer" title="SeekAIs">SeekAIs</a>
-                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <span class="footer-separator">|</span>
                 <a href="https://www.aigotools.com" target="_blank" rel="noopener noreferrer" title="AigoTools">AigoTools</a>
-                <span style="margin: 0 0.5rem; color: rgba(255, 255, 255, 0.5);">|</span>
+                <span class="footer-separator">|</span>
                 <a href="https://aitoolsss.com" target="_blank" rel="noopener noreferrer" title="AIToolsss Directory">AIToolsss Directory</a>
             </p>
     </footer>

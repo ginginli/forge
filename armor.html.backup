@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119" crossorigin="anonymous"></script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Favicon for better search engine compatibility -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    <meta name="description" content="Complete guide to all armor types in The Forge - Light, Medium, and Heavy armor with stats, prices, and crafting information.">
+    <meta name="keywords" content="the forge armor, forge armor guide, light armor, medium armor, heavy armor, armor stats">
+    <link rel="canonical" href="https://forge-calculator.com/armor.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/armor.html">
+    <meta property="og:title" content="The Forge Armor Guide - All Armor Types & Stats">
+    <meta property="og:description" content="Complete guide to all 15 armor pieces in The Forge. Learn about Light, Medium, and Heavy armor stats and crafting.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://forge-calculator.com/armor.html">
+    <meta name="twitter:title" content="The Forge Armor Guide - All Armor Types & Stats">
+    <meta name="twitter:description" content="Complete guide to all 15 armor pieces in The Forge. Learn about Light, Medium, and Heavy armor stats and crafting.">
+    
+    <title>The Forge Armor Guide - All Armor Types & Stats</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="forge-theme.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YRP03D44XS');
+    </script>
+    
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="EpsJtUp2VOHq8C8Dwkg1zQ" async></script>
+    
+    <!-- Advertisement code removed for security compliance -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🛡️ The Forge Armor</h1>
+                                    <nav>
+                <a href="/recipes/">Recipes</a>
+                <a href="/codes.html">Codes</a>
+                <a href="/">Calculator</a>
+                <a href="/ore/">Ore</a>
+                <a href="/wiki/">Wiki</a>
+                <a href="/weapons.html">Weapons</a>
+                <a href="/armor.html">Armor</a>
+                <a href="/private-server.html">Private Servers</a>
+                <a href="/blog/">Blog</a>
+                <a href="/feedback.html">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>🛡️ Armor Guide</h2>
+            <p>Complete guide to all 15 armor pieces in The Forge. Learn about armor stats, prices, and how to craft the best protection.</p>
+        </div>
+
+        <!-- Armor Overview -->
+        <div class="content-section">
+            <h2>📋 Armor System Overview</h2>
+            <p>Armor is the Forger's most important tool for defending and tanking against enemies in The Forge. You can forge armor by melting ores and choosing the armor option. There are currently <strong>15 armor pieces</strong> split across three categories: <strong>Light Armor</strong>, <strong>Medium Armor</strong>, and <strong>Heavy Armor</strong>.</p>
+            
+            <div class="info-box">
+                <h3>🎯 Key Armor Mechanics</h3>
+                <ul>
+                    <li><strong>Health Bonus:</strong> Armor defines how hard you are to kill and how reliably you can hold aggro for your party</li>
+                    <li><strong>Chance (Rarity):</strong> Each armor type has its own rarity that affects drop rates and crafting difficulty</li>
+                    <li><strong>Base Price:</strong> Different armor types have different base prices, so some pieces are better for profit</li>
+                    <li><strong>Mixing Types:</strong> You can mix different armor types to trade survivability, rarity and profit depending on your goals</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Stats Explanation -->
+        <div class="content-section">
+            <h2>📊 Armor Stats Explained</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); padding: 1.5rem; border-radius: 12px; border-left: 4px solid #4caf50;">
+                    <h3 style="color: #2e7d32; margin-bottom: 0.5rem;">💚 Health</h3>
+                    <p style="color: #555;">Health is the percentage bonus added to your base HP. If a piece shows <strong>5% Health</strong>, your total base health is boosted by 5% while worn.</p>
+                    <p style="color: #666; font-size: 0.9rem; margin-top: 0.5rem;">💡 Different armor pieces may have varying health bonus ranges.</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); padding: 1.5rem; border-radius: 12px; border-left: 4px solid #ff9800;">
+                    <h3 style="color: #e65100; margin-bottom: 0.5rem;">🎲 Chance</h3>
+                    <p style="color: #555;">Chance is the rarity of a specific armor piece within its type. For example, a <strong>Light Chestplate</strong> with a <strong>1/3 chance</strong> means roughly one in three Light Armor rolls will be that chestplate.</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 1.5rem; border-radius: 12px; border-left: 4px solid #2196f3;">
+                    <h3 style="color: #1565c0; margin-bottom: 0.5rem;">💰 Base Price</h3>
+                    <p style="color: #555;">Base Price is how much gold you receive if you sell the armor. Different armor types have different base prices, so some pieces are better for profit than pure defense.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Light Armor -->
+        <div class="content-section">
+            <h2 style="color: #4caf50;">🟢 Light Armor</h2>
+            <p>Light armor provides moderate health bonuses with the most common drop rates. Best for balanced builds.</p>
+            
+            <table class="official-table armor-table">
+                <thead>
+                    <tr>
+                        <th>Armor Name</th>
+                        <th>Health</th>
+                        <th>Chance</th>
+                        <th>Base Price</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="light-armor">
+                        <td class="armor-name">Light Helmet</td>
+                        <td class="stat-positive">+3.75%</td>
+                        <td class="chance-common">1/1</td>
+                        <td>65$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="light-armor">
+                        <td class="armor-name">Light Chestplate</td>
+                        <td class="stat-positive">+5%</td>
+                        <td class="chance-common">1/1</td>
+                        <td>225$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="light-armor">
+                        <td class="armor-name">Light Leggings</td>
+                        <td class="stat-positive">+4.375%</td>
+                        <td class="chance-common">1/1</td>
+                        <td>112.5$</td>
+                        <td>None</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Medium Armor -->
+        <div class="content-section">
+            <h2 style="color: #ff9800;">🟡 Medium Armor</h2>
+            <p>Medium armor offers higher health bonuses than light armor. Good balance between protection and availability.</p>
+            
+            <table class="official-table armor-table">
+                <thead>
+                    <tr>
+                        <th>Armor Name</th>
+                        <th>Health</th>
+                        <th>Chance</th>
+                        <th>Base Price</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="medium-armor">
+                        <td class="armor-name">Medium Helmet</td>
+                        <td class="stat-positive">+6.25%</td>
+                        <td class="chance-common">1/1</td>
+                        <td>335$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="medium-armor">
+                        <td class="armor-name">Medium Chestplate</td>
+                        <td class="stat-positive">+8.75%</td>
+                        <td class="chance-common">1/1</td>
+                        <td>850$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="medium-armor">
+                        <td class="armor-name">Medium Leggings</td>
+                        <td class="stat-positive">+7.5%</td>
+                        <td class="chance-common">1/1</td>
+                        <td>485$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="medium-armor">
+                        <td class="armor-name">Samurai Helmet</td>
+                        <td class="stat-positive">+8%</td>
+                        <td class="chance-rare">1/2</td>
+                        <td>335$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="medium-armor">
+                        <td class="armor-name">Samurai Chestplate</td>
+                        <td class="stat-positive">+12.75%</td>
+                        <td class="chance-rare">1/2</td>
+                        <td>850$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="medium-armor">
+                        <td class="armor-name">Samurai Leggings</td>
+                        <td class="stat-positive">+9%</td>
+                        <td class="chance-rare">1/2</td>
+                        <td>485$</td>
+                        <td>None</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Heavy Armor -->
+        <div class="content-section">
+            <h2 style="color: #f44336;">🔴 Heavy Armor</h2>
+            <p>Heavy armor provides the highest health bonuses. Perfect for tank builds and endgame content.</p>
+            
+            <table class="official-table armor-table">
+                <thead>
+                    <tr>
+                        <th>Armor Name</th>
+                        <th>Health</th>
+                        <th>Chance</th>
+                        <th>Base Price</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="heavy-armor">
+                        <td class="armor-name">Knight Helmet</td>
+                        <td class="stat-positive">+12.5%</td>
+                        <td class="chance-common">1/1</td>
+                        <td>1020$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="heavy-armor">
+                        <td class="armor-name">Knight Chestplate</td>
+                        <td class="stat-positive">+16.25%</td>
+                        <td class="chance-common">1/1</td>
+                        <td>1355$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="heavy-armor">
+                        <td class="armor-name">Knight Leggings</td>
+                        <td class="stat-positive">+13.75%</td>
+                        <td class="chance-common">1/1</td>
+                        <td>1200$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="heavy-armor">
+                        <td class="armor-name">Dark Knight Helmet</td>
+                        <td class="stat-positive">+18.75%</td>
+                        <td class="chance-rare">1/2</td>
+                        <td>1020$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="heavy-armor">
+                        <td class="armor-name">Dark Knight Chestplate</td>
+                        <td class="stat-positive">+25%</td>
+                        <td class="chance-rare">1/2</td>
+                        <td>1355$</td>
+                        <td>None</td>
+                    </tr>
+                    <tr class="heavy-armor">
+                        <td class="armor-name">Dark Knight Leggings</td>
+                        <td class="stat-positive">+21.875%</td>
+                        <td class="chance-rare">1/2</td>
+                        <td>1200$</td>
+                        <td>None</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tips -->
+        <div class="content-section">
+            <h2>💡 Armor Information</h2>
+            <ul style="line-height: 1.8; color: #555;">
+                <li><strong>Heavy Armor:</strong> Provides maximum health bonuses (+12.5-25%)</li>
+                <li><strong>Medium Armor:</strong> Balanced protection with moderate health bonuses (+6.25-12.75%)</li>
+                <li><strong>Light Armor:</strong> Basic protection with lower health bonuses (+3.75-5%)</li>
+                <li><strong>Rare Pieces:</strong> Samurai and Dark Knight pieces have 1/2 chance - harder to get but offer better stats</li>
+                <li><strong>Full Sets:</strong> Wearing matching helmet, chestplate, and leggings may provide set bonuses</li>
+                <li><strong>Ore Selection:</strong> Use our <a href="/" style="color: #ff5722; font-weight: 600;">Calculator</a> to find the best ore combinations for your desired armor</li>
+                <li><strong>Upgrade Path:</strong> Start with Light → Medium → Heavy as you progress through the game</li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <!-- Advertisement section removed for security compliance -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Forge Calculator. Not affiliated with Roblox or The Forge developers.</p>
+            <p><a href="/">Home</a> | <a href="/wiki/">Wiki</a> | <a href="/codes.html">Codes</a> | <a href="/privacy-policy.html">Privacy</a></p>
+            
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+            </p>
+        </div>
+            
+            <!-- 友情链接 -->
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+                <strong style="color: #ff9800; margin-right: 1rem;">友情链接:</strong>
+                <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
+            </p>
+    </footer>    <!-- Advertisement scripts removed for security compliance -->
+
+</body>
+</html>

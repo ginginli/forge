@@ -42,6 +42,8 @@ Complete guide to The Forge private servers - create, join, and optimize your pr
 - [Ore Guide](https://forge-calculator.com/ore/): Complete guide to all ore types, properties, and locations
 - [Stone Ore Guide](https://forge-calculator.com/ore/stone.html): Complete guide to Stone ore - the most basic and essential ore for beginners
 - [Mythril Ore Guide](https://forge-calculator.com/ore/mythril.html): Complete guide to Mythril ore - legendary crafting material with 15% extra defense on armor
+- [Snowite The Forge Ore Guide](https://forge-calculator.com/ore/snowite.html): Complete guide to Snowite The Forge ore - legendary wind-infused ore with slow effect and 8x multiplier
+- [Pickaxe Guide](https://forge-calculator.com/pickaxe.html): Complete guide to all 6 pickaxe types - mining power, luck boost, rune slots, and progression strategies
 - [Runes & Enhancements Guide](https://forge-calculator.com/wiki/runes.html): Complete guide to the rune system - socket magical runes on weapons and armor for powerful buffs
 - [Gamepasses Guide](https://forge-calculator.com/wiki/gamepass.html): Complete guide to The Forge gamepasses, cash packs, and developer products with purchase recommendations
 - [The Forge Recipes](https://forge-calculator.com/recipes/): Optimal ore combinations and success rates for weapons and armor
@@ -147,6 +149,7 @@ A: Armor provides Health bonuses. Light Armor: +3.75-5%, Medium Armor: +6.25-12.
 - Weapons: https://forge-calculator.com/weapons.html
 - Armor: https://forge-calculator.com/armor.html
 - Ores: https://forge-calculator.com/ore/
+- Pickaxe: https://forge-calculator.com/pickaxe.html
 - Races: https://forge-calculator.com/wiki/races.html
 - Gamepasses: https://forge-calculator.com/wiki/gamepass.html
 - Recipes: https://forge-calculator.com/recipes/
@@ -218,6 +221,7 @@ The Forge - это захватывающая приключенческая и�
 - Оружие: https://forge-calculator.com/weapons.html
 - Броня: https://forge-calculator.com/armor.html
 - Руды: https://forge-calculator.com/ore/
+- Кирки: https://forge-calculator.com/pickaxe.html
 - Расы: https://forge-calculator.com/wiki/races.html
 - Рецепты: https://forge-calculator.com/recipes/
 - Лучшие рецепты: https://forge-calculator.com/recipes/best-recipes.html
@@ -227,4 +231,4 @@ The Forge - это захватывающая приключенческая и�
 *This is a fan-made resource and is not officially affiliated with Roblox Corporation or The Forge game developers.*
 *Это фанатский ресурс, не связанный официально с Roblox Corporation или разработчиками игры The Forge.*
 
-**Last Updated**: December 23, 2025 | **Последнее обновление**: 23 декабря 2025
+**Last Updated**: December 31, 2025 | **Последнее обновление**: 31 декабря 2025

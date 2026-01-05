@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119" crossorigin="anonymous"></script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    <meta name="description" content="The Forge Wiki - Complete knowledge base for The Forge Roblox game. Find guides, recipes, ores, weapons, armor, and more.">
+    <meta name="keywords" content="the forge wiki, forge roblox wiki, the forge guide, forge knowledge base, roblox forge encyclopedia">
+    <link rel="canonical" href="https://forge-calculator.com/wiki/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/wiki/">
+    <meta property="og:title" content="The Forge Wiki - Complete Knowledge Base">
+    <meta property="og:description" content="Your comprehensive guide to The Forge Roblox game. Explore ores, recipes, crafting guides, and more.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://forge-calculator.com/wiki/">
+    <meta name="twitter:title" content="The Forge Wiki - Complete Knowledge Base">
+    <meta name="twitter:description" content="Your comprehensive guide to The Forge Roblox game. Explore ores, recipes, crafting guides, and more.">
+    
+    <title>The Forge Wiki - Complete Knowledge Base</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YRP03D44XS');
+    </script>
+    
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="EpsJtUp2VOHq8C8Dwkg1zQ" async></script>
+    
+    <!-- Advertisement code removed for security compliance --></head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📚 The Forge Wiki</h1>
+                                    <nav>
+                <a href="/recipes/">Recipes</a>
+                <a href="/codes.html">Codes</a>
+                <a href="/">Calculator</a>
+                <a href="/ore/">Ore</a>
+                <a href="/wiki/">Wiki</a>
+                <a href="/weapons.html">Weapons</a>
+                <a href="/armor.html">Armor</a>
+                <a href="/private-server.html">Private Servers</a>
+                <a href="/blog/">Blog</a>
+                <a href="/feedback.html">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="wiki-hero">
+            <h2>📚 The Forge Knowledge Base</h2>
+            <p>Your complete guide to mastering The Forge. Explore guides, recipes, ores, and everything you need to become a legendary blacksmith.</p>
+        </div>
+
+        <!-- What is The Forge Section -->
+        <div style="background: #fff; border-radius: 20px; padding: 3rem 2.5rem; margin-bottom: 2rem; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);">
+            <h2 style="color: #ff5722; font-size: 2rem; margin-bottom: 1.5rem; text-align: center; font-weight: 700;">⚒️ What is The Forge?</h2>
+            
+            <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 1.15rem; line-height: 1.8;">
+                <strong style="color: #ff5722;">The Forge</strong> is an immersive Roblox adventure game where you become a legendary blacksmith. Venture into dangerous caverns, mine precious ores, craft powerful weapons and armor, and battle fearsome enemies in your quest for glory.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <!-- Mining -->
+                <div style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-radius: 16px; padding: 2rem; border-left: 4px solid #4caf50;">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">⛏️</div>
+                    <h3 style="color: #2e7d32; font-size: 1.3rem; margin-bottom: 1rem; text-align: center;">Mining</h3>
+                    <p style="color: #555; line-height: 1.6; text-align: center;">
+                        Mine ore veins in unstable caverns. Discover rare materials hidden deep underground.
+                    </p>
+                </div>
+
+                <!-- Forging -->
+                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 16px; padding: 2rem; border-left: 4px solid #ff9800;">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">🔨</div>
+                    <h3 style="color: #e65100; font-size: 1.3rem; margin-bottom: 1rem; text-align: center;">Forging</h3>
+                    <p style="color: #555; line-height: 1.6; text-align: center;">
+                        Forge materials into weapons and armor. Create legendary equipment with unique properties.
+                    </p>
+                </div>
+
+                <!-- Combat -->
+                <div style="background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%); border-radius: 16px; padding: 2rem; border-left: 4px solid #f44336;">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">⚔️</div>
+                    <h3 style="color: #c62828; font-size: 1.3rem; margin-bottom: 1rem; text-align: center;">Combat</h3>
+                    <p style="color: #555; line-height: 1.6; text-align: center;">
+                        Battle zombies and subterranean enemies. Test your skills against dangerous foes.
+                    </p>
+                </div>
+
+                <!-- Exploration -->
+                <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 16px; padding: 2rem; border-left: 4px solid #2196f3;">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">🗺️</div>
+                    <h3 style="color: #1565c0; font-size: 1.3rem; margin-bottom: 1rem; text-align: center;">Exploration</h3>
+                    <p style="color: #555; line-height: 1.6; text-align: center;">
+                        Explore high-risk regions and hidden areas. Uncover secrets in dangerous territories.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Key Features -->
+            <div style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); border-radius: 16px; padding: 2rem; margin-top: 2rem; border-left: 4px solid #9c27b0;">
+                <h3 style="color: #6a1b9a; font-size: 1.3rem; margin-bottom: 1rem;">🎮 Core Gameplay Features</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                    <ul style="color: #555; line-height: 1.8; margin-left: 1.5rem;">
+                        <li><strong>Resource Gathering:</strong> Mine various ore types with different rarities</li>
+                        <li><strong>Crafting System:</strong> Combine ores to create unique equipment</li>
+                        <li><strong>Character Races:</strong> Choose from 13 races with unique abilities</li>
+                        <li><strong>Progressive Difficulty:</strong> From starter zones to endgame content</li>
+                    </ul>
+                    <ul style="color: #555; line-height: 1.8; margin-left: 1.5rem;">
+                        <li><strong>Multiple Locations:</strong> Stonewake's Cross, Forgotten Kingdom, and more</li>
+                        <li><strong>Enemy Variety:</strong> Face Zombies, Skeletons, and Hell Skeletons</li>
+                        <li><strong>NPC Interactions:</strong> Trade, quest, and upgrade with various NPCs</li>
+                        <li><strong>Reward System:</strong> Earn EXP, Gold, Essences, and rare items</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div style="text-align: center; margin-top: 2rem; padding: 2rem; background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); border-radius: 16px; color: #fff;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #fff;">Ready to Start Your Journey?</h3>
+                <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">Use our tools and guides to become a master blacksmith!</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="/" style="background: #fff; color: #ff5722; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: transform 0.3s;">🔥 Try Calculator</a>
+                    <a href="/codes.html" style="background: rgba(255, 255, 255, 0.2); color: #fff; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; border: 2px solid #fff; transition: transform 0.3s;">🎁 Get Free Codes</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Tips Section -->
+        <div style="background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%); border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 10px 40px rgba(255, 87, 34, 0.3); border: 2px solid #ff5722;">
+            <h2 style="color: #ff9800; font-size: 2rem; margin-bottom: 2rem; text-align: center; font-weight: 700; text-shadow: 0 2px 10px rgba(255, 152, 0, 0.3);">💡 QUICK TIPS</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Tip 1: Luck Stat & Race Rerolls -->
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; border-left: 4px solid #2196f3; backdrop-filter: blur(10px);">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="background: #2196f3; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">❓</div>
+                        <h3 style="color: #64b5f6; font-size: 1.3rem; font-weight: 700; margin: 0;">Luck Stat & Race Rerolls</h3>
+                    </div>
+                    <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7; font-size: 1.05rem;">
+                        The <strong style="color: #ffeb3b;">Luck</strong> stat does <strong style="color: #f44336;">NOT</strong> affect your race reroll chances. It only impacts mining drops and loot.
+                    </p>
+                </div>
+
+                <!-- Tip 2: Save Your Runes -->
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; border-left: 4px solid #ff9800; backdrop-filter: blur(10px);">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="background: #ff9800; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">❓</div>
+                        <h3 style="color: #ffb74d; font-size: 1.3rem; font-weight: 700; margin: 0;">Save Your Runes</h3>
+                    </div>
+                    <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7; font-size: 1.05rem;">
+                        Don't apply runes until you get the <strong style="color: #9c27b0;">Arcane Pickaxe</strong>. Lower-tier pickaxes will be replaced quickly.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="wikiSearch" 
+                    placeholder="Search the wiki... (e.g., 'iron ore', 'legendary sword', 'crafting guide')"
+                    autocomplete="off"
+                >
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <h3>🚀 Popular Pages</h3>
+            <div class="quick-links-grid">
+                <a href="/" class="quick-link-btn">⚒️ Calculator</a>
+                <a href="/codes.html" class="quick-link-btn">🎁 Active Codes</a>
+                <a href="/recipes/" class="quick-link-btn">📖 Recipes</a>
+                <a href="/ore/" class="quick-link-btn">🪨 Ore Guide</a>
+            </div>
+        </div>
+
+        <!-- Categories Section -->
+        <div class="categories-section">
+            <h2 class="section-title">📑 Browse by Category</h2>
+            
+            <div class="categories-grid">
+                <!-- Codes & Rewards -->
+                <div class="category-card">
+                    <div class="category-icon">🎁</div>
+                    <h3 class="category-title"><a href="/codes.html" style="color: inherit; text-decoration: none;">Codes & Rewards</a></h3>
+                </div>
+
+                <!-- Calculators -->
+                <div class="category-card">
+                    <div class="category-icon">⚒️</div>
+                    <h3 class="category-title"><a href="/" style="color: inherit; text-decoration: none;">Calculators</a></h3>
+                </div>
+
+                <!-- Resources -->
+                <div class="category-card">
+                    <div class="category-icon">🪨</div>
+                    <h3 class="category-title"><a href="/ore/" style="color: inherit; text-decoration: none;">Resources & Ores</a></h3>
+                </div>
+
+                <!-- Crafting -->
+                <div class="category-card">
+                    <div class="category-icon">🔨</div>
+                    <h3 class="category-title"><a href="/recipes/" style="color: inherit; text-decoration: none;">Crafting & Recipes</a></h3>
+                </div>
+
+                <!-- Weapons -->
+                <div class="category-card">
+                    <div class="category-icon">⚔️</div>
+                    <h3 class="category-title"><a href="/weapons.html" style="color: inherit; text-decoration: none;">Weapons</a></h3>
+                </div>
+
+                <!-- Armor -->
+                <div class="category-card">
+                    <div class="category-icon">🛡️</div>
+                    <h3 class="category-title"><a href="/armor.html" style="color: inherit; text-decoration: none;">Armor</a></h3>
+                </div>
+
+                <!-- Races -->
+                <div class="category-card">
+                    <div class="category-icon">👤</div>
+                    <h3 class="category-title"><a href="races.html" style="color: inherit; text-decoration: none;">Races & Traits</a></h3>
+                </div>
+
+                <!-- Enemies -->
+                <div class="category-card">
+                    <div class="category-icon">⚔️</div>
+                    <h3 class="category-title"><a href="enemies.html" style="color: inherit; text-decoration: none;">Enemies & Combat</a></h3>
+                </div>
+
+                <!-- Runes -->
+                <div class="category-card">
+                    <div class="category-icon">🔮</div>
+                    <h3 class="category-title"><a href="runes.html" style="color: inherit; text-decoration: none;">Runes & Enhancements</a></h3>
+                </div>
+
+                <!-- NPCs -->
+                <div class="category-card">
+                    <div class="category-icon">🧙</div>
+                    <h3 class="category-title"><a href="npcs.html" style="color: inherit; text-decoration: none;">NPCs & Characters</a></h3>
+                </div>
+
+                <!-- Gamepasses -->
+                <div class="category-card">
+                    <div class="category-icon">🎫</div>
+                    <h3 class="category-title"><a href="gamepass.html" style="color: inherit; text-decoration: none;">Gamepasses & Purchases</a></h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pickaxe Progression Guide -->
+        <div style="background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%); border-radius: 20px; padding: 3rem; margin-bottom: 3rem; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); border: 2px solid #ff9800;">
+            <h2 style="color: #ff9800; font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center; font-weight: 800; text-shadow: 0 2px 15px rgba(255, 152, 0, 0.4);">⛏️ PICKAXE PROGRESSION</h2>
+            
+            <!-- Recommended Upgrade Path -->
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+                <h3 style="color: #ffb74d; font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 700;">📋 Recommended Upgrade Path</h3>
+                <p style="color: rgba(255, 255, 255, 0.85); margin-bottom: 1.5rem; line-height: 1.7;">Follow this pickaxe order for optimal progression:</p>
+                
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                    <div style="background: linear-gradient(135deg, #607d8b 0%, #455a64 100%); padding: 1rem 1.5rem; border-radius: 12px; text-align: center; min-width: 150px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">⛏️</div>
+                        <div style="color: #fff; font-weight: 700; margin-bottom: 0.25rem;">Iron Pickaxe</div>
+                        <div style="color: rgba(255, 255, 255, 0.7); font-size: 0.85rem;">Pickaxe Shop (World 1)</div>
+                    </div>
+                    <div style="color: #ff9800; font-size: 1.5rem;">→</div>
+                    <div style="background: linear-gradient(135deg, #78909c 0%, #546e7a 100%); padding: 1rem 1.5rem; border-radius: 12px; text-align: center; min-width: 150px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">⛏️</div>
+                        <div style="color: #fff; font-weight: 700; margin-bottom: 0.25rem;">Stonewake's Pickaxe</div>
+                        <div style="color: rgba(255, 255, 255, 0.7); font-size: 0.85rem;">Cave (World 1)</div>
+                    </div>
+                    <div style="color: #ff9800; font-size: 1.5rem;">→</div>
+                    <div style="background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%); padding: 1rem 1.5rem; border-radius: 12px; text-align: center; min-width: 150px; box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">⛏️</div>
+                        <div style="color: #fff; font-weight: 700; margin-bottom: 0.25rem;">Cobalt Pickaxe</div>
+                        <div style="color: rgba(255, 255, 255, 0.7); font-size: 0.85rem;">Pickaxe Shop (World 2)</div>
+                    </div>
+                    <div style="color: #ff9800; font-size: 1.5rem;">→</div>
+                    <div style="background: linear-gradient(135deg, #5c6bc0 0%, #3949ab 100%); padding: 1rem 1.5rem; border-radius: 12px; text-align: center; min-width: 150px; box-shadow: 0 4px 15px rgba(92, 107, 192, 0.4);">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">⛏️</div>
+                        <div style="color: #fff; font-weight: 700; margin-bottom: 0.25rem;">Titanium Pickaxe</div>
+                        <div style="color: rgba(255, 255, 255, 0.7); font-size: 0.85rem;">Pickaxe Shop (World 2)</div>
+                    </div>
+                    <div style="color: #ff9800; font-size: 1.5rem;">→</div>
+                    <div style="background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%); padding: 1rem 1.5rem; border-radius: 12px; text-align: center; min-width: 150px; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">⛏️</div>
+                        <div style="color: #fff; font-weight: 700; margin-bottom: 0.25rem;">Mythril Pickaxe</div>
+                        <div style="color: rgba(255, 255, 255, 0.7); font-size: 0.85rem;">Pickaxe Shop (World 2)</div>
+                    </div>
+                </div>
+                
+                <!-- Arcane Pickaxe - Special Highlight -->
+                <div style="background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%); padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 8px 30px rgba(156, 39, 176, 0.5); border: 2px solid #ce93d8;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">✨</div>
+                    <div style="color: #fff; font-weight: 800; font-size: 1.3rem; margin-bottom: 0.25rem;">Arcane Pickaxe</div>
+                    <div style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem;">Bard Quest (World 1) - Your Ultimate Goal!</div>
+                </div>
+            </div>
+
+            <!-- Tips Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <!-- Money-Saving Tip -->
+                <div style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid #ffc107; border-radius: 12px; padding: 1.5rem;">
+                    <h4 style="color: #ffc107; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span>💡</span> Money-Saving Tip
+                    </h4>
+                    <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7;">
+                        Before upgrading to your next pickaxe, buy a <strong style="color: #ffeb3b;">Bronze Pickaxe</strong> first. Then sell your current pickaxe to recover gold. This lets you keep mining while freeing up funds to afford the next tier faster.
+                    </p>
+                </div>
+
+                <!-- Rune Tip -->
+                <div style="background: rgba(156, 39, 176, 0.1); border-left: 4px solid #9c27b0; border-radius: 12px; padding: 1.5rem;">
+                    <h4 style="color: #ce93d8; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span>⚡</span> Rune Tip
+                    </h4>
+                    <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7;">
+                        Only apply runes to the <strong style="color: #ce93d8;">Arcane Pickaxe</strong> – don't waste them on lower tiers. Equip all <strong style="color: #ffeb3b;">3 Luck Runes</strong> for maximum luck. Each Luck Rune provides up to <strong style="color: #4caf50;">16% bonus</strong> at max.
+                    </p>
+                </div>
+
+                <!-- Earning Money Tip -->
+                <div style="background: rgba(76, 175, 80, 0.1); border-left: 4px solid #4caf50; border-radius: 12px; padding: 1.5rem;">
+                    <h4 style="color: #81c784; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span>💰</span> Earning Money for Arcane Pickaxe
+                    </h4>
+                    <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7;">
+                        For a quick gold boost, complete the <strong style="color: #ffeb3b;">Monkey Quest</strong>, <strong style="color: #ffeb3b;">Line's Quest</strong>, and work on <strong style="color: #ffeb3b;">Rowan's</strong> and <strong style="color: #ffeb3b;">Moro's</strong> quests. Once those are done or hard to progress, refer to the Money Making Methods section below.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Money Making Methods -->
+        <div style="background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%); border-radius: 20px; padding: 3rem; margin-bottom: 3rem; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); border: 2px solid #4caf50;">
+            <h2 style="color: #4caf50; font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center; font-weight: 800; text-shadow: 0 2px 15px rgba(76, 175, 80, 0.4);">💰 MONEY MAKING METHODS</h2>
+            <p style="color: rgba(255, 255, 255, 0.85); text-align: center; margin-bottom: 2.5rem; font-size: 1.1rem; line-height: 1.7;">
+                Best ways to earn gold in The Forge
+            </p>
+
+            <div style="display: grid; gap: 2rem;">
+                <!-- Method 1: Farm High-Tier Mobs -->
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; border-left: 4px solid #ff9800; backdrop-filter: blur(10px); transition: transform 0.3s;">
+                    <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                        <div style="background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: #fff; flex-shrink: 0; box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);">1</div>
+                        <div style="flex: 1;">
+                            <h3 style="color: #ffb74d; font-size: 1.5rem; margin-bottom: 1rem; font-weight: 700;">Farm High-Tier Mobs for Essence</h3>
+                            <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.8; font-size: 1.05rem;">
+                                Kill high-tier enemies to collect <strong style="color: #ffeb3b;">Essence</strong>, then sell it for significant profit. This is one of the <strong style="color: #4caf50;">most consistent gold sources</strong> in the game.
+                            </p>
+                            <div style="margin-top: 1rem; padding: 1rem; background: rgba(255, 235, 59, 0.1); border-radius: 8px; border-left: 3px solid #ffeb3b;">
+                                <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; margin: 0;">
+                                    <strong style="color: #ffeb3b;">💡 Tip:</strong> Focus on high-tier zones for better Essence drops and higher sell prices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Method 2: Forge & Sell Equipment -->
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem; border-left: 4px solid #2196f3; backdrop-filter: blur(10px); transition: transform 0.3s;">
+                    <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                        <div style="background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: #fff; flex-shrink: 0; box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);">2</div>
+                        <div style="flex: 1;">
+                            <h3 style="color: #64b5f6; font-size: 1.5rem; margin-bottom: 1rem; font-weight: 700;">Forge & Sell Heavy Armor or Colossal Swords</h3>
+                            <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.8; font-size: 1.05rem;">
+                                Craft <strong style="color: #ffeb3b;">Heavy Armor</strong> or <strong style="color: #ffeb3b;">Colossal Swords</strong> and sell them. These high-tier items fetch the <strong style="color: #4caf50;">best prices</strong> and are ideal for converting ores into gold.
+                            </p>
+                            <div style="margin-top: 1rem; padding: 1rem; background: rgba(33, 150, 243, 0.1); border-radius: 8px; border-left: 3px solid #2196f3;">
+                                <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; margin: 0;">
+                                    <strong style="color: #64b5f6;">💡 Tip:</strong> Use common ores for crafting items to sell - save rare ores for your own equipment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- Quest Priority Guide -->
+        <div style="background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%); border-radius: 20px; padding: 3rem; margin-bottom: 3rem; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); border: 2px solid #9c27b0;">
+            <h2 style="color: #ce93d8; font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center; font-weight: 800; text-shadow: 0 2px 15px rgba(156, 39, 176, 0.4);">📜 QUEST PRIORITY GUIDE</h2>
+            <p style="color: rgba(255, 255, 255, 0.85); text-align: center; margin-bottom: 2.5rem; font-size: 1.1rem; line-height: 1.7;">
+                Recommended Quest Order for Efficient Progression
+            </p>
+
+            <!-- World 1 Priorities -->
+            <div style="background: rgba(121, 85, 72, 0.2); border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; border: 2px solid #8d6e63;">
+                <h3 style="color: #bcaaa4; font-size: 1.8rem; margin-bottom: 1.5rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                    <span>🗺️</span> World 1 Priorities
+                </h3>
+                
+                <div style="display: grid; gap: 1.5rem;">
+                    <!-- 1. Sensei Moro Quest -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px); border-left: 4px solid #ffc107;">
+                        <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                            <div style="background: linear-gradient(135deg, #ffc107 0%, #ffa000 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: #000; flex-shrink: 0; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);">1</div>
+                            <div style="flex: 1;">
+                                <h4 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Sensei Moro Quest</h4>
+                                <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7; font-size: 1.05rem;">
+                                    Top priority in World 1. Essential progression quest.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Bard Quest -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px); border-left: 4px solid #ffc107;">
+                        <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                            <div style="background: linear-gradient(135deg, #ffc107 0%, #ffa000 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: #000; flex-shrink: 0; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);">2</div>
+                            <div style="flex: 1;">
+                                <h4 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Bard Quest</h4>
+                                <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7; font-size: 1.05rem;">
+                                    Required to unlock the <strong style="color: #9c27b0;">Arcane Pickaxe</strong>. Critical for progression.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Low Priority: Cat Quest -->
+                    <div style="background: rgba(255, 255, 255, 0.03); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px); border-left: 4px solid #616161; opacity: 0.7;">
+                        <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                            <div style="background: linear-gradient(135deg, #757575 0%, #616161 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: #fff; flex-shrink: 0;">❗</div>
+                            <div style="flex: 1;">
+                                <h4 style="color: #9e9e9e; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Cat Quest</h4>
+                                <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.7; font-size: 1.05rem;">
+                                    Very low priority. Locked behind Goblin King quest.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- World 2 Priorities -->
+            <div style="background: rgba(25, 118, 210, 0.2); border-radius: 16px; padding: 2.5rem; border: 2px solid #1976d2;">
+                <h3 style="color: #64b5f6; font-size: 1.8rem; margin-bottom: 1.5rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                    <span>🗺️</span> World 2 Priorities
+                </h3>
+                
+                <div style="display: grid; gap: 1.5rem;">
+                    <!-- 1. Sensei Moro Quest -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px); border-left: 4px solid #ffc107;">
+                        <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                            <div style="background: linear-gradient(135deg, #ffc107 0%, #ffa000 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: #000; flex-shrink: 0; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);">1</div>
+                            <div style="flex: 1;">
+                                <h4 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Sensei Moro Quest</h4>
+                                <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7; font-size: 1.05rem;">
+                                    Continue as top priority in World 2.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Masked Stranger Daily Quests -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px); border-left: 4px solid #ffc107;">
+                        <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                            <div style="background: linear-gradient(135deg, #ffc107 0%, #ffa000 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: #000; flex-shrink: 0; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);">2</div>
+                            <div style="flex: 1;">
+                                <h4 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Masked Stranger Daily Quests</h4>
+                                <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7; font-size: 1.05rem;">
+                                    High priority. Complete daily for consistent rewards.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Captain Rowan Quest -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px); border-left: 4px solid #ffc107;">
+                        <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                            <div style="background: linear-gradient(135deg, #ffc107 0%, #ffa000 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: #000; flex-shrink: 0; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);">3</div>
+                            <div style="flex: 1;">
+                                <h4 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Captain Rowan Quest</h4>
+                                <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7; font-size: 1.05rem;">
+                                    Prioritize once you reach World 2.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Line's Quest -->
+                    <div style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px); border-left: 4px solid #ffc107;">
+                        <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                            <div style="background: linear-gradient(135deg, #ffc107 0%, #ffa000 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: #000; flex-shrink: 0; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);">4</div>
+                            <div style="flex: 1;">
+                                <h4 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Line's Quest</h4>
+                                <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7; font-size: 1.05rem;">
+                                    High priority. Complete for good rewards.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Monkey Quest -->
+                    <div style="background: rgba(255, 255, 255, 0.04); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px); border-left: 4px solid #9e9e9e;">
+                        <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                            <div style="background: linear-gradient(135deg, #9e9e9e 0%, #757575 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: #fff; flex-shrink: 0;">5</div>
+                            <div style="flex: 1;">
+                                <h4 style="color: #bdbdbd; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Monkey Quest</h4>
+                                <p style="color: rgba(255, 255, 255, 0.75); line-height: 1.7; font-size: 1.05rem;">
+                                    Good for quick money.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Low Priority: Goblin King Quest -->
+                    <div style="background: rgba(255, 255, 255, 0.03); border-radius: 12px; padding: 2rem; backdrop-filter: blur(10px); border-left: 4px solid #616161; opacity: 0.7;">
+                        <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                            <div style="background: linear-gradient(135deg, #757575 0%, #616161 100%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; color: #fff; flex-shrink: 0;">❗</div>
+                            <div style="flex: 1;">
+                                <h4 style="color: #9e9e9e; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Goblin King Quest</h4>
+                                <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.7; font-size: 1.05rem;">
+                                    Very low priority. Goblin Cave offers no real benefits.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div style="margin-top: 2rem; padding: 2rem; background: linear-gradient(135deg, rgba(156, 39, 176, 0.15) 0%, rgba(123, 31, 162, 0.15) 100%); border-radius: 16px; border: 2px solid #9c27b0;">
+                <h4 style="color: #ce93d8; font-size: 1.3rem; margin-bottom: 1rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                    <span>💡</span> Quest Strategy
+                </h4>
+                <ul style="color: rgba(255, 255, 255, 0.85); line-height: 1.8; margin-left: 1.5rem;">
+                    <li><strong style="color: #ffc107;">Sensei Moro:</strong> Always your #1 priority in both worlds - essential for main story progression</li>
+                    <li><strong style="color: #9c27b0;">Bard Quest:</strong> Critical in World 1 - unlocks the Arcane Pickaxe (see Pickaxe Progression above)</li>
+                    <li><strong style="color: #64b5f6;">Daily Quests:</strong> Masked Stranger dailies provide consistent rewards - don't skip them</li>
+                    <li><strong style="color: #9e9e9e;">Avoid Low Priority:</strong> Cat Quest and Goblin King Quest offer minimal benefits - focus on high-priority quests first</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- FAQ Section -->
+        <div style="background: #fff; border-radius: 20px; padding: 3rem 2.5rem; margin-bottom: 3rem; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);">
+            <h2 style="color: #ff5722; font-size: 2rem; margin-bottom: 2rem; text-align: center; font-weight: 700;">❓ Frequently Asked Questions</h2>
+            
+            <!-- Game Features -->
+            <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #2196f3;">
+                <h3 style="color: #1565c0; font-size: 1.5rem; margin-bottom: 1.5rem;">🎮 Game Features</h3>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will there be a storyline?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Yes, but it won't be a focus.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will it be available on [Platform]?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Yes, it'll be playable on all platforms.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will the game have gamepasses/p2w?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: The game will not be p2w with crazy gamepasses like 2x luck but there will be buyables in the form of potions and gamepasses with slight advantages.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will the game have player levels?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Yes, there will be levels that will increase your stash capacity, equipment capacity can be increased with money.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will there be trading?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Yes, there will be trading unlocked in late game.</p>
+                </div>
+                
+                <div>
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will there be runes/how to obtain?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Yes, there will be runes, and they can be obtained through mob and boss drops, quests, or achievement rewards.</p>
+                </div>
+            </div>
+
+            <!-- Weapons & Combat -->
+            <div style="background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #f44336;">
+                <h3 style="color: #c62828; font-size: 1.5rem; margin-bottom: 1.5rem;">⚔️ Weapons & Combat</h3>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: How many weapons will there be?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Weapons will be separated into different categories with different designs and size.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: What weapons are currently in the game?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Dagger, gauntlets, straight sword, katana, greatsword, greataxe, and colossal weapons. (The scythe falls under the greataxe category.)</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will there be pvp?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Yes, there will be.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: What's the game combat like?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: There's a dash and a block. There are skills planned and passives.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will there be parry?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Yes, the devs are adding parry.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will we be able to craft magical weapons like staffs?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Only swords/melee for now.</p>
+                </div>
+                
+                <div>
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will the game have anime/movie based weapons?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: There's already a dragonslayer weapon so its safe to assume there will be more fictional weapons.</p>
+                </div>
+            </div>
+
+            <!-- Equipment & Customization -->
+            <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #ff9800;">
+                <h3 style="color: #e65100; font-size: 1.5rem; margin-bottom: 1.5rem;">🛡️ Equipment & Customization</h3>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will there be enchants or quality to make equipment unique?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Yes, there will be several things that make equipment unique like: quality, ores used and runes.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will runes only be elemental?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: No, runes will not only be elemental they'll also have 1-3 traits (you can also enchant gear for more rune slots).</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: What type of equipment can have runes and how many?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Any equipment can have runes as long as you upgrade them, except for pickaxes which some do come with premade rune slots.</p>
+                </div>
+                
+                <div>
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: What are the armor types now?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: They are separated into 3 categories: helmet/chestplate/leggings.</p>
+                </div>
+            </div>
+
+            <!-- Bosses & Events -->
+            <div style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); border-radius: 16px; padding: 2rem; border-left: 4px solid #9c27b0;">
+                <h3 style="color: #6a1b9a; font-size: 1.5rem; margin-bottom: 1.5rem;">👹 Bosses & Events</h3>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will there be world events?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Yes, world events are planned.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Will there be intros to boss fights and cutscenes for deaths?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: Yes, bosses will have cutscenes/intros as for deaths nothing can be said for that right now.</p>
+                </div>
+                
+                <div>
+                    <p style="color: #333; font-weight: 600; margin-bottom: 0.5rem;">Q: Do bosses drop materials or loot to craft weapons and stuff?</p>
+                    <p style="color: #555; margin-left: 1rem;">A: For now they dont but they drop runes currently.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin: 2rem auto; max-width: 1200px; text-align: center;">
+        <p style="font-size: 0.75rem; color: #999; margin-bottom: 0.5rem;">Advertisement</p>
+        <!-- Advertisement script removed for security compliance -->
+        <div id="container-79ca9dd9143ba2de7e3df6c789a12d4c"></div>
+        <div style="margin-top: 1rem;">
+            <a href="#" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s;">Special Offer - Click Here</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Forge Calculator Wiki. Not affiliated with Roblox or The Forge developers.</p>
+            <p><a href="/">Home</a> | <a href="/wiki/">Wiki</a> | <a href="/blog/">Blog</a> | <a href="/codes.html">Codes</a> | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms-of-service.html">Terms</a></p>
+        </div>
+            
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+            </p>
+            
+            <!-- 友情链接 -->
+            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+                <strong style="color: #ff9800; margin-right: 1rem;">友情链接:</strong>
+                <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
+            </p>
+    </footer>
+
+    <script>
+        // Wiki search data
+        const wikiPages = [
+            // Game Overview
+            { title: 'What is The Forge?', url: '/wiki.html', desc: 'Learn about The Forge Roblox game - mining, forging, combat, and exploration', keywords: 'what is the forge game overview about gameplay roblox' },
+            
+            // Tools
+            { title: 'Forge Calculator', url: '/', desc: 'Calculate ore combinations and preview crafting results', keywords: 'calculator tool craft preview' },
+            { title: 'Recipe Database', url: '/recipes/', desc: 'Browse all crafting recipes for weapons and armor', keywords: 'recipes database crafting formulas' },
+            
+            // Guides
+            { title: 'Complete Progression Guide', url: '/blog/mastering-the-forge.html', desc: 'From novice to legendary blacksmith - complete progression path', keywords: 'guide progression beginner advanced master' },
+            { title: 'Ore Guide', url: '/ore/', desc: 'Complete guide to all ore types and properties', keywords: 'ore guide types properties mining' },
+            
+            // Ores
+            { title: 'Iron Ore', url: '/ore/#iron', desc: 'Common ore perfect for beginners - provides durability', keywords: 'iron ore common basic durability' },
+            { title: 'Coal', url: '/ore/#coal', desc: 'Essential for smelting and heat resistance', keywords: 'coal ore smelting heat resistance' },
+            { title: 'Gold Ore', url: '/ore/#gold', desc: 'Rare ore that enhances equipment value', keywords: 'gold ore rare wealth coins' },
+            { title: 'Gem Ore', url: '/ore/#gem', desc: 'Extremely rare ore for legendary equipment', keywords: 'gem ore legendary rare powerful' },
+            { title: 'Crystal Ore', url: '/ore/#crystal', desc: 'Special ore with magical properties', keywords: 'crystal ore magic mana regen' },
+            { title: 'Shadow Ore', url: '/ore/#shadow', desc: 'Dark ore with stealth and critical hit bonuses', keywords: 'shadow ore dark stealth critical crit' },
+            
+            // Recipes
+            { title: 'Basic Iron Sword', url: '/recipes/#basic-sword', desc: 'Beginner weapon recipe - 60% Iron, 30% Coal, 10% Gold', keywords: 'iron sword basic beginner weapon recipe' },
+            { title: 'Shadow Blade', url: '/recipes/#shadow-blade', desc: 'Intermediate weapon with critical hit - 40% Iron, 40% Shadow, 20% Gold', keywords: 'shadow blade intermediate critical weapon' },
+            { title: 'Crystal Staff', url: '/recipes/#crystal-staff', desc: 'Mage weapon with magic power - 50% Crystal, 30% Gold, 20% Iron', keywords: 'crystal staff mage magic weapon' },
+            { title: 'Legendary Sword', url: '/recipes/#ultimate-sword', desc: 'Ultimate legendary weapon - 40% Gem, 30% Shadow, 20% Crystal, 10% Gold', keywords: 'legendary sword ultimate best weapon' },
+            
+            // Codes
+            { title: 'Active Codes', url: '/codes.html', desc: 'Get free ores and rewards with working codes', keywords: 'codes active working free rewards ores' },
+            { title: 'How to Redeem Codes', url: '/codes.html#how-to', desc: 'Step-by-step guide to redeeming codes', keywords: 'redeem codes how to tutorial' },
+            
+            // Weapons & Armor
+            { title: 'All Weapons Guide', url: '/weapons.html', desc: 'Complete guide to all 8 weapon types - Daggers, Swords, Katanas, Axes, and more', keywords: 'weapons guide types daggers swords katanas axes gauntlets colossal' },
+            { title: 'All Armor Guide', url: '/armor.html', desc: 'Complete guide to all 15 armor pieces - Light, Medium, and Heavy armor', keywords: 'armor guide types light medium heavy knight samurai dark' },
+            
+            // Blog
+            { title: 'Introducing The Calculator', url: '/blog/introducing-calculator.html', desc: 'Learn about the Forge Calculator features', keywords: 'calculator introduction features blog' },
+            { title: 'Blog Articles', url: '/blog/', desc: 'Read strategy guides and tips', keywords: 'blog articles guides tips strategies' },
+            
+            // Enemies
+            { title: 'Enemies & Combat', url: '/wiki.html#enemies-overview', desc: 'Learn about all hostile NPCs and combat encounters', keywords: 'enemies combat hostile npc monsters' },
+            { title: 'Zombies', url: '/wiki.html#enemies-zombies', desc: 'First enemy type found in Stonewake\'s Cross and The Cave', keywords: 'zombies enemy first starter cave' },
+            { title: 'Skeletons', url: '/wiki.html#enemies-skeletons', desc: 'Second enemy type in The Forgotten Kingdom', keywords: 'skeletons enemy forgotten kingdom' },
+            { title: 'Hell Skeletons', url: '/wiki.html#enemies-hell-skeletons', desc: 'Dangerous enemies in volcanic depths of Forgotten Kingdom', keywords: 'hell skeletons enemy fire volcanic endgame' },
+            { title: 'Slimes', url: '/wiki.html#enemies-slimes', desc: 'Slime enemies in The Forge', keywords: 'slimes enemy' },
+            
+            // Races
+            { title: 'Races & Traits', url: '/wiki.html#races-overview', desc: 'Complete guide to all 13 races and their unique abilities', keywords: 'races traits abilities stats perks' },
+            { title: 'Human Race', url: '/wiki.html#races-common', desc: 'Common balanced starter race with luck and experience bonuses', keywords: 'human race common balanced starter' },
+            { title: 'Elf Race', url: '/wiki.html#races-uncommon', desc: 'Uncommon agile race with mobility bonuses', keywords: 'elf race uncommon agile mobility' },
+            { title: 'Zombie Race', url: '/wiki.html#races-uncommon', desc: 'Uncommon sustain-focused race with health regeneration', keywords: 'zombie race uncommon sustain regen' },
+            { title: 'Goblin Race', url: '/wiki.html#races-rare', desc: 'Rare fast race good for dagger builds', keywords: 'goblin race rare fast dagger stealth' },
+            { title: 'Undead Race', url: '/wiki.html#races-rare', desc: 'Rare race with second chance ability', keywords: 'undead race rare second chance' },
+            { title: 'Orc Race', url: '/wiki.html#races-rare', desc: 'Rare melee powerhouse with high damage', keywords: 'orc race rare melee damage strong' },
+            { title: 'Dwarf Race', url: '/wiki.html#races-epic', desc: 'Epic race best for mining and crafting', keywords: 'dwarf race epic mining crafting gathering' },
+            { title: 'Shadow Race', url: '/wiki.html#races-epic', desc: 'Epic race with high agility and evasion', keywords: 'shadow race epic agility evasion dodge' },
+            { title: 'Minotaur Race', url: '/wiki.html#races-legendary', desc: 'Legendary tanky melee powerhouse', keywords: 'minotaur race legendary tank melee' },
+            { title: 'Dragonborn Race', url: '/wiki.html#races-legendary', desc: 'Legendary strong all-around attacker', keywords: 'dragonborn race legendary dragon fire' },
+            { title: 'Golem Race', url: '/wiki.html#races-legendary', desc: 'Legendary extremely tanky race', keywords: 'golem race legendary tank defense' },
+            { title: 'Angel Race', url: '/wiki.html#races-mythical', desc: 'Mythical race with high mobility and utility', keywords: 'angel race mythical wings mobility holy' },
+            { title: 'Demon Race', url: '/wiki.html#races-mythical', desc: 'Mythical race with high damage and AoE', keywords: 'demon race mythical damage fire aoe' },
+            
+            // NPCs
+            { title: 'NPCs & Characters', url: '/wiki.html#npc-sensei', desc: 'Meet all the helpful NPCs in The Forge', keywords: 'npc characters people quest merchant' },
+            { title: 'Sensei Moro', url: '/wiki.html#npc-sensei', desc: 'Tutorial and main quest giver in Stonewake\'s Cross and Forgotten Kingdom', keywords: 'sensei moro tutorial quest main story' },
+            { title: 'Marbles', url: '/wiki.html#npc-marbles', desc: 'Merchant who buys your weapons and armor', keywords: 'marbles merchant sell equipment weapons armor' },
+            { title: 'Miner Fred', url: '/wiki.html#npc-fred', desc: 'Sells pickaxes for mining ores', keywords: 'miner fred pickaxe mining tools' },
+            { title: 'Maria', url: '/wiki.html#npc-maria', desc: 'Potion seller for consumables', keywords: 'maria potion seller consumables' },
+            { title: 'Runemaker', url: '/wiki.html#npc-runemaker', desc: 'Craft runes for equipment enhancement', keywords: 'runemaker runes craft enhancement' },
+            { title: 'Greedy Cay', url: '/wiki.html#npc-greedy', desc: 'Buys runes, essence, and ores for coins', keywords: 'greedy cay sell runes essence ores coins' },
+            { title: 'Bard', url: '/wiki.html#npc-bard', desc: 'Quest giver for the lost guitar quest', keywords: 'bard guitar quest music' },
+        ];
+
+        // Search functionality
+        const searchInput = document.getElementById('wikiSearch');
+        const searchResults = document.getElementById('searchResults');
+
+        searchInput.addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase().trim();
+            
+            if (query.length < 2) {
+                searchResults.classList.remove('active');
+                searchResults.innerHTML = '';
+                return;
+            }
+
+            // Filter pages based on query
+            const results = wikiPages.filter(page => {
+                return page.title.toLowerCase().includes(query) ||
+                       page.desc.toLowerCase().includes(query) ||
+                       page.keywords.toLowerCase().includes(query);
+            }).slice(0, 8); // Limit to 8 results
+
+            if (results.length === 0) {
+                searchResults.innerHTML = '<div style="padding: 1rem; text-align: center; color: #999;">No results found. Try different keywords.</div>';
+                searchResults.classList.add('active');
+                return;
+            }
+
+            // Display results
+            searchResults.innerHTML = results.map(page => `
+                <div class="search-result-item">
+                    <a href="${page.url}">
+                        <div class="search-result-title">${highlightText(page.title, query)}</div>
+                        <div class="search-result-desc">${highlightText(page.desc, query)}</div>
+                    </a>
+                </div>
+            `).join('');
+            
+            searchResults.classList.add('active');
+        });
+
+        // Highlight matching text
+        function highlightText(text, query) {
+            const regex = new RegExp(`(${query})`, 'gi');
+            return text.replace(regex, '<strong style="background: #fff3e0; color: #ff5722;">$1</strong>');
+        }
+
+        // Close search results when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.classList.remove('active');
+            }
+        });
+
+        // Handle Enter key to go to first result
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                const firstResult = searchResults.querySelector('.search-result-item a');
+                if (firstResult) {
+                    window.location.href = firstResult.href;
+                }
+            }
+        });
+    <!-- Advertisement section removed for security compliance -->

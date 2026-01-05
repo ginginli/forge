@@ -9,7 +9,7 @@
     
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" class="yandex-hidden" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -34,290 +34,7 @@
     <meta name="twitter:description" content="Complete guide to Stone ore in The Forge. Learn mining locations, crafting uses, and tips for beginners.">
     
     <title>Stone Ore Guide - How to Get Stone in The Forge</title>
-    <style>
-        :root {
-            --forge-fire: #e64a19;
-            --forge-flame: #ff6f00;
-            --forge-ember: #bf360c;
-            --forge-glow: #ff8a50;
-            --metal-steel: #37474f;
-            --bg-darker: #1a1a1a;
-            --bg-forge: #263238;
-            --stone-gray: #757575;
-            --stone-light: #bdbdbd;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-forge) 100%);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        header {
-            background: linear-gradient(90deg, #1a1a1a 0%, #2d1810 100%);
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(255, 87, 34, 0.3);
-            border-bottom: 3px solid var(--forge-fire);
-            margin-bottom: 2rem;
-        }
-        
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        header h1 {
-            color: #fff;
-            font-size: 1.8rem;
-        }
-        
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 1.5rem;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: var(--forge-glow);
-        }
-        
-        .breadcrumb {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-        }
-        
-        .breadcrumb a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 0.5rem;
-        }
-        
-        .breadcrumb a:hover {
-            color: var(--forge-glow);
-        }
-        
-        .breadcrumb span {
-            color: var(--stone-light);
-            margin: 0 0.5rem;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, var(--stone-gray) 0%, var(--metal-steel) 100%);
-            border-radius: 15px;
-            padding: 3rem 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 40px rgba(117, 117, 117, 0.3);
-            border: 2px solid var(--stone-light);
-            text-align: center;
-            color: #fff;
-        }
-        
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        .content-section {
-            background: #fff;
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .content-section h3 {
-            color: var(--stone-gray);
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--stone-light);
-            padding-bottom: 0.5rem;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .stat-card {
-            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
-            border-radius: 10px;
-            padding: 1.5rem;
-            text-align: center;
-            border-left: 4px solid var(--stone-gray);
-            transition: transform 0.3s;
-        }
-        
-        .stat-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .stat-card h4 {
-            color: var(--stone-gray);
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .stat-value {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #333;
-        }
-        
-        .mining-guide {
-            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-            border-left: 4px solid #ff9800;
-            padding: 2rem;
-            border-radius: 10px;
-            margin: 2rem 0;
-        }
-        
-        .mining-guide h4 {
-            color: #e65100;
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-        
-        .step-list {
-            list-style: none;
-            counter-reset: step-counter;
-        }
-        
-        .step-list li {
-            counter-increment: step-counter;
-            margin-bottom: 1rem;
-            padding-left: 3rem;
-            position: relative;
-        }
-        
-        .step-list li::before {
-            content: counter(step-counter);
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: #ff9800;
-            color: #fff;
-            width: 2rem;
-            height: 2rem;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-        
-        .crafting-section {
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-            border-left: 4px solid #2196f3;
-            padding: 2rem;
-            border-radius: 10px;
-            margin: 2rem 0;
-        }
-        
-        .crafting-section h4 {
-            color: #0d47a1;
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-        
-        .recipe-example {
-            background: #fff;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .recipe-example h5 {
-            color: #ff5722;
-            margin-bottom: 0.5rem;
-        }
-        
-        .tip-box {
-            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
-            border-left: 4px solid #4caf50;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-        
-        .tip-box h4 {
-            color: #2e7d32;
-            margin-bottom: 0.5rem;
-        }
-        
-        .cta-box {
-            background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            color: #fff;
-            margin: 2rem 0;
-        }
-        
-        .cta-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-        
-        .cta-btn {
-            display: inline-block;
-            background: #fff;
-            color: #ff5722;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.3s;
-            margin: 0.5rem;
-        }
-        
-        .cta-btn:hover {
-            transform: scale(1.05);
-        }
-        
-        footer {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-            border-top: 2px solid #ff5722;
-            margin-top: 3rem;
-        }
-        
-        footer a {
-            color: #ff9800;
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="../forge-theme.css">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
@@ -344,6 +61,7 @@
                 <a href="/wiki/">Wiki</a>
                 <a href="/weapons.html">Weapons</a>
                 <a href="/armor.html">Armor</a>
+                <a href="/pickaxe.html">Pickaxe</a>
                 <a href="/private-server.html">Private Servers</a>
                 <a href="/blog/">Blog</a>
                 <a href="/feedback.html">Feedback</a>
@@ -371,14 +89,14 @@
             <h2>⛏️ How to Get Stone Ore</h2>
             
             <!-- Location Information -->
-            <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #2196f3;">
-                <h3 style="color: #0d47a1; margin-bottom: 1rem; font-size: 1.3rem;">📍 Primary Location: Stonewake's Cross</h3>
-                <p style="color: #555; line-height: 1.7; margin-bottom: 1.5rem;">
+            <div>
+                <h3>📍 Primary Location: Stonewake's Cross</h3>
+                <p>
                     Stone ore is found exclusively in <strong>Stonewake's Cross</strong>, the starting area of The Forge. This makes it the most accessible ore for new players beginning their forging journey.
                 </p>
-                <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                    <h4 style="color: #1976d2; margin-bottom: 1rem;">🪨 Rock Type: Pebbles Only</h4>
-                    <p style="color: #555; margin: 0; line-height: 1.6;">
+                <div>
+                    <h4>🪨 Rock Type: Pebbles Only</h4>
+                    <p>
                         Stone can <strong>only</strong> be found in Pebbles - the smallest and most common rock type in Stonewake's Cross. Pebbles are gray, small rocks scattered throughout the area and are the easiest to mine.
                     </p>
                 </div>
@@ -396,7 +114,7 @@
             </div>
 
             <!-- Advanced Mining Information -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+            <div>
                 <div class="tip-box">
                     <h3>💡 Mining Efficiency Tips</h3>
                     <ul>
@@ -407,9 +125,9 @@
                     </ul>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #ff9800; padding: 1.5rem; border-radius: 8px;">
-                    <h3 style="color: #e65100; margin-bottom: 0.5rem;">⚡ Why Stone is Perfect for Testing</h3>
-                    <ul style="color: #555; margin: 0;">
+                <div>
+                    <h3>⚡ Why Stone is Perfect for Testing</h3>
+                    <ul>
                         <li><strong>Test Mining Spots:</strong> Use Stone to check if an area is worth mining</li>
                         <li><strong>Practice Routes:</strong> Learn efficient mining paths with guaranteed drops</li>
                         <li><strong>Forge Fuel:</strong> Use as cheap fuel when you don't want to waste valuable ores</li>
@@ -419,12 +137,12 @@
             </div>
 
             <!-- Farming Strategy -->
-            <div style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); border-radius: 12px; padding: 2rem; border-left: 4px solid #4caf50;">
-                <h3 style="color: #2e7d32; margin-bottom: 1rem; font-size: 1.2rem;">🚀 Stone Farming Strategy</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+            <div>
+                <h3>🚀 Stone Farming Strategy</h3>
+                <div>
                     <div>
-                        <h4 style="color: #388e3c; margin-bottom: 0.5rem;">For Beginners</h4>
-                        <ul style="color: #555; margin: 0;">
+                        <h4>For Beginners</h4>
+                        <ul>
                             <li>Mine every pebble you see</li>
                             <li>Learn the mining mechanics</li>
                             <li>Build up initial inventory</li>
@@ -432,8 +150,8 @@
                         </ul>
                     </div>
                     <div>
-                        <h4 style="color: #388e3c; margin-bottom: 0.5rem;">For Experienced Players</h4>
-                        <ul style="color: #555; margin: 0;">
+                        <h4>For Experienced Players</h4>
+                        <ul>
                             <li>Use as forge fuel for testing</li>
                             <li>Quick inventory space management</li>
                             <li>Cheap crafting practice material</li>
@@ -449,16 +167,16 @@
             <h2>🗺️ Where to Get Stone</h2>
             
             <!-- Confirmed Location Information -->
-            <div style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid #9c27b0;">
-                <h3 style="color: #7b1fa2; margin-bottom: 1rem; font-size: 1.3rem;">📍 Location: Stonewake's Cross</h3>
-                <p style="color: #555; line-height: 1.7; margin-bottom: 1.5rem;">
+            <div>
+                <h3>📍 Location: Stonewake's Cross</h3>
+                <p>
                     Stone ore is <strong>exclusively found</strong> in Stonewake's Cross. This is the only location where you can find Stone ore in The Forge.
                 </p>
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <h4 style="color: #8e24aa; margin-bottom: 1rem;">📍 Basic Facts</h4>
-                        <ul style="color: #555; margin: 0; line-height: 1.6;">
+                <div>
+                    <div>
+                        <h4>📍 Basic Facts</h4>
+                        <ul>
                             <li><strong>Location:</strong> Stonewake's Cross only</li>
                             <li><strong>Rock Type:</strong> Pebbles only</li>
                             <li><strong>Drop Rate:</strong> 100% guaranteed</li>
@@ -466,9 +184,9 @@
                         </ul>
                     </div>
                     
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <h4 style="color: #8e24aa; margin-bottom: 1rem;">🪨 What to Look For</h4>
-                        <ul style="color: #555; margin: 0; line-height: 1.6;">
+                    <div>
+                        <h4>🪨 What to Look For</h4>
+                        <ul>
                             <li><strong>Pebbles:</strong> Small gray rocks</li>
                             <li><strong>Size:</strong> Smallest rock type</li>
                             <li><strong>Color:</strong> Gray/stone colored</li>
@@ -479,20 +197,20 @@
             </div>
 
             <!-- Important Notes -->
-            <div style="background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%); border-radius: 12px; padding: 2rem; margin-top: 2rem; border-left: 4px solid #f44336;">
-                <h3 style="color: #c62828; margin-bottom: 1rem;">⚠️ Important Notes</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            <div>
+                <h3>⚠️ Important Notes</h3>
+                <div>
                     <div>
-                        <h4 style="color: #d32f2f; margin-bottom: 0.5rem;">🚫 Where Stone is NOT Found</h4>
-                        <ul style="color: #555; margin: 0;">
+                        <h4>🚫 Where Stone is NOT Found</h4>
+                        <ul>
                             <li><strong>Other Areas:</strong> Stone is exclusive to Stonewake's Cross</li>
                             <li><strong>Larger Rocks:</strong> Only in pebbles, not other rock types</li>
                             <li><strong>Other Locations:</strong> No stone ore anywhere else</li>
                         </ul>
                     </div>
                     <div>
-                        <h4 style="color: #d32f2f; margin-bottom: 0.5rem;">✅ Confirmed Facts</h4>
-                        <ul style="color: #555; margin: 0;">
+                        <h4>✅ Confirmed Facts</h4>
+                        <ul>
                             <li><strong>Stonewake's Cross Only:</strong> 100% exclusive location</li>
                             <li><strong>All Pebbles:</strong> Every pebble contains stone</li>
                             <li><strong>Guaranteed Drop:</strong> 1/1 drop rate</li>
@@ -508,111 +226,111 @@
             <h2>📊 Stone Ore Statistics</h2>
             
             <!-- Official Game Description -->
-            <div style="background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border: 2px solid var(--stone-light); color: #fff;">
-                <h3 style="color: #ff9800; margin-bottom: 1rem; font-size: 1.3rem;">📖 Official Game Description</h3>
-                <blockquote style="font-size: 1.1rem; font-style: italic; color: #ffb74d; margin-bottom: 1.5rem; border-left: 4px solid #ff9800; padding-left: 1rem;">
+            <div>
+                <h3>📖 Official Game Description</h3>
+                <blockquote>
                     "It's a rock. What more do you want? 🪨"
                 </blockquote>
-                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
-                    <h4 style="color: #fff; margin-bottom: 1rem;">OVERVIEW</h4>
-                    <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
+                <div>
+                    <h4>OVERVIEW</h4>
+                    <p>
                         Stone is the most basic ore found in <strong>Stonewake's Cross</strong>. It has a guaranteed drop rate and almost no value, acting mainly as early-game filler, forge fuel, or a way to test mining spots before going after rarer ores.
                     </p>
                 </div>
             </div>
 
             <!-- Detailed Stats Grid -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+            <div>
                 <!-- Ore Profile -->
-                <div style="background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%); border-radius: 12px; padding: 2rem; border-left: 4px solid var(--stone-gray);">
-                    <h3 style="color: var(--stone-gray); margin-bottom: 1.5rem; font-size: 1.2rem;">ORE PROFILE</h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
-                        <span style="background: #4caf50; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">COMMON RESOURCE</span>
-                        <span style="background: #2196f3; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">STARTER</span>
-                        <span style="background: #ff9800; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">MATERIAL</span>
-                        <span style="background: #f44336; color: #fff; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: bold;">LOW VALUE</span>
+                <div>
+                    <h3>ORE PROFILE</h3>
+                    <div>
+                        <span>COMMON RESOURCE</span>
+                        <span>STARTER</span>
+                        <span>MATERIAL</span>
+                        <span>LOW VALUE</span>
                     </div>
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <p style="color: #555; line-height: 1.6; margin: 0; font-style: italic;">
+                    <div>
+                        <p>
                             <strong>New Forgers will mine a lot of Stone.</strong> It's easy to get, sells for almost nothing, and mostly clogs your backpack — but it's perfect for testing pickaxes, practicing routes, and fueling forges when you don't want to waste real ore.
                         </p>
                     </div>
                 </div>
 
                 <!-- Stat Overview -->
-                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 12px; padding: 2rem; border-left: 4px solid #ff9800;">
-                    <h3 style="color: #e65100; margin-bottom: 1.5rem; font-size: 1.2rem;">STAT OVERVIEW - STONE</h3>
+                <div>
+                    <h3>STAT OVERVIEW - STONE</h3>
                     
                     <!-- Drop Chance -->
-                    <div style="margin-bottom: 1.5rem;">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <span style="font-weight: bold; color: #333;">DROP CHANCE</span>
-                            <span style="font-weight: bold; color: #4caf50;">1/1 - GUARANTEED</span>
+                    <div>
+                        <div>
+                            <span>DROP CHANCE</span>
+                            <span>1/1 - GUARANTEED</span>
                         </div>
-                        <div style="background: #e0e0e0; border-radius: 10px; height: 8px; overflow: hidden;">
-                            <div style="background: linear-gradient(90deg, #4caf50 0%, #8bc34a 100%); height: 100%; width: 100%;"></div>
+                        <div>
+                            <div></div>
                         </div>
                     </div>
 
                     <!-- Multiplier -->
-                    <div style="margin-bottom: 1.5rem;">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <span style="font-weight: bold; color: #333;">MULTIPLIER</span>
-                            <span style="font-weight: bold; color: #ff9800;">0.2x - LOW</span>
+                    <div>
+                        <div>
+                            <span>MULTIPLIER</span>
+                            <span>0.2x - LOW</span>
                         </div>
-                        <div style="background: #e0e0e0; border-radius: 10px; height: 8px; overflow: hidden;">
-                            <div style="background: linear-gradient(90deg, #ff9800 0%, #ffb74d 100%); height: 100%; width: 10%;"></div>
+                        <div>
+                            <div></div>
                         </div>
                     </div>
 
                     <!-- Sell Value -->
                     <div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <span style="font-weight: bold; color: #333;">SELL VALUE</span>
-                            <span style="font-weight: bold; color: #2196f3;">3$ - LOW</span>
+                        <div>
+                            <span>SELL VALUE</span>
+                            <span>3$ - LOW</span>
                         </div>
-                        <div style="background: #e0e0e0; border-radius: 10px; height: 8px; overflow: hidden;">
-                            <div style="background: linear-gradient(90deg, #2196f3 0%, #64b5f6 100%); height: 100%; width: 5%;"></div>
+                        <div>
+                            <div></div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Detailed Info Table -->
-            <div style="background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <h3 style="color: var(--stone-gray); margin-bottom: 1.5rem; font-size: 1.2rem;">📋 Complete Stone Information</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Type</div>
-                        <div style="font-weight: bold; color: #333;">Ore</div>
+            <div>
+                <h3>📋 Complete Stone Information</h3>
+                <div>
+                    <div>
+                        <div>Type</div>
+                        <div>Ore</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Rarity</div>
-                        <div style="font-weight: bold; color: var(--stone-gray);">Common</div>
+                    <div>
+                        <div>Rarity</div>
+                        <div>Common</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Area</div>
-                        <div style="font-weight: bold; color: #2196f3;">Stonewake's Cross</div>
+                    <div>
+                        <div>Area</div>
+                        <div>Stonewake's Cross</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Rock Type</div>
-                        <div style="font-weight: bold; color: #ff9800;">Pebble</div>
+                    <div>
+                        <div>Rock Type</div>
+                        <div>Pebble</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Chance</div>
-                        <div style="font-weight: bold; color: #4caf50;">1/1</div>
+                    <div>
+                        <div>Chance</div>
+                        <div>1/1</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Multiplier</div>
-                        <div style="font-weight: bold; color: #ff9800;">0.2x</div>
+                    <div>
+                        <div>Multiplier</div>
+                        <div>0.2x</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Sell Value</div>
-                        <div style="font-weight: bold; color: #2196f3;">3$</div>
+                    <div>
+                        <div>Sell Value</div>
+                        <div>3$</div>
                     </div>
-                    <div style="text-align: center; padding: 1rem; background: #f9f9f9; border-radius: 8px;">
-                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">Trait</div>
-                        <div style="font-weight: bold; color: var(--stone-gray);">None</div>
+                    <div>
+                        <div>Trait</div>
+                        <div>None</div>
                     </div>
                 </div>
             </div>
@@ -624,62 +342,62 @@
             <h2>⚔️ Stone Ore Crafting Uses</h2>
             
             <!-- Primary Uses Overview -->
-            <div style="background: linear-gradient(135deg, #2d1810 0%, #1a1a1a 100%); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; color: #fff; border: 2px solid #ff9800;">
-                <h3 style="color: #ff9800; margin-bottom: 1.5rem; font-size: 1.3rem;">🎯 Stone's Role in The Forge</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
-                        <h4 style="color: #ffb74d; margin-bottom: 0.5rem;">🔥 Forge Fuel</h4>
-                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Perfect for testing forge mechanics without wasting valuable ores</p>
+            <div>
+                <h3>🎯 Stone's Role in The Forge</h3>
+                <div>
+                    <div>
+                        <h4>🔥 Forge Fuel</h4>
+                        <p>Perfect for testing forge mechanics without wasting valuable ores</p>
                     </div>
-                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
-                        <h4 style="color: #ffb74d; margin-bottom: 0.5rem;">🗡️ Early-Game Filler</h4>
-                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Bulk up your ore count for basic weapon crafting attempts</p>
+                    <div>
+                        <h4>🗡️ Early-Game Filler</h4>
+                        <p>Bulk up your ore count for basic weapon crafting attempts</p>
                     </div>
-                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
-                        <h4 style="color: #ffb74d; margin-bottom: 0.5rem;">🧪 Testing Material</h4>
-                        <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.9rem;">Learn crafting mechanics with guaranteed, cheap materials</p>
+                    <div>
+                        <h4>🧪 Testing Material</h4>
+                        <p>Learn crafting mechanics with guaranteed, cheap materials</p>
                     </div>
                 </div>
             </div>
             
             <div class="crafting-section">
                 <h3>🗡️ Primary Use: Dagger Crafting (0.2x Multiplier Category)</h3>
-                <p style="margin-bottom: 1.5rem;">Stone belongs to the <strong>0.2x - LOW</strong> multiplier category, making it perfect for basic Dagger crafting with guaranteed success rates.</p>
+                <p>Stone belongs to the <strong>0.2x - LOW</strong> multiplier category, making it perfect for basic Dagger crafting with guaranteed success rates.</p>
                 
                 <!-- Dagger Recipes -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                <div>
                     <div class="recipe-example">
-                        <h4 style="color: #ff5722; margin-bottom: 1rem;">🥉 Pure Stone Dagger (Beginner)</h4>
-                        <div style="background: #f9f9f9; padding: 1rem; border-radius: 6px; margin-bottom: 1rem;">
+                        <h4 class="section-header">🥉 Pure Stone Dagger (Beginner)</h4>
+                        <div>
                             <p><strong>Recipe:</strong> 3 × Stone Ore</p>
                             <p><strong>Total Cost:</strong> 9$ (cheapest possible)</p>
                             <p><strong>Success Rate:</strong> 100% guaranteed</p>
                             <p><strong>Multiplier:</strong> 0.2x (very low damage)</p>
                         </div>
-                        <div style="color: #666; font-size: 0.9rem;">
+                        <div>
                             <strong>Best For:</strong> Complete beginners learning the crafting system
                         </div>
                     </div>
 
                     <div class="recipe-example">
-                        <h4 style="color: #ff5722; margin-bottom: 1rem;">🥈 Mixed Low-Tier Dagger</h4>
-                        <div style="background: #f9f9f9; padding: 1rem; border-radius: 6px; margin-bottom: 1rem;">
+                        <h4 class="section-header">🥈 Mixed Low-Tier Dagger</h4>
+                        <div>
                             <p><strong>Recipe:</strong> 1 × Stone + 1 × Sand Stone + 1 × Copper</p>
                             <p><strong>Total Cost:</strong> ~12$ (still very affordable)</p>
                             <p><strong>Success Rate:</strong> 100% guaranteed</p>
                             <p><strong>Multiplier:</strong> 0.25x average (slightly better)</p>
                         </div>
-                        <div style="color: #666; font-size: 0.9rem;">
+                        <div>
                             <strong>Best For:</strong> Learning ore combination mechanics
                         </div>
                     </div>
                 </div>
 
                 <!-- Crafting Category Explanation -->
-                <div style="background: #fff3e0; border-radius: 10px; padding: 1.5rem; border-left: 4px solid #ff9800;">
-                    <h4 style="color: #e65100; margin-bottom: 1rem;">📊 Stone in the 0.2-0.5x Ore Category</h4>
-                    <p style="color: #555; margin-bottom: 1rem;">Stone belongs to the lowest multiplier tier in The Forge crafting system:</p>
-                    <ul style="color: #555; margin: 0;">
+                <div>
+                    <h4>📊 Stone in the 0.2-0.5x Ore Category</h4>
+                    <p>Stone belongs to the lowest multiplier tier in The Forge crafting system:</p>
+                    <ul>
                         <li><strong>Category:</strong> 0.2-0.5x Multiplier Ores</li>
                         <li><strong>Other Ores:</strong> Sand Stone (0.25x), Copper (0.3x), Iron (0.35x)</li>
                         <li><strong>Weapon Type:</strong> Primarily used for Daggers</li>
@@ -689,47 +407,47 @@
             </div>
 
             <!-- Alternative Uses -->
-            <div style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); border-radius: 12px; padding: 2rem; border-left: 4px solid #4caf50; margin: 2rem 0;">
-                <h3 style="color: #2e7d32; margin-bottom: 1.5rem; font-size: 1.2rem;">🔄 Alternative Uses for Stone</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <h4 style="color: #388e3c; margin-bottom: 0.5rem;">🧪 Practice Material</h4>
-                        <p style="color: #555; margin: 0; font-size: 0.9rem;">Use Stone to practice crafting without risking valuable ores. Perfect for understanding the forge interface.</p>
+            <div>
+                <h3>🔄 Alternative Uses for Stone</h3>
+                <div>
+                    <div>
+                        <h4>🧪 Practice Material</h4>
+                        <p>Use Stone to practice crafting without risking valuable ores. Perfect for understanding the forge interface.</p>
                     </div>
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <h4 style="color: #388e3c; margin-bottom: 0.5rem;">💰 Inventory Management</h4>
-                        <p style="color: #555; margin: 0; font-size: 0.9rem;">Sell Stone when your inventory is full. At 3$ each, it's better than nothing and teaches resource management.</p>
+                    <div>
+                        <h4>💰 Inventory Management</h4>
+                        <p>Sell Stone when your inventory is full. At 3$ each, it's better than nothing and teaches resource management.</p>
                     </div>
-                    <div style="background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <h4 style="color: #388e3c; margin-bottom: 0.5rem;">🔥 Forge Testing</h4>
-                        <p style="color: #555; margin: 0; font-size: 0.9rem;">Test different forge settings and combinations using cheap Stone before committing expensive materials.</p>
+                    <div>
+                        <h4>🔥 Forge Testing</h4>
+                        <p>Test different forge settings and combinations using cheap Stone before committing expensive materials.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Why Stone Matters -->
-            <div style="background: #f5f5f5; padding: 2rem; border-radius: 12px; margin: 2rem 0;">
-                <h3 style="color: #333; margin-bottom: 1.5rem; text-align: center;">🎯 Why Stone is Essential for New Forgers</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-                    <div style="text-align: center; padding: 1rem;">
-                        <div style="background: #4caf50; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 1.5rem;">✓</div>
-                        <h4 style="color: #333; margin-bottom: 0.5rem;">Guaranteed Success</h4>
-                        <p style="color: #666; margin: 0; font-size: 0.9rem;">100% crafting success rate builds confidence</p>
+            <div>
+                <h3>🎯 Why Stone is Essential for New Forgers</h3>
+                <div>
+                    <div>
+                        <div>✓</div>
+                        <h4>Guaranteed Success</h4>
+                        <p>100% crafting success rate builds confidence</p>
                     </div>
-                    <div style="text-align: center; padding: 1rem;">
-                        <div style="background: #ff9800; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 1.5rem;">$</div>
-                        <h4 style="color: #333; margin-bottom: 0.5rem;">Ultra Low Cost</h4>
-                        <p style="color: #666; margin: 0; font-size: 0.9rem;">At 3$ per ore, mistakes don't hurt</p>
+                    <div>
+                        <div>$</div>
+                        <h4>Ultra Low Cost</h4>
+                        <p>At 3$ per ore, mistakes don't hurt</p>
                     </div>
-                    <div style="text-align: center; padding: 1rem;">
-                        <div style="background: #2196f3; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 1.5rem;">∞</div>
-                        <h4 style="color: #333; margin-bottom: 0.5rem;">Unlimited Supply</h4>
-                        <p style="color: #666; margin: 0; font-size: 0.9rem;">Always available in Stonewake's Cross</p>
+                    <div>
+                        <div>∞</div>
+                        <h4>Unlimited Supply</h4>
+                        <p>Always available in Stonewake's Cross</p>
                     </div>
-                    <div style="text-align: center; padding: 1rem;">
-                        <div style="background: #9c27b0; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 1.5rem;">🎓</div>
-                        <h4 style="color: #333; margin-bottom: 0.5rem;">Learning Tool</h4>
-                        <p style="color: #666; margin: 0; font-size: 0.9rem;">Perfect for understanding game mechanics</p>
+                    <div>
+                        <div>🎓</div>
+                        <h4>Learning Tool</h4>
+                        <p>Perfect for understanding game mechanics</p>
                     </div>
                 </div>
             </div>
@@ -739,51 +457,51 @@
         <div class="content-section">
             <h2>⚖️ Stone vs Other Common Ores</h2>
             
-            <div style="overflow-x: auto;">
-                <table class="official-table" style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+            <div class="table-overflow">
+                <table class="official-table">
                     <thead>
-                        <tr style="background: linear-gradient(135deg, var(--stone-gray) 0%, var(--metal-steel) 100%); color: #fff;">
-                            <th style="padding: 1rem; text-align: left;">Ore Name</th>
-                            <th style="padding: 1rem; text-align: left;">Spawn Rate</th>
-                            <th style="padding: 1rem; text-align: left;">Multiplier</th>
-                            <th style="padding: 1rem; text-align: left;">Price</th>
-                            <th style="padding: 1rem; text-align: left;">Rock Type</th>
+                        <tr>
+                            <th>Ore Name</th>
+                            <th>Spawn Rate</th>
+                            <th>Multiplier</th>
+                            <th>Price</th>
+                            <th>Rock Type</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="background: #f9f9f9;">
-                            <td style="padding: 1rem; font-weight: bold; color: var(--stone-gray);">Stone</td>
-                            <td style="padding: 1rem; color: #4caf50; font-weight: bold;">1/1 (100%)</td>
-                            <td style="padding: 1rem;">0.2x</td>
-                            <td style="padding: 1rem;">3$</td>
-                            <td style="padding: 1rem;">Pebble</td>
+                        <tr>
+                            <td>Stone</td>
+                            <td>1/1 (100%)</td>
+                            <td>0.2x</td>
+                            <td>3$</td>
+                            <td>Pebble</td>
                         </tr>
                         <tr>
-                            <td style="padding: 1rem; font-weight: bold;">Sand Stone</td>
-                            <td style="padding: 1rem;">1/2 (50%)</td>
-                            <td style="padding: 1rem;">0.25x</td>
-                            <td style="padding: 1rem;">3.75$</td>
-                            <td style="padding: 1rem;">Pebble, Rock</td>
-                        </tr>
-                        <tr style="background: #f9f9f9;">
-                            <td style="padding: 1rem; font-weight: bold;">Copper</td>
-                            <td style="padding: 1rem;">1/3 (33%)</td>
-                            <td style="padding: 1rem;">0.3x</td>
-                            <td style="padding: 1rem;">4.5$</td>
-                            <td style="padding: 1rem;">Pebble, Rock, Boulder</td>
+                            <td>Sand Stone</td>
+                            <td>1/2 (50%)</td>
+                            <td>0.25x</td>
+                            <td>3.75$</td>
+                            <td>Pebble, Rock</td>
                         </tr>
                         <tr>
-                            <td style="padding: 1rem; font-weight: bold;">Iron</td>
-                            <td style="padding: 1rem;">1/5 (20%)</td>
-                            <td style="padding: 1rem;">0.35x</td>
-                            <td style="padding: 1rem;">5.25$</td>
-                            <td style="padding: 1rem;">Pebble, Rock, Boulder</td>
+                            <td>Copper</td>
+                            <td>1/3 (33%)</td>
+                            <td>0.3x</td>
+                            <td>4.5$</td>
+                            <td>Pebble, Rock, Boulder</td>
+                        </tr>
+                        <tr>
+                            <td>Iron</td>
+                            <td>1/5 (20%)</td>
+                            <td>0.35x</td>
+                            <td>5.25$</td>
+                            <td>Pebble, Rock, Boulder</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             
-            <p style="margin-top: 1rem; color: #666;">
+            <p>
                 <strong>Key Advantage:</strong> Stone is the only ore with a guaranteed 100% drop rate, making it the most reliable choice for beginners who need consistent crafting materials.
             </p>
         </div>
@@ -792,19 +510,19 @@
         <div class="content-section">
             <h2>🎓 Beginner Tips for Stone Ore</h2>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #ff9800;">
-                    <h3 style="color: #e65100; margin-bottom: 0.5rem;">🎯 Start Here</h3>
+            <div>
+                <div>
+                    <h3>🎯 Start Here</h3>
                     <p>Stone is perfect for your first weapon. Craft a dagger with 3 Stone ores to get 100% success and learn the crafting system.</p>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #2196f3;">
-                    <h3 style="color: #0d47a1; margin-bottom: 0.5rem;">💰 Save Money</h3>
+                <div>
+                    <h3>💰 Save Money</h3>
                     <p>Stone is the cheapest ore at only 3$ each. Use it to practice crafting without wasting expensive materials.</p>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #4caf50;">
-                    <h3 style="color: #2e7d32; margin-bottom: 0.5rem;">⚡ Quick Farming</h3>
+                <div>
+                    <h3>⚡ Quick Farming</h3>
                     <p>Pebbles are everywhere and respawn fast. You can gather hundreds of Stone ores in just a few minutes.</p>
                 </div>
             </div>
@@ -813,7 +531,7 @@
         <!-- Calculator CTA -->
         <div class="cta-box">
             <h2>🔥 Try Stone Crafting Now!</h2>
-            <p style="margin-bottom: 1.5rem;">Use our calculator to plan your Stone ore crafting and see the results</p>
+            <p>Use our calculator to plan your Stone ore crafting and see the results</p>
             <a href="/" class="cta-btn">Open Calculator</a>
             <a href="/recipes/" class="cta-btn">View All Recipes</a>
             <a href="./" class="cta-btn">Back to Ore Guide</a>
@@ -826,12 +544,12 @@
             <p><a href="/">Home</a> | <a href="./">Ore Guide</a> | <a href="/recipes/">Recipes</a> | <a href="/codes.html">Codes</a> | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms-of-service.html">Terms</a></p>
         </div>
             
-            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
+            <p class="footer-section">
             </p>
             
             <!-- 友情链接 -->
-            <p style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(255, 87, 34, 0.3);">
-                <strong style="color: #ff9800; margin-right: 1rem;">友情链接:</strong>
+            <p class="footer-section">
+                <strong class="footer-links-title">友情链接:</strong>
                 <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
             </p>
     </footer>

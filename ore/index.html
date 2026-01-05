@@ -9,7 +9,7 @@
     
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" class="yandex-hidden" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -34,304 +34,7 @@
     <meta name="twitter:description" content="Master ore combinations in The Forge. Learn about all ore types, traits, and optimal combinations for crafting legendary weapons and armor.">
     
     <title>The Forge Ore Guide - Complete Ore Types & Combinations</title>
-    <style>
-        :root {
-            /* Official Colors - 官方配色 */
-            --bg-primary: #1a1612;
-            --bg-secondary: #2d1f1a;
-            --bg-darker: #0f0d0a;
-            --bg-surface: #3d2f2a;
-            --gold-primary: #d4af37;
-            --gold-light: #f4d03f;
-            --gold-dark: #b8860b;
-            --flame-primary: #ff6b35;
-            --flame-light: #ff8c42;
-            --flame-dark: #e55100;
-            --text-primary: #f5f5dc;
-            --text-secondary: #d3d3d3;
-            --text-accent: #d4af37;
-            --border-gold: #d4af37;
-            --border-flame: #ff6b35;
-            
-            /* Legacy mappings */
-            --forge-fire: var(--flame-primary);
-            --forge-flame: var(--flame-light);
-            --forge-ember: var(--flame-dark);
-            --forge-glow: var(--flame-light);
-            --metal-steel: var(--bg-surface);
-            --bg-forge: var(--bg-secondary);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        header {
-            background: linear-gradient(90deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
-            border-bottom: 3px solid var(--gold-primary);
-            margin-bottom: 2rem;
-        }
-        
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        header h1 {
-            color: var(--gold-primary);
-            font-size: 1.8rem;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        nav a {
-            color: var(--text-primary);
-            text-decoration: none;
-            margin-left: 1.5rem;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: var(--gold-primary);
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 40px rgba(255, 87, 34, 0.3);
-            border: 2px solid #ff5722;
-            text-align: center;
-        }
-        
-        .hero h2 {
-            color: var(--forge-glow);
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 15px rgba(230, 74, 25, 0.3);
-        }
-        
-        .hero p {
-            color: #fff;
-            font-size: 1.1rem;
-        }
-        
-        .content-section {
-            background: #fff;
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .content-section h3 {
-            color: #ff5722;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid #ff9800;
-            padding-bottom: 0.5rem;
-        }
-        
-        .ore-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        .ore-card {
-            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-            border-radius: 10px;
-            padding: 1.5rem;
-            border-left: 4px solid #ff5722;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .ore-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(255, 87, 34, 0.3);
-        }
-        
-        .ore-card h4 {
-            color: #ff5722;
-            font-size: 1.3rem;
-            margin-bottom: 0.8rem;
-        }
-        
-        .ore-trait {
-            background: #fff;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            margin: 0.5rem 0;
-            font-size: 0.9rem;
-        }
-        
-        .ore-trait strong {
-            color: #ff9800;
-        }
-        
-        .ore-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1.5rem;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            overflow-x: auto;
-            display: block;
-        }
-        
-        .ore-table table {
-            width: 100%;
-            min-width: 900px;
-        }
-        
-        .ore-table th {
-            background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
-            color: #fff;
-            padding: 1rem;
-            text-align: left;
-            font-weight: bold;
-            border-bottom: 2px solid #e64a19;
-        }
-        
-        .ore-table td {
-            padding: 1rem;
-            border-bottom: 1px solid #e0e0e0;
-            vertical-align: top;
-        }
-        
-        .ore-table tr:hover {
-            background: #fff3e0;
-        }
-        
-        .ore-table .ore-name {
-            font-weight: bold;
-            color: #ff5722;
-            font-size: 1.1rem;
-        }
-        
-        .ore-table .rarity-common {
-            color: #757575;
-        }
-        
-        .ore-table .rarity-uncommon {
-            color: #4caf50;
-        }
-        
-        .ore-table .rarity-rare {
-            color: #2196f3;
-        }
-        
-        .ore-table .rarity-epic {
-            color: #9c27b0;
-        }
-        
-        .ore-table .rarity-legendary {
-            color: #ff9800;
-        }
-        
-        .ore-table .rarity-mythical {
-            color: #e91e63;
-        }
-        
-        .ore-table .rarity-divine {
-            color: #673ab7;
-        }
-        
-        .ore-table .rarity-relic {
-            color: #ffd700;
-        }
-        
-        .tip-box {
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-            border-left: 4px solid #2196f3;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-        }
-        
-        .tip-box h4 {
-            color: #1976d2;
-            margin-bottom: 0.5rem;
-        }
-        
-        .cta-box {
-            background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            color: #fff;
-            margin: 2rem 0;
-        }
-        
-        .cta-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: #fff;
-            border: none;
-        }
-        
-        .cta-btn {
-            display: inline-block;
-            background: #fff;
-            color: #ff5722;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.3s;
-            margin: 0.5rem;
-        }
-        
-        .cta-btn:hover {
-            transform: scale(1.05);
-        }
-        
-        footer {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-            border-top: 2px solid #ff5722;
-            margin-top: 3rem;
-        }
-        
-        footer a {
-            color: #ff9800;
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-        ul {
-            margin-left: 2rem;
-            margin-bottom: 1rem;
-        }
-        
-        li {
-            margin-bottom: 0.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="../forge-theme.css">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
@@ -358,6 +61,7 @@
                 <a href="/wiki/">Wiki</a>
                 <a href="/weapons.html">Weapons</a>
                 <a href="/armor.html">Armor</a>
+                <a href="/pickaxe.html">Pickaxe</a>
                 <a href="/private-server.html">Private Servers</a>
                 <a href="/blog/">Blog</a>
                 <a href="/feedback.html">Feedback</a>
@@ -372,14 +76,14 @@
         </div>
 
         <!-- Disclaimer -->
-        <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border: 2px solid #ff9800; border-radius: 15px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(255, 152, 0, 0.2);">
-            <h2 style="color: #e65100; margin-bottom: 1rem; font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+        <div>
+            <h2>
                 ⚠️ Community Data Notice
             </h2>
-            <p style="color: #555; margin-bottom: 0.75rem; line-height: 1.6;">
-                The ore information and game mechanics described on this page are being verified by our community. While we strive for accuracy, some details may not reflect the current game state. If you have verified game data or corrections, please <a href="/feedback.html" style="color: #e65100; font-weight: 600; text-decoration: underline;">submit feedback</a> to help us improve!
+            <p>
+                The ore information and game mechanics described on this page are being verified by our community. While we strive for accuracy, some details may not reflect the current game state. If you have verified game data or corrections, please <a href="/feedback.html">submit feedback</a> to help us improve!
             </p>
-            <p style="color: #555; margin: 0; font-size: 0.95rem;">
+            <p>
                 <strong>Last Updated:</strong> December 2025
             </p>
         </div>
@@ -407,7 +111,7 @@
                     <tbody>
                         <!-- Common Ores -->
                         <tr>
-                            <td class="ore-name"><a href="stone.html" style="color: #d4af37; text-decoration: none; font-weight: 600;">Stone</a></td>
+                            <td class="ore-name"><a href="stone.html">Stone</a></td>
                             <td class="rarity-common">Common</td>
                             <td>1/1</td>
                             <td>0.2x</td>
@@ -755,7 +459,7 @@
                             <td>Dangerous, unstable, and glowing green.</td>
                         </tr>
                         <tr>
-                            <td class="ore-name"><a href="mythril.html" style="color: #ff5722; text-decoration: none; font-weight: bold;">Mythril</a></td>
+                            <td class="ore-name"><a href="mythril.html">Mythril</a></td>
                             <td class="rarity-legendary">Legendary</td>
                             <td>1/813</td>
                             <td>3.5x</td>
@@ -805,7 +509,7 @@
                             <td>So bright it almost floats.</td>
                         </tr>
                         <tr>
-                            <td class="ore-name"><a href="snowite.html" style="color: #d4af37; text-decoration: none; font-weight: 600;">Snowite</a></td>
+                            <td class="ore-name"><a href="snowite.html">Snowite</a></td>
                             <td class="rarity-legendary">Legendary</td>
                             <td>1/4325</td>
                             <td>8x</td>
@@ -890,11 +594,11 @@
             <h2>What Are Ores in The Forge?</h2>
             <p>Ores are materials obtained by mining <strong>rocks</strong> in specific <strong>areas</strong>. They are refined and used to forge powerful <strong>weapons</strong> and sturdy <strong>armor</strong>, shaping a forger's entire build.</p>
             
-            <p style="margin-top: 1rem;">Every ore comes with its own set of stats: <strong>rarity</strong>, <strong>chance</strong>, <strong>multiplier</strong>, <strong>price</strong>, optional <strong>traits</strong>, and a unique <strong>description</strong>. Some ores only spawn in certain areas or on specific rock types, which are listed under <strong>Rocks</strong>.</p>
+            <p>Every ore comes with its own set of stats: <strong>rarity</strong>, <strong>chance</strong>, <strong>multiplier</strong>, <strong>price</strong>, optional <strong>traits</strong>, and a unique <strong>description</strong>. Some ores only spawn in certain areas or on specific rock types, which are listed under <strong>Rocks</strong>.</p>
             
             <div class="tip-box">
                 <h3>💡 Pro Tip</h3>
-                <p>Different rock types contain different ores! Pebbles are great for beginners, while Boulders and Basalt Rocks offer the best chances for rare materials. Use our <a href="/" style="color: #1976d2; font-weight: bold;">Forge Calculator</a> to plan your crafting!</p>
+                <p>Different rock types contain different ores! Pebbles are great for beginners, while Boulders and Basalt Rocks offer the best chances for rare materials. Use our <a href="/">Forge Calculator</a> to plan your crafting!</p>
             </div>
         </div>
 
@@ -941,7 +645,7 @@
             <h2>🔥 Understanding Ore Rarity & Spawn Rates</h2>
             <p>Ores in The Forge have different rarity levels that affect their spawn rates and usefulness:</p>
             
-            <h2 style="color: #ff5722; margin-top: 1.5rem;">Rarity Tiers:</h2>
+            <h2>Rarity Tiers:</h2>
             <ul>
                 <li><strong>Common:</strong> Stone (1 in 1), Sand Stone (1 in 2), Copper (1 in 3), Iron (1 in 5), Cardboardite (1 in 31)</li>
                 <li><strong>Uncommon:</strong> Tin (1 in 7), Silver (1 in 12), Gold (1 in 16), Bananite (1 in 30)</li>
@@ -949,9 +653,9 @@
                 <li><strong>Epic:</strong> Aite (1 in 44), Poopite (1 in 131)</li>
             </ul>
 
-            <h2 style="color: #ff5722; margin-top: 1.5rem;">Rock Types & What They Contain:</h2>
+            <h2>Rock Types & What They Contain:</h2>
             <ul>
-                <li><strong>Pebble:</strong> <a href="stone.html" style="color: #ff5722; text-decoration: none;">Stone</a>, Sand Stone, Copper, Iron, Poopite</li>
+                <li><strong>Pebble:</strong> <a href="stone.html">Stone</a>, Sand Stone, Copper, Iron, Poopite</li>
                 <li><strong>Rock:</strong> Sand Stone, Copper, Iron, Tin, Silver, Mushroomite, Bananite, Cardboardite</li>
                 <li><strong>Boulder:</strong> Copper, Iron, Tin, Silver, Gold, Mushroomite, Bananite, Cardboardite, Aite, Poopite</li>
                 <li><strong>Basalt Rock:</strong> Silver, Gold, Platinum</li>
@@ -963,16 +667,16 @@
         <div class="content-section">
             <h2>⛏️ How to Obtain Ores</h2>
             
-            <h2 style="color: #ff5722;">Mining Rocks:</h2>
+            <h2 class="text-highlight">Mining Rocks:</h2>
             <p>The primary method to gather ores. Mine different rock types to find various ores:</p>
             <ul>
-                <li><strong>Pebble:</strong> Easiest to mine, contains common ores like <a href="stone.html" style="color: #ff5722; text-decoration: none;">Stone</a>, Copper, and Iron</li>
+                <li><strong>Pebble:</strong> Easiest to mine, contains common ores like <a href="stone.html">Stone</a>, Copper, and Iron</li>
                 <li><strong>Rock:</strong> Medium difficulty, good variety including Tin, Silver, and Mushroomite</li>
                 <li><strong>Boulder:</strong> Harder to mine, best chance for rare ores like Gold, Platinum, and Aite</li>
                 <li><strong>Basalt Rock:</strong> Special rock type with Silver, Gold, and Platinum</li>
             </ul>
 
-            <h2 style="color: #ff5722; margin-top: 1.5rem;">Ore Trivia:</h2>
+            <h2>Ore Trivia:</h2>
             <ul>
                 <li>In the game index, Eye Ore is shown as "Eye Ore Ore"</li>
                 <li>Boneite does not appear in the in-game index</li>
@@ -986,15 +690,15 @@
             <h2>✨ Ore Characteristics & Descriptions</h2>
             <p>Each ore in The Forge has unique characteristics that make it useful for different purposes:</p>
             
-            <h2 style="color: #ff5722; margin-top: 1.5rem;">Common Ores - Great for Beginners:</h2>
+            <h2>Common Ores - Great for Beginners:</h2>
             <ul>
-                <li><strong><a href="stone.html" style="color: #ff5722; text-decoration: none;">Stone</a>:</strong> The most basic material - it's literally just a rock</li>
+                <li><strong><a href="stone.html">Stone</a>:</strong> The most basic material - it's literally just a rock</li>
                 <li><strong>Sand Stone:</strong> Crumbly but buildable, not water-resistant</li>
                 <li><strong>Copper:</strong> Reliable starter material for basic crafting</li>
                 <li><strong>Iron:</strong> The workhorse of the forge - versatile and dependable</li>
             </ul>
 
-            <h2 style="color: #ff5722; margin-top: 1.5rem;">Uncommon Ores - Better Properties:</h2>
+            <h2>Uncommon Ores - Better Properties:</h2>
             <ul>
                 <li><strong>Tin:</strong> Weak alone but excellent for alloy combinations</li>
                 <li><strong>Silver:</strong> Pure and malleable with anti-curse properties</li>
@@ -1002,7 +706,7 @@
                 <li><strong>Bananite:</strong> Surprisingly durable despite its odd appearance</li>
             </ul>
 
-            <h2 style="color: #ff5722; margin-top: 1.5rem;">Rare & Epic Ores - Special Properties:</h2>
+            <h2>Rare & Epic Ores - Special Properties:</h2>
             <ul>
                 <li><strong>Platinum:</strong> Smooth, silvery, and highly conductive</li>
                 <li><strong>Mushroomite:</strong> Grows in damp places, sometimes glows or talks</li>
@@ -1018,7 +722,7 @@
         <!-- CTA Box -->
         <div class="cta-box">
             <h2>🔥 Use Our Tools</h2>
-            <p style="margin-bottom: 1.5rem;">Plan your ore combinations and get free rewards</p>
+            <p>Plan your ore combinations and get free rewards</p>
             <a href="/" class="cta-btn">Calculator</a>
             <a href="/codes.html" class="cta-btn">Codes</a>
             <a href="/weapons.html" class="cta-btn">Weapons</a>
@@ -1028,8 +732,8 @@
     </div>
 
     
-    <!-- Advertisement section removed for security compliance -->        <div style="margin-top: 1rem;">
-            <a href="#" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s;">Special Offer - Click Here</a>
+    <!-- Advertisement section removed for security compliance -->        <div>
+            <a href="#" target="_blank" rel="noopener noreferrer">Special Offer - Click Here</a>
         </div>
     </div>
 

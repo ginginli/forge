@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119" crossorigin="anonymous"></script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    <meta name="description" content="Complete guide to all enemies in The Forge - Learn about Zombies, Skeletons, Hell Skeletons, and combat strategies.">
+    <meta name="keywords" content="the forge enemies, forge combat guide, zombies, skeletons, hell skeletons, forge enemy types">
+    <link rel="canonical" href="https://forge-calculator.com/wiki/enemies.html">
+    <title>The Forge Enemies Guide - Combat & Enemy Types</title>
+    
+    <!-- Advertisement code removed for security compliance -->    
+    <link rel="stylesheet" href="forge-theme.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YRP03D44XS');
+    </script>
+    
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="EpsJtUp2VOHq8C8Dwkg1zQ" async></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>⚔️ The Forge Enemies</h1>
+                                    <nav>
+                <a href="/recipes/">Recipes</a>
+                <a href="/codes.html">Codes</a>
+                <a href="/">Calculator</a>
+                <a href="/ore/">Ore</a>
+                <a href="/wiki/">Wiki</a>
+                <a href="/weapons.html">Weapons</a>
+                <a href="/armor.html">Armor</a>
+                <a href="/private-server.html">Private Servers</a>
+                <a href="/blog/">Blog</a>
+                <a href="/feedback.html">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>⚔️ Enemies & Combat Guide</h2>
+            <p>Learn about all hostile NPCs in The Forge. Defeat enemies to earn EXP, Gold, Essences, and valuable items.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>⚠️ Enemy System Overview</h3>
+            <ul style="line-height: 1.8; color: #555;">
+                <li><strong>Hostile NPCs:</strong> Enemies attack players who come near them</li>
+                <li><strong>Rewards:</strong> Drop EXP, Gold, Essences, and potentially other items</li>
+                <li><strong>Locations:</strong> Different enemy types appear in different areas</li>
+                <li><strong>Difficulty:</strong> Enemy strength increases in advanced areas</li>
+                <li><strong>Combat:</strong> Use weapons and armor to defeat enemies efficiently</li>
+            </ul>
+        </div>
+
+        <!-- Zombies -->
+        <div class="content-section">
+            <h3>🧟 Zombies</h3>
+            
+            <div class="enemy-card">
+                <h4>Zombies - First Enemy Type</h4>
+                <div class="enemy-info">
+                    <p><strong>📍 Location:</strong> Stonewake's Cross, The Cave</p>
+                    <p><strong>📖 Background:</strong> The first set of enemies you will encounter. They are most likely the result of an outbreak, which led to the infestation of Zombies present in The Cave and its mines. Zombies roam and guard the area, threatening to attack any brave soul who dares to mine their Ores.</p>
+                    <p><strong>💡 Combat Tips:</strong></p>
+                    <ul>
+                        <li>First enemy type - good for beginners to practice combat</li>
+                        <li>Found in starter areas, making them accessible early game</li>
+                        <li>Guard mining areas, so be prepared when gathering ores</li>
+                        <li>Relatively easy to defeat with basic weapons</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skeletons -->
+        <div class="content-section">
+            <h3>💀 Skeletons</h3>
+            
+            <div class="enemy-card">
+                <h4>Skeletons - Second Enemy Type</h4>
+                <div class="enemy-info">
+                    <p><strong>📍 Location:</strong> The Forgotten Kingdom</p>
+                    <p><strong>📖 Background:</strong> The second set of enemies you will encounter. They are said to have lived in the sealed mines until the mines were opened up. Shortly after, they escaped the mines and would attack citizens, which resulted in many citizens deserting the kingdom, leaving the place as a former shell of itself.</p>
+                    <p><strong>💡 Combat Tips:</strong></p>
+                    <ul>
+                        <li>Second enemy tier - moderate difficulty</li>
+                        <li>Found in The Forgotten Kingdom, an intermediate area</li>
+                        <li>Stronger than Zombies, requiring better equipment</li>
+                        <li>Part of the kingdom's tragic history</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hell Skeletons -->
+        <div class="content-section">
+            <h3>🔥 Hell Skeletons</h3>
+            
+            <div class="enemy-card">
+                <h4>Hell Skeletons - Third Enemy Type</h4>
+                <div class="enemy-info">
+                    <p><strong>📍 Location:</strong> Volcanic depths of The Forgotten Kingdom</p>
+                    <p><strong>📖 Background:</strong> A variant of Skeletons, the third set of enemies you will encounter. Located in the volcanic depths of The Forgotten Kingdom, they serve as a much stronger and dangerous enemy, requiring you to bring your best Weapons and Armor if you were to brave these creatures straight from the depths of Hell.</p>
+                    <p><strong>⚠️ Combat Tips:</strong></p>
+                    <ul>
+                        <li><strong>High Difficulty:</strong> Much stronger than regular Skeletons</li>
+                        <li><strong>Endgame Content:</strong> Requires best weapons and armor</li>
+                        <li><strong>Volcanic Location:</strong> Found in dangerous volcanic depths</li>
+                        <li><strong>Better Rewards:</strong> Likely drops better loot and more EXP</li>
+                        <li><strong>Fire Resistance:</strong> Consider fire-resistant armor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slimes -->
+        <div class="content-section">
+            <h3>🟦 Slimes</h3>
+            
+            <div class="enemy-card">
+                <h4>Slimes</h4>
+                <div class="enemy-info">
+                    <p style="text-align: center; font-style: italic;">Slimes are mentioned as an enemy type in The Forge. More information coming soon!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- General Combat Tips -->
+        <div class="content-section">
+            <h3>💡 General Combat Tips</h3>
+            <ul style="line-height: 1.8; color: #555;">
+                <li><strong>Progression:</strong> Start with Zombies, then Skeletons, then Hell Skeletons</li>
+                <li><strong>Equipment:</strong> Upgrade your weapons and armor before facing stronger enemies</li>
+                <li><strong>Rewards:</strong> All enemies drop EXP, Gold, and Essences</li>
+                <li><strong>Farming:</strong> Defeat enemies repeatedly to gather resources</li>
+                <li><strong>Strategy:</strong> Learn enemy attack patterns to fight more efficiently</li>
+                <li><strong>Race Bonuses:</strong> Some races like Orc and Minotaur excel in combat</li>
+                <li><strong>Preparation:</strong> Stock up on potions from Maria before tough battles</li>
+                <li><strong>Location Awareness:</strong> Know which enemies spawn in which areas</li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <!-- Advertisement section removed for security compliance -->        <div style="margin-top: 1rem;">
+            <a href="#" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s;">Special Offer - Click Here</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Forge Calculator. Not affiliated with Roblox or The Forge developers.</p>
+            <p><a href="/">Home</a> | <a href="./">Wiki</a> | <a href="/codes.html">Codes</a> | <a href="/privacy-policy.html">Privacy</a></p>
+        </div>
+    <!-- Advertisement section removed for security compliance -->

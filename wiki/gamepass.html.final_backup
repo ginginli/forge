@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119" crossorigin="anonymous"></script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" class="yandex-hidden" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    <meta name="description" content="Complete guide to The Forge Gamepasses - Learn about the best gamepasses, cash packs, and developer products to enhance your gameplay.">
+    <meta name="keywords" content="the forge gamepasses, forge robux, best gamepasses, cash packs, developer products, totems">
+    <link rel="canonical" href="https://forge-calculator.com/wiki/gamepass.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/wiki/gamepass.html">
+    <meta property="og:title" content="The Forge Gamepasses Guide - Best Purchases & Cash Packs">
+    <meta property="og:description" content="Complete guide to The Forge gamepasses, cash packs, and developer products. Learn the best purchase order for maximum efficiency.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://forge-calculator.com/wiki/gamepass.html">
+    <meta name="twitter:title" content="The Forge Gamepasses Guide - Best Purchases & Cash Packs">
+    <meta name="twitter:description" content="Complete guide to The Forge gamepasses, cash packs, and developer products. Learn the best purchase order for maximum efficiency.">
+    
+    <title>The Forge Gamepasses Guide - Best Purchases & Cash Packs</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YRP03D44XS');
+    </script>
+    
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="EpsJtUp2VOHq8C8Dwkg1zQ" async></script>
+    
+    <!-- Advertisement code removed for security compliance --></head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎫 The Forge Gamepasses</h1>
+                                    <nav>
+                <a href="/recipes/">Recipes</a>
+                <a href="/codes.html">Codes</a>
+                <a href="/">Calculator</a>
+                <a href="/ore/">Ore</a>
+                <a href="/wiki/">Wiki</a>
+                <a href="/weapons.html">Weapons</a>
+                <a href="/armor.html">Armor</a>
+                <a href="/private-server.html">Private Servers</a>
+                <a href="/blog/">Blog</a>
+                <a href="/feedback.html">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="/">Home</a>
+            <span>›</span>
+            <a href="./">Wiki</a>
+            <span>›</span>
+            <span>Gamepasses Guide</span>
+        </div>
+
+        <div class="hero">
+            <h2>🎫 The Forge Gamepasses Guide</h2>
+            <p>Recommended Purchase Order for Maximum Efficiency</p>
+        </div>
+
+        <!-- Best Gamepasses -->
+        <div class="content-section">
+            <h2>🏆 Best Gamepasses - Purchase Priority</h2>
+            
+            <!-- Priority Purchases -->
+            <div class="gamepass-tier priority-tier">
+                <h3>🥇 Priority Purchases</h3>
+                
+                <div class="gamepass-item">
+                    <div class="gamepass-number priority-number">1</div>
+                    <div class="gamepass-content">
+                        <h4>Double Storage</h4>
+                        <p>Doubles your inventory capacity, letting you mine and store twice as many resources without frequent trips back. This is the most impactful quality-of-life improvement you can make.</p>
+                    </div>
+                </div>
+
+                <div class="gamepass-item">
+                    <div class="gamepass-number priority-number">2</div>
+                    <div class="gamepass-content">
+                        <h4>Fast Forge</h4>
+                        <p>Significantly speeds up forging time, letting you craft items faster and increase your gold-per-hour. Essential for efficient gameplay progression.</p>
+                    </div>
+                </div>
+
+                <div class="gamepass-item">
+                    <div class="gamepass-number priority-number">3</div>
+                    <div class="gamepass-content">
+                        <h4>Sell Anywhere</h4>
+                        <p>Allows you to sell items from anywhere on the map, saving time traveling back to shops. Perfect complement to Double Storage for maximum efficiency.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary Purchases -->
+            <div class="gamepass-tier secondary-tier">
+                <h3>⚪ Secondary Purchases</h3>
+                
+                <div class="gamepass-item">
+                    <div class="gamepass-number secondary-number">4</div>
+                    <div class="gamepass-content">
+                        <h4>Better Forge</h4>
+                        <p>Essential for improving forge quality and getting better items. Your first priority after the top 3 gamepasses. Crucial for endgame progression.</p>
+                    </div>
+                </div>
+
+                <div class="gamepass-item">
+                    <div class="gamepass-number secondary-number">5</div>
+                    <div class="gamepass-content">
+                        <h4>Supporter</h4>
+                        <p>Increases your luck and XP gain by 10%. A nice boost that helps with both progression and rare ore finding, but not essential for core gameplay.</p>
+                    </div>
+                </div>
+
+                <div class="gamepass-item">
+                    <div class="gamepass-number secondary-number">6</div>
+                    <div class="gamepass-content">
+                        <h4>Forge Anywhere</h4>
+                        <p>Lets you access your forge from any location, eliminating the need to return to your base to craft. Convenient but less impactful than other options.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Purchase Strategy Summary -->
+            <div class="summary-box">
+                <h4><span>💡</span> Purchase Strategy</h4>
+                <ul>
+                    <li><strong style="color: var(--gamepass-gold);">Top 3 Priority:</strong> Double Storage, Fast Forge, and Sell Anywhere are the most impactful quality-of-life improvements</li>
+                    <li><strong style="color: var(--gamepass-silver);">Better Forge:</strong> Essential for end-game progression and crafting high-quality equipment</li>
+                    <li><strong style="color: var(--gamepass-silver);">Supporter & Forge Anywhere:</strong> Nice-to-have conveniences that enhance gameplay but aren't critical</li>
+                    <li><strong class="text-highlight">Budget Tip:</strong> If you can only afford one, start with Double Storage for the biggest immediate impact</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cash Packs -->
+        <div class="content-section">
+            <h2>💰 Cash Packs</h2>
+            <p style="margin-bottom: 2rem;">Purchase gold directly to speed up your progression. Here are all available cash pack options:</p>
+            
+            <div class="cash-pack-grid">
+                <div class="cash-pack">
+                    <h4>💰 Tiny Cash Pack</h4>
+                    <div class="amount">750 Gold</div>
+                    <div class="price">49 <span>R$</span></div>
+                </div>
+                
+                <div class="cash-pack">
+                    <h4>💰 Small Cash Pack</h4>
+                    <div class="amount">4000 Gold</div>
+                    <div class="price">175 <span>R$</span></div>
+                </div>
+                
+                <div class="cash-pack">
+                    <h4>💰 Medium Cash Pack</h4>
+                    <div class="amount">7500 Gold</div>
+                    <div class="price">399 <span>R$</span></div>
+                </div>
+                
+                <div class="cash-pack">
+                    <h4>💰 Advanced Cash Pack</h4>
+                    <div class="amount">15000 Gold</div>
+                    <div class="price">699 <span>R$</span></div>
+                </div>
+                
+                <div class="cash-pack">
+                    <h4>💰 Huge Cash Pack</h4>
+                    <div class="amount">30000 Gold</div>
+                    <div class="price">1199 <span>R$</span></div>
+                </div>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #ff9800; margin-top: 2rem;">
+                <h4 style="color: #e65100; margin-bottom: 0.5rem;">💡 Cash Pack Tips</h4>
+                <ul style="color: #555; margin: 0;">
+                    <li><strong>Best Value:</strong> Larger packs offer better gold-per-Robux ratios</li>
+                    <li><strong>Strategic Use:</strong> Use gold to buy better pickaxes and equipment early</li>
+                    <li><strong>Events:</strong> Special events may offer bonus rewards</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Developer Products - Totems -->
+        <div class="content-section">
+            <h2>🗿 Developer Products - Totems</h2>
+            <p style="margin-bottom: 2rem;">Temporary boost items that provide powerful effects for 5 minutes. Perfect for intensive farming sessions:</p>
+            
+            <div class="totem-grid">
+                <div class="totem-card warrior-totem">
+                    <h4>⚔️ Warrior Totem</h4>
+                    <div class="totem-effect">Damage increase for 5 minutes</div>
+                    <div class="totem-prices">
+                        <div class="totem-price">Buy 1: 75 R$</div>
+                        <div class="totem-price">Buy 3: 169 R$</div>
+                    </div>
+                </div>
+                
+                <div class="totem-card xp-totem">
+                    <h4>📈 XP Totem</h4>
+                    <div class="totem-effect">Doubles the XP for 5 minutes</div>
+                    <div class="totem-prices">
+                        <div class="totem-price">Buy 1: 49 R$</div>
+                        <div class="totem-price">Buy 3: 129 R$</div>
+                    </div>
+                </div>
+                
+                <div class="totem-card luck-totem">
+                    <h4>🍀 Luck Totem</h4>
+                    <div class="totem-effect">Increases the Luck by 25% for 5 minutes</div>
+                    <div class="totem-prices">
+                        <div class="totem-price">Buy 1: 75 R$</div>
+                        <div class="totem-price">Buy 3: 169 R$</div>
+                    </div>
+                </div>
+                
+                <div class="totem-card vitality-totem">
+                    <h4>❤️ Vitality Totem</h4>
+                    <div class="totem-effect">Regens health for 5 minutes</div>
+                    <div class="totem-prices">
+                        <div class="totem-price">Buy 1: 75 R$</div>
+                        <div class="totem-price">Buy 3: 169 R$</div>
+                    </div>
+                </div>
+                
+                <div class="totem-card miner-totem">
+                    <h4>⛏️ Miner Totem</h4>
+                    <div class="totem-effect">20% faster mining and 15% extra mining damage for 5 minutes</div>
+                    <div class="totem-prices">
+                        <div class="totem-price">Buy 1: 75 R$</div>
+                        <div class="totem-price">Buy 3: 169 R$</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px; padding: 1.5rem; border-left: 4px solid #2196f3; margin-top: 2rem;">
+                <h4 style="color: #0d47a1; margin-bottom: 0.5rem;">🎯 Totem Usage Tips</h4>
+                <ul style="color: #555; margin: 0;">
+                    <li><strong>Best Value:</strong> Buy 3-packs for better pricing (save ~30% per totem)</li>
+                    <li><strong>Stacking:</strong> Multiple totems can be used simultaneously for maximum effect</li>
+                    <li><strong>Usage:</strong> Most effective during active farming sessions</li>
+                    <li><strong>Popular Combos:</strong> Luck + Miner totems for ore farming, XP + Warrior for combat</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Spending Recommendations -->
+        <div class="content-section">
+            <h2>💎 Smart Spending Guide</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div style="background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #4caf50;">
+                    <h4 style="color: #2e7d32; margin-bottom: 0.5rem;">🥇 New Players (0-500 R$)</h4>
+                    <p style="color: #555; margin-bottom: 1rem;">Focus on core quality-of-life improvements:</p>
+                    <ul style="color: #555; margin: 0;">
+                        <li>Double Storage (highest priority)</li>
+                        <li>Fast Forge (if budget allows)</li>
+                        <li>Consider XP Totems for faster progression</li>
+                    </ul>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #ff9800;">
+                    <h4 style="color: #e65100; margin-bottom: 0.5rem;">🥈 Intermediate Players (500-1500 R$)</h4>
+                    <p style="color: #555; margin-bottom: 1rem;">Complete the essential gamepass set:</p>
+                    <ul style="color: #555; margin: 0;">
+                        <li>All top 3 priority gamepasses</li>
+                        <li>Better Forge for quality improvements</li>
+                        <li>Mix of cash packs and totems as needed</li>
+                    </ul>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #9c27b0;">
+                    <h4 style="color: #7b1fa2; margin-bottom: 0.5rem;">🥉 Advanced Players (1500+ R$)</h4>
+                    <p style="color: #555; margin-bottom: 1rem;">Optimize for convenience and efficiency:</p>
+                    <ul style="color: #555; margin: 0;">
+                        <li>All gamepasses for maximum convenience</li>
+                        <li>Regular totem usage for farming sessions</li>
+                        <li>Large cash packs for equipment upgrades</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculator CTA -->
+        <div class="cta-box">
+            <h2>🔥 Optimize Your Forge Strategy!</h2>
+            <p style="margin-bottom: 1.5rem;">Use our tools to plan your equipment and resource management</p>
+            <a href="/" class="cta-btn">Open Calculator</a>
+            <a href="/codes.html" class="cta-btn">Get Free Codes</a>
+            <a href="./" class="cta-btn">Back to Wiki</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Forge Calculator. Not affiliated with Roblox or The Forge developers.</p>
+            <p><a href="/">Home</a> | <a href="./">Wiki</a> | <a href="/recipes/">Recipes</a> | <a href="/codes.html">Codes</a> | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms-of-service.html">Terms</a></p>
+        </div>
+            
+            <p class="footer-section">
+            </p>
+            
+            <!-- 友情链接 -->
+            <p class="footer-section">
+                <strong class="footer-links-title">友情链接:</strong>
+                <a href="https://aishenqi.net/" target="_blank" rel="noopener noreferrer" title="最全AI工具导航网站">AI神器大全</a>
+            </p>
+    </footer>
+</body>
+</html>
