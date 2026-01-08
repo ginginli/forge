@@ -1,0 +1,42 @@
+# Manual Submission List for Google Search Console
+# Submit these URLs individually using URL Inspection Tool
+# Date: Tue Jan  6 15:49:54 CST 2026
+# Status: Post URL cleanup - all .html extensions removed
+
+# PRIORITY 1 - Core Pages (Submit First)
+https://forge-calculator.com/
+https://forge-calculator.com/codes
+https://forge-calculator.com/recipes/
+https://forge-calculator.com/weapons
+https://forge-calculator.com/armor
+
+# PRIORITY 2 - Content Pages
+https://forge-calculator.com/pickaxe
+https://forge-calculator.com/ore/
+https://forge-calculator.com/ore/snowite
+https://forge-calculator.com/ore/mythril
+https://forge-calculator.com/ore/stone
+
+# PRIORITY 3 - Wiki & Support
+https://forge-calculator.com/wiki/
+https://forge-calculator.com/private-server
+https://forge-calculator.com/feedback
+https://forge-calculator.com/privacy-policy
+https://forge-calculator.com/terms-of-service
+
+# PRIORITY 4 - Detailed Content
+https://forge-calculator.com/recipes/best-recipes
+https://forge-calculator.com/wiki/races
+https://forge-calculator.com/wiki/runes
+https://forge-calculator.com/wiki/npcs
+https://forge-calculator.com/wiki/enemies
+https://forge-calculator.com/wiki/gamepass
+
+# PRIORITY 5 - Blog & Russian Content
+https://forge-calculator.com/blog/
+https://forge-calculator.com/blog/mastering-the-forge
+https://forge-calculator.com/blog/introducing-calculator
+https://forge-calculator.com/ru/
+https://forge-calculator.com/ru/crafts
+https://forge-calculator.com/ru/recipes/
+https://forge-calculator.com/ru/recipes/best-recipes

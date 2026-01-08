@@ -1,0 +1,35 @@
+# Google Search Console 优先提交清单
+# 针对"网站地图中缺少重要页面"问题
+# 创建时间: Wed Jan  7 15:35:52 CST 2026
+
+## 立即提交的页面（按优先级排序）:
+
+### 优先级 1 - 核心功能页面
+https://forge-calculator.com/codes
+- 重要性: 用户获取免费资源的主要页面
+- 流量: 高
+- 更新频率: 每日
+
+### 优先级 2 - 内容页面  
+https://forge-calculator.com/wiki/races
+- 重要性: 游戏指南核心内容
+- 流量: 中高
+- 更新频率: 每周
+
+https://forge-calculator.com/recipes/best-recipes
+- 重要性: 最佳配方指南
+- 流量: 高
+- 更新频率: 每周
+
+## 提交步骤:
+1. 打开 Google Search Console
+2. 选择 forge-calculator.com 属性
+3. 使用 URL 检查工具
+4. 逐个输入上述 URL
+5. 点击"请求编入索引"
+6. 等待 24-48 小时查看结果
+
+## 额外建议:
+- 同时在 Bing Webmaster Tools 中提交
+- 监控这些页面的索引状态
+- 如果问题持续，考虑提高 sitemap 中的优先级

@@ -12,10 +12,6 @@ UPDATED_URLS=(
     "https://forge-calculator.com/wiki/npcs.html"
     "https://forge-calculator.com/wiki/races.html"
     "https://forge-calculator.com/wiki/enemies.html"
-    "https://forge-calculator.com/recipe-viewer.html"
-    "https://forge-calculator.com/recipes/recipe-database-ui.html"
-    "https://forge-calculator.com/blog/introducing-calculator-print.html"
-    "https://forge-calculator.com/generate-recipes/"
     "https://forge-calculator.com/sitemap.xml"
 )
 

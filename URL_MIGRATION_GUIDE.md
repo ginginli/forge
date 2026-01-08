@@ -10,9 +10,6 @@
 #### 配方相关页面
 - `https://forge-calculator.com/recipes.html` → `https://forge-calculator.com/recipes/`
 - `https://forge-calculator.com/best-recipes.html` → `https://forge-calculator.com/recipes/best-recipes.html`
-- `https://forge-calculator.com/generate-recipes.html` → `https://forge-calculator.com/recipes/generate-recipes.html`
-- `https://forge-calculator.com/recipe-viewer.html` → `https://forge-calculator.com/recipes/recipe-viewer.html`
-- `https://forge-calculator.com/recipe-database-ui.html` → `https://forge-calculator.com/recipes/recipe-database-ui.html`
 
 #### 矿石相关页面
 - `https://forge-calculator.com/ore-guide.html` → `https://forge-calculator.com/ore/`

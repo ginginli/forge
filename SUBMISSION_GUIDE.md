@@ -8,10 +8,6 @@
 - `npcs.html` - 添加了 canonical 标签和关键词
 - `races.html` - 添加了 canonical 标签和关键词  
 - `enemies.html` - 添加了 canonical 标签和关键词
-- `recipe-viewer.html` - 添加了 canonical 标签和描述
-- `recipe-database-ui.html` - 转换为完整HTML页面，添加canonical标签
-- `blog-introducing-calculator-print.html` - 添加了 canonical 标签
-- `generate-recipes.html` - 添加了 canonical 标签
 - `sitemap.xml` - 更新了所有页面
 
 ## 提交方法
@@ -30,8 +26,6 @@
    https://forge-calculator.com/wiki/npcs.html
    https://forge-calculator.com/wiki/races.html
    https://forge-calculator.com/wiki/enemies.html
-   https://forge-calculator.com/recipe-viewer.html
-   https://forge-calculator.com/recipe-database-ui.html
    ```
 
 4. **或者提交更新的 sitemap:**
