@@ -4,11 +4,8 @@
 # Enable URL Rewriting
 RewriteEngine On
 
-# Force HTTPS and non-www (Combined for efficiency)
-# 强制 HTTPS 和非 www（合并以提高效率）
-RewriteCond %{HTTP_HOST} ^www\.forge-calculator\.com [NC,OR]
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://forge-calculator.com/$1 [L,R=301]
+# HTTPS and www redirects are handled by Vercel (see vercel.json)
+# HTTPS 和 www 重定向由 Vercel 处理（见 vercel.json）
 
 # ============================================
 # URL Canonicalization and Parameter Handling
