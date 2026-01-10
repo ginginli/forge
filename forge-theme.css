@@ -1,7 +1,13 @@
-/* The Forge - Official Color Theme */
-/* 铁匠铺官方主题配色系统 - 完全匹配官方Wiki */
+/* The Forge - Enhanced Gaming Theme */
+/* 铁匠铺增强游戏主题 - 基于 Claude Skills 优化原则 */
 
 :root {
+    /* Enhanced Typography System - 增强字体系统 */
+    --font-display: 'Orbitron', 'Exo 2', monospace;        /* 科技感标题 */
+    --font-gaming: 'Press Start 2P', monospace;            /* 像素游戏风格 */
+    --font-body: 'Inter', 'Space Grotesk', sans-serif;     /* 现代正文 */
+    --font-code: 'JetBrains Mono', 'Fira Code', monospace; /* 代码/数据 */
+    
     /* Official Background Colors - 官方背景色系 */
     --bg-primary: #2b2b2b;       /* 主背景 - 深灰色 */
     --bg-secondary: #3a3a3a;     /* 次背景 - 中灰色 */
@@ -11,6 +17,20 @@
     --bg-table-header: #404040;  /* 表格头部背景 */
     --bg-table-hover: #4a4a4a;   /* 表格悬停背景 */
     --bg-card: #353535;          /* 卡片背景 */
+    
+    /* Enhanced Gradient Backgrounds - 增强渐变背景 */
+    --bg-forge-workshop: linear-gradient(135deg, 
+        var(--bg-primary) 0%, 
+        var(--bg-secondary) 50%, 
+        var(--bg-darker) 100%);
+    --bg-metal-texture: linear-gradient(45deg,
+        rgba(64, 64, 64, 0.8) 0%,
+        rgba(43, 43, 43, 0.9) 50%,
+        rgba(30, 30, 30, 0.8) 100%);
+    --bg-atmospheric: 
+        radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(239, 68, 68, 0.1) 0%, transparent 50%),
+        var(--bg-forge-workshop);
     
     /* Official Text Colors - 官方文本色 */
     --text-primary: #ffffff;     /* 主文本 - 纯白 */
@@ -37,6 +57,17 @@
     --border-secondary: #404040; /* 次边框 */
     --border-accent: #f59e0b;    /* 强调边框 */
     
+    /* Enhanced Shadow System - 增强阴影系统 */
+    --shadow-forge-glow: 0 0 20px rgba(245, 158, 11, 0.3);
+    --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(245, 158, 11, 0.2);
+    --shadow-button-active: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-text-glow: 0 2px 8px rgba(245, 158, 11, 0.5);
+    
+    /* Animation Timing - 动画时间 */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    
     /* Snowite Colors - 雪花矿石色系 */
     --snowite-blue: #3b82f6;     /* 雪花蓝 */
     --snowite-light: #60a5fa;    /* 浅雪花蓝 */
@@ -44,95 +75,446 @@
     --snowite-ice: #dbeafe;      /* 雪花冰色 */
 }
 
-/* Official Base Styles - 官方基础样式 */
+/* Enhanced Base Styles - 增强基础样式 */
 body {
-    background: var(--bg-primary);
+    background: var(--bg-atmospheric);
+    background-size: 400% 400%;
+    animation: atmosphereShift 20s ease infinite;
     color: var(--text-primary);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-body);
+    font-weight: 400;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 * {
     box-sizing: border-box;
 }
 
-/* Official Typography - 官方字体样式 */
-h1, h2 {
-    color: var(--ui-orange);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+/* Gaming Theme Animations - 游戏主题动画 */
+@keyframes atmosphereShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
 }
 
-h3, h4 {
+@keyframes forgeGlow {
+    0%, 100% { 
+        box-shadow: var(--shadow-forge-glow);
+        transform: scale(1);
+    }
+    50% { 
+        box-shadow: 0 0 30px rgba(245, 158, 11, 0.5), 0 0 40px rgba(239, 68, 68, 0.2);
+        transform: scale(1.02);
+    }
+}
+
+@keyframes sparkle {
+    0% { 
+        transform: scale(0) rotate(0deg); 
+        opacity: 0; 
+    }
+    50% { 
+        transform: scale(1) rotate(180deg); 
+        opacity: 1; 
+    }
+    100% { 
+        transform: scale(0) rotate(360deg); 
+        opacity: 0; 
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes textGlow {
+    0%, 100% {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        text-shadow: var(--shadow-text-glow);
+    }
+}
+
+/* Page Loading Animation - 页面加载动画 */
+.page-enter {
+    animation: fadeInUp 0.8s var(--transition-normal);
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+
+/* Enhanced Typography - 增强字体样式 */
+h1 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--ui-orange);
+    text-shadow: var(--shadow-text-glow);
+    animation: textGlow 3s ease-in-out infinite;
+    margin: 0 0 1rem 0;
+    letter-spacing: 0.02em;
+}
+
+h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: var(--ui-orange);
+    text-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+    margin: 0 0 1.5rem 0;
+    letter-spacing: 0.01em;
+}
+
+h3 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
     color: var(--text-primary);
+    margin: 0 0 1rem 0;
+}
+
+h4 {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    color: var(--text-secondary);
+    margin: 0 0 0.75rem 0;
 }
 
 p, li, span {
+    font-family: var(--font-body);
     color: var(--text-primary);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.7;
+}
+
+/* Code and Data Typography - 代码和数据字体 */
+.code, .data-value, .ore-count, .multiplier-value {
+    font-family: var(--font-code);
+    font-weight: 500;
+    color: var(--ui-green);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    border: 1px solid var(--border-secondary);
+}
+
+/* Gaming Elements - 游戏元素 */
+.pixel-text {
+    font-family: var(--font-gaming);
+    font-size: 0.8rem;
+    color: var(--ui-orange);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
 }
 
 strong, .highlight {
     color: var(--ui-orange);
+    font-weight: 600;
 }
 
 a {
     color: var(--ui-blue);
-    transition: color 0.3s ease;
+    transition: all var(--transition-normal);
     text-decoration: none;
+    position: relative;
 }
 
 a:hover {
     color: var(--snowite-light);
+    text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
 }
 
-/* Official Component Styles - 官方组件样式 */
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--ui-blue), var(--snowite-light));
+    transition: width var(--transition-normal);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* Enhanced Component Styles - 增强组件样式 */
+
+/* Container System - 容器系统 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+}
+
+/* Forge Workshop Cards - 锻造工坊卡片 */
 .content-section {
-    background: var(--bg-secondary);
+    background: var(--bg-metal-texture);
     color: var(--text-primary);
-    border: 1px solid var(--border-secondary);
-    border-radius: 15px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--border-accent);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        var(--shadow-forge-glow);
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-normal);
+    animation: fadeInUp 0.6s var(--transition-normal);
+}
+
+.content-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--ui-orange) 50%, 
+        transparent 100%);
+    opacity: 0.7;
+}
+
+.content-section:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: var(--rarity-legendary);
 }
 
 .content-section h2 {
     color: var(--ui-orange);
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     margin-bottom: 1.5rem;
     border-bottom: 2px solid var(--ui-orange);
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.75rem;
+    position: relative;
 }
 
-/* Official Table Styles - 官方表格样式 */
+.content-section h2::after {
+    content: '⚒️';
+    position: absolute;
+    right: 0;
+    bottom: 0.5rem;
+    font-size: 1.2em;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+/* Hero Section - 英雄区域 */
+.hero {
+    background: var(--bg-atmospheric);
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 70%, rgba(245, 158, 11, 0.15) 0%, transparent 60%),
+        radial-gradient(circle at 70% 30%, rgba(168, 85, 247, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 1.5rem;
+    animation: textGlow 4s ease-in-out infinite;
+}
+
+.hero p {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* Features Grid - 功能网格 */
+.features {
+    padding: 4rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    background: var(--bg-metal-texture);
+    border: 2px solid var(--border-primary);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    animation: slideInLeft 0.6s var(--transition-normal);
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        var(--ui-orange), 
+        var(--rarity-legendary), 
+        var(--ui-purple),
+        var(--ui-blue));
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    z-index: -1;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-card-hover);
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.feature-card h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--ui-orange);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* Quick Tips Section - 快速提示区域 */
+.quick-tips-section {
+    padding: 3rem 0;
+    background: var(--bg-darker);
+    position: relative;
+}
+
+.quick-tips-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-family: var(--font-display);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tips-grid > div {
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all var(--transition-normal);
+}
+
+.tips-grid > div:hover {
+    border-color: var(--ui-orange);
+    box-shadow: var(--shadow-forge-glow);
+    transform: translateY(-4px);
+}
+
+.tips-grid h3 {
+    color: var(--ui-orange);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+.text-highlight {
+    color: var(--rarity-legendary);
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(245, 158, 11, 0.3);
+}
+/* Enhanced Table Styles - 增强表格样式 */
 .official-table,
 .complete-info-table {
     width: 100%;
     border-collapse: collapse;
-    background: var(--bg-table) !important;
-    border-radius: 8px;
+    background: var(--bg-metal-texture) !important;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        var(--shadow-forge-glow);
+    margin: 1.5rem 0;
+    border: 2px solid var(--border-accent);
 }
 
 .official-table th {
-    background: var(--bg-table-header);
+    background: linear-gradient(135deg, var(--bg-table-header), var(--bg-surface));
     color: var(--ui-orange);
-    padding: 1rem 0.75rem;
+    padding: 1.2rem 1rem;
     text-align: left;
-    font-weight: 600;
-    font-size: 0.9rem;
+    font-weight: 700;
+    font-size: 0.95rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border-bottom: 1px solid var(--border-primary);
+    letter-spacing: 0.08em;
+    border-bottom: 2px solid var(--ui-orange);
+    font-family: var(--font-display);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .official-table td {
-    padding: 1rem 0.75rem;
+    padding: 1.2rem 1rem;
     border-bottom: 1px solid var(--border-primary);
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 1rem;
+    font-family: var(--font-body);
+    transition: all var(--transition-fast);
 }
 
 .official-table tr:last-child td {
@@ -141,63 +523,162 @@ a:hover {
 
 .official-table tr:hover {
     background: var(--bg-table-hover);
+    transform: scale(1.01);
+    box-shadow: inset 0 0 20px rgba(245, 158, 11, 0.1);
 }
 
-/* Ore name styling */
+/* Enhanced Rarity Colors with Glow Effects */
 .official-table .ore-name,
 .official-table .weapon-name,
 .official-table .armor-name {
     color: var(--ui-orange);
-    font-weight: 600;
+    font-weight: 700;
+    font-family: var(--font-display);
+    text-shadow: 0 0 8px rgba(245, 158, 11, 0.4);
 }
 
-/* Rarity colors */
 .official-table .rarity-common {
     color: var(--rarity-common);
+    text-shadow: 0 0 4px rgba(204, 204, 204, 0.3);
 }
 
 .official-table .rarity-uncommon {
     color: var(--rarity-uncommon);
+    text-shadow: 0 0 8px rgba(74, 222, 128, 0.4);
 }
 
 .official-table .rarity-rare {
     color: var(--rarity-rare);
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
 }
 
 .official-table .rarity-epic {
     color: var(--rarity-epic);
+    text-shadow: 0 0 8px rgba(168, 85, 247, 0.4);
 }
 
 .official-table .rarity-legendary {
     color: var(--rarity-legendary);
+    text-shadow: 0 0 12px rgba(245, 158, 11, 0.6);
+    animation: textGlow 2s ease-in-out infinite;
 }
 
-/* Trait/Effect styling */
+/* Data Display Enhancements */
 .official-table .trait-none {
     color: var(--text-disabled);
     font-style: italic;
+    opacity: 0.7;
 }
 
-/* Price styling */
 .official-table .price {
     color: var(--ui-green);
+    font-weight: 600;
+    font-family: var(--font-code);
+}
+
+.official-table .multiplier {
+    color: var(--ui-orange);
+    font-weight: 700;
+    font-family: var(--font-code);
+    text-shadow: 0 0 6px rgba(245, 158, 11, 0.3);
+}
+
+.official-table .chance {
+    color: var(--ui-green);
+    font-family: var(--font-code);
     font-weight: 500;
 }
 
-/* Multiplier styling */
-.official-table .multiplier {
+/* Enhanced Button System - 增强按钮系统 */
+.forge-button {
+    background: linear-gradient(135deg, var(--ui-orange), var(--rarity-legendary));
+    color: var(--text-primary);
+    border: 2px solid var(--ui-orange);
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.forge-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        transparent);
+    transition: left var(--transition-slow);
+}
+
+.forge-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+        0 8px 25px rgba(245, 158, 11, 0.4),
+        0 0 20px rgba(245, 158, 11, 0.3);
+    border-color: var(--rarity-legendary);
+}
+
+.forge-button:hover::before {
+    left: 100%;
+}
+
+.forge-button:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-button-active);
+}
+
+/* Secondary Button Style */
+.forge-button-secondary {
+    background: transparent;
     color: var(--ui-orange);
-    font-weight: 600;
+    border: 2px solid var(--ui-orange);
 }
 
-/* Chance styling */
-.official-table .chance {
-    color: var(--ui-green);
+.forge-button-secondary:hover {
+    background: var(--ui-orange);
+    color: var(--bg-primary);
 }
 
-/* Complete Info Table */
-.complete-info-table {
-    background: var(--bg-table) !important;
+/* Navigation Enhancement - 导航增强 */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-primary);
+    transition: all var(--transition-normal);
+    font-family: var(--font-body);
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: var(--ui-orange);
+    color: var(--bg-primary);
+    border-color: var(--ui-orange);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -1185,4 +1666,682 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Responsive Design & Mobile Optimization - 响应式设计和移动端优化 */
+
+/* Calculator Section Enhancement - 计算器区域增强 */
+.calculator,
+.calculator-section {
+    padding: 3rem 0;
+    background: var(--bg-darker);
+    position: relative;
+}
+
+.gacha-simulator-wrapper {
+    background: var(--bg-metal-texture);
+    border: 2px solid var(--ui-orange);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: var(--shadow-card-hover);
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.gacha-simulator-wrapper iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Header Enhancement - 头部增强 */
+header {
+    background: var(--bg-metal-texture);
+    border-bottom: 3px solid var(--ui-orange);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+header .container {
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0 0 1rem 0;
+    text-align: center;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+/* Footer Enhancement - 页脚增强 */
+footer {
+    background: var(--bg-darker);
+    border-top: 2px solid var(--ui-orange);
+    padding: 3rem 0 2rem 0;
+    margin-top: 4rem;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--ui-orange);
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    color: var(--rarity-legendary);
+}
+
+/* Badge and Image Styling - 徽章和图片样式 */
+footer img {
+    margin: 0.25rem;
+    border-radius: 4px;
+    transition: all var(--transition-normal);
+    filter: brightness(0.9);
+}
+
+footer img:hover {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+}
+
+.badge-rounded {
+    border-radius: 8px !important;
+}
+
+.badge-auto-height {
+    height: auto !important;
+    max-height: 60px;
+}
+
+/* Utility Classes - 工具类 */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+/* Mobile Responsive Breakpoints - 移动端响应式断点 */
+@media (max-width: 768px) {
+    /* Simplified animations for mobile performance */
+    body {
+        animation: none;
+        background: var(--bg-primary);
+    }
+    
+    .content-section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    nav a {
+        text-align: center;
+        padding: 0.75rem;
+    }
+    
+    .gacha-simulator-wrapper iframe {
+        height: 400px;
+    }
+    
+    /* Reduce glow effects on mobile for performance */
+    .feature-card:hover::before,
+    .content-section:hover {
+        opacity: 0.5;
+    }
+    
+    /* Simplify table on mobile */
+    .official-table {
+        font-size: 0.85rem;
+    }
+    
+    .official-table th,
+    .official-table td {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .content-section {
+        padding: 1rem;
+        border-radius: 12px;
+    }
+    
+    .feature-card {
+        padding: 1rem;
+    }
+    
+    .forge-button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .gacha-simulator-wrapper {
+        padding: 0.5rem;
+    }
+    
+    .gacha-simulator-wrapper iframe {
+        height: 350px;
+    }
+}
+
+/* High contrast mode support - 高对比度模式支持 */
+@media (prefers-contrast: high) {
+    :root {
+        --text-primary: #ffffff;
+        --text-secondary: #ffffff;
+        --bg-primary: #000000;
+        --bg-secondary: #1a1a1a;
+        --ui-orange: #ffaa00;
+        --border-primary: #ffffff;
+    }
+}
+
+/* Reduced motion support - 减少动画模式支持 */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    body {
+        animation: none;
+    }
+}
+
+/* Print styles - 打印样式 */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .content-section {
+        border: 1px solid black;
+        box-shadow: none;
+        background: white;
+    }
+    
+    nav,
+    footer,
+    .gacha-simulator-wrapper {
+        display: none;
+    }
+}
+
+/* Phase 2: Special Page Enhancements - 特殊页面增强 */
+
+/* Ore Pages Specific Styling - 矿石页面专用样式 */
+.ore-showcase {
+    background: var(--bg-metal-texture);
+    border: 3px solid var(--snowite-blue);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    box-shadow: 
+        0 12px 40px rgba(59, 130, 246, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.ore-showcase::before {
+    content: '❄️';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    animation: sparkle 3s ease-in-out infinite;
+}
+
+.ore-showcase h2 {
+    color: var(--snowite-blue);
+    font-family: var(--font-display);
+    text-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+}
+
+.ore-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.ore-stat-card {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid var(--snowite-blue);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all var(--transition-normal);
+}
+
+.ore-stat-card:hover {
+    background: rgba(59, 130, 246, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+}
+
+.ore-stat-label {
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.ore-stat-value {
+    font-family: var(--font-code);
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--snowite-light);
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+}
+
+/* Pickaxe Page Styling - 镐子页面样式 */
+.pickaxe-showcase {
+    background: var(--bg-metal-texture);
+    border: 3px solid var(--rarity-legendary);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    box-shadow: 
+        0 12px 40px rgba(245, 158, 11, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.pickaxe-showcase::before {
+    content: '⛏️';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    animation: forgeGlow 2s ease-in-out infinite;
+}
+
+.pickaxe-tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.pickaxe-tier-card {
+    background: var(--bg-card);
+    border: 2px solid var(--border-primary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.pickaxe-tier-card.legendary {
+    border-color: var(--rarity-legendary);
+    background: linear-gradient(135deg, 
+        rgba(245, 158, 11, 0.1) 0%, 
+        var(--bg-card) 100%);
+}
+
+.pickaxe-tier-card.epic {
+    border-color: var(--rarity-epic);
+    background: linear-gradient(135deg, 
+        rgba(168, 85, 247, 0.1) 0%, 
+        var(--bg-card) 100%);
+}
+
+.pickaxe-tier-card.rare {
+    border-color: var(--rarity-rare);
+    background: linear-gradient(135deg, 
+        rgba(59, 130, 246, 0.1) 0%, 
+        var(--bg-card) 100%);
+}
+
+.pickaxe-tier-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.pickaxe-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.pickaxe-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.pickaxe-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.pickaxe-stat-label {
+    font-family: var(--font-body);
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.pickaxe-stat-value {
+    font-family: var(--font-code);
+    font-weight: 600;
+    color: var(--ui-orange);
+}
+
+/* Feedback Page Styling - 反馈页面样式 */
+.feedback-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.feedback-form {
+    background: var(--bg-metal-texture);
+    border: 2px solid var(--ui-orange);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-card-hover);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--ui-orange);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-darker);
+    border: 2px solid var(--border-primary);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: all var(--transition-normal);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--ui-orange);
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+    background: var(--bg-secondary);
+}
+
+.form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-button {
+    background: linear-gradient(135deg, var(--ui-orange), var(--rarity-legendary));
+    color: var(--text-primary);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+/* Legal Pages Styling - 法律页面样式 */
+.legal-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.legal-section {
+    background: var(--bg-secondary);
+    border-left: 4px solid var(--ui-orange);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0 12px 12px 0;
+}
+
+.legal-section h3 {
+    color: var(--ui-orange);
+    font-family: var(--font-display);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.legal-section ul {
+    padding-left: 1.5rem;
+}
+
+.legal-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+/* Enhanced Data Tables for Special Pages - 特殊页面增强数据表格 */
+.enhanced-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-metal-texture);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card-hover);
+    margin: 2rem 0;
+}
+
+.enhanced-data-table th {
+    background: linear-gradient(135deg, var(--ui-orange), var(--rarity-legendary));
+    color: var(--text-primary);
+    padding: 1.2rem 1rem;
+    text-align: left;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.enhanced-data-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-primary);
+    font-family: var(--font-body);
+    transition: all var(--transition-fast);
+}
+
+.enhanced-data-table tr:hover {
+    background: rgba(245, 158, 11, 0.1);
+    transform: scale(1.01);
+}
+
+.enhanced-data-table .data-highlight {
+    font-family: var(--font-code);
+    font-weight: 600;
+    color: var(--ui-orange);
+    background: rgba(245, 158, 11, 0.1);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+/* Responsive Enhancements for Special Pages - 特殊页面响应式增强 */
+@media (max-width: 768px) {
+    .ore-stats,
+    .pickaxe-tier-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .ore-showcase,
+    .pickaxe-showcase,
+    .feedback-form {
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .feedback-container,
+    .legal-content {
+        padding: 1rem;
+    }
+    
+    .enhanced-data-table {
+        font-size: 0.9rem;
+    }
+    
+    .enhanced-data-table th,
+    .enhanced-data-table td {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ore-stat-value {
+        font-size: 1.4rem;
+    }
+    
+    .pickaxe-name {
+        font-size: 1.1rem;
+    }
+    
+    .form-input,
+    .form-textarea {
+        padding: 0.75rem;
+    }
+    
+    .submit-button {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+/* Inline Style Cleanup - 内联样式清理 */
+
+/* Calculator Page Specific Styles - 计算器页面专用样式 */
+.selected-ores-section {
+    margin-top: 20px;
+}
+
+.ore-composition-section {
+    margin-top: 20px;
+}
+
+.popular-combinations-section {
+    margin-top: 10px;
+}
+
+.preset-btn {
+    background: var(--ui-blue);
+    color: var(--text-primary);
+    border: 2px solid var(--ui-blue);
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    font-family: var(--font-body);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.preset-btn:hover {
+    background: var(--ui-orange);
+    border-color: var(--ui-orange);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+/* Advertisement Container Styles - 广告容器样式 */
+.ad-container {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid var(--border-secondary);
+}
+
+.adsbygoogle {
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Remove any remaining inline styles - 移除任何剩余的内联样式 */
+[style] {
+    /* This will be overridden by specific classes */
 }
