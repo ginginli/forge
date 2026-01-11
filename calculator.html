@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Forge Calculator - Interactive Weapon & Armor Forging Tool</title>
+    <meta name="description" content="Calculate optimal ore combinations, DPS, and forging chances for The Forge Roblox. Interactive calculator with real-time results and inventory optimization.">
+    <link rel="canonical" href="https://forge-calculator.com/calculator">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/calculator">
+    <meta property="og:title" content="The Forge Calculator - Interactive Forging Tool">
+    <meta property="og:description" content="Calculate optimal ore combinations and DPS for The Forge Roblox game">
+    <meta property="og:image" content="https://forge-calculator.com/favicon-120x120.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://forge-calculator.com/calculator">
+    <meta property="twitter:title" content="The Forge Calculator - Interactive Forging Tool">
+    <meta property="twitter:description" content="Calculate optimal ore combinations and DPS for The Forge Roblox game">
+    <meta property="twitter:image" content="https://forge-calculator.com/favicon-120x120.png">
+
+    <link rel="stylesheet" href="/forge-theme.css">
+    <style>
+        .calculator-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+        }
+        
+        .calculator-panel {
+            background: rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        
+        .ore-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .ore-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .ore-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .ore-item.selected {
+            background: rgba(74, 144, 226, 0.3);
+            border-color: #4a90e2;
+        }
+        
+        .result-display {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(80, 200, 120, 0.1));
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        
+        .result-title {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #4a90e2;
+        }
+        
+        .result-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .stat-item {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .mode-toggle {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .mode-btn {
+            flex: 1;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .mode-btn.active {
+            background: rgba(74, 144, 226, 0.3);
+            border-color: #4a90e2;
+        }
+        
+        @media (max-width: 768px) {
+            .calculator-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>The Forge Calculator</h1>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="/calculator" class="active">Calculator</a>
+                <a href="/weapons">Weapons</a>
+                <a href="/armor">Armor</a>
+                <a href="/codes">Codes</a>
+            </nav>
+        </header>
+
+        <div class="calculator-container">
+            <!-- Left Panel: Ore Selection -->
+            <div class="calculator-panel">
+                <h2>Select Ores</h2>
+                <div class="mode-toggle">
+                    <button class="mode-btn active" data-mode="weapon">Weapon</button>
+                    <button class="mode-btn" data-mode="armor">Armor</button>
+                </div>
+                
+                <div class="ore-grid" id="oreGrid">
+                    <!-- Ores will be populated by JavaScript -->
+                </div>
+                
+                <div class="selected-ores-section">
+                    <h3>Selected Ores:</h3>
+                    <div id="selectedOres"></div>
+                </div>
+            </div>
+
+            <!-- Center Panel: Results -->
+            <div class="calculator-panel">
+                <div class="result-display">
+                    <div class="result-title">Forging Results</div>
+                    <div id="weaponType">Select ores to see results</div>
+                    <div id="successChance">Chance: --</div>
+                    <div id="multiplier">Multiplier: 0.00x</div>
+                    
+                    <div class="result-stats">
+                        <div class="stat-item">
+                            <strong>Estimated DPS</strong>
+                            <div id="estimatedDPS">--</div>
+                        </div>
+                        <div class="stat-item">
+                            <strong>Traits</strong>
+                            <div id="traits">--</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ore-composition-section">
+                    <h3>Ore Composition</h3>
+                    <div id="composition"></div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Tips & Info -->
+            <div class="calculator-panel">
+                <h2>Calculator Tips</h2>
+                <ul>
+                    <li>Select 3-4 different ore types for optimal results</li>
+                    <li>Higher tier ores generally provide better multipliers</li>
+                    <li>Balance damage and special traits for best DPS</li>
+                    <li>Experiment with different combinations</li>
+                </ul>
+                
+                <h3>Popular Combinations</h3>
+                <div class="popular-combinations-section">
+                    <button class="preset-btn" data-ores="mythril,obsidian,uranium">High DPS Build</button>
+                    <button class="preset-btn" data-ores="stone,iron,mythril">Beginner Build</button>
+                    <button class="preset-btn" data-ores="obsidian,uranium,darkryte">End Game Build</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Basic calculator functionality
+        const ores = {
+            stone: { name: 'Stone', multiplier: 1.0, tier: 1 },
+            iron: { name: 'Iron', multiplier: 1.2, tier: 1 },
+            mythril: { name: 'Mythril', multiplier: 1.5, tier: 2 },
+            obsidian: { name: 'Obsidian', multiplier: 1.8, tier: 3 },
+            uranium: { name: 'Uranium', multiplier: 2.0, tier: 3 },
+            darkryte: { name: 'Darkryte', multiplier: 2.2, tier: 4 }
+        };
+
+        let selectedOres = [];
+        let currentMode = 'weapon';
+
+        function initializeCalculator() {
+            renderOreGrid();
+            setupEventListeners();
+        }
+
+        function renderOreGr
