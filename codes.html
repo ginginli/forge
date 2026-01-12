@@ -104,7 +104,7 @@
                     "url": "https://forge-calculator.com/favicon-120x120.png"
                 },
                 "datePublished": "2024-01-01",
-                "dateModified": "2026-01-10",
+                "dateModified": "2026-01-11",
                 "author": {"@id": "https://forge-calculator.com/#organization"},
                 "publisher": {"@id": "https://forge-calculator.com/#organization"}
             },
@@ -150,15 +150,15 @@
                 "@id": "https://forge-calculator.com/codes#itemlist",
                 "name": "Active Forge Codes January 2026",
                 "description": "Current working redeem codes for The Forge Roblox game with rewards",
-                "numberOfItems": 8,
+                "numberOfItems": 2,
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "item": {
                             "@type": "Thing",
-                            "name": "FORGE2026",
-                            "description": "Free ores and coins - New Year celebration code"
+                            "name": "FORGWEEKEND!",
+                            "description": "10x Rerolls & 1x Miner Totem - Weekend special code"
                         }
                     },
                     {
@@ -166,26 +166,8 @@
                         "position": 2,
                         "item": {
                             "@type": "Thing",
-                            "name": "WINTER",
-                            "description": "Winter event rewards - Limited time code"
-                        }
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "item": {
-                            "@type": "Thing",
-                            "name": "FREEORES",
-                            "description": "Bonus mining materials - Always active"
-                        }
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "item": {
-                            "@type": "Thing",
-                            "name": "BOOST",
-                            "description": "Experience and luck multiplier - Weekly code"
+                            "name": "MAZE",
+                            "description": "5x Rerolls & 3x Fungi's Potion - Maze event code"
                         }
                     }
                 ]
@@ -232,7 +214,7 @@
         </div>
 
         <div class="update-info">
-            <strong>📅 This page was last edited on 4 January 2026</strong> | <strong>⚡ Status:</strong> All The Forge codes verified and working!
+            <strong>📅 This page was last edited on 11 January 2026</strong> | <strong>⚡ Status:</strong> All The Forge codes verified and working!
         </div>
 
         <!-- Active Codes Section -->
@@ -241,26 +223,53 @@
             
             <div class="code-card">
                 <div class="code-info">
-                    <div class="code-name">HAPPYNEWYEAR</div>
-                    <div class="code-reward">🎁 Reward: 10x Rerolls</div>
+                    <div class="code-name">FORGWEEKEND!</div>
+                    <div class="code-reward">🎁 Reward: 10x Rerolls & 1x Miner Totem</div>
                     <span class="code-status status-active">✓ ACTIVE</span>
                     <span>NEW!</span>
                 </div>
-                <button class="copy-btn" onclick="copyCode('HAPPYNEWYEAR', event)">Copy Code</button>
+                <button class="copy-btn" onclick="copyCode('FORGWEEKEND!', event)">Copy Code</button>
             </div>
 
             <div class="code-card">
                 <div class="code-info">
-                    <div class="code-name">RAVEN</div>
-                    <div class="code-reward">🎁 Reward: 100x XMAS Ticket and 5x Rerolls</div>
+                    <div class="code-name">MAZE</div>
+                    <div class="code-reward">🎁 Reward: 5x Rerolls & 3x Fungi's Potion</div>
                     <span class="code-status status-active">✓ ACTIVE</span>
                     <span>NEW!</span>
                 </div>
-                <button class="copy-btn" onclick="copyCode('RAVEN', event)">Copy Code</button>
+                <button class="copy-btn" onclick="copyCode('MAZE', event)">Copy Code</button>
             </div>
 
             <p>
                 💡 Tip: All The Forge codes January 2026 are case-sensitive! Copy them exactly as shown to claim your rewards.
+            </p>
+        </div>
+
+        <!-- Expired Codes Section -->
+        <div class="codes-section">
+            <h3>❌ Expired Codes (No Longer Working)</h3>
+            
+            <div class="code-card code-card-expired">
+                <div class="code-info">
+                    <div class="code-name">HAPPYNEWYEAR</div>
+                    <div class="code-reward">🎁 Reward: 10x Rerolls</div>
+                    <span class="code-status status-expired">✗ EXPIRED</span>
+                </div>
+                <button class="copy-btn" disabled>Expired</button>
+            </div>
+
+            <div class="code-card code-card-expired">
+                <div class="code-info">
+                    <div class="code-name">RAVEN</div>
+                    <div class="code-reward">🎁 Reward: 100x XMAS Ticket and 5x Rerolls</div>
+                    <span class="code-status status-expired">✗ EXPIRED</span>
+                </div>
+                <button class="copy-btn" disabled>Expired</button>
+            </div>
+
+            <p>
+                ⚠️ These codes have expired and will no longer work. Check back regularly for new codes!
             </p>
         </div>
 
@@ -290,8 +299,10 @@
                         <label>Which code did you try?</label>
                         <select id="codeSelect" required>
                             <option value="">Select a code...</option>
-                            <option value="HAPPYNEWYEAR">HAPPYNEWYEAR (NEW!)</option>
-                            <option value="RAVEN">RAVEN (NEW!)</option>
+                            <option value="FORGWEEKEND!">FORGWEEKEND! (NEW!)</option>
+                            <option value="MAZE">MAZE (NEW!)</option>
+                            <option value="HAPPYNEWYEAR">HAPPYNEWYEAR</option>
+                            <option value="RAVEN">RAVEN</option>
                         </select>
                     </div>
                     <div class="section-paragraph">

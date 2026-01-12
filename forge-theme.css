@@ -1446,6 +1446,17 @@ footer a:hover {
     opacity: 0.6;
 }
 
+/* Code status styles */
+.status-expired {
+    background: var(--color-error);
+    color: var(--color-text-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 /* Flex layout for quest items */
 .quest-flex {
     flex: 1;
