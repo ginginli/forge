@@ -9,7 +9,7 @@ echo "=================================================="
 # Important URLs to submit to Yandex
 IMPORTANT_URLS=(
     "https://forge-calculator.com/"
-    "https://forge-calculator.com/codes.html"
+    "https://forge-calculator.com/codes"
     "https://forge-calculator.com/weapons.html"
     "https://forge-calculator.com/armor.html"
     "https://forge-calculator.com/recipes/"

@@ -18,7 +18,7 @@ Free real-time calculator for optimizing ore combinations and crafting:
 - Check trait activation status
 - Preview crafting results before committing resources
 
-### [Active Codes](https://forge-calculator.com/codes.html)
+### [Active Codes](https://forge-calculator.com/codes)
 Get free ores, gold, and rewards with working codes. Updated regularly with new codes and expired code tracking.
 
 ### [Private Server Guide](https://forge-calculator.com/private-server.html)
@@ -74,7 +74,7 @@ A: Start by mining basic ores (Iron, Coal), forge your first weapon using the ca
 A: Use our [Forge Calculator](https://forge-calculator.com/) to test different ore combinations and see real-time results for your desired weapon or armor type.
 
 **Q: How do I redeem codes?**
-A: Check our [Active Codes page](https://forge-calculator.com/codes.html) for working codes and step-by-step redemption instructions.
+A: Check our [Active Codes page](https://forge-calculator.com/codes) for working codes and step-by-step redemption instructions.
 
 **Q: What's the best race for beginners?**
 A: Human (Common) offers balanced stats with luck and experience bonuses. For mining focus, Dwarf (Epic) is excellent. See [Races Guide](https://forge-calculator.com/wiki/races.html) for all options.
@@ -127,7 +127,7 @@ A: Armor provides Health bonuses. Light Armor: +3.75-5%, Medium Armor: +6.25-12.
 
 ## 🎁 Free Resources
 
-- **Active Codes**: [Get free ores and rewards](https://forge-calculator.com/codes.html)
+- **Active Codes**: [Get free ores and rewards](https://forge-calculator.com/codes)
 - **Calculator**: [Optimize your crafting](https://forge-calculator.com/)
 - **Wiki**: [Search all game content](https://forge-calculator.com/wiki/)
 - **Guides**: [Learn strategies and tips](https://forge-calculator.com/blog/)
@@ -143,7 +143,7 @@ A: Armor provides Health bonuses. Light Armor: +3.75-5%, Medium Armor: +6.25-12.
 
 - Homepage: https://forge-calculator.com/
 - Calculator: https://forge-calculator.com/#calculator
-- Codes: https://forge-calculator.com/codes.html
+- Codes: https://forge-calculator.com/codes
 - Private Servers: https://forge-calculator.com/private-server.html
 - Wiki: https://forge-calculator.com/wiki/
 - Weapons: https://forge-calculator.com/weapons.html
@@ -180,7 +180,7 @@ The Forge - это захватывающая приключенческая и�
 - Проверяет статус активации характеристик
 - Предварительный просмотр результатов крафта перед тратой ресурсов
 
-### [Активные коды](https://forge-calculator.com/codes.html)
+### [Активные коды](https://forge-calculator.com/codes)
 Получайте бесплатные руды, золото и награды с рабочими кодами. Регулярно обновляется новыми кодами.
 
 ## 📚 Полные игровые гиды
@@ -215,7 +215,7 @@ The Forge - это захватывающая приключенческая и�
 ## 🔗 Быстрые ссылки
 - Главная: https://forge-calculator.com/
 - Калькулятор: https://forge-calculator.com/
-- Коды: https://forge-calculator.com/codes.html
+- Коды: https://forge-calculator.com/codes
 - Приватные серверы: https://forge-calculator.com/private-server.html
 - Вики: https://forge-calculator.com/wiki/
 - Оружие: https://forge-calculator.com/weapons.html

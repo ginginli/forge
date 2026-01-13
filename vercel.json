@@ -1,6 +1,83 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "ref"
+        }
+      ],
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "utm_source"
+        }
+      ],
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "utm_medium"
+        }
+      ],
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "utm_campaign"
+        }
+      ],
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "utm_content"
+        }
+      ],
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "utm_term"
+        }
+      ],
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "fbclid"
+        }
+      ],
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
@@ -29,6 +106,11 @@
     {
       "source": "/enemies",
       "destination": "/wiki/enemies.html", 
+      "permanent": true
+    },
+    {
+      "source": "/races",
+      "destination": "/wiki/races.html",
       "permanent": true
     },
     {
@@ -64,11 +146,6 @@
     {
       "source": "/gamepass",
       "destination": "/wiki/gamepass.html",
-      "permanent": true
-    },
-    {
-      "source": "/races",
-      "destination": "/wiki/races.html",
       "permanent": true
     }
   ],

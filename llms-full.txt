@@ -732,7 +732,7 @@ The Forge features 13 playable races, each with unique abilities and stat bonuse
 
 ### Working Codes
 
-**Note**: Codes are case-sensitive and expire without notice. Visit https://forge-calculator.com/codes.html for the most up-to-date list.
+**Note**: Codes are case-sensitive and expire without notice. Visit https://forge-calculator.com/codes for the most up-to-date list.
 
 **Common Rewards**:
 - Free ores (Iron, Coal, Gold, etc.)
@@ -747,7 +747,7 @@ The Forge features 13 playable races, each with unique abilities and stat bonuse
 - Each code can only be redeemed once per account
 - New codes released during game updates and special events
 - Follow game developers on social media for new codes
-- Check website regularly: https://forge-calculator.com/codes.html
+- Check website regularly: https://forge-calculator.com/codes
 
 
 ## ⛏️ ORES & RESOURCES
@@ -1153,7 +1153,7 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 - **Wiki**: https://forge-calculator.com/wiki/
 
 #### Active Codes
-- **Codes Page**: https://forge-calculator.com/codes.html
+- **Codes Page**: https://forge-calculator.com/codes
 - Updated regularly with new codes
 - Step-by-step redemption instructions
 
@@ -1340,8 +1340,8 @@ The Forge Calculator is a free web-based tool that helps players optimize their 
 - **Best Recipes**: https://forge-calculator.com/recipes/best-recipes.html
 
 ### Codes & Rewards
-- **Active Codes**: https://forge-calculator.com/codes.html
-- **How to Redeem**: https://forge-calculator.com/codes.html#how-to
+- **Active Codes**: https://forge-calculator.com/codes
+- **How to Redeem**: https://forge-calculator.com/codes#how-to
 
 ### Strategy & Tips
 - **Mastering The Forge**: https://forge-calculator.com/blog/mastering-the-forge.html
@@ -1659,7 +1659,7 @@ The Forge - это захватывающая приключенческая и�
 - **База данных** - полная информация о всех предметах игры
 - **Мобильная версия** - работает на всех устройствах
 
-### Активные коды (https://forge-calculator.com/codes.html)
+### Активные коды (https://forge-calculator.com/codes)
 - Бесплатные руды и золото
 - Регулярные обновления новых кодов
 - Пошаговые инструкции по активации
@@ -1771,7 +1771,7 @@ The Forge - это захватывающая приключенческая и�
 
 - **Главная страница**: https://forge-calculator.com/
 - **Калькулятор**: https://forge-calculator.com/
-- **Активные коды**: https://forge-calculator.com/codes.html
+- **Активные коды**: https://forge-calculator.com/codes
 - **Вики**: https://forge-calculator.com/wiki/
 - **Лучшие рецепты**: https://forge-calculator.com/recipes/best-recipes.html
 - **Гид по оружию**: https://forge-calculator.com/weapons.html
