@@ -690,9 +690,18 @@ main {
 /* Navigation Enhancement - 导航增强 */
 nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0.5rem;
     align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+nav::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
 nav a {
@@ -706,6 +715,7 @@ nav a {
     font-size: 0.95rem;
     color: var(--text-secondary);
     white-space: nowrap;
+    flex-shrink: 0;
 }
 
 nav a:hover {
