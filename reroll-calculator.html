@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119" crossorigin="anonymous"></script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105846978', 'ym');ym(105846978, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105846978" class="yandex-hidden" alt="" /></div></noscript>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Press+Start+2P&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <meta name="description" content="Calculate optimal reroll strategies for The Forge. Analyze reforging costs, success probabilities, and expected value to maximize your equipment upgrades.">
+    <meta name="keywords" content="the forge reroll calculator, reforge calculator, reroll strategy, forge reforging, roblox forge reroll, equipment upgrade calculator">
+    <link rel="canonical" href="https://forge-calculator.com/reroll-calculator">
+    
+    <title>Reroll Calculator - Optimize Your Reforging Strategy | Forge Calculator</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forge-calculator.com/reroll-calculator">
+    <meta property="og:title" content="Reroll Calculator - Optimize Your Reforging Strategy">
+    <meta property="og:description" content="Calculate optimal reroll strategies for The Forge. Analyze reforging costs, success probabilities, and expected value.">
+    <meta property="og:image" content="https://forge-calculator.com/favicon-120x120.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://forge-calculator.com/reroll-calculator">
+    <meta property="twitter:title" content="Reroll Calculator - Optimize Your Reforging Strategy">
+    <meta property="twitter:description" content="Calculate optimal reroll strategies for The Forge. Analyze reforging costs, success probabilities, and expected value.">
+    <meta property="twitter:image" content="https://forge-calculator.com/favicon-120x120.png">
+    
+    <link rel="stylesheet" href="/forge-theme.css">
+    
+    <style>
+        .reroll-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .input-section, .results-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--input-bg);
+            color: var(--text-color);
+        }
+        
+        .probability-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .stat-card {
+            background: var(--input-bg);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .reroll-strategy {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+        
+        .strategy-recommendation {
+            background: linear-gradient(135deg, var(--accent-color), #ff8533);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .strategy-recommendation h4 {
+            margin: 0 0 10px 0;
+        }
+        
+        .cost-breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .cost-item {
+            background: var(--input-bg);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .cost-item h5 {
+            margin: 0 0 10px 0;
+            color: var(--accent-color);
+        }
+        
+        .probability-chart {
+            background: var(--input-bg);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .chart-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .chart-label {
+            width: 100px;
+            font-size: 14px;
+        }
+        
+        .chart-progress {
+            flex: 1;
+            height: 20px;
+            background: var(--border-color);
+            border-radius: 10px;
+            margin: 0 10px;
+            overflow: hidden;
+        }
+        
+        .chart-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color), #ff8533);
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+        
+        .chart-value {
+            width: 60px;
+            text-align: right;
+            font-weight: 600;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: var(--input-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+        }
+        
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
+        .tips-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .tip-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: var(--input-bg);
+            border-radius: 6px;
+        }
+        
+        .tip-icon {
+            font-size: 20px;
+            margin-right: 10px;
+            margin-top: 2px;
+        }
+        
+        @media (max-width: 768px) {
+            .calculator-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .probability-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cost-breakdown {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="/">🔥 Forge Calculator</a>
+                </div>
+                <div class="nav-links">
+                    <a href="/">Calculator</a>
+                    <a href="/codes">Codes</a>
+                    <a href="/recipes">Recipes</a>
+                    <a href="/weapons">Weapons</a>
+                    <a href="/armor">Armor</a>
+                    <a href="/ore">Ore</a>
+                    <a href="/wiki">Wiki</a>
+                    <a href="/tier-list-maker">Tier Lists</a>
+                    <a href="/reroll-calculator" class="active">Reroll</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="reroll-container">
+        <div class="page-header">
+            <h1>🎲 Reroll Calculator</h1>
+            <p>Calculate optimal reroll strategies for The Forge. Analyze reforging costs, success probabilities, and expected value to maximize your equipment upgrades.</p>
+        </div>
+
+        <div class="calculator-grid">
+            <div class="input-section">
+                <h3>⚙️ Reroll Configuration</h3>
+                
+                <div class="form-group">
+                    <label for="equipmentType">Equipment Type</label>
+                    <select id="equipmentType" onchange="updateCalculation()">
+                        <option value="weapon">Weapon</option>
+                        <option value="armor">Armor</option>
+                        <option value="pickaxe">Pickaxe</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="currentLevel">Current Equipment Level</label>
+                    <input type="number" id="currentLevel" value="1" min="1" max="100" onchange="updateCalculation()">
+                </div>
+                
+                <div class="form-group">
+                    <label for="targetStat">Target Stat Improvement</label>
+                    <select id="targetStat" onchange="updateCalculation()">
+                        <option value="damage">Damage</option>
+                        <option value="defense">Defense</option>
+                        <option value="speed">Speed</option>
+                        <option value="critical">Critical Rate</option>
+                        <option value="any">Any Improvement</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="improvementThreshold">Minimum Improvement (%)</label>
+                    <input type="number" id="improvementThreshold" value="10" min="1" max="100" onchange="updateCalculation()">
+                </div>
+                
+                <div class="form-group">
+                    <label for="rerollCost">Reroll Cost (Coins)</label>
+                    <input type="number" id="rerollCost" value="1000" min="1" onchange="updateCalculation()">
+                </div>
+                
+                <div class="form-group">
+                    <label for="maxRerolls">Maximum Rerolls</label>
+                    <input type="number" id="maxRerolls" value="10" min="1" max="100" onchange="updateCalculation()">
+                </div>
+                
+                <button class="btn btn-primary" onclick="updateCalculation()">🔄 Calculate Strategy</button>
+                <button class="btn btn-secondary" onclick="resetCalculator()">↩️ Reset</button>
+            </div>
+            
+            <div class="results-section">
+                <h3>📊 Reroll Analysis</h3>
+                
+                <div class="probability-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="successProbability">0%</div>
+                        <div class="stat-label">Success Probability</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="expectedCost">0</div>
+                        <div class="stat-label">Expected Cost</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="expectedRerolls">0</div>
+                        <div class="stat-label">Expected Rerolls</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="maxCost">0</div>
+                        <div class="stat-label">Maximum Cost</div>
+                    </div>
+                </div>
+                
+                <div class="probability-chart">
+                    <h4>Success Probability by Attempt</h4>
+                    <div id="probabilityBars"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="reroll-strategy">
+            <h3>🎯 Recommended Strategy</h3>
+            <div class="strategy-recommendation" id="strategyRecommendation">
+                <h4>💡 Strategy Analysis</h4>
+                <p>Configure your reroll parameters above to get personalized recommendations.</p>
+            </div>
+            
+            <div class="cost-breakdown">
+                <div class="cost-item">
+                    <h5>💰 Cost Analysis</h5>
+                    <p><strong>Best Case:</strong> <span id="bestCaseCost">-</span> coins</p>
+                    <p><strong>Average Case:</strong> <span id="averageCaseCost">-</span> coins</p>
+                    <p><strong>Worst Case:</strong> <span id="worstCaseCost">-</span> coins</p>
+                </div>
+                
+                <div class="cost-item">
+                    <h5>⏱️ Time Investment</h5>
+                    <p><strong>Expected Attempts:</strong> <span id="expectedAttempts">-</span></p>
+                    <p><strong>Success Rate:</strong> <span id="overallSuccessRate">-</span>%</p>
+                    <p><strong>Risk Level:</strong> <span id="riskLevel">-</span></p>
+                </div>
+                
+                <div class="cost-item">
+                    <h5>📈 Value Assessment</h5>
+                    <p><strong>ROI Potential:</strong> <span id="roiPotential">-</span></p>
+                    <p><strong>Break-even Point:</strong> <span id="breakEvenPoint">-</span></p>
+                    <p><strong>Recommendation:</strong> <span id="finalRecommendation">-</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tips-section">
+            <h3>💡 Reroll Tips & Strategies</h3>
+            
+            <div class="tip-item">
+                <div class="tip-icon">🎯</div>
+                <div>
+                    <strong>Set Realistic Goals:</strong> Don't aim for perfect stats immediately. Incremental improvements are more cost-effective than going for the best possible outcome.
+                </div>
+            </div>
+            
+            <div class="tip-item">
+                <div class="tip-icon">💰</div>
+                <div>
+                    <strong>Budget Management:</strong> Set a maximum budget before starting. It's easy to overspend when chasing that perfect roll.
+                </div>
+            </div>
+            
+            <div class="tip-item">
+                <div class="tip-icon">📊</div>
+                <div>
+                    <strong>Know the Odds:</strong> Higher-level equipment has lower reroll success rates but potentially greater improvements.
+                </div>
+            </div>
+            
+            <div class="tip-item">
+                <div class="tip-icon">⏰</div>
+                <div>
+                    <strong>Timing Matters:</strong> Consider rerolling during events or when you have bonus resources available.
+                </div>
+            </div>
+            
+            <div class="tip-item">
+                <div class="tip-icon">🔄</div>
+                <div>
+                    <strong>Stop Loss Strategy:</strong> If you don't get improvements after 50% of your planned attempts, consider stopping and trying later.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Reroll calculation logic
+        function updateCalculation() {
+            const equipmentType = document.getElementById('equipmentType').value;
+            const currentLevel = parseInt(document.getElementById('currentLevel').value);
+            const targetStat = document.getElementById('targetStat').value;
+            const improvementThreshold = parseInt(document.getElementById('improvementThreshold').value);
+            const rerollCost = parseInt(document.getElementById('rerollCost').value);
+            const maxRerolls = parseInt(document.getElementById('maxRerolls').value);
+            
+            // Calculate base success probability based on equipment type and level
+            let baseSuccessRate = calculateBaseSuccessRate(equipmentType, currentLevel, targetStat, improvementThreshold);
+            
+            // Calculate expected values
+            const expectedRerolls = Math.ceil(1 / baseSuccessRate);
+            const expectedCost = Math.min(expectedRerolls * rerollCost, maxRerolls * rerollCost);
+            const maxCost = maxRerolls * rerollCost;
+            const cumulativeSuccessRate = 1 - Math.pow(1 - baseSuccessRate, maxRerolls);
+            
+            // Update display
+            document.getElementById('successProbability').textContent = (baseSuccessRate * 100).toFixed(1) + '%';
+            document.getElementById('expectedCost').textContent = expectedCost.toLocaleString();
+            document.getElementById('expectedRerolls').textContent = Math.min(expectedRerolls, maxRerolls);
+            document.getElementById('maxCost').textContent = maxCost.toLocaleString();
+            
+            // Update probability chart
+            updateProbabilityChart(baseSuccessRate, maxRerolls);
+            
+            // Update strategy recommendation
+            updateStrategyRecommendation(baseSuccessRate, expectedCost, maxCost, cumulativeSuccessRate);
+            
+            // Update cost breakdown
+            updateCostBreakdown(rerollCost, expectedRerolls, maxRerolls, cumulativeSuccessRate);
+        }
+        
+        function calculateBaseSuccessRate(equipmentType, level, targetStat, improvementThreshold) {
+            // Base success rates (simplified model)
+            let baseRate = 0.15; // 15% base success rate
+            
+            // Equipment type modifiers
+            const typeModifiers = {
+                'weapon': 1.0,
+                'armor': 0.9,
+                'pickaxe': 1.1
+            };
+            
+            // Level penalty (higher level = lower success rate)
+            const levelPenalty = Math.max(0.1, 1 - (level - 1) * 0.01);
+            
+            // Stat type modifiers
+            const statModifiers = {
+                'damage': 1.0,
+                'defense': 1.0,
+                'speed': 0.8,
+                'critical': 0.7,
+                'any': 1.3
+            };
+            
+            // Improvement threshold penalty
+            const thresholdPenalty = Math.max(0.1, 1 - (improvementThreshold - 10) * 0.02);
+            
+            return baseRate * typeModifiers[equipmentType] * levelPenalty * statModifiers[targetStat] * thresholdPenalty;
+        }
+        
+        function updateProbabilityChart(baseSuccessRate, maxRerolls) {
+            const container = document.getElementById('probabilityBars');
+            container.innerHTML = '';
+            
+            let cumulativeFailure = 1;
+            
+            for (let i = 1; i <= Math.min(maxRerolls, 10); i++) {
+                const attemptSuccessRate = cumulativeFailure * baseSuccessRate;
+                cumulativeFailure *= (1 - baseSuccessRate);
+                
+                const bar = document.createElement('div');
+                bar.className = 'chart-bar';
+                bar.innerHTML = `
+                    <div class="chart-label">Attempt ${i}</div>
+                    <div class="chart-progress">
+                        <div class="chart-fill" style="width: ${attemptSuccessRate * 500}%"></div>
+                    </div>
+                    <div class="chart-value">${(attemptSuccessRate * 100).toFixed(1)}%</div>
+                `;
+                container.appendChild(bar);
+            }
+        }
+        
+        function updateStrategyRecommendation(baseSuccessRate, expectedCost, maxCost, cumulativeSuccessRate) {
+            const container = document.getElementById('strategyRecommendation');
+            
+            let recommendation = '';
+            let riskLevel = '';
+            
+            if (cumulativeSuccessRate > 0.8) {
+                recommendation = '✅ Recommended: High success probability makes this a good investment.';
+                riskLevel = 'Low';
+            } else if (cumulativeSuccessRate > 0.5) {
+                recommendation = '⚠️ Moderate Risk: Decent chance of success, but prepare for potential losses.';
+                riskLevel = 'Medium';
+            } else {
+                recommendation = '❌ High Risk: Low success probability. Consider improving equipment first or increasing budget.';
+                riskLevel = 'High';
+            }
+            
+            container.innerHTML = `
+                <h4>💡 Strategy Analysis</h4>
+                <p>${recommendation}</p>
+                <p><strong>Overall Success Rate:</strong> ${(cumulativeSuccessRate * 100).toFixed(1)}%</p>
+                <p><strong>Risk Level:</strong> ${riskLevel}</p>
+            `;
+        }
+        
+        function updateCostBreakdown(rerollCost, expectedRerolls, maxRerolls, cumulativeSuccessRate) {
+            const bestCase = rerollCost;
+            const averageCase = Math.min(expectedRerolls, maxRerolls) * rerollCost;
+            const worstCase = maxRerolls * rerollCost;
+            
+            document.getElementById('bestCaseCost').textContent = bestCase.toLocaleString();
+            document.getElementById('averageCaseCost').textContent = averageCase.toLocaleString();
+            document.getElementById('worstCaseCost').textContent = worstCase.toLocaleString();
+            
+            document.getElementById('expectedAttempts').textContent = Math.min(expectedRerolls, maxRerolls);
+            document.getElementById('overallSuccessRate').textContent = (cumulativeSuccessRate * 100).toFixed(1);
+            
+            let riskLevel = 'Low';
+            if (cumulativeSuccessRate < 0.5) riskLevel = 'High';
+            else if (cumulativeSuccessRate < 0.8) riskLevel = 'Medium';
+            document.getElementById('riskLevel').textContent = riskLevel;
+            
+            // ROI and recommendations
+            const roi = cumulativeSuccessRate > 0.6 ? 'Positive' : 'Negative';
+            const breakEven = Math.ceil(worstCase / (averageCase * cumulativeSuccessRate));
+            const finalRec = cumulativeSuccessRate > 0.7 ? 'Proceed' : 'Reconsider';
+            
+            document.getElementById('roiPotential').textContent = roi;
+            document.getElementById('breakEvenPoint').textContent = breakEven + ' successes';
+            document.getElementById('finalRecommendation').textContent = finalRec;
+        }
+        
+        function resetCalculator() {
+            document.getElementById('equipmentType').value = 'weapon';
+            document.getElementById('currentLevel').value = '1';
+            document.getElementById('targetStat').value = 'damage';
+            document.getElementById('improvementThreshold').value = '10';
+            document.getElementById('rerollCost').value = '1000';
+            document.getElementById('maxRerolls').value = '10';
+            updateCalculation();
+        }
+        
+        // Initialize calculator
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCalculation();
+        });
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "The Forge Reroll Calculator",
+        "description": "Calculate optimal reroll strategies for The Forge. Analyze reforging costs, success probabilities, and expected value to maximize your equipment upgrades.",
+        "url": "https://forge-calculator.com/reroll-calculator",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Reroll probability calculation",
+            "Cost-benefit analysis",
+            "Success rate optimization",
+            "Risk assessment tools",
+            "Strategy recommendations"
+        ]
+    }
+    </script>
+</body>
+</html>
