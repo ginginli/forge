@@ -469,114 +469,109 @@ main {
     font-weight: 600;
     text-shadow: 0 0 8px rgba(245, 158, 11, 0.3);
 }
-/* Enhanced Table Styles - 增强表格样式 */
+/* Table Styles - Apple Style - 苹果风格表格 */
+table,
 .official-table,
-.complete-info-table {
+.complete-info-table,
+.enhanced-data-table {
     width: 100%;
     border-collapse: collapse;
-    background: var(--bg-metal-texture) !important;
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.4),
-        var(--shadow-forge-glow);
-    margin: 1.5rem 0;
-    border: 2px solid var(--border-accent);
+    margin: 2rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.official-table th {
-    background: linear-gradient(135deg, var(--bg-table-header), var(--bg-surface));
-    color: var(--ui-orange);
-    padding: 1.2rem 1rem;
+table th,
+.official-table th,
+.complete-info-table th,
+.enhanced-data-table th {
+    background: rgba(255, 255, 255, 0.05);
+    color: #f5f5f7;
+    padding: 1rem;
     text-align: left;
-    font-weight: 700;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    border-bottom: 2px solid var(--ui-orange);
-    font-family: var(--font-display);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
 }
 
-.official-table td {
-    padding: 1.2rem 1rem;
-    border-bottom: 1px solid var(--border-primary);
-    color: var(--text-secondary);
-    font-size: 1rem;
-    font-family: var(--font-body);
-    transition: all var(--transition-fast);
+table td,
+.official-table td,
+.complete-info-table td,
+.enhanced-data-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #a1a1a6;
+    font-size: 0.9375rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
 }
 
-.official-table tr:last-child td {
+table tr:last-child td,
+.official-table tr:last-child td,
+.complete-info-table tr:last-child td,
+.enhanced-data-table tr:last-child td {
     border-bottom: none;
 }
 
-.official-table tr:hover {
-    background: var(--bg-table-hover);
-    transform: scale(1.01);
-    box-shadow: inset 0 0 20px rgba(245, 158, 11, 0.1);
+table tr:hover,
+.official-table tr:hover,
+.complete-info-table tr:hover,
+.enhanced-data-table tr:hover {
+    background: rgba(255, 255, 255, 0.03);
 }
 
-/* Enhanced Rarity Colors with Glow Effects */
+/* Table specific content styles */
 .official-table .ore-name,
 .official-table .weapon-name,
-.official-table .armor-name {
-    color: var(--ui-orange);
-    font-weight: 700;
-    font-family: var(--font-display);
-    text-shadow: 0 0 8px rgba(245, 158, 11, 0.4);
+.official-table .armor-name,
+.enhanced-data-table .data-highlight {
+    color: #f5f5f7;
+    font-weight: 600;
 }
 
 .official-table .rarity-common {
-    color: var(--rarity-common);
-    text-shadow: 0 0 4px rgba(204, 204, 204, 0.3);
+    color: #86868b;
 }
 
 .official-table .rarity-uncommon {
-    color: var(--rarity-uncommon);
-    text-shadow: 0 0 8px rgba(74, 222, 128, 0.4);
+    color: #30d158;
 }
 
 .official-table .rarity-rare {
-    color: var(--rarity-rare);
-    text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+    color: #0a84ff;
 }
 
 .official-table .rarity-epic {
-    color: var(--rarity-epic);
-    text-shadow: 0 0 8px rgba(168, 85, 247, 0.4);
+    color: #bf5af2;
 }
 
 .official-table .rarity-legendary {
-    color: var(--rarity-legendary);
-    text-shadow: 0 0 12px rgba(245, 158, 11, 0.6);
-    animation: textGlow 2s ease-in-out infinite;
+    color: #ff9f0a;
 }
 
-/* Data Display Enhancements */
 .official-table .trait-none {
-    color: var(--text-disabled);
+    color: #86868b;
     font-style: italic;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
-.official-table .price {
-    color: var(--ui-green);
-    font-weight: 600;
-    font-family: var(--font-code);
+.official-table .price,
+.official-table .chance {
+    color: #30d158;
+    font-weight: 500;
 }
 
 .official-table .multiplier {
-    color: var(--ui-orange);
-    font-weight: 700;
-    font-family: var(--font-code);
-    text-shadow: 0 0 6px rgba(245, 158, 11, 0.3);
+    color: #ff9f0a;
+    font-weight: 600;
 }
 
-.official-table .chance {
-    color: var(--ui-green);
-    font-family: var(--font-code);
-    font-weight: 500;
+.complete-info-table h3 {
+    color: #f5f5f7;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
 }
 
 /* Enhanced Button System - 增强按钮系统 */
@@ -1451,6 +1446,7 @@ footer a:hover {
 /* Table overflow wrapper */
 .table-overflow {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Expired code card */
@@ -1911,6 +1907,22 @@ footer img:hover {
     .gacha-simulator-wrapper iframe {
         height: 400px;
     }
+    
+    /* Responsive tables */
+    table,
+    .official-table,
+    .enhanced-data-table {
+        font-size: 0.875rem;
+    }
+    
+    table th,
+    table td,
+    .official-table th,
+    .official-table td,
+    .enhanced-data-table th,
+    .enhanced-data-table td {
+        padding: 0.75rem 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2261,51 +2273,6 @@ footer img:hover {
 .legal-section li {
     margin-bottom: 0.5rem;
     line-height: 1.7;
-}
-
-/* Enhanced Data Tables for Special Pages - 特殊页面增强数据表格 */
-.enhanced-data-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--bg-metal-texture);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: var(--shadow-card-hover);
-    margin: 2rem 0;
-}
-
-.enhanced-data-table th {
-    background: linear-gradient(135deg, var(--ui-orange), var(--rarity-legendary));
-    color: var(--text-primary);
-    padding: 1.2rem 1rem;
-    text-align: left;
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.enhanced-data-table td {
-    padding: 1rem;
-    border-bottom: 1px solid var(--border-primary);
-    font-family: var(--font-body);
-    transition: all var(--transition-fast);
-}
-
-.enhanced-data-table tr:hover {
-    background: rgba(245, 158, 11, 0.1);
-    transform: scale(1.01);
-}
-
-.enhanced-data-table .data-highlight {
-    font-family: var(--font-code);
-    font-weight: 600;
-    color: var(--ui-orange);
-    background: rgba(245, 158, 11, 0.1);
-    padding: 0.2em 0.4em;
-    border-radius: 4px;
 }
 
 /* Responsive Enhancements for Special Pages - 特殊页面响应式增强 */
