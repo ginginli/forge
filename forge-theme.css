@@ -2339,6 +2339,11 @@ footer img:hover {
     color: #10b981;
 }
 
+/* Recipe tier color classes - 配方等级颜色类 */
+.recipe-tier-beginner {
+    color: #10b981;
+}
+
 .recipe-tier-intermediate {
     color: #a855f7;
 }
@@ -2347,25 +2352,8 @@ footer img:hover {
     color: #f59e0b;
 }
 
-.recipe-features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.recipe-feature-card {
-    background: rgba(255, 255, 255, 0.03);
-    padding: 1.5rem;
-    border-radius: 12px;
-}
-
-.recipe-cta-center {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.recipe-button-large {
-    font-size: 1.2rem;
-    padding: 1.25rem 2.5rem;
+/* Recipe highlight section - 配方高亮区域 */
+.recipe-highlight-section {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
+    border: 2px solid rgba(245, 158, 11, 0.3);
 }
