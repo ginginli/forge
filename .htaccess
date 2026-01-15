@@ -11,6 +11,12 @@ RewriteEngine On
 # URL Canonicalization and Parameter Handling
 # ============================================
 
+# Remove trailing slashes from URLs (except root)
+# 移除 URL 尾部的斜杠（根目录除外）
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
+
 # Redirect .html URLs to clean URLs (301 permanent redirect)
 # 将 .html URL 重定向到干净 URL（301 永久重定向）
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP/
