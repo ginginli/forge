@@ -1118,12 +1118,11 @@ footer a:hover {
     margin: 20px 0;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
 .gacha-simulator-wrapper iframe {
     width: 100%;
-    height: 1400px;
+    height: 800px;
     border: none;
     display: block;
 }
@@ -1745,25 +1744,8 @@ footer a:hover {
 .calculator,
 .calculator-section {
     padding: 3rem 0;
-    background: var(--bg-darker);
+    background: transparent;
     position: relative;
-}
-
-.gacha-simulator-wrapper {
-    background: var(--bg-metal-texture);
-    border: 2px solid var(--ui-orange);
-    border-radius: 16px;
-    padding: 1rem;
-    box-shadow: var(--shadow-card-hover);
-    margin: 2rem 0;
-    overflow: hidden;
-}
-
-.gacha-simulator-wrapper iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
-    border-radius: 12px;
 }
 
 /* Header Enhancement - Apple Style - 苹果风格头部 */
@@ -1905,7 +1887,7 @@ footer img:hover {
     }
     
     .gacha-simulator-wrapper iframe {
-        height: 400px;
+        height: 600px;
     }
     
     /* Responsive tables */
@@ -1940,12 +1922,11 @@ footer img:hover {
     }
     
     .gacha-simulator-wrapper {
-        padding: 0.5rem;
-        border-radius: 16px;
+        border-radius: 12px;
     }
     
     .gacha-simulator-wrapper iframe {
-        height: 350px;
+        height: 500px;
     }
 }
 
