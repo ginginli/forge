@@ -2335,25 +2335,3 @@ footer img:hover {
     margin-top: 2rem;
 }
 
-.recipe-tier-beginner {
-    color: #10b981;
-}
-
-/* Recipe tier color classes - 配方等级颜色类 */
-.recipe-tier-beginner {
-    color: #10b981;
-}
-
-.recipe-tier-intermediate {
-    color: #a855f7;
-}
-
-.recipe-tier-advanced {
-    color: #f59e0b;
-}
-
-/* Recipe highlight section - 配方高亮区域 */
-.recipe-highlight-section {
-    background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
-    border: 2px solid rgba(245, 158, 11, 0.3);
-}
