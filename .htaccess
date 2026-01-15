@@ -11,6 +11,11 @@ RewriteEngine On
 # URL Canonicalization and Parameter Handling
 # ============================================
 
+# Redirect .html URLs to clean URLs (301 permanent redirect)
+# 将 .html URL 重定向到干净 URL（301 永久重定向）
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP/
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
 # Redirect homepage with tracking parameters to clean URL
 # 重定向带跟踪参数的首页到干净URL
 RewriteCond %{QUERY_STRING} ^(ref=|utm_source=|utm_medium=|utm_campaign=|utm_content=|utm_term=|fbclid=).*$
