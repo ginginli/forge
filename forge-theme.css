@@ -15,7 +15,7 @@
     
     /* CORE COLORS - 核心颜色 (8个) */
     --color-primary: #f59e0b;        /* 主品牌色 - 铁匠铺橙色 */
-    --color-secondary: #3b82f6;      /* 辅助色 - 雪花蓝色 */
+    --color-secondary: #f59e0b;      /* 辅助色 - 改为橙色 */
     --color-success: #10b981;        /* 成功色 - 绿色 */
     --color-error: #ef4444;          /* 错误色 - 红色 */
     --color-bg-primary: #1e1e1e;     /* 背景深色 - 极深灰 */
@@ -26,7 +26,7 @@
     /* EXTENDED COLORS - 扩展颜色 (4个) */
     --color-purple: #a855f7;         /* 紫色 - 史诗稀有度 */
     --color-primary-light: #fbbf24;  /* 主色浅色 - 浅橙色 */
-    --color-secondary-light: #60a5fa; /* 辅助色浅色 - 浅蓝色 */
+    --color-secondary-light: #fbbf24; /* 辅助色浅色 - 改为浅橙色 */
     --color-text-muted: #999999;     /* 文本弱化 - 中灰 */
     
     /* ========================================
