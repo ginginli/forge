@@ -259,263 +259,125 @@
         </div>
 
 
-
-        <!-- Old Recipe Grid (Hidden for now) -->
-        <div class="recipe-grid" id="recipeGrid" class="submit-result-hidden">
+        <!-- Recipe Database -->
+        <div class="content-section">
+            <h2>📚 Complete Recipe Database</h2>
+            <p>Browse our verified recipe collection organized by difficulty tier.</p>
+            
             <!-- Beginner Recipes -->
-            <div class="recipe-card rare" data-tier="beginner" data-type="weapon">
-                <div class="recipe-header">
-                    <div class="recipe-name">⚔️ Basic Iron Sword</div>
-                    <span class="recipe-tier tier-beginner">BEGINNER</span>
-                </div>
-                <div class="recipe-ores">
-                    <div class="ore-item">
-                        <span class="ore-name">🔴 Iron Ore</span>
-                        <span class="ore-amount">60</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">⚫ Coal</span>
-                        <span class="ore-amount">30</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🟡 Gold Ore</span>
-                        <span class="ore-amount">10</span>
-                    </div>
-                </div>
-                <div class="recipe-traits">
-                    <span class="trait-tag">Durability</span>
-                    <span class="trait-tag">Basic Damage</span>
-                </div>
-                <div class="recipe-stats">
-                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Low | <strong>Best For:</strong> New players
-                </div>
-                <button class="use-recipe-btn" onclick="useRecipe('basic-sword')">Use in Calculator →</button>
-            </div>
-
-            <div class="recipe-card rare" data-tier="beginner" data-type="armor">
-                <div class="recipe-header">
-                    <div class="recipe-name">🛡️ Starter Armor Set</div>
-                    <span class="recipe-tier tier-beginner">BEGINNER</span>
-                </div>
-                <div class="recipe-ores">
-                    <div class="ore-item">
-                        <span class="ore-name">🔴 Iron Ore</span>
-                        <span class="ore-amount">70</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">⚫ Coal</span>
-                        <span class="ore-amount">20</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🟡 Gold Ore</span>
-                        <span class="ore-amount">10</span>
-                    </div>
-                </div>
-                <div class="recipe-traits">
-                    <span class="trait-tag">Protection</span>
-                    <span class="trait-tag">Durability</span>
-                </div>
-                <div class="recipe-stats">
-                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Low | <strong>Best For:</strong> Defense
-                </div>
-                <button class="use-recipe-btn" onclick="useRecipe('starter-armor')">Use in Calculator →</button>
-            </div>
+            <h3>🌟 Beginner Recipes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Recipe Name</th>
+                        <th>Type</th>
+                        <th>Ore Composition</th>
+                        <th>Traits</th>
+                        <th>Cost</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>⚔️ Basic Iron Sword</strong></td>
+                        <td>Weapon</td>
+                        <td>🔴 Iron 60 | ⚫ Coal 30 | 🟡 Gold 10</td>
+                        <td>Durability, Basic Damage</td>
+                        <td>Low</td>
+                        <td>New players</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🛡️ Starter Armor Set</strong></td>
+                        <td>Armor</td>
+                        <td>🔴 Iron 70 | ⚫ Coal 20 | 🟡 Gold 10</td>
+                        <td>Protection, Durability</td>
+                        <td>Low</td>
+                        <td>Defense</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <!-- Intermediate Recipes -->
-            <div class="recipe-card epic" data-tier="intermediate" data-type="weapon">
-                <div class="recipe-header">
-                    <div class="recipe-name">⚔️ Shadow Blade</div>
-                    <span class="recipe-tier tier-intermediate">INTERMEDIATE</span>
-                </div>
-                <div class="recipe-ores">
-                    <div class="ore-item">
-                        <span class="ore-name">🔴 Iron Ore</span>
-                        <span class="ore-amount">40</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🟣 Shadow Ore</span>
-                        <span class="ore-amount">40</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🟡 Gold Ore</span>
-                        <span class="ore-amount">20</span>
-                    </div>
-                </div>
-                <div class="recipe-traits">
-                    <span class="trait-tag">Critical Hit</span>
-                    <span class="trait-tag">Stealth</span>
-                    <span class="trait-tag">Sharpness</span>
-                </div>
-                <div class="recipe-stats">
-                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Medium | <strong>Best For:</strong> Assassins
-                </div>
-                <button class="use-recipe-btn" onclick="useRecipe('shadow-blade')">Use in Calculator →</button>
-            </div>
+            <h3>⭐ Intermediate Recipes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Recipe Name</th>
+                        <th>Type</th>
+                        <th>Ore Composition</th>
+                        <th>Traits</th>
+                        <th>Cost</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>⚔️ Shadow Blade</strong></td>
+                        <td>Weapon</td>
+                        <td>🔴 Iron 40 | 🟣 Shadow 40 | 🟡 Gold 20</td>
+                        <td>Critical Hit, Stealth, Sharpness</td>
+                        <td>Medium</td>
+                        <td>Assassins</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🪄 Crystal Staff</strong></td>
+                        <td>Weapon</td>
+                        <td>🔵 Crystal 50 | 🟡 Gold 30 | 🔴 Iron 20</td>
+                        <td>Magic Power, Mana Regen, Wealth</td>
+                        <td>Medium</td>
+                        <td>Mages</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🛡️ Heavy Tank Armor</strong></td>
+                        <td>Armor</td>
+                        <td>🔴 Iron 60 | ⚫ Coal 30 | 🟡 Gold 10</td>
+                        <td>Protection, Durability, Heat Resistance</td>
+                        <td>Medium</td>
+                        <td>Tanks</td>
+                    </tr>
+                </tbody>
+            </table>
 
-            <div class="recipe-card epic" data-tier="intermediate" data-type="weapon">
-                <div class="recipe-header">
-                    <div class="recipe-name">🪄 Crystal Staff</div>
-                    <span class="recipe-tier tier-intermediate">INTERMEDIATE</span>
-                </div>
-                <div class="recipe-ores">
-                    <div class="ore-item">
-                        <span class="ore-name">🔵 Crystal Ore</span>
-                        <span class="ore-amount">50</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🟡 Gold Ore</span>
-                        <span class="ore-amount">30</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🔴 Iron Ore</span>
-                        <span class="ore-amount">20</span>
-                    </div>
-                </div>
-                <div class="recipe-traits">
-                    <span class="trait-tag">Magic Power</span>
-                    <span class="trait-tag">Mana Regen</span>
-                    <span class="trait-tag">Wealth</span>
-                </div>
-                <div class="recipe-stats">
-                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Medium | <strong>Best For:</strong> Mages
-                </div>
-                <button class="use-recipe-btn" onclick="useRecipe('crystal-staff')">Use in Calculator →</button>
-            </div>
-
-            <div class="recipe-card epic" data-tier="intermediate" data-type="armor">
-                <div class="recipe-header">
-                    <div class="recipe-name">🛡️ Heavy Tank Armor</div>
-                    <span class="recipe-tier tier-intermediate">INTERMEDIATE</span>
-                </div>
-                <div class="recipe-ores">
-                    <div class="ore-item">
-                        <span class="ore-name">🔴 Iron Ore</span>
-                        <span class="ore-amount">60</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">⚫ Coal</span>
-                        <span class="ore-amount">30</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🟡 Gold Ore</span>
-                        <span class="ore-amount">10</span>
-                    </div>
-                </div>
-                <div class="recipe-traits">
-                    <span class="trait-tag">Protection</span>
-                    <span class="trait-tag">Durability</span>
-                    <span class="trait-tag">Heat Resistance</span>
-                </div>
-                <div class="recipe-stats">
-                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Medium | <strong>Best For:</strong> Tanks
-                </div>
-                <button class="use-recipe-btn" onclick="useRecipe('tank-armor')">Use in Calculator →</button>
-            </div>
-
-            <!-- Advanced Recipes -->
-            <div class="recipe-card legendary" data-tier="advanced" data-type="weapon">
-                <div class="recipe-header">
-                    <div class="recipe-name">⚔️ Gem-Forged Blade</div>
-                    <span class="recipe-tier tier-advanced">ADVANCED</span>
-                </div>
-                <div class="recipe-ores">
-                    <div class="ore-item">
-                        <span class="ore-name">💎 Gem Ore</span>
-                        <span class="ore-amount">30</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🟣 Shadow Ore</span>
-                        <span class="ore-amount">30</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🔴 Iron Ore</span>
-                        <span class="ore-amount">25</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🟡 Gold Ore</span>
-                        <span class="ore-amount">15</span>
-                    </div>
-                </div>
-                <div class="recipe-traits">
-                    <span class="trait-tag">Legendary</span>
-                    <span class="trait-tag">Critical Hit</span>
-                    <span class="trait-tag">All Stats +15%</span>
-                </div>
-                <div class="recipe-stats">
-                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> High | <strong>Best For:</strong> End-game
-                </div>
-                <button class="use-recipe-btn" onclick="useRecipe('gem-blade')">Use in Calculator →</button>
-            </div>
-
-            <div class="recipe-card legendary" data-tier="legendary" data-type="weapon">
-                <div class="recipe-header">
-                    <div class="recipe-name">⚔️ Ultimate Legendary Sword</div>
-                    <span class="recipe-tier tier-legendary">LEGENDARY</span>
-                </div>
-                <div class="recipe-ores">
-                    <div class="ore-item">
-                        <span class="ore-name">💎 Gem Ore</span>
-                        <span class="ore-amount">40</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🟣 Shadow Ore</span>
-                        <span class="ore-amount">30</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🔵 Crystal Ore</span>
-                        <span class="ore-amount">20</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🟡 Gold Ore</span>
-                        <span class="ore-amount">10</span>
-                    </div>
-                </div>
-                <div class="recipe-traits">
-                    <span class="trait-tag">Legendary</span>
-                    <span class="trait-tag">Unbreakable</span>
-                    <span class="trait-tag">Critical Hit</span>
-                    <span class="trait-tag">Magic Power</span>
-                </div>
-                <div class="recipe-stats">
-                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Very High | <strong>Best For:</strong> Ultimate build
-                </div>
-                <button class="use-recipe-btn" onclick="useRecipe('ultimate-sword')">Use in Calculator →</button>
-            </div>
-
-            <div class="recipe-card legendary" data-tier="legendary" data-type="armor">
-                <div class="recipe-header">
-                    <div class="recipe-name">🛡️ Legendary Armor Set</div>
-                    <span class="recipe-tier tier-legendary">LEGENDARY</span>
-                </div>
-                <div class="recipe-ores">
-                    <div class="ore-item">
-                        <span class="ore-name">💎 Gem Ore</span>
-                        <span class="ore-amount">35</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🔴 Iron Ore</span>
-                        <span class="ore-amount">35</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🔵 Crystal Ore</span>
-                        <span class="ore-amount">20</span>
-                    </div>
-                    <div class="ore-item">
-                        <span class="ore-name">🟡 Gold Ore</span>
-                        <span class="ore-amount">10</span>
-                    </div>
-                </div>
-                <div class="recipe-traits">
-                    <span class="trait-tag">Legendary</span>
-                    <span class="trait-tag">Protection</span>
-                    <span class="trait-tag">Mana Regen</span>
-                    <span class="trait-tag">All Stats +15%</span>
-                </div>
-                <div class="recipe-stats">
-                    <strong>Total Ores:</strong> 100 | <strong>Cost:</strong> Very High | <strong>Best For:</strong> Ultimate defense
-                </div>
-                <button class="use-recipe-btn" onclick="useRecipe('legendary-armor')">Use in Calculator →</button>
-            </div>
+            <!-- Advanced & Legendary Recipes -->
+            <h3>💎 Advanced & Legendary Recipes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Recipe Name</th>
+                        <th>Type</th>
+                        <th>Ore Composition</th>
+                        <th>Traits</th>
+                        <th>Cost</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>⚔️ Gem-Forged Blade</strong></td>
+                        <td>Weapon</td>
+                        <td>💎 Gem 30 | 🟣 Shadow 30 | 🔴 Iron 25 | 🟡 Gold 15</td>
+                        <td>Legendary, Critical Hit, All Stats +15%</td>
+                        <td>High</td>
+                        <td>End-game</td>
+                    </tr>
+                    <tr>
+                        <td><strong>⚔️ Ultimate Legendary Sword</strong></td>
+                        <td>Weapon</td>
+                        <td>💎 Gem 40 | 🟣 Shadow 30 | 🔵 Crystal 20 | 🟡 Gold 10</td>
+                        <td>Legendary, Unbreakable, Critical Hit, Magic Power</td>
+                        <td>Very High</td>
+                        <td>Ultimate build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🛡️ Legendary Armor Set</strong></td>
+                        <td>Armor</td>
+                        <td>💎 Gem 35 | 🔴 Iron 35 | 🔵 Crystal 20 | 🟡 Gold 10</td>
+                        <td>Legendary, Protection, Mana Regen, All Stats +15%</td>
+                        <td>Very High</td>
+                        <td>Ultimate defense</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <!-- CTA -->
