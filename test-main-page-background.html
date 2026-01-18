@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页游戏背景测试 - The Forge</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="js/forge-calculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 2rem;">🎮 主页游戏背景效果</h1>
+        
+        <div class="content-section">
+            <h2>Gamethumb.png 作为主页背景</h2>
+            <p>现在整个页面使用游戏截图作为背景，营造沉浸式的游戏体验。计算器保持简洁的半透明设计，与背景完美融合。</p>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>🎨 视觉改进</h3>
+                    <ul>
+                        <li>整页游戏背景</li>
+                        <li>固定背景滚动效果</li>
+                        <li>计算器半透明设计</li>
+                        <li>更好的视觉层次</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <h3>🔧 技术优势</h3>
+                    <ul>
+                        <li>减少重复背景加载</li>
+                        <li>统一的视觉体验</li>
+                        <li>更好的性能表现</li>
+                        <li>响应式适配</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 计算器测试区域 -->
+        <div id="forge-calculator-container"></div>
+        
+        <div class="content-section" style="margin-top: 2rem;">
+            <h2>🌟 效果说明</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>整页背景</h3>
+                    <p>游戏截图现在覆盖整个页面，创造沉浸式体验。背景固定，滚动时保持稳定。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>计算器融合</h3>
+                    <p>计算器使用半透明背景，与页面背景自然融合，同时保持功能区域的清晰度。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>视觉层次</h3>
+                    <p>通过不同的透明度层次，创造出清晰的视觉层次结构，突出重要内容。</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2>📱 响应式设计</h2>
+            <p>背景在移动设备上会自动调整透明度，确保在小屏幕上也有良好的可读性和用户体验。</p>
+        </div>
+    </div>
+
+    <!-- 加载计算器相关脚本 -->
+    <script src="js/forge-calculator-data-full.js"></script>
+    <script src="js/forge-calculator-core.js"></script>
+    <script src="js/forge-calculator-ui.js"></script>
+    
+    <script>
+        // 初始化计算器
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initForgeCalculator('forge-calculator-container');
+        });
+    </script>
+</body>
+</html>

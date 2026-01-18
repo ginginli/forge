@@ -99,15 +99,22 @@
     <section id="calculator" class="calculator calculator-section">
 
         
-        <div class="gacha-simulator-wrapper">
-            <iframe 
-                src="https://blox-informer-gachas.github.io/blox-informer-gachas/gachas/the-forge-crafting-calculator.html" 
-                class="gacha-simulator-wrapper iframe"
-                title="The Forge Crafting Calculator"
-                loading="lazy"
-                allowfullscreen>
-            </iframe>
+        <div id="forge-calculator-container">
+            <!-- Self-hosted Forge Calculator will be loaded here -->
         </div>
+        
+        <!-- Load calculator scripts -->
+        <script src="../js/forge-calculator-data-full.js"></script>
+        <script src="../js/forge-calculator-core.js"></script>
+        <script src="../js/forge-calculator-ui.js"></script>
+        <link rel="stylesheet" href="../js/forge-calculator.css">
+        
+        <script>
+            // Initialize the calculator when the page loads
+            document.addEventListener('DOMContentLoaded', function() {
+                window.initForgeCalculator('forge-calculator-container');
+            });
+        </script>
     </section>
 
     <!-- Quick Tips Section -->

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final UI Improvements Test - The Forge</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="js/forge-calculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Final UI Improvements Test</h1>
+        
+        <div class="content-section">
+            <h2>Changes Made</h2>
+            <ul>
+                <li><strong>✅ 去掉物品和武器图片的白色四角</strong> - 使用 background: transparent 和 filter: drop-shadow</li>
+                <li><strong>✅ 优化概率展示</strong> - 更大更明显的概率条，增强视觉效果</li>
+                <li><strong>✅ 主题色背景</strong> - 从纯黑色改为深暗红棕色渐变背景</li>
+            </ul>
+        </div>
+
+        <!-- 计算器测试区域 -->
+        <div id="forge-calculator-container"></div>
+    </div>
+
+    <!-- 加载计算器相关脚本 -->
+    <script src="js/forge-calculator-data-full.js"></script>
+    <script src="js/forge-calculator-core.js"></script>
+    <script src="js/forge-calculator-ui.js"></script>
+    
+    <script>
+        // 初始化计算器
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initForgeCalculator('forge-calculator-container');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>价格和属性测试 - The Forge</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="js/forge-calculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>价格和属性测试</h1>
+        <div id="forge-calculator-container"></div>
+        
+        <div style="margin-top: 40px; padding: 20px; background: rgba(0,0,0,0.8); border-radius: 12px;">
+            <h2>测试说明</h2>
+            <p>现在计算器应该显示：</p>
+            <ul>
+                <li>预测结果中的物品图片、伤害/防御值、价格</li>
+                <li>概率列表中每个物品的详细属性和价格</li>
+                <li>武器显示伤害值 (DMG)，护甲显示防御值 (DEF)</li>
+                <li>价格格式化显示（千位分隔符）</li>
+            </ul>
+            
+            <h3>快速测试</h3>
+            <button id="test-high-value" style="margin: 5px; padding: 10px; background: #bf5af2; color: white; border: none; border-radius: 6px; cursor: pointer;">测试高价值武器</button>
+            <button id="test-armor-stats" style="margin: 5px; padding: 10px; background: #30d158; color: white; border: none; border-radius: 6px; cursor: pointer;">测试护甲属性</button>
+            <button id="clear-test" style="margin: 5px; padding: 10px; background: #ef4444; color: white; border: none; border-radius: 6px; cursor: pointer;">清空</button>
+        </div>
+    </div>
+
+    <script src="js/forge-calculator-data-full.js"></script>
+    <script src="js/forge-calculator-core.js"></script>
+    <script src="js/forge-calculator-ui.js"></script>
+    
+    <script>
+        // 初始化计算器
+        let calculator;
+        if (typeof window.initForgeCalculator !== 'undefined') {
+            calculator = window.initForgeCalculator('forge-calculator-container');
+            
+            // 测试高价值武器（应该显示高伤害和高价格）
+            document.getElementById('test-high-value').addEventListener('click', () => {
+                calculator.setCraftType('Weapon');
+                calculator.clearAll();
+                // 添加高倍率矿石
+                calculator.addOre('Ruby Ore');
+                calculator.addOre('Emerald Ore');
+                calculator.addOre('Mythril Ore');
+                calculator.addOre('Eye Ore');
+            });
+            
+            // 测试护甲属性
+            document.getElementById('test-armor-stats').addEventListener('click', () => {
+                calculator.setCraftType('Armor');
+                calculator.clearAll();
+                // 添加一些矿石测试护甲
+                calculator.addOre('Diamond Ore');
+                calculator.addOre('Obsidian Ore');
+                calculator.addOre('Uranium Ore');
+                calculator.addOre('Darkryte Ore');
+            });
+            
+            document.getElementById('clear-test').addEventListener('click', () => {
+                calculator.clearAll();
+            });
+        }
+    </script>
+</body>
+</html>

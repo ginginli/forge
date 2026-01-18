@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .debug { background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .ore-btn { margin: 5px; padding: 10px; border: 1px solid #ccc; background: white; cursor: pointer; }
+        .ore-btn:hover { background: #f0f0f0; }
+        .ore-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator Test</h1>
+    
+    <div class="debug">
+        <h3>Debug Information</h3>
+        <div id="debug-info">Loading...</div>
+    </div>
+    
+    <div>
+        <h3>Ore Grid Test</h3>
+        <div id="ore-grid" class="ore-grid">
+            <!-- Ores will be loaded here -->
+        </div>
+    </div>
+    
+    <!-- Load simple data -->
+    <script src="js/forge-calculator-data-simple.js"></script>
+    <script src="js/forge-calculator-core.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const debugInfo = document.getElementById('debug-info');
+            const oreGrid = document.getElementById('ore-grid');
+            
+            // Test data loading
+            debugInfo.innerHTML = `
+                <p>ORES_DATA loaded: ${typeof ORES_DATA !== 'undefined'}</p>
+                <p>Number of ores: ${typeof ORES_DATA !== 'undefined' ? Object.keys(ORES_DATA).length : 'N/A'}</p>
+                <p>Calculator loaded: ${typeof window.forgeCalculator !== 'undefined'}</p>
+            `;
+            
+            // Test ore grid
+            if (typeof ORES_DATA !== 'undefined') {
+                const oreEntries = Object.entries(ORES_DATA);
+                oreGrid.innerHTML = oreEntries.map(([name, data]) => `
+                    <button class="ore-btn" onclick="addOre('${name}')">
+                        <div style="color: ${RARITY_COLORS[data.rarity]}">${name}</div>
+                        <div>${data.multiplier}x</div>
+                        <div>${data.rarity}</div>
+                    </button>
+                `).join('');
+            }
+            
+            // Test calculator
+            if (typeof window.forgeCalculator !== 'undefined') {
+                const oresList = window.forgeCalculator.getOresByRarity();
+                console.log('Calculator ores list:', oresList);
+            }
+        });
+        
+        function addOre(oreName) {
+            console.log('Adding ore:', oreName);
+            if (window.forgeCalculator) {
+                window.forgeCalculator.addOre(oreName);
+                console.log('Current ores:', window.forgeCalculator.selectedOres);
+            }
+        }
+    </script>
+</body>
+</html>

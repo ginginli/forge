@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景色调测试 - The Forge</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="js/forge-calculator.css">
+    <style>
+        .color-test-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .color-option {
+            border-radius: 16px;
+            padding: 2rem;
+            min-height: 400px;
+            position: relative;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .color-option:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-4px);
+        }
+        
+        .color-info {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        .color-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+        
+        .color-values {
+            font-family: monospace;
+            font-size: 0.9rem;
+            color: #cccccc;
+            line-height: 1.4;
+        }
+        
+        .mini-calculator {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-top: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .mini-calculator h4 {
+            color: #ffffff;
+            margin: 0 0 0.5rem 0;
+            font-size: 1rem;
+        }
+        
+        .mini-slots {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .mini-slot {
+            width: 40px;
+            height: 40px;
+            border: 1px dashed rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: #cccccc;
+        }
+        
+        .mini-result {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.5rem;
+            border-radius: 6px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+        
+        /* 颜色选项 */
+        
+        /* 选项1: 当前棕色 (基准) */
+        .option-current {
+            background: linear-gradient(135deg, #1a1008 0%, #2b2015 50%, #1a1008 100%);
+        }
+        
+        /* 选项2: 轻微红棕色 */
+        .option-light-red {
+            background: linear-gradient(135deg, #1a0c08 0%, #2b1a15 50%, #1a0c08 100%);
+        }
+        
+        /* 选项3: 平衡红棕色 */
+        .option-balanced {
+            background: linear-gradient(135deg, #1a0e08 0%, #2b1c15 50%, #1a0e08 100%);
+        }
+        
+        /* 选项4: 温暖红棕色 */
+        .option-warm {
+            background: linear-gradient(135deg, #1a0f09 0%, #2b1d16 50%, #1a0f09 100%);
+        }
+        
+        /* 选项5: 深红棕色 */
+        .option-deep-red {
+            background: linear-gradient(135deg, #1a0d07 0%, #2b1914 50%, #1a0d07 100%);
+        }
+        
+        /* 选项6: 铁锈红棕色 */
+        .option-rust {
+            background: linear-gradient(135deg, #1a0e09 0%, #2b1c17 50%, #1a0e09 100%);
+        }
+        
+        /* 选项7: 古铜红棕色 */
+        .option-bronze {
+            background: linear-gradient(135deg, #1a100a 0%, #2b1e18 50%, #1a100a 100%);
+        }
+        
+        /* 选项8: 焦糖红棕色 */
+        .option-caramel {
+            background: linear-gradient(135deg, #1a110a 0%, #2b1f19 50%, #1a110a 100%);
+        }
+        
+        .select-button {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        
+        .select-button:hover {
+            background: #ffffff;
+            transform: scale(1.05);
+        }
+        
+        .current-indicator {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #4ade80;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 2rem;">🎨 背景色调选择器</h1>
+        <p style="text-align: center; color: #cccccc; margin-bottom: 3rem;">
+            选择你最喜欢的背景色调。每个选项都展示了不同的红棕色平衡。
+        </p>
+        
+        <div class="color-test-container">
+            <!-- 选项1: 当前棕色 -->
+            <div class="color-option option-current">
+                <div class="current-indicator">当前</div>
+                <div class="color-info">
+                    <div class="color-name">纯棕色调 (当前)</div>
+                    <div class="color-values">
+                        起始: #1a1008<br>
+                        中间: #2b2015<br>
+                        结束: #1a1008
+                    </div>
+                </div>
+                <div class="mini-calculator">
+                    <h4>计算器预览</h4>
+                    <div class="mini-slots">
+                        <div class="mini-slot">⛏️</div>
+                        <div class="mini-slot">🔥</div>
+                        <div class="mini-slot">⚡</div>
+                        <div class="mini-slot">💎</div>
+                    </div>
+                    <div class="mini-result">Heavy Chestplate - 60.0%</div>
+                </div>
+                <button class="select-button" onclick="selectColor('current')">选择此色调</button>
+            </div>
+            
+            <!-- 选项2: 轻微红棕色 -->
+            <div class="color-option option-light-red">
+                <div class="color-info">
+                    <div class="color-name">轻微红棕色</div>
+                    <div class="color-values">
+                        起始: #1a0c08<br>
+                        中间: #2b1a15<br>
+                        结束: #1a0c08
+                    </div>
+                </div>
+                <div class="mini-calculator">
+                    <h4>计算器预览</h4>
+                    <div class="mini-slots">
+                        <div class="mini-slot">⛏️</div>
+                        <div class="mini-slot">🔥</div>
+                        <div class="mini-slot">⚡</div>
+                        <div class="mini-slot">💎</div>
+                    </div>
+                    <div class="mini-result">Heavy Chestplate - 60.0%</div>
+                </div>
+                <button class="select-button" onclick="selectColor('light-red')">选择此色调</button>
+            </div>
+            
+            <!-- 选项3: 平衡红棕色 -->
+            <div class="color-option option-balanced">
+                <div class="color-info">
+                    <div class="color-name">平衡红棕色</div>
+                    <div class="color-values">
+                        起始: #1a0e08<br>
+                        中间: #2b1c15<br>
+                        结束: #1a0e08
+                    </div>
+                </div>
+                <div class="mini-calculator">
+                    <h4>计算器预览</h4>
+                    <div class="mini-slots">
+                        <div class="mini-slot">⛏️</div>
+                        <div class="mini-slot">🔥</div>
+                        <div class="mini-slot">⚡</div>
+                        <div class="mini-slot">💎</div>
+                    </div>
+                    <div class="mini-result">Heavy Chestplate - 60.0%</div>
+                </div>
+                <button class="select-button" onclick="selectColor('balanced')">选择此色调</button>
+            </div>
+            
+            <!-- 选项4: 温暖红棕色 -->
+            <div class="color-option option-warm">
+                <div class="color-info">
+                    <div class="color-name">温暖红棕色</div>
+                    <div class="color-values">
+                        起始: #1a0f09<br>
+                        中间: #2b1d16<br>
+                        结束: #1a0f09
+                    </div>
+                </div>
+                <div class="mini-calculator">
+                    <h4>计算器预览</h4>
+                    <div class="mini-slots">
+                        <div class="mini-slot">⛏️</div>
+                        <div class="mini-slot">🔥</div>
+                        <div class="mini-slot">⚡</div>
+                        <div class="mini-slot">💎</div>
+                    </div>
+                    <div class="mini-result">Heavy Chestplate - 60.0%</div>
+                </div>
+                <button class="select-button" onclick="selectColor('warm')">选择此色调</button>
+            </div>
+            
+            <!-- 选项5: 深红棕色 -->
+            <div class="color-option option-deep-red">
+                <div class="color-info">
+                    <div class="color-name">深红棕色</div>
+                    <div class="color-values">
+                        起始: #1a0d07<br>
+                        中间: #2b1914<br>
+                        结束: #1a0d07
+                    </div>
+                </div>
+                <div class="mini-calculator">
+                    <h4>计算器预览</h4>
+                    <div class="mini-slots">
+                        <div class="mini-slot">⛏️</div>
+                        <div class="mini-slot">🔥</div>
+                        <div class="mini-slot">⚡</div>
+                        <div class="mini-slot">💎</div>
+                    </div>
+                    <div class="mini-result">Heavy Chestplate - 60.0%</div>
+                </div>
+                <button class="select-button" onclick="selectColor('deep-red')">选择此色调</button>
+            </div>
+            
+            <!-- 选项6: 铁锈红棕色 -->
+            <div class="color-option option-rust">
+                <div class="color-info">
+                    <div class="color-name">铁锈红棕色</div>
+                    <div class="color-values">
+                        起始: #1a0e09<br>
+                        中间: #2b1c17<br>
+                        结束: #1a0e09
+                    </div>
+                </div>
+                <div class="mini-calculator">
+                    <h4>计算器预览</h4>
+                    <div class="mini-slots">
+                        <div class="mini-slot">⛏️</div>
+                        <div class="mini-slot">🔥</div>
+                        <div class="mini-slot">⚡</div>
+                        <div class="mini-slot">💎</div>
+                    </div>
+                    <div class="mini-result">Heavy Chestplate - 60.0%</div>
+                </div>
+                <button class="select-button" onclick="selectColor('rust')">选择此色调</button>
+            </div>
+            
+            <!-- 选项7: 古铜红棕色 -->
+            <div class="color-option option-bronze">
+                <div class="color-info">
+                    <div class="color-name">古铜红棕色</div>
+                    <div class="color-values">
+                        起始: #1a100a<br>
+                        中间: #2b1e18<br>
+                        结束: #1a100a
+                    </div>
+                </div>
+                <div class="mini-calculator">
+                    <h4>计算器预览</h4>
+                    <div class="mini-slots">
+                        <div class="mini-slot">⛏️</div>
+                        <div class="mini-slot">🔥</div>
+                        <div class="mini-slot">⚡</div>
+                        <div class="mini-slot">💎</div>
+                    </div>
+                    <div class="mini-result">Heavy Chestplate - 60.0%</div>
+                </div>
+                <button class="select-button" onclick="selectColor('bronze')">选择此色调</button>
+            </div>
+            
+            <!-- 选项8: 焦糖红棕色 -->
+            <div class="color-option option-caramel">
+                <div class="color-info">
+                    <div class="color-name">焦糖红棕色</div>
+                    <div class="color-values">
+                        起始: #1a110a<br>
+                        中间: #2b1f19<br>
+                        结束: #1a110a
+                    </div>
+                </div>
+                <div class="mini-calculator">
+                    <h4>计算器预览</h4>
+                    <div class="mini-slots">
+                        <div class="mini-slot">⛏️</div>
+                        <div class="mini-slot">🔥</div>
+                        <div class="mini-slot">⚡</div>
+                        <div class="mini-slot">💎</div>
+                    </div>
+                    <div class="mini-result">Heavy Chestplate - 60.0%</div>
+                </div>
+                <button class="select-button" onclick="selectColor('caramel')">选择此色调</button>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(0,0,0,0.5); border-radius: 12px;">
+            <h3>🎯 选择指南</h3>
+            <p style="color: #cccccc; line-height: 1.6;">
+                • <strong>轻微红棕色</strong>: 在棕色基础上增加一点温暖感<br>
+                • <strong>平衡红棕色</strong>: 红色和棕色的完美平衡<br>
+                • <strong>温暖红棕色</strong>: 营造温暖的铁匠铺氛围<br>
+                • <strong>深红棕色</strong>: 更深沉的红棕色调<br>
+                • <strong>铁锈红棕色</strong>: 仿古铁锈的质感<br>
+                • <strong>古铜红棕色</strong>: 古典金属的色泽<br>
+                • <strong>焦糖红棕色</strong>: 最温暖的色调选择
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        function selectColor(colorType) {
+            const colorMap = {
+                'current': {
+                    start: '#1a1008',
+                    middle: '#2b2015',
+                    end: '#1a1008'
+                },
+                'light-red': {
+                    start: '#1a0c08',
+                    middle: '#2b1a15',
+                    end: '#1a0c08'
+                },
+                'balanced': {
+                    start: '#1a0e08',
+                    middle: '#2b1c15',
+                    end: '#1a0e08'
+                },
+                'warm': {
+                    start: '#1a0f09',
+                    middle: '#2b1d16',
+                    end: '#1a0f09'
+                },
+                'deep-red': {
+                    start: '#1a0d07',
+                    middle: '#2b1914',
+                    end: '#1a0d07'
+                },
+                'rust': {
+                    start: '#1a0e09',
+                    middle: '#2b1c17',
+                    end: '#1a0e09'
+                },
+                'bronze': {
+                    start: '#1a100a',
+                    middle: '#2b1e18',
+                    end: '#1a100a'
+                },
+                'caramel': {
+                    start: '#1a110a',
+                    middle: '#2b1f19',
+                    end: '#1a110a'
+                }
+            };
+            
+            const colors = colorMap[colorType];
+            const gradient = `linear-gradient(135deg, ${colors.start} 0%, ${colors.middle} 50%, ${colors.end} 100%)`;
+            
+            alert(`你选择了: ${colorType}\n\n渐变代码:\n${gradient}\n\n点击确定后，我会为你应用这个颜色！`);
+            
+            // 存储选择的颜色到 localStorage
+            localStorage.setItem('selectedColorType', colorType);
+            localStorage.setItem('selectedGradient', gradient);
+        }
+    </script>
+</body>
+</html>

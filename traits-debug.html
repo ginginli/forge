@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traits Debug Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .debug { background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .test-btn { margin: 5px; padding: 10px; background: #007bff; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Traits Activation Debug</h1>
+    
+    <div class="debug">
+        <h3>Test Cases</h3>
+        <button class="test-btn" onclick="testObsidianArmor()">Test: 7x Obsidian + 3x Stone (Armor)</button>
+        <button class="test-btn" onclick="testRivaliteWeapon()">Test: 7x Rivalite + 3x Stone (Weapon)</button>
+        <button class="test-btn" onclick="testEyeOre()">Test: 5x Eye Ore + 5x Stone (All)</button>
+        <button class="test-btn" onclick="clearTest()">Clear</button>
+    </div>
+    
+    <div class="debug">
+        <h3>Debug Output</h3>
+        <div id="debug-output">Ready for testing...</div>
+    </div>
+    
+    <div id="forge-calculator-container"></div>
+    
+    <!-- Load calculator scripts -->
+    <script src="js/forge-calculator-data-full.js"></script>
+    <script src="js/forge-calculator-core.js"></script>
+    <script src="js/forge-calculator-ui.js"></script>
+    <link rel="stylesheet" href="js/forge-calculator.css">
+    
+    <script>
+        let calculator;
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            calculator = window.initForgeCalculator('forge-calculator-container');
+        });
+        
+        function debugLog(message) {
+            const output = document.getElementById('debug-output');
+            output.innerHTML += '<p>' + message + '</p>';
+        }
+        
+        function testObsidianArmor() {
+            debugLog('<strong>Testing Obsidian Armor Trait:</strong>');
+            calculator.clearAll();
+            calculator.setCraftType('Armor');
+            
+            // Add 7x Obsidian Ore + 3x Stone Ore
+            for(let i = 0; i < 7; i++) {
+                calculator.calculator.addOre('Obsidian Ore');
+            }
+            for(let i = 0; i < 3; i++) {
+                calculator.calculator.addOre('Stone Ore');
+            }
+            
+            const results = calculator.calculator.getItemChancesWithTraits(calculator.calculator.selectedOres, 'Armor');
+            debugLog('Total ores: ' + results.totalCount);
+            debugLog('Composition: ' + JSON.stringify(results.composition));
+            debugLog('Traits: ' + JSON.stringify(results.traits));
+            debugLog('Obsidian percentage: ' + (results.composition['Obsidian Ore'] || 0) + '%');
+        }
+        
+        function testRivaliteWeapon() {
+            debugLog('<strong>Testing Rivalite Weapon Trait:</strong>');
+            calculator.clearAll();
+            calculator.setCraftType('Weapon');
+            
+            // Add 7x Rivalite Ore + 3x Stone Ore
+            for(let i = 0; i < 7; i++) {
+                calculator.calculator.addOre('Rivalite Ore');
+            }
+            for(let i = 0; i < 3; i++) {
+                calculator.calculator.addOre('Stone Ore');
+            }
+            
+            const results = calculator.calculator.getItemChancesWithTraits(calculator.calculator.selectedOres, 'Weapon');
+            debugLog('Total ores: ' + results.totalCount);
+            debugLog('Composition: ' + JSON.stringify(results.composition));
+            debugLog('Traits: ' + JSON.stringify(results.traits));
+            debugLog('Rivalite percentage: ' + (results.composition['Rivalite Ore'] || 0) + '%');
+        }
+        
+        function testEyeOre() {
+            debugLog('<strong>Testing Eye Ore (All) Trait:</strong>');
+            calculator.clearAll();
+            calculator.setCraftType('Weapon');
+            
+            // Add 5x Eye Ore + 5x Stone Ore
+            for(let i = 0; i < 5; i++) {
+                calculator.calculator.addOre('Eye Ore');
+            }
+            for(let i = 0; i < 5; i++) {
+                calculator.calculator.addOre('Stone Ore');
+            }
+            
+            const results = calculator.calculator.getItemChancesWithTraits(calculator.calculator.selectedOres, 'Weapon');
+            debugLog('Total ores: ' + results.totalCount);
+            debugLog('Composition: ' + JSON.stringify(results.composition));
+            debugLog('Traits: ' + JSON.stringify(results.traits));
+            debugLog('Eye Ore percentage: ' + (results.composition['Eye Ore'] || 0) + '%');
+        }
+        
+        function clearTest() {
+            document.getElementById('debug-output').innerHTML = 'Ready for testing...';
+            calculator.clearAll();
+        }
+    </script>
+</body>
+</html>

@@ -14,15 +14,15 @@
        ======================================== */
     
     /* CORE COLORS - 核心颜色 (6个) */
-    --color-primary: #fbbf24;        /* 主品牌色 - 官方金黄色 */
-    --color-secondary: #fbbf24;      /* 辅助色 - 统一为金黄色 */
+    --color-primary: #3b1508;        /* 主品牌色 - 深暗红棕色 */
+    --color-secondary: #3b1508;      /* 辅助色 - 统一为深暗红棕色 */
     --color-success: #10b981;        /* 成功色 - 绿色 */
     --color-error: #ef4444;          /* 错误色 - 红色 */
     --color-text-primary: #ffffff;   /* 文本主色 - 纯白 */
     --color-text-secondary: #a8a29e; /* 文本次色 - 浅灰棕 */
     
     /* EXTENDED COLORS - 扩展颜色 (2个) */
-    --color-accent: #d97706;         /* 强调色 - 深金色 */
+    --color-accent: #5d2a0f;         /* 强调色 - 中等暗红棕色 */
     --color-text-muted: #78716c;     /* 文本弱化 - 灰棕 */
     
     /* ========================================
@@ -67,8 +67,8 @@
     /* Snowite Colors - 雪花矿石色系 */
     --snowite-blue: var(--color-secondary);
     --snowite-light: var(--color-primary);
-    --snowite-dark: #d97706;        /* 深金色 */
-    --snowite-ice: #fef3c7;         /* 浅金色 */
+    --snowite-dark: #2a1005;        /* 更深的暗红棕色 */
+    --snowite-ice: #8b4513;         /* 浅一些的棕色 */
     
     /* ========================================
        ENHANCED GRADIENTS - 增强渐变
@@ -89,10 +89,10 @@
     /* ========================================
        ENHANCED SHADOWS - 增强阴影系统
        ======================================== */
-    --shadow-forge-glow: 0 0 20px rgba(251, 191, 36, 0.3);
-    --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(251, 191, 36, 0.2);
+    --shadow-forge-glow: 0 0 20px rgba(59, 21, 8, 0.4);
+    --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(59, 21, 8, 0.3);
     --shadow-button-active: inset 0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-text-glow: 0 2px 8px rgba(251, 191, 36, 0.5);
+    --shadow-text-glow: 0 2px 8px rgba(59, 21, 8, 0.6);
     
     /* Animation Timing - 动画时间 */
     --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -102,7 +102,9 @@
 
 /* Enhanced Base Styles - 增强基础样式 */
 body {
-    background: #000000;
+    background: 
+        linear-gradient(rgba(59, 21, 8, 0.7), rgba(93, 42, 15, 0.8)),
+        url('gamethumb.png') center/cover no-repeat fixed;
     color: #f5f5f7;
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 400;
@@ -112,6 +114,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
 }
 
 * {
@@ -787,10 +790,10 @@ nav a:hover {
 
 /* Header styles */
 header {
-    background: linear-gradient(90deg, var(--bg-darker) 0%, var(--bg-primary) 100%);
+    background: linear-gradient(90deg, rgba(59, 21, 8, 0.9) 0%, rgba(93, 42, 15, 0.8) 100%);
     padding: 1rem 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    border-bottom: 3px solid var(--ui-orange);
+    box-shadow: 0 2px 10px rgba(59, 21, 8, 0.4);
+    border-bottom: 3px solid var(--color-primary);
     margin-bottom: 2rem;
 }
 
@@ -801,7 +804,7 @@ header .container {
 }
 
 header h1 {
-    color: var(--ui-orange);
+    color: var(--color-primary);
     font-size: 1.8rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -1429,6 +1432,57 @@ footer a:hover {
     opacity: 0.6;
 }
 
+/* No codes available message */
+.no-codes-message {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+.no-codes-icon {
+    font-size: 4rem;
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.no-codes-text h4 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.no-codes-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.no-codes-text ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.no-codes-text li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .no-codes-message {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .no-codes-icon {
+        font-size: 3rem;
+    }
+}
+
 /* Code status styles */
 .status-expired {
     background: var(--color-error);
@@ -1656,15 +1710,15 @@ footer a:hover {
 }
 
 .tip-card {
-    background: var(--bg-darker);
-    border: 1px solid var(--border-primary);
+    background: rgba(59, 21, 8, 0.3);
+    border: 1px solid rgba(93, 42, 15, 0.4);
     border-radius: 10px;
     padding: 1.5rem;
     transition: all 0.3s;
 }
 
 .tip-card:hover {
-    border-color: var(--ui-orange);
+    border-color: var(--color-primary);
     transform: translateY(-2px);
 }
 
@@ -1672,7 +1726,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--ui-orange);
+    color: var(--color-primary);
     margin-bottom: 1rem;
 }
 
@@ -1726,9 +1780,9 @@ footer a:hover {
 
 /* Header Enhancement - Apple Style - 苹果风格头部 */
 header {
-    background: rgba(0, 0, 0, 0.8);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: none;
+    background: rgba(59, 21, 8, 0.9);
+    border-bottom: 1px solid rgba(93, 42, 15, 0.3);
+    box-shadow: 0 2px 8px rgba(59, 21, 8, 0.4);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -1819,7 +1873,9 @@ footer img:hover {
 /* Mobile Responsive Breakpoints - Apple Style - 苹果风格移动端 */
 @media (max-width: 768px) {
     body {
-        background: #000000;
+        background: 
+            linear-gradient(rgba(59, 21, 8, 0.8), rgba(93, 42, 15, 0.9)),
+            url('gamethumb.png') center/cover no-repeat fixed;
     }
     
     header .container {

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Ore Images - The Forge Calculator</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="js/forge-calculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ore Images Test</h1>
+        <div id="forge-calculator-container"></div>
+        
+        <div style="margin-top: 40px; padding: 20px; background: rgba(0,0,0,0.8); border-radius: 12px;">
+            <h2>Debug Information</h2>
+            <div id="debug-info">
+                <p>ORES_DATA loaded: <span id="ores-loaded">false</span></p>
+                <p>Number of ores: <span id="ores-count">N/A</span></p>
+                <p>RARITY_COLORS loaded: <span id="colors-loaded">false</span></p>
+                <p>Calculator loaded: <span id="calculator-loaded">false</span></p>
+            </div>
+            
+            <h3>Image Test</h3>
+            <div id="image-test" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; margin-top: 20px;">
+                <!-- Images will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/forge-calculator-data-full.js"></script>
+    <script src="js/forge-calculator-core.js"></script>
+    <script src="js/forge-calculator-ui.js"></script>
+    
+    <script>
+        // Debug information
+        document.getElementById('ores-loaded').textContent = typeof ORES_DATA !== 'undefined';
+        document.getElementById('ores-count').textContent = typeof ORES_DATA !== 'undefined' ? Object.keys(ORES_DATA).length : 'N/A';
+        document.getElementById('colors-loaded').textContent = typeof RARITY_COLORS !== 'undefined';
+        document.getElementById('calculator-loaded').textContent = typeof window.initForgeCalculator !== 'undefined';
+        
+        // Initialize calculator
+        if (typeof window.initForgeCalculator !== 'undefined') {
+            const calculator = window.initForgeCalculator('forge-calculator-container');
+            
+            // Test image loading for all ores
+            const imageTest = document.getElementById('image-test');
+            if (typeof ORES_DATA !== 'undefined') {
+                Object.keys(ORES_DATA).forEach(oreName => {
+                    const oreData = ORES_DATA[oreName];
+                    const imagePath = calculator.getOreImagePath(oreName);
+                    
+                    const testDiv = document.createElement('div');
+                    testDiv.style.cssText = 'text-align: center; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px;';
+                    
+                    if (imagePath) {
+                        testDiv.innerHTML = `
+                            <img src="${imagePath}" alt="${oreName}" style="width: 32px; height: 32px; object-fit: contain; background: rgba(255,255,255,0.1); border-radius: 4px; padding: 2px;" 
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                            <div style="display: none; color: #ff6b6b; font-size: 10px;">❌ Missing</div>
+                            <div style="font-size: 10px; color: ${RARITY_COLORS[oreData.rarity]}; margin-top: 4px;">${oreName}</div>
+                            <div style="font-size: 9px; color: #888;">${oreData.rarity}</div>
+                        `;
+                    } else {
+                        testDiv.innerHTML = `
+                            <div style="color: #ff6b6b; font-size: 10px;">❌ No Image</div>
+                            <div style="font-size: 10px; color: ${RARITY_COLORS[oreData.rarity]}; margin-top: 4px;">${oreName}</div>
+                            <div style="font-size: 9px; color: #888;">${oreData.rarity}</div>
+                        `;
+                    }
+                    
+                    imageTest.appendChild(testDiv);
+                });
+            }
+        }
+    </script>
+</body>
+</html>

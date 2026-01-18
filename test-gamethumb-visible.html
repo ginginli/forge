@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏背景可见性测试 - The Forge</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="js/forge-calculator.css">
+    <style>
+        /* 测试不同透明度的背景效果 */
+        .test-very-light {
+            background: 
+                linear-gradient(rgba(26, 15, 9, 0.3), rgba(43, 29, 22, 0.4)),
+                url('gamethumb.png') center/cover no-repeat !important;
+        }
+        
+        .test-light {
+            background: 
+                linear-gradient(rgba(26, 15, 9, 0.5), rgba(43, 29, 22, 0.6)),
+                url('gamethumb.png') center/cover no-repeat !important;
+        }
+        
+        .test-medium {
+            background: 
+                linear-gradient(rgba(26, 15, 9, 0.7), rgba(43, 29, 22, 0.8)),
+                url('gamethumb.png') center/cover no-repeat !important;
+        }
+        
+        .test-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .test-section h3 {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin-bottom: 1rem;
+        }
+        
+        .test-section p {
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 2rem;">🔍 游戏背景可见性测试</h1>
+        
+        <!-- 测试1: 很轻的覆盖 -->
+        <div class="test-section test-very-light">
+            <h3>测试1: 很轻的覆盖 (30%-40% 透明度)</h3>
+            <p>这个版本的覆盖层很轻，游戏背景应该很明显。如果你能看到游戏场景，说明图片加载正常。</p>
+        </div>
+        
+        <!-- 测试2: 轻度覆盖 -->
+        <div class="test-section test-light">
+            <h3>测试2: 轻度覆盖 (50%-60% 透明度)</h3>
+            <p>这个版本平衡了背景可见性和文字可读性。游戏背景应该可见但不会影响文字阅读。</p>
+        </div>
+        
+        <!-- 测试3: 中度覆盖 -->
+        <div class="test-section test-medium">
+            <h3>测试3: 中度覆盖 (70%-80% 透明度)</h3>
+            <p>这个版本优先考虑文字可读性，游戏背景作为微妙的纹理存在。</p>
+        </div>
+        
+        <!-- 原图预览 -->
+        <div class="content-section">
+            <h2>原图预览</h2>
+            <div style="text-align: center; margin: 2rem 0;">
+                <img src="gamethumb.png" alt="Game Thumbnail" style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid rgba(255, 255, 255, 0.2);" />
+            </div>
+            <p>如果上面的测试区域没有显示游戏背景，可能是以下原因：</p>
+            <ul>
+                <li>图片路径问题</li>
+                <li>浏览器缓存问题</li>
+                <li>CSS 层叠问题</li>
+                <li>图片格式兼容性问题</li>
+            </ul>
+        </div>
+
+        <!-- 实际计算器测试 -->
+        <div style="margin-top: 3rem;">
+            <h2 style="text-align: center;">实际计算器效果</h2>
+            <div id="forge-calculator-container" class="test-light"></div>
+        </div>
+    </div>
+
+    <!-- 加载计算器相关脚本 -->
+    <script src="js/forge-calculator-data-full.js"></script>
+    <script src="js/forge-calculator-core.js"></script>
+    <script src="js/forge-calculator-ui.js"></script>
+    
+    <script>
+        // 初始化计算器
+        document.addEventListener('DOMContentLoaded', function() {
+            window.initForgeCalculator('forge-calculator-container');
+        });
+    </script>
+</body>
+</html>

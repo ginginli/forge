@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Interface Traits Test</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="js/forge-calculator.css">
+</head>
+<body>
+    <div class="container" style="padding: 20px;">
+        <h1>🔥 Main Interface Traits Test</h1>
+        
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px;">
+            <h3>Instructions</h3>
+            <p>1. Switch to "Armor" mode</p>
+            <p>2. Add 7x Obsidian Ore + 3x Stone Ore</p>
+            <p>3. Check if "Active Traits" section shows "30.00% Vitality"</p>
+        </div>
+        
+        <div id="forge-calculator-container">
+            <!-- Calculator will be loaded here -->
+        </div>
+        
+        <!-- Load calculator scripts -->
+        <script src="js/forge-calculator-data-full.js"></script>
+        <script src="js/forge-calculator-core.js"></script>
+        <script src="js/forge-calculator-ui.js"></script>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                console.log('Initializing main interface test...');
+                const calculator = window.initForgeCalculator('forge-calculator-container');
+                console.log('Calculator initialized!');
+                
+                // Add debug logging for traits
+                window.addEventListener('calculatorUpdate', function(e) {
+                    console.log('Calculator update event:', e.detail);
+                    console.log('Traits in event:', e.detail.traits);
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

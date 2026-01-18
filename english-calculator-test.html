@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Calculator Test</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="js/forge-calculator.css">
+</head>
+<body>
+    <div class="container" style="padding: 20px;">
+        <h1>🔥 The Forge Calculator - English Version</h1>
+        
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px;">
+            <h3>Language Test</h3>
+            <p>✅ All interface text should be in English</p>
+            <p>✅ Button labels: "Weapon", "Armor", "Clear"</p>
+            <p>✅ Placeholders: "Search ores...", "Empty"</p>
+            <p>✅ Messages: "No ores selected", "Need at least 3 ores to forge"</p>
+        </div>
+        
+        <div id="forge-calculator-container">
+            <!-- Calculator will be loaded here -->
+        </div>
+        
+        <!-- Load calculator scripts -->
+        <script src="js/forge-calculator-data-full.js"></script>
+        <script src="js/forge-calculator-core.js"></script>
+        <script src="js/forge-calculator-ui.js"></script>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                console.log('Initializing English calculator...');
+                try {
+                    const calculator = window.initForgeCalculator('forge-calculator-container');
+                    console.log('English calculator initialized successfully!');
+                } catch (error) {
+                    console.error('Error initializing calculator:', error);
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

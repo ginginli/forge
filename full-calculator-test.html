@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Calculator Test</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="js/forge-calculator.css">
+</head>
+<body>
+    <div class="container" style="padding: 20px;">
+        <h1>Full Forge Calculator Test</h1>
+        
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px;">
+            <h3>Debug Information</h3>
+            <div id="debug-info">Loading...</div>
+        </div>
+        
+        <div id="forge-calculator-container">
+            <!-- Calculator will be loaded here -->
+        </div>
+        
+        <!-- Load calculator scripts -->
+        <script src="js/forge-calculator-data-full.js"></script>
+        <script src="js/forge-calculator-core.js"></script>
+        <script src="js/forge-calculator-ui.js"></script>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const debugInfo = document.getElementById('debug-info');
+                
+                // Show debug info
+                debugInfo.innerHTML = `
+                    <p>ORES_DATA loaded: ${typeof ORES_DATA !== 'undefined'}</p>
+                    <p>Number of ores: ${typeof ORES_DATA !== 'undefined' ? Object.keys(ORES_DATA).length : 'N/A'}</p>
+                    <p>RARITY_COLORS loaded: ${typeof RARITY_COLORS !== 'undefined'}</p>
+                    <p>WEAPON_ODDS loaded: ${typeof WEAPON_ODDS !== 'undefined'}</p>
+                    <p>ARMOR_ODDS loaded: ${typeof ARMOR_ODDS !== 'undefined'}</p>
+                    <p>Calculator loaded: ${typeof window.forgeCalculator !== 'undefined'}</p>
+                `;
+                
+                // Initialize calculator
+                try {
+                    console.log('Initializing full calculator...');
+                    const calculator = window.initForgeCalculator('forge-calculator-container');
+                    console.log('Full calculator initialized successfully:', calculator);
+                    
+                    debugInfo.innerHTML += '<p style="color: green;">✅ Calculator UI initialized successfully!</p>';
+                } catch (error) {
+                    console.error('Error initializing calculator:', error);
+                    debugInfo.innerHTML += `<p style="color: red;">❌ Calculator initialization failed: ${error.message}</p>`;
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

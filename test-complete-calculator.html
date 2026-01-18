@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Calculator Test - The Forge</title>
+    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="js/forge-calculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>完整计算器测试</h1>
+        <div id="forge-calculator-container"></div>
+        
+        <div style="margin-top: 40px; padding: 20px; background: rgba(0,0,0,0.8); border-radius: 12px;">
+            <h2>调试信息</h2>
+            <div id="debug-info">
+                <p>矿石数据已加载: <span id="ores-loaded">false</span></p>
+                <p>矿石数量: <span id="ores-count">N/A</span></p>
+                <p>稀有度颜色已加载: <span id="colors-loaded">false</span></p>
+                <p>计算器已加载: <span id="calculator-loaded">false</span></p>
+            </div>
+            
+            <h3>快速测试</h3>
+            <button id="test-weapon" style="margin: 5px; padding: 10px; background: #0a84ff; color: white; border: none; border-radius: 6px; cursor: pointer;">测试武器锻造</button>
+            <button id="test-armor" style="margin: 5px; padding: 10px; background: #30d158; color: white; border: none; border-radius: 6px; cursor: pointer;">测试护甲锻造</button>
+            <button id="clear-test" style="margin: 5px; padding: 10px; background: #ef4444; color: white; border: none; border-radius: 6px; cursor: pointer;">清空</button>
+        </div>
+    </div>
+
+    <script src="js/forge-calculator-data-full.js"></script>
+    <script src="js/forge-calculator-core.js"></script>
+    <script src="js/forge-calculator-ui.js"></script>
+    
+    <script>
+        // 调试信息
+        document.getElementById('ores-loaded').textContent = typeof ORES_DATA !== 'undefined';
+        document.getElementById('ores-count').textContent = typeof ORES_DATA !== 'undefined' ? Object.keys(ORES_DATA).length : 'N/A';
+        document.getElementById('colors-loaded').textContent = typeof RARITY_COLORS !== 'undefined';
+        document.getElementById('calculator-loaded').textContent = typeof window.initForgeCalculator !== 'undefined';
+        
+        // 初始化计算器
+        let calculator;
+        if (typeof window.initForgeCalculator !== 'undefined') {
+            calculator = window.initForgeCalculator('forge-calculator-container');
+            
+            // 测试按钮
+            document.getElementById('test-weapon').addEventListener('click', () => {
+                calculator.setCraftType('Weapon');
+                calculator.clearAll();
+                // 添加一些矿石进行测试
+                calculator.addOre('Iron Ore');
+                calculator.addOre('Gold Ore');
+                calculator.addOre('Diamond Ore');
+                calculator.addOre('Ruby Ore');
+            });
+            
+            document.getElementById('test-armor').addEventListener('click', () => {
+                calculator.setCraftType('Armor');
+                calculator.clearAll();
+                // 添加一些矿石进行测试
+                calculator.addOre('Stone Ore');
+                calculator.addOre('Silver Ore');
+                calculator.addOre('Obsidian Ore');
+                calculator.addOre('Mythril Ore');
+            });
+            
+            document.getElementById('clear-test').addEventListener('click', () => {
+                calculator.clearAll();
+            });
+        }
+    </script>
+</body>
+</html>

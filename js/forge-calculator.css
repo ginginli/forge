@@ -1,0 +1,681 @@
+/* The Forge Calculator Styles - Apple风格设计 */
+
+.forge-calculator {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    background: rgba(93, 42, 15, 0.15);
+    border-radius: 12px;
+    border: 1px solid rgba(93, 42, 15, 0.3);
+    box-shadow: 0 8px 32px rgba(59, 21, 8, 0.2);
+}
+
+/* 头部控制区 */
+.calculator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.craft-type-selector {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.craft-type-btn {
+    padding: 8px 16px;
+    background: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.craft-type-btn.active {
+    background: var(--color-primary);
+    color: var(--color-text-primary);
+    box-shadow: 0 2px 8px rgba(251, 191, 36, 0.3);
+}
+
+.craft-type-btn:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-text-primary);
+}
+
+.clear-btn {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.clear-btn:hover {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+/* 主要内容区 */
+.calculator-main {
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    gap: 24px;
+    align-items: start;
+}
+
+/* 区域标题 */
+.section-header {
+    margin-bottom: 16px;
+}
+
+.section-header h3 {
+    color: var(--color-text-primary);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+/* 矿石选择器 */
+.ore-selector {
+    background: rgba(93, 42, 15, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(93, 42, 15, 0.3);
+    height: fit-content;
+}
+
+.ore-search {
+    width: 100%;
+    padding: 10px 12px;
+    background: rgba(26, 15, 9, 0.6);
+    border: 1px solid rgba(60, 40, 30, 0.4);
+    border-radius: 8px;
+    color: var(--color-text-primary);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.ore-search::placeholder {
+    color: var(--color-text-secondary);
+}
+
+.ore-search:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
+}
+
+.ore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.ore-btn {
+    background: rgba(26, 15, 9, 0.6);
+    border: 1px solid rgba(60, 40, 30, 0.3);
+    border-radius: 8px;
+    padding: 12px 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    min-height: 100px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ore-btn:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 添加半透明覆盖层以确保文字可读性 */
+.ore-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+/* 确保文字在覆盖层之上 */
+.ore-btn > * {
+    position: relative;
+    z-index: 2;
+}
+
+.ore-image {
+    display: none; /* 隐藏原来的img元素，因为我们现在使用背景图片 */
+}
+
+.ore-info {
+    margin-bottom: 4px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.ore-name {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.ore-multiplier {
+    font-size: 11px;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.ore-rarity {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.ore-rarity.common { background: rgba(134, 134, 139, 0.2); color: #86868b; }
+.ore-rarity.uncommon { background: rgba(48, 209, 88, 0.2); color: #30d158; }
+.ore-rarity.rare { background: rgba(10, 132, 255, 0.2); color: #0a84ff; }
+.ore-rarity.epic { background: rgba(191, 90, 242, 0.2); color: #bf5af2; }
+.ore-rarity.legendary { background: rgba(255, 159, 10, 0.2); color: #ff9f0a; }
+.ore-rarity.mythical { background: rgba(255, 107, 107, 0.2); color: #ff6b6b; }
+.ore-rarity.divine { background: rgba(255, 215, 0, 0.2); color: #ffd700; }
+
+/* 锻造区域 */
+.forge-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(93, 42, 15, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(93, 42, 15, 0.3);
+}
+
+/* 预测结果 */
+.predicted-result {
+    width: 100%;
+    background: rgba(59, 21, 8, 0.8);
+    border: 1px solid rgba(93, 42, 15, 0.3);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.prediction-header {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.predicted-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.predicted-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    /* 使用适中的圆角隐藏白色四角 */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    overflow: hidden;
+    /* 使用CSS遮罩隐藏白色边角 */
+    -webkit-mask: radial-gradient(circle, white 75%, transparent 76%);
+    mask: radial-gradient(circle, white 75%, transparent 76%);
+}
+
+.predicted-item {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+.predicted-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.predicted-stat {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.predicted-stat.damage {
+    color: #ff6b6b;
+}
+
+.predicted-stat.defense {
+    color: #30d158;
+}
+
+.predicted-price {
+    font-size: 13px;
+    color: #F4E4BC;
+    font-weight: 500;
+}
+
+.predicted-chance {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+}
+
+/* 矿石槽位 */
+.ore-slots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.ore-slot {
+    width: 80px;
+    height: 80px;
+    border: 2px dashed rgba(60, 40, 30, 0.4);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgba(26, 15, 9, 0.3);
+    gap: 4px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ore-slot.empty {
+    border-style: dashed;
+}
+
+.ore-slot.filled {
+    border-style: solid;
+    background-color: rgba(26, 15, 9, 0.6);
+}
+
+.ore-slot.filled::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.ore-slot > * {
+    position: relative;
+    z-index: 2;
+}
+
+.ore-slot:hover {
+    border-color: var(--color-primary);
+    background-color: rgba(251, 191, 36, 0.1);
+}
+
+.slot-label {
+    color: var(--color-text-secondary);
+    font-size: 12px;
+}
+
+.slot-ore-image {
+    display: none; /* 隐藏原来的img元素，因为我们现在使用背景图片 */
+}
+
+.ore-slot .ore-name {
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.ore-slot .ore-count {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* 组成信息 */
+.composition-info {
+    width: 100%;
+    text-align: center;
+}
+
+.composition-text {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    line-height: 1.4;
+}
+
+/* 倍率显示 */
+.multiplier-display {
+    text-align: center;
+    margin: 16px 0;
+}
+
+.multiplier-label {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.multiplier-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+/* 激活特性 */
+.active-traits {
+    width: 100%;
+    background: rgba(59, 21, 8, 0.8);
+    border: 1px solid rgba(93, 42, 15, 0.3);
+    border-radius: 10px;
+    padding: 16px;
+    min-height: 80px;
+}
+
+.traits-header {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.no-traits {
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+.trait-item {
+    margin-bottom: 12px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trait-ore {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.trait-line {
+    font-size: 11px;
+    color: var(--color-text-secondary);
+    line-height: 1.3;
+}
+
+/* 概率显示 */
+.odds-display {
+    background: rgba(93, 42, 15, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(93, 42, 15, 0.3);
+    height: fit-content;
+}
+
+.odds-content {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.no-results {
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    padding: 40px 20px;
+}
+
+.odds-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.odds-item:last-child {
+    border-bottom: none;
+}
+
+.odds-item-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+.odds-item-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    flex-shrink: 0;
+    /* 使用适中的圆角隐藏白色四角 */
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+    overflow: hidden;
+    /* 使用CSS遮罩隐藏白色边角 */
+    -webkit-mask: radial-gradient(circle, white 75%, transparent 76%);
+    mask: radial-gradient(circle, white 75%, transparent 76%);
+}
+
+.odds-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.item-name {
+    font-size: 13px;
+    color: var(--color-text-primary);
+    font-weight: 500;
+}
+
+.item-stats {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.item-stat {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.item-stat.damage {
+    color: #ff6b6b;
+}
+
+.item-stat.defense {
+    color: #30d158;
+}
+
+.item-price {
+    font-size: 11px;
+    color: #F4E4BC;
+    font-weight: 500;
+}
+
+.odds-item-chance {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    min-width: 80px;
+}
+
+.probability {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.probability-bar {
+    width: 80px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.probability-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    position: relative;
+}
+
+.probability-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%);
+    border-radius: 3px;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .calculator-main {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .ore-selector,
+    .odds-display {
+        order: 2;
+    }
+    
+    .forge-area {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .forge-calculator {
+        padding: 16px;
+    }
+    
+    .calculator-header {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    
+    .ore-slots {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ore-slot {
+        width: 100%;
+        height: 60px;
+    }
+    
+    .ore-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
+/* 滚动条样式 */
+.ore-grid::-webkit-scrollbar,
+.odds-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.ore-grid::-webkit-scrollbar-track,
+.odds-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+}
+
+.ore-grid::-webkit-scrollbar-thumb,
+.odds-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+.ore-grid::-webkit-scrollbar-thumb:hover,
+.odds-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}

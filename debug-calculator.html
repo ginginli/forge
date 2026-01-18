@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Forge Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .debug { background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .ore-btn { margin: 5px; padding: 10px; border: 1px solid #ccc; background: white; cursor: pointer; }
+        .ore-btn:hover { background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>Debug Forge Calculator</h1>
+    
+    <div class="debug">
+        <h3>Debug Information</h3>
+        <div id="debug-info">Loading...</div>
+    </div>
+    
+    <div>
+        <h3>Ore Data Test</h3>
+        <div id="ore-test">Testing...</div>
+    </div>
+    
+    <div>
+        <h3>Calculator Test</h3>
+        <div id="calculator-test">Testing...</div>
+    </div>
+    
+    <!-- Load calculator scripts -->
+    <script src="js/forge-calculator-data.js"></script>
+    <script src="js/forge-calculator-core.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const debugInfo = document.getElementById('debug-info');
+            const oreTest = document.getElementById('ore-test');
+            const calculatorTest = document.getElementById('calculator-test');
+            
+            // Test 1: Check if ORES_DATA is loaded
+            debugInfo.innerHTML = `
+                <p>ORES_DATA loaded: ${typeof ORES_DATA !== 'undefined'}</p>
+                <p>Number of ores: ${typeof ORES_DATA !== 'undefined' ? Object.keys(ORES_DATA).length : 'N/A'}</p>
+                <p>RARITY_COLORS loaded: ${typeof RARITY_COLORS !== 'undefined'}</p>
+                <p>WEAPON_ODDS loaded: ${typeof WEAPON_ODDS !== 'undefined'}</p>
+                <p>ARMOR_ODDS loaded: ${typeof ARMOR_ODDS !== 'undefined'}</p>
+            `;
+            
+            // Test 2: Display some ore data
+            if (typeof ORES_DATA !== 'undefined') {
+                const firstFewOres = Object.entries(ORES_DATA).slice(0, 5);
+                oreTest.innerHTML = '<h4>First 5 ores:</h4>' + 
+                    firstFewOres.map(([name, data]) => 
+                        `<div>${name}: ${data.rarity} (${data.multiplier}x)</div>`
+                    ).join('');
+            } else {
+                oreTest.innerHTML = '<p style="color: red;">ORES_DATA not loaded!</p>';
+            }
+            
+            // Test 3: Test calculator
+            if (typeof window.forgeCalculator !== 'undefined') {
+                const oresList = window.forgeCalculator.getOresByRarity();
+                calculatorTest.innerHTML = `
+                    <p>Calculator loaded: ✅</p>
+                    <p>getOresByRarity() returned: ${oresList.length} ores</p>
+                    <div>First few ores: ${oresList.slice(0, 3).map(([name]) => name).join(', ')}</div>
+                `;
+            } else {
+                calculatorTest.innerHTML = '<p style="color: red;">Calculator not loaded!</p>';
+            }
+        });
+    </script>
+</body>
+</html>
