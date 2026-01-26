@@ -59,9 +59,9 @@ Complete guide to The Forge private servers - create, join, and optimize your pr
   - Legendary: Minotaur, Dragonborn, Golem
   - Mythical: Angel, Demon
 - [Enemies Guide](https://forge-calculator.com/wiki/enemies.html): Zombies, Skeletons, Hell Skeletons, Slimes
-- [NPCs Guide](https://forge-calculator.com/wiki/npcs.html): Sensei Moro, Marbles, Miner Fred, Maria, Runemaker, Greedy Cay, Bard
-
-### Strategy & Tips
+-62→- [NPCs Guide](https://forge-calculator.com/wiki/npcs.html): Sensei Moro, Marbles, Miner Fred, Maria, Runemaker, Greedy Cay, Bard, Fungi
+63→
+64→### Strategy & Tips
 - [Mastering The Forge](https://forge-calculator.com/blog/mastering-the-forge.html): Complete progression guide from novice to legendary blacksmith
 - [Wiki](https://forge-calculator.com/wiki/): Comprehensive knowledge base with searchable content
 
