@@ -121,6 +121,40 @@
             }
         }
     </style>
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "SoftwareApplication",
+                "name": "The Forge Calculator",
+                "operatingSystem": "Any",
+                "applicationCategory": "GameApplication",
+                "url": "https://forge-calculator.com/calculator",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://forge-calculator.com/"
+                }, {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculator",
+                    "item": "https://forge-calculator.com/calculator"
+                }]
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <div class="container">

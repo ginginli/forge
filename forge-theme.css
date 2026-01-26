@@ -724,7 +724,6 @@ nav a:hover {
     color: #a1a1a6;
     line-height: 1.6;
     font-size: 1.0625rem;
-}
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -2373,9 +2372,7 @@ footer img:hover {
 }
 
 /* Remove any remaining inline styles - 移除任何剩余的内联样式 */
-[style] {
-    /* This will be overridden by specific classes */
-}
+
 
 /* Recipe Database Styles - 配方数据库样式 */
 .recipe-database-section {

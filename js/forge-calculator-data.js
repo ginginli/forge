@@ -25,4 +25,3 @@ const RARITY_COLORS = {
     'Epic': '#bf5af2'
 };
 
-console.log('Data loaded!');
