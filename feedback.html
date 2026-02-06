@@ -25,6 +25,8 @@
     <meta name="description" content="Send feedback about The Forge Calculator - Report issues, suggest features, or ask questions.">
     <meta name="keywords" content="forge calculator feedback, contact, support, suggestions">
     <link rel="canonical" href="https://forge-calculator.com/feedback">
+    <meta property="og:image" content="https://forge-calculator.com/favicon-120x120.png">
+    <meta name="twitter:image" content="https://forge-calculator.com/favicon-120x120.png">
     <title>Feedback - The Forge Calculator</title>
     <link rel="stylesheet" href="forge-theme.css">
     
@@ -145,20 +147,20 @@
             <form id="feedbackForm">
                 <div class="form-group">
                     <label>What type of feedback do you have?</label>
-                    <div class="feedback-types">
-                        <div class="type-card" data-type="bug">
+                    <div class="features-grid">
+                        <div class="feature-card" data-type="bug">
                             <div class="icon">🐛</div>
                             <div class="title">Bug Report</div>
                         </div>
-                        <div class="type-card" data-type="feature">
+                        <div class="feature-card" data-type="feature">
                             <div class="icon">💡</div>
                             <div class="title">Feature Request</div>
                         </div>
-                        <div class="type-card" data-type="question">
+                        <div class="feature-card" data-type="question">
                             <div class="icon">❓</div>
                             <div class="title">Question</div>
                         </div>
-                        <div class="type-card" data-type="other">
+                        <div class="feature-card" data-type="other">
                             <div class="icon">💬</div>
                             <div class="title">Other</div>
                         </div>
@@ -246,7 +248,7 @@
         })();
 
         // Feedback type selection
-        const typeCards = document.querySelectorAll('.type-card');
+        const typeCards = document.querySelectorAll('.feature-card');
         const feedbackTypeInput = document.getElementById('feedbackType');
 
         typeCards.forEach(card => {

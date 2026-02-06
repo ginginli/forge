@@ -21,15 +21,41 @@
     <meta property="twitter:description" content="Calculate exact probabilities, optimize ore combinations, and predict traits for The Forge Roblox">
     <meta property="twitter:image" content="https://forge-calculator.com/favicon-120x120.png">
 
-    <link rel="stylesheet" href="/forge-theme.css">
-    <style>
-        .calculator-wrapper {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 2rem;
-            display: grid;
-            grid-template-columns: 350px 1fr 300px;
-            gap: 2rem;
-        }
-        
-        
+    <link rel="stylesheet" href="forge-theme.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The Forge Calculator</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/calculator">Calculator</a>
+                <a href="/advanced-calculator" class="active">Advanced</a>
+                <a href="/weapons">Weapons</a>
+                <a href="/armor">Armor</a>
+                <a href="/codes">Codes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="calculator-section">
+            <div id="calculator-container"></div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/forge-calculator-data.js"></script>
+    <script src="js/forge-calculator-core.js"></script>
+    <script src="js/forge-calculator-ui.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Core
+            window.forgeCalculator = new ForgeCalculator();
+            
+            // Initialize UI
+            new ForgeCalculatorUI('calculator-container');
+        });
+    </script>
+</body>
+</html>

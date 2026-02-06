@@ -29,14 +29,39 @@
     <meta property="og:url" content="https://forge-calculator.com/private-server">
     <meta property="og:title" content="The Forge Private Servers - Complete Guide">
     <meta property="og:description" content="Learn everything about The Forge private server - how to create, join, and maximize your private server experience.">
+    <meta property="og:image" content="https://forge-calculator.com/favicon-120x120.png">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://forge-calculator.com/private-server">
     <meta name="twitter:title" content="The Forge Private Servers - Complete Guide">
     <meta name="twitter:description" content="Learn everything about The Forge private server - how to create, join, and maximize your private server experience.">
+    <meta name="twitter:image" content="https://forge-calculator.com/favicon-120x120.png">
     
     <title>The Forge Private Servers - Complete Guide</title>
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "The Forge Private Servers - Complete Guide",
+      "description": "Learn everything about The Forge private server - how to create, join, and maximize your private server experience.",
+      "author": {
+        "@type": "Organization",
+        "name": "Forge Calculator"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Forge Calculator",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://forge-calculator.com/favicon-120x120.png"
+        }
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": "2026-01-27"
+    }
+    </script>
     <link rel="stylesheet" href="forge-theme.css">
     
     <!-- Google tag (gtag.js) -->
@@ -109,7 +134,7 @@
             
             if (privateServers.length === 0) {
                 container.innerHTML = `
-                    <div class="server-link-card">
+                    <div class="feature-card">
                         <h4>🔄 No Active Servers Listed</h4>
                         <p class="server-description">Private server links will be added here soon. Check back later or submit your own server!</p>
                     </div>
@@ -118,7 +143,7 @@
             }
 
             container.innerHTML = privateServers.map((server, index) => `
-                <div class="server-link-card">
+                <div class="feature-card">
                     <h4>🎮 ${server.host} - Server ${privateServers.filter(s => s.host === server.host).indexOf(server) + 1}</h4>
                     <div class="server-info">
                         <span>👤 Host: ${server.host}</span>
@@ -292,7 +317,7 @@
             </div>
 
             <div class="server-links-container" id="serverLinksContainer">
-                <div class="server-link-card">
+                <div class="feature-card">
                     <h4>🔄 Loading Server Links...</h4>
                     <p>Private server links will be added here. Check back soon for active server listings!</p>
                 </div>
@@ -348,7 +373,7 @@
                     <button type="submit" class="submit-btn">Submit Server</button>
                 </form>
                 
-                <div id="submitResult" class="submit-result" class="submit-result-hidden"></div>
+                <div id="submitResult" class="submit-result submit-result-hidden"></div>
             </div>
             
             <div class="info-box">

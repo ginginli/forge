@@ -152,69 +152,160 @@
             <h2>⚔️ The Forge Weapon Recipes</h2>
             <p>Optimal ore combinations and success rates for each weapon type.</p>
             
-            <div class="table-overflow">
-                <table class="official-table">
-                    <thead>
-                        <tr>
-                            <th>Target Weapon</th>
-                            <th>Minimum Ores</th>
-                            <th>Recommended Ores</th>
-                            <th>Ore Combination</th>
-                            <th>Success Rate</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>🗡️ Dagger</td>
-                            <td>3</td>
-                            <td>3</td>
-                            <td>3 * 0.2-0.5x Ores<br><span>(Stone, Sand Stone, Copper)</span></td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>⚔️ Straight Sword</td>
-                            <td>5</td>
-                            <td>5-6</td>
-                            <td>3 * 0.6-1.0x + 2 * 1.1-1.7x Ores</td>
-                            <td>65% (5 Ores)<br><span class="text-highlight">86% (6 Ores)</span></td>
-                        </tr>
-                        <tr>
-                            <td>👊 Gauntlet</td>
-                            <td>7</td>
-                            <td>8-9</td>
-                            <td>2-3 * 1.1-1.7x + 5-7 * 1.8-3.3x Ores</td>
-                            <td>54% (8 Ores)<br><span class="text-highlight">65% (9 Ores)</span></td>
-                        </tr>
-                        <tr>
-                            <td>🗡️ Katana</td>
-                            <td>9</td>
-                            <td>11-12</td>
-                            <td>1-2 * 3.4-5.5x + 9-11 * 1.8-3.3x Ores</td>
-                            <td>63% (11 Ores)<br><span class="text-highlight">72% (12 Ores)</span></td>
-                        </tr>
-                        <tr>
-                            <td>⚔️ Great Sword</td>
-                            <td>13</td>
-                            <td>14-16</td>
-                            <td>3-5 * 3.4-5.5x + 10-13 * 1.8-3.3x Ores</td>
-                            <td>45% (14 Ores)<br><span class="text-highlight">70% (16 Ores)</span></td>
-                        </tr>
-                        <tr>
-                            <td>🪓 Great Axe</td>
-                            <td>16</td>
-                            <td>17</td>
-                            <td>5-7 * 6.0x+ + 10-12 * 3.4-5.5x Ores</td>
-                            <td>11% (17 Ores)</td>
-                        </tr>
-                        <tr>
-                            <td>⚔️ Colossal Sword</td>
-                            <td>18</td>
-                            <td>18+</td>
-                            <td>8-10 * 6.0x+ + 8-12 * 3.4-5.5x Ores</td>
-                            <td>&lt;1%</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="features-grid">
+                <!-- Dagger -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Dagger</h3>
+                        <span class="rarity-common card-badge">Min: 3</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🗡️</div>
+                        <p>3 * 0.2-0.5x Ores<br><span class="text-muted">(Stone, Sand Stone, Copper)</span></p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Recommended</span>
+                            <span class="stat-value">3</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Success</span>
+                            <span class="stat-value">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Straight Sword -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Straight Sword</h3>
+                        <span class="rarity-uncommon card-badge">Min: 5</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">⚔️</div>
+                        <p>3 * 0.6-1.0x + 2 * 1.1-1.7x Ores</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Recommended</span>
+                            <span class="stat-value">5-6</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Success</span>
+                            <span class="stat-value">65-86%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gauntlet -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Gauntlet</h3>
+                        <span class="rarity-uncommon card-badge">Min: 7</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">👊</div>
+                        <p>2-3 * 1.1-1.7x + 5-7 * 1.8-3.3x Ores</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Recommended</span>
+                            <span class="stat-value">8-9</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Success</span>
+                            <span class="stat-value">54-65%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Katana -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Katana</h3>
+                        <span class="rarity-rare card-badge">Min: 9</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🗡️</div>
+                        <p>1-2 * 3.4-5.5x + 9-11 * 1.8-3.3x Ores</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Recommended</span>
+                            <span class="stat-value">11-12</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Success</span>
+                            <span class="stat-value">63-72%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Great Sword -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Great Sword</h3>
+                        <span class="rarity-rare card-badge">Min: 13</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">⚔️</div>
+                        <p>3-5 * 3.4-5.5x + 10-13 * 1.8-3.3x Ores</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Recommended</span>
+                            <span class="stat-value">14-16</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Success</span>
+                            <span class="stat-value">45-70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Great Axe -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Great Axe</h3>
+                        <span class="rarity-legendary card-badge">Min: 16</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🪓</div>
+                        <p>5-7 * 6.0x+ + 10-12 * 3.4-5.5x Ores</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Recommended</span>
+                            <span class="stat-value">17</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Success</span>
+                            <span class="stat-value">11%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colossal Sword -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Colossal Sword</h3>
+                        <span class="rarity-legendary card-badge">Min: 18</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">⚔️</div>
+                        <p>8-10 * 6.0x+ + 8-12 * 3.4-5.5x Ores</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Recommended</span>
+                            <span class="stat-value">18+</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Success</span>
+                            <span class="stat-value">&lt;1%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div>
@@ -230,41 +321,72 @@
             <h2>🛡️ The Forge Armor Recipes</h2>
             <p>Optimal ore requirements and success rates for each armor type.</p>
             
-            <div class="table-overflow">
-                <table class="official-table">
-                    <thead>
-                        <tr>
-                            <th>Target Armor</th>
-                            <th>Minimum Ores</th>
-                            <th>Recommended Ores</th>
-                            <th>Ore Combination</th>
-                            <th>Success Rate</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>🛡️ Light Armor</td>
-                            <td>3</td>
-                            <td>3-4</td>
-                            <td>3 * 0.2-0.5x Ores</td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>⭐ Medium Armor</td>
-                            <td>5</td>
-                            <td>5-7</td>
-                            <td>3 * 0.6-1.0x + 2-4 * 1.1-1.7x Ores</td>
-                            <td>65-80%</td>
-                        </tr>
-                        <tr>
-                            <td>🛡️ Heavy Armor</td>
-                            <td>10</td>
-                            <td>12-16</td>
-                            <td>3-5 * 3.4-5.5x + 9-12 * 1.8-3.3x Ores</td>
-                            <td>45-70%</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="features-grid">
+                <!-- Light Armor -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Light Armor</h3>
+                        <span class="rarity-common card-badge">Min: 3</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🛡️</div>
+                        <p>3 * 0.2-0.5x Ores</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Recommended</span>
+                            <span class="stat-value">3-4</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Success</span>
+                            <span class="stat-value">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medium Armor -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Medium Armor</h3>
+                        <span class="rarity-uncommon card-badge">Min: 5</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">⭐</div>
+                        <p>3 * 0.6-1.0x + 2-4 * 1.1-1.7x Ores</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Recommended</span>
+                            <span class="stat-value">5-7</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Success</span>
+                            <span class="stat-value">65-80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Heavy Armor -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Heavy Armor</h3>
+                        <span class="rarity-rare card-badge">Min: 10</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🛡️</div>
+                        <p>3-5 * 3.4-5.5x + 9-12 * 1.8-3.3x Ores</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Recommended</span>
+                            <span class="stat-value">12-16</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Success</span>
+                            <span class="stat-value">45-70%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div>
@@ -294,118 +416,183 @@
             
             <!-- Beginner Recipes -->
             <h3>🌟 Beginner Recipes</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Recipe Name</th>
-                        <th>Type</th>
-                        <th>Ore Composition</th>
-                        <th>Traits</th>
-                        <th>Cost</th>
-                        <th>Best For</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>⚔️ Basic Iron Sword</strong></td>
-                        <td>Weapon</td>
-                        <td>🔴 Iron 60 | ⚫ Coal 30 | 🟡 Gold 10</td>
-                        <td>Durability, Basic Damage</td>
-                        <td>Low</td>
-                        <td>New players</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🛡️ Starter Armor Set</strong></td>
-                        <td>Armor</td>
-                        <td>🔴 Iron 70 | ⚫ Coal 20 | 🟡 Gold 10</td>
-                        <td>Protection, Durability</td>
-                        <td>Low</td>
-                        <td>Defense</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>⚔️ Basic Iron Sword</h3>
+                        <span class="card-badge rarity-common">Weapon</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Ore Composition:</strong> 🔴 Iron 60 | ⚫ Coal 30 | 🟡 Gold 10</p>
+                        <p><strong>Traits:</strong> Durability, Basic Damage</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">Low</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Best For</span>
+                            <span class="stat-value">New players</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>🛡️ Starter Armor Set</h3>
+                        <span class="card-badge rarity-common">Armor</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Ore Composition:</strong> 🔴 Iron 70 | ⚫ Coal 20 | 🟡 Gold 10</p>
+                        <p><strong>Traits:</strong> Protection, Durability</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">Low</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Best For</span>
+                            <span class="stat-value">Defense</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Intermediate Recipes -->
             <h3>⭐ Intermediate Recipes</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Recipe Name</th>
-                        <th>Type</th>
-                        <th>Ore Composition</th>
-                        <th>Traits</th>
-                        <th>Cost</th>
-                        <th>Best For</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>⚔️ Shadow Blade</strong></td>
-                        <td>Weapon</td>
-                        <td>🔴 Iron 40 | 🟣 Shadow 40 | 🟡 Gold 20</td>
-                        <td>Critical Hit, Stealth, Sharpness</td>
-                        <td>Medium</td>
-                        <td>Assassins</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🪄 Crystal Staff</strong></td>
-                        <td>Weapon</td>
-                        <td>🔵 Crystal 50 | 🟡 Gold 30 | 🔴 Iron 20</td>
-                        <td>Magic Power, Mana Regen, Wealth</td>
-                        <td>Medium</td>
-                        <td>Mages</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🛡️ Heavy Tank Armor</strong></td>
-                        <td>Armor</td>
-                        <td>🔴 Iron 60 | ⚫ Coal 30 | 🟡 Gold 10</td>
-                        <td>Protection, Durability, Heat Resistance</td>
-                        <td>Medium</td>
-                        <td>Tanks</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>⚔️ Shadow Blade</h3>
+                        <span class="card-badge rarity-uncommon">Weapon</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Ore Composition:</strong> 🔴 Iron 40 | 🟣 Shadow 40 | 🟡 Gold 20</p>
+                        <p><strong>Traits:</strong> Critical Hit, Stealth, Sharpness</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">Medium</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Best For</span>
+                            <span class="stat-value">Assassins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>🪄 Crystal Staff</h3>
+                        <span class="card-badge rarity-uncommon">Weapon</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Ore Composition:</strong> 🔵 Crystal 50 | 🟡 Gold 30 | 🔴 Iron 20</p>
+                        <p><strong>Traits:</strong> Magic Power, Mana Regen, Wealth</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">Medium</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Best For</span>
+                            <span class="stat-value">Mages</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>🛡️ Heavy Tank Armor</h3>
+                        <span class="card-badge rarity-uncommon">Armor</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Ore Composition:</strong> 🔴 Iron 60 | ⚫ Coal 30 | 🟡 Gold 10</p>
+                        <p><strong>Traits:</strong> Protection, Durability, Heat Resistance</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">Medium</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Best For</span>
+                            <span class="stat-value">Tanks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Advanced & Legendary Recipes -->
             <h3>💎 Advanced & Legendary Recipes</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Recipe Name</th>
-                        <th>Type</th>
-                        <th>Ore Composition</th>
-                        <th>Traits</th>
-                        <th>Cost</th>
-                        <th>Best For</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>⚔️ Gem-Forged Blade</strong></td>
-                        <td>Weapon</td>
-                        <td>💎 Gem 30 | 🟣 Shadow 30 | 🔴 Iron 25 | 🟡 Gold 15</td>
-                        <td>Legendary, Critical Hit, All Stats +15%</td>
-                        <td>High</td>
-                        <td>End-game</td>
-                    </tr>
-                    <tr>
-                        <td><strong>⚔️ Ultimate Legendary Sword</strong></td>
-                        <td>Weapon</td>
-                        <td>💎 Gem 40 | 🟣 Shadow 30 | 🔵 Crystal 20 | 🟡 Gold 10</td>
-                        <td>Legendary, Unbreakable, Critical Hit, Magic Power</td>
-                        <td>Very High</td>
-                        <td>Ultimate build</td>
-                    </tr>
-                    <tr>
-                        <td><strong>🛡️ Legendary Armor Set</strong></td>
-                        <td>Armor</td>
-                        <td>💎 Gem 35 | 🔴 Iron 35 | 🔵 Crystal 20 | 🟡 Gold 10</td>
-                        <td>Legendary, Protection, Mana Regen, All Stats +15%</td>
-                        <td>Very High</td>
-                        <td>Ultimate defense</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>⚔️ Gem-Forged Blade</h3>
+                        <span class="card-badge rarity-rare">Weapon</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Ore Composition:</strong> 💎 Gem 30 | 🟣 Shadow 30 | 🔴 Iron 25 | 🟡 Gold 15</p>
+                        <p><strong>Traits:</strong> Legendary, Critical Hit, All Stats +15%</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">High</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Best For</span>
+                            <span class="stat-value">End-game</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>⚔️ Ultimate Legendary Sword</h3>
+                        <span class="card-badge rarity-legendary">Weapon</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Ore Composition:</strong> 💎 Gem 40 | 🟣 Shadow 30 | 🔵 Crystal 20 | 🟡 Gold 10</p>
+                        <p><strong>Traits:</strong> Legendary, Unbreakable, Critical Hit, Magic Power</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">Very High</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Best For</span>
+                            <span class="stat-value">Ultimate build</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>🛡️ Legendary Armor Set</h3>
+                        <span class="card-badge rarity-legendary">Armor</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Ore Composition:</strong> 💎 Gem 35 | 🔴 Iron 35 | 🔵 Crystal 20 | 🟡 Gold 10</p>
+                        <p><strong>Traits:</strong> Legendary, Protection, Mana Regen, All Stats +15%</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">Very High</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Best For</span>
+                            <span class="stat-value">Ultimate defense</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- CTA -->

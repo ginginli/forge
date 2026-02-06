@@ -194,498 +194,1176 @@
             <h2>⚒️ Complete Ore Database</h2>
             <p>The Forge features various ore types found in different locations. Each ore has unique properties and spawn rates. Below is a comprehensive table of all ores:</p>
             
-            <div class="ore-table">
-                <table class="official-table">
-                    <thead>
-                        <tr>
-                            <th>Ore Name</th>
-                            <th>Rarity</th>
-                            <th>Chance</th>
-                            <th>Multiplier</th>
-                            <th>Price</th>
-                            <th>Trait</th>
-                            <th>Rocks</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Common Ores -->
-                        <tr>
-                            <td class="ore-name"><a href="/ore/stone">Stone</a></td>
-                            <td class="rarity-common">Common</td>
-                            <td>1/1</td>
-                            <td>0.2x</td>
-                            <td>3$</td>
-                            <td>None</td>
-                            <td>Pebble</td>
-                            <td>It's a rock. What more do you want?</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Sand Stone</td>
-                            <td class="rarity-common">Common</td>
-                            <td>1/2</td>
-                            <td>0.25x</td>
-                            <td>3.75$</td>
-                            <td>None</td>
-                            <td>Pebble, Rock</td>
-                            <td>Crumbly yet sturdy enough to build with. Not great with water.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Copper</td>
-                            <td class="rarity-common">Common</td>
-                            <td>1/3</td>
-                            <td>0.3x</td>
-                            <td>4.5$</td>
-                            <td>None</td>
-                            <td>Pebble, Rock, Boulder</td>
-                            <td>Basic but dependable. A beginner's best friend in the forge.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Iron</td>
-                            <td class="rarity-common">Common</td>
-                            <td>1/5</td>
-                            <td>0.35x</td>
-                            <td>5.25$</td>
-                            <td>None</td>
-                            <td>Pebble, Rock, Boulder</td>
-                            <td>The workhorse of the forge. Reliable, versatile and a classic choice.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Cardboardite</td>
-                            <td class="rarity-common">Common</td>
-                            <td>1/31</td>
-                            <td>0.7x</td>
-                            <td>10.5$</td>
-                            <td>None</td>
-                            <td>Rock, Boulder</td>
-                            <td>Looks like trash, feels like trash... but somehow incredibly useful.</td>
-                        </tr>
-                        
-                        <!-- Uncommon Ores -->
-                        <tr>
-                            <td class="ore-name">Tin</td>
-                            <td class="rarity-uncommon">Uncommon</td>
-                            <td>1/7</td>
-                            <td>0.425x</td>
-                            <td>6.38$</td>
-                            <td>None</td>
-                            <td>Rock, Boulder</td>
-                            <td>Weak on its own, but blends beautifully with others.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Silver</td>
-                            <td class="rarity-uncommon">Uncommon</td>
-                            <td>1/12</td>
-                            <td>0.5x</td>
-                            <td>7.5$</td>
-                            <td>None</td>
-                            <td>Rock, Boulder</td>
-                            <td>Malleable and pure. Naturally anti-curse, anti-werewolf, anti-everything-bad.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Gold</td>
-                            <td class="rarity-uncommon">Uncommon</td>
-                            <td>1/16</td>
-                            <td>0.65x</td>
-                            <td>19.5$</td>
-                            <td>None</td>
-                            <td>Boulder</td>
-                            <td>Not the strongest, but hey-it's gold. Fancy never goes out of style.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Bananite</td>
-                            <td class="rarity-uncommon">Uncommon</td>
-                            <td>1/30</td>
-                            <td>0.85x</td>
-                            <td>12.75$</td>
-                            <td>None</td>
-                            <td>Rock, Boulder</td>
-                            <td>Yellow, slippery, looks and smells like banana yet surprisingly durable.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Cobalt</td>
-                            <td class="rarity-uncommon">Uncommon</td>
-                            <td>1/37</td>
-                            <td>1x</td>
-                            <td>15$</td>
-                            <td>None</td>
-                            <td>Basalt Rock, Basalt Core</td>
-                            <td>A sturdy bluish metal known for its resilience and sharp edges.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Titanium</td>
-                            <td class="rarity-uncommon">Uncommon</td>
-                            <td>1/50</td>
-                            <td>1.15x</td>
-                            <td>17.25$</td>
-                            <td>None</td>
-                            <td>Basalt Rock, Basalt Core</td>
-                            <td>One of the strongest metals. Lightweight, almost unbreakable.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Lapis Lazuli</td>
-                            <td class="rarity-uncommon">Uncommon</td>
-                            <td>1/73</td>
-                            <td>1.3x</td>
-                            <td>22.5$</td>
-                            <td>None</td>
-                            <td>Basalt Core, Basalt Rock</td>
-                            <td>Deep blue with ancient markings. Scholars say it stores memories.</td>
-                        </tr>
-                        
-                        <!-- Rare Ores -->
-                        <tr>
-                            <td class="ore-name">Mushroomite</td>
-                            <td class="rarity-rare">Rare</td>
-                            <td>1/22</td>
-                            <td>0.8x</td>
-                            <td>12$</td>
-                            <td>None</td>
-                            <td>Rock, Boulder</td>
-                            <td>Grows in damp places. Sometimes glows. Sometimes talks. Probably fine.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Platinum</td>
-                            <td class="rarity-rare">Rare</td>
-                            <td>1/28</td>
-                            <td>0.8x</td>
-                            <td>12$</td>
-                            <td>None</td>
-                            <td>Boulder</td>
-                            <td>Smooth, silvery, and highly conductive. Rare and sought-after.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Volcanic Rock</td>
-                            <td class="rarity-rare">Rare</td>
-                            <td>1/55</td>
-                            <td>1.55x</td>
-                            <td>23.25$</td>
-                            <td>None</td>
-                            <td>Volcanic Rock</td>
-                            <td>It's not a just a rock. What more do you want?</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Quartz</td>
-                            <td class="rarity-rare">Rare</td>
-                            <td>1/90</td>
-                            <td>1.5x</td>
-                            <td>22.5$</td>
-                            <td>None</td>
-                            <td>Basalt Core, Basalt Vein</td>
-                            <td>Translucent and mystical. Often used to amplify rune energy.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Amethyst</td>
-                            <td class="rarity-rare">Rare</td>
-                            <td>1/115</td>
-                            <td>1.65x</td>
-                            <td>24.75$</td>
-                            <td>None</td>
-                            <td>Basalt Core, Basalt Vein</td>
-                            <td>A shimmering purple gem, pulsing with magical energy.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Topaz</td>
-                            <td class="rarity-rare">Rare</td>
-                            <td>1/143</td>
-                            <td>1.75x</td>
-                            <td>26.25$</td>
-                            <td>None</td>
-                            <td>Basalt Core, Basalt Vein, Volcanic Rock</td>
-                            <td>Golden yellow and warm. Used in enchanting precision tools.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Diamond</td>
-                            <td class="rarity-rare">Rare</td>
-                            <td>1/192</td>
-                            <td>2x</td>
-                            <td>30$</td>
-                            <td>None</td>
-                            <td>Basalt Core, Basalt Vein</td>
-                            <td>The hardest known material.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Sapphire</td>
-                            <td class="rarity-rare">Rare</td>
-                            <td>1/247</td>
-                            <td>2.25x</td>
-                            <td>33.75$</td>
-                            <td>None</td>
-                            <td>Basalt Core, Basalt Vein</td>
-                            <td>Deep blue and ice-cold. Sold to sharpen senses when worn.</td>
-                        </tr>
-                        
-                        <!-- Epic Ores -->
-                        <tr>
-                            <td class="ore-name">Aite</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/44</td>
-                            <td>1x</td>
-                            <td>16.5$</td>
-                            <td>None</td>
-                            <td>Boulder</td>
-                            <td>It's an ore made out of A's - but actually lightweight and razor sharp.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Poopite</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/131</td>
-                            <td>1.2x</td>
-                            <td>18$</td>
-                            <td>15% poison for 5s when below 35% HP</td>
-                            <td>Pebble, Rock, Boulder</td>
-                            <td>Ew. Why is this even mineable?</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Magenta Crystal Ore</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/255</td>
-                            <td>3.1x</td>
-                            <td>46.5$</td>
-                            <td>None</td>
-                            <td>Crimson, Cyan, Earth, Light Crystals</td>
-                            <td>No description available.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Crimson Crystal Ore</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/255</td>
-                            <td>3.3x</td>
-                            <td>49.5$</td>
-                            <td>None</td>
-                            <td>Crimson, Cyan, Earth, Light Crystals</td>
-                            <td>No description available.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Green Crystal Ore</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/255</td>
-                            <td>3.2x</td>
-                            <td>48$</td>
-                            <td>None</td>
-                            <td>Crimson, Cyan, Earth, Light Crystals</td>
-                            <td>No description available.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Orange Crystal Ore</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/255</td>
-                            <td>3x</td>
-                            <td>45$</td>
-                            <td>None</td>
-                            <td>Crimson, Cyan, Earth, Light Crystals</td>
-                            <td>No description available.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Blue Crystal Ore</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/255</td>
-                            <td>3.4x</td>
-                            <td>51$</td>
-                            <td>None</td>
-                            <td>Crimson, Cyan, Earth, Light Crystals</td>
-                            <td>No description available.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Cuprite</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/303</td>
-                            <td>2.43x</td>
-                            <td>36.45$</td>
-                            <td>None</td>
-                            <td>Basalt Core, Basalt Vein, Volcanic Rock</td>
-                            <td>A bright red metallic ore found near river rocks.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Obsidian</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/333</td>
-                            <td>2.35x</td>
-                            <td>35.25$</td>
-                            <td>30% extra defense on Armor</td>
-                            <td>Volcanic Rock</td>
-                            <td>Volcanic glass as sharp as it is strong.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Emerald</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/363</td>
-                            <td>2.55x</td>
-                            <td>38.25$</td>
-                            <td>None</td>
-                            <td>Basalt Core, Basalt Vein</td>
-                            <td>Vivid green and unnaturally smooth.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Ruby</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/487</td>
-                            <td>2.95x</td>
-                            <td>44.25$</td>
-                            <td>None</td>
-                            <td>Basalt Vein</td>
-                            <td>A blood-red gem that gleams with fury.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Rivalite</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/569</td>
-                            <td>3.33x</td>
-                            <td>49.95$</td>
-                            <td>+20% crit chance on Weapons</td>
-                            <td>Basalt Vein, Volcanic Rock</td>
-                            <td>A reactive ore that strengthens when near other powerful metals.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Arcane Crystal Ore</td>
-                            <td class="rarity-epic">Epic</td>
-                            <td>1/100000</td>
-                            <td>7.5x</td>
-                            <td>112.5$</td>
-                            <td>None</td>
-                            <td>Crimson, Cyan, Earth, Light Crystals</td>
-                            <td>No description available.</td>
-                        </tr>
-                        
-                        <!-- Legendary Ores -->
-                        <tr>
-                            <td class="ore-name">Uranium</td>
-                            <td class="rarity-legendary">Legendary</td>
-                            <td>1/777</td>
-                            <td>3x</td>
-                            <td>66$</td>
-                            <td>5% max HP AOE dmg on Armor</td>
-                            <td>Basalt Vein</td>
-                            <td>Dangerous, unstable, and glowing green.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name"><a href="/ore/mythril">Mythril</a></td>
-                            <td class="rarity-legendary">Legendary</td>
-                            <td>1/813</td>
-                            <td>3.5x</td>
-                            <td>52.5$</td>
-                            <td>15% extra defense on Armor</td>
-                            <td>Basalt Vein</td>
-                            <td>Lightweight and insanely durable.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Eye Ore</td>
-                            <td class="rarity-legendary">Legendary</td>
-                            <td>1/1333</td>
-                            <td>4x</td>
-                            <td>37.5$</td>
-                            <td>-10% HP, +15% dmg on Weapons/Armor</td>
-                            <td>Basalt Rock, Core, Vein, Volcanic</td>
-                            <td>A strange ore with a blinking core.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Fireite</td>
-                            <td class="rarity-legendary">Legendary</td>
-                            <td>1/2187</td>
-                            <td>4.5x</td>
-                            <td>67.5$</td>
-                            <td>20% burn chance on Weapons</td>
-                            <td>Volcanic Rock</td>
-                            <td>A red-hot ore that crackles with inner flames.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Magmaite</td>
-                            <td class="rarity-legendary">Legendary</td>
-                            <td>1/3003</td>
-                            <td>5x</td>
-                            <td>75$</td>
-                            <td>50.00% of weapon dmg as AOE Explosion with 35.00% chance on weapons</td>
-                            <td>Volcanic Rock</td>
-                            <td>A volatile ore bubbling with veins.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Lightite</td>
-                            <td class="rarity-legendary">Legendary</td>
-                            <td>1/3333</td>
-                            <td>4.6x</td>
-                            <td>69$</td>
-                            <td>15% extra movement speed on Armor</td>
-                            <td>Basalt Vein</td>
-                            <td>So bright it almost floats.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name"><a href="/ore/snowite">Snowite</a></td>
-                            <td class="rarity-legendary">Legendary</td>
-                            <td>1/4325</td>
-                            <td>8x</td>
-                            <td>150$</td>
-                            <td>+15% Attack Speed, Movement Speed reduction for 3 seconds (30% chance on enemy) (Weapon)</td>
-                            <td>Icy Pebble, Icy Rock, Icy Boulder, Small Ice Crystal</td>
-                            <td>Light, sharp, and infused with wind energy. It almost floats when freshly mined.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Rainbow Crystal Ore</td>
-                            <td class="rarity-legendary">Legendary</td>
-                            <td>1/5000</td>
-                            <td>5.25x</td>
-                            <td>78.75$</td>
-                            <td>None</td>
-                            <td>Crimson, Cyan, Earth, Light Crystals</td>
-                            <td>No description available.</td>
-                        </tr>
-                        
-                        <!-- Mythical Ores -->
-                        <tr>
-                            <td class="ore-name">Darkryte</td>
-                            <td class="rarity-mythical">Mythical</td>
-                            <td>1/6655</td>
-                            <td>6.3x</td>
-                            <td>94.5$</td>
-                            <td>15.00% Chance to Dodge Damage (Negate Fully). On Armor.</td>
-                            <td>Volcanic Rock</td>
-                            <td>A shadowy ore that absorbs light.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Demonite</td>
-                            <td class="rarity-mythical">Mythical</td>
-                            <td>1/3666</td>
-                            <td>5.5x</td>
-                            <td>82.5$</td>
-                            <td>25.00% to Burn Enemy when Damage is Taken. On Armor.</td>
-                            <td>Volcanic Rock</td>
-                            <td>A dark, heat-pulsing ore that leaks dark red sparks.</td>
-                        </tr>
-                        
-                        <!-- Divine Ores -->
-                        <tr>
-                            <td class="ore-name">Galaxite</td>
-                            <td class="rarity-divine">Divine</td>
-                            <td>1/1M</td>
-                            <td>11.5x</td>
-                            <td>None</td>
-                            <td>None</td>
-                            <td>Unobtainable</td>
-                            <td>Sparkling like a chunk of space.</td>
-                        </tr>
-                        
-                        <!-- Relic Ores -->
-                        <tr>
-                            <td class="ore-name">Vooite</td>
-                            <td class="rarity-relic">None</td>
-                            <td>None</td>
-                            <td>None</td>
-                            <td>None</td>
-                            <td>None</td>
-                            <td>None</td>
-                            <td>Unobtainable - To be added.</td>
-                        </tr>
-                        <tr>
-                            <td class="ore-name">Fichillium</td>
-                            <td class="rarity-relic">Relic</td>
-                            <td>1/1</td>
-                            <td>0x</td>
-                            <td>0</td>
-                            <td>None</td>
-                            <td>Lucky Block</td>
-                            <td>PLAY ABYSS!</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="features-grid">
+                <!-- Common Ores -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3><a href="/ore/stone">Stone</a></h3>
+                        <span class="card-badge rarity-common">Common</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/1</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0.2x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">3$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Pebble</p>
+                        <p>It's a rock. What more do you want?</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Sand Stone</h3>
+                        <span class="card-badge rarity-common">Common</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/2</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0.25x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">3.75$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Pebble, Rock</p>
+                        <p>Crumbly yet sturdy enough to build with. Not great with water.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Copper</h3>
+                        <span class="card-badge rarity-common">Common</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/3</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0.3x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">4.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Pebble, Rock, Boulder</p>
+                        <p>Basic but dependable. A beginner's best friend in the forge.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Iron</h3>
+                        <span class="card-badge rarity-common">Common</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/5</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0.35x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">5.25$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Pebble, Rock, Boulder</p>
+                        <p>The workhorse of the forge. Reliable, versatile and a classic choice.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Cardboardite</h3>
+                        <span class="card-badge rarity-common">Common</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/31</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0.7x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">10.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Rock, Boulder</p>
+                        <p>Looks like trash, feels like trash... but somehow incredibly useful.</p>
+                    </div>
+                </div>
+
+                <!-- Uncommon Ores -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Tin</h3>
+                        <span class="card-badge rarity-uncommon">Uncommon</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/7</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0.425x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">6.38$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Rock, Boulder</p>
+                        <p>Weak on its own, but blends beautifully with others.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Silver</h3>
+                        <span class="card-badge rarity-uncommon">Uncommon</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/12</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0.5x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">7.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Rock, Boulder</p>
+                        <p>Malleable and pure. Naturally anti-curse, anti-werewolf, anti-everything-bad.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Gold</h3>
+                        <span class="card-badge rarity-uncommon">Uncommon</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/16</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0.65x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">19.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Boulder</p>
+                        <p>Not the strongest, but hey-it's gold. Fancy never goes out of style.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Bananite</h3>
+                        <span class="card-badge rarity-uncommon">Uncommon</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/30</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0.85x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">12.75$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Rock, Boulder</p>
+                        <p>Yellow, slippery, looks and smells like banana yet surprisingly durable.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Cobalt</h3>
+                        <span class="card-badge rarity-uncommon">Uncommon</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/37</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">1x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">15$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Basalt Rock, Basalt Core</p>
+                        <p>A sturdy bluish metal known for its resilience and sharp edges.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Titanium</h3>
+                        <span class="card-badge rarity-uncommon">Uncommon</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/50</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">1.15x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">17.25$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Basalt Rock, Basalt Core</p>
+                        <p>One of the strongest metals. Lightweight, almost unbreakable.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Lapis Lazuli</h3>
+                        <span class="card-badge rarity-uncommon">Uncommon</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/73</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">1.3x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">22.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Basalt Core, Basalt Rock</p>
+                        <p>Deep blue with ancient markings. Scholars say it stores memories.</p>
+                    </div>
+                </div>
+
+                <!-- Rare Ores -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Mushroomite</h3>
+                        <span class="card-badge rarity-rare">Rare</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/22</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0.8x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">12$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Rock, Boulder</p>
+                        <p>Grows in damp places. Sometimes glows. Sometimes talks. Probably fine.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Platinum</h3>
+                        <span class="card-badge rarity-rare">Rare</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/28</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0.8x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">12$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Boulder</p>
+                        <p>Smooth, silvery, and highly conductive. Rare and sought-after.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Volcanic Rock</h3>
+                        <span class="card-badge rarity-rare">Rare</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/55</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">1.55x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">23.25$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Volcanic Rock</p>
+                        <p>It's not a just a rock. What more do you want?</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Quartz</h3>
+                        <span class="card-badge rarity-rare">Rare</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/90</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">1.5x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">22.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Basalt Core, Basalt Vein</p>
+                        <p>Translucent and mystical. Often used to amplify rune energy.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Amethyst</h3>
+                        <span class="card-badge rarity-rare">Rare</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/115</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">1.65x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">24.75$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Basalt Core, Basalt Vein</p>
+                        <p>A shimmering purple gem, pulsing with magical energy.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Topaz</h3>
+                        <span class="card-badge rarity-rare">Rare</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/143</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">1.75x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">26.25$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Basalt Core, Basalt Vein, Volcanic Rock</p>
+                        <p>Golden yellow and warm. Used in enchanting precision tools.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Diamond</h3>
+                        <span class="card-badge rarity-rare">Rare</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/192</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">2x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">30$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Basalt Core, Basalt Vein</p>
+                        <p>The hardest known material.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Sapphire</h3>
+                        <span class="card-badge rarity-rare">Rare</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/247</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">2.25x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">33.75$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Basalt Core, Basalt Vein</p>
+                        <p>Deep blue and ice-cold. Sold to sharpen senses when worn.</p>
+                    </div>
+                </div>
+
+                <!-- Epic Ores -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Aite</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/44</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">1x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">16.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Boulder</p>
+                        <p>It's an ore made out of A's - but actually lightweight and razor sharp.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Poopite</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/131</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">1.2x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">18$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> 15% poison for 5s when below 35% HP</p>
+                        <p><strong>Rocks:</strong> Pebble, Rock, Boulder</p>
+                        <p>Ew. Why is this even mineable?</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Magenta Crystal Ore</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/255</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">3.1x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">46.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Crimson, Cyan, Earth, Light Crystals</p>
+                        <p>No description available.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Crimson Crystal Ore</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/255</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">3.3x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">49.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Crimson, Cyan, Earth, Light Crystals</p>
+                        <p>No description available.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Green Crystal Ore</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/255</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">3.2x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">48$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Crimson, Cyan, Earth, Light Crystals</p>
+                        <p>No description available.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Orange Crystal Ore</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/255</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">3x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">45$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Crimson, Cyan, Earth, Light Crystals</p>
+                        <p>No description available.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Blue Crystal Ore</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/255</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">3.4x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">51$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Crimson, Cyan, Earth, Light Crystals</p>
+                        <p>No description available.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Cuprite</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/303</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">2.43x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">36.45$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Basalt Core, Basalt Vein, Volcanic Rock</p>
+                        <p>A bright red metallic ore found near river rocks.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Obsidian</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/333</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">2.35x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">35.25$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> 30% extra defense on Armor</p>
+                        <p><strong>Rocks:</strong> Volcanic Rock</p>
+                        <p>Volcanic glass as sharp as it is strong.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Emerald</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/363</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">2.55x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">38.25$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Basalt Core, Basalt Vein</p>
+                        <p>Vivid green and unnaturally smooth.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Ruby</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/487</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">2.95x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">44.25$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Basalt Vein</p>
+                        <p>A blood-red gem that gleams with fury.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Rivalite</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/569</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">3.33x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">49.95$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> +20% crit chance on Weapons</p>
+                        <p><strong>Rocks:</strong> Basalt Vein, Volcanic Rock</p>
+                        <p>A reactive ore that strengthens when near other powerful metals.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Arcane Crystal Ore</h3>
+                        <span class="card-badge rarity-epic">Epic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/100000</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">7.5x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">112.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Crimson, Cyan, Earth, Light Crystals</p>
+                        <p>No description available.</p>
+                    </div>
+                </div>
+
+                <!-- Legendary Ores -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Uranium</h3>
+                        <span class="card-badge rarity-legendary">Legendary</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/777</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">3x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">66$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> 5% max HP AOE dmg on Armor</p>
+                        <p><strong>Rocks:</strong> Basalt Vein</p>
+                        <p>Dangerous, unstable, and glowing green.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3><a href="/ore/mythril">Mythril</a></h3>
+                        <span class="card-badge rarity-legendary">Legendary</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/813</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">3.5x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">52.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> 15% extra defense on Armor</p>
+                        <p><strong>Rocks:</strong> Basalt Vein</p>
+                        <p>Lightweight and insanely durable.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Eye Ore</h3>
+                        <span class="card-badge rarity-legendary">Legendary</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/1333</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">4x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">37.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> -10% HP, +15% dmg on Weapons/Armor</p>
+                        <p><strong>Rocks:</strong> Basalt Rock, Core, Vein, Volcanic</p>
+                        <p>A strange ore with a blinking core.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Fireite</h3>
+                        <span class="card-badge rarity-legendary">Legendary</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/2187</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">4.5x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">67.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> 20% burn chance on Weapons</p>
+                        <p><strong>Rocks:</strong> Volcanic Rock</p>
+                        <p>A red-hot ore that crackles with inner flames.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Magmaite</h3>
+                        <span class="card-badge rarity-legendary">Legendary</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/3003</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">5x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">75$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> 50.00% of weapon dmg as AOE Explosion with 35.00% chance on weapons</p>
+                        <p><strong>Rocks:</strong> Volcanic Rock</p>
+                        <p>A volatile ore bubbling with veins.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Lightite</h3>
+                        <span class="card-badge rarity-legendary">Legendary</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/3333</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">4.6x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">69$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> 15% extra movement speed on Armor</p>
+                        <p><strong>Rocks:</strong> Basalt Vein</p>
+                        <p>So bright it almost floats.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3><a href="/ore/snowite">Snowite</a></h3>
+                        <span class="card-badge rarity-legendary">Legendary</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/4325</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">8x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">150$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> +15% Attack Speed, Movement Speed reduction for 3 seconds (30% chance on enemy) (Weapon)</p>
+                        <p><strong>Rocks:</strong> Icy Pebble, Icy Rock, Icy Boulder, Small Ice Crystal</p>
+                        <p>Light, sharp, and infused with wind energy. It almost floats when freshly mined.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Rainbow Crystal Ore</h3>
+                        <span class="card-badge rarity-legendary">Legendary</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/5000</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">5.25x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">78.75$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Crimson, Cyan, Earth, Light Crystals</p>
+                        <p>No description available.</p>
+                    </div>
+                </div>
+
+                <!-- Mythical Ores -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Darkryte</h3>
+                        <span class="card-badge rarity-mythical">Mythical</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/6655</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">6.3x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">94.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> 15.00% Chance to Dodge Damage (Negate Fully). On Armor.</p>
+                        <p><strong>Rocks:</strong> Volcanic Rock</p>
+                        <p>A shadowy ore that absorbs light.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Demonite</h3>
+                        <span class="card-badge rarity-mythical">Mythical</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/3666</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">5.5x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">82.5$</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Trait:</strong> 25.00% to Burn Enemy when Damage is Taken. On Armor.</p>
+                        <p><strong>Rocks:</strong> Volcanic Rock</p>
+                        <p>A dark, heat-pulsing ore that leaks dark red sparks.</p>
+                    </div>
+                </div>
+
+                <!-- Divine Ores -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Galaxite</h3>
+                        <span class="card-badge rarity-divine">Divine</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/1M</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">11.5x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">None</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Unobtainable</p>
+                        <p>Sparkling like a chunk of space.</p>
+                    </div>
+                </div>
+
+                <!-- Relic Ores -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Vooite</h3>
+                        <span class="card-badge rarity-relic">None</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">None</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">None</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">None</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> None</p>
+                        <p>Unobtainable - To be added.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Fichillium</h3>
+                        <span class="card-badge rarity-relic">Relic</span>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Chance</span>
+                            <span class="stat-value">1/1</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Multiplier</span>
+                            <span class="stat-value">0x</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Price</span>
+                            <span class="stat-value">0</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Rocks:</strong> Lucky Block</p>
+                        <p>PLAY ABYSS!</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -705,37 +1383,32 @@
         <!-- Ore Stats Explanation -->
         <div class="content-section">
             <h2>📊 Understanding Ore Stats</h2>
-            <div class="ore-grid">
-                <div class="ore-card">
-                    <h2>🎲 RARITY</h2>
-                    <p>Shows how hard an ore is to find, from <strong>Common</strong> all the way up to <strong>Legendary</strong> and <strong>Divine</strong>.</p>
-                </div>
-
-                <div class="ore-card">
-                    <h2>🎯 CHANCE</h2>
-                    <p>Written as a fraction (e.g. <strong>1/5</strong>). The lower the fraction, the rarer the ore is when mining compatible rocks.</p>
-                </div>
-
-                <div class="ore-card">
-                    <h2>⚡ MULTIPLIER</h2>
-                    <p>Determines how much an ore boosts the base stats of a weapon or armor piece when used in forging.</p>
-                </div>
-
-                <div class="ore-card">
-                    <h2>💰 PRICE</h2>
-                    <p>How much the ore sells for in shops. Higher-tier ores usually fetch a much better price.</p>
-                </div>
-
-                <div class="ore-card">
-                    <h2>✨ TRAITS</h2>
-                    <p>Some ores grant extra passive buffs when used in crafting, giving builds unique flavor or utility.</p>
-                </div>
-
-                <div class="ore-card">
-                    <h2>🪨 ROCKS & AREAS</h2>
-                    <p>Lists which rock types can contain the ore and where they appear, helping players target-farm specific materials.</p>
-                </div>
-            </div>
+            <div class="features-grid">
+      <div class="feature-card">
+        <h3>🎲 RARITY</h3>
+        <p>Shows how hard an ore is to find, from <strong>Common</strong> all the way up to <strong>Legendary</strong> and <strong>Divine</strong>.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🎯 CHANCE</h3>
+        <p>Written as a fraction (e.g. <strong>1/5</strong>). The lower the fraction, the rarer the ore is when mining compatible rocks.</p>
+      </div>
+      <div class="feature-card">
+        <h3>⚡ MULTIPLIER</h3>
+        <p>Determines how much an ore boosts the base stats of a weapon or armor piece when used in forging.</p>
+      </div>
+      <div class="feature-card">
+        <h3>💰 PRICE</h3>
+        <p>How much the ore sells for in shops. Higher-tier ores usually fetch a much better price.</p>
+      </div>
+      <div class="feature-card">
+        <h3>✨ TRAITS</h3>
+        <p>Some ores grant extra passive buffs when used in crafting, giving builds unique flavor or utility.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🪨 ROCKS & AREAS</h3>
+        <p>Lists which rock types can contain the ore and where they appear, helping players target-farm specific materials.</p>
+      </div>
+    </div>
         </div>
 
 

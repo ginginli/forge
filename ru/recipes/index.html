@@ -111,174 +111,295 @@
         <!-- Best Recipes Entry Point -->
         <div>
             <h2>
-                🏆 Best Recipes for The Forge
+                🏆 Лучшие Рецепты The Forge
             </h2>
             <p>
-                Discover the top-rated weapon and armor recipes with highest success rates and proven results. Get the best DPS combinations and optimal ore usage for every game stage.
+                Откройте для себя лучшие рецепты оружия и брони с высочайшими шансами успеха и проверенными результатами. Получите лучшие комбинации для DPS и оптимальное использование руд для каждого этапа игры.
             </p>
             
             <div>
                 <div>
-                    <h3>⚔️ Best Weapon Recipes</h3>
-                    <p>Colossal Sword, Katana, Straight Sword with exact DPS values</p>
+                    <h3>⚔️ Лучшие Рецепты Оружия</h3>
+                    <p>Колоссальный Меч, Катана, Прямой Меч с точными значениями DPS</p>
                 </div>
                 <div>
-                    <h3>🛡️ Best Armor Recipes</h3>
-                    <p>Light, Medium, Heavy armor with optimal protection</p>
+                    <h3>🛡️ Лучшие Рецепты Брони</h3>
+                    <p>Легкая, Средняя, Тяжелая броня с оптимальной защитой</p>
                 </div>
                 <div>
-                    <h3>📊 Game Stage Guide</h3>
-                    <p>Endgame, Lategame, Midgame, Earlygame progression</p>
+                    <h3>📊 Гайд по Этапам Игры</h3>
+                    <p>Прогрессия для Эндгейма, Поздней, Средней и Ранней игры</p>
                 </div>
             </div>
             
             <a href="/ru/recipes/best-recipes">
-                🏆 View Best Recipes →
+                🏆 Смотреть Лучшие Рецепты →
             </a>
         </div>
 
         <!-- Weapon Crafting Guide Table -->
         <div class="content-section">
-            <h2>⚔️ The Forge Weapon Recipes</h2>
-            <p>Optimal ore combinations and success rates for each weapon type.</p>
+            <h2>⚔️ Рецепты Оружия The Forge</h2>
+            <p>Оптимальные комбинации руд и шансы успеха для каждого типа оружия.</p>
             
-            <div class="table-overflow">
-                <table class="official-table">
-                    <thead>
-                        <tr>
-                            <th>Target Weapon</th>
-                            <th>Minimum Ores</th>
-                            <th>Recommended Ores</th>
-                            <th>Ore Combination</th>
-                            <th>Success Rate</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>🗡️ Dagger</td>
-                            <td>3</td>
-                            <td>3</td>
-                            <td>3 * 0.2-0.5x Ores<br><span>(Stone, Sand Stone, Copper)</span></td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>⚔️ Straight Sword</td>
-                            <td>5</td>
-                            <td>5-6</td>
-                            <td>3 * 0.6-1.0x + 2 * 1.1-1.7x Ores</td>
-                            <td>65% (5 Ores)<br><span class="text-highlight">86% (6 Ores)</span></td>
-                        </tr>
-                        <tr>
-                            <td>👊 Gauntlet</td>
-                            <td>7</td>
-                            <td>8-9</td>
-                            <td>2-3 * 1.1-1.7x + 5-7 * 1.8-3.3x Ores</td>
-                            <td>54% (8 Ores)<br><span class="text-highlight">65% (9 Ores)</span></td>
-                        </tr>
-                        <tr>
-                            <td>🗡️ Katana</td>
-                            <td>9</td>
-                            <td>11-12</td>
-                            <td>1-2 * 3.4-5.5x + 9-11 * 1.8-3.3x Ores</td>
-                            <td>63% (11 Ores)<br><span class="text-highlight">72% (12 Ores)</span></td>
-                        </tr>
-                        <tr>
-                            <td>⚔️ Great Sword</td>
-                            <td>13</td>
-                            <td>14-16</td>
-                            <td>3-5 * 3.4-5.5x + 10-13 * 1.8-3.3x Ores</td>
-                            <td>45% (14 Ores)<br><span class="text-highlight">70% (16 Ores)</span></td>
-                        </tr>
-                        <tr>
-                            <td>🪓 Great Axe</td>
-                            <td>16</td>
-                            <td>17</td>
-                            <td>5-7 * 6.0x+ + 10-12 * 3.4-5.5x Ores</td>
-                            <td>11% (17 Ores)</td>
-                        </tr>
-                        <tr>
-                            <td>⚔️ Colossal Sword</td>
-                            <td>18</td>
-                            <td>18+</td>
-                            <td>8-10 * 6.0x+ + 8-12 * 3.4-5.5x Ores</td>
-                            <td>&lt;1%</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="features-grid">
+                <!-- Dagger -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Кинжал (Dagger)</h3>
+                        <span class="rarity-common card-badge">Мин: 3</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🗡️</div>
+                        <p>3 * 0.2-0.5x Руды<br><span class="text-muted">(Камень, Песчаник, Медь)</span></p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Реком.</span>
+                            <span class="stat-value">3</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Успех</span>
+                            <span class="stat-value">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Straight Sword -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Прямой Меч (Straight Sword)</h3>
+                        <span class="rarity-uncommon card-badge">Мин: 5</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">⚔️</div>
+                        <p>3 * 0.6-1.0x + 2 * 1.1-1.7x Руды</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Реком.</span>
+                            <span class="stat-value">5-6</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Успех</span>
+                            <span class="stat-value">65-86%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gauntlet -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Перчатка (Gauntlet)</h3>
+                        <span class="rarity-uncommon card-badge">Мин: 7</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">👊</div>
+                        <p>2-3 * 1.1-1.7x + 5-7 * 1.8-3.3x Руды</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Реком.</span>
+                            <span class="stat-value">8-9</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Успех</span>
+                            <span class="stat-value">54-65%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Katana -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Катана (Katana)</h3>
+                        <span class="rarity-rare card-badge">Мин: 9</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🗡️</div>
+                        <p>1-2 * 3.4-5.5x + 9-11 * 1.8-3.3x Руды</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Реком.</span>
+                            <span class="stat-value">11-12</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Успех</span>
+                            <span class="stat-value">63-72%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Great Sword -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Великий Меч (Great Sword)</h3>
+                        <span class="rarity-rare card-badge">Мин: 13</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">⚔️</div>
+                        <p>3-5 * 3.4-5.5x + 10-13 * 1.8-3.3x Руды</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Реком.</span>
+                            <span class="stat-value">14-16</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Успех</span>
+                            <span class="stat-value">45-70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Great Axe -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Великий Топор (Great Axe)</h3>
+                        <span class="rarity-legendary card-badge">Мин: 16</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🪓</div>
+                        <p>5-7 * 6.0x+ + 10-12 * 3.4-5.5x Руды</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Реком.</span>
+                            <span class="stat-value">17</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Успех</span>
+                            <span class="stat-value">11%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colossal Sword -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Колоссальный Меч (Colossal Sword)</h3>
+                        <span class="rarity-legendary card-badge">Мин: 18</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">⚔️</div>
+                        <p>8-10 * 6.0x+ + 8-12 * 3.4-5.5x Руды</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Реком.</span>
+                            <span class="stat-value">18+</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Успех</span>
+                            <span class="stat-value">&lt;1%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div>
                 <div>
-                    <h3>💡 Pro Tip</h3>
-                    <p>Use the calculator below to automatically generate these ore combinations. Higher tier weapons require more ores and have lower success rates, but produce significantly more powerful equipment!</p>
+                    <h3>💡 Совет Профессионала</h3>
+                    <p>Используйте калькулятор ниже для автоматической генерации этих комбинаций. Оружие более высокого уровня требует больше руды и имеет более низкие шансы успеха, но дает значительно более мощное снаряжение!</p>
                 </div>
             </div>
         </div>
 
         <!-- Armor Crafting Guide Table -->
         <div class="content-section">
-            <h2>🛡️ The Forge Armor Recipes</h2>
-            <p>Optimal ore requirements and success rates for each armor type.</p>
+            <h2>🛡️ Рецепты Брони The Forge</h2>
+            <p>Оптимальные требования к руде и шансы успеха для каждого типа брони.</p>
             
-            <div class="table-overflow">
-                <table class="official-table">
-                    <thead>
-                        <tr>
-                            <th>Target Armor</th>
-                            <th>Minimum Ores</th>
-                            <th>Recommended Ores</th>
-                            <th>Ore Combination</th>
-                            <th>Success Rate</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>🛡️ Light Armor</td>
-                            <td>3</td>
-                            <td>3-4</td>
-                            <td>3 * 0.2-0.5x Ores</td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>⭐ Medium Armor</td>
-                            <td>5</td>
-                            <td>5-7</td>
-                            <td>3 * 0.6-1.0x + 2-4 * 1.1-1.7x Ores</td>
-                            <td>65-80%</td>
-                        </tr>
-                        <tr>
-                            <td>🛡️ Heavy Armor</td>
-                            <td>10</td>
-                            <td>12-16</td>
-                            <td>3-5 * 3.4-5.5x + 9-12 * 1.8-3.3x Ores</td>
-                            <td>45-70%</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="features-grid">
+                <!-- Light Armor -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Легкая Броня (Light Armor)</h3>
+                        <span class="rarity-common card-badge">Мин: 3</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🛡️</div>
+                        <p>3 * 0.2-0.5x Руды</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Реком.</span>
+                            <span class="stat-value">3-4</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Успех</span>
+                            <span class="stat-value">100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medium Armor -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Средняя Броня (Medium Armor)</h3>
+                        <span class="rarity-uncommon card-badge">Мин: 5</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">⭐</div>
+                        <p>3 * 0.6-1.0x + 2-4 * 1.1-1.7x Руды</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Реком.</span>
+                            <span class="stat-value">5-7</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Успех</span>
+                            <span class="stat-value">65-80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Heavy Armor -->
+                <div class="feature-card">
+                    <div class="card-header">
+                        <h3>Тяжелая Броня (Heavy Armor)</h3>
+                        <span class="rarity-rare card-badge">Мин: 10</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🛡️</div>
+                        <p>3-5 * 3.4-5.5x + 9-12 * 1.8-3.3x Руды</p>
+                    </div>
+                    <div class="card-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Реком.</span>
+                            <span class="stat-value">12-16</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Успех</span>
+                            <span class="stat-value">45-70%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div>
-                <h3>💡 Armor Crafting Tip</h3>
-                <p>Armor provides health bonuses: Light Armor (+3.75-5%), Medium Armor (+6.25-12.75%), Heavy Armor (+12.5-25%). Use the calculator to optimize your armor crafting for maximum survivability!</p>
+                <h3>💡 Совет по Крафту Брони</h3>
+                <p>Броня дает бонусы к здоровью: Легкая (+3.75-5%), Средняя (+6.25-12.75%), Тяжелая (+12.5-25%). Используйте калькулятор для оптимизации крафта брони для максимальной выживаемости!</p>
             </div>
         </div>
 
         <!-- Calculator Embed -->
-        <div>
-            <h2>
-                🔥 калькулятор the forge
-            </h2>
-            <div id="forge-calculator-container">
-                <!-- Self-hosted Forge Calculator will be loaded here -->
-            </div>
-            
-            <!-- Load calculator scripts -->
-            <script src="../../js/forge-calculator-data-full.js"></script>
-            <script src="../../js/forge-calculator-core.js"></script>
-            <script src="../../js/forge-calculator-ui.js"></script>
-            <link rel="stylesheet" href="../../js/forge-calculator.css">
-            
-            <script>
+    <div>
+        <h2>
+            🔥 Калькулятор The Forge
+        </h2>
+        <div id="forge-calculator-container">
+            <!-- Self-hosted Forge Calculator will be loaded here -->
+        </div>
+        
+        <!-- Load calculator scripts -->
+        <script src="../../js/forge-calculator-data-full.js"></script>
+        <script src="../../js/forge-calculator-core.js"></script>
+        <script src="../../js/forge-calculator-ui.js"></script>
+        
+        <script>
                 // Initialize the calculator when the page loads
                 document.addEventListener('DOMContentLoaded', function() {
                     window.initForgeCalculator('forge-calculator-container');
@@ -289,9 +410,9 @@
 
 
         <!-- Old Recipe Grid (Hidden for now) -->
-        <div class="recipe-grid" id="recipeGrid" class="submit-result-hidden">
+        <div class="features-grid submit-result-hidden" id="recipeGrid">
             <!-- Beginner Recipes -->
-            <div class="recipe-card rare" data-tier="beginner" data-type="weapon">
+            <div class="feature-card" data-tier="beginner" data-type="weapon">
                 <div class="recipe-header">
                     <div class="recipe-name">⚔️ Basic Iron Sword</div>
                     <span class="recipe-tier tier-beginner">BEGINNER</span>
