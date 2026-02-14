@@ -138,7 +138,7 @@
                     <input type="number" id="maxRerolls" class="form-input" value="10" min="1" max="100" onchange="updateCalculation()">
                 </div>
                 
-                <div style="margin-top: 1.5rem;">
+                <div class="mt-6">
                     <button class="forge-button" onclick="updateCalculation()">🔄 Calculate Strategy</button>
                     <button class="forge-button forge-button-secondary" onclick="resetCalculator()">↩️ Reset</button>
                 </div>
@@ -166,7 +166,7 @@
                     </div>
                 </div>
                 
-                <div class="mt-4" style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
+                <div class="chart-container">
                     <h4>Success Probability by Attempt</h4>
                     <div id="probabilityBars"></div>
                 </div>
@@ -180,23 +180,23 @@
                 <p>Configure your reroll parameters above to get personalized recommendations.</p>
             </div>
             
-            <div class="features-grid" style="margin-top: 2rem;">
-                <div class="info-card" style="text-align: left;">
-                    <h5 style="color: var(--ui-orange); margin-bottom: 1rem;">💰 Cost Analysis</h5>
+            <div class="features-grid mt-6">
+                <div class="info-card text-left">
+                    <h5 class="analysis-title orange">💰 Cost Analysis</h5>
                     <p><strong>Best Case:</strong> <span id="bestCaseCost">-</span> coins</p>
                     <p><strong>Average Case:</strong> <span id="averageCaseCost">-</span> coins</p>
                     <p><strong>Worst Case:</strong> <span id="worstCaseCost">-</span> coins</p>
                 </div>
                 
-                <div class="info-card" style="text-align: left;">
-                    <h5 style="color: var(--ui-blue); margin-bottom: 1rem;">⏱️ Time Investment</h5>
+                <div class="info-card text-left">
+                    <h5 class="analysis-title blue">⏱️ Time Investment</h5>
                     <p><strong>Expected Attempts:</strong> <span id="expectedAttempts">-</span></p>
                     <p><strong>Success Rate:</strong> <span id="overallSuccessRate">-</span>%</p>
                     <p><strong>Risk Level:</strong> <span id="riskLevel">-</span></p>
                 </div>
                 
-                <div class="info-card" style="text-align: left;">
-                    <h5 style="color: var(--ui-green); margin-bottom: 1rem;">📈 Value Assessment</h5>
+                <div class="info-card text-left">
+                    <h5 class="analysis-title green">📈 Value Assessment</h5>
                     <p><strong>ROI Potential:</strong> <span id="roiPotential">-</span></p>
                     <p><strong>Break-even Point:</strong> <span id="breakEvenPoint">-</span></p>
                     <p><strong>Recommendation:</strong> <span id="finalRecommendation">-</span></p>
@@ -311,20 +311,18 @@
                 cumulativeFailure *= (1 - baseSuccessRate);
                 
                 const bar = document.createElement('div');
-                bar.style.display = 'flex';
-                bar.style.alignItems = 'center';
-                bar.style.marginBottom = '0.75rem';
+                bar.className = 'probability-row';
                 
                 // Calculate width percentage, cap at 100%
                 // Scaling by 4 to make small probabilities visible, but ensuring it doesn't overflow
                 const widthPct = Math.min(attemptSuccessRate * 400, 100);
                 
                 bar.innerHTML = `
-                    <div style="width: 80px; font-size: 0.9rem; color: var(--text-secondary);">Attempt ${i}</div>
-                    <div style="flex: 1; background: rgba(255,255,255,0.1); height: 12px; border-radius: 6px; margin: 0 10px; overflow: hidden;">
-                        <div style="width: ${widthPct}%; background: linear-gradient(90deg, var(--ui-green), var(--ui-blue)); height: 100%; border-radius: 6px;"></div>
+                    <div class="probability-label">Attempt ${i}</div>
+                    <div class="probability-bar-track">
+                        <div class="probability-bar-fill" style="width: ${widthPct}%;"></div>
                     </div>
-                    <div style="width: 60px; text-align: right; font-size: 0.9rem; font-weight: bold; color: var(--text-primary);">${(attemptSuccessRate * 100).toFixed(1)}%</div>
+                    <div class="probability-value">${(attemptSuccessRate * 100).toFixed(1)}%</div>
                 `;
                 container.appendChild(bar);
             }

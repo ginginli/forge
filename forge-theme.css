@@ -547,6 +547,15 @@ table .chance {
     font-weight: 500;
 }
 
+/* Weapon Preview Image */
+.weapon-preview-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 table .multiplier {
     color: #ff9f0a;
     font-weight: 600;
@@ -787,6 +796,27 @@ nav a:hover {
     padding: 2rem;
 }
 
+/* Tip Card Styles */
+.tip-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tip-icon {
+    font-size: 1.5em;
+}
+
+/* Utility Classes */
+.mb-2 { margin-bottom: 0.5rem; }
+.mt-2 { margin-top: 0.5rem; }
+.text-muted { color: var(--text-muted); }
+.text-small { font-size: 0.9rem; }
+.button-disabled { 
+    opacity: 0.5; 
+    cursor: default; 
+}
+
 /* Header styles */
 header {
     background: linear-gradient(90deg, rgba(59, 21, 8, 0.9) 0%, rgba(93, 42, 15, 0.8) 100%);
@@ -854,6 +884,127 @@ nav a:hover {
     color: var(--text-primary);
 }
 
+/* Tier List Maker Styles */
+.controls-panel {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-primary);
+}
+
+.tier-grid {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tier-row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 15px;
+    align-items: center;
+    background: var(--bg-card);
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid var(--border-primary);
+}
+
+.tier-label {
+    color: var(--text-primary);
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tier-s { background: var(--ui-red); }
+.tier-a { background: var(--ui-orange); }
+.tier-b { background: var(--ui-purple); }
+.tier-c { background: var(--ui-blue); }
+.tier-d { background: var(--ui-green); }
+.tier-f { background: var(--text-muted); }
+
+.tier-dropzone {
+    min-height: 100px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 6px;
+    padding: 10px;
+    border: 2px dashed var(--border-primary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.tier-dropzone.drag-over {
+    border-color: var(--ui-orange);
+    background: rgba(255, 107, 53, 0.1);
+}
+
+.item-pool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Dynamic Item Styles */
+.tier-item {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    cursor: grab;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.tier-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.tier-item.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+.tier-item-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.tier-item-type {
+    font-size: 12px;
+    opacity: 0.7;
+    color: var(--text-secondary);
+}
+
+/* Utility Classes Extensions */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-4 { gap: 1rem; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-wrap-gap {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -901,6 +1052,228 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.2);
     padding: 0.2em 0.6em;
     border-radius: 4px;
+}
+
+/* Shop List Component */
+.shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.shop-header .item-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ui-orange);
+}
+
+.shop-header .item-type {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.shop-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.shop-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.shop-row .label {
+    color: var(--text-muted);
+}
+
+.shop-row .value {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.shop-row .value.price {
+    color: var(--rarity-legendary);
+}
+
+.shop-stats {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+/* Utility Classes Extensions */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-4 { gap: 1rem; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-wrap-gap {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Reroll Calculator Styles */
+.chart-container {
+    background: rgba(0,0,0,0.2);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.analysis-title {
+    margin-bottom: 1rem;
+}
+.analysis-title.orange { color: var(--ui-orange); }
+.analysis-title.blue { color: var(--ui-blue); }
+.analysis-title.green { color: var(--ui-green); }
+
+.probability-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.probability-label {
+    width: 80px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.probability-bar-track {
+    flex: 1;
+    background: rgba(255,255,255,0.1);
+    height: 12px;
+    border-radius: 6px;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.probability-bar-fill {
+    background: linear-gradient(90deg, var(--ui-green), var(--ui-blue));
+    height: 100%;
+    border-radius: 6px;
+}
+
+.probability-value {
+    width: 60px;
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+/* Tier List Maker Styles */
+.controls-panel {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-primary);
+}
+
+.tier-grid {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tier-row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 15px;
+    align-items: center;
+    background: var(--bg-card);
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid var(--border-primary);
+}
+
+.tier-label {
+    color: var(--text-primary);
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tier-dropzone {
+    min-height: 100px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 6px;
+    padding: 10px;
+    border: 2px dashed var(--border-primary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.tier-dropzone.drag-over {
+    border-color: var(--ui-orange);
+    background: rgba(255, 107, 53, 0.1);
+}
+
+.item-pool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tier-item {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    cursor: grab;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.tier-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.tier-item.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+.tier-item-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.tier-item-type {
+    font-size: 12px;
+    opacity: 0.7;
+    color: var(--text-secondary);
+}
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
 }
 
 .tip-box {
@@ -995,4 +1368,109 @@ nav a:hover {
     margin-top: 1.5rem;
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Codes Page Styles */
+.codes-section {
+    margin-bottom: 3rem;
+}
+
+.code-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.code-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.code-info {
+    flex: 1;
+}
+
+.code-name {
+    font-family: var(--font-code);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--ui-orange);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+}
+
+.code-reward {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.code-status {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-active {
+    background: rgba(16, 185, 129, 0.2);
+    color: var(--color-success);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.status-expired {
+    background: rgba(239, 68, 68, 0.2);
+    color: var(--color-error);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.copy-btn {
+    background: var(--bg-surface);
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin-left: 1rem;
+}
+
+.copy-btn:hover {
+    background: var(--ui-orange);
+    border-color: var(--ui-orange);
+    color: var(--bg-primary);
+}
+
+.copy-btn.copied {
+    background: var(--color-success);
+    color: white;
+    border-color: var(--color-success);
+}
+
+.copy-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: transparent;
+    border-color: var(--border-secondary);
+    color: var(--text-muted);
+}
+
+.copy-btn:disabled:hover {
+    background: transparent;
+    color: var(--text-muted);
+}
+
+.code-card-expired {
+    opacity: 0.7;
 }

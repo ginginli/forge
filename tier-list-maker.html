@@ -89,19 +89,19 @@
     </header>
 
     <main class="container">
-        <div class="page-header" style="text-align: center; margin-bottom: 2rem;">
+        <div class="page-header text-center mb-6">
             <h1>🏆 Tier List Maker</h1>
             <p>Create and share tier lists for The Forge weapons and armor. Drag and drop items to rank them by effectiveness.</p>
         </div>
 
-        <div style="background: var(--bg-card); border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid var(--border-primary);">
-            <div class="category-tabs" style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+        <div class="controls-panel">
+            <div class="category-tabs flex-wrap-gap mb-6">
                 <button class="forge-button" onclick="switchCategory(this, 'weapons')">⚔️ Weapons</button>
                 <button class="forge-button-secondary" onclick="switchCategory(this, 'armor')">🛡️ Armor</button>
                 <button class="forge-button-secondary" onclick="switchCategory(this, 'pickaxes')">⛏️ Pickaxes</button>
             </div>
             
-            <div class="action-buttons" style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <div class="action-buttons flex-wrap-gap">
                 <button class="forge-button" onclick="saveTierList()">💾 Save Tier List</button>
                 <button class="forge-button-secondary" onclick="shareTierList()">🔗 Share</button>
                 <button class="forge-button-secondary" onclick="resetTierList()">🔄 Reset</button>
@@ -109,43 +109,43 @@
             </div>
         </div>
 
-        <div id="tierGrid" style="display: grid; gap: 15px; margin-bottom: 20px;">
+        <div id="tierGrid" class="tier-grid">
             <!-- S Tier -->
-            <div style="display: grid; grid-template-columns: 80px 1fr; gap: 15px; align-items: center; background: var(--bg-card); border-radius: 8px; padding: 10px; border: 1px solid var(--border-primary);">
-                <div style="background: var(--ui-red); color: var(--text-primary); font-weight: bold; text-align: center; padding: 20px 10px; border-radius: 6px; font-size: 1.5rem; height: 100%; display: flex; align-items: center; justify-content: center;">S</div>
-                <div class="tier-items" data-tier="S" style="min-height: 100px; background: rgba(0,0,0,0.2); border-radius: 6px; padding: 10px; border: 2px dashed var(--border-primary); display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start;"></div>
+            <div class="tier-row">
+                <div class="tier-label tier-s">S</div>
+                <div class="tier-items tier-dropzone" data-tier="S"></div>
             </div>
             <!-- A Tier -->
-            <div style="display: grid; grid-template-columns: 80px 1fr; gap: 15px; align-items: center; background: var(--bg-card); border-radius: 8px; padding: 10px; border: 1px solid var(--border-primary);">
-                <div style="background: var(--ui-orange); color: var(--text-primary); font-weight: bold; text-align: center; padding: 20px 10px; border-radius: 6px; font-size: 1.5rem; height: 100%; display: flex; align-items: center; justify-content: center;">A</div>
-                <div class="tier-items" data-tier="A" style="min-height: 100px; background: rgba(0,0,0,0.2); border-radius: 6px; padding: 10px; border: 2px dashed var(--border-primary); display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start;"></div>
+            <div class="tier-row">
+                <div class="tier-label tier-a">A</div>
+                <div class="tier-items tier-dropzone" data-tier="A"></div>
             </div>
             <!-- B Tier -->
-            <div style="display: grid; grid-template-columns: 80px 1fr; gap: 15px; align-items: center; background: var(--bg-card); border-radius: 8px; padding: 10px; border: 1px solid var(--border-primary);">
-                <div style="background: var(--ui-purple); color: var(--text-primary); font-weight: bold; text-align: center; padding: 20px 10px; border-radius: 6px; font-size: 1.5rem; height: 100%; display: flex; align-items: center; justify-content: center;">B</div>
-                <div class="tier-items" data-tier="B" style="min-height: 100px; background: rgba(0,0,0,0.2); border-radius: 6px; padding: 10px; border: 2px dashed var(--border-primary); display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start;"></div>
+            <div class="tier-row">
+                <div class="tier-label tier-b">B</div>
+                <div class="tier-items tier-dropzone" data-tier="B"></div>
             </div>
             <!-- C Tier -->
-            <div style="display: grid; grid-template-columns: 80px 1fr; gap: 15px; align-items: center; background: var(--bg-card); border-radius: 8px; padding: 10px; border: 1px solid var(--border-primary);">
-                <div style="background: var(--ui-blue); color: var(--text-primary); font-weight: bold; text-align: center; padding: 20px 10px; border-radius: 6px; font-size: 1.5rem; height: 100%; display: flex; align-items: center; justify-content: center;">C</div>
-                <div class="tier-items" data-tier="C" style="min-height: 100px; background: rgba(0,0,0,0.2); border-radius: 6px; padding: 10px; border: 2px dashed var(--border-primary); display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start;"></div>
+            <div class="tier-row">
+                <div class="tier-label tier-c">C</div>
+                <div class="tier-items tier-dropzone" data-tier="C"></div>
             </div>
             <!-- D Tier -->
-            <div style="display: grid; grid-template-columns: 80px 1fr; gap: 15px; align-items: center; background: var(--bg-card); border-radius: 8px; padding: 10px; border: 1px solid var(--border-primary);">
-                <div style="background: var(--ui-green); color: var(--text-primary); font-weight: bold; text-align: center; padding: 20px 10px; border-radius: 6px; font-size: 1.5rem; height: 100%; display: flex; align-items: center; justify-content: center;">D</div>
-                <div class="tier-items" data-tier="D" style="min-height: 100px; background: rgba(0,0,0,0.2); border-radius: 6px; padding: 10px; border: 2px dashed var(--border-primary); display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start;"></div>
+            <div class="tier-row">
+                <div class="tier-label tier-d">D</div>
+                <div class="tier-items tier-dropzone" data-tier="D"></div>
             </div>
             <!-- F Tier -->
-            <div style="display: grid; grid-template-columns: 80px 1fr; gap: 15px; align-items: center; background: var(--bg-card); border-radius: 8px; padding: 10px; border: 1px solid var(--border-primary);">
-                <div style="background: var(--text-muted); color: var(--text-primary); font-weight: bold; text-align: center; padding: 20px 10px; border-radius: 6px; font-size: 1.5rem; height: 100%; display: flex; align-items: center; justify-content: center;">F</div>
-                <div class="tier-items" data-tier="F" style="min-height: 100px; background: rgba(0,0,0,0.2); border-radius: 6px; padding: 10px; border: 2px dashed var(--border-primary); display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start;"></div>
+            <div class="tier-row">
+                <div class="tier-label tier-f">F</div>
+                <div class="tier-items tier-dropzone" data-tier="F"></div>
             </div>
         </div>
 
         <div class="content-section">
             <h2>📦 Equipment Pool</h2>
             <p>Drag items from here to the tier list above</p>
-            <div id="itemPool" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; margin-top: 15px;">
+            <div id="itemPool" class="item-pool-grid">
                 <!-- Items will be populated by JavaScript -->
             </div>
         </div>
@@ -242,36 +242,14 @@
         // Create item element
         function createItemElement(item) {
             const div = document.createElement('div');
-            div.className = 'tier-item'; // Keep class for selection, but style inline
+            div.className = 'tier-item'; 
             div.draggable = true;
             div.dataset.itemName = item.name;
             div.dataset.itemType = item.type;
             
-            // Inline styles replacing .tier-item
-            Object.assign(div.style, {
-                background: 'var(--bg-surface)',
-                border: '1px solid var(--border-primary)',
-                borderRadius: '6px',
-                padding: '10px',
-                textAlign: 'center',
-                cursor: 'grab',
-                transition: 'all 0.2s ease',
-                userSelect: 'none'
-            });
-
-            // Hover effect
-            div.onmouseenter = () => {
-                div.style.transform = 'translateY(-2px)';
-                div.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
-            };
-            div.onmouseleave = () => {
-                div.style.transform = 'translateY(0)';
-                div.style.boxShadow = 'none';
-            };
-            
             div.innerHTML = `
-                <div class="item-name" style="font-weight: 600; margin-bottom: 5px; font-size: 14px; color: var(--text-primary);">${item.name}</div>
-                <div class="item-type" style="font-size: 12px; opacity: 0.7; color: var(--text-secondary);">${item.type}</div>
+                <div class="tier-item-name">${item.name}</div>
+                <div class="tier-item-type">${item.type}</div>
             `;
             
             return div;
@@ -285,16 +263,14 @@
                 const target = e.target.closest('.tier-item');
                 if (target) {
                     draggedItem = target;
-                    target.style.opacity = '0.5';
-                    target.style.cursor = 'grabbing';
+                    target.classList.add('dragging');
                 }
             });
 
             document.addEventListener('dragend', (e) => {
                 const target = e.target.closest('.tier-item');
                 if (target) {
-                    target.style.opacity = '1';
-                    target.style.cursor = 'grab';
+                    target.classList.remove('dragging');
                     draggedItem = null;
                 }
             });
@@ -305,23 +281,20 @@
 
             document.addEventListener('dragenter', (e) => {
                 if (e.target.classList.contains('tier-items')) {
-                    e.target.style.borderColor = 'var(--ui-orange)';
-                    e.target.style.background = 'rgba(255, 107, 53, 0.1)';
+                    e.target.classList.add('drag-over');
                 }
             });
 
             document.addEventListener('dragleave', (e) => {
                 if (e.target.classList.contains('tier-items')) {
-                    e.target.style.borderColor = 'var(--border-primary)';
-                    e.target.style.background = 'rgba(0,0,0,0.2)';
+                    e.target.classList.remove('drag-over');
                 }
             });
 
             document.addEventListener('drop', (e) => {
                 e.preventDefault();
                 if (e.target.classList.contains('tier-items') && draggedItem) {
-                    e.target.style.borderColor = 'var(--border-primary)';
-                    e.target.style.background = 'rgba(0,0,0,0.2)';
+                    e.target.classList.remove('drag-over');
                     e.target.appendChild(draggedItem);
                     saveTierListToStorage();
                 }

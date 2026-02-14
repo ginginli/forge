@@ -42,7 +42,7 @@
     <meta name="twitter:image" content="https://forge-calculator.com/favicon-120x120.png">
     
     <title>The Forge Codes January 2026 - Free Rewards & Redeem Codes</title>
-    <link rel="stylesheet" href="forge-theme.css">
+    <link rel="stylesheet" href="../forge-theme.css">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRP03D44XS"></script>
@@ -106,7 +106,7 @@
                     "url": "https://forge-calculator.com/favicon-120x120.png"
                 },
                 "datePublished": "2024-01-01",
-                "dateModified": "2026-01-26",
+                "dateModified": "2026-01-31",
                 "author": {"@id": "https://forge-calculator.com/#organization"},
                 "publisher": {"@id": "https://forge-calculator.com/#organization"}
             },
@@ -159,8 +159,8 @@
                         "position": 1,
                         "item": {
                             "@type": "Thing",
-                            "name": "FORGEWEEKEND2 !",
-                            "description": "10x reroll"
+                            "name": "FORGEWEEKEND3 !",
+                            "description": "10x Rerolls!"
                         }
                     }
                 ]
@@ -207,7 +207,7 @@
         </div>
 
         <div class="update-info">
-            <strong>📅 This page was last edited on 26 January 2026, at 05:26.</strong> | <strong>⚡ Status:</strong> Active codes available
+            <strong>📅 This page was last edited on 31 January 2026, at 18:08.</strong> | <strong>⚡ Status:</strong> Active codes available
         </div>
 
         <!-- Active Codes Section -->
@@ -216,11 +216,11 @@
             
             <div class="code-card">
                 <div class="code-info">
-                    <div class="code-name">FORGEWEEKEND2 !</div>
-                    <div class="code-reward">🎁 Reward: 10x reroll</div>
+                    <div class="code-name">FORGEWEEKEND3 !</div>
+                    <div class="code-reward">🎁 Reward: 10x Rerolls!</div>
                     <span class="code-status status-active">✓ ACTIVE</span>
                 </div>
-                <button class="copy-btn" onclick="copyCode('FORGEWEEKEND2 !', event)">Copy Code</button>
+                <button class="copy-btn" onclick="copyCode('FORGEWEEKEND3 !', event)">Copy Code</button>
             </div>
         </div>
 
@@ -813,5 +813,27 @@
         });
     </script>    <!-- Advertisement scripts removed for security compliance -->
 
+    <script>
+        function copyCode(code, event) {
+            // Prevent button from triggering other events if nested
+            if (event) event.stopPropagation();
+            
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = event.target;
+                const originalText = btn.innerText;
+                
+                btn.innerText = 'Copied!';
+                btn.classList.add('copied');
+                
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy code. Please try manually.');
+            });
+        }
+    </script>
 </body>
 </html>
