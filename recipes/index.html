@@ -61,6 +61,46 @@
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "Organization",
+                "@id": "https://forge-calculator.com/#organization",
+                "name": "Forge Calculator",
+                "url": "https://forge-calculator.com/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://forge-calculator.com/favicon-120x120.png",
+                    "width": 120,
+                    "height": 120
+                }
+            },
+            {
+                "@type": "Article",
+                "@id": "https://forge-calculator.com/recipes#article",
+                "headline": "The Forge Recipes - Complete Crafting Recipe Database",
+                "description": "Discover the best crafting recipes for The Forge. Complete database of weapon and armor recipes with ore combinations.",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://forge-calculator.com/favicon-120x120.png",
+                    "width": 120,
+                    "height": 120
+                },
+                "datePublished": "2024-01-01T00:00:00+00:00",
+                "dateModified": "2026-01-13T00:00:00+00:00",
+                "author": {
+                    "@id": "https://forge-calculator.com/#organization"
+                },
+                "publisher": {
+                    "@id": "https://forge-calculator.com/#organization"
+                },
+                "url": "https://forge-calculator.com/recipes",
+                "inLanguage": "en",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://forge-calculator.com/#website",
+                    "name": "Forge Calculator",
+                    "url": "https://forge-calculator.com/"
+                }
+            },
+            {
                 "@type": "CollectionPage",
                 "name": "The Forge Recipes - Complete Crafting Recipe Database",
                 "description": "Discover the best crafting recipes for The Forge. Complete database of weapon and armor recipes with ore combinations.",
@@ -79,6 +119,36 @@
                     "name": "Recipes",
                     "item": "https://forge-calculator.com/recipes"
                 }]
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://forge-calculator.com/recipes#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What are the best recipes in The Forge?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The best recipes in The Forge depend on your game stage. For endgame, Colossal Sword with Mythril and Arcane Crystal ores gives the highest DPS. For midgame, Katana with Diamond and Cobalt ores is optimal. For beginners, a Straight Sword with Iron and Gold ores is the best starting recipe."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How many ores do I need for each weapon in The Forge?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ore requirements by weapon: Dagger (min 3), Straight Sword (min 5), Gauntlet (min 7), Katana (min 9), Great Sword (min 13), Colossal Sword (min 19), Great Axe (min 25), Scythe (min 33). Using more ores than the minimum increases your chance of crafting that weapon type."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What ores give the highest multiplier in The Forge?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The highest multiplier ores in The Forge are Arcane Crystal (5.5x), Mythril (5.0x), and Diamond (4.5x). These legendary and epic ores are found in World 3 (The Peak) and are essential for crafting the most powerful weapons and armor."
+                        }
+                    }
+                ]
             }
         ]
     }

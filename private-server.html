@@ -42,26 +42,111 @@
     <!-- Structured Data - JSON-LD -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "TechArticle",
-      "headline": "The Forge Private Servers - Complete Guide",
-      "description": "Learn everything about The Forge private server - how to create, join, and maximize your private server experience.",
-      "author": {
-        "@type": "Organization",
-        "name": "Forge Calculator"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Forge Calculator",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://forge-calculator.com/favicon-120x120.png"
-        }
-      },
-      "datePublished": "2024-01-01",
-      "dateModified": "2026-01-27"
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://forge-calculator.com/#organization",
+                "name": "Forge Calculator",
+                "url": "https://forge-calculator.com/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://forge-calculator.com/favicon-120x120.png",
+                    "width": 120,
+                    "height": 120
+                }
+            },
+            {
+                "@type": "Article",
+                "@id": "https://forge-calculator.com/private-server#article",
+                "headline": "The Forge Private Servers - Complete Guide",
+                "description": "Learn everything about The Forge private server - how to create, join, and maximize your private server experience.",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://forge-calculator.com/favicon-120x120.png",
+                    "width": 120,
+                    "height": 120
+                },
+                "datePublished": "2024-01-01T00:00:00+00:00",
+                "dateModified": "2026-01-27T00:00:00+00:00",
+                "author": {
+                    "@id": "https://forge-calculator.com/#organization"
+                },
+                "publisher": {
+                    "@id": "https://forge-calculator.com/#organization"
+                },
+                "url": "https://forge-calculator.com/private-server",
+                "inLanguage": "en",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://forge-calculator.com/#website",
+                    "name": "Forge Calculator",
+                    "url": "https://forge-calculator.com/"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://forge-calculator.com/private-server#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://forge-calculator.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Private Servers",
+                        "item": "https://forge-calculator.com/private-server"
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://forge-calculator.com/private-server#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How do I get a private server in The Forge Roblox?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "To get a private server in The Forge on Roblox, go to the game page, click the three dots menu, and select 'Create Private Server'. Private servers cost Robux per month. Alternatively, join a free community private server using the links listed on this page."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What are the benefits of a private server in The Forge?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Private servers in The Forge offer exclusive benefits: no competition for ore spawns, faster ore respawn rates, ability to play with friends only, better farming efficiency, and a lag-free experience. They are ideal for grinding rare ores and testing crafting strategies."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are The Forge private server links free?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, the private server links listed on this page are shared for free by community members. These are VIP server links that allow anyone with the link to join. The server owner pays for the server, but joining is completely free for players."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How do I submit my private server to this list?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "You can submit your The Forge private server link using the submission form at the bottom of this page. Provide your host name, the Roblox private server link, and an optional description. Submissions are reviewed before being added to the public list."
+                        }
+                    }
+                ]
+            }
+        ]
     }
     </script>
+    
+    <!-- Advertisement -->
+    <script async="async" data-cfasync="false" src="https://pl28199006.effectivegatecpm.com/79ca9dd9143ba2de7e3df6c789a12d4c/invoke.js"></script>
+    <div id="container-79ca9dd9143ba2de7e3df6c789a12d4c"></div>
     <link rel="stylesheet" href="forge-theme.css">
     
     <!-- Google tag (gtag.js) -->
